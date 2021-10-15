@@ -1,7 +1,16 @@
 #region Movement
 
+if (VerticalMovement != 0)
+{
+	var VarSpeed = SpeedFall;
+}
+else
+{
+	var VarSpeed = SpeedWalk;
+}
+
 var HorizontalDirection = Control.RightButtonActive - Control.LeftButtonActive;
-var HorizontalMovement = HorizontalDirection * SpeedWalk;
+HorizontalMovement = HorizontalDirection * VarSpeed;
 
 if (VerticalMovement < 0)
 {
@@ -10,6 +19,11 @@ if (VerticalMovement < 0)
 else
 {
 	VerticalMovement += GravityFall;
+}
+
+if (VerticalMovement >= VerticalMovementLimit)
+{
+	VerticalMovement = VerticalMovementLimit;
 }
 
 #region Jump
@@ -38,8 +52,11 @@ if (!place_meeting(x , y , objBlockTransferable) and VerticalMovement >= 0)
 		{
 			y += sign(VerticalMovement);
 		}
+		if (VerticalMovement > 0)
+		{
+			JumpAvailable = Jumps;
+		}
 		VerticalMovement = 0;
-		JumpAvailable = Jumps;
 	}
 }
 
@@ -50,8 +67,23 @@ if (place_meeting(x , y + VerticalMovement , parSolid))
 		y += sign(VerticalMovement);
 	}
 	VerticalMovement = 0;
-	JumpAvailable = Jumps;
+	if (VerticalMovement > 0)
+	{
+		JumpAvailable = Jumps;
+	}
 }
+
+if (place_meeting(x + HorizontalMovement , y  + VerticalMovement, parSolid))
+{
+	while (!place_meeting(x + sign(HorizontalMovement) , y + sign(VerticalMovement) , parSolid))
+	{
+		x += sign(HorizontalMovement);
+		y += sign(VerticalMovement);
+	}
+	HorizontalMovement = 0;
+	VerticalMovement = 0;
+}
+
 #endregion
 
 #region Position
