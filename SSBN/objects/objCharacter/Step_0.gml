@@ -13,7 +13,7 @@ else
 }
 
 #region Jump
-if (JumpAvailable > 0 and )
+if (JumpAvailable > 0 and Control.JumpButtonActive)
 {
 	JumpAvailable--;
 	VerticalMovement = -JumpValue;
@@ -28,6 +28,19 @@ if (place_meeting(x + HorizontalMovement , y , parSolid))
 		x += sign(HorizontalMovement);
 	}
 	HorizontalMovement = 0;
+}
+
+if (!place_meeting(x , y , objBlockTransferable) and VerticalMovement >= 0)
+{
+	if (place_meeting(x , y + VerticalMovement , objBlockTransferable))
+	{
+		while (!place_meeting(x , y  + sign(VerticalMovement) , objBlockTransferable))
+		{
+			y += sign(VerticalMovement);
+		}
+		VerticalMovement = 0;
+		JumpAvailable = Jumps;
+	}
 }
 
 if (place_meeting(x , y + VerticalMovement , parSolid))
