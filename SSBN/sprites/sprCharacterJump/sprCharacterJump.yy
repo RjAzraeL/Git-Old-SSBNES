@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Characters",
-    "path": "folders/Sprites/Characters.yy",
+    "name": "Sandbag",
+    "path": "folders/Sprites/Characters/Sandbag.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprCharacterJump",

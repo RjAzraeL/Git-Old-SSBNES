@@ -52,6 +52,10 @@ else
 		}
 		AcelerationValue -= Aceleration;
 	}
+		else
+	{
+		AcelerationValue = 0;	
+	}
 }
 
 if (HorizontalDirection != 0)
