@@ -18,6 +18,9 @@ JumpAvailable = Jumps;
 ScaleX = 1;
 ScaleY = 1;
 JumpTime = 0;
+Running = 0;
+ActualJumpSprite = 0;
+Duck = false;
 
 OriginX = x;
 OriginY = y;
@@ -36,6 +39,12 @@ SpriteJump = sprChMarioJump;
 SpriteJump2 = sprChMarioJump2;
 SpriteFall = sprChMarioFalling;
 SpriteIdle = sprChMarioIdle;
+SpriteDuck = sprChMarioDuck;
+#endregion
+
+#region Mask
+MaskDuck = sprChMarioDuckMask;
+MaskNormal = sprChMarioMask;
 #endregion
 
 #endregion
