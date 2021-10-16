@@ -8,3 +8,8 @@ DownButtonActive = keyboard_check(DownButton);
 DownButtonPressedActive = keyboard_check_pressed(DownButton);
 DownButtonReleasedActive = keyboard_check_released(DownButton);
 #endregion
+
+#region Generic
+scrCambiarPantalla(vk_f4);
+scrReiniciarJuego(vk_f1);
+#endregion

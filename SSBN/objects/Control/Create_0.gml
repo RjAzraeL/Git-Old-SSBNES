@@ -6,8 +6,12 @@ scrDataCharacter();
 #region Controls
 LeftButton = vk_left;
 RightButton = vk_right;
-JumpButton = vk_up;
 DownButton = vk_down;
+UpButton = vk_up;
+JumpButton = ord("X");
+AttackButton = ord("C");
+StartButton = vk_enter;
+SelectButton = vk_space;
 #endregion
 
 #endregion

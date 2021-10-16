@@ -66,7 +66,7 @@ JumpValue = 5.5;
 Gravity = .3;
 VerticalMovementLimit = 6;
 Weigth = 2.9;
-Friccion = .09;
+Friction = .09;
 GravityFall = .1;
 JumpAvailable = Jumps;
 ScaleX = 1;
@@ -110,5 +110,14 @@ MaskNormal = SprChKirbyMask;
 #endregion
 
 scrSetCharacter();
+
+#endregion
+
+#region Camera
+
+min_view_x = 0;
+min_view_y = 0;
+max_view_x = room_width - camera_get_view_width(view_camera[0]);
+max_view_y = room_height - camera_get_view_height(view_camera[0]);
 
 #endregion

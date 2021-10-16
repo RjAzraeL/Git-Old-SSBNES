@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Stages",
-    "path": "folders/Sprites/Stages.yy",
+    "name": "Battlefield (Ultimate)",
+    "path": "folders/Sprites/Stages/Battlefield (Ultimate).yy",
   },
   "resourceVersion": "1.0",
   "name": "sprStgLy1Tower",

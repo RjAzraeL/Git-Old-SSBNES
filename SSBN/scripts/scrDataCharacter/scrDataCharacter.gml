@@ -11,15 +11,15 @@ function scrDataCharacter()
 	/*Sprite*/"sprChSandbag" ,
 	/*Jumps*/2,
 	/*Aceleration*/.1,
-	/*SpeedWalk*/1.5,
-	/*SpeedRun*/1.9,
-	/*SpeedFall*/1.4,
+	/*SpeedWalk*/1.1,
+	/*SpeedRun*/2.2,
+	/*SpeedFall*/1.9,
 	/*JumpValue*/6,
 	/*Gravity*/.3,
-	/*GravityFall*/.2,
-	/*LimitFall*/8,
-	/*Weight*/5,
-	/*Friction*/.08,
+	/*GravityFall*/.3,
+	/*LimitFall*/6,
+	/*Weight*/4,
+	/*Friction*/.1,
 	/*Mask Duck*/sprCharacterIdle,
 	/*Mask Normal*/sprCharacterIdle
 	)	
@@ -38,12 +38,12 @@ function scrDataCharacter()
 	/*SpeedWalk*/1.1,
 	/*SpeedRun*/2.2,
 	/*SpeedFall*/1.9,
-	/*JumpValue*/6,
+	/*JumpValue*/5.5,
 	/*Gravity*/.3,
-	/*GravityFall*/.3,
+	/*GravityFall*/.1,
 	/*LimitFall*/6,
 	/*Weight*/4,
-	/*Friction*/.1,
+	/*Friction*/0.06,
 	/*Mask Duck*/sprChMarioMask,
 	/*Mask Normal*/sprChMarioDuckMask
 	)	
@@ -65,13 +65,13 @@ function scrMapCharacter(List)
 	Paquete[? "Speed Run"] = ds_list_find_value(List , 8);
 	Paquete[? "Speed Fall"] = ds_list_find_value(List , 9);
 	Paquete[? "Jump Value"] = ds_list_find_value(List , 10);
-	Paquete[? "Gravity"] = ds_list_find_value(List , 10);
-	Paquete[? "Gravity Fall"] = ds_list_find_value(List , 11);
-	Paquete[? "Limit Fall"] = ds_list_find_value(List , 12);
-	Paquete[? "Weight"] = ds_list_find_value(List , 13);
-	Paquete[? "Friction"] = ds_list_find_value(List , 14);
-	Paquete[? "Mask Duck"] = ds_list_find_value(List , 15);
-	Paquete[? "Mask Normal"] = ds_list_find_value(List , 16);
+	Paquete[? "Gravity"] = ds_list_find_value(List , 11);
+	Paquete[? "Gravity Fall"] = ds_list_find_value(List , 12);
+	Paquete[? "Limit Fall"] = ds_list_find_value(List , 13);
+	Paquete[? "Weight"] = ds_list_find_value(List , 14);
+	Paquete[? "Friction"] = ds_list_find_value(List , 15);
+	Paquete[? "Mask Duck"] = ds_list_find_value(List , 16);
+	Paquete[? "Mask Normal"] = ds_list_find_value(List , 17);
 	
 	ds_list_add(Control.CharacterList , Paquete);
 }

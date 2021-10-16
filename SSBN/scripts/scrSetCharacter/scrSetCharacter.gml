@@ -12,7 +12,7 @@ function scrSetCharacter()
 	Gravity = scrGetValueCharacter("Gravity");
 	VerticalMovementLimit = scrGetValueCharacter("Limit Fall");
 	Weigth = scrGetValueCharacter("Weigth");
-	Friccion = scrGetValueCharacter("Friction");
+	Friction = scrGetValueCharacter("Friction");
 	GravityFall = scrGetValueCharacter("Gravity Fall");
 
 	#region Sprites

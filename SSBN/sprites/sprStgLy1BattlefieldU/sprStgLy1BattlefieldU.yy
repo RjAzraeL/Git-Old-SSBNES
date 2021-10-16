@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"adaf7544-08aa-406f-a80b-cd8ec2412d74","path":"sprites/sprStgLy1Battlefield/sprStgLy1Battlefield.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"adaf7544-08aa-406f-a80b-cd8ec2412d74","path":"sprites/sprStgLy1Battlefield/sprStgLy1Battlefield.yy",},"LayerId":{"name":"9f4c29e7-edeb-4055-a788-2f7b18d29a46","path":"sprites/sprStgLy1Battlefield/sprStgLy1Battlefield.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprStgLy1Battlefield","path":"sprites/sprStgLy1Battlefield/sprStgLy1Battlefield.yy",},"resourceVersion":"1.0","name":"adaf7544-08aa-406f-a80b-cd8ec2412d74","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"adaf7544-08aa-406f-a80b-cd8ec2412d74","path":"sprites/sprStgLy1BattlefieldU/sprStgLy1BattlefieldU.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"adaf7544-08aa-406f-a80b-cd8ec2412d74","path":"sprites/sprStgLy1BattlefieldU/sprStgLy1BattlefieldU.yy",},"LayerId":{"name":"9f4c29e7-edeb-4055-a788-2f7b18d29a46","path":"sprites/sprStgLy1BattlefieldU/sprStgLy1BattlefieldU.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprStgLy1BattlefieldU","path":"sprites/sprStgLy1BattlefieldU/sprStgLy1BattlefieldU.yy",},"resourceVersion":"1.0","name":"adaf7544-08aa-406f-a80b-cd8ec2412d74","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"sprStgLy1Battlefield","path":"sprites/sprStgLy1Battlefield/sprStgLy1Battlefield.yy",},
+    "spriteId": {"name":"sprStgLy1BattlefieldU","path":"sprites/sprStgLy1BattlefieldU/sprStgLy1BattlefieldU.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"1ba8403a-4f70-4d61-adee-53efa12c1728","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"adaf7544-08aa-406f-a80b-cd8ec2412d74","path":"sprites/sprStgLy1Battlefield/sprStgLy1Battlefield.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"1ba8403a-4f70-4d61-adee-53efa12c1728","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"adaf7544-08aa-406f-a80b-cd8ec2412d74","path":"sprites/sprStgLy1BattlefieldU/sprStgLy1BattlefieldU.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -58,9 +58,9 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"sprStgLy1Battlefield","path":"sprites/sprStgLy1Battlefield/sprStgLy1Battlefield.yy",},
+    "parent": {"name":"sprStgLy1BattlefieldU","path":"sprites/sprStgLy1BattlefieldU/sprStgLy1BattlefieldU.yy",},
     "resourceVersion": "1.3",
-    "name": "sprStgLy1Battlefield",
+    "name": "sprStgLy1BattlefieldU",
     "tags": [],
     "resourceType": "GMSequence",
   },
@@ -69,11 +69,11 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Stages",
-    "path": "folders/Sprites/Stages.yy",
+    "name": "Battlefield (Ultimate)",
+    "path": "folders/Sprites/Stages/Battlefield (Ultimate).yy",
   },
   "resourceVersion": "1.0",
-  "name": "sprStgLy1Battlefield",
+  "name": "sprStgLy1BattlefieldU",
   "tags": [],
   "resourceType": "GMSprite",
 }
