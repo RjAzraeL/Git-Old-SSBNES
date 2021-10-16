@@ -21,12 +21,56 @@ else
 #endregion
 
 #region Horizontal Movement
-var HorizontalDirection = Control.RightButtonActive - Control.LeftButtonActive;
-HorizontalMovement = HorizontalDirection * VarSpeed;
+var HorizontalDirection = 0;
+if (!Duck)
+{
+	HorizontalDirection = Control.RightButtonActive - Control.LeftButtonActive;
+}
+
+if (HorizontalDirection != 0)
+{
+	Skid = false;
+	if (AcelerationValue < VarSpeed)
+	{
+		AcelerationValue += Aceleration;
+	}
+	else
+	{
+		AcelerationValue = VarSpeed;
+	}
+}
+else
+{
+	if (AcelerationValue > 0)
+	{
+		if (place_meeting(x , y + 1 , parCollision) and !place_meeting(x , y , parCollision))
+		{
+			if (RunActive)
+			{
+				Skid = true;
+			}
+		}
+		AcelerationValue -= Aceleration;
+	}
+}
+
+if (HorizontalDirection != 0)
+{
+	HorizontalMovement = HorizontalDirection * AcelerationValue;
+}
+else
+{
+	HorizontalMovement = AcelerationValue * ScaleX;
+}
+
 if (HorizontalDirection != 0)
 {
 	RunTime = 10;
 	ScaleX = sign(HorizontalDirection);
+	if (place_meeting(x , y + 1 , parCollision) and !place_meeting(x , y , parCollision))
+	{
+		ScaleXSprite = sign(HorizontalDirection);
+	}
 }
 else
 {
@@ -98,6 +142,7 @@ if (JumpAvailable > 0 and Control.JumpButtonActive)
 	JumpAvailable--;
 	VerticalMovement = -JumpValue;
 	ActualJumpSprite++;
+	AnimacionSaltoTerminada = false;
 }
 
 if (JumpTime > 0)
@@ -165,6 +210,10 @@ if (Control.DownButtonActive and place_meeting(x , y + 1 , parSolid))
 {
 	Duck = true;
 }
+else
+{
+	Duck = false;
+}
 #endregion
 
 #region Position
@@ -185,13 +234,20 @@ if (place_meeting(x , y + 1 , parCollision) and !place_meeting(x , y , parCollis
 		}
 		else
 		{
-			if (!RunActive)
+			if (!Skid)
 			{
-				sprite_index = SpriteWalk;
+				if (!RunActive)
+				{
+					sprite_index = SpriteWalk;
+				}
+				else
+				{
+					sprite_index = SpriteRun;
+				}
 			}
 			else
 			{
-				sprite_index = SpriteRun;
+				sprite_index = SpriteSkid;
 			}
 		}
 	}
@@ -212,7 +268,10 @@ else
 	}
 	else if (ActualJumpSprite == 2)
 	{
-		sprite_index = SpriteJump2;
+		if (!AnimacionSaltoTerminada)
+		{
+			sprite_index = SpriteJump2;
+		}
 	}
 }
 #endregion
