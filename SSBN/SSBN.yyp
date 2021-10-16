@@ -1,6 +1,7 @@
 {
   "resources": [
     {"id":{"name":"sprChMarioSkid","path":"sprites/sprChMarioSkid/sprChMarioSkid.yy",},"order":7,},
+    {"id":{"name":"parCollision","path":"objects/parCollision/parCollision.yy",},"order":1,},
     {"id":{"name":"sprSolidTransferable","path":"sprites/sprSolidTransferable/sprSolidTransferable.yy",},"order":1,},
     {"id":{"name":"parSolid","path":"objects/parSolid/parSolid.yy",},"order":0,},
     {"id":{"name":"sprChMarioJump","path":"sprites/sprChMarioJump/sprChMarioJump.yy",},"order":3,},

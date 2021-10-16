@@ -4,10 +4,7 @@
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": {
-    "name": "parCollision",
-    "path": "objects/parCollision/parCollision.yy",
-  },
+  "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -28,7 +25,7 @@
     "path": "folders/Objects/Parent.yy",
   },
   "resourceVersion": "1.0",
-  "name": "parSolid",
+  "name": "parCollision",
   "tags": [],
   "resourceType": "GMObject",
 }

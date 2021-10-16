@@ -2,7 +2,7 @@
 
 #region Horizontal Speed
 
-if (VerticalMovement != 0)
+if (!place_meeting(x , y + 1 , parCollision))
 {
 	var VarSpeed = SpeedFall;
 }
@@ -24,10 +24,17 @@ var HorizontalDirection = Control.RightButtonActive - Control.LeftButtonActive;
 HorizontalMovement = HorizontalDirection * VarSpeed;
 if (HorizontalDirection != 0)
 {
+	RunTime = 20;
 	ScaleX = sign(HorizontalDirection);
 }
 else
 {
+	if (RunTime == 0)
+	{
+		RunActive = false;
+		RunValue = 0;
+		LastDirection = 0;
+	}
 }
 #endregion
 
@@ -56,11 +63,17 @@ if (RunTime > 0)
 
 if (Control.LeftButtonPressedActive or Control.RightButtonPressedActive)
 {
-	RunTime = 30;
 	RunValue++;
-	if (RunValue >= 2 and RunTime > 0)
+	if (RunValue == 2 and RunTime > 0 and LastDirection = ScaleX)
 	{
 		RunActive = true;
+		RunValue = 0;
+	}
+	else if (RunValue > 2)
+	{
+		RunActive = false;
+		RunValue = 0;
+		LastDirection = 0;
 	}
 	LastDirection = ScaleX;
 }
@@ -71,6 +84,11 @@ if (JumpAvailable > 0 and Control.JumpButtonActive)
 {
 	JumpAvailable--;
 	VerticalMovement = -JumpValue;
+}
+
+if (JumpTime > 0)
+{
+	JumpTime--;
 }
 #endregion
 
@@ -131,4 +149,29 @@ x += HorizontalMovement;
 y += VerticalMovement;
 #endregion
 
+#endregion
+
+#region Sprite
+if (place_meeting(x , y + 1 , parCollision))
+{
+	if (HorizontalMovement == 0)
+	{
+		sprite_index = SpriteIdle;
+	}
+	else
+	{
+		if (!RunActive)
+		{
+			sprite_index = SpriteWalk;
+		}
+		else
+		{
+			sprite_index = SpriteRun;
+		}
+	}
+}
+else
+{
+	sprite_index = SpriteFall;
+}
 #endregion
