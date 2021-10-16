@@ -109,4 +109,6 @@ MaskDuck = SprChKirbyMaskDuck;
 MaskNormal = SprChKirbyMask;
 #endregion
 
+scrSetCharacter();
+
 #endregion

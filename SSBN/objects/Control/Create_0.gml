@@ -1,4 +1,6 @@
 #region Set variables
+CharacterId = 1;
+scrDataCharacter();
 
 
 #region Controls
