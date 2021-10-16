@@ -1,7 +1,10 @@
 #region Set variables
 CharacterId = 1;
 scrDataCharacter();
-
+xx = 0;
+yy = 0;
+Limite = 90;
+LimiteVelocidad = .05;
 
 #region Controls
 LeftButton = vk_left;

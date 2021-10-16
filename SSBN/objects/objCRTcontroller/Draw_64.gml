@@ -7,7 +7,7 @@ if (crt_shader_enabled) { scr_CRT_appy_to_surface(application_surface, view_came
 
 ///Set the cameras position if it has been moved with the arrow keys.
 ///Just for demonstration purposes, can be removed.
-camera_set_view_pos(view_camera[0], objCharacter.x - 128 ,objCharacter.y - 112 );
+//camera_set_view_pos(view_camera[0], objCharacter.x - 128 ,objCharacter.y - 112 );
 
 ///Alter CRT variables and enable/disable settings.
 ///Just for demonstration purposes, can be removed.
