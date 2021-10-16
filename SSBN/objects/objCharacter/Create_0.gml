@@ -62,7 +62,7 @@ SpeedRun = 2;
 SpeedFall = 1.9;
 HorizontalMovement = 0;
 VerticalMovement = 0;
-JumpValue = 6;
+JumpValue = 5.5;
 Gravity = .3;
 VerticalMovementLimit = 6;
 Weigth = 2.9;
@@ -76,6 +76,8 @@ JumpTime = 0;
 Running = 0;
 ActualJumpSprite = 0;
 Duck = false;
+DuckFall = false;
+DuckTime = 0;
 
 OriginX = x;
 OriginY = y;

@@ -144,9 +144,20 @@ if (Control.LeftButtonPressedActive or Control.RightButtonPressedActive)
 if (JumpAvailable > 0 and Control.JumpButtonActive)
 {
 	JumpAvailable--;
-	VerticalMovement = -JumpValue;
+	if (ActualJumpSprite == 0)
+	{
+		VerticalMovement = -JumpValue;
+	}
+	else
+	{
+		VerticalMovement = -(JumpValue - ( ActualJumpSprite * (JumpValue/10) ));
+	}
 	ActualJumpSprite++;
 	AnimacionSaltoTerminada = false;
+	if (HorizontalDirection != 0)
+	{
+		ScaleXSprite = sign(HorizontalDirection);
+	}
 }
 
 if (JumpTime > 0)
@@ -165,7 +176,7 @@ if (place_meeting(x + HorizontalMovement , y , parSolid))
 	HorizontalMovement = 0;
 }
 
-if (!place_meeting(x , y , objBlockTransferable) and VerticalMovement >= 0 and !Control.DownButtonActive)
+if (!place_meeting(x , y , objBlockTransferable) and VerticalMovement >= 0 and !DuckFall)
 {
 	if (place_meeting(x , y + VerticalMovement , objBlockTransferable))
 	{
@@ -210,13 +221,32 @@ if (place_meeting(x + HorizontalMovement , y  + VerticalMovement, parSolid))
 #endregion
 
 #region Duck
-if (Control.DownButtonActive and place_meeting(x , y + 1 , parSolid))
+if (Control.DownButtonReleasedActive and Duck)
 {
-	Duck = true;
+	DuckTime = 15;
+}
+if (DuckTime > 0)
+{
+	DuckTime--;
+}
+if (Control.DownButtonActive and place_meeting(x , y + 1 , parCollision))
+{
+	if (DuckTime == 0)
+	{
+		Duck = true;
+		mask_index = MaskDuck;
+	}
+	else
+	{
+		y+=2;
+		DuckTime = 0;
+	}
 }
 else
 {
 	Duck = false;
+	DuckFall = false;
+	mask_index = SpriteDuck;
 }
 #endregion
 
@@ -270,23 +300,12 @@ else
 	{
 		sprite_index = SpriteJump;
 	}
-	else if (ActualJumpSprite == 2)
+	else if (ActualJumpSprite >= 2)
 	{
 		if (!AnimacionSaltoTerminada)
 		{
 			sprite_index = SpriteJump2;
 		}
 	}
-}
-#endregion
-
-#region Mask
-if (Duck)
-{
-	mask_index = MaskDuck;
-}
-else
-{
-	mask_index = MaskNormal;
 }
 #endregion
