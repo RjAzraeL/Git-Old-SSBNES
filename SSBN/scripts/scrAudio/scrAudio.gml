@@ -10,5 +10,6 @@ function scrMusic(Music)
 	{
 		audio_sound_gain(Music , Control.VolumeMusic , 0);
 		audio_play_sound(Music , 10 , true);
+		Control.IndexMusic = Music;
 	}
 }
