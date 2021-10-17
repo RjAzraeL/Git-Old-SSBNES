@@ -4,7 +4,7 @@ scrDataCharacter();
 xx = 0;
 yy = 0;
 Limite = 90;
-LimiteVelocidad = .05;
+LimiteVelocidad = 0.025;
 
 #region Controls
 LeftButton = vk_left;
