@@ -25,7 +25,7 @@ if (scrExiste(objCharacter))
 	{
 		xx = lerp(xx , 0 , LimiteVelocidad);
 	}
-	else if (objCharacter.x >= Limite + (Limite/2) and objCharacter.x <= room_width - Limite - (Limite/2))
+	else if (objCharacter.x >= Limite + (Limite/3) and objCharacter.x <= room_width - Limite - (Limite/3))
 	{
 		xx  = lerp(xx , room_width/2 , LimiteVelocidad);
 	}
