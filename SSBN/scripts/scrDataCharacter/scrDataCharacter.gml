@@ -1,6 +1,7 @@
 function scrDataCharacter()
 {
 	Control.CharacterList = ds_list_create();
+	
 	/*0*/
 	scrMapCharacter( 
 	scrCrearLista(
@@ -21,7 +22,9 @@ function scrDataCharacter()
 	/*Weight*/4,
 	/*Friction*/.1,
 	/*Mask Duck*/sprCharacterIdle,
-	/*Mask Normal*/sprCharacterIdle
+	/*Mask Normal*/sprCharacterIdle,
+	/*Sfx Skid*/sfxSkidMario,
+	/*Sfx Jump*/sfxJumpMario
 	)	
 	);
 	
@@ -45,7 +48,9 @@ function scrDataCharacter()
 	/*Weight*/4,
 	/*Friction*/0.06,
 	/*Mask Duck*/sprChMarioMask,
-	/*Mask Normal*/sprChMarioDuckMask
+	/*Mask Normal*/sprChMarioDuckMask,
+	/*Sfx Skid*/sfxSkidMario,
+	/*Sfx Jump*/sfxJumpMario
 	)	
 	);
 }
@@ -72,6 +77,8 @@ function scrMapCharacter(List)
 	Paquete[? "Friction"] = ds_list_find_value(List , 15);
 	Paquete[? "Mask Duck"] = ds_list_find_value(List , 16);
 	Paquete[? "Mask Normal"] = ds_list_find_value(List , 17);
+	Paquete[? "Sfx Skid"] = ds_list_find_value(List , 18);	
+	Paquete[? "Sfx Jump"] = ds_list_find_value(List , 19);	
 	
 	ds_list_add(Control.CharacterList , Paquete);
 }

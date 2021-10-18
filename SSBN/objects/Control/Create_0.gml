@@ -1,6 +1,6 @@
 #region Set variables
-VolumeMusic = .1;
-VolumeSound = .1;
+VolumeMusic = 1;
+VolumeSound = 1;
 IndexMusic = -1;
 CharacterId = 1;
 scrDataCharacter();

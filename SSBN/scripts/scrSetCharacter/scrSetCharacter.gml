@@ -22,10 +22,20 @@ function scrSetCharacter()
 	SpriteRun = scrGetSpriteIndex("Run");
 	SpriteJump = scrGetSpriteIndex("Jump");
 	SpriteJump2 = scrGetSpriteIndex("Jump2");
-	SpriteFall =scrGetSpriteIndex("Falling");
+	SpriteFall = scrGetSpriteIndex("Falling");
 	SpriteIdle = scrGetSpriteIndex("Idle");
 	SpriteDuck = scrGetSpriteIndex("Duck");
 	SpriteSkid = scrGetSpriteIndex("Skid");
+	
+	#endregion
+	
+	#region SFX
+	
+	SfxSkid = scrGetValueCharacter("Sfx Skid");
+	SfxJump = scrGetValueCharacter("Sfx Jump");
+	
+	
+	
 	#endregion
 
 

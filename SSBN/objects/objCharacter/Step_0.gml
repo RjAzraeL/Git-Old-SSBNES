@@ -45,9 +45,10 @@ else
 	{
 		if (place_meeting(x , y + 1 , parCollision) and !place_meeting(x , y , parCollision))
 		{
-			if (RunActive)
+			if (RunActive) and (!Skid)
 			{
 				Skid = true;
+				scrSound(SfxSkid)
 			}
 		}
 		AcelerationValue -= Friction;
@@ -143,6 +144,7 @@ if (Control.LeftButtonPressedActive or Control.RightButtonPressedActive)
 #region Jump
 if (JumpAvailable > 0 and Control.JumpButtonActive)
 {
+	scrSound(SfxJump)
 	JumpAvailable--;
 	if (ActualJumpSprite == 0)
 	{
@@ -312,5 +314,4 @@ else
 		}
 	}
 }
-#endregion
 #endregion
