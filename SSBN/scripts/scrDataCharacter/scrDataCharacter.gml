@@ -13,18 +13,18 @@ function scrDataCharacter()
 	/*Jumps*/2,
 	/*Aceleration*/.1,
 	/*SpeedWalk*/1.1,
-	/*SpeedRun*/2.2,
+	/*SpeedRun*/3,
 	/*SpeedFall*/1.9,
-	/*JumpValue*/6,
+	/*JumpValue*/5.5,
 	/*Gravity*/.3,
-	/*GravityFall*/.3,
+	/*GravityFall*/.1,
 	/*LimitFall*/6,
-	/*Weight*/4,
-	/*Friction*/.1,
-	/*Mask Duck*/sprCharacterIdle,
-	/*Mask Normal*/sprCharacterIdle,
-	/*Sfx Skid*/sfxSkidMario,
-	/*Sfx Jump*/sfxJumpMario
+	/*Weight*/2.9,
+	/*Friction*/.020,
+	/*Mask Duck*/sprChSandbagMask,
+	/*Mask Normal*/sprChSandbagMask,
+	/*Sfx Skid*/sfxKirbySkid,
+	/*Sfx Jump*/sfxKirbyJump
 	)	
 	);
 	
@@ -47,10 +47,36 @@ function scrDataCharacter()
 	/*LimitFall*/6,
 	/*Weight*/4,
 	/*Friction*/0.06,
-	/*Mask Duck*/sprChMarioMask,
-	/*Mask Normal*/sprChMarioDuckMask,
-	/*Sfx Skid*/sfxSkidMario,
-	/*Sfx Jump*/sfxJumpMario
+	/*Mask Duck*/sprChMarioMaskDuck,
+	/*Mask Normal*/sprChMarioMask,
+	/*Sfx Skid*/sfxMarioSkid,
+	/*Sfx Jump*/sfxMarioJump
+	)	
+	);
+	
+	/*2*/
+	scrMapCharacter( 
+	scrCrearLista(
+	/*Name*/"Kirby" ,
+	/*Description*/"Pega como loco" ,
+	/*Lore*/"" ,
+	/*Class*/"" ,
+	/*Sprite*/"sprChKirby" ,
+	/*Jumps*/5,
+	/*Aceleration*/.1,
+	/*SpeedWalk*/0.85,
+	/*SpeedRun*/2,
+	/*SpeedFall*/1.9,
+	/*JumpValue*/5.5,
+	/*Gravity*/.3,
+	/*GravityFall*/.1,
+	/*LimitFall*/6,
+	/*Weight*/2.9,
+	/*Friction*/0.09,
+	/*Mask Duck*/SprChKirbyMaskDuck,
+	/*Mask Normal*/SprChKirbyMask,
+	/*Sfx Skid*/sfxKirbySkid,
+	/*Sfx Jump*/sfxKirbyJump
 	)	
 	);
 }

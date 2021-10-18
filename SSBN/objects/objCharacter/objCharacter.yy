@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sprCharacterIdle",
-    "path": "sprites/sprCharacterIdle/sprCharacterIdle.yy",
+    "name": "sprChSandbagIdle",
+    "path": "sprites/sprChSandbagIdle/sprChSandbagIdle.yy",
   },
   "solid": false,
   "visible": true,

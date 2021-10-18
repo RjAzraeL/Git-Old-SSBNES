@@ -7,15 +7,15 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 77,
-  "bbox_right": 278,
-  "bbox_top": 46,
-  "bbox_bottom": 98,
-  "HTile": false,
-  "VTile": false,
+  "bbox_left": 0,
+  "bbox_right": 71,
+  "bbox_top": 0,
+  "bbox_bottom": 9,
+  "HTile": true,
+  "VTile": true,
   "For3D": false,
-  "width": 356,
-  "height": 224,
+  "width": 72,
+  "height": 10,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,18 +24,18 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"ed980be5-dccc-41a4-9807-5c82c6005a1f","path":"sprites/sprStgLy1bBattlefieldM/sprStgLy1bBattlefieldM.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"ed980be5-dccc-41a4-9807-5c82c6005a1f","path":"sprites/sprStgLy1bBattlefieldM/sprStgLy1bBattlefieldM.yy",},"LayerId":{"name":"4b68ae66-7153-4a2c-9d6b-e571d8be4834","path":"sprites/sprStgLy1bBattlefieldM/sprStgLy1bBattlefieldM.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprStgLy1bBattlefieldM","path":"sprites/sprStgLy1bBattlefieldM/sprStgLy1bBattlefieldM.yy",},"resourceVersion":"1.0","name":"ed980be5-dccc-41a4-9807-5c82c6005a1f","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"c366a9ea-eef5-4ba8-b90c-69e0acb9dd10","path":"sprites/sprStgLy1bBattlefieldM/sprStgLy1bBattlefieldM.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"c366a9ea-eef5-4ba8-b90c-69e0acb9dd10","path":"sprites/sprStgLy1bBattlefieldM/sprStgLy1bBattlefieldM.yy",},"LayerId":{"name":"4b68ae66-7153-4a2c-9d6b-e571d8be4834","path":"sprites/sprStgLy1bBattlefieldM/sprStgLy1bBattlefieldM.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprStgLy1bBattlefieldM","path":"sprites/sprStgLy1bBattlefieldM/sprStgLy1bBattlefieldM.yy",},"resourceVersion":"1.0","name":"c366a9ea-eef5-4ba8-b90c-69e0acb9dd10","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"bc2ace10-7c8f-4bc7-b607-c61fea334d5f","path":"sprites/sprStgLy1bBattlefieldM/sprStgLy1bBattlefieldM.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"bc2ace10-7c8f-4bc7-b607-c61fea334d5f","path":"sprites/sprStgLy1bBattlefieldM/sprStgLy1bBattlefieldM.yy",},"LayerId":{"name":"4b68ae66-7153-4a2c-9d6b-e571d8be4834","path":"sprites/sprStgLy1bBattlefieldM/sprStgLy1bBattlefieldM.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprStgLy1bBattlefieldM","path":"sprites/sprStgLy1bBattlefieldM/sprStgLy1bBattlefieldM.yy",},"resourceVersion":"1.0","name":"bc2ace10-7c8f-4bc7-b607-c61fea334d5f","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"d49682b8-286b-4e3e-a622-053ed62b0be6","path":"sprites/sprStgLy1bBattlefieldM/sprStgLy1bBattlefieldM.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"d49682b8-286b-4e3e-a622-053ed62b0be6","path":"sprites/sprStgLy1bBattlefieldM/sprStgLy1bBattlefieldM.yy",},"LayerId":{"name":"4b68ae66-7153-4a2c-9d6b-e571d8be4834","path":"sprites/sprStgLy1bBattlefieldM/sprStgLy1bBattlefieldM.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprStgLy1bBattlefieldM","path":"sprites/sprStgLy1bBattlefieldM/sprStgLy1bBattlefieldM.yy",},"resourceVersion":"1.0","name":"d49682b8-286b-4e3e-a622-053ed62b0be6","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"10984b7a-39ec-44bf-9fc1-82048cf1f7f6","path":"sprites/sprStgLy1bBattlefieldM/sprStgLy1bBattlefieldM.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"10984b7a-39ec-44bf-9fc1-82048cf1f7f6","path":"sprites/sprStgLy1bBattlefieldM/sprStgLy1bBattlefieldM.yy",},"LayerId":{"name":"a55b46e2-d44e-4b2c-b642-774f07194791","path":"sprites/sprStgLy1bBattlefieldM/sprStgLy1bBattlefieldM.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprStgLy1bBattlefieldM","path":"sprites/sprStgLy1bBattlefieldM/sprStgLy1bBattlefieldM.yy",},"resourceVersion":"1.0","name":"10984b7a-39ec-44bf-9fc1-82048cf1f7f6","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"c2619f19-0078-4c5f-90c5-2e3d309eae09","path":"sprites/sprStgLy1bBattlefieldM/sprStgLy1bBattlefieldM.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"c2619f19-0078-4c5f-90c5-2e3d309eae09","path":"sprites/sprStgLy1bBattlefieldM/sprStgLy1bBattlefieldM.yy",},"LayerId":{"name":"a55b46e2-d44e-4b2c-b642-774f07194791","path":"sprites/sprStgLy1bBattlefieldM/sprStgLy1bBattlefieldM.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprStgLy1bBattlefieldM","path":"sprites/sprStgLy1bBattlefieldM/sprStgLy1bBattlefieldM.yy",},"resourceVersion":"1.0","name":"c2619f19-0078-4c5f-90c5-2e3d309eae09","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"0c66ca9c-92b9-4b03-8b02-2ec92cd64f98","path":"sprites/sprStgLy1bBattlefieldM/sprStgLy1bBattlefieldM.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"0c66ca9c-92b9-4b03-8b02-2ec92cd64f98","path":"sprites/sprStgLy1bBattlefieldM/sprStgLy1bBattlefieldM.yy",},"LayerId":{"name":"a55b46e2-d44e-4b2c-b642-774f07194791","path":"sprites/sprStgLy1bBattlefieldM/sprStgLy1bBattlefieldM.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprStgLy1bBattlefieldM","path":"sprites/sprStgLy1bBattlefieldM/sprStgLy1bBattlefieldM.yy",},"resourceVersion":"1.0","name":"0c66ca9c-92b9-4b03-8b02-2ec92cd64f98","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"133342a9-529d-4f21-bf08-939855ea5174","path":"sprites/sprStgLy1bBattlefieldM/sprStgLy1bBattlefieldM.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"133342a9-529d-4f21-bf08-939855ea5174","path":"sprites/sprStgLy1bBattlefieldM/sprStgLy1bBattlefieldM.yy",},"LayerId":{"name":"a55b46e2-d44e-4b2c-b642-774f07194791","path":"sprites/sprStgLy1bBattlefieldM/sprStgLy1bBattlefieldM.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprStgLy1bBattlefieldM","path":"sprites/sprStgLy1bBattlefieldM/sprStgLy1bBattlefieldM.yy",},"resourceVersion":"1.0","name":"133342a9-529d-4f21-bf08-939855ea5174","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"sprStgLy1bBattlefieldM","path":"sprites/sprStgLy1bBattlefieldM/sprStgLy1bBattlefieldM.yy",},
@@ -50,10 +50,10 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"d1933d91-0a64-4e48-9a4c-936ba90c78ff","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ed980be5-dccc-41a4-9807-5c82c6005a1f","path":"sprites/sprStgLy1bBattlefieldM/sprStgLy1bBattlefieldM.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"7a34c290-d41d-45a9-944c-8e462260c091","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c366a9ea-eef5-4ba8-b90c-69e0acb9dd10","path":"sprites/sprStgLy1bBattlefieldM/sprStgLy1bBattlefieldM.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"53a766f6-6216-498f-ab24-ec7703945fc3","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"bc2ace10-7c8f-4bc7-b607-c61fea334d5f","path":"sprites/sprStgLy1bBattlefieldM/sprStgLy1bBattlefieldM.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"92f48c2a-ecb0-4f8f-92af-6a5425556469","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d49682b8-286b-4e3e-a622-053ed62b0be6","path":"sprites/sprStgLy1bBattlefieldM/sprStgLy1bBattlefieldM.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"53a63c2d-8be7-44e7-86b1-2193d7f84ab3","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"10984b7a-39ec-44bf-9fc1-82048cf1f7f6","path":"sprites/sprStgLy1bBattlefieldM/sprStgLy1bBattlefieldM.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"d0a8cae8-4c53-4c7f-9273-324a5f978626","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c2619f19-0078-4c5f-90c5-2e3d309eae09","path":"sprites/sprStgLy1bBattlefieldM/sprStgLy1bBattlefieldM.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"953ffe6a-7fdd-4f4b-88c0-ec51634e8316","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0c66ca9c-92b9-4b03-8b02-2ec92cd64f98","path":"sprites/sprStgLy1bBattlefieldM/sprStgLy1bBattlefieldM.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"5ec10bcc-da90-4868-9c98-2b0d4e5a3118","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"133342a9-529d-4f21-bf08-939855ea5174","path":"sprites/sprStgLy1bBattlefieldM/sprStgLy1bBattlefieldM.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -77,9 +77,33 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"4b68ae66-7153-4a2c-9d6b-e571d8be4834","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"a55b46e2-d44e-4b2c-b642-774f07194791","tags":[],"resourceType":"GMImageLayer",},
   ],
-  "nineSlice": null,
+  "nineSlice": {
+    "left": 0,
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "guideColour": [
+      4294902015,
+      4294902015,
+      4294902015,
+      4294902015,
+    ],
+    "highlightColour": 1728023040,
+    "highlightStyle": 0,
+    "enabled": false,
+    "tileMode": [
+      0,
+      0,
+      0,
+      0,
+      0,
+    ],
+    "resourceVersion": "1.0",
+    "loadedVersion": null,
+    "resourceType": "GMNineSliceData",
+  },
   "parent": {
     "name": "Battlefield (Melee)",
     "path": "folders/Sprites/Stages/Battlefield (Melee).yy",
