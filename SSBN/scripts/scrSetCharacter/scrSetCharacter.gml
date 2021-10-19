@@ -27,6 +27,7 @@ function scrSetCharacter()
 	SpriteIdle = scrGetSpriteIndex("Idle");
 	SpriteDuck = scrGetSpriteIndex("Duck");
 	SpriteSkid = scrGetSpriteIndex("Skid");
+	SpriteTrance = scrGetSpriteIndex("Trance");
 	
 	#endregion
 	

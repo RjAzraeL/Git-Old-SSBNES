@@ -154,35 +154,40 @@ if (Control.LeftButtonPressedActive or Control.RightButtonPressedActive)
 #endregion
 
 #region Jump
-if (JumpAvailable > 0 and Control.JumpButtonActive)
+if (JumpAvailable > 0 and Control.JumpButtonActive and CooldownJump == 0 and CooldowFall == 0)
 {
-	scrSound(SfxJump)
-	JumpAvailable--;
-	JumpStop = false;
-	if (ActualJumpSprite == 0)
+	if (VerticalMovement >= 0)
 	{
-		VerticalMovement = -JumpValue;
-	}
-	else
-	{
-		VerticalMovement = -(JumpValue - ( ActualJumpSprite * (JumpValue/10) ));
-	}
-	ActualJumpSprite++;
-	AnimacionSaltoTerminada = false;
-	if (HorizontalDirection != 0)
-	{
-		ScaleXSprite = sign(HorizontalDirection);
+		SaveStopJump = false;
+		if (place_meeting(x , y + 1 , parCollision) and !place_meeting(x , y , parCollision))
+		{
+			CooldownJump = 8;
+		}
+		else
+		{
+			scrJump(HorizontalDirection);
+		}
 	}
 }
+if (CooldownJump > 0)
+{
+	CooldownJump--;
+	if (CooldownJump == 1)
+	{
+		scrJump(HorizontalDirection);
+	}
+}
+
 if (Control.JumpButtonReleaseActive)
 {
+	SaveStopJump = true;
 	if (!JumpStop)
 	{
 		JumpStop = true;
 	}
 }
 
-if (JumpStop)
+if (JumpStop or SaveStopJump and CooldownJump == 0 and CooldowFall == 0)
 {
 	if (VerticalMovement < 0)
 	{
@@ -218,9 +223,18 @@ if (!place_meeting(x , y , objBlockTransferable) and VerticalMovement >= 0 and !
 			JumpAvailable = Jumps;
 			ActualJumpSprite = 0;
 			VerticalMovementLimitExtra = 0;
+			if (!FallReady)
+			{
+				FallReady = true;
+				CooldowFall = 8;	
+			}
 		}
 		VerticalMovement = 0;
 	}
+}
+if (!place_meeting(x , y + 1 , parCollision))
+{
+	FallReady = false;
 }
 
 if (place_meeting(x , y + VerticalMovement , parSolid))
@@ -234,6 +248,11 @@ if (place_meeting(x , y + VerticalMovement , parSolid))
 		JumpAvailable = Jumps;
 		ActualJumpSprite = 0;
 		VerticalMovementLimitExtra = 0;
+		if (!FallReady)
+		{
+			FallReady = true;
+			CooldowFall = 8;	
+		}
 	}
 	VerticalMovement = 0;
 }
@@ -251,37 +270,47 @@ if (place_meeting(x + HorizontalMovement , y  + VerticalMovement, parSolid))
 
 #endregion
 
+#region Cooldown Fall Colission
+if (CooldowFall > 0)
+{
+	CooldowFall--;
+}
+#endregion
+
 #region Duck
-if (Control.DownButtonReleasedActive and Duck)
+if (CooldownJump == 0 and CooldowFall == 0)
 {
-	DuckTime = 15;
-}
-if (DuckTime > 0)
-{
-	DuckTime--;
-}
-if (Control.DownButtonActive and place_meeting(x , y + 1 , parCollision))
-{
-	if (DuckTime == 0)
+	if (Control.DownButtonReleasedActive and Duck)
 	{
-		Duck = true;
-		mask_index = MaskDuck;
+		DuckTime = 15;
+	}
+	if (DuckTime > 0)
+	{
+		DuckTime--;
+	}
+	if (Control.DownButtonActive and place_meeting(x , y + 1 , parCollision))
+	{
+		if (DuckTime == 0)
+		{
+			Duck = true;
+			mask_index = MaskDuck;
+		}
+		else
+		{
+			if place_meeting(x,y + 1, objBlockTransferable)
+
+	        {
+	            y+=2;
+	            DuckTime = 0;
+	        }
+		}
 	}
 	else
 	{
-		if place_meeting(x,y + 1, objBlockTransferable)
-
-        {
-            y+=2;
-            DuckTime = 0;
-        }
+		Duck = false;
+		DuckFall = false;
+		mask_index = MaskNormal;
 	}
-}
-else
-{
-	Duck = false;
-	DuckFall = false;
-	mask_index = MaskNormal;
 }
 #endregion
 
@@ -297,32 +326,39 @@ if (place_meeting(x , y + 1 , parCollision) and !place_meeting(x , y , parCollis
 {
 	if (!Duck)
 	{
-		if (HorizontalMovement == 0)
+		if (CooldownJump == 0 and CooldowFall == 0)
 		{
-			sprite_index = SpriteIdle;
-		}
-		else
-		{
-			if (!Skid)
+			if (HorizontalMovement == 0)
 			{
-				if (!RunActive)
-				{
-					sprite_index = SpriteWalk;
-				}
-				else
-				{
-					sprite_index = SpriteRun;
-				}
+				sprite_index = SpriteIdle;
 			}
 			else
 			{
-				sprite_index = SpriteSkid;
+				if (!Skid)
+				{
+					if (!RunActive)
+					{
+						sprite_index = SpriteWalk;
+					}
+					else
+					{
+						sprite_index = SpriteRun;
+					}
+				}
+				else
+				{
+					sprite_index = SpriteSkid;
+				}
 			}
+		}
+		else
+		{
+			sprite_index = SpriteDuck;
 		}
 	}
 	else
 	{
-		sprite_index = SpriteDuck;
+		sprite_index = SpriteTrance;
 	}
 }
 else
