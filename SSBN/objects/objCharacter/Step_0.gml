@@ -61,11 +61,11 @@ else
 
 if (HorizontalDirection != 0)
 {
-	HorizontalMovement = HorizontalDirection * AcelerationValue;
+	HorizontalMovement = HorizontalDirection * (AcelerationValue);
 }
 else
 {
-	HorizontalMovement = AcelerationValue * ScaleX;
+	HorizontalMovement = (AcelerationValue) * ScaleX;
 }
 
 if (HorizontalDirection != 0)
@@ -146,6 +146,7 @@ if (JumpAvailable > 0 and Control.JumpButtonActive)
 {
 	scrSound(SfxJump)
 	JumpAvailable--;
+	JumpStop = false;
 	if (ActualJumpSprite == 0)
 	{
 		VerticalMovement = -JumpValue;
@@ -161,7 +162,21 @@ if (JumpAvailable > 0 and Control.JumpButtonActive)
 		ScaleXSprite = sign(HorizontalDirection);
 	}
 }
+if (Control.JumpButtonReleaseActive)
+{
+	if (!JumpStop)
+	{
+		JumpStop = true;
+	}
+}
 
+if (JumpStop)
+{
+	if (VerticalMovement < 0)
+	{
+		VerticalMovement += JumpStopSpeed;
+	}
+}
 if (JumpTime > 0)
 {
 	JumpTime--;
@@ -252,7 +267,7 @@ else
 {
 	Duck = false;
 	DuckFall = false;
-	mask_index = SpriteDuck;
+	mask_index = MaskNormal;
 }
 #endregion
 

@@ -21,7 +21,7 @@ function scrDataCharacter()
 	/*LimitFall*/6,
 	/*Weight*/2.9,
 	/*Friction*/.020,
-	/*Mask Duck*/sprChSandbagMask,
+	/*Mask Duck*/sprChSandbagMaskDuck,
 	/*Mask Normal*/sprChSandbagMask,
 	/*Sfx Skid*/sfxKirbySkid,
 	/*Sfx Jump*/sfxKirbyJump
@@ -43,7 +43,7 @@ function scrDataCharacter()
 	/*SpeedFall*/1.9,
 	/*JumpValue*/5.5,
 	/*Gravity*/.3,
-	/*GravityFall*/.1,
+	/*GravityFall*/.095,
 	/*LimitFall*/6,
 	/*Weight*/4,
 	/*Friction*/0.06,
@@ -69,12 +69,12 @@ function scrDataCharacter()
 	/*SpeedFall*/1.9,
 	/*JumpValue*/5.5,
 	/*Gravity*/.3,
-	/*GravityFall*/.1,
+	/*GravityFall*/.08,
 	/*LimitFall*/6,
 	/*Weight*/2.9,
 	/*Friction*/0.09,
-	/*Mask Duck*/SprChKirbyMaskDuck,
-	/*Mask Normal*/SprChKirbyMask,
+	/*Mask Duck*/sprChKirbyMaskDuck,
+	/*Mask Normal*/sprChKirbyMask,
 	/*Sfx Skid*/sfxKirbySkid,
 	/*Sfx Jump*/sfxKirbyJump
 	)	

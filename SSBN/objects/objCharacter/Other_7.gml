@@ -4,8 +4,8 @@ if (sprite_index = sprChMarioJump2 and !AnimacionSaltoTerminada)
 	AnimacionSaltoTerminada = true;
 	sprite_index = sprChMarioJump;
 }
-if (sprite_index = SprChKirbyFalling)
+if (sprite_index = sprChKirbyFalling)
 {
-	sprite_index = SprChKirbyFalling2;
+	sprite_index = sprChKirbyFalling2;
 }
 #endregion

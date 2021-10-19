@@ -1,4 +1,4 @@
-#region Restar
+#region Restart
 if (y > room_height)
 {
 	x = OriginX;

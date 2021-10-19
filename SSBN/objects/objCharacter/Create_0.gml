@@ -55,6 +55,7 @@ image_speed = .25;
 Angle = 0;
 Jumps = 5;
 //Aceleration = .2;
+FallAceleration = .01;
 Aceleration = .1;
 AcelerationValue = 0;
 SpeedWalk = 0.85;
@@ -78,7 +79,8 @@ ActualJumpSprite = 0;
 Duck = false;
 DuckFall = false;
 DuckTime = 0;
-
+JumpStopSpeed = .5;
+JumpStop = false;
 OriginX = x;
 OriginY = y;
 
@@ -92,21 +94,19 @@ Skid = false;
 
 
 #region Sprites
-SpriteWalk = SprChKirbyWalk;
-SpriteRun = SprChKirbyRun;
-SpriteJump = SprChKirbyJump;
-SpriteJump2 = SprChKirbyJump2;
-SpriteFall = SprChKirbyFalling;
-SpriteIdle = SprChKirbyIdle;
-SpriteDuck = SprChKirbyDuck;
-SpriteSkid = SprChKirbySkid;
+SpriteWalk = sprChKirbyWalk;
+SpriteRun = sprChKirbyRun;
+SpriteJump = sprChKirbyJump;
+SpriteJump2 = sprChKirbyJump2;
+SpriteFall = sprChKirbyFalling;
+SpriteIdle = sprChKirbyIdle;
+SpriteDuck = sprChKirbyDuck;
+SpriteSkid = sprChKirbySkid;
 
 #endregion
 
 
 #region Mask
-MaskDuck = SprChKirbyMaskDuck;
-MaskNormal = SprChKirbyMask;
 #endregion
 
 scrSetCharacter();
