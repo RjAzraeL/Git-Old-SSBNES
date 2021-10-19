@@ -7,15 +7,15 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 3,
-  "bbox_right": 18,
-  "bbox_top": 16,
-  "bbox_bottom": 27,
+  "bbox_left": 8,
+  "bbox_right": 23,
+  "bbox_top": 22,
+  "bbox_bottom": 33,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 23,
-  "height": 28,
+  "width": 32,
+  "height": 34,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"38c035a4-b14e-4625-b780-22050e199ef2","path":"sprites/sprChMarioMaskDuck/sprChMarioMaskDuck.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"38c035a4-b14e-4625-b780-22050e199ef2","path":"sprites/sprChMarioMaskDuck/sprChMarioMaskDuck.yy",},"LayerId":{"name":"33be69c4-f4b6-4f37-9e21-67e1748fdee8","path":"sprites/sprChMarioMaskDuck/sprChMarioMaskDuck.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprChMarioMaskDuck","path":"sprites/sprChMarioMaskDuck/sprChMarioMaskDuck.yy",},"resourceVersion":"1.0","name":"38c035a4-b14e-4625-b780-22050e199ef2","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"4b19be4d-e9bf-4707-917f-04f4d35e14a5","path":"sprites/sprChMarioMaskDuck/sprChMarioMaskDuck.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"4b19be4d-e9bf-4707-917f-04f4d35e14a5","path":"sprites/sprChMarioMaskDuck/sprChMarioMaskDuck.yy",},"LayerId":{"name":"a65c09e7-2f6b-423a-b931-a3fbbdff22e3","path":"sprites/sprChMarioMaskDuck/sprChMarioMaskDuck.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprChMarioMaskDuck","path":"sprites/sprChMarioMaskDuck/sprChMarioMaskDuck.yy",},"resourceVersion":"1.0","name":"4b19be4d-e9bf-4707-917f-04f4d35e14a5","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"sprChMarioMaskDuck","path":"sprites/sprChMarioMaskDuck/sprChMarioMaskDuck.yy",},
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"48ed3893-922d-4658-b4a2-2a8c904e3946","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"38c035a4-b14e-4625-b780-22050e199ef2","path":"sprites/sprChMarioMaskDuck/sprChMarioMaskDuck.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"41ba40ab-978f-4477-8a23-f70e437d6d73","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4b19be4d-e9bf-4707-917f-04f4d35e14a5","path":"sprites/sprChMarioMaskDuck/sprChMarioMaskDuck.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -54,8 +54,8 @@
     "backdropHeight": 768,
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
-    "xorigin": 11,
-    "yorigin": 14,
+    "xorigin": 16,
+    "yorigin": 17,
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprChMarioMaskDuck","path":"sprites/sprChMarioMaskDuck/sprChMarioMaskDuck.yy",},
@@ -65,7 +65,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"33be69c4-f4b6-4f37-9e21-67e1748fdee8","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"a65c09e7-2f6b-423a-b931-a3fbbdff22e3","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {

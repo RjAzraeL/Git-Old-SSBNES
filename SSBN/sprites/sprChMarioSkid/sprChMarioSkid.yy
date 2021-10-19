@@ -7,15 +7,15 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 0,
-  "bbox_right": 21,
-  "bbox_top": 0,
-  "bbox_bottom": 25,
+  "bbox_left": 4,
+  "bbox_right": 26,
+  "bbox_top": 7,
+  "bbox_bottom": 33,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 22,
-  "height": 26,
+  "width": 32,
+  "height": 34,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"7bb0d5f7-eb83-4963-a933-6bbf50fffd85","path":"sprites/sprChMarioSkid/sprChMarioSkid.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"7bb0d5f7-eb83-4963-a933-6bbf50fffd85","path":"sprites/sprChMarioSkid/sprChMarioSkid.yy",},"LayerId":{"name":"17c85121-33c1-45ec-9b03-5e3a23db3093","path":"sprites/sprChMarioSkid/sprChMarioSkid.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprChMarioSkid","path":"sprites/sprChMarioSkid/sprChMarioSkid.yy",},"resourceVersion":"1.0","name":"7bb0d5f7-eb83-4963-a933-6bbf50fffd85","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"49c6667b-7237-4c61-b361-d3cdfcdbc9c0","path":"sprites/sprChMarioSkid/sprChMarioSkid.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"49c6667b-7237-4c61-b361-d3cdfcdbc9c0","path":"sprites/sprChMarioSkid/sprChMarioSkid.yy",},"LayerId":{"name":"800a2036-45e2-45f8-b3c8-616f9f18de9f","path":"sprites/sprChMarioSkid/sprChMarioSkid.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprChMarioSkid","path":"sprites/sprChMarioSkid/sprChMarioSkid.yy",},"resourceVersion":"1.0","name":"49c6667b-7237-4c61-b361-d3cdfcdbc9c0","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"sprChMarioSkid","path":"sprites/sprChMarioSkid/sprChMarioSkid.yy",},
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"ba2ac7e2-3960-4d57-b60e-9ea5d2fe0cad","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7bb0d5f7-eb83-4963-a933-6bbf50fffd85","path":"sprites/sprChMarioSkid/sprChMarioSkid.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"9e65348a-026b-4694-bcc7-057714a1f1cd","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"49c6667b-7237-4c61-b361-d3cdfcdbc9c0","path":"sprites/sprChMarioSkid/sprChMarioSkid.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -54,8 +54,8 @@
     "backdropHeight": 768,
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
-    "xorigin": 11,
-    "yorigin": 13,
+    "xorigin": 16,
+    "yorigin": 17,
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprChMarioSkid","path":"sprites/sprChMarioSkid/sprChMarioSkid.yy",},
@@ -65,7 +65,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"17c85121-33c1-45ec-9b03-5e3a23db3093","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"800a2036-45e2-45f8-b3c8-616f9f18de9f","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
