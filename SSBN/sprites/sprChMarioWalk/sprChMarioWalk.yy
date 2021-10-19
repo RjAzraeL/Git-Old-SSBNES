@@ -2,14 +2,14 @@
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
-  "origin": 9,
+  "origin": 4,
   "preMultiplyAlpha": false,
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 4,
-  "bbox_right": 28,
-  "bbox_top": 5,
+  "bbox_left": 8,
+  "bbox_right": 23,
+  "bbox_top": 3,
   "bbox_bottom": 33,
   "HTile": false,
   "VTile": false,
@@ -24,18 +24,18 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"e671dc39-d469-41f0-94e4-2d094624e0a7","path":"sprites/sprChMarioWalk/sprChMarioWalk.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"e671dc39-d469-41f0-94e4-2d094624e0a7","path":"sprites/sprChMarioWalk/sprChMarioWalk.yy",},"LayerId":{"name":"374151a9-e000-403e-8734-bc53e3b5f606","path":"sprites/sprChMarioWalk/sprChMarioWalk.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprChMarioWalk","path":"sprites/sprChMarioWalk/sprChMarioWalk.yy",},"resourceVersion":"1.0","name":"e671dc39-d469-41f0-94e4-2d094624e0a7","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"a713accd-68c0-48f7-994f-bbc871a097ea","path":"sprites/sprChMarioWalk/sprChMarioWalk.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"a713accd-68c0-48f7-994f-bbc871a097ea","path":"sprites/sprChMarioWalk/sprChMarioWalk.yy",},"LayerId":{"name":"374151a9-e000-403e-8734-bc53e3b5f606","path":"sprites/sprChMarioWalk/sprChMarioWalk.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprChMarioWalk","path":"sprites/sprChMarioWalk/sprChMarioWalk.yy",},"resourceVersion":"1.0","name":"a713accd-68c0-48f7-994f-bbc871a097ea","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"c5d3c934-2775-44a5-b95e-06260d2f81fc","path":"sprites/sprChMarioWalk/sprChMarioWalk.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"c5d3c934-2775-44a5-b95e-06260d2f81fc","path":"sprites/sprChMarioWalk/sprChMarioWalk.yy",},"LayerId":{"name":"374151a9-e000-403e-8734-bc53e3b5f606","path":"sprites/sprChMarioWalk/sprChMarioWalk.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprChMarioWalk","path":"sprites/sprChMarioWalk/sprChMarioWalk.yy",},"resourceVersion":"1.0","name":"c5d3c934-2775-44a5-b95e-06260d2f81fc","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"7aa6305f-b3ef-4100-9e96-dacb063467c7","path":"sprites/sprChMarioWalk/sprChMarioWalk.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"7aa6305f-b3ef-4100-9e96-dacb063467c7","path":"sprites/sprChMarioWalk/sprChMarioWalk.yy",},"LayerId":{"name":"374151a9-e000-403e-8734-bc53e3b5f606","path":"sprites/sprChMarioWalk/sprChMarioWalk.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprChMarioWalk","path":"sprites/sprChMarioWalk/sprChMarioWalk.yy",},"resourceVersion":"1.0","name":"7aa6305f-b3ef-4100-9e96-dacb063467c7","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"24c2860c-5140-4f4d-9e9b-f77f8abcbf76","path":"sprites/sprChMarioWalk/sprChMarioWalk.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"24c2860c-5140-4f4d-9e9b-f77f8abcbf76","path":"sprites/sprChMarioWalk/sprChMarioWalk.yy",},"LayerId":{"name":"5ed40bab-5c55-4e85-9658-8454a4469e30","path":"sprites/sprChMarioWalk/sprChMarioWalk.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprChMarioWalk","path":"sprites/sprChMarioWalk/sprChMarioWalk.yy",},"resourceVersion":"1.0","name":"24c2860c-5140-4f4d-9e9b-f77f8abcbf76","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"bbaf450c-bb94-4429-9b60-7ac8bc479d59","path":"sprites/sprChMarioWalk/sprChMarioWalk.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"bbaf450c-bb94-4429-9b60-7ac8bc479d59","path":"sprites/sprChMarioWalk/sprChMarioWalk.yy",},"LayerId":{"name":"5ed40bab-5c55-4e85-9658-8454a4469e30","path":"sprites/sprChMarioWalk/sprChMarioWalk.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprChMarioWalk","path":"sprites/sprChMarioWalk/sprChMarioWalk.yy",},"resourceVersion":"1.0","name":"bbaf450c-bb94-4429-9b60-7ac8bc479d59","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"eaffe6ed-3192-4d24-86d7-b4e9a36efd5f","path":"sprites/sprChMarioWalk/sprChMarioWalk.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"eaffe6ed-3192-4d24-86d7-b4e9a36efd5f","path":"sprites/sprChMarioWalk/sprChMarioWalk.yy",},"LayerId":{"name":"5ed40bab-5c55-4e85-9658-8454a4469e30","path":"sprites/sprChMarioWalk/sprChMarioWalk.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprChMarioWalk","path":"sprites/sprChMarioWalk/sprChMarioWalk.yy",},"resourceVersion":"1.0","name":"eaffe6ed-3192-4d24-86d7-b4e9a36efd5f","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"3c79736a-48c5-4148-89a5-2c21f093adc4","path":"sprites/sprChMarioWalk/sprChMarioWalk.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"3c79736a-48c5-4148-89a5-2c21f093adc4","path":"sprites/sprChMarioWalk/sprChMarioWalk.yy",},"LayerId":{"name":"5ed40bab-5c55-4e85-9658-8454a4469e30","path":"sprites/sprChMarioWalk/sprChMarioWalk.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprChMarioWalk","path":"sprites/sprChMarioWalk/sprChMarioWalk.yy",},"resourceVersion":"1.0","name":"3c79736a-48c5-4148-89a5-2c21f093adc4","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"sprChMarioWalk","path":"sprites/sprChMarioWalk/sprChMarioWalk.yy",},
@@ -50,10 +50,10 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"38e67b16-dfdb-46f1-b1a8-5709966b3ecc","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e671dc39-d469-41f0-94e4-2d094624e0a7","path":"sprites/sprChMarioWalk/sprChMarioWalk.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"77fefcc9-e8d7-4aa5-afde-6a5f3537b25f","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a713accd-68c0-48f7-994f-bbc871a097ea","path":"sprites/sprChMarioWalk/sprChMarioWalk.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"1655a3d1-e108-4720-9bf7-3ba7a9842581","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c5d3c934-2775-44a5-b95e-06260d2f81fc","path":"sprites/sprChMarioWalk/sprChMarioWalk.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"d5bbd337-9b45-42d0-b5c5-14b6fa09ce33","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7aa6305f-b3ef-4100-9e96-dacb063467c7","path":"sprites/sprChMarioWalk/sprChMarioWalk.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"9dac0174-5b6a-4dfc-9419-7b101e896609","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"24c2860c-5140-4f4d-9e9b-f77f8abcbf76","path":"sprites/sprChMarioWalk/sprChMarioWalk.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"67347297-0540-49cf-a82e-d61cb20c889f","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"bbaf450c-bb94-4429-9b60-7ac8bc479d59","path":"sprites/sprChMarioWalk/sprChMarioWalk.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"7b6eb173-cff4-473c-9353-957130c664a7","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"eaffe6ed-3192-4d24-86d7-b4e9a36efd5f","path":"sprites/sprChMarioWalk/sprChMarioWalk.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"18e1d36a-a9ca-406e-a386-b19c8be8a5a4","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3c79736a-48c5-4148-89a5-2c21f093adc4","path":"sprites/sprChMarioWalk/sprChMarioWalk.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -66,8 +66,8 @@
     "backdropHeight": 768,
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
-    "xorigin": 7,
-    "yorigin": 16,
+    "xorigin": 16,
+    "yorigin": 17,
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprChMarioWalk","path":"sprites/sprChMarioWalk/sprChMarioWalk.yy",},
@@ -77,7 +77,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"374151a9-e000-403e-8734-bc53e3b5f606","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"5ed40bab-5c55-4e85-9658-8454a4469e30","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {

@@ -9,7 +9,7 @@
   "swfPrecision": 2.525,
   "bbox_left": 4,
   "bbox_right": 26,
-  "bbox_top": 7,
+  "bbox_top": 8,
   "bbox_bottom": 33,
   "HTile": false,
   "VTile": false,
@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"49c6667b-7237-4c61-b361-d3cdfcdbc9c0","path":"sprites/sprChMarioSkid/sprChMarioSkid.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"49c6667b-7237-4c61-b361-d3cdfcdbc9c0","path":"sprites/sprChMarioSkid/sprChMarioSkid.yy",},"LayerId":{"name":"800a2036-45e2-45f8-b3c8-616f9f18de9f","path":"sprites/sprChMarioSkid/sprChMarioSkid.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprChMarioSkid","path":"sprites/sprChMarioSkid/sprChMarioSkid.yy",},"resourceVersion":"1.0","name":"49c6667b-7237-4c61-b361-d3cdfcdbc9c0","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"0ee38e65-98a4-4be8-a4e8-070e4c56d916","path":"sprites/sprChMarioSkid/sprChMarioSkid.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"0ee38e65-98a4-4be8-a4e8-070e4c56d916","path":"sprites/sprChMarioSkid/sprChMarioSkid.yy",},"LayerId":{"name":"b85c4366-c86e-48aa-984c-145540476919","path":"sprites/sprChMarioSkid/sprChMarioSkid.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprChMarioSkid","path":"sprites/sprChMarioSkid/sprChMarioSkid.yy",},"resourceVersion":"1.0","name":"0ee38e65-98a4-4be8-a4e8-070e4c56d916","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"sprChMarioSkid","path":"sprites/sprChMarioSkid/sprChMarioSkid.yy",},
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"9e65348a-026b-4694-bcc7-057714a1f1cd","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"49c6667b-7237-4c61-b361-d3cdfcdbc9c0","path":"sprites/sprChMarioSkid/sprChMarioSkid.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"d370bb2b-d766-432b-b257-c019f0854932","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0ee38e65-98a4-4be8-a4e8-070e4c56d916","path":"sprites/sprChMarioSkid/sprChMarioSkid.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -65,7 +65,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"800a2036-45e2-45f8-b3c8-616f9f18de9f","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"b85c4366-c86e-48aa-984c-145540476919","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
