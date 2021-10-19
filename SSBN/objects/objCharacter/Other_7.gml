@@ -8,4 +8,9 @@ if (sprite_index = sprChKirbyFalling)
 {
 	sprite_index = sprChKirbyFalling2;
 }
+if (sprite_index = SpriteDuck)
+{
+	image_index = image_number-1;
+	image_speed = 0;
+}
 #endregion

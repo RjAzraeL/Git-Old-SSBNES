@@ -57,6 +57,7 @@ Jumps = 5;
 GravityFallDownActive = 0;
 VerticalMovementLimitExtra = 0;
 CooldownJump = 0;
+CooldownSwap = 0;
 SaveStopJump = false;
 CooldowFall = 0;
 FallReady = false;

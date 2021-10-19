@@ -52,7 +52,7 @@ function scrDataCharacter()
 	/*Mask Normal*/sprChMarioMask,
 	/*Sfx Skid*/sfxMarioSkid,
 	/*Sfx Jump*/sfxMarioJump,
-	/*Vertical Limit Porcentage*/35.3
+	/*Vertical Limit Porcentage*/20
 	)	
 	);
 	

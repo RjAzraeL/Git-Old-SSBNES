@@ -22,7 +22,7 @@ else
 
 #region Horizontal Movement
 var HorizontalDirection = 0;
-if (!Duck)
+if (!Duck and CooldownSwap == 0)
 {
 	HorizontalDirection = Control.RightButtonActive - Control.LeftButtonActive;
 }
@@ -104,7 +104,7 @@ if (VerticalMovement >= VerticalMovementLimit + VerticalMovementLimitExtra)
 }
 
 #region Down Fast
-if (Control.DownButtonPressedActive)
+if (Control.DownButtonPressedActive and CooldowFall == 0 and CooldownJump == 0)
 {
 	if (VerticalMovement != 0)
 	{
@@ -118,6 +118,10 @@ if (Control.DownButtonPressedActive)
 
 #region Run
 
+if (CooldownSwap > 0)
+{
+	CooldownSwap--;
+}
 if (RunTime > 0)
 {
 	RunTime--;
@@ -127,8 +131,13 @@ if (Running > 0)
 	Running--;
 }
 
-if (Control.LeftButtonPressedActive or Control.RightButtonPressedActive)
+
+if (Control.LeftButtonPressedActive or Control.RightButtonPressedActive and CooldownSwap == 0)
 {
+	if ((ScaleX > 0 and Control.LeftButtonPressedActive or (ScaleX < 0 and Control.RightButtonPressedActive)) and RunActive and place_meeting(x , y + 1 , parCollision))
+	{
+		CooldownSwap = 16;
+	}
 	RunValue++;
 	if (Running == 0)
 	{
@@ -292,8 +301,11 @@ if (CooldownJump == 0 and CooldowFall == 0)
 	{
 		if (DuckTime == 0)
 		{
-			Duck = true;
-			mask_index = MaskDuck;
+			if (!RunActive)
+			{
+				Duck = true;
+				mask_index = MaskDuck;
+			}
 		}
 		else
 		{
@@ -326,6 +338,7 @@ if (place_meeting(x , y + 1 , parCollision) and !place_meeting(x , y , parCollis
 {
 	if (!Duck)
 	{
+		image_speed = .25;
 		if (CooldownJump == 0 and CooldowFall == 0)
 		{
 			if (HorizontalMovement == 0)
@@ -334,35 +347,46 @@ if (place_meeting(x , y + 1 , parCollision) and !place_meeting(x , y , parCollis
 			}
 			else
 			{
-				if (!Skid)
+				if (CooldownSwap == 0)
 				{
-					if (!RunActive)
+					image_speed = 0.25;
+					if (!Skid)
 					{
-						sprite_index = SpriteWalk;
+						if (!RunActive)
+						{
+							sprite_index = SpriteWalk;
+						}
+						else
+						{
+							sprite_index = SpriteRun;
+						}
 					}
 					else
 					{
-						sprite_index = SpriteRun;
+						sprite_index = SpriteSkid;
 					}
 				}
 				else
 				{
-					sprite_index = SpriteSkid;
+					image_speed = 0.1;
+					sprite_index = SpriteTranceRun;
 				}
 			}
 		}
 		else
 		{
-			sprite_index = SpriteDuck;
+			sprite_index = SpriteTrance;
 		}
 	}
 	else
 	{
-		sprite_index = SpriteTrance;
+		image_speed = .5;
+		sprite_index = SpriteDuck;
 	}
 }
 else
 {
+	image_speed = .25;
 	if (ActualJumpSprite == 0)
 	{
 		sprite_index = SpriteFall;
