@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndOst07Battlefield_b.ogg",
-  "duration": 8.0,
+  "duration": 75.25,
   "parent": {
     "name": "OST",
     "path": "folders/Sounds/OST.yy",

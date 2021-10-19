@@ -24,7 +24,8 @@ function scrDataCharacter()
 	/*Mask Duck*/sprChSandbagMaskDuck,
 	/*Mask Normal*/sprChSandbagMask,
 	/*Sfx Skid*/sfxKirbySkid,
-	/*Sfx Jump*/sfxKirbyJump
+	/*Sfx Jump*/sfxKirbyJump,
+	/*Vertical Limit Porcentage*/35
 	)	
 	);
 	
@@ -50,7 +51,8 @@ function scrDataCharacter()
 	/*Mask Duck*/sprChMarioMaskDuck,
 	/*Mask Normal*/sprChMarioMask,
 	/*Sfx Skid*/sfxMarioSkid,
-	/*Sfx Jump*/sfxMarioJump
+	/*Sfx Jump*/sfxMarioJump,
+	/*Vertical Limit Porcentage*/35.3
 	)	
 	);
 	
@@ -76,7 +78,8 @@ function scrDataCharacter()
 	/*Mask Duck*/sprChKirbyMaskDuck,
 	/*Mask Normal*/sprChKirbyMask,
 	/*Sfx Skid*/sfxKirbySkid,
-	/*Sfx Jump*/sfxKirbyJump
+	/*Sfx Jump*/sfxKirbyJump,
+	/*Vertical Limit Porcentage*/25
 	)	
 	);
 }
@@ -103,8 +106,9 @@ function scrMapCharacter(List)
 	Paquete[? "Friction"] = ds_list_find_value(List , 15);
 	Paquete[? "Mask Duck"] = ds_list_find_value(List , 16);
 	Paquete[? "Mask Normal"] = ds_list_find_value(List , 17);
-	Paquete[? "Sfx Skid"] = ds_list_find_value(List , 18);	
-	Paquete[? "Sfx Jump"] = ds_list_find_value(List , 19);	
+	Paquete[? "Sfx Skid"] = ds_list_find_value(List , 18);
+	Paquete[? "Sfx Jump"] = ds_list_find_value(List , 19);
+	Paquete[? "Vertical Limit Porcentage"] = ds_list_find_value(List , 20);
 	
 	ds_list_add(Control.CharacterList , Paquete);
 }

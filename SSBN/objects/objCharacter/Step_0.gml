@@ -95,13 +95,25 @@ if (VerticalMovement < 0)
 }
 else
 {
-	VerticalMovement += GravityFall;
+	VerticalMovement += GravityFall + GravityFallDownActive;
 }
 
-if (VerticalMovement >= VerticalMovementLimit)
+if (VerticalMovement >= VerticalMovementLimit + VerticalMovementLimitExtra)
 {
-	VerticalMovement = VerticalMovementLimit;
+	VerticalMovement = VerticalMovementLimit + VerticalMovementLimitExtra;
 }
+
+#region Down Fast
+if (Control.DownButtonPressedActive)
+{
+	if (VerticalMovement != 0)
+	{
+		VerticalMovementLimitExtra = VerticalMovementLimitValue;
+		VerticalMovement = VerticalMovementLimit + VerticalMovementLimitExtra;
+	}
+}
+#endregion
+
 #endregion
 
 #region Run
@@ -205,6 +217,7 @@ if (!place_meeting(x , y , objBlockTransferable) and VerticalMovement >= 0 and !
 		{
 			JumpAvailable = Jumps;
 			ActualJumpSprite = 0;
+			VerticalMovementLimitExtra = 0;
 		}
 		VerticalMovement = 0;
 	}
@@ -220,6 +233,7 @@ if (place_meeting(x , y + VerticalMovement , parSolid))
 	{
 		JumpAvailable = Jumps;
 		ActualJumpSprite = 0;
+		VerticalMovementLimitExtra = 0;
 	}
 	VerticalMovement = 0;
 }

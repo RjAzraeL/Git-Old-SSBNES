@@ -14,7 +14,8 @@ function scrSetCharacter()
 	Weigth = scrGetValueCharacter("Weigth");
 	Friction = scrGetValueCharacter("Friction");
 	GravityFall = scrGetValueCharacter("Gravity Fall");
-
+	VerticalLimitPorcentage = scrGetValueCharacter("Vertical Limit Porcentage");
+	VerticalMovementLimitValue = ( VerticalMovementLimit * (VerticalLimitPorcentage/100) );
 	#region Sprites
 	
 	

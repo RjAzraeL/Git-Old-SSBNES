@@ -54,6 +54,9 @@ SpriteSkid = sprChMarioSkid;
 image_speed = .25;
 Angle = 0;
 Jumps = 5;
+GravityFallDownActive = 0;
+VerticalMovementLimitExtra = 0;
+
 //Aceleration = .2;
 FallAceleration = .01;
 Aceleration = .1;
@@ -83,7 +86,7 @@ JumpStopSpeed = .5;
 JumpStop = false;
 OriginX = x;
 OriginY = y;
-
+GravityFallPorcentage = 0;
 LastDirection = 1;
 PreRunActive = false;
 RunActive = false;
