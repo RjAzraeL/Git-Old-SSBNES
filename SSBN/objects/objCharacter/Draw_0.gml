@@ -10,5 +10,5 @@ if (Control.ShowMask)
 	draw_sprite_ext(mask_index , 0 , x , y , ScaleXSprite , ScaleY , Angle , c_white , 0.75);
 }
 
-draw_text(160 , 64 , TranceAceleration);
+//draw_text(160 , 64 , TranceAcelerationValue);
 #endregion

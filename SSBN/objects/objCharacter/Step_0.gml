@@ -34,30 +34,37 @@ if (CooldownSwap == 0)
 		Skid = false;
 		if (AcelerationValue < VarSpeed)
 		{
-			TranceAceleration += (Aceleration * HorizontalDirection);
+			if (CooldownSwap == 0)
+			{
+				TranceAceleration += (Aceleration * HorizontalDirection);
+			}
 			AcelerationValue += Aceleration;
 		}
 		else
 		{
+			if (CooldownSwap == 0)
+			{
+				TranceAceleration = VarSpeed * HorizontalDirection;
+			}
 			AcelerationValue = VarSpeed;
 		}
 	}
 	else
 	{
-		TranceAceleration = lerp(TranceAceleration , 0 , .5);
+		TranceAceleration = lerp(TranceAceleration , 0 , Friction);
 		if (AcelerationValue > 0)
 		{
 			if (place_meeting(x , y + 1 , parCollision) and !place_meeting(x , y , parCollision))
 			{
 				if (RunActive) and (!Skid)
 				{
+					SoundSkid = 15;
 					Skid = true;
-					scrSound(SfxSkid)
 				}
 			}
 			AcelerationValue -= Friction;
 		}
-			else
+		else
 		{
 			AcelerationValue = 0;	
 		}
@@ -130,6 +137,15 @@ if (Control.DownButtonPressedActive and CooldowFall == 0 and CooldownJump == 0)
 
 #region Run
 
+if (SoundSkid > 0)
+{
+	SoundSkid--;
+	if (SoundSkid == 1 and Skid)
+	{
+		scrSound(SfxSkid);
+	}
+}
+
 if (CooldownSwap > 0)
 {
 	CooldownSwap--;
@@ -143,12 +159,29 @@ if (Running > 0)
 	Running--;
 }
 
-if (LastHorizontalDirection != HorizontalDirection and CooldownSwap == 0 and (RunActive or Skid))
+if (CooldownSwap == 0)
 {
-	
+	TranceAcelerationValue = lerp(TranceAcelerationValue , TranceAceleration , .5);
+}
+else
+{
+	TranceAcelerationValue = SpeedRun * (HorizontalDirection * -1);
+	if (CooldownSwap == 1)
+	{
+		HorizontalMovement = SpeedRun * (HorizontalDirection * -1);
+	}
+}
+
+if (LastScaleX != ScaleX and (Skid or RunActive) and place_meeting(x , y + 1 , parCollision))
+{
+	CooldownSwap = 8;
+	scrSound(SfxSkid);
+	HorizontalMovement = SpeedRun * LastScaleX;
 }
 
 LastHorizontalDirection = HorizontalDirection;
+LastScaleXSprite = ScaleXSprite;
+LastScaleX = ScaleX;
 
 
 
@@ -386,7 +419,7 @@ if (place_meeting(x , y + 1 , parCollision) and !place_meeting(x , y , parCollis
 				}
 				else
 				{
-					image_speed = 0.25;
+					image_speed = 0;
 					sprite_index = SpriteTranceRun;
 				}
 			}

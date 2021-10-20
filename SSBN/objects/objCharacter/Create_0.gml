@@ -83,6 +83,9 @@ ScaleXSprite = 1;
 LastHorizontalDirection = 1;
 
 TranceAceleration = 0;
+TranceAcelerationValue = 0;
+LastScaleXSprite = 1;
+LastScaleX = 1;
 
 ScaleY = 1;
 JumpTime = 0;
@@ -103,7 +106,7 @@ RunValue = 0;
 RunTime = 0;
 AnimacionSaltoTerminada = false;
 Skid = false;
-
+SoundSkid = 0;
 
 #region Sprites
 SpriteWalk = sprChKirbyWalk;
