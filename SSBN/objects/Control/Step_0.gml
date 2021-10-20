@@ -3,8 +3,10 @@
 #region Buttons
 LeftButtonActive = keyboard_check(LeftButton);
 LeftButtonPressedActive = keyboard_check_pressed(LeftButton);
+LeftButtonReleasedActive = keyboard_check_released(LeftButton);
 RightButtonActive = keyboard_check(RightButton);
 RightButtonPressedActive = keyboard_check_pressed(RightButton);
+RightButtonReleasedActive = keyboard_check_released(RightButton);
 JumpButtonActive = keyboard_check_pressed(JumpButton);
 JumpButtonReleaseActive = keyboard_check_released(JumpButton);
 DownButtonActive = keyboard_check(DownButton);

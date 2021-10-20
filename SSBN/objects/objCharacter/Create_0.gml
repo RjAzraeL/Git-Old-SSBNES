@@ -80,6 +80,10 @@ GravityFall = .1;
 JumpAvailable = Jumps;
 ScaleX = 1;
 ScaleXSprite = 1;
+LastHorizontalDirection = 1;
+
+TranceAceleration = 0;
+
 ScaleY = 1;
 JumpTime = 0;
 Running = 0;

@@ -22,68 +22,80 @@ else
 
 #region Horizontal Movement
 var HorizontalDirection = 0;
-if (!Duck and CooldownSwap == 0)
+if (CooldownSwap == 0)
 {
-	HorizontalDirection = Control.RightButtonActive - Control.LeftButtonActive;
-}
-
-if (HorizontalDirection != 0)
-{
-	Skid = false;
-	if (AcelerationValue < VarSpeed)
+	if (!Duck)
 	{
-		AcelerationValue += Aceleration;
+		HorizontalDirection = Control.RightButtonActive - Control.LeftButtonActive;
+	}
+
+	if (HorizontalDirection != 0)
+	{
+		Skid = false;
+		if (AcelerationValue < VarSpeed)
+		{
+			TranceAceleration += (Aceleration * HorizontalDirection);
+			AcelerationValue += Aceleration;
+		}
+		else
+		{
+			AcelerationValue = VarSpeed;
+		}
 	}
 	else
 	{
-		AcelerationValue = VarSpeed;
+		TranceAceleration = lerp(TranceAceleration , 0 , .5);
+		if (AcelerationValue > 0)
+		{
+			if (place_meeting(x , y + 1 , parCollision) and !place_meeting(x , y , parCollision))
+			{
+				if (RunActive) and (!Skid)
+				{
+					Skid = true;
+					scrSound(SfxSkid)
+				}
+			}
+			AcelerationValue -= Friction;
+		}
+			else
+		{
+			AcelerationValue = 0;	
+		}
 	}
-}
-else
-{
-	if (AcelerationValue > 0)
+
+	if (HorizontalDirection != 0)
 	{
+		HorizontalMovement = HorizontalDirection * (AcelerationValue);
+	}
+	else
+	{
+		HorizontalMovement = (AcelerationValue) * ScaleX;
+	}
+
+	if (HorizontalDirection != 0)
+	{
+		RunTime = 10;
+		ScaleX = sign(HorizontalDirection);
 		if (place_meeting(x , y + 1 , parCollision) and !place_meeting(x , y , parCollision))
 		{
-			if (RunActive) and (!Skid)
-			{
-				Skid = true;
-				scrSound(SfxSkid)
-			}
+			ScaleXSprite = sign(HorizontalDirection);
 		}
-		AcelerationValue -= Friction;
 	}
-		else
+	else
 	{
-		AcelerationValue = 0;	
-	}
-}
-
-if (HorizontalDirection != 0)
-{
-	HorizontalMovement = HorizontalDirection * (AcelerationValue);
-}
-else
-{
-	HorizontalMovement = (AcelerationValue) * ScaleX;
-}
-
-if (HorizontalDirection != 0)
-{
-	RunTime = 10;
-	ScaleX = sign(HorizontalDirection);
-	if (place_meeting(x , y + 1 , parCollision) and !place_meeting(x , y , parCollision))
-	{
-		ScaleXSprite = sign(HorizontalDirection);
+		if (RunTime == 0)
+		{
+			RunActive = false;
+			RunValue = 0;
+			LastDirection = 0;
+		}
 	}
 }
 else
 {
-	if (RunTime == 0)
+	if (CooldownSwap == 1)
 	{
-		RunActive = false;
-		RunValue = 0;
-		LastDirection = 0;
+		
 	}
 }
 #endregion
@@ -131,13 +143,17 @@ if (Running > 0)
 	Running--;
 }
 
-
-if (Control.LeftButtonPressedActive or Control.RightButtonPressedActive and CooldownSwap == 0)
+if (LastHorizontalDirection != HorizontalDirection and CooldownSwap == 0 and (RunActive or Skid))
 {
-	if ((ScaleX > 0 and Control.LeftButtonPressedActive or (ScaleX < 0 and Control.RightButtonPressedActive)) and RunActive and place_meeting(x , y + 1 , parCollision))
-	{
-		CooldownSwap = 16;
-	}
+	
+}
+
+LastHorizontalDirection = HorizontalDirection;
+
+
+
+if (Control.LeftButtonPressedActive or Control.RightButtonPressedActive)
+{
 	RunValue++;
 	if (Running == 0)
 	{
@@ -145,6 +161,7 @@ if (Control.LeftButtonPressedActive or Control.RightButtonPressedActive and Cool
 		{
 			RunActive = true;
 			RunValue = 0;
+			
 		}
 		else if (RunValue > 2)
 		{
@@ -160,6 +177,7 @@ if (Control.LeftButtonPressedActive or Control.RightButtonPressedActive and Cool
 	}
 	LastDirection = ScaleX;
 }
+
 #endregion
 
 #region Jump
@@ -368,7 +386,7 @@ if (place_meeting(x , y + 1 , parCollision) and !place_meeting(x , y , parCollis
 				}
 				else
 				{
-					image_speed = 0.1;
+					image_speed = 0.25;
 					sprite_index = SpriteTranceRun;
 				}
 			}
