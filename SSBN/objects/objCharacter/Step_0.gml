@@ -2,7 +2,7 @@
 
 #region Horizontal Speed
 var VarSpeed = 0;
-if (place_meeting(x , y + 1 , parCollision) and !place_meeting(x , y , parCollision))
+if (scrSolidDetectorBelow())
 {
 	if (!RunActive)
 	{
@@ -54,7 +54,7 @@ if (CooldownSwap == 0)
 		TranceAceleration = lerp(TranceAceleration , 0 , Friction);
 		if (AcelerationValue > 0)
 		{
-			if (place_meeting(x , y + 1 , parCollision) and !place_meeting(x , y , parCollision))
+			if (scrSolidDetectorBelow())
 			{
 				if (RunActive) and (!Skid)
 				{
@@ -83,7 +83,7 @@ if (CooldownSwap == 0)
 	{
 		RunTime = 10;
 		ScaleX = sign(HorizontalDirection);
-		if (place_meeting(x , y + 1 , parCollision) and !place_meeting(x , y , parCollision))
+		if (scrSolidDetectorBelow())
 		{
 			ScaleXSprite = sign(HorizontalDirection);
 		}
@@ -122,17 +122,17 @@ if (VerticalMovement >= VerticalMovementLimit + VerticalMovementLimitExtra)
 	VerticalMovement = VerticalMovementLimit + VerticalMovementLimitExtra;
 }
 
+#endregion
+
 #region Down Fast
-if (Control.DownButtonPressedActive and CooldowFall == 0 and CooldownJump == 0)
+if (Control.DownButtonPressedActive and CooldowFall == 0 and CooldownJump == 0 and !place_meeting(x , y+1 , parCollision))
 {
 	if (VerticalMovement != 0)
 	{
 		VerticalMovementLimitExtra = VerticalMovementLimitValue;
-		VerticalMovement = VerticalMovementLimit + VerticalMovementLimitExtra;
+		GravityFallDownActive = (GravityFall * 6);
 	}
 }
-#endregion
-
 #endregion
 
 #region Run
@@ -140,7 +140,7 @@ if (Control.DownButtonPressedActive and CooldowFall == 0 and CooldownJump == 0)
 if (SoundSkid > 0)
 {
 	SoundSkid--;
-	if (SoundSkid == 1 and Skid)
+	if (SoundSkid == 1 and Skid and scrSolidDetectorBelow())
 	{
 		scrSound(SfxSkid);
 	}
@@ -172,13 +172,14 @@ else
 	}
 }
 
-if (LastScaleX != ScaleX and (Skid or RunActive) and place_meeting(x , y + 1 , parCollision))
+#region Trance
+if (LastScaleX != ScaleX and (Skid or RunActive) and scrSolidDetectorBelow())
 {
 	CooldownSwap = 8;
 	scrSound(SfxSkid);
 	HorizontalMovement = SpeedRun * LastScaleX;
 }
-
+#endregion
 LastHorizontalDirection = HorizontalDirection;
 LastScaleXSprite = ScaleXSprite;
 LastScaleX = ScaleX;
@@ -218,8 +219,13 @@ if (JumpAvailable > 0 and Control.JumpButtonActive and CooldownJump == 0 and Coo
 {
 	if (VerticalMovement >= 0)
 	{
+		if (!JumpingInTerrain)
+		{
+			JumpAvailable--;
+			ActualJumpSprite++;
+		}
 		SaveStopJump = false;
-		if (place_meeting(x , y + 1 , parCollision) and !place_meeting(x , y , parCollision))
+		if (scrSolidDetectorBelow())
 		{
 			CooldownJump = 8;
 		}
@@ -235,6 +241,7 @@ if (CooldownJump > 0)
 	if (CooldownJump == 1)
 	{
 		scrJump(HorizontalDirection);
+		JumpingInTerrain = true;
 	}
 }
 
@@ -261,6 +268,58 @@ if (JumpTime > 0)
 #endregion
 
 #region Collision
+
+
+/*
+
+//Horizontal Collision
+if place_meeting(x+hsp,y,par_wall)
+{
+    yplus = 0;
+    while (place_meeting(x+hsp,y-yplus,par_wall) && yplus <= abs(1*hsp)) yplus += 1;
+    if place_meeting(x+hsp,y-yplus,par_wall)
+    {
+        while (!place_meeting(x+sign(hsp),y,par_wall)) x+=sign(hsp);
+        hsp = 0;
+    }
+    else
+    {
+        y -= yplus
+    }
+}
+x += hsp;
+
+// Downward slopes
+if !place_meeting(x,y,par_wall) && vsp >= 0 && place_meeting(x,y+2+abs(hsp),par_wall)
+{while(!place_meeting(x,y+1,par_wall)) {y += 1;}}
+
+// Vertical Collision
+*/
+
+if (place_meeting(x , y + VerticalMovement , objBlockSlope45))
+{
+	while (!place_meeting(x , y  + sign(VerticalMovement) , objBlockSlope45))
+	{
+		y += sign(VerticalMovement);
+	}
+	if (VerticalMovement > 0)
+	{
+		JumpAvailable = Jumps;
+		ActualJumpSprite = 0;
+		VerticalMovementLimitExtra = 0;
+		GravityFallDownActive = 0;
+		JumpingInTerrain = false;
+		if (!FallReady)
+		{
+			FallReady = true;
+			CooldowFall = 8;	
+		}
+	}
+	VerticalMovement = 0;
+}
+
+
+
 if (place_meeting(x + HorizontalMovement , y , parSolid))
 {
 	while (!place_meeting(x + sign(HorizontalMovement) , y , parSolid))
@@ -269,8 +328,7 @@ if (place_meeting(x + HorizontalMovement , y , parSolid))
 	}
 	HorizontalMovement = 0;
 }
-
-if (!place_meeting(x , y , objBlockTransferable) and VerticalMovement >= 0 and !DuckFall)
+if (!place_meeting(x , y , objBlockTransferable) and (VerticalMovement >= 0 and !DuckFall) and (GravityFallDownActive == 0))
 {
 	if (place_meeting(x , y + VerticalMovement , objBlockTransferable))
 	{
@@ -283,6 +341,8 @@ if (!place_meeting(x , y , objBlockTransferable) and VerticalMovement >= 0 and !
 			JumpAvailable = Jumps;
 			ActualJumpSprite = 0;
 			VerticalMovementLimitExtra = 0;
+			GravityFallDownActive = 0;
+			JumpingInTerrain = false;
 			if (!FallReady)
 			{
 				FallReady = true;
@@ -308,6 +368,8 @@ if (place_meeting(x , y + VerticalMovement , parSolid))
 		JumpAvailable = Jumps;
 		ActualJumpSprite = 0;
 		VerticalMovementLimitExtra = 0;
+		GravityFallDownActive = 0;
+		JumpingInTerrain = false;
 		if (!FallReady)
 		{
 			FallReady = true;
@@ -348,7 +410,7 @@ if (CooldownJump == 0 and CooldowFall == 0)
 	{
 		DuckTime--;
 	}
-	if (Control.DownButtonActive and place_meeting(x , y + 1 , parCollision))
+	if (Control.DownButtonActive and scrSolidDetectorBelow())
 	{
 		if (DuckTime == 0)
 		{
@@ -377,6 +439,42 @@ if (CooldownJump == 0 and CooldowFall == 0)
 }
 #endregion
 
+#region Slope
+if (place_meeting(x + HorizontalMovement , y , objBlockSlope45))
+{
+	PlusY = 0;
+	while (place_meeting(x+HorizontalMovement,y-PlusY,objBlockSlope45) && PlusY <= abs(1*HorizontalMovement))
+	{
+		PlusY += 1;
+	}
+	if (!place_meeting(x + HorizontalMovement , y - PlusY , objBlockSlope45))
+	{
+		y -= PlusY;
+	} 
+	else
+	{
+		while (!place_meeting(x+sign(HorizontalMovement),y,objBlockSlope45))
+		{
+			x+=sign(HorizontalMovement);
+		}
+		HorizontalMovement = 0;
+	}
+}
+
+var AuxDetector = 1;
+if (place_meeting(x , y + AuxDetector + abs(HorizontalMovement)  , objBlockSlope45) and !place_meeting(x + HorizontalMovement , y + AuxDetector , objBlockSlope45) and !place_meeting(x + HorizontalMovement , y + AuxDetector , parSolid) and HorizontalMovement != 0)
+{
+	_PlusY = 1;
+	y+= _PlusY;
+}
+else
+{
+	_PlusY = 0;
+}
+
+#endregion
+
+
 #region Position
 x += HorizontalMovement;
 y += VerticalMovement;
@@ -385,7 +483,7 @@ y += VerticalMovement;
 #endregion
 
 #region Sprite
-if (place_meeting(x , y + 1 , parCollision) and !place_meeting(x , y , parCollision))
+if (scrSolidDetectorBelow()) and !place_meeting(x , y , parCollision)
 {
 	if (!Duck)
 	{
@@ -453,5 +551,13 @@ else
 			sprite_index = SpriteJump2;
 		}
 	}
+}
+#endregion
+
+#region Outside
+if (y > room_height)
+{
+	x = OriginX;
+	y = OriginY;
 }
 #endregion

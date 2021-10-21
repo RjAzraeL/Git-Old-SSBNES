@@ -63,6 +63,8 @@ CooldowFall = 0;
 FallReady = false;
 
 //Aceleration = .2;
+PlusY = 0;
+_PlusY = 0;
 FallAceleration = .01;
 Aceleration = .1;
 AcelerationValue = 0;
@@ -86,6 +88,7 @@ TranceAceleration = 0;
 TranceAcelerationValue = 0;
 LastScaleXSprite = 1;
 LastScaleX = 1;
+JumpingInTerrain = false;
 
 ScaleY = 1;
 JumpTime = 0;
@@ -98,9 +101,7 @@ JumpStopSpeed = .5;
 JumpStop = false;
 OriginX = x;
 OriginY = y;
-GravityFallPorcentage = 0;
 LastDirection = 1;
-PreRunActive = false;
 RunActive = false;
 RunValue = 0;
 RunTime = 0;
