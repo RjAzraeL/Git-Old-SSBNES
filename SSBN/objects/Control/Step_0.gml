@@ -32,8 +32,8 @@ if (keyboard_check_pressed(vk_f1))
 		with (objCharacter)
 		{
 			scrSetCharacter();
-			x = OriginX;
-			y = OriginY;
+			instance_create_depth(room_width/2 , y , depth , object_index);
+			instance_destroy();
 		}
 	}
 }
@@ -45,8 +45,8 @@ if (keyboard_check_pressed(vk_f2))
 		with (objCharacter)
 		{
 			scrSetCharacter();
-			x = OriginX;
-			y = OriginY;
+			instance_create_depth(room_width/2 , y , depth , object_index);
+			instance_destroy();
 		}
 	}
 }
