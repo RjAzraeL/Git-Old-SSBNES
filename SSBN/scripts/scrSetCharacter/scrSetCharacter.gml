@@ -3,6 +3,7 @@ function scrSetCharacter()
 	#region Set variables
 	image_speed = .25;
 	Jumps = scrGetValueCharacter("Jumps");
+	JumpAvailable = Jumps;
 	//Aceleration = .2;
 	Aceleration = scrGetValueCharacter("Aceleration");
 	SpeedWalk = scrGetValueCharacter("Speed Walk");

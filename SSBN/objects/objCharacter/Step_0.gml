@@ -1,5 +1,22 @@
 #region Movement
 
+#region Platform
+if (Platform)
+{
+	y = lerp(y , Control.PlatformYLimit+5 , .1);
+	if (y >= Control.PlatformYLimit)
+	{
+		PlatformReady = true;
+	}
+	if (scrUseKeyboardAvailable() and PlatformReady)
+	{
+		Platform = false;
+		PlatformReady = false;
+		Inmune = false;
+	}
+}
+#endregion
+
 #region Horizontal Speed
 var VarSpeed = 0;
 if (scrSolidDetectorBelow())
@@ -488,7 +505,6 @@ else
 
 #endregion
 
-
 #region Position
 x += HorizontalMovement;
 y += VerticalMovement;
@@ -499,6 +515,7 @@ y += VerticalMovement;
 #region Sprite
 if (!Platform)
 {
+	image_speed = .25;
 	if (scrSolidDetectorBelow()) and !place_meeting(x , y , parCollision)
 	{
 		if (!Duck)
@@ -569,12 +586,17 @@ if (!Platform)
 		}
 	}
 }
+else
+{
+	image_speed = .25;
+	sprite_index = SpriteIdle;
+}
 #endregion
 
 #region Outside
 if (y > room_height)
 {
-	x = OriginX;
-	y = OriginY;
+	instance_create_depth(room_width/2 , y , depth , object_index);
+	instance_destroy();
 }
 #endregion

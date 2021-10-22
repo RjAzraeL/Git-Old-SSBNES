@@ -12,6 +12,7 @@ JumpButtonReleaseActive = keyboard_check_released(JumpButton);
 DownButtonActive = keyboard_check(DownButton);
 DownButtonPressedActive = keyboard_check_pressed(DownButton);
 DownButtonReleasedActive = keyboard_check_released(DownButton);
+AttackButtonActive = keyboard_check(AttackButton);
 #endregion
 
 #region Index

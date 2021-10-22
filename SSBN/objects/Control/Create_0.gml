@@ -11,7 +11,7 @@ xx = 0;
 yy = 0;
 Limite = 90;
 LimiteVelocidad = 0.025;
-
+PlatformYLimit = 32;
 #region Index
 IndexImage2 = 0;
 #endregion

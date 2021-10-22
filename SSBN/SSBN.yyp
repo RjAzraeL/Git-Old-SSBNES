@@ -66,6 +66,7 @@
     {"id":{"name":"Control","path":"objects/Control/Control.yy",},"order":3,},
     {"id":{"name":"scr_CRT_turn_off_effect","path":"scripts/scr_CRT_turn_off_effect/scr_CRT_turn_off_effect.yy",},"order":2,},
     {"id":{"name":"scrReiniciarJuego","path":"scripts/scrReiniciarJuego/scrReiniciarJuego.yy",},"order":7,},
+    {"id":{"name":"scrUseKeyboardAvailable","path":"scripts/scrUseKeyboardAvailable/scrUseKeyboardAvailable.yy",},"order":8,},
     {"id":{"name":"scrSetCharacter","path":"scripts/scrSetCharacter/scrSetCharacter.yy",},"order":2,},
     {"id":{"name":"sprChMarioWalk","path":"sprites/sprChMarioWalk/sprChMarioWalk.yy",},"order":1,},
     {"id":{"name":"sprChKirbySkid","path":"sprites/sprChKirbySkid/sprChKirbySkid.yy",},"order":3,},
