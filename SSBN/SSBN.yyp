@@ -39,6 +39,7 @@
     {"id":{"name":"objBlockTransferable","path":"objects/objBlockTransferable/objBlockTransferable.yy",},"order":1,},
     {"id":{"name":"sprChKirbyMaskDuck","path":"sprites/sprChKirbyMaskDuck/sprChKirbyMaskDuck.yy",},"order":9,},
     {"id":{"name":"sprChSandbagIdle","path":"sprites/sprChSandbagIdle/sprChSandbagIdle.yy",},"order":0,},
+    {"id":{"name":"rmTest5","path":"rooms/rmTest5/rmTest5.yy",},"order":4,},
     {"id":{"name":"sprChMarioJumpTrance","path":"sprites/sprChMarioJumpTrance/sprChMarioJumpTrance.yy",},"order":12,},
     {"id":{"name":"sfxMarioSkid","path":"sounds/sfxMarioSkid/sfxMarioSkid.yy",},"order":0,},
     {"id":{"name":"sndOst03Menu2_a","path":"sounds/sndOst03Menu2_a/sndOst03Menu2_a.yy",},"order":2,},
@@ -122,6 +123,7 @@
     "children": [],
   },
   "RoomOrderNodes": [
+    {"roomId":{"name":"rmTest5","path":"rooms/rmTest5/rmTest5.yy",},},
     {"roomId":{"name":"rmTest4","path":"rooms/rmTest4/rmTest4.yy",},},
     {"roomId":{"name":"rmTest2","path":"rooms/rmTest2/rmTest2.yy",},},
     {"roomId":{"name":"rmTest3","path":"rooms/rmTest3/rmTest3.yy",},},
