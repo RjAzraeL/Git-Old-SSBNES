@@ -22,7 +22,7 @@ else
 
 #region Horizontal Movement
 var HorizontalDirection = 0;
-if (CooldownSwap == 0)
+if (CooldownSwap == 0 and !Platform)
 {
 	if (!Duck)
 	{
@@ -108,24 +108,27 @@ else
 #endregion
 
 #region Gravity
-if (VerticalMovement < 0)
+if (!Platform)
 {
-	VerticalMovement += Gravity;
-}
-else
-{
-	VerticalMovement += GravityFall + GravityFallDownActive;
-}
+	if (VerticalMovement < 0)
+	{
+		VerticalMovement += Gravity;
+	}
+	else
+	{
+		VerticalMovement += GravityFall + GravityFallDownActive;
+	}
 
-if (VerticalMovement >= VerticalMovementLimit + VerticalMovementLimitExtra)
-{
-	VerticalMovement = VerticalMovementLimit + VerticalMovementLimitExtra;
+	if (VerticalMovement >= VerticalMovementLimit + VerticalMovementLimitExtra)
+	{
+		VerticalMovement = VerticalMovementLimit + VerticalMovementLimitExtra;
+	}
 }
 
 #endregion
 
 #region Down Fast
-if (Control.DownButtonPressedActive and CooldowFall == 0 and CooldownJump == 0 and !place_meeting(x , y+1 , parCollision))
+if (Control.DownButtonPressedActive and CooldowFall == 0 and CooldownJump == 0 and !place_meeting(x , y+1 , parCollision) and !Platform)
 {
 	if (VerticalMovement != 0)
 	{
@@ -173,11 +176,14 @@ else
 }
 
 #region Trance
-if (LastScaleX != ScaleX and (Skid or RunActive) and scrSolidDetectorBelow())
+if (!Platform)
 {
-	CooldownSwap = 8;
-	scrSound(SfxSkid);
-	HorizontalMovement = SpeedRun * LastScaleX;
+	if (LastScaleX != ScaleX and (Skid or RunActive) and scrSolidDetectorBelow())
+	{
+		CooldownSwap = 8;
+		scrSound(SfxSkid);
+		HorizontalMovement = SpeedRun * LastScaleX;
+	}
 }
 #endregion
 LastHorizontalDirection = HorizontalDirection;
@@ -186,62 +192,67 @@ LastScaleX = ScaleX;
 
 
 
-if (Control.LeftButtonPressedActive or Control.RightButtonPressedActive)
+if (!Platform)
 {
-	RunValue++;
-	if (Running == 0)
+	if (Control.LeftButtonPressedActive or Control.RightButtonPressedActive)
 	{
-		if (RunValue == 2 and RunTime > 0)
+		RunValue++;
+		if (Running == 0)
 		{
-			RunActive = true;
-			RunValue = 0;
+			if (RunValue == 2 and RunTime > 0)
+			{
+				RunActive = true;
+				RunValue = 0;
 			
-		}
-		else if (RunValue > 2)
-		{
-			RunActive = false;
-			RunValue = 0;
-			LastDirection = 0;
-		}
-	}
-	else
-	{
-		RunActive = true;
-		RunValue = 0;
-	}
-	LastDirection = ScaleX;
-}
-
-#endregion
-
-#region Jump
-if (JumpAvailable > 0 and Control.JumpButtonActive and CooldownJump == 0 and CooldowFall == 0)
-{
-	if (VerticalMovement >= 0)
-	{
-		if (!JumpingInTerrain)
-		{
-			JumpAvailable--;
-			ActualJumpSprite++;
-		}
-		SaveStopJump = false;
-		if (scrSolidDetectorBelow())
-		{
-			CooldownJump = 8;
+			}
+			else if (RunValue > 2)
+			{
+				RunActive = false;
+				RunValue = 0;
+				LastDirection = 0;
+			}
 		}
 		else
 		{
-			scrJump(HorizontalDirection);
+			RunActive = true;
+			RunValue = 0;
 		}
+		LastDirection = ScaleX;
 	}
 }
-if (CooldownJump > 0)
+#endregion
+
+#region Jump
+if (!Platform)
 {
-	CooldownJump--;
-	if (CooldownJump == 1)
+	if (JumpAvailable > 0 and Control.JumpButtonActive and CooldownJump == 0 and CooldowFall == 0)
 	{
-		scrJump(HorizontalDirection);
-		JumpingInTerrain = true;
+		if (VerticalMovement >= 0)
+		{
+			if (!JumpingInTerrain)
+			{
+				JumpAvailable--;
+				ActualJumpSprite++;
+			}
+			SaveStopJump = false;
+			if (scrSolidDetectorBelow())
+			{
+				CooldownJump = 8;
+			}
+			else
+			{
+				scrJump(HorizontalDirection);
+			}
+		}
+	}
+	if (CooldownJump > 0)
+	{
+		CooldownJump--;
+		if (CooldownJump == 1)
+		{
+			scrJump(HorizontalDirection);
+			JumpingInTerrain = true;
+		}
 	}
 }
 
@@ -254,11 +265,14 @@ if (Control.JumpButtonReleaseActive)
 	}
 }
 
-if (JumpStop or SaveStopJump and CooldownJump == 0 and CooldowFall == 0)
+if (!Platform)
 {
-	if (VerticalMovement < 0)
+	if (JumpStop or SaveStopJump and CooldownJump == 0 and CooldowFall == 0)
 	{
-		VerticalMovement += JumpStopSpeed;
+		if (VerticalMovement < 0)
+		{
+			VerticalMovement += JumpStopSpeed;
+		}
 	}
 }
 if (JumpTime > 0)
@@ -483,72 +497,75 @@ y += VerticalMovement;
 #endregion
 
 #region Sprite
-if (scrSolidDetectorBelow()) and !place_meeting(x , y , parCollision)
+if (!Platform)
 {
-	if (!Duck)
+	if (scrSolidDetectorBelow()) and !place_meeting(x , y , parCollision)
 	{
-		image_speed = .25;
-		if (CooldownJump == 0 and CooldowFall == 0)
+		if (!Duck)
 		{
-			if (HorizontalMovement == 0)
+			image_speed = .25;
+			if (CooldownJump == 0 and CooldowFall == 0)
 			{
-				sprite_index = SpriteIdle;
-			}
-			else
-			{
-				if (CooldownSwap == 0)
+				if (HorizontalMovement == 0)
 				{
-					image_speed = 0.25;
-					if (!Skid)
+					sprite_index = SpriteIdle;
+				}
+				else
+				{
+					if (CooldownSwap == 0)
 					{
-						if (!RunActive)
+						image_speed = 0.25;
+						if (!Skid)
 						{
-							sprite_index = SpriteWalk;
+							if (!RunActive)
+							{
+								sprite_index = SpriteWalk;
+							}
+							else
+							{
+								sprite_index = SpriteRun;
+							}
 						}
 						else
 						{
-							sprite_index = SpriteRun;
+							sprite_index = SpriteSkid;
 						}
 					}
 					else
 					{
-						sprite_index = SpriteSkid;
+						image_speed = 0;
+						sprite_index = SpriteTranceRun;
 					}
 				}
-				else
-				{
-					image_speed = 0;
-					sprite_index = SpriteTranceRun;
-				}
+			}
+			else
+			{
+				sprite_index = SpriteTrance;
 			}
 		}
 		else
 		{
-			sprite_index = SpriteTrance;
+			image_speed = .5;
+			sprite_index = SpriteDuck;
 		}
 	}
 	else
 	{
-		image_speed = .5;
-		sprite_index = SpriteDuck;
-	}
-}
-else
-{
-	image_speed = .25;
-	if (ActualJumpSprite == 0)
-	{
-		sprite_index = SpriteFall;
-	}
-	else if (ActualJumpSprite == 1)
-	{
-		sprite_index = SpriteJump;
-	}
-	else if (ActualJumpSprite >= 2)
-	{
-		if (!AnimacionSaltoTerminada)
+		image_speed = .25;
+		if (ActualJumpSprite == 0)
 		{
-			sprite_index = SpriteJump2;
+			sprite_index = SpriteFall;
+		}
+		else if (ActualJumpSprite == 1)
+		{
+			sprite_index = SpriteJump;
+		}
+		else if (ActualJumpSprite >= 2)
+		{
+			if (!AnimacionSaltoTerminada)
+			{
+				sprite_index = SpriteJump2;
+			}
 		}
 	}
 }

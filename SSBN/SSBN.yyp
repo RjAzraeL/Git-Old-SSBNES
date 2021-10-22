@@ -78,6 +78,7 @@
     {"id":{"name":"sprChKirbyMask","path":"sprites/sprChKirbyMask/sprChKirbyMask.yy",},"order":8,},
     {"id":{"name":"sprChMarioTranceRun","path":"sprites/sprChMarioTranceRun/sprChMarioTranceRun.yy",},"order":11,},
     {"id":{"name":"sfxMarioJump","path":"sounds/sfxMarioJump/sfxMarioJump.yy",},"order":1,},
+    {"id":{"name":"sprPlatform","path":"sprites/sprPlatform/sprPlatform.yy",},"order":4,},
     {"id":{"name":"sprChSandbagJump2","path":"sprites/sprChSandbagJump2/sprChSandbagJump2.yy",},"order":5,},
     {"id":{"name":"sndOst06Lotery_b","path":"sounds/sndOst06Lotery_b/sndOst06Lotery_b.yy",},"order":10,},
     {"id":{"name":"sprChSandbagRun","path":"sprites/sprChSandbagRun/sprChSandbagRun.yy",},"order":7,},

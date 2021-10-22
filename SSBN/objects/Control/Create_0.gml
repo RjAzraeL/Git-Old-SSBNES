@@ -12,6 +12,10 @@ yy = 0;
 Limite = 90;
 LimiteVelocidad = 0.025;
 
+#region Index
+IndexImage2 = 0;
+#endregion
+
 #region Controls
 LeftButton = vk_left;
 RightButton = vk_right;

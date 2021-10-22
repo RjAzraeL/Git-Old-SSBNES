@@ -51,6 +51,10 @@ SpriteSkid = sprChMarioSkid;
 #endregion
 */
 #region Set variables
+Stun = false;
+Root = false;
+Platform = true;
+PlatformCooldown = 30;
 image_speed = .25;
 Angle = 0;
 Jumps = 5;

@@ -14,6 +14,14 @@ DownButtonPressedActive = keyboard_check_pressed(DownButton);
 DownButtonReleasedActive = keyboard_check_released(DownButton);
 #endregion
 
+#region Index
+IndexImage2 += .1;
+if (IndexImage2 > 1.9)
+{
+	IndexImage2 = 0;
+}
+#endregion
+
 #region Change
 if (keyboard_check_pressed(vk_f1))
 {
