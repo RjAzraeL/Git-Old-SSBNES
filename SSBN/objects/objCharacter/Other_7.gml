@@ -15,6 +15,7 @@ if (sprite_index = SpriteDuck)
 }
 if (Attacking)
 {
+	RootAttack = false;
 	Attacking = false;
 }
 #endregion

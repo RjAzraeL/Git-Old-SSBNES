@@ -18,7 +18,7 @@ CooldownSwap = 0;
 SaveStopJump = false;
 CooldowFall = 0;
 FallReady = false;
-
+RootAttack = false;
 //Aceleration = .2;
 PlusY = 0;
 _PlusY = 0;
@@ -67,6 +67,7 @@ Skid = false;
 SoundSkid = 0;
 NextMov = -1;
 MoveQueue = ds_list_create();
+MyMovs = ds_list_create();
 
 
 #region Sprites

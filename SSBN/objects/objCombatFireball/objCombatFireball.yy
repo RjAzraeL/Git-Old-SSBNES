@@ -7,7 +7,10 @@
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "parMov",
+    "path": "objects/parMov/parMov.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,

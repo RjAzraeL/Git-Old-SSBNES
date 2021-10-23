@@ -61,7 +61,7 @@ else
 var HorizontalDirection = 0;
 if (CooldownSwap == 0 and !Platform)
 {
-	if (!Duck)
+	if (!Duck and !RootAttack)
 	{
 		HorizontalDirection = Control.RightButtonActive - Control.LeftButtonActive;
 	}
@@ -213,7 +213,7 @@ else
 }
 
 #region Trance
-if (!Platform)
+if (!Platform and !RootAttack)
 {
 	if (LastScaleX != ScaleX and (Skid or RunActive) and scrSolidDetectorBelow())
 	{
@@ -229,7 +229,7 @@ LastScaleX = ScaleX;
 
 
 
-if (!Platform)
+if (!Platform and !RootAttack)
 {
 	if (Control.LeftButtonPressedActive or Control.RightButtonPressedActive)
 	{
@@ -320,6 +320,23 @@ if (JumpTime > 0)
 
 #region Movs
 scrUseMovs();
+#region Use Mov
+if (Attacking)
+{
+	if (ds_list_size(MoveQueue) > 0)
+	{
+		var Package = ds_list_find_value(MoveQueue , 0);
+		if (Package[? "frame"] == image_index)
+		{
+			if (Package[? "id"] != -1)
+			{
+				scrExecuteMovs(Package[? "id"]);
+				ds_list_delete(MoveQueue , 0);
+			}
+		}
+	}
+}
+#endregion
 #endregion
 
 #region Collision
@@ -455,7 +472,7 @@ if (CooldowFall > 0)
 #endregion
 
 #region Duck
-if (CooldownJump == 0 and CooldowFall == 0)
+if (CooldownJump == 0 and CooldowFall == 0 and !RootAttack)
 {
 	if (Control.DownButtonReleasedActive and Duck)
 	{
