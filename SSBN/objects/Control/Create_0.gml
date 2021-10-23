@@ -5,15 +5,16 @@ VolumeSound = 1;
 IndexMusic = -1;
 CharacterId = 1;
 ShowMask = false;
-#endregion
 
 #region Data
 
+scrDataMov();
 scrDataMusic();
 scrDataCharacter();
 
 #endregion
 
+Gravity = .3;
 PlatformTimeAvailable = 300;
 MusicNext = sfxKirbyJump;
 MusicOn = false;
@@ -24,6 +25,9 @@ yy = 0;
 Limite = 90;
 LimiteVelocidad = 0.025;
 PlatformYLimit = 32;
+
+#endregion
+
 #region Index
 IndexImage2 = 0;
 #endregion
@@ -38,6 +42,4 @@ AttackButton = ord("C");
 StartButton = vk_enter;
 SelectButton = vk_space;
 ShowColissionButton = vk_f8;
-#endregion
-
 #endregion

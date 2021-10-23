@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Combat",
-    "path": "folders/Scripts/Combat.yy",
+    "name": "Data",
+    "path": "folders/Scripts/Data.yy",
   },
   "resourceVersion": "1.0",
-  "name": "scrSetInmune",
+  "name": "scrDataMovs",
   "tags": [],
   "resourceType": "GMScript",
 }

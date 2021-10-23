@@ -6,7 +6,7 @@
     "path": "folders/Scripts/Combat.yy",
   },
   "resourceVersion": "1.0",
-  "name": "scrSetInmune",
+  "name": "scrUseMovs",
   "tags": [],
   "resourceType": "GMScript",
 }

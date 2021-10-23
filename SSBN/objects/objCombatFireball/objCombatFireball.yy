@@ -1,14 +1,11 @@
 {
   "spriteId": {
-    "name": "sprChSandbagIdle",
-    "path": "sprites/sprChSandbagIdle/sprChSandbagIdle.yy",
+    "name": "sprChMarioFireball",
+    "path": "sprites/sprChMarioFireball/sprChMarioFireball.yy",
   },
   "solid": false,
   "visible": true,
-  "spriteMaskId": {
-    "name": "sprChMarioMask",
-    "path": "sprites/sprChMarioMask/sprChMarioMask.yy",
-  },
+  "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
   "physicsObject": false,
@@ -26,18 +23,15 @@
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":7,"eventType":7,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":58,"eventType":7,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Furnis",
-    "path": "folders/Objects/Furnis.yy",
+    "name": "Movs",
+    "path": "folders/Objects/Combat/Movs.yy",
   },
   "resourceVersion": "1.0",
-  "name": "objCharacter",
+  "name": "objCombatFireball",
   "tags": [],
   "resourceType": "GMObject",
 }

@@ -318,6 +318,10 @@ if (JumpTime > 0)
 }
 #endregion
 
+#region Movs
+scrUseMovs();
+#endregion
+
 #region Collision
 
 
@@ -535,75 +539,82 @@ y += VerticalMovement;
 #region Sprite
 if (!Platform)
 {
-	image_speed = .25;
-	if (scrSolidDetectorBelow()) and !place_meeting(x , y , parCollision)
+	if (!Attacking)
 	{
-		if (!Duck)
+		image_speed = .25;
+		if (scrSolidDetectorBelow()) and !place_meeting(x , y , parCollision)
 		{
-			image_speed = .25;
-			if (CooldownJump == 0 and CooldowFall == 0)
+			if (!Duck)
 			{
-				if (HorizontalMovement == 0)
+				image_speed = .25;
+				if (CooldownJump == 0 and CooldowFall == 0)
 				{
-					sprite_index = SpriteIdle;
-				}
-				else
-				{
-					if (CooldownSwap == 0)
+					if (HorizontalMovement == 0)
 					{
-						image_speed = 0.25;
-						if (!Skid)
+						sprite_index = SpriteIdle;
+					}
+					else
+					{
+						if (CooldownSwap == 0)
 						{
-							if (!RunActive)
+							image_speed = 0.25;
+							if (!Skid)
 							{
-								sprite_index = SpriteWalk;
+								if (!RunActive)
+								{
+									sprite_index = SpriteWalk;
+								}
+								else
+								{
+									sprite_index = SpriteRun;
+								}
 							}
 							else
 							{
-								sprite_index = SpriteRun;
+								sprite_index = SpriteSkid;
 							}
 						}
 						else
 						{
-							sprite_index = SpriteSkid;
+							image_speed = 0;
+							sprite_index = SpriteTranceRun;
 						}
 					}
-					else
-					{
-						image_speed = 0;
-						sprite_index = SpriteTranceRun;
-					}
+				}
+				else
+				{
+					sprite_index = SpriteTrance;
 				}
 			}
 			else
 			{
-				sprite_index = SpriteTrance;
+				image_speed = .5;
+				sprite_index = SpriteDuck;
 			}
 		}
 		else
 		{
-			image_speed = .5;
-			sprite_index = SpriteDuck;
+			image_speed = .25;
+			if (ActualJumpSprite == 0)
+			{
+				sprite_index = SpriteFall;
+			}
+			else if (ActualJumpSprite == 1)
+			{
+				sprite_index = SpriteJump;
+			}
+			else if (ActualJumpSprite >= 2)
+			{
+				if (!AnimacionSaltoTerminada)
+				{
+					sprite_index = SpriteJump2;
+				}
+			}
 		}
 	}
 	else
 	{
-		image_speed = .25;
-		if (ActualJumpSprite == 0)
-		{
-			sprite_index = SpriteFall;
-		}
-		else if (ActualJumpSprite == 1)
-		{
-			sprite_index = SpriteJump;
-		}
-		else if (ActualJumpSprite >= 2)
-		{
-			if (!AnimacionSaltoTerminada)
-			{
-				sprite_index = SpriteJump2;
-			}
-		}
+		sprite_index = SpriteAttacking;
 	}
 }
 else
