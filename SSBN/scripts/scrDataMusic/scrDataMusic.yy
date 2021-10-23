@@ -6,7 +6,7 @@
     "path": "folders/Scripts/Data.yy",
   },
   "resourceVersion": "1.0",
-  "name": "scrDataCharacter",
+  "name": "scrDataMusic",
   "tags": [],
   "resourceType": "GMScript",
 }

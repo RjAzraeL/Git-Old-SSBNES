@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Data",
-    "path": "folders/Scripts/Data.yy",
+    "name": "Get Data",
+    "path": "folders/Scripts/Data/Get Data.yy",
   },
   "resourceVersion": "1.0",
-  "name": "scrDataCharacter",
+  "name": "scrGetMusicBodyById",
   "tags": [],
   "resourceType": "GMScript",
 }

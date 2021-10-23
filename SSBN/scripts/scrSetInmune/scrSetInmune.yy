@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Data",
-    "path": "folders/Scripts/Data.yy",
+    "name": "Battle",
+    "path": "folders/Scripts/Battle.yy",
   },
   "resourceVersion": "1.0",
-  "name": "scrDataCharacter",
+  "name": "scrSetInmune",
   "tags": [],
   "resourceType": "GMScript",
 }

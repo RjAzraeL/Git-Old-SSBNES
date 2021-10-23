@@ -1,5 +1,6 @@
 #region Delta
 #endregion
+
 #region Buttons
 LeftButtonActive = keyboard_check(LeftButton);
 LeftButtonPressedActive = keyboard_check_pressed(LeftButton);
@@ -87,4 +88,15 @@ if (scrExiste(objCharacter))
 // Update camera position
 camera_set_view_pos(view_camera[0], xx - HalfViewWidth, yy - HalfViewHeight);
 		
+#endregion
+
+#region Music
+if (MusicOn and !MusicLoop)
+{
+	if (!audio_is_playing(IndexMusic))
+	{
+		scrMusicLoop(MusicNext);
+		MusicNext = sfxKirbyJump;
+	}
+}
 #endregion

@@ -1,8 +1,30 @@
 #region Movement
 
+#region Inmune
+if (Inmune and !Platform)
+{
+	if (InmuneCooldown > 0)
+	{
+		InmuneCooldown--;
+	}
+	else
+	{
+		Inmune = false;
+	}
+}
+#endregion
+
 #region Platform
 if (Platform)
 {
+	if (PlatformCooldown > 0)
+	{
+		PlatformCooldown--;
+	}
+	else
+	{
+		scrOutPlatform();
+	}
 	y = lerp(y , Control.PlatformYLimit+5 , .1);
 	if (y >= Control.PlatformYLimit)
 	{
@@ -10,9 +32,7 @@ if (Platform)
 	}
 	if (scrUseKeyboardAvailable() and PlatformReady)
 	{
-		Platform = false;
-		PlatformReady = false;
-		Inmune = false;
+		scrOutPlatform();
 	}
 }
 #endregion
@@ -594,8 +614,9 @@ else
 #endregion
 
 #region Outside
-if (y > room_height)
+if (y > room_height + 64)
 {
+	scrSound(sfxKO);
 	instance_create_depth(room_width/2 , y , depth , object_index);
 	instance_destroy();
 }

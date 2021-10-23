@@ -1,11 +1,23 @@
 #region Set variables
 Delta = delta_time / 1000000;
-VolumeMusic = 1;
+VolumeMusic = .1;
 VolumeSound = 1;
 IndexMusic = -1;
 CharacterId = 1;
 ShowMask = false;
+#endregion
+
+#region Data
+
+scrDataMusic();
 scrDataCharacter();
+
+#endregion
+
+PlatformTimeAvailable = 300;
+MusicNext = sfxKirbyJump;
+MusicOn = false;
+MusicLoop = false;
 CharacterLimit = ds_list_size(Control.CharacterList)-1;
 xx = 0;
 yy = 0;
