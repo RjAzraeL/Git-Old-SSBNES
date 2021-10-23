@@ -81,8 +81,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Mario",
-    "path": "folders/Sprites/Characters/Mario.yy",
+    "name": "General",
+    "path": "folders/Sprites/Characters/Mario/General.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprChMarioRun",

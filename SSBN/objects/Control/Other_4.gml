@@ -3,7 +3,7 @@ instance_create_depth(room_width/2 , 16 , 0 , objCharacter);
 
 #region Music
 
-scrSetMusic("Battlefield");
+scrSetMusic("Underground");
 
 #endregion
 
