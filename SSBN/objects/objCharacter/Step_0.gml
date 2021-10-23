@@ -63,7 +63,7 @@ if (CooldownSwap == 0 and !Platform)
 {
 	if (!Duck and !RootAttack)
 	{
-		HorizontalDirection = Control.RightButtonActive - Control.LeftButtonActive;
+		HorizontalDirection = RightButtonActive - LeftButtonActive;
 	}
 
 	if (HorizontalDirection != 0)
@@ -165,7 +165,7 @@ if (!Platform)
 #endregion
 
 #region Down Fast
-if (Control.DownButtonPressedActive and CooldowFall == 0 and CooldownJump == 0 and !place_meeting(x , y+1 , parCollision) and !Platform)
+if (DownButtonPressedActive and CooldowFall == 0 and CooldownJump == 0 and !place_meeting(x , y+1 , parCollision) and !Platform)
 {
 	if (VerticalMovement != 0)
 	{
@@ -229,9 +229,9 @@ LastScaleX = ScaleX;
 
 
 
-if (!Platform and !RootAttack)
+if (!Platform)
 {
-	if (Control.LeftButtonPressedActive or Control.RightButtonPressedActive)
+	if (LeftButtonPressedActive or RightButtonPressedActive)
 	{
 		RunValue++;
 		if (Running == 0)
@@ -262,7 +262,7 @@ if (!Platform and !RootAttack)
 #region Jump
 if (!Platform)
 {
-	if (JumpAvailable > 0 and Control.JumpButtonActive and CooldownJump == 0 and CooldowFall == 0)
+	if (JumpAvailable > 0 and JumpButtonActive and CooldownJump == 0 and CooldowFall == 0)
 	{
 		if (VerticalMovement >= 0)
 		{
@@ -293,7 +293,7 @@ if (!Platform)
 	}
 }
 
-if (Control.JumpButtonReleaseActive)
+if (JumpButtonReleaseActive)
 {
 	SaveStopJump = true;
 	if (!JumpStop)
@@ -340,33 +340,6 @@ if (Attacking)
 #endregion
 
 #region Collision
-
-
-/*
-
-//Horizontal Collision
-if place_meeting(x+hsp,y,par_wall)
-{
-    yplus = 0;
-    while (place_meeting(x+hsp,y-yplus,par_wall) && yplus <= abs(1*hsp)) yplus += 1;
-    if place_meeting(x+hsp,y-yplus,par_wall)
-    {
-        while (!place_meeting(x+sign(hsp),y,par_wall)) x+=sign(hsp);
-        hsp = 0;
-    }
-    else
-    {
-        y -= yplus
-    }
-}
-x += hsp;
-
-// Downward slopes
-if !place_meeting(x,y,par_wall) && vsp >= 0 && place_meeting(x,y+2+abs(hsp),par_wall)
-{while(!place_meeting(x,y+1,par_wall)) {y += 1;}}
-
-// Vertical Collision
-*/
 
 if (place_meeting(x , y + VerticalMovement , objBlockSlope45))
 {
@@ -424,7 +397,7 @@ if (!place_meeting(x , y , objBlockTransferable) and (VerticalMovement >= 0 and 
 		VerticalMovement = 0;
 	}
 }
-if (!place_meeting(x , y + 1 , parCollision))
+if (!place_meeting(x , y + 1 , parCollision) and HorizontalMovement >= 0)
 {
 	FallReady = false;
 }
@@ -474,7 +447,7 @@ if (CooldowFall > 0)
 #region Duck
 if (CooldownJump == 0 and CooldowFall == 0 and !RootAttack)
 {
-	if (Control.DownButtonReleasedActive and Duck)
+	if (DownButtonReleasedActive and Duck)
 	{
 		DuckTime = 15;
 	}
@@ -482,7 +455,7 @@ if (CooldownJump == 0 and CooldowFall == 0 and !RootAttack)
 	{
 		DuckTime--;
 	}
-	if (Control.DownButtonActive and scrSolidDetectorBelow())
+	if (DownButtonActive and scrSolidDetectorBelow())
 	{
 		if (DuckTime == 0)
 		{

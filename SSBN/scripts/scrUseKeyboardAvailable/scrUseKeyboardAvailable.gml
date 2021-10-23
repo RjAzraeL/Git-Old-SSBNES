@@ -1,4 +1,4 @@
 function scrUseKeyboardAvailable()
 {
-	return Control.DownButtonActive or Control.JumpButtonActive or Control.LeftButtonActive or Control.RightButtonActive or Control.AttackButtonActive;
+	return DownButtonActive or JumpButtonActive or LeftButtonActive or RightButtonActive or AttackButtonActive;
 }

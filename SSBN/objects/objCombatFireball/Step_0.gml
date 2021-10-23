@@ -2,7 +2,7 @@
 VerticalMovement += Control.Gravity;
 #endregion
 #region Collision
-if (place_meeting(x + HorizontalMovement , y , parCollision))
+if (place_meeting(x + HorizontalMovement , y , parCollision) and place_meeting(x + HorizontalMovement , y - 1 , parCollision) and place_meeting(x + HorizontalMovement , y + 1 , parCollision))
 {
 	HorizontalMovement *= -1;
 	Rebound++;

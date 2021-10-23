@@ -6,7 +6,7 @@ function scrExecuteMovs(ID)
 		case(0):
 		{
 			///Fireball
-			var Fireball = instance_create_depth(x , y , depth , objCombatFireball);
+			var Fireball = instance_create_depth(x + LastScaleXSprite * 12 , y + 4 , depth , objCombatFireball);
 			Fireball.HorizontalMovement = ScaleXSprite*3;
 			Fireball.VerticalMovement = -1;
 			Fireball.Power = scrDameDato(Control.MovList , 0 , "Power");

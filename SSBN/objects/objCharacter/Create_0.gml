@@ -68,7 +68,21 @@ SoundSkid = 0;
 NextMov = -1;
 MoveQueue = ds_list_create();
 MyMovs = ds_list_create();
+LifePorcentage = 0;
 
+#region Controllers
+RightButtonActive = Control.RightButtonActive;
+LeftButtonActive = Control.LeftButtonActive;
+DownButtonPressedActive = Control.DownButtonPressedActive;
+LeftButtonPressedActive = Control.LeftButtonPressedActive;
+RightButtonPressedActive = Control.RightButtonPressedActive;
+JumpButtonActive = Control.JumpButtonActive;
+JumpButtonReleaseActive = Control.JumpButtonReleaseActive;
+AttackButtonPressedActive = Control.AttackButtonPressedActive;
+DownButtonReleasedActive = Control.DownButtonReleasedActive;
+DownButtonActive = Control.DownButtonActive;
+AttackButtonActive = Control.AttackButtonActive;
+#endregion
 
 #region Sprites
 SpriteWalk = sprChKirbyWalk;

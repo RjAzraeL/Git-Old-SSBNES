@@ -42,4 +42,6 @@ AttackButton = ord("C");
 StartButton = vk_enter;
 SelectButton = vk_space;
 ShowColissionButton = vk_f8;
+
+alarm[0] = 5;
 #endregion
