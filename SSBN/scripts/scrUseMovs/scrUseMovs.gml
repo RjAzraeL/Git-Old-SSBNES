@@ -11,7 +11,7 @@ function scrUseMovs()
 				{
 					case(0):
 					{
-						if (!scrCheckObject(self , objCombatFireball))
+						if (scrCheckObjectAmount(self , objCombatFireball) < 2)
 						{
 							scrAddMov(0 , 2 , self);
 							Attacking = true;
