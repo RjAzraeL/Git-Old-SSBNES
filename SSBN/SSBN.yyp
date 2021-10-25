@@ -4,6 +4,7 @@
     {"id":{"name":"sndOst09Underground","path":"sounds/sndOst09Underground/sndOst09Underground.yy",},"order":14,},
     {"id":{"name":"sprChSandbagFalling","path":"sprites/sprChSandbagFalling/sprChSandbagFalling.yy",},"order":3,},
     {"id":{"name":"sprStgLy2Underground","path":"sprites/sprStgLy2Underground/sprStgLy2Underground.yy",},"order":1,},
+    {"id":{"name":"sprDashEffect","path":"sprites/sprDashEffect/sprDashEffect.yy",},"order":5,},
     {"id":{"name":"scrSegundos","path":"scripts/scrSegundos/scrSegundos.yy",},"order":8,},
     {"id":{"name":"scrJump","path":"scripts/scrJump/scrJump.yy",},"order":6,},
     {"id":{"name":"parCollision","path":"objects/parCollision/parCollision.yy",},"order":1,},
@@ -156,8 +157,8 @@
     "children": [],
   },
   "RoomOrderNodes": [
-    {"roomId":{"name":"rmTest5","path":"rooms/rmTest5/rmTest5.yy",},},
     {"roomId":{"name":"rmTest4","path":"rooms/rmTest4/rmTest4.yy",},},
+    {"roomId":{"name":"rmTest5","path":"rooms/rmTest5/rmTest5.yy",},},
     {"roomId":{"name":"rmTest2","path":"rooms/rmTest2/rmTest2.yy",},},
     {"roomId":{"name":"rmTest3","path":"rooms/rmTest3/rmTest3.yy",},},
     {"roomId":{"name":"rmTest","path":"rooms/rmTest/rmTest.yy",},},

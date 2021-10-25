@@ -39,12 +39,12 @@ if (keyboard_check_released(ord("D"))) { crt_shader_enabled = !crt_shader_enable
 { var_use_noise = 1; }
 { var_use_border = 1; }
 { var_use_radial_distortion = 1; }
-{ var_brightness = 1.3;}
+{ var_brightness = 1.1;}
 { var_use_scanlines = 1; }
-{ var_use_RGB_separation = 0 }
+{ var_use_RGB_separation = 1 }
 { var_radial_distortion_ammount = 0.40;}
 { var_noise_strength = 0.050;}
-{ crt_gui_bezel_enabled = 0; }
+{ crt_gui_bezel_enabled = 1; }
 
 ///Reset GUI layer back to the window size so we can draw text, etc.
 display_set_gui_size(window_get_width(), window_get_height());
