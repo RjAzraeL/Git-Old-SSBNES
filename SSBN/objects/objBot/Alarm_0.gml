@@ -1,5 +1,5 @@
 #region Attack
-alarm[0] = 10;
+alarm[0] = irandom_range(7,15);
 RightButtonActive = false;
 LeftButtonActive = false;
 RightButtonPressedActive = false;
@@ -19,6 +19,11 @@ if (scrExiste(objCharacter))
 		{
 			LeftButtonPressedActive = true;
 		}
+		if (objCharacter.y < y - 16)
+		{
+			JumpButtonActive = true;
+			alarm[3] = 1;
+		}
 	}
 	else
 	{
@@ -26,8 +31,9 @@ if (scrExiste(objCharacter))
 		if (objCharacter.y < y - 16)
 		{
 			JumpButtonActive = true;
+			alarm[3] = 1;
 		}
-		else if (objCharacter.y > y + 8 and place_meeting(x , y + 2 , parCollision))
+		else if (objCharacter.y > y + 8)
 		{
 			alarm[1] = 2;
 			DownButtonReleasedActive = true;
@@ -52,5 +58,6 @@ if (scrExiste(objCharacter))
 if (!place_meeting(x , y + 16 , parCollision))
 {
 	JumpButtonActive = true;
+	alarm[3] = 1;
 }
 #endregion
