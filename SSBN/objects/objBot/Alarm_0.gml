@@ -1,16 +1,23 @@
 #region Attack
-alarm[0] = irandom_range(7,15);
+alarm[0] = 30;
 RightButtonActive = false;
 LeftButtonActive = false;
 RightButtonPressedActive = false;
 LeftButtonPressedActive = false;
 JumpButtonActive = false;
-DownButtonPressedActive = false;
+AttackButtonPressedActive = false;
 if (scrExiste(objCharacter))
 {
+	if (objCharacter.x < x)
+	{
+		ScaleXSprite = -1;
+	}
+	else if (objCharacter.x > x)
+	{
+		ScaleXSprite = 1;
+	}
 	if (distance_to_object(objCharacter) > 60)
 	{
-		AttackButtonPressedActive = false;
 		if (HorizontalMovement > 0)
 		{
 			RightButtonPressedActive = true;
@@ -22,29 +29,34 @@ if (scrExiste(objCharacter))
 		if (objCharacter.y < y - 16)
 		{
 			JumpButtonActive = true;
-			alarm[3] = 1;
+			alarm[3] = 5;
 		}
 	}
 	else
 	{
-		AttackButtonPressedActive = true;
+		if (abs(y - objCharacter.y) < 8)
+		{
+			AttackButtonPressedActive = true;
+		}
 		if (objCharacter.y < y - 16)
 		{
 			JumpButtonActive = true;
-			alarm[3] = 1;
-		}
-		else if (objCharacter.y > y + 8)
-		{
-			alarm[1] = 2;
-			DownButtonReleasedActive = true;
+			alarm[3] = 5;
 		}
 	}
-	if (objCharacter.x > x - 32)
+	if (place_meeting(x , y + 2 , objBlockTransferable ))
+	{
+		alarm[1] = 8;
+		DownButtonActive = true;
+		DownButtonReleasedActive = false;
+	}
+	
+	if (objCharacter.x > x - 25)
 	{
 		RightButtonActive = true;
 		LeftButtonActive = false;
 	}
-	else if (objCharacter.x < x + 32)
+	else if (objCharacter.x < x + 25)
 	{
 		RightButtonActive = false;
 		LeftButtonActive = true;
@@ -54,10 +66,5 @@ if (scrExiste(objCharacter))
 		RightButtonActive = false;
 		LeftButtonActive = false;
 	}
-}
-if (!place_meeting(x , y + 16 , parCollision))
-{
-	JumpButtonActive = true;
-	alarm[3] = 1;
 }
 #endregion

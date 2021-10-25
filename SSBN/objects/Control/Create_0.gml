@@ -14,6 +14,7 @@ scrDataCharacter();
 
 #endregion
 
+RoomVoidY = 150;
 Gravity = .3;
 PlatformTimeAvailable = 300;
 MusicNext = sfxKirbyJump;
@@ -25,7 +26,7 @@ yy = 0;
 Limite = 90;
 LimiteVelocidad = 0.025;
 PlatformYLimit = 32;
-
+CreateBot = false;
 #endregion
 
 #region Index
