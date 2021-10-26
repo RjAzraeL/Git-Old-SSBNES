@@ -1,8 +1,8 @@
 #region Set variables
 depth = -10;
 Delta = delta_time / 1000000;
-VolumeMusic = .1;
-VolumeSound = 1;
+VolumeMusic = .2;
+VolumeSound = 0;
 IndexMusic = -1;
 CharacterId[0] = 1;
 CharacterId[1] = 2;

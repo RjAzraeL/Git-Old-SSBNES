@@ -44,7 +44,7 @@ if (keyboard_check_released(ord("D"))) { crt_shader_enabled = !crt_shader_enable
 { var_use_RGB_separation = 1 }
 { var_radial_distortion_ammount = 0.40;}
 { var_noise_strength = 0.050;}
-{ crt_gui_bezel_enabled = 1; }
+{ crt_gui_bezel_enabled = 0; }
 
 ///Reset GUI layer back to the window size so we can draw text, etc.
 display_set_gui_size(window_get_width(), window_get_height());
