@@ -24,11 +24,18 @@ function scrExecuteMovs(ID)
 			Firepunch.Ide = 1;
 			Firepunch.FollowX = LastScaleXSprite * 18;
 			Firepunch.FollowY = 4;
-			Firepunch.Power = scrDameDato(Control.MovList , 1 , "Power");
+			Firepunch.Power = SmashActualPower;
 			Firepunch.KnockbackScaling = scrDameDato(Control.MovList , 1 , "Knockback Scaling");
 			Firepunch.image_xscale = ScaleXSprite;
 			Firepunch.Creator = self;
+			
+			///Punch
+			var Punch = instance_create_depth(x + LastScaleXSprite * 8 , y + 4 , depth-1 , objCombatHitbox);
+			Punch.image_xscale = 12;
+			Punch.image_yscale = 8;
+			
 			ds_list_add(self.MyMovs , Firepunch);
+			
 			break;
 		}
 	}

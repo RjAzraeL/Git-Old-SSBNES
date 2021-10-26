@@ -72,6 +72,9 @@ NextMov = -1;
 MoveQueue = ds_list_create();
 MyMovs = ds_list_create();
 LifePorcentage = 0;
+SmashMaxPower = 0;
+SmashGrownPower = 0;
+SmashActualPower = 0;
 
 #region Controllers
 RightButtonActive = Control.RightButtonActive;

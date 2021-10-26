@@ -9,6 +9,7 @@ AttackButtonPressedActive = false;
 DownButtonReleasedActive = false;
 DownButtonActive = false;
 AttackButtonActive = false;
+AttackButtonReleasedActive = false;
 
 LeftButtonActive = true;
 RightButtonActive = false;

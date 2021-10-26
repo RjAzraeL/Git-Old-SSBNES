@@ -36,7 +36,10 @@ function scrUseMovs()
 						Attacking = true;
 						AttackingHold = scrDameDato(Control.MovList , 1 , "Is Smash");
 						AttackingHoldIndex = 1;
+						SmashMaxPower = scrDameDato(Control.MovList , 1 , "Max Power");
+						SmashGrownPower = .25;
 						SpriteAttacking = SpriteAttackGroundSide;
+						SmashActualPower = scrDameDato(Control.MovList , 1 , "Power");
 						image_speed = .25;
 						image_index = 0;
 						RootAttack = scrDameDato(Control.MovList , 1 , "Root");
@@ -46,9 +49,19 @@ function scrUseMovs()
 			}
 		}
 	}
-	if (Attacking)
+	if (Attacking and Damaged == 0)
 	{
-		
+		if (AttackingHold)
+		{
+			if (SmashActualPower < SmashMaxPower)
+			{
+				SmashActualPower += SmashGrownPower;
+			}
+		}
+		if (AttackButtonReleasedActive and AttackingHold)
+		{
+			AttackingHold = false;
+		}
 	}
 	#endregion
 }

@@ -10,4 +10,5 @@ AttackButtonPressedActive = Control.AttackButtonPressedActive;
 DownButtonReleasedActive = Control.DownButtonReleasedActive;
 DownButtonActive = Control.DownButtonActive;
 AttackButtonActive = Control.AttackButtonActive;
+AttackButtonReleasedActive = Control.AttackButtonReleasedActive;
 #endregion

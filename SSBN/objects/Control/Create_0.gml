@@ -1,7 +1,7 @@
 #region Set variables
 depth = -10;
 Delta = delta_time / 1000000;
-VolumeMusic = .2;
+VolumeMusic = 0;
 VolumeSound = .1;
 IndexMusic = -1;
 CharacterId[0] = 1;
@@ -19,6 +19,7 @@ CharacterLife[3] = 6;
 TotalCharacters = 1;
 ShowMask = false;
 FontPorcentage = font_add_sprite_ext(sprHudNumbers , "0123456789" , true , 0);
+
 #region Data
 
 scrDataMov();
