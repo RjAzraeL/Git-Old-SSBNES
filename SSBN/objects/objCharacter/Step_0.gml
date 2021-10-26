@@ -541,6 +541,7 @@ y += VerticalMovement;
 #endregion
 
 #region Damage
+Control.CharacterPorcentage[Position] = LifePorcentage;
 if (Damaged > 0)
 {
 	Damaged--;
@@ -629,6 +630,15 @@ if (Damaged == 0)
 		else
 		{
 			sprite_index = SpriteAttacking;
+			if (!AttackingHold)
+			{
+				image_speed = .25;
+			}
+			else
+			{
+				image_index = AttackingHoldIndex;
+				image_speed = 0;
+			}
 		}
 	}
 	else
@@ -648,8 +658,12 @@ else
 if (y > room_height + 64)
 {
 	scrSound(sfxKO);
-	var Character = instance_create_depth(room_width/2 , y , depth , object_index);
-	Character.Position = Position;
+	if (Control.CharacterLife[Position] > 1)
+	{
+		var Character = instance_create_depth(room_width/2 , y , depth , object_index);
+		Character.Position = Position;
+		Control.CharacterLife[Position]--;
+	}
 	instance_destroy();
 }
 #endregion

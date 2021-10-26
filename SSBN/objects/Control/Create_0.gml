@@ -2,19 +2,23 @@
 depth = -10;
 Delta = delta_time / 1000000;
 VolumeMusic = .2;
-VolumeSound = 0;
+VolumeSound = .1;
 IndexMusic = -1;
 CharacterId[0] = 1;
-CharacterId[1] = 2;
+CharacterId[1] = 1;
 CharacterId[2] = 1;
 CharacterId[3] = 1;
 CharacterPorcentage[0] = 0;
 CharacterPorcentage[1] = 0;
 CharacterPorcentage[2] = 0;
 CharacterPorcentage[3] = 0;
+CharacterLife[0] = 6;
+CharacterLife[1] = 6;
+CharacterLife[2] = 6;
+CharacterLife[3] = 6;
 TotalCharacters = 1;
 ShowMask = false;
-FontPorcentage = font_add_sprite_ext(sprHudNumbers , "0123456789" , true , 1);
+FontPorcentage = font_add_sprite_ext(sprHudNumbers , "0123456789" , true , 0);
 #region Data
 
 scrDataMov();
