@@ -19,8 +19,7 @@ else
 	image_alpha = 1;
 }
 draw_sprite_ext( sprite_index , image_index , x , y , ScaleXSprite , ScaleY , Angle , image_blend , image_alpha );
-//scrText(x , y + 64 , "" + string(LifePorcentage) + "%" , fa_center , fa_center , fntNormal , c_black , c_white , 32 , 128 , 1 , 1 , 0 , 1);
-//scrSimpleText(x , y + 32 , DownButtonReleasedActive);
+scrSimpleText(x , y + 32 , "" + string(LifePorcentage) + "%" );
 
 if (Control.ShowMask)
 {

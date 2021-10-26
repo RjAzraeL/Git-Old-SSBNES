@@ -19,7 +19,10 @@ SaveStopJump = false;
 CooldowFall = 0;
 FallReady = false;
 RootAttack = false;
-//Aceleration = .2;
+Damaged = 0;
+LastDamage = 0;
+BlowsReceivedList = ds_list_create();
+SavedHorizontalDirection = 0;
 PlusY = 0;
 _PlusY = 0;
 FallAceleration = .01;
@@ -101,9 +104,11 @@ Attacking = false;
 
 
 #region Mask
+MaskDuck = sprChKirbyMaskDuck;
+MaskNormal = sprChKirbyMask;
 #endregion
 
-scrSetCharacter();
+alarm[11] = 1;
 
 #endregion
 

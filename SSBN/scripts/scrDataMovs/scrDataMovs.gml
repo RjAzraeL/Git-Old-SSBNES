@@ -2,7 +2,7 @@ function scrDataMov()
 {
 	Control.MovList = ds_list_create();
 	
-	/*0*/scrMapMov( scrCrearLista("Fireball" , 6 , true) );
+	/*0*/scrMapMov( scrCrearLista("Fireball" , 5 , true , 110 , 0 , false) );
 	
 }
 	
@@ -14,6 +14,10 @@ function scrMapMov(List)
 	Paquete[? "Name"] = ds_list_find_value(List , 0);
 	Paquete[? "Power"] = ds_list_find_value(List , 1);
 	Paquete[? "Root"] = ds_list_find_value(List , 2);
+	Paquete[? "Knockback Scaling"] = ds_list_find_value(List , 3);
+	Paquete[? "Knockback Fixed"] = ds_list_find_value(List , 4);
+	Paquete[? "Lack of power"] = ds_list_find_value(List , 5);
+	
 
 	
 	ds_list_add(Control.MovList , Paquete);

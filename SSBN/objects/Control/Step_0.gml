@@ -26,32 +26,6 @@ if (IndexImage2 > 1.9)
 #endregion
 
 #region Change
-if (keyboard_check_pressed(vk_f1))
-{
-	if (CharacterId > 0)
-	{
-		CharacterId--;
-		with (objCharacter)
-		{
-			scrSetCharacter();
-			instance_create_depth(room_width/2 , y , depth , object_index);
-			instance_destroy();
-		}
-	}
-}
-if (keyboard_check_pressed(vk_f2))
-{
-	if (CharacterId < CharacterLimit)
-	{
-		CharacterId++;
-		with (objCharacter)
-		{
-			scrSetCharacter();
-			instance_create_depth(room_width/2 , y , depth , object_index);
-			instance_destroy();
-		}
-	}
-}
 #endregion
 
 #region Generic

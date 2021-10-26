@@ -9,7 +9,9 @@ function scrExecuteMovs(ID)
 			var Fireball = instance_create_depth(x + LastScaleXSprite * 12 , y + 4 , depth , objCombatFireball);
 			Fireball.HorizontalMovement = ScaleXSprite*3;
 			Fireball.VerticalMovement = -1;
+			Fireball.Ide = 0;
 			Fireball.Power = scrDameDato(Control.MovList , 0 , "Power");
+			Fireball.KnockbackScaling = scrDameDato(Control.MovList , 0 , "Knockback Scaling");
 			Fireball.image_xscale = ScaleXSprite;
 			Fireball.Creator = self;
 			ds_list_add(self.MyMovs , Fireball);

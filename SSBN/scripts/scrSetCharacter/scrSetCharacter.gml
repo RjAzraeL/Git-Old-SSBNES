@@ -12,7 +12,7 @@ function scrSetCharacter()
 	JumpValue = scrGetValueCharacter("Jump Value");
 	Gravity = scrGetValueCharacter("Gravity");
 	VerticalMovementLimit = scrGetValueCharacter("Limit Fall");
-	Weigth = scrGetValueCharacter("Weigth");
+	Weight = scrGetValueCharacter("Weight");
 	Friction = scrGetValueCharacter("Friction");
 	GravityFall = scrGetValueCharacter("Gravity Fall");
 	VerticalLimitPorcentage = scrGetValueCharacter("Vertical Limit Porcentage");
@@ -31,6 +31,7 @@ function scrSetCharacter()
 	SpriteTrance = scrGetSpriteIndex("Trance");
 	SpriteTranceRun = scrGetSpriteIndex("TranceRun");
 	SpriteAttackGroundNeutral = scrGetSpriteIndex("GroundNeutral");
+	SpriteHurt = scrGetSpriteIndex("Hurt");
 	
 	#endregion
 	
@@ -55,7 +56,7 @@ function scrSetCharacter()
 ///@arg type
 function scrGetValueCharacter(Type)
 {
-	return scrDameDato(Control.CharacterList , Control.CharacterId , Type);
+	return scrDameDato(Control.CharacterList , Control.CharacterId[Position] , Type);
 }
 
 ///@arg string

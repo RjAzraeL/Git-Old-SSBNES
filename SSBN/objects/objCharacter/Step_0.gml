@@ -39,21 +39,28 @@ if (Platform)
 
 #region Horizontal Speed
 var VarSpeed = 0;
-if (scrSolidDetectorBelow())
+if (Damaged == 0)
 {
-	if (!RunActive)
+	if (scrSolidDetectorBelow())
 	{
-		VarSpeed = SpeedWalk;
+		if (!RunActive)
+		{
+			VarSpeed = SpeedWalk;
+		}
+		else
+		{
+			VarSpeed = SpeedRun;
+			Running = 10;
+		}
 	}
 	else
 	{
-		VarSpeed = SpeedRun;
-		Running = 10;
+		VarSpeed = SpeedFall;
 	}
 }
 else
 {
-	VarSpeed = SpeedFall;
+	VarSpeed = SpeedRun / 2;
 }
 #endregion
 
@@ -61,9 +68,13 @@ else
 var HorizontalDirection = 0;
 if (CooldownSwap == 0 and !Platform)
 {
-	if (!Duck and !RootAttack)
+	if (!Duck and !RootAttack and Damaged == 0)
 	{
 		HorizontalDirection = RightButtonActive - LeftButtonActive;
+	}
+	if (Damaged > 0)
+	{
+		HorizontalDirection = SavedHorizontalDirection;
 	}
 
 	if (HorizontalDirection != 0)
@@ -213,7 +224,7 @@ else
 }
 
 #region Trance
-if (!Platform and !RootAttack)
+if (!Platform and !RootAttack and Damaged == 0)
 {
 	if (LastScaleX != ScaleX and (Skid or RunActive) and scrSolidDetectorBelow())
 	{
@@ -260,7 +271,7 @@ if (!Platform)
 #endregion
 
 #region Jump
-if (!Platform)
+if (!Platform and Damaged == 0)
 {
 	if (JumpAvailable > 0 and JumpButtonActive and CooldownJump == 0 and CooldowFall == 0)
 	{
@@ -302,7 +313,7 @@ if (JumpButtonReleaseActive)
 	}
 }
 
-if (!Platform)
+if (!Platform and Damaged == 0)
 {
 	if (JumpStop or SaveStopJump and CooldownJump == 0 and CooldowFall == 0)
 	{
@@ -354,6 +365,7 @@ if (place_meeting(x , y + VerticalMovement , objBlockSlope45))
 		VerticalMovementLimitExtra = 0;
 		GravityFallDownActive = 0;
 		JumpingInTerrain = false;
+		Damaged = 0;
 		if (!FallReady)
 		{
 			FallReady = true;
@@ -373,7 +385,7 @@ if (place_meeting(x + HorizontalMovement , y , parSolid))
 	}
 	HorizontalMovement = 0;
 }
-if (!place_meeting(x , y , objBlockTransferable) and (VerticalMovement >= 0 and !DuckFall) and (GravityFallDownActive == 0))
+if (!place_meeting(x , y , objBlockTransferable) and (VerticalMovement >= 0 and !DuckFall) and (GravityFallDownActive == 0) and Damaged == 0)
 {
 	if (place_meeting(x , y + VerticalMovement , objBlockTransferable))
 	{
@@ -388,6 +400,7 @@ if (!place_meeting(x , y , objBlockTransferable) and (VerticalMovement >= 0 and 
 			VerticalMovementLimitExtra = 0;
 			GravityFallDownActive = 0;
 			JumpingInTerrain = false;
+			Damaged = 0;
 			if (!FallReady)
 			{
 				FallReady = true;
@@ -415,6 +428,7 @@ if (place_meeting(x , y + VerticalMovement , parSolid))
 		VerticalMovementLimitExtra = 0;
 		GravityFallDownActive = 0;
 		JumpingInTerrain = false;
+		Damaged = 0;
 		if (!FallReady)
 		{
 			FallReady = true;
@@ -445,7 +459,7 @@ if (CooldowFall > 0)
 #endregion
 
 #region Duck
-if (CooldownJump == 0 and CooldowFall == 0 and !RootAttack)
+if (CooldownJump == 0 and CooldowFall == 0 and !RootAttack and Damaged == 0)
 {
 	if (DownButtonReleasedActive and Duck)
 	{
@@ -526,91 +540,107 @@ y += VerticalMovement;
 
 #endregion
 
-#region Sprite
-if (!Platform)
+#region Damage
+if (Damaged > 0)
 {
-	if (!Attacking)
+	Damaged--;
+}
+#endregion
+
+#region Sprite
+if (Damaged == 0)
+{
+	image_speed = .25;
+	if (!Platform)
 	{
-		image_speed = .25;
-		if (scrSolidDetectorBelow()) and !place_meeting(x , y , parCollision)
+		if (!Attacking)
 		{
-			if (!Duck)
+			image_speed = .25;
+			if (scrSolidDetectorBelow()) and !place_meeting(x , y , parCollision)
 			{
-				image_speed = .25;
-				if (CooldownJump == 0 and CooldowFall == 0)
+				if (!Duck)
 				{
-					if (HorizontalMovement == 0)
+					image_speed = .25;
+					if (CooldownJump == 0 and CooldowFall == 0)
 					{
-						sprite_index = SpriteIdle;
-					}
-					else
-					{
-						if (CooldownSwap == 0)
+						if (HorizontalMovement == 0)
 						{
-							image_speed = 0.25;
-							if (!Skid)
+							sprite_index = SpriteIdle;
+						}
+						else
+						{
+							if (CooldownSwap == 0)
 							{
-								if (!RunActive)
+								image_speed = 0.25;
+								if (!Skid)
 								{
-									sprite_index = SpriteWalk;
+									if (!RunActive)
+									{
+										sprite_index = SpriteWalk;
+									}
+									else
+									{
+										sprite_index = SpriteRun;
+									}
 								}
 								else
 								{
-									sprite_index = SpriteRun;
+									sprite_index = SpriteSkid;
 								}
 							}
 							else
 							{
-								sprite_index = SpriteSkid;
+								image_speed = 0;
+								sprite_index = SpriteTranceRun;
 							}
 						}
-						else
-						{
-							image_speed = 0;
-							sprite_index = SpriteTranceRun;
-						}
+					}
+					else
+					{
+						sprite_index = SpriteTrance;
 					}
 				}
 				else
 				{
-					sprite_index = SpriteTrance;
+					image_speed = .5;
+					sprite_index = SpriteDuck;
 				}
 			}
 			else
 			{
-				image_speed = .5;
-				sprite_index = SpriteDuck;
+				image_speed = .25;
+				if (ActualJumpSprite == 0)
+				{
+					sprite_index = SpriteFall;
+				}
+				else if (ActualJumpSprite == 1)
+				{
+					sprite_index = SpriteJump;
+				}
+				else if (ActualJumpSprite >= 2)
+				{
+					if (!AnimacionSaltoTerminada)
+					{
+						sprite_index = SpriteJump2;
+					}
+				}
 			}
 		}
 		else
 		{
-			image_speed = .25;
-			if (ActualJumpSprite == 0)
-			{
-				sprite_index = SpriteFall;
-			}
-			else if (ActualJumpSprite == 1)
-			{
-				sprite_index = SpriteJump;
-			}
-			else if (ActualJumpSprite >= 2)
-			{
-				if (!AnimacionSaltoTerminada)
-				{
-					sprite_index = SpriteJump2;
-				}
-			}
+			sprite_index = SpriteAttacking;
 		}
 	}
 	else
 	{
-		sprite_index = SpriteAttacking;
+		image_speed = .25;
+		sprite_index = SpriteIdle;
 	}
 }
 else
 {
 	image_speed = .25;
-	sprite_index = SpriteIdle;
+	sprite_index = SpriteHurt;
 }
 #endregion
 
@@ -618,7 +648,8 @@ else
 if (y > room_height + 64)
 {
 	scrSound(sfxKO);
-	instance_create_depth(room_width/2 , y , depth , object_index);
+	var Character = instance_create_depth(room_width/2 , y , depth , object_index);
+	Character.Position = Position;
 	instance_destroy();
 }
 #endregion

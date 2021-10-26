@@ -1,5 +1,6 @@
 #region Attack
 alarm[0] = 30;
+
 RightButtonActive = false;
 LeftButtonActive = false;
 RightButtonPressedActive = false;
@@ -67,4 +68,5 @@ if (scrExiste(objCharacter))
 		LeftButtonActive = false;
 	}
 }
+
 #endregion

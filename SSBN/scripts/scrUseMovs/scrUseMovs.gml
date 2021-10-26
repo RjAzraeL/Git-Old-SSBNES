@@ -1,7 +1,7 @@
 function scrUseMovs()
 {
 	#region Ground - Neutral
-	if (!Attacking)
+	if (!Attacking and Damaged == 0)
 	{
 		if (AttackButtonPressedActive)
 		{
