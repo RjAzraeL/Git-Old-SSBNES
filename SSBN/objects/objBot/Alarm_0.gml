@@ -19,13 +19,16 @@ if (scrExiste(Target))
 {
 	if (Target.Inmune == 0 and Target.x > Control.RoomLimitX and Target.x < room_width - Control.RoomLimitX)
 	{
-		if (Target.x < x)
+		if (Damaged == 0 and !Attacking and TimeAttacking == 0)
 		{
-			ScaleXSprite = -1;
-		}
-		else if (Target.x > x)
-		{
-			ScaleXSprite = 1;
+			if (Target.x < x)
+			{
+				ScaleXSprite = -1;
+			}
+			else if (Target.x > x)
+			{
+				ScaleXSprite = 1;
+			}
 		}
 		if (distance_to_object(Target) > 40)
 		{

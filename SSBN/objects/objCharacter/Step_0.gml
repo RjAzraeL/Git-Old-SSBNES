@@ -68,7 +68,7 @@ else
 var HorizontalDirection = 0;
 if (CooldownSwap == 0 and !Platform)
 {
-	if (!Duck and !RootAttack and Damaged == 0)
+	if (!Duck and !RootAttack and Damaged == 0 and TimeAttacking == 0)
 	{
 		HorizontalDirection = RightButtonActive - LeftButtonActive;
 	}
@@ -185,7 +185,7 @@ if (!Platform)
 #endregion
 
 #region Down Fast
-if (DownButtonPressedActive and CooldowFall == 0 and CooldownJump == 0 and !place_meeting(x , y+1 , parCollision) and !Platform and !Attacking)
+if (DownButtonPressedActive and CooldowFall == 0 and CooldownJump == 0 and !place_meeting(x , y+1 , parCollision) and !Platform and !Attacking and TimeAttacking == 0)
 {
 	if (VerticalMovement != 0)
 	{
@@ -280,7 +280,7 @@ if (!Platform)
 #endregion
 
 #region Jump
-if (!Platform and Damaged == 0 and !Attacking)
+if (!Platform and Damaged == 0 and !Attacking and TimeAttacking == 0)
 {
 	if (JumpAvailable > 0 and JumpButtonActive and CooldownJump == 0 and CooldowFall == 0)
 	{
@@ -322,7 +322,7 @@ if (JumpButtonReleaseActive)
 	}
 }
 
-if (!Platform and Damaged == 0 and !Attacking)
+if (!Platform and Damaged == 0 and !Attacking and TimeAttacking == 0)
 {
 	if (JumpStop or SaveStopJump and CooldownJump == 0 and CooldowFall == 0)
 	{
@@ -344,16 +344,8 @@ scrUseMovs();
 if (TimeAttacking > 0)
 {
 	TimeAttacking--;
-	Attacking = true;
 }
-else
-{
-	if (Attacking)
-	{
-		Attacking = false;
-	}
-}
-if (Attacking)
+if (Attacking or TimeAttacking > 0)
 {
 	if (ds_list_size(MoveQueue) > 0)
 	{
@@ -480,7 +472,7 @@ if (CooldowFall > 0)
 #endregion
 
 #region Duck
-if (CooldownJump == 0 and CooldowFall == 0 and !RootAttack and Damaged == 0)
+if (CooldownJump == 0 and CooldowFall == 0 and !RootAttack and Damaged == 0 and !Attacking and TimeAttacking == 0)
 {
 	if (DownButtonReleasedActive and Duck)
 	{
@@ -575,7 +567,7 @@ if (Damaged == 0)
 	image_speed = .25;
 	if (!Platform)
 	{
-		if (!Attacking)
+		if (!Attacking and TimeAttacking == 0)
 		{
 			image_speed = .25;
 			if (scrSolidDetectorBelow()) and !place_meeting(x , y , parCollision)

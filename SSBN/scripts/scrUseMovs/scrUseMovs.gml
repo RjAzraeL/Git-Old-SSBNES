@@ -1,7 +1,7 @@
 function scrUseMovs()
 {
 	#region Ground - Neutral
-	if (!Attacking and Damaged == 0)
+	if ((!Attacking and TimeAttacking == 0) and Damaged == 0)
 	{
 		if (scrSolidDetectorBelow()) 
 		{
@@ -49,7 +49,7 @@ function scrUseMovs()
 			}
 		}
 	}
-	if (Attacking and Damaged == 0)
+	if ((Attacking or TimeAttacking > 0) and Damaged == 0)
 	{
 		if (AttackingHold)
 		{

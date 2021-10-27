@@ -14,6 +14,7 @@ function scrExecuteMovs(ID)
 			Fireball.KnockbackScaling = scrDameDato(Control.MovList , 0 , "Knockback Scaling");
 			Fireball.image_xscale = ScaleXSprite;
 			Fireball.Creator = self;
+			TimeAttacking = scrDameDato(Control.MovList , 0 , "Time Attacking");
 			ds_list_add(self.MyMovs , Fireball);
 			break;
 		}
@@ -28,6 +29,7 @@ function scrExecuteMovs(ID)
 			Firepunch.KnockbackScaling = scrDameDato(Control.MovList , 1 , "Knockback Scaling");
 			Firepunch.image_xscale = ScaleXSprite;
 			Firepunch.Creator = self;
+			TimeAttacking = scrDameDato(Control.MovList , 1 , "Time Attacking");
 			
 			///Punch
 			var Punch = instance_create_depth(x + LastScaleXSprite * 5 , y + 4 , depth-1 , objCombatHitbox);
