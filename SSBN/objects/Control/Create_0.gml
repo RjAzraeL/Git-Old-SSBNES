@@ -28,7 +28,8 @@ scrDataCharacter();
 
 #endregion
 
-RoomVoidY = 150;
+RoomVoidY = 145;
+RoomLimitX = 30;
 Gravity = .3;
 PlatformTimeAvailable = 300;
 MusicNext = sfxKirbyJump;

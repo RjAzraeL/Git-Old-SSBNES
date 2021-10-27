@@ -17,18 +17,23 @@ if (other.Creator != self and ds_list_find_index(BlowsReceivedList , other.id) =
 		LastDamage = PowerFormula/10;
 		Damaged = round(PowerFormula/10);
 		var Dir = 0;
+		var AngleDireference = LifePorcentage;
+		if (AngleDireference >= 60)
+		{
+			AngleDireference = 60;
+		}
 		if (x < other.x)
 		{
-			Dir = 100 + LastDamage;
+			Dir = 160;
 			SavedHorizontalDirection = -1;
 		}
 		else
 		{
-			Dir = 80 - LastDamage;
+			Dir = 20;
 			SavedHorizontalDirection = 1;
 		}
-		HorizontalDirection = lengthdir_x( LastDamage/2 , Dir);
-		VerticalMovement = lengthdir_y( LastDamage/2  , Dir);
+		SavedHorizontalMovement = lengthdir_x( LastDamage/8 , point_direction(other.x , other.y , x , y));
+		VerticalMovement = lengthdir_y( LastDamage/3  , point_direction(other.x , other.y , x , y));
 	}
 	else
 	{
@@ -44,7 +49,7 @@ if (other.Creator != self and ds_list_find_index(BlowsReceivedList , other.id) =
 			Dir = 80;
 			SavedHorizontalDirection = 1;
 		}
-		HorizontalDirection = lengthdir_x( 3 , Dir);
+		SavedHorizontalMovement = lengthdir_x( 3 , Dir);
 		VerticalMovement = lengthdir_y( 3  , Dir);
 	}
 	if (other.Destroyable)

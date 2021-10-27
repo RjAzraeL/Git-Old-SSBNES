@@ -5,7 +5,7 @@ function scrUseMovs()
 	{
 		if (scrSolidDetectorBelow()) 
 		{
-			if (AttackButtonPressedActive and HorizontalMovement == 0)
+			if (AttackButtonPressedActive and abs(HorizontalMovement) < 0.5)
 			{
 				switch(MovGroundNeutral)
 				{
@@ -26,7 +26,7 @@ function scrUseMovs()
 					}
 				}
 			}
-			else if (AttackButtonPressedActive and HorizontalMovement != 0)
+			else if (AttackButtonPressedActive and abs(HorizontalMovement) > 0.5)
 			{
 				switch(MovGroundSide)
 				{
@@ -37,7 +37,7 @@ function scrUseMovs()
 						AttackingHold = scrDameDato(Control.MovList , 1 , "Is Smash");
 						AttackingHoldIndex = 1;
 						SmashMaxPower = scrDameDato(Control.MovList , 1 , "Max Power");
-						SmashGrownPower = .25;
+						SmashGrownPower = .1;
 						SpriteAttacking = SpriteAttackGroundSide;
 						SmashActualPower = scrDameDato(Control.MovList , 1 , "Power");
 						image_speed = .25;

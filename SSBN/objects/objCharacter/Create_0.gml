@@ -23,6 +23,7 @@ Damaged = 0;
 LastDamage = 0;
 BlowsReceivedList = ds_list_create();
 SavedHorizontalDirection = 0;
+SavedHorizontalMovement = 0;
 PlusY = 0;
 _PlusY = 0;
 FallAceleration = .01;
@@ -43,6 +44,7 @@ JumpAvailable = Jumps;
 ScaleX = 1;
 ScaleXSprite = 1;
 LastHorizontalDirection = 1;
+TimeAttacking = 0;
 
 TranceAceleration = 0;
 TranceAcelerationValue = 0;

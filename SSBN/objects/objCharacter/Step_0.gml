@@ -76,82 +76,91 @@ if (CooldownSwap == 0 and !Platform)
 	{
 		HorizontalDirection = SavedHorizontalDirection;
 	}
-
-	if (HorizontalDirection != 0)
+	
+	if (Damaged == 0)
 	{
-		Skid = false;
-		if (AcelerationValue < VarSpeed)
+		if (HorizontalDirection != 0)
 		{
-			if (CooldownSwap == 0)
+			Skid = false;
+			if (AcelerationValue < VarSpeed)
 			{
-				TranceAceleration += (Aceleration * HorizontalDirection);
+				if (CooldownSwap == 0)
+				{
+					TranceAceleration += (Aceleration * HorizontalDirection);
+				}
+				AcelerationValue += Aceleration;
 			}
-			AcelerationValue += Aceleration;
+			else
+			{
+				if (CooldownSwap == 0)
+				{
+					TranceAceleration = VarSpeed * HorizontalDirection;
+				}
+				AcelerationValue = VarSpeed;
+			}
 		}
 		else
 		{
-			if (CooldownSwap == 0)
+			TranceAceleration = lerp(TranceAceleration , 0 , Friction);
+			if (AcelerationValue > 0)
 			{
-				TranceAceleration = VarSpeed * HorizontalDirection;
+				if (scrSolidDetectorBelow())
+				{
+					if (RunActive) and (!Skid)
+					{
+						SoundSkid = 15;
+						Skid = true;
+					}
+				}
+				AcelerationValue -= Friction;
 			}
-			AcelerationValue = VarSpeed;
+			else
+			{
+				AcelerationValue = 0;	
+			}
+		}
+	}
+
+	if (Damaged == 0)
+	{
+		if (HorizontalDirection != 0)
+		{
+			HorizontalMovement = HorizontalDirection * (AcelerationValue);
+		}
+		else
+		{
+			HorizontalMovement = (AcelerationValue) * ScaleX;
 		}
 	}
 	else
 	{
-		TranceAceleration = lerp(TranceAceleration , 0 , Friction);
-		if (AcelerationValue > 0)
+		HorizontalMovement = SavedHorizontalDirection * SavedHorizontalMovement;
+	}
+
+	if (Damaged == 0)
+	{
+		if (HorizontalDirection != 0)
 		{
+			RunTime = 10;
+			ScaleX = sign(HorizontalDirection);
 			if (scrSolidDetectorBelow())
 			{
-				if (RunActive) and (!Skid)
-				{
-					SoundSkid = 15;
-					Skid = true;
-				}
+				ScaleXSprite = sign(HorizontalDirection);
 			}
-			AcelerationValue -= Friction;
 		}
 		else
 		{
-			AcelerationValue = 0;	
-		}
-	}
-
-	if (HorizontalDirection != 0)
-	{
-		HorizontalMovement = HorizontalDirection * (AcelerationValue);
-	}
-	else
-	{
-		HorizontalMovement = (AcelerationValue) * ScaleX;
-	}
-
-	if (HorizontalDirection != 0)
-	{
-		RunTime = 10;
-		ScaleX = sign(HorizontalDirection);
-		if (scrSolidDetectorBelow())
-		{
-			ScaleXSprite = sign(HorizontalDirection);
-		}
-	}
-	else
-	{
-		if (RunTime == 0)
-		{
-			RunActive = false;
-			RunValue = 0;
-			LastDirection = 0;
+			if (RunTime == 0)
+			{
+				RunActive = false;
+				RunValue = 0;
+				LastDirection = 0;
+			}
 		}
 	}
 }
 else
 {
-	if (CooldownSwap == 1)
-	{
-		
-	}
 }
 #endregion
 
@@ -176,7 +185,7 @@ if (!Platform)
 #endregion
 
 #region Down Fast
-if (DownButtonPressedActive and CooldowFall == 0 and CooldownJump == 0 and !place_meeting(x , y+1 , parCollision) and !Platform)
+if (DownButtonPressedActive and CooldowFall == 0 and CooldownJump == 0 and !place_meeting(x , y+1 , parCollision) and !Platform and !Attacking)
 {
 	if (VerticalMovement != 0)
 	{
@@ -271,7 +280,7 @@ if (!Platform)
 #endregion
 
 #region Jump
-if (!Platform and Damaged == 0)
+if (!Platform and Damaged == 0 and !Attacking)
 {
 	if (JumpAvailable > 0 and JumpButtonActive and CooldownJump == 0 and CooldowFall == 0)
 	{
@@ -313,7 +322,7 @@ if (JumpButtonReleaseActive)
 	}
 }
 
-if (!Platform and Damaged == 0)
+if (!Platform and Damaged == 0 and !Attacking)
 {
 	if (JumpStop or SaveStopJump and CooldownJump == 0 and CooldowFall == 0)
 	{
@@ -332,6 +341,18 @@ if (JumpTime > 0)
 #region Movs
 scrUseMovs();
 #region Use Mov
+if (TimeAttacking > 0)
+{
+	TimeAttacking--;
+	Attacking = true;
+}
+else
+{
+	if (Attacking)
+	{
+		Attacking = false;
+	}
+}
 if (Attacking)
 {
 	if (ds_list_size(MoveQueue) > 0)

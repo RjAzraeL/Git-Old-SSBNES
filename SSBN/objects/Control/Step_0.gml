@@ -41,19 +41,29 @@ if (keyboard_check_pressed(ShowColissionButton))
 #region Camera
 HalfViewWidth = camera_get_view_width(view_camera[0]) / 2;
 HalfViewHeight= camera_get_view_height(view_camera[0]) / 2;
-		
-// Clamp camrea
-if (scrExiste(objCharacter))
+
+var Target = noone;
+if (scrExiste(objPlayer))
 {
-	if (objCharacter.x < Limite)
+	Target = objPlayer;
+}
+else if (scrExiste(objBot))
+{
+	Target = objBot;
+}
+
+// Clamp camrea
+if (scrExiste(Target))
+{
+	if (Target.x < Limite)
 	{
 		xx = lerp(xx , 0 , LimiteVelocidad);
 	}
-	else if (objCharacter.x >= Limite + (Limite/3) and objCharacter.x <= room_width - Limite - (Limite/3))
+	else if (Target.x >= Limite + (Limite/3) and Target.x <= room_width - Limite - (Limite/3))
 	{
 		xx  = lerp(xx , room_width/2 , LimiteVelocidad*4);
 	}
-	else if (objCharacter.x > room_width - Limite)
+	else if (Target.x > room_width - Limite)
 	{
 		xx = lerp(xx , room_width , LimiteVelocidad);
 	}

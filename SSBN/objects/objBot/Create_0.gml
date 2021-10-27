@@ -1,5 +1,6 @@
 #region Set variables
 event_inherited();
+Mentality = "Close";
 DownButtonPressedActive = false;
 LeftButtonPressedActive = false;
 RightButtonPressedActive = false;

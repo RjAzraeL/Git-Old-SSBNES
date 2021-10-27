@@ -30,11 +30,21 @@ function scrExecuteMovs(ID)
 			Firepunch.Creator = self;
 			
 			///Punch
-			var Punch = instance_create_depth(x + LastScaleXSprite * 8 , y + 4 , depth-1 , objCombatHitbox);
-			Punch.image_xscale = 12;
-			Punch.image_yscale = 8;
+			var Punch = instance_create_depth(x + LastScaleXSprite * 5 , y + 4 , depth-1 , objCombatHitbox);
+			Punch.sprite_index = sprChMarioFirePunchMask;
+			Punch.Ide = 1;
+			Punch.FollowX = LastScaleXSprite * 5;
+			Punch.FollowY = 4;
+			Punch.Creator = self;
 			
-			ds_list_add(self.MyMovs , Firepunch);
+			var LowPower = scrDameDato(Control.MovList , 0 , "Power");
+			var LoadPorcentage = scrGetTotalPorcentageFromTwoValues(LowPower , SmashMaxPower , SmashActualPower);
+			
+			Punch.Power = scrGetTotalValueFromTwoPorcentages(11 , 15 , LoadPorcentage);
+			Punch.KnockbackScaling = scrDameDato(Control.MovList , 1 , "Knockback Scaling");
+			ds_list_add(self.MyMovs , Punch);
+			
+			Firepunch.Follower = Punch;
 			
 			break;
 		}

@@ -1,72 +1,96 @@
 #region Attack
-alarm[0] = 30;
-
+alarm[0] = 25;
+if (scrExiste(objPlayer))
+{
+	Target = objPlayer;
+}
+else
+{
+	Target = noone;
+}
 RightButtonActive = false;
 LeftButtonActive = false;
 RightButtonPressedActive = false;
 LeftButtonPressedActive = false;
 JumpButtonActive = false;
 AttackButtonPressedActive = false;
-if (scrExiste(objCharacter))
+AttackButtonReleasedActive = false;
+if (scrExiste(Target))
 {
-	if (objCharacter.x < x)
+	if (Target.Inmune == 0 and Target.x > Control.RoomLimitX and Target.x < room_width - Control.RoomLimitX)
 	{
-		ScaleXSprite = -1;
-	}
-	else if (objCharacter.x > x)
-	{
-		ScaleXSprite = 1;
-	}
-	if (distance_to_object(objCharacter) > 60)
-	{
-		if (HorizontalMovement > 0)
+		if (Target.x < x)
 		{
-			RightButtonPressedActive = true;
+			ScaleXSprite = -1;
+		}
+		else if (Target.x > x)
+		{
+			ScaleXSprite = 1;
+		}
+		if (distance_to_object(Target) > 40)
+		{
+			if (Mentality == "Close")
+			{
+				if (HorizontalMovement > 0)
+				{
+					RightButtonPressedActive = true;
+				}
+				else
+				{
+					LeftButtonPressedActive = true;
+				}
+				if (Target.y < y - 16)
+				{
+					JumpButtonActive = true;
+					alarm[3] = 5;
+				}
+			}
+			else if (Mentality == "Range")
+			{
+				AttackButtonPressedActive = true;
+				alarm[6] = irandom_range(5 , 20);
+			}
 		}
 		else
 		{
-			LeftButtonPressedActive = true;
+			if (abs(y - Target.y) < 8)
+			{
+				AttackButtonPressedActive = true;
+				alarm[6] = irandom_range(5 , 20);
+			}
+			if (Target.y < y - 16)
+			{
+				JumpButtonActive = true;
+				alarm[3] = 5;
+			}
 		}
-		if (objCharacter.y < y - 16)
+		if (place_meeting(x , y + 2 , objBlockTransferable ))
 		{
-			JumpButtonActive = true;
-			alarm[3] = 5;
+			alarm[1] = 8;
+			DownButtonActive = true;
+			DownButtonReleasedActive = false;
 		}
-	}
-	else
-	{
-		if (abs(y - objCharacter.y) < 8)
-		{
-			AttackButtonPressedActive = true;
-		}
-		if (objCharacter.y < y - 16)
-		{
-			JumpButtonActive = true;
-			alarm[3] = 5;
-		}
-	}
-	if (place_meeting(x , y + 2 , objBlockTransferable ))
-	{
-		alarm[1] = 8;
-		DownButtonActive = true;
-		DownButtonReleasedActive = false;
-	}
 	
-	if (objCharacter.x > x - 25)
-	{
-		RightButtonActive = true;
-		LeftButtonActive = false;
-	}
-	else if (objCharacter.x < x + 25)
-	{
-		RightButtonActive = false;
-		LeftButtonActive = true;
-	}
-	else
-	{
-		RightButtonActive = false;
-		LeftButtonActive = false;
+		if (Target.x > x - 15)
+		{
+			RightButtonActive = true;
+			LeftButtonActive = false;
+		}
+		else if (Target.x < x + 15)
+		{
+			RightButtonActive = false;
+			LeftButtonActive = true;
+		}
+		else
+		{
+			RightButtonActive = false;
+			LeftButtonActive = false;
+		}
 	}
 }
-
+else
+{
+	LeftButtonActive = false;
+	RightButtonActive = false;
+}
 #endregion
