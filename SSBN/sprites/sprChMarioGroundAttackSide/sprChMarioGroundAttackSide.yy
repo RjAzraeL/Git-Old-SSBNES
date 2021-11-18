@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"4a2a3a30-9055-4c18-adcf-e2da02e935b7","path":"sprites/sprChMarioGroundDash/sprChMarioGroundDash.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"4a2a3a30-9055-4c18-adcf-e2da02e935b7","path":"sprites/sprChMarioGroundDash/sprChMarioGroundDash.yy",},"LayerId":{"name":"905fe2ae-3784-4012-ba39-5695e1f52e97","path":"sprites/sprChMarioGroundDash/sprChMarioGroundDash.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprChMarioGroundDash","path":"sprites/sprChMarioGroundDash/sprChMarioGroundDash.yy",},"resourceVersion":"1.0","name":"4a2a3a30-9055-4c18-adcf-e2da02e935b7","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"4a2a3a30-9055-4c18-adcf-e2da02e935b7","path":"sprites/sprChMarioGroundAttackSide/sprChMarioGroundAttackSide.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"4a2a3a30-9055-4c18-adcf-e2da02e935b7","path":"sprites/sprChMarioGroundAttackSide/sprChMarioGroundAttackSide.yy",},"LayerId":{"name":"905fe2ae-3784-4012-ba39-5695e1f52e97","path":"sprites/sprChMarioGroundAttackSide/sprChMarioGroundAttackSide.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprChMarioGroundAttackSide","path":"sprites/sprChMarioGroundAttackSide/sprChMarioGroundAttackSide.yy",},"resourceVersion":"1.0","name":"4a2a3a30-9055-4c18-adcf-e2da02e935b7","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"sprChMarioGroundDash","path":"sprites/sprChMarioGroundDash/sprChMarioGroundDash.yy",},
+    "spriteId": {"name":"sprChMarioGroundAttackSide","path":"sprites/sprChMarioGroundAttackSide/sprChMarioGroundAttackSide.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"7ede19f5-c7ec-4f83-9574-9877341e2fc8","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4a2a3a30-9055-4c18-adcf-e2da02e935b7","path":"sprites/sprChMarioGroundDash/sprChMarioGroundDash.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"7ede19f5-c7ec-4f83-9574-9877341e2fc8","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4a2a3a30-9055-4c18-adcf-e2da02e935b7","path":"sprites/sprChMarioGroundAttackSide/sprChMarioGroundAttackSide.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -58,9 +58,9 @@
     "yorigin": 17,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"sprChMarioGroundDash","path":"sprites/sprChMarioGroundDash/sprChMarioGroundDash.yy",},
+    "parent": {"name":"sprChMarioGroundAttackSide","path":"sprites/sprChMarioGroundAttackSide/sprChMarioGroundAttackSide.yy",},
     "resourceVersion": "1.3",
-    "name": "sprChMarioGroundDash",
+    "name": "sprChMarioGroundAttackSide",
     "tags": [],
     "resourceType": "GMSequence",
   },
@@ -73,7 +73,7 @@
     "path": "folders/Sprites/Characters/Mario/Combat.yy",
   },
   "resourceVersion": "1.0",
-  "name": "sprChMarioGroundDash",
+  "name": "sprChMarioGroundAttackSide",
   "tags": [],
   "resourceType": "GMSprite",
 }
