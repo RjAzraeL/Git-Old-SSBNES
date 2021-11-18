@@ -1,4 +1,6 @@
 #region Dibujar
+draw_text(x , y - 32 , instance_number(objCombatMarioFlip));
+
 if (sprite_index == -1)
 {
 	sprite_index = sprChSandbagIdle;

@@ -2,6 +2,7 @@
   "resources": [
     {"id":{"name":"sprChMarioSkid","path":"sprites/sprChMarioSkid/sprChMarioSkid.yy",},"order":9,},
     {"id":{"name":"sndOst09Underground","path":"sounds/sndOst09Underground/sndOst09Underground.yy",},"order":14,},
+    {"id":{"name":"sprChMarioFlipMask","path":"sprites/sprChMarioFlipMask/sprChMarioFlipMask.yy",},"order":14,},
     {"id":{"name":"sprChSandbagFalling","path":"sprites/sprChSandbagFalling/sprChSandbagFalling.yy",},"order":3,},
     {"id":{"name":"sprChMarioGroundAttackDown","path":"sprites/sprChMarioGroundAttackDown/sprChMarioGroundAttackDown.yy",},"order":11,},
     {"id":{"name":"sprStgLy2Underground","path":"sprites/sprStgLy2Underground/sprStgLy2Underground.yy",},"order":1,},
@@ -12,6 +13,7 @@
     {"id":{"name":"parCollision","path":"objects/parCollision/parCollision.yy",},"order":1,},
     {"id":{"name":"objBot","path":"objects/objBot/objBot.yy",},"order":7,},
     {"id":{"name":"scrTextoSimple","path":"scripts/scrTextoSimple/scrTextoSimple.yy",},"order":10,},
+    {"id":{"name":"objCombatMarioFlip","path":"objects/objCombatMarioFlip/objCombatMarioFlip.yy",},"order":3,},
     {"id":{"name":"sprChKirbyIdle","path":"sprites/sprChKirbyIdle/sprChKirbyIdle.yy",},"order":14,},
     {"id":{"name":"scrSolidDetectorBelow","path":"scripts/scrSolidDetectorBelow/scrSolidDetectorBelow.yy",},"order":7,},
     {"id":{"name":"sprChMarioAerialNeutral","path":"sprites/sprChMarioAerialNeutral/sprChMarioAerialNeutral.yy",},"order":13,},
@@ -35,6 +37,7 @@
     {"id":{"name":"sprChKirbyJump2","path":"sprites/sprChKirbyJump2/sprChKirbyJump2.yy",},"order":7,},
     {"id":{"name":"rmTest3","path":"rooms/rmTest3/rmTest3.yy",},"order":2,},
     {"id":{"name":"sprChMarioGroundSmashDown","path":"sprites/sprChMarioGroundSmashDown/sprChMarioGroundSmashDown.yy",},"order":12,},
+    {"id":{"name":"scrFowardButtonActive","path":"scripts/scrFowardButtonActive/scrFowardButtonActive.yy",},"order":8,},
     {"id":{"name":"sprStgLy1aBattlefieldM","path":"sprites/sprStgLy1aBattlefieldM/sprStgLy1aBattlefieldM.yy",},"order":0,},
     {"id":{"name":"scrDataCharacter","path":"scripts/scrDataCharacter/scrDataCharacter.yy",},"order":1,},
     {"id":{"name":"scr_CRT_init_shader","path":"scripts/scr_CRT_init_shader/scr_CRT_init_shader.yy",},"order":1,},

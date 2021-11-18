@@ -50,5 +50,40 @@ function scrExecuteMovs(ID)
 			
 			break;
 		}
+		case(2):
+		{
+			///Flip
+			var Flip = instance_create_depth(x + LastScaleXSprite * 18 , y + 4 , depth-1 , objCombatMarioFlip);
+			Flip.Ide = 2;
+			Flip.FollowX = LastScaleXSprite;
+			Flip.FollowY = 0;
+			Flip.Power = SmashActualPower;
+			Flip.KnockbackScaling = scrDameDato(Control.MovList , 1 , "Knockback Scaling");
+			Flip.image_xscale = ScaleXSprite;
+			Flip.Creator = self;
+			TimeAttacking = scrDameDato(Control.MovList , 1 , "Time Attacking");
+			Flip.Follower = self;
+			
+			/*
+			///Punch
+			var Punch = instance_create_depth(x + LastScaleXSprite * 5 , y + 4 , depth-1 , objCombatHitbox);
+			Punch.sprite_index = sprChMarioFirePunchMask;
+			Punch.Ide = 1;
+			Punch.FollowX = LastScaleXSprite * 5;
+			Punch.FollowY = 4;
+			Punch.Creator = self;
+			
+			var LowPower = scrDameDato(Control.MovList , 0 , "Power");
+			var LoadPorcentage = scrGetTotalPorcentageFromTwoValues(LowPower , SmashMaxPower , SmashActualPower);
+			
+			Punch.Power = scrGetTotalValueFromTwoPorcentages(11 , 15 , LoadPorcentage);
+			Punch.KnockbackScaling = scrDameDato(Control.MovList , 1 , "Knockback Scaling");
+			ds_list_add(self.MyMovs , Punch);
+			
+			Firepunch.Follower = Punch;
+			*/
+			
+			break;
+		}
 	}
 }

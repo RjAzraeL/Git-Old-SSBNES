@@ -5,7 +5,7 @@ function scrUseMovs()
 	{
 		if (scrSolidDetectorBelow()) 
 		{
-			if (AttackButtonPressedActive and abs(HorizontalMovement) < 0.5)
+			if (AttackButtonPressedActive and abs(HorizontalMovement) < 0.5 and (!DownButtonActive))
 			{
 				switch(MovGroundNeutral)
 				{
@@ -26,9 +26,9 @@ function scrUseMovs()
 					}
 				}
 			}
-			else if (AttackButtonPressedActive and abs(HorizontalMovement) > 0.5)
+			else if (AttackButtonPressedActive and (scrFowardButtonActive(self)))
 			{
-				switch(MovGroundSide)
+				switch(MovGroundSmashSide)
 				{
 					case(1):
 					{
@@ -38,11 +38,32 @@ function scrUseMovs()
 						AttackingHoldIndex = 1;
 						SmashMaxPower = scrDameDato(Control.MovList , 1 , "Max Power");
 						SmashGrownPower = .1;
-						SpriteAttacking = SpriteAttackGroundSide;
+						SpriteAttacking = SpriteSmashGroundSide;
 						SmashActualPower = scrDameDato(Control.MovList , 1 , "Power");
 						image_speed = .25;
 						image_index = 0;
 						RootAttack = scrDameDato(Control.MovList , 1 , "Root");
+						break;
+					}
+				}
+			}
+			else if (AttackButtonPressedActive and (DownButtonActive))
+			{
+				switch(MovGroundSmashDown)
+				{
+					case(2):
+					{
+						scrAddMov(2 , 0 , self);
+						Attacking = true;
+						AttackingHold = scrDameDato(Control.MovList , 2 , "Is Smash");
+						AttackingHoldIndex = 0;
+						SmashMaxPower = scrDameDato(Control.MovList , 2 , "Max Power");
+						SmashGrownPower = .1;
+						SpriteAttacking = SpriteSmashGroundDown;
+						SmashActualPower = scrDameDato(Control.MovList , 2 , "Power");
+						image_speed = .25;
+						image_index = 0;
+						RootAttack = scrDameDato(Control.MovList , 2 , "Root");
 						break;
 					}
 				}

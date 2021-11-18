@@ -31,8 +31,10 @@ function scrSetCharacter()
 	SpriteTrance = scrGetSpriteIndex("Trance");
 	SpriteTranceRun = scrGetSpriteIndex("TranceRun");
 	SpriteHurt = scrGetSpriteIndex("Hurt");
-	SpriteAttackGroundNeutral = scrGetSpriteIndex("GroundNeutral");
-	SpriteAttackGroundSide = scrGetSpriteIndex("GroundSide");
+	SpriteAttackGroundNeutral = scrGetSpriteIndex("GroundAttackNeutral");
+	SpriteAttackGroundSide = scrGetSpriteIndex("GroundAttackSide");
+	SpriteSmashGroundSide = scrGetSpriteIndex("GroundSmashSide");
+	SpriteSmashGroundDown = scrGetSpriteIndex("GroundSmashDown");
 	
 	#endregion
 	
@@ -45,6 +47,11 @@ function scrSetCharacter()
 	#region Movs
 	MovGroundNeutral = ds_list_find_value( scrGetValueCharacter("Movs") , 0);
 	MovGroundSide = ds_list_find_value( scrGetValueCharacter("Movs") , 1);
+	MovGroundSmashSide = ds_list_find_value( scrGetValueCharacter("Movs") , 1);
+	MovGroundSmashDown = ds_list_find_value( scrGetValueCharacter("Movs") , 2);
+	
+	
+	
 	#endregion
 
 	#region Mask
