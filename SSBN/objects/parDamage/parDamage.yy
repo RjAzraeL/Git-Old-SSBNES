@@ -23,8 +23,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Furnis",
-    "path": "folders/Objects/Furnis.yy",
+    "name": "Parent",
+    "path": "folders/Objects/Parent.yy",
   },
   "resourceVersion": "1.0",
   "name": "parDamage",

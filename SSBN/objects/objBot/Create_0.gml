@@ -11,11 +11,14 @@ DownButtonReleasedActive = false;
 DownButtonActive = false;
 AttackButtonActive = false;
 AttackButtonReleasedActive = false;
+UpButtonActive = false;
+UpButtonReleasedActive = false;
+UpButtonPressedActive = false;
 
 LeftButtonActive = true;
 RightButtonActive = false;
-alarm[0] = 60;
-alarm[5] = 30;
+//alarm[0] = 60;
+//alarm[5] = 30;
 
 image_blend = c_yellow;
 #endregion

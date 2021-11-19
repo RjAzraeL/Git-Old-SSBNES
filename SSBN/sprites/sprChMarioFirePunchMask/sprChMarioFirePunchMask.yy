@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Combat",
-    "path": "folders/Sprites/Characters/Mario/Combat.yy",
+    "name": "Mask",
+    "path": "folders/Sprites/Characters/Mario/Combat/Mask.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprChMarioFirePunchMask",

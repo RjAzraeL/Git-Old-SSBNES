@@ -90,6 +90,9 @@ AttackButtonPressedActive = Control.AttackButtonPressedActive;
 DownButtonReleasedActive = Control.DownButtonReleasedActive;
 DownButtonActive = Control.DownButtonActive;
 AttackButtonActive = Control.AttackButtonActive;
+UpButtonActive = Control.UpButtonActive;
+UpButtonReleasedActive = Control.UpButtonReleasedActive;
+UpButtonPressedActive = Control.UpButtonPressedActive;
 #endregion
 
 #region Sprites

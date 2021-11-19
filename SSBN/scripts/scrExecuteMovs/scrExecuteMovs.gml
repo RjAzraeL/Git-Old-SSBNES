@@ -53,35 +53,50 @@ function scrExecuteMovs(ID)
 		case(2):
 		{
 			///Flip
-			var Flip = instance_create_depth(x + LastScaleXSprite * 18 , y + 4 , depth-1 , objCombatMarioFlip);
+			var Flip = instance_create_depth(x , y , depth-1 , objCombatMarioFlip);
 			Flip.Ide = 2;
 			Flip.FollowX = LastScaleXSprite;
 			Flip.FollowY = 0;
 			Flip.Power = SmashActualPower;
-			Flip.KnockbackScaling = scrDameDato(Control.MovList , 1 , "Knockback Scaling");
+			Flip.KnockbackScaling = scrDameDato(Control.MovList , 2 , "Knockback Scaling");
 			Flip.image_xscale = ScaleXSprite;
 			Flip.Creator = self;
-			TimeAttacking = scrDameDato(Control.MovList , 1 , "Time Attacking");
-			Flip.Follower = self;
+			TimeAttacking = scrDameDato(Control.MovList , 2 , "Time Attacking");
+			ds_list_add(self.MyMovs , Flip);
 			
-			/*
-			///Punch
-			var Punch = instance_create_depth(x + LastScaleXSprite * 5 , y + 4 , depth-1 , objCombatHitbox);
-			Punch.sprite_index = sprChMarioFirePunchMask;
-			Punch.Ide = 1;
-			Punch.FollowX = LastScaleXSprite * 5;
-			Punch.FollowY = 4;
-			Punch.Creator = self;
+			///Flip Back
+			var FlipBack = instance_create_depth(x , y , depth-1 , objCombatMarioFlip);
+			FlipBack.sprite_index = sprChMarioFlip2Mask;
+			FlipBack.Ide = 2;
+			FlipBack.FollowX = LastScaleXSprite;
+			FlipBack.FollowY = 0;
 			
-			var LowPower = scrDameDato(Control.MovList , 0 , "Power");
+			var LowPower = scrDameDato(Control.MovList , 2 , "Power");
 			var LoadPorcentage = scrGetTotalPorcentageFromTwoValues(LowPower , SmashMaxPower , SmashActualPower);
 			
-			Punch.Power = scrGetTotalValueFromTwoPorcentages(11 , 15 , LoadPorcentage);
-			Punch.KnockbackScaling = scrDameDato(Control.MovList , 1 , "Knockback Scaling");
-			ds_list_add(self.MyMovs , Punch);
+			FlipBack.Power = scrGetTotalValueFromTwoPorcentages(10 , 13 , LoadPorcentage);
 			
-			Firepunch.Follower = Punch;
-			*/
+			FlipBack.KnockbackScaling = scrDameDato(Control.MovList , 2 , "Knockback Scaling");
+			FlipBack.image_xscale = ScaleXSprite;
+			FlipBack.Creator = self;
+			TimeAttacking = scrDameDato(Control.MovList , 2 , "Time Attacking");
+			ds_list_add(self.MyMovs , FlipBack);
+			break;
+		}
+		case(3):
+		{
+			///Flip
+			var HeadBang = instance_create_depth(x , y , depth-1 , objCombatHitboxImageFollower);
+			HeadBang.sprite_index = sprChMarioHeadBangMask;
+			HeadBang.Ide = 3;
+			HeadBang.FollowX = LastScaleXSprite;
+			HeadBang.FollowY = 0;
+			HeadBang.Power = SmashActualPower;
+			HeadBang.KnockbackScaling = scrDameDato(Control.MovList , 3 , "Knockback Scaling");
+			HeadBang.image_xscale = ScaleXSprite;
+			HeadBang.Creator = self;
+			TimeAttacking = scrDameDato(Control.MovList , 3 , "Time Attacking");
+			ds_list_add(self.MyMovs , HeadBang);
 			
 			break;
 		}

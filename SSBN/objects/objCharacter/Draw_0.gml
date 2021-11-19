@@ -1,5 +1,5 @@
 #region Dibujar
-draw_text(x , y - 32 , instance_number(objCombatMarioFlip));
+draw_text(x , y - 32 , UpButtonActive);
 
 if (sprite_index == -1)
 {

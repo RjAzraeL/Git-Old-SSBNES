@@ -61,9 +61,30 @@ function scrUseMovs()
 						SmashGrownPower = .1;
 						SpriteAttacking = SpriteSmashGroundDown;
 						SmashActualPower = scrDameDato(Control.MovList , 2 , "Power");
-						image_speed = .25;
+						image_speed = .5;
 						image_index = 0;
 						RootAttack = scrDameDato(Control.MovList , 2 , "Root");
+						break;
+					}
+				}
+			}
+			else if (AttackButtonPressedActive and (UpButtonActive))
+			{
+				switch(MovGroundSmashUp)
+				{
+					case(3):
+					{
+						scrAddMov(3 , 0 , self);
+						Attacking = true;
+						AttackingHold = scrDameDato(Control.MovList , 3 , "Is Smash");
+						AttackingHoldIndex = 0;
+						SmashMaxPower = scrDameDato(Control.MovList , 3 , "Max Power");
+						SmashGrownPower = .1;
+						SpriteAttacking = SpriteSmashGroundUp;
+						SmashActualPower = scrDameDato(Control.MovList , 3 , "Power");
+						image_speed = .5;
+						image_index = 0;
+						RootAttack = scrDameDato(Control.MovList , 3 , "Root");
 						break;
 					}
 				}

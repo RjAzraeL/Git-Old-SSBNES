@@ -2,9 +2,10 @@ function scrDataMov()
 {
 	Control.MovList = ds_list_create();
 	
-	/*0*/scrMapMov( scrCrearLista("Fireball" , 5 , true , 110 , 0 , false , false , false , 5 , 15) );
-	/*1*/scrMapMov( scrCrearLista("Firepunch" , 18 , true , 110 , 0 , false , true , true , 24 , 15) );
-	/*2*/scrMapMov( scrCrearLista("Flip" , 16 , true , 110 , 0 , false , true , true , 21 , 15) );
+	/*0*/scrMapMov( scrCrearLista("Fireball"     , 5   , true , 110 , 0 , false , false , false , 5 , 15) );
+	/*1*/scrMapMov( scrCrearLista("Firepunch"  , 18 , true , 110 , 0 , false , true , true , 24 , 15) );
+	/*2*/scrMapMov( scrCrearLista("Flip"          , 16 , true , 110 , 0 , false , true , true , 21 , 15) );
+	/*3*/scrMapMov( scrCrearLista("Head Bang", 15 , true , 110 , 0 , false , true , true , 20 , 10) );
 	
 }
 	
