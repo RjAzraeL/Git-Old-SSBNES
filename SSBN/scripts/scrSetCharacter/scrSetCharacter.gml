@@ -51,6 +51,7 @@ function scrSetCharacter()
 	MovGroundSmashSide = ds_list_find_value( scrGetValueCharacter("Movs") , 1);
 	MovGroundSmashDown = ds_list_find_value( scrGetValueCharacter("Movs") , 2);
 	MovGroundSmashUp = ds_list_find_value( scrGetValueCharacter("Movs") , 3);
+	MovGroundAttackSide = ds_list_find_value( scrGetValueCharacter("Movs") , 4);
 	
 	
 	

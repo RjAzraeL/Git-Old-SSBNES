@@ -6,6 +6,7 @@ function scrDataMov()
 	/*1*/scrMapMov( scrCrearLista("Firepunch"  , 18 , true , 110 , 0 , false , true , true , 24 , 15) );
 	/*2*/scrMapMov( scrCrearLista("Flip"          , 16 , true , 110 , 0 , false , true , true , 21 , 15) );
 	/*3*/scrMapMov( scrCrearLista("Head Bang", 15 , true , 110 , 0 , false , true , true , 20 , 10) );
+	/*4*/scrMapMov( scrCrearLista("Foot Bang" , 7 , true , 110 , 0 , false , true , false , 9 , 40) );
 	
 }
 	

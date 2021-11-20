@@ -5,7 +5,7 @@ function scrUseMovs()
 	{
 		if (scrSolidDetectorBelow()) 
 		{
-			if (AttackButtonPressedActive and abs(HorizontalMovement) < 0.5 and (!DownButtonActive))
+			if (AttackButtonPressedActive and abs(HorizontalMovement) < 0.5 and (!DownButtonActive) and (!UpButtonActive))
 			{
 				switch(MovGroundNeutral)
 				{
@@ -89,6 +89,28 @@ function scrUseMovs()
 					}
 				}
 			}
+			else if (AttackButtonPressedActive and abs(HorizontalMovement) > 0.5 and (!DownButtonActive) and (!UpButtonActive))
+			{
+				switch(MovGroundAttackSide)
+				{
+					case(4):
+					{
+						var Ide = 4;
+						scrAddMov(Ide , 0 , self);
+						Attacking = true;
+						AttackingHold = scrDameDato(Control.MovList , Ide , "Is Smash");
+						AttackingHoldIndex = 0;
+						SmashMaxPower = scrDameDato(Control.MovList , Ide , "Max Power");
+						SmashGrownPower = .1;
+						SpriteAttacking = SpriteAttackGroundSide;
+						SmashActualPower = scrDameDato(Control.MovList , Ide , "Power");
+						image_speed = .5;
+						image_index = 0;
+						RootAttack = scrDameDato(Control.MovList , Ide , "Root");
+						break;
+					}
+				}
+			}
 		}
 	}
 	if ((Attacking or TimeAttacking > 0) and Damaged == 0)
@@ -103,6 +125,14 @@ function scrUseMovs()
 		if (AttackButtonReleasedActive and AttackingHold)
 		{
 			AttackingHold = false;
+			for (var i = 0 ; i < ds_list_size(MyMovs) ; i++)
+			{
+				var Mov = ds_list_find_value(MyMovs , i);
+				if (scrExiste(Mov))
+				{
+					Mov.RefreshPower = true;
+				}
+			}
 		}
 	}
 	#endregion

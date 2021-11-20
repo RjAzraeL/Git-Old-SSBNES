@@ -1,9 +1,10 @@
 #region Damage
-if (other.Creator != self and ds_list_find_index(BlowsReceivedList , other.id) == -1 and Inmune == 0)
+if (other.Creator != self and ds_list_find_index(BlowsReceivedList , other.id) == -1 and Inmune == 0 and CooldownDamage == 0)
 {
 	LifePorcentage += round(other.Power);
 	ds_list_add(BlowsReceivedList , other.id);
-	if (scrDameDato(Control.MovList , other.Ide , "Is Smash"))
+	CooldownDamage = 5;
+	if (scrDameDato(Control.MovList , other.Ide , "Can Knockback"))
 	{
 		var PostDamage = LifePorcentage;
 		var NewKnockbackScaling = other.KnockbackScaling/100;

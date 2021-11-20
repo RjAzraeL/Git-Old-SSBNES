@@ -1,5 +1,6 @@
 #region Set variables
 y = -sprite_height;
+CooldownDamage = 0;
 Stun = false;
 Root = false;
 Platform = true;

@@ -26,7 +26,7 @@ function scrDataCharacter()
 	/*Sfx Skid*/sfxKirbySkid,
 	/*Sfx Jump*/sfxKirbyJump,
 	/*Vertical Limit Porcentage*/35,
-	/*Movs*/ scrCrearLista(0,1,2,3),
+	/*Movs*/ scrCrearLista(0,1,2,3,4),
 	/*Hud index*/0
 	)	
 	);
@@ -55,7 +55,7 @@ function scrDataCharacter()
 	/*Sfx Skid*/sfxMarioSkid,
 	/*Sfx Jump*/sfxMarioJump,
 	/*Vertical Limit Porcentage*/20,
-	/*Movs*/ scrCrearLista(0,1,2,3),
+	/*Movs*/ scrCrearLista(0,1,2,3,4),
 	/*Hud index*/1
 	)	
 	);
@@ -84,7 +84,7 @@ function scrDataCharacter()
 	/*Sfx Skid*/sfxKirbySkid,
 	/*Sfx Jump*/sfxKirbyJump,
 	/*Vertical Limit Porcentage*/25,
-	/*Movs*/ scrCrearLista(0,1,2,3),
+	/*Movs*/ scrCrearLista(0,1,2,3,4),
 	/*Hud index*/2
 	)	
 	);

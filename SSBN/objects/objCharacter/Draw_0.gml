@@ -1,5 +1,6 @@
 #region Dibujar
-draw_text(x , y - 32 , UpButtonActive);
+
+draw_text(x , y - 32 , Attacking);
 
 if (sprite_index == -1)
 {

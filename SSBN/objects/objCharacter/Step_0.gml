@@ -1,6 +1,10 @@
 #region Movement
 
 #region Inmune
+if (CooldownDamage > 0)
+{
+	CooldownDamage--;
+}
 if (Inmune and !Platform)
 {
 	if (InmuneCooldown > 0)
