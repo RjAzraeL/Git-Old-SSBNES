@@ -47,7 +47,7 @@ function scrUseMovs()
 					}
 				}
 			}
-			else if (AttackButtonPressedActive and (DownButtonActive))
+			else if (AttackButtonPressedActive and (DownButtonActive) and TimeButtonDown != 0)
 			{
 				switch(MovGroundSmashDown)
 				{
@@ -68,7 +68,7 @@ function scrUseMovs()
 					}
 				}
 			}
-			else if (AttackButtonPressedActive and (UpButtonActive))
+			else if (AttackButtonPressedActive and (UpButtonActive) and TimeButtonUp != 0)
 			{
 				switch(MovGroundSmashUp)
 				{
@@ -103,6 +103,50 @@ function scrUseMovs()
 						SmashMaxPower = scrDameDato(Control.MovList , Ide , "Max Power");
 						SmashGrownPower = .1;
 						SpriteAttacking = SpriteAttackGroundSide;
+						SmashActualPower = scrDameDato(Control.MovList , Ide , "Power");
+						image_speed = .5;
+						image_index = 0;
+						RootAttack = scrDameDato(Control.MovList , Ide , "Root");
+						break;
+					}
+				}
+			}
+			else if (AttackButtonPressedActive and (DownButtonActive) and TimeButtonDown == 0)
+			{
+				switch(MovGroundAttackDown)
+				{
+					case(5):
+					{
+						var Ide = 5;
+						scrAddMov(Ide , 0 , self);
+						Attacking = true;
+						AttackingHold = scrDameDato(Control.MovList , Ide , "Is Smash");
+						AttackingHoldIndex = 0;
+						SmashMaxPower = scrDameDato(Control.MovList , Ide , "Max Power");
+						SmashGrownPower = .1;
+						SpriteAttacking = SpriteAttackGroundDown;
+						SmashActualPower = scrDameDato(Control.MovList , Ide , "Power");
+						image_speed = .5;
+						image_index = 0;
+						RootAttack = scrDameDato(Control.MovList , Ide , "Root");
+						break;
+					}
+				}
+			}
+			else if (AttackButtonPressedActive and (UpButtonActive) and TimeButtonUp == 0)
+			{
+				switch(MovGroundAttackUp)
+				{
+					case(6):
+					{
+						var Ide = 6;
+						scrAddMov(Ide , 0 , self);
+						Attacking = true;
+						AttackingHold = scrDameDato(Control.MovList , Ide , "Is Smash");
+						AttackingHoldIndex = 0;
+						SmashMaxPower = scrDameDato(Control.MovList , Ide , "Max Power");
+						SmashGrownPower = .1;
+						SpriteAttacking = SpriteAttackGroundUp;
 						SmashActualPower = scrDameDato(Control.MovList , Ide , "Power");
 						image_speed = .5;
 						image_index = 0;

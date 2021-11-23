@@ -14,4 +14,10 @@ if (RefreshPower and Ide != -1)
 		Power = Creator.SmashActualPower;
 	}
 }
+#region Show mask
+if (object_index == objCombatHitboxImageFollower or object_index == objCombatHitboxNotImageFollower or object_index == objCombatMarioFlip or object_index == objCombatHitbox)
+{
+	visible = Control.ShowMovsMask;
+}
+#endregion
 #endregion

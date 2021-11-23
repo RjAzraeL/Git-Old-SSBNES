@@ -18,6 +18,7 @@ CharacterLife[2] = 6;
 CharacterLife[3] = 6;
 TotalCharacters = 1;
 ShowMask = false;
+ShowMovsMask = false;
 FontPorcentage = font_add_sprite_ext(sprHudNumbers , "0123456789" , true , 0);
 
 #region Data
@@ -58,6 +59,7 @@ AttackButton = ord("C");
 StartButton = vk_enter;
 SelectButton = vk_space;
 ShowColissionButton = vk_f8;
+ShowColissionMovsButton = vk_f9;
 
 alarm[0] = 5;
 #endregion

@@ -7,4 +7,5 @@ MinValuePower = -1;
 MaxValuePower = -1;
 RefreshPower = false;
 Ide = -1;
+
 #endregion

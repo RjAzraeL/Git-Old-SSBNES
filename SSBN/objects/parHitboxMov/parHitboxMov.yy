@@ -1,15 +1,12 @@
 {
-  "spriteId": {
-    "name": "sprChMarioFlipMask",
-    "path": "sprites/sprChMarioFlipMask/sprChMarioFlipMask.yy",
-  },
+  "spriteId": null,
   "solid": false,
-  "visible": false,
+  "visible": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "parHitboxMov",
-    "path": "objects/parHitboxMov/parHitboxMov.yy",
+    "name": "parMov",
+    "path": "objects/parMov/parMov.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -23,10 +20,7 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
@@ -34,7 +28,7 @@
     "path": "folders/Objects/Combat/Movs.yy",
   },
   "resourceVersion": "1.0",
-  "name": "objCombatHitboxNotImageFollower",
+  "name": "parHitboxMov",
   "tags": [],
   "resourceType": "GMObject",
 }

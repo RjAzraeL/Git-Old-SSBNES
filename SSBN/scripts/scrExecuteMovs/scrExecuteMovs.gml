@@ -132,5 +132,45 @@ function scrExecuteMovs(ID)
 			
 			break;
 		}
+		case(5):
+		{
+			///FootBang2
+			var FootBang2 = instance_create_depth(x , y , depth-1 , objCombatHitboxImageFollower);
+			FootBang2.sprite_index = sprChMarioFootBang2Mask;
+			FootBang2.PowerScale = false;
+			FootBang2.Ide = 5;
+			FootBang2.FollowX = LastScaleXSprite;
+			FootBang2.FollowY = 0;
+			FootBang2.Power = scrDameDato(Control.MovList , 5 , "Power");
+			FootBang2.KnockbackScaling = scrDameDato(Control.MovList , 5 , "Knockback Scaling");
+			FootBang2.image_xscale = ScaleXSprite;
+			FootBang2.Creator = self;
+			FootBang2.image_speed = 0;
+			FootBang2.image_index = 0;
+			TimeAttacking = scrDameDato(Control.MovList , 5 , "Time Attacking");
+			ds_list_add(self.MyMovs , FootBang2);
+			
+			break;
+		}
+		case(6):
+		{
+			///Highpunch
+			var Highpunch = instance_create_depth(x , y , depth-1 , objCombatHitboxImageFollower);
+			Highpunch.sprite_index = sprChMarioHighPunchMask;
+			Highpunch.PowerScale = false;
+			Highpunch.Ide = 6;
+			Highpunch.FollowX = LastScaleXSprite;
+			Highpunch.FollowY = 0;
+			Highpunch.Power = scrDameDato(Control.MovList , 6 , "Power");
+			Highpunch.KnockbackScaling = scrDameDato(Control.MovList , 6 , "Knockback Scaling");
+			Highpunch.image_xscale = ScaleXSprite;
+			Highpunch.Creator = self;
+			Highpunch.image_speed = 0;
+			Highpunch.image_index = 0;
+			TimeAttacking = scrDameDato(Control.MovList , 6 , "Time Attacking");
+			ds_list_add(self.MyMovs , Highpunch);
+			
+			break;
+		}
 	}
 }

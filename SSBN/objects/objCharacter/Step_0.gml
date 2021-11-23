@@ -1,5 +1,26 @@
 #region Movement
 
+#region Buttons variables
+
+if (DownButtonPressedActive)
+{
+	TimeButtonDown = 10;
+}
+if (UpButtonPressedActive)
+{
+	TimeButtonUp = 10;
+}
+
+if (TimeButtonDown > 0)
+{
+	TimeButtonDown--;
+}
+if (TimeButtonUp > 0)
+{
+	TimeButtonUp--;
+}
+#endregion
+
 #region Inmune
 if (CooldownDamage > 0)
 {
@@ -165,6 +186,14 @@ if (CooldownSwap == 0 and !Platform)
 }
 else
 {
+}
+#endregion
+
+#region Border
+if ((TimeAttacking > 0 or AttackingHold or Attacking) and !place_meeting(x + sign(HorizontalMovement)*8 , y + 4 , parSolid) and place_meeting(x , y + 4 , parSolid))
+{
+	HorizontalMovement = 0;
+	AcelerationValue = 0;
 }
 #endregion
 

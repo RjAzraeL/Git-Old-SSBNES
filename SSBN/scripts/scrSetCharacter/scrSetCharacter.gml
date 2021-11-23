@@ -33,6 +33,8 @@ function scrSetCharacter()
 	SpriteHurt = scrGetSpriteIndex("Hurt");
 	SpriteAttackGroundNeutral = scrGetSpriteIndex("GroundAttackNeutral");
 	SpriteAttackGroundSide = scrGetSpriteIndex("GroundAttackSide");
+	SpriteAttackGroundDown = scrGetSpriteIndex("GroundAttackDown");
+	SpriteAttackGroundUp = scrGetSpriteIndex("GroundAttackUp");
 	SpriteSmashGroundSide = scrGetSpriteIndex("GroundSmashSide");
 	SpriteSmashGroundDown = scrGetSpriteIndex("GroundSmashDown");
 	SpriteSmashGroundUp = scrGetSpriteIndex("GroundSmashUp");
@@ -52,6 +54,8 @@ function scrSetCharacter()
 	MovGroundSmashDown = ds_list_find_value( scrGetValueCharacter("Movs") , 2);
 	MovGroundSmashUp = ds_list_find_value( scrGetValueCharacter("Movs") , 3);
 	MovGroundAttackSide = ds_list_find_value( scrGetValueCharacter("Movs") , 4);
+	MovGroundAttackDown = ds_list_find_value( scrGetValueCharacter("Movs") , 5);
+	MovGroundAttackUp = ds_list_find_value( scrGetValueCharacter("Movs") , 6);
 	
 	
 	

@@ -39,6 +39,10 @@ if (keyboard_check_pressed(ShowColissionButton))
 {
 	ShowMask = !ShowMask;
 }
+if (keyboard_check_pressed(ShowColissionMovsButton))
+{
+	ShowMovsMask = !ShowMovsMask;
+}
 #endregion
 
 #region Camera

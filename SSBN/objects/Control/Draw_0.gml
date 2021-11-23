@@ -1,7 +1,20 @@
 #region Draw
 if (!CreateBot)
 {
-	scrSimpleText(scrX() + 128 , scrY() + 24 , "Use 'B' to summon a bot");
+	//scrSimpleText(scrX() + 128 , scrY() + 24 , "Use 'B' to summon a bot");
+}
+var PosY = 18;
+if (!ShowMask and ShowMovsMask)
+{
+	var PosY = 0;
+}
+if (ShowMask)
+{
+	scrText(scrX() + 16 , scrY() + 16 , "Hitbox actived" , fa_center , fa_left , fntNormal , c_black , c_white , 32 , 640 , 1 , 1 , 0 , 1);
+}
+if (ShowMovsMask)
+{
+	scrText(scrX() + 16 , scrY() + 16 + PosY , "Movs Hitbox actived" , fa_center , fa_left , fntNormal , c_black , c_white , 32 , 640 , 1 , 1 , 0 , 1);
 }
 var Largo = 64;
 var Y = 176;
