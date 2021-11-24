@@ -190,7 +190,7 @@ else
 #endregion
 
 #region Border
-if ((TimeAttacking > 0 or AttackingHold or Attacking) and !place_meeting(x + sign(HorizontalMovement)*8 , y + 4 , parSolid) and place_meeting(x , y + 4 , parSolid))
+if ((TimeAttacking > 0 or AttackingHold or Attacking) and !place_meeting(x + sign(HorizontalMovement)*8 , y + 4 , parCollision) and place_meeting(x , y + 4 , parCollision))
 {
 	HorizontalMovement = 0;
 	AcelerationValue = 0;

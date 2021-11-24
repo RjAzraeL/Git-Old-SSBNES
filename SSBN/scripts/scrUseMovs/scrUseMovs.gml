@@ -161,23 +161,35 @@ function scrUseMovs()
 	{
 		if (AttackingHold)
 		{
+			TimeHolding++;
 			if (SmashActualPower < SmashMaxPower)
 			{
 				SmashActualPower += SmashGrownPower;
 			}
 		}
+		if (TimeHolding >= 120)
+		{
+			TimeHolding = 0;
+			scrHoldMov();
+		}
 		if (AttackButtonReleasedActive and AttackingHold)
 		{
-			AttackingHold = false;
-			for (var i = 0 ; i < ds_list_size(MyMovs) ; i++)
-			{
-				var Mov = ds_list_find_value(MyMovs , i);
-				if (scrExiste(Mov))
-				{
-					Mov.RefreshPower = true;
-				}
-			}
+			TimeHolding = 0;
+			scrHoldMov();
 		}
 	}
 	#endregion
+}
+
+function scrHoldMov()
+{
+	AttackingHold = false;
+	for (var i = 0 ; i < ds_list_size(MyMovs) ; i++)
+	{
+		var Mov = ds_list_find_value(MyMovs , i);
+		if (scrExiste(Mov))
+		{
+			Mov.RefreshPower = true;
+		}
+	}
 }
