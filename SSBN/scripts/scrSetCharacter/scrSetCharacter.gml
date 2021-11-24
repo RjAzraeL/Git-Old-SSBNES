@@ -38,6 +38,7 @@ function scrSetCharacter()
 	SpriteSmashGroundSide = scrGetSpriteIndex("GroundSmashSide");
 	SpriteSmashGroundDown = scrGetSpriteIndex("GroundSmashDown");
 	SpriteSmashGroundUp = scrGetSpriteIndex("GroundSmashUp");
+	SpriteAttackAerialNeutral = scrGetSpriteIndex("AerialNeutral");
 	
 	#endregion
 	
@@ -56,6 +57,7 @@ function scrSetCharacter()
 	MovGroundAttackSide = ds_list_find_value( scrGetValueCharacter("Movs") , 4);
 	MovGroundAttackDown = ds_list_find_value( scrGetValueCharacter("Movs") , 5);
 	MovGroundAttackUp = ds_list_find_value( scrGetValueCharacter("Movs") , 6);
+	MovAerialNeutral = ds_list_find_value( scrGetValueCharacter("Movs") , 7);
 	
 	
 	

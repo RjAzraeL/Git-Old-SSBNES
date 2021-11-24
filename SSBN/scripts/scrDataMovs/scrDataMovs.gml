@@ -9,6 +9,7 @@ function scrDataMov()
 	/*4*/scrMapMov( scrCrearLista("Foot Bang" , 7 , true , 110 , 0 , false , true , false , 9 , 40) );
 	/*5*/scrMapMov( scrCrearLista("Foot Bang 2" , 8 , true , 110 , 0 , false , true , false , 8 , 40) );
 	/*6*/scrMapMov( scrCrearLista("High Punch" , 8 , true , 110 , 0 , false , true , false , 8 , 40) );
+	/*7*/scrMapMov( scrCrearLista("Aereal Foot Bang" , 10 , true , 110 , 0 , false , true , false , 10 , 20) );
 	
 }
 	

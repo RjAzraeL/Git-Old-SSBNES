@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"f8b67363-fdb2-4348-986b-65c9311cddc6","path":"sprites/JavaEsTrolo/JavaEsTrolo.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"f8b67363-fdb2-4348-986b-65c9311cddc6","path":"sprites/JavaEsTrolo/JavaEsTrolo.yy",},"LayerId":{"name":"86326f64-d8e6-42a7-a35b-040ac30edade","path":"sprites/JavaEsTrolo/JavaEsTrolo.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"JavaEsTrolo","path":"sprites/JavaEsTrolo/JavaEsTrolo.yy",},"resourceVersion":"1.0","name":"f8b67363-fdb2-4348-986b-65c9311cddc6","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"f8b67363-fdb2-4348-986b-65c9311cddc6","path":"sprites/RamaFanDelChocoarroz/RamaFanDelChocoarroz.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"f8b67363-fdb2-4348-986b-65c9311cddc6","path":"sprites/RamaFanDelChocoarroz/RamaFanDelChocoarroz.yy",},"LayerId":{"name":"86326f64-d8e6-42a7-a35b-040ac30edade","path":"sprites/RamaFanDelChocoarroz/RamaFanDelChocoarroz.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"RamaFanDelChocoarroz","path":"sprites/RamaFanDelChocoarroz/RamaFanDelChocoarroz.yy",},"resourceVersion":"1.0","name":"f8b67363-fdb2-4348-986b-65c9311cddc6","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"JavaEsTrolo","path":"sprites/JavaEsTrolo/JavaEsTrolo.yy",},
+    "spriteId": {"name":"RamaFanDelChocoarroz","path":"sprites/RamaFanDelChocoarroz/RamaFanDelChocoarroz.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"8704709f-7ae5-47dc-bc3c-941f47f5f61e","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f8b67363-fdb2-4348-986b-65c9311cddc6","path":"sprites/JavaEsTrolo/JavaEsTrolo.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"8704709f-7ae5-47dc-bc3c-941f47f5f61e","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f8b67363-fdb2-4348-986b-65c9311cddc6","path":"sprites/RamaFanDelChocoarroz/RamaFanDelChocoarroz.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -58,9 +58,9 @@
     "yorigin": 46,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"JavaEsTrolo","path":"sprites/JavaEsTrolo/JavaEsTrolo.yy",},
+    "parent": {"name":"RamaFanDelChocoarroz","path":"sprites/RamaFanDelChocoarroz/RamaFanDelChocoarroz.yy",},
     "resourceVersion": "1.3",
-    "name": "JavaEsTrolo",
+    "name": "RamaFanDelChocoarroz",
     "tags": [],
     "resourceType": "GMSequence",
   },
@@ -73,7 +73,7 @@
     "path": "folders/Sprites.yy",
   },
   "resourceVersion": "1.0",
-  "name": "JavaEsTrolo",
+  "name": "RamaFanDelChocoarroz",
   "tags": [],
   "resourceType": "GMSprite",
 }

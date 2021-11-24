@@ -115,6 +115,7 @@ function scrExecuteMovs(ID)
 		case(4):
 		{
 			///FootBang
+			AcelerationValue = 3;
 			var FootBang = instance_create_depth(x , y , depth-1 , objCombatHitboxNotImageFollower);
 			FootBang.sprite_index = sprChMarioFootBangMask;
 			FootBang.PowerScale = false;
@@ -169,6 +170,26 @@ function scrExecuteMovs(ID)
 			Highpunch.image_index = 0;
 			TimeAttacking = scrDameDato(Control.MovList , 6 , "Time Attacking");
 			ds_list_add(self.MyMovs , Highpunch);
+			
+			break;
+		}
+		case(7):
+		{
+			///AerialFootbang
+			var AerialFootbang = instance_create_depth(x , y , depth-1 , objCombatHitboxNotImageFollower);
+			AerialFootbang.sprite_index = sprChMarioAerialFootbangMask;
+			AerialFootbang.PowerScale = false;
+			AerialFootbang.Ide = 7;
+			AerialFootbang.FollowX = LastScaleXSprite;
+			AerialFootbang.FollowY = 0;
+			AerialFootbang.Power = scrDameDato(Control.MovList , 7 , "Power");
+			AerialFootbang.KnockbackScaling = scrDameDato(Control.MovList , 7 , "Knockback Scaling");
+			AerialFootbang.image_xscale = ScaleXSprite;
+			AerialFootbang.Creator = self;
+			AerialFootbang.image_speed = 0;
+			AerialFootbang.image_index = 0;
+			TimeAttacking = scrDameDato(Control.MovList , 7 , "Time Attacking");
+			ds_list_add(self.MyMovs , AerialFootbang);
 			
 			break;
 		}
