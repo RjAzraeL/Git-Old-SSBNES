@@ -21,6 +21,7 @@ function scrUseMovs()
 							image_speed = .25;
 							image_index = 0;
 							RootAttack = scrDameDato(Control.MovList , 0 , "Root");
+							CooldownJump = 0;
 						}
 						break;
 					}
@@ -43,6 +44,7 @@ function scrUseMovs()
 						image_speed = .25;
 						image_index = 0;
 						RootAttack = scrDameDato(Control.MovList , 1 , "Root");
+						CooldownJump = 0;
 						break;
 					}
 				}
@@ -64,6 +66,7 @@ function scrUseMovs()
 						image_speed = .5;
 						image_index = 0;
 						RootAttack = scrDameDato(Control.MovList , 2 , "Root");
+						CooldownJump = 0;
 						break;
 					}
 				}
@@ -85,6 +88,7 @@ function scrUseMovs()
 						image_speed = .5;
 						image_index = 0;
 						RootAttack = scrDameDato(Control.MovList , 3 , "Root");
+						CooldownJump = 0;
 						break;
 					}
 				}
@@ -107,6 +111,7 @@ function scrUseMovs()
 						image_speed = .5;
 						image_index = 0;
 						RootAttack = scrDameDato(Control.MovList , Ide , "Root");
+						CooldownJump = 0;
 						break;
 					}
 				}
@@ -129,6 +134,7 @@ function scrUseMovs()
 						image_speed = .5;
 						image_index = 0;
 						RootAttack = scrDameDato(Control.MovList , Ide , "Root");
+						CooldownJump = 0;
 						break;
 					}
 				}
@@ -151,6 +157,7 @@ function scrUseMovs()
 						image_speed = .5;
 						image_index = 0;
 						RootAttack = scrDameDato(Control.MovList , Ide , "Root");
+						CooldownJump = 0;
 						break;
 					}
 				}
@@ -158,7 +165,7 @@ function scrUseMovs()
 		}
 		else
 		{
-			if (AttackButtonPressedActive and abs(HorizontalMovement) < 0.5 and (!DownButtonActive) and (!UpButtonActive))
+			if (AttackButtonPressedActive and (!DownButtonActive) and (!UpButtonActive))
 			{
 				switch(MovAerialNeutral)
 				{
@@ -176,6 +183,7 @@ function scrUseMovs()
 						image_speed = .5;
 						image_index = 0;
 						RootAttack = scrDameDato(Control.MovList , Ide , "Root");
+						CooldownJump = 0;
 						break;
 					}
 				}
