@@ -41,6 +41,8 @@ function scrSetCharacter()
 	SpriteAttackAerialNeutral = scrGetSpriteIndex("AerialNeutral");
 	SpriteAttackAerialSide = scrGetSpriteIndex("AerialSide");
 	SpriteAttackAerialBack = scrGetSpriteIndex("AerialBack");
+	SpriteAttackAerialUp = scrGetSpriteIndex("AerialUp");
+	SpriteAttackAerialDown = scrGetSpriteIndex("AerialDown");
 	
 	#endregion
 	
@@ -62,6 +64,8 @@ function scrSetCharacter()
 	MovAerialNeutral = ds_list_find_value( scrGetValueCharacter("Movs") , 7);
 	MovAerialSide = ds_list_find_value( scrGetValueCharacter("Movs") , 8);
 	MovAerialBack = ds_list_find_value( scrGetValueCharacter("Movs") , 9);
+	MovAerialUp = ds_list_find_value( scrGetValueCharacter("Movs") , 11);
+	MovAerialDown = ds_list_find_value( scrGetValueCharacter("Movs") , 10);
 	
 	
 	

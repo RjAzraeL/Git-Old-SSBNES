@@ -14,4 +14,5 @@ AttackButtonReleasedActive = Control.AttackButtonReleasedActive;
 UpButtonActive = Control.UpButtonActive;
 UpButtonReleasedActive = Control.UpButtonReleasedActive;
 UpButtonPressedActive = Control.UpButtonPressedActive;
+JumpButtonPressedActive = Control.JumpButtonPressedActive;
 #endregion

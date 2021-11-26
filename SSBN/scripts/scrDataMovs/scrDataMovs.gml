@@ -2,16 +2,18 @@ function scrDataMov()
 {
 	Control.MovList = ds_list_create();
 	
-	/*0*/scrMapMov( scrCrearLista("Fireball"     , 5   , true , 110 , 0 , false , false , false , 5 , 20 , .25) );
-	/*1*/scrMapMov( scrCrearLista("Firepunch"  , 18 , true , 110 , 0 , false , true , true , 24 , 30 , .25) );
-	/*2*/scrMapMov( scrCrearLista("Flip"          , 16 , true , 110 , 0 , false , true , true , 21 , 30 , .5) );
-	/*3*/scrMapMov( scrCrearLista("Head Bang", 15 , true , 110 , 0 , false , true , true , 20 , 40 , .25) );
-	/*4*/scrMapMov( scrCrearLista("Foot Bang" , 7 , true , 110 , 0 , false , true , false , 9 , 40 , .25) );
-	/*5*/scrMapMov( scrCrearLista("Foot Bang 2" , 8 , true , 110 , 0 , false , true , false , 8 , 40 , .25) );
-	/*6*/scrMapMov( scrCrearLista("High Punch" , 8 , true , 110 , 0 , false , true , false , 8 , 40 , .25) );
-	/*7*/scrMapMov( scrCrearLista("Aerial Foot Bang" , 10 , true , 110 , 0 , false , true , false , 10 , 20 , .25) );
-	/*8*/scrMapMov( scrCrearLista("Aerial Side" , 15 , false , 110 , 0 , false , true , false , 15 , 20 , .25) );
-	/*9*/scrMapMov( scrCrearLista("Aerial Back" , 10 , false , 110 , 0 , false , true , false , 10 , 10 , .5) );
+	/*0*/scrMapMov( scrCrearLista("Fireball"     , 5   , true , 110 , 0 , false , false , false , 5 , 20 , .25 , false) );
+	/*1*/scrMapMov( scrCrearLista("Firepunch"  , 18 , true , 110 , 0 , false , true , true , 24 , 30 , .25 , false) );
+	/*2*/scrMapMov( scrCrearLista("Flip"          , 16 , true , 110 , 0 , false , true , true , 21 , 30 , .5 , false) );
+	/*3*/scrMapMov( scrCrearLista("Head Bang", 15 , true , 110 , 0 , false , true , true , 20 , 40 , .25 , false) );
+	/*4*/scrMapMov( scrCrearLista("Foot Bang" , 7 , true , 110 , 0 , false , true , false , 9 , 40 , .25 , false) );
+	/*5*/scrMapMov( scrCrearLista("Foot Bang 2" , 8 , true , 110 , 0 , false , true , false , 8 , 40 , .5 , false) );
+	/*6*/scrMapMov( scrCrearLista("High Punch" , 8 , true , 110 , 0 , false , true , false , 8 , 40 , .25 , false) );
+	/*7*/scrMapMov( scrCrearLista("Aerial Foot Bang" , 10 , true , 110 , 0 , false , true , false , 10 , 20 , .25 , false) );
+	/*8*/scrMapMov( scrCrearLista("Aerial Side" , 15 , false , 110 , 0 , false , true , false , 15 , 20 , .25 , false) );
+	/*9*/scrMapMov( scrCrearLista("Aerial Back" , 10 , false , 110 , 0 , false , true , false , 10 , 20 , .5 , false) );
+	/*10*/scrMapMov( scrCrearLista("Aerial Down" , 4 , false , 110 , 0 , false , true , false , 4 , 10 , .25 , false) );
+	/*11*/scrMapMov( scrCrearLista("Aerial Up" , 2 , false , 110 , 0 , false , true , false , 2 , 30 , .2 , true) );
 	
 }
 	
@@ -31,6 +33,7 @@ function scrMapMov(List)
 	Paquete[? "Max Power"] = ds_list_find_value(List , 8);
 	Paquete[? "Time Attacking"] = ds_list_find_value(List , 9);
 	Paquete[? "Animation Speed"] = ds_list_find_value(List , 10);
+	Paquete[? "Can Jump"] = ds_list_find_value(List , 11);
 	
 
 	

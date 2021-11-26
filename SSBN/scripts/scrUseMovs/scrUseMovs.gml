@@ -1,6 +1,17 @@
 function scrUseMovs()
 {
 	#region Ground - Neutral
+	if ((Attacking or TimeAttacking != 0) and JumpButtonPressedActive)
+	{
+		switch(ActualMov)
+		{
+			case(10):
+			{
+				scrSmallJump(ScaleXSprite);
+				break;
+			}
+		}
+	}
 	if ((!Attacking and TimeAttacking == 0) and Damaged == 0)
 	{
 		if (scrSolidDetectorBelow()) 
@@ -116,7 +127,7 @@ function scrUseMovs()
 					}
 				}
 			}
-			else if (AttackButtonPressedActive and (DownButtonActive) and TimeButtonDown == 0)
+			else if (AttackButtonPressedActive and (DownButtonActive) and TimeButtonDown == 0 and TimeButtonUp == 0)
 			{
 				switch(MovGroundAttackDown)
 				{
@@ -139,7 +150,7 @@ function scrUseMovs()
 					}
 				}
 			}
-			else if (AttackButtonPressedActive and (UpButtonActive) and TimeButtonUp == 0)
+			else if (AttackButtonPressedActive and (UpButtonActive) and TimeButtonUp == 0 and TimeButtonDown == 0)
 			{
 				switch(MovGroundAttackUp)
 				{
@@ -165,7 +176,7 @@ function scrUseMovs()
 		}
 		else
 		{
-			if (AttackButtonPressedActive and (!DownButtonActive) and (!UpButtonActive) and (!scrFowardButtonActive(self)) and (!scrBackButtonActive(self)))
+			if (AerialAvailable and AttackButtonPressedActive and (!DownButtonActive) and (!UpButtonActive) and (!scrFowardButtonActive(self)) and (!scrBackButtonActive(self)))
 			{
 				switch(MovAerialNeutral)
 				{
@@ -184,11 +195,12 @@ function scrUseMovs()
 						image_index = 0;
 						RootAttack = scrDameDato(Control.MovList , Ide , "Root");
 						CooldownJump = 0;
+						AerialAvailable = false;
 						break;
 					}
 				}
 			}
-			else if (AttackButtonPressedActive and (scrFowardButtonActive(self)))
+			else if (AerialAvailable and AttackButtonPressedActive and (scrFowardButtonActive(self)))
 			{
 				switch(MovAerialSide)
 				{
@@ -207,11 +219,12 @@ function scrUseMovs()
 						image_index = 0;
 						RootAttack = scrDameDato(Control.MovList , 8 , "Root");
 						CooldownJump = 0;
+						AerialAvailable = false;
 						break;
 					}
 				}
 			}
-			else if (AttackButtonPressedActive and (scrBackButtonActive(self)))
+			else if (AerialAvailable and AttackButtonPressedActive and (scrBackButtonActive(self)))
 			{
 				switch(MovAerialBack)
 				{
@@ -230,6 +243,55 @@ function scrUseMovs()
 						image_index = 0;
 						RootAttack = scrDameDato(Control.MovList , _IdeMov , "Root");
 						CooldownJump = 0;
+						AerialAvailable = false;
+						break;
+					}
+				}
+			}
+			else if (AerialAvailable and AttackButtonPressedActive and (DownButtonActive) and (TimeButtonDown != 0))
+			{
+				switch(MovAerialDown)
+				{
+					case(10):
+					{
+						var _IdeMov = 10;
+						scrAddMov(_IdeMov , 0 , self);
+						Attacking = true;
+						AttackingHold = scrDameDato(Control.MovList , _IdeMov , "Is Smash");
+						AttackingHoldIndex = 1;
+						SmashMaxPower = scrDameDato(Control.MovList , _IdeMov , "Max Power");
+						SmashGrownPower = .1;
+						SpriteAttacking = SpriteAttackAerialDown;
+						SmashActualPower = scrDameDato(Control.MovList , _IdeMov , "Power");
+						SpriteAttackingSpeed = scrDameDato(Control.MovList , _IdeMov , "Animation Speed");
+						image_index = 0;
+						RootAttack = scrDameDato(Control.MovList , _IdeMov , "Root");
+						CooldownJump = 0;
+						AerialAvailable = false;
+						break;
+					}
+				}
+			}
+			else if (AerialAvailable and AttackButtonPressedActive and (UpButtonActive) and (TimeButtonUp != 0))
+			{
+				switch(MovAerialUp)
+				{
+					case(11):
+					{
+						var _IdeMov = 11;
+						scrAddMov(_IdeMov , 0 , self);
+						Attacking = true;
+						AttackingHold = scrDameDato(Control.MovList , _IdeMov , "Is Smash");
+						AttackingHoldIndex = 1;
+						SmashMaxPower = scrDameDato(Control.MovList , _IdeMov , "Max Power");
+						SmashGrownPower = .1;
+						SpriteAttacking = SpriteAttackAerialUp;
+						SmashActualPower = scrDameDato(Control.MovList , _IdeMov , "Power");
+						SpriteAttackingSpeed = scrDameDato(Control.MovList , _IdeMov , "Animation Speed");
+						image_index = 0;
+						RootAttack = scrDameDato(Control.MovList , _IdeMov , "Root");
+						CooldownJump = 0;
+						AerialAvailable = false;
 						break;
 					}
 				}

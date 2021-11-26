@@ -6,6 +6,7 @@ Stun = false;
 Root = false;
 Platform = true;
 Inmune = true;
+ActualMov = -1;
 InmuneCooldown = 0;
 InmuneCooldownFull = 0;
 PlatformCooldown = Control.PlatformTimeAvailable;
@@ -83,6 +84,8 @@ LifePorcentage = 0;
 SmashMaxPower = 0;
 SmashGrownPower = 0;
 SmashActualPower = 0;
+AerialAvailable = true;
+AerialAvaiableList = ds_list_create();
 
 #region Controllers
 RightButtonActive = Control.RightButtonActive;
@@ -99,6 +102,7 @@ AttackButtonActive = Control.AttackButtonActive;
 UpButtonActive = Control.UpButtonActive;
 UpButtonReleasedActive = Control.UpButtonReleasedActive;
 UpButtonPressedActive = Control.UpButtonPressedActive;
+JumpButtonPressedActive = Control.JumpButtonPressedActive;
 #endregion
 
 #region Sprites

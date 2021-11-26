@@ -14,6 +14,7 @@ AttackButtonReleasedActive = false;
 UpButtonActive = false;
 UpButtonReleasedActive = false;
 UpButtonPressedActive = false;
+JumpButtonPressedActive = false;
 
 LeftButtonActive = true;
 RightButtonActive = false;

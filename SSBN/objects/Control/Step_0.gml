@@ -10,6 +10,7 @@ RightButtonPressedActive = keyboard_check_pressed(RightButton);
 RightButtonReleasedActive = keyboard_check_released(RightButton);
 JumpButtonActive = keyboard_check_pressed(JumpButton);
 JumpButtonReleaseActive = keyboard_check_released(JumpButton);
+JumpButtonPressedActive = keyboard_check_pressed(JumpButton);
 DownButtonActive = keyboard_check(DownButton);
 DownButtonPressedActive = keyboard_check_pressed(DownButton);
 DownButtonReleasedActive = keyboard_check_released(DownButton);

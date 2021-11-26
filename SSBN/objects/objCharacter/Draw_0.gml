@@ -1,5 +1,7 @@
 #region Dibujar
 
+scrSimpleText(x , y - 32 , ActualMov);
+
 if (sprite_index == -1)
 {
 	sprite_index = sprChSandbagIdle;

@@ -190,7 +190,7 @@ else
 #endregion
 
 #region Border
-if ((TimeAttacking > 0 or AttackingHold or Attacking) and !place_meeting(x + sign(HorizontalMovement)*8 , y + 4 , parCollision) and place_meeting(x , y + 4 , parCollision) and !place_meeting(x , y , parCollision))
+if ((TimeAttacking > 0 or AttackingHold or Attacking) and !place_meeting(x + sign(HorizontalMovement)*8 , y + 1 , parCollision) and place_meeting(x , y + 1 , parCollision) and !place_meeting(x , y , parCollision))
 {
 	HorizontalMovement = 0;
 	AcelerationValue = 0;
@@ -312,6 +312,7 @@ if (!Platform)
 }
 #endregion
 
+
 #region Jump
 if (!Platform and Damaged == 0 and !Attacking and TimeAttacking == 0)
 {
@@ -412,6 +413,7 @@ if (place_meeting(x , y + VerticalMovement , objBlockSlope45))
 		GravityFallDownActive = 0;
 		JumpingInTerrain = false;
 		Damaged = 0;
+		AerialAvailable = true;
 		if (!FallReady)
 		{
 			FallReady = true;
@@ -447,6 +449,7 @@ if (!place_meeting(x , y , objBlockTransferable) and (VerticalMovement >= 0 and 
 			GravityFallDownActive = 0;
 			JumpingInTerrain = false;
 			Damaged = 0;
+			AerialAvailable = true;
 			if (!FallReady)
 			{
 				FallReady = true;
@@ -475,6 +478,7 @@ if (place_meeting(x , y + VerticalMovement , parSolid))
 		GravityFallDownActive = 0;
 		JumpingInTerrain = false;
 		Damaged = 0;
+		AerialAvailable = true;
 		if (!FallReady)
 		{
 			FallReady = true;
