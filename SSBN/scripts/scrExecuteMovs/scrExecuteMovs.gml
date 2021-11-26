@@ -193,5 +193,50 @@ function scrExecuteMovs(ID)
 			
 			break;
 		}
+		case(8):
+		{
+			HorizontalMovement = ScaleX * 4;
+			///Highpunch
+			var Highpunch = instance_create_depth(x , y , depth-1 , objCombatHitboxImageFollower);
+			Highpunch.sprite_index = sprChMarioAerialSideMask;
+			Highpunch.PowerScale = false;
+			var _IdeMov = 8;
+			Highpunch.Ide = 8;
+			Highpunch.FollowX = LastScaleXSprite;
+			Highpunch.FollowY = 0;
+			Highpunch.Power = scrDameDato(Control.MovList , _IdeMov , "Power");
+			Highpunch.KnockbackScaling = scrDameDato(Control.MovList , _IdeMov , "Knockback Scaling");
+			Highpunch.image_xscale = ScaleXSprite;
+			Highpunch.Creator = self;
+			Highpunch.image_speed = 0;
+			Highpunch.image_index = 0;
+			TimeAttacking = scrDameDato(Control.MovList , _IdeMov , "Time Attacking");
+			ds_list_add(self.MyMovs , Highpunch);
+			
+			break;
+		}
+		case(9):
+		{
+			VerticalMovement = -1;
+			AcelerationValue = 4;
+			///Back
+			var BackfootBang = instance_create_depth(x , y , depth-1 , objCombatHitboxImageFollower);
+			BackfootBang.sprite_index = sprChMarioAerialBackMask;
+			BackfootBang.PowerScale = false;
+			var _IdeMov = 9;
+			BackfootBang.Ide = _IdeMov;
+			BackfootBang.FollowX = LastScaleXSprite;
+			BackfootBang.FollowY = 0;
+			BackfootBang.Power = scrDameDato(Control.MovList , _IdeMov , "Power");
+			BackfootBang.KnockbackScaling = scrDameDato(Control.MovList , _IdeMov , "Knockback Scaling");
+			BackfootBang.image_xscale = ScaleXSprite;
+			BackfootBang.Creator = self;
+			BackfootBang.image_speed = 0;
+			BackfootBang.image_index = 0;
+			TimeAttacking = scrDameDato(Control.MovList , _IdeMov , "Time Attacking");
+			ds_list_add(self.MyMovs , BackfootBang);
+			
+			break;
+		}
 	}
 }

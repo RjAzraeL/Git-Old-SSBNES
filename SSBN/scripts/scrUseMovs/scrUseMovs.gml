@@ -18,7 +18,7 @@ function scrUseMovs()
 							AttackingHold = scrDameDato(Control.MovList , 0 , "Is Smash");
 							AttackingHoldIndex = 0;
 							SpriteAttacking = SpriteAttackGroundNeutral;
-							image_speed = .25;
+							SpriteAttackingSpeed = scrDameDato(Control.MovList , 0 , "Animation Speed");
 							image_index = 0;
 							RootAttack = scrDameDato(Control.MovList , 0 , "Root");
 							CooldownJump = 0;
@@ -41,7 +41,7 @@ function scrUseMovs()
 						SmashGrownPower = .1;
 						SpriteAttacking = SpriteSmashGroundSide;
 						SmashActualPower = scrDameDato(Control.MovList , 1 , "Power");
-						image_speed = .25;
+						SpriteAttackingSpeed = scrDameDato(Control.MovList , 1 , "Animation Speed");
 						image_index = 0;
 						RootAttack = scrDameDato(Control.MovList , 1 , "Root");
 						CooldownJump = 0;
@@ -63,7 +63,7 @@ function scrUseMovs()
 						SmashGrownPower = .1;
 						SpriteAttacking = SpriteSmashGroundDown;
 						SmashActualPower = scrDameDato(Control.MovList , 2 , "Power");
-						image_speed = .5;
+						SpriteAttackingSpeed = scrDameDato(Control.MovList , 2 , "Animation Speed");
 						image_index = 0;
 						RootAttack = scrDameDato(Control.MovList , 2 , "Root");
 						CooldownJump = 0;
@@ -85,7 +85,7 @@ function scrUseMovs()
 						SmashGrownPower = .1;
 						SpriteAttacking = SpriteSmashGroundUp;
 						SmashActualPower = scrDameDato(Control.MovList , 3 , "Power");
-						image_speed = .5;
+						SpriteAttackingSpeed = scrDameDato(Control.MovList , 3 , "Animation Speed");
 						image_index = 0;
 						RootAttack = scrDameDato(Control.MovList , 3 , "Root");
 						CooldownJump = 0;
@@ -108,7 +108,7 @@ function scrUseMovs()
 						SmashGrownPower = .1;
 						SpriteAttacking = SpriteAttackGroundSide;
 						SmashActualPower = scrDameDato(Control.MovList , Ide , "Power");
-						image_speed = .5;
+						SpriteAttackingSpeed = scrDameDato(Control.MovList , Ide , "Animation Speed");
 						image_index = 0;
 						RootAttack = scrDameDato(Control.MovList , Ide , "Root");
 						CooldownJump = 0;
@@ -131,7 +131,7 @@ function scrUseMovs()
 						SmashGrownPower = .1;
 						SpriteAttacking = SpriteAttackGroundDown;
 						SmashActualPower = scrDameDato(Control.MovList , Ide , "Power");
-						image_speed = .5;
+						SpriteAttackingSpeed = scrDameDato(Control.MovList , Ide , "Animation Speed");
 						image_index = 0;
 						RootAttack = scrDameDato(Control.MovList , Ide , "Root");
 						CooldownJump = 0;
@@ -154,7 +154,7 @@ function scrUseMovs()
 						SmashGrownPower = .1;
 						SpriteAttacking = SpriteAttackGroundUp;
 						SmashActualPower = scrDameDato(Control.MovList , Ide , "Power");
-						image_speed = .5;
+						SpriteAttackingSpeed = scrDameDato(Control.MovList , Ide , "Animation Speed");
 						image_index = 0;
 						RootAttack = scrDameDato(Control.MovList , Ide , "Root");
 						CooldownJump = 0;
@@ -165,7 +165,7 @@ function scrUseMovs()
 		}
 		else
 		{
-			if (AttackButtonPressedActive and (!DownButtonActive) and (!UpButtonActive))
+			if (AttackButtonPressedActive and (!DownButtonActive) and (!UpButtonActive) and (!scrFowardButtonActive(self)) and (!scrBackButtonActive(self)))
 			{
 				switch(MovAerialNeutral)
 				{
@@ -180,9 +180,55 @@ function scrUseMovs()
 						SmashGrownPower = .1;
 						SpriteAttacking = SpriteAttackAerialNeutral;
 						SmashActualPower = scrDameDato(Control.MovList , Ide , "Power");
-						image_speed = .5;
+						SpriteAttackingSpeed = scrDameDato(Control.MovList , Ide , "Animation Speed");
 						image_index = 0;
 						RootAttack = scrDameDato(Control.MovList , Ide , "Root");
+						CooldownJump = 0;
+						break;
+					}
+				}
+			}
+			else if (AttackButtonPressedActive and (scrFowardButtonActive(self)))
+			{
+				switch(MovAerialSide)
+				{
+					case(8):
+					{
+						scrAddMov(8 , 3 , self);
+						Ide = 8;
+						Attacking = true;
+						AttackingHold = scrDameDato(Control.MovList , 8 , "Is Smash");
+						AttackingHoldIndex = 1;
+						SmashMaxPower = scrDameDato(Control.MovList , 8 , "Max Power");
+						SmashGrownPower = .1;
+						SpriteAttacking = SpriteAttackAerialSide;
+						SmashActualPower = scrDameDato(Control.MovList , 8 , "Power");
+						SpriteAttackingSpeed = scrDameDato(Control.MovList , Ide , "Animation Speed");
+						image_index = 0;
+						RootAttack = scrDameDato(Control.MovList , 8 , "Root");
+						CooldownJump = 0;
+						break;
+					}
+				}
+			}
+			else if (AttackButtonPressedActive and (scrBackButtonActive(self)))
+			{
+				switch(MovAerialBack)
+				{
+					case(9):
+					{
+						var _IdeMov = 9;
+						scrAddMov(9 , 0 , self);
+						Attacking = true;
+						AttackingHold = scrDameDato(Control.MovList , _IdeMov , "Is Smash");
+						AttackingHoldIndex = 1;
+						SmashMaxPower = scrDameDato(Control.MovList , _IdeMov , "Max Power");
+						SmashGrownPower = .1;
+						SpriteAttacking = SpriteAttackAerialBack;
+						SmashActualPower = scrDameDato(Control.MovList , _IdeMov , "Power");
+						SpriteAttackingSpeed = scrDameDato(Control.MovList , _IdeMov , "Animation Speed");
+						image_index = 0;
+						RootAttack = scrDameDato(Control.MovList , _IdeMov , "Root");
 						CooldownJump = 0;
 						break;
 					}

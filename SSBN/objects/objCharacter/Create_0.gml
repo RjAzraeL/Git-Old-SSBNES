@@ -14,6 +14,7 @@ TimeButtonUp = 0;
 TimeButtonDown = 0;
 AttackingHold = false;
 image_speed = .25;
+SpriteAttackingSpeed = .25;
 Angle = 0;
 Jumps = 5;
 GravityFallDownActive = 0;

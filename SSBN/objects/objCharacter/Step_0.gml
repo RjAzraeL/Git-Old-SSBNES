@@ -190,7 +190,7 @@ else
 #endregion
 
 #region Border
-if ((TimeAttacking > 0 or AttackingHold or Attacking) and !place_meeting(x + sign(HorizontalMovement)*8 , y + 4 , parCollision) and place_meeting(x , y + 4 , parCollision))
+if ((TimeAttacking > 0 or AttackingHold or Attacking) and !place_meeting(x + sign(HorizontalMovement)*8 , y + 4 , parCollision) and place_meeting(x , y + 4 , parCollision) and !place_meeting(x , y , parCollision))
 {
 	HorizontalMovement = 0;
 	AcelerationValue = 0;
@@ -218,7 +218,7 @@ if (!Platform)
 #endregion
 
 #region Down Fast
-if (DownButtonPressedActive and CooldowFall == 0 and CooldownJump == 0 and !place_meeting(x , y+1 , parCollision) and !Platform and !Attacking and TimeAttacking == 0)
+if (DownButtonPressedActive and CooldowFall == 0 and CooldownJump == 0 and !place_meeting(x , y+1 , parCollision) and !Platform and !Attacking and TimeAttacking == 0 and !JumpStop)
 {
 	if (VerticalMovement != 0)
 	{
@@ -678,7 +678,7 @@ if (Damaged == 0)
 			sprite_index = SpriteAttacking;
 			if (!AttackingHold)
 			{
-				image_speed = .25;
+				image_speed = SpriteAttackingSpeed;
 			}
 			else
 			{
