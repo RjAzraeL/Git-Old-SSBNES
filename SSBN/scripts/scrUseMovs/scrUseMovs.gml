@@ -24,15 +24,7 @@ function scrUseMovs()
 					{
 						if (scrCheckObjectAmount(self , objCombatFireball) < 2)
 						{
-							scrAddMov(0 , 2 , self);
-							Attacking = true;
-							AttackingHold = scrDameDato(Control.MovList , 0 , "Is Smash");
-							AttackingHoldIndex = 0;
-							SpriteAttacking = SpriteAttackGroundNeutral;
-							SpriteAttackingSpeed = scrDameDato(Control.MovList , 0 , "Animation Speed");
-							image_index = 0;
-							RootAttack = scrDameDato(Control.MovList , 0 , "Root");
-							CooldownJump = 0;
+							scrPrepareMov(0 , false , SpriteAttackGroundNeutral , 2);
 						}
 						break;
 					}
@@ -44,18 +36,7 @@ function scrUseMovs()
 				{
 					case(1):
 					{
-						scrAddMov(1 , 3 , self);
-						Attacking = true;
-						AttackingHold = scrDameDato(Control.MovList , 1 , "Is Smash");
-						AttackingHoldIndex = 1;
-						SmashMaxPower = scrDameDato(Control.MovList , 1 , "Max Power");
-						SmashGrownPower = .1;
-						SpriteAttacking = SpriteSmashGroundSide;
-						SmashActualPower = scrDameDato(Control.MovList , 1 , "Power");
-						SpriteAttackingSpeed = scrDameDato(Control.MovList , 1 , "Animation Speed");
-						image_index = 0;
-						RootAttack = scrDameDato(Control.MovList , 1 , "Root");
-						CooldownJump = 0;
+						scrPrepareMov(1 , false , SpriteSmashGroundSide , 3);
 						break;
 					}
 				}

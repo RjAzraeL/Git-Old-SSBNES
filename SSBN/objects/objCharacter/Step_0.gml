@@ -381,7 +381,7 @@ if (TimeAttacking > 0)
 }
 if (Attacking or TimeAttacking > 0)
 {
-	if (ds_list_size(MoveQueue) > 0)
+	if (ds_list_size(MoveQueue) > 0 and ds_list_size(MyMovs) == 0)
 	{
 		var Package = ds_list_find_value(MoveQueue , 0);
 		if (Package[? "frame"] == image_index)
@@ -405,22 +405,7 @@ if (place_meeting(x , y + VerticalMovement , objBlockSlope45))
 	{
 		y += sign(VerticalMovement);
 	}
-	if (VerticalMovement > 0)
-	{
-		JumpAvailable = Jumps;
-		ActualJumpSprite = 0;
-		VerticalMovementLimitExtra = 0;
-		GravityFallDownActive = 0;
-		JumpingInTerrain = false;
-		Damaged = 0;
-		AerialAvailable = true;
-		if (!FallReady)
-		{
-			FallReady = true;
-			CooldowFall = 8;	
-		}
-	}
-	VerticalMovement = 0;
+	scrStepOnFloor();
 }
 
 
@@ -441,22 +426,7 @@ if (!place_meeting(x , y , objBlockTransferable) and (VerticalMovement >= 0 and 
 		{
 			y += sign(VerticalMovement);
 		}
-		if (VerticalMovement > 0)
-		{
-			JumpAvailable = Jumps;
-			ActualJumpSprite = 0;
-			VerticalMovementLimitExtra = 0;
-			GravityFallDownActive = 0;
-			JumpingInTerrain = false;
-			Damaged = 0;
-			AerialAvailable = true;
-			if (!FallReady)
-			{
-				FallReady = true;
-				CooldowFall = 8;	
-			}
-		}
-		VerticalMovement = 0;
+		scrStepOnFloor();
 	}
 }
 if (!place_meeting(x , y + 1 , parCollision) and HorizontalMovement >= 0)
@@ -470,22 +440,7 @@ if (place_meeting(x , y + VerticalMovement , parSolid))
 	{
 		y += sign(VerticalMovement);
 	}
-	if (VerticalMovement > 0)
-	{
-		JumpAvailable = Jumps;
-		ActualJumpSprite = 0;
-		VerticalMovementLimitExtra = 0;
-		GravityFallDownActive = 0;
-		JumpingInTerrain = false;
-		Damaged = 0;
-		AerialAvailable = true;
-		if (!FallReady)
-		{
-			FallReady = true;
-			CooldowFall = 8;	
-		}
-	}
-	VerticalMovement = 0;
+	scrStepOnFloor();
 }
 
 if (place_meeting(x + HorizontalMovement , y  + VerticalMovement, parSolid))

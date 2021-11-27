@@ -1,6 +1,6 @@
 #region Dibujar
 
-scrSimpleText(x , y - 32 , ActualMov);
+scrSimpleText(x , y - 32 , ds_list_size(MyMovs));
 
 if (sprite_index == -1)
 {
