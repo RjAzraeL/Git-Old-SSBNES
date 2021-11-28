@@ -47,18 +47,7 @@ function scrUseMovs()
 				{
 					case(2):
 					{
-						scrAddMov(2 , 0 , self);
-						Attacking = true;
-						AttackingHold = scrDameDato(Control.MovList , 2 , "Is Smash");
-						AttackingHoldIndex = 0;
-						SmashMaxPower = scrDameDato(Control.MovList , 2 , "Max Power");
-						SmashGrownPower = .1;
-						SpriteAttacking = SpriteSmashGroundDown;
-						SmashActualPower = scrDameDato(Control.MovList , 2 , "Power");
-						SpriteAttackingSpeed = scrDameDato(Control.MovList , 2 , "Animation Speed");
-						image_index = 0;
-						RootAttack = scrDameDato(Control.MovList , 2 , "Root");
-						CooldownJump = 0;
+						scrPrepareMov(2 , false , SpriteSmashGroundDown , 0);
 						break;
 					}
 				}

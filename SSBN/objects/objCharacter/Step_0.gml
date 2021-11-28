@@ -312,7 +312,6 @@ if (!Platform)
 }
 #endregion
 
-
 #region Jump
 if (!Platform and Damaged == 0 and !Attacking and TimeAttacking == 0)
 {
@@ -381,7 +380,7 @@ if (TimeAttacking > 0)
 }
 if (Attacking or TimeAttacking > 0)
 {
-	if (ds_list_size(MoveQueue) > 0 and ds_list_size(MyMovs) == 0)
+	if (ds_list_size(MoveQueue) > 0)
 	{
 		var Package = ds_list_find_value(MoveQueue , 0);
 		if (Package[? "frame"] == image_index)

@@ -15,8 +15,12 @@ function scrExecuteMovs(ID)
 			Fireball.image_xscale = ScaleXSprite;
 			Fireball.Creator = self;
 			TimeAttacking = scrDameDato(Control.MovList , 0 , "Time Attacking");
-			ds_list_add(self.MyMovs , Fireball);
+			ds_list_add(self.MyMovs , Fireball.id);
 			ActualMov = ID;
+			if (scrDameDato(Control.MovList , 0 , "Is Aerial"))
+			{
+				ds_list_add(AerialAvaiableList , self.id);
+			}
 			break;
 		}
 		case(1):
@@ -32,7 +36,7 @@ function scrExecuteMovs(ID)
 			Firepunch.image_xscale = ScaleXSprite;
 			Firepunch.Creator = self;
 			TimeAttacking = scrDameDato(Control.MovList , 1 , "Time Attacking");
-			ds_list_add(self.MyMovs , Firepunch);
+			ds_list_add(self.MyMovs , Firepunch.id);
 			///Punch
 			var Punch = instance_create_depth(x + LastScaleXSprite * 5 , y + 4 , depth-1 , objCombatHitbox);
 			Punch.sprite_index = sprChMarioFirePunchMask;
@@ -50,7 +54,7 @@ function scrExecuteMovs(ID)
 			Punch.Power = scrGetTotalValueFromTwoPorcentages(11 , 15 , LoadPorcentage);
 			Punch.KnockbackScaling = scrDameDato(Control.MovList , 1 , "Knockback Scaling");
 			Punch.PowerScale = true;
-			ds_list_add(self.MyMovs , Punch);
+			ds_list_add(self.MyMovs , Punch.id);
 			
 			Firepunch.Follower = Punch;
 			ActualMov = ID;
@@ -70,7 +74,7 @@ function scrExecuteMovs(ID)
 			Flip.image_xscale = ScaleXSprite;
 			Flip.Creator = self;
 			TimeAttacking = scrDameDato(Control.MovList , 2 , "Time Attacking");
-			ds_list_add(self.MyMovs , Flip);
+			ds_list_add(self.MyMovs , Flip.id);
 			
 			///Flip Back
 			var FlipBack = instance_create_depth(x , y , depth-1 , objCombatMarioFlip);
@@ -93,7 +97,7 @@ function scrExecuteMovs(ID)
 			FlipBack.image_xscale = ScaleXSprite;
 			FlipBack.Creator = self;
 			TimeAttacking = scrDameDato(Control.MovList , 2 , "Time Attacking");
-			ds_list_add(self.MyMovs , FlipBack);
+			ds_list_add(self.MyMovs , FlipBack.id);
 			ActualMov = ID;
 			break;
 		}
@@ -111,7 +115,7 @@ function scrExecuteMovs(ID)
 			HeadBang.image_xscale = ScaleXSprite;
 			HeadBang.Creator = self;
 			TimeAttacking = scrDameDato(Control.MovList , 3 , "Time Attacking");
-			ds_list_add(self.MyMovs , HeadBang);
+			ds_list_add(self.MyMovs , HeadBang.id);
 			ActualMov = ID;
 			break;
 		}
@@ -132,7 +136,7 @@ function scrExecuteMovs(ID)
 			FootBang.image_speed = 0;
 			FootBang.image_index = 0;
 			TimeAttacking = scrDameDato(Control.MovList , 4 , "Time Attacking");
-			ds_list_add(self.MyMovs , FootBang);
+			ds_list_add(self.MyMovs , FootBang.id);
 			ActualMov = ID;
 			break;
 		}
@@ -152,7 +156,7 @@ function scrExecuteMovs(ID)
 			FootBang2.image_speed = 0;
 			FootBang2.image_index = 0;
 			TimeAttacking = scrDameDato(Control.MovList , 5 , "Time Attacking");
-			ds_list_add(self.MyMovs , FootBang2);
+			ds_list_add(self.MyMovs , FootBang2.id);
 			ActualMov = ID;
 			break;
 		}
@@ -172,7 +176,7 @@ function scrExecuteMovs(ID)
 			Highpunch.image_speed = 0;
 			Highpunch.image_index = 0;
 			TimeAttacking = scrDameDato(Control.MovList , 6 , "Time Attacking");
-			ds_list_add(self.MyMovs , Highpunch);
+			ds_list_add(self.MyMovs , Highpunch.id);
 			ActualMov = ID;
 			break;
 		}
@@ -192,7 +196,7 @@ function scrExecuteMovs(ID)
 			AerialFootbang.image_speed = 0;
 			AerialFootbang.image_index = 0;
 			TimeAttacking = scrDameDato(Control.MovList , 7 , "Time Attacking");
-			ds_list_add(self.MyMovs , AerialFootbang);
+			ds_list_add(self.MyMovs , AerialFootbang.id);
 			ActualMov = ID;
 			break;
 		}
@@ -214,7 +218,7 @@ function scrExecuteMovs(ID)
 			Highpunch.image_speed = 0;
 			Highpunch.image_index = 0;
 			TimeAttacking = scrDameDato(Control.MovList , _IdeMov , "Time Attacking");
-			ds_list_add(self.MyMovs , Highpunch);
+			ds_list_add(self.MyMovs , Highpunch.id);
 			ActualMov = ID;
 			break;
 		}
@@ -237,7 +241,7 @@ function scrExecuteMovs(ID)
 			BackfootBang.image_speed = 0;
 			BackfootBang.image_index = 0;
 			TimeAttacking = scrDameDato(Control.MovList , _IdeMov , "Time Attacking");
-			ds_list_add(self.MyMovs , BackfootBang);
+			ds_list_add(self.MyMovs , BackfootBang.id);
 			ActualMov = ID;
 			break;
 		}
@@ -258,7 +262,7 @@ function scrExecuteMovs(ID)
 			DownFlipAerial.image_speed = 0;
 			DownFlipAerial.image_index = 0;
 			TimeAttacking = scrDameDato(Control.MovList , _IdeMov , "Time Attacking");
-			ds_list_add(self.MyMovs , DownFlipAerial);
+			ds_list_add(self.MyMovs , DownFlipAerial.id);
 			ActualMov = ID;
 			break;
 		}
@@ -280,7 +284,7 @@ function scrExecuteMovs(ID)
 			Up.image_speed = 0;
 			Up.image_index = 0;
 			TimeAttacking = scrDameDato(Control.MovList , _IdeMov , "Time Attacking");
-			ds_list_add(self.MyMovs , Up);
+			ds_list_add(self.MyMovs , Up.id);
 			ActualMov = ID;
 			break;
 		}
