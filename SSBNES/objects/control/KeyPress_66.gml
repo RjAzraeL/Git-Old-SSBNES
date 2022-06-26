@@ -1,5 +1,5 @@
 #region Bot
-if (!CreateBot)
+if (!CreateBot and BattleLevel)
 {
 	CreateBot = true;
 	var Bot = instance_create_depth(room_width/2 , 16 , 0 , objBot);

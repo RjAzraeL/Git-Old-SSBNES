@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sprVersusOption",
-    "path": "sprites/sprVersusOption/sprVersusOption.yy",
+    "name": "sprMenuButton",
+    "path": "sprites/sprMenuButton/sprMenuButton.yy",
   },
   "solid": false,
   "visible": true,

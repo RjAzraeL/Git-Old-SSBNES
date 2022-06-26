@@ -1,6 +1,6 @@
 #region Set variables
 event_inherited();
-Mentality = "Close";
+Mentality = "Range";
 DownButtonPressedActive = false;
 LeftButtonPressedActive = false;
 RightButtonPressedActive = false;
@@ -18,8 +18,9 @@ JumpButtonPressedActive = false;
 
 LeftButtonActive = true;
 RightButtonActive = false;
-//alarm[0] = 60;
-//alarm[5] = 30;
+alarm[0] = 60;
+alarm[5] = 30;
+alarm[7] = 1;
 
 image_blend = c_yellow;
 #endregion

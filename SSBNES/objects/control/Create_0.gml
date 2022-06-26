@@ -60,6 +60,6 @@ StartButton = vk_enter;
 SelectButton = vk_space;
 ShowColissionButton = vk_f1;
 ShowColissionMovsButton = vk_f2;
-
+BattleLevel = false;
 alarm[0] = 5;
 #endregion

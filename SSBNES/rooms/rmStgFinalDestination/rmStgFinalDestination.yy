@@ -21,10 +21,7 @@
       ],"visible":false,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":1,"gridY":1,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],"resourceVersion":"1.0","name":"Instances_1","tags":[],"resourceType":"GMRInstanceLayer",},
     {"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[
         {"spriteId":{"name":"sprStgLy1aBattlefieldM","path":"sprites/sprStgLy1aBattlefieldM/sprStgLy1aBattlefieldM.yy",},"colour":4294967295,"x":55,"y":136,"htiled":false,"vtiled":false,"hspeed":0.0,"vspeed":0.0,"stretch":false,"animationFPS":30.0,"animationSpeedType":0,"userdefinedAnimFPS":false,"visible":true,"depth":200,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],"resourceVersion":"1.0","name":"Backgrounds_1","tags":[],"resourceType":"GMRBackgroundLayer",},
-        {"instances":[
-            {"properties":[],"isDnd":false,"objectId":{"name":"Control","path":"objects/Control/Control.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":0.0,"resourceVersion":"1.0","name":"inst_70A3DAD7_1_2_2","tags":[],"resourceType":"GMRInstance",},
-            {"properties":[],"isDnd":false,"objectId":{"name":"objCRTcontroller","path":"objects/objCRTcontroller/objCRTcontroller.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":16.0,"resourceVersion":"1.0","name":"inst_7F4D3D10_1","tags":[],"resourceType":"GMRInstance",},
-          ],"visible":true,"depth":300,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":1,"gridY":2,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
+        {"instances":[],"visible":true,"depth":300,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":1,"gridY":2,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
         {"assets":[
             {"spriteId":{"name":"sprStgLy1bBattlefieldM","path":"sprites/sprStgLy1bBattlefieldM/sprStgLy1bBattlefieldM.yy",},"headPosition":0.0,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"animationSpeed":1.0,"colour":4294967295,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":77.0,"y":89.0,"resourceVersion":"1.0","name":"graphic_662B44C6_1","tags":[],"resourceType":"GMRSpriteGraphic",},
             {"spriteId":{"name":"sprStgLy1bBattlefieldM","path":"sprites/sprStgLy1bBattlefieldM/sprStgLy1bBattlefieldM.yy",},"headPosition":0.0,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"animationSpeed":1.0,"colour":4294967295,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":142.0,"y":46.0,"resourceVersion":"1.0","name":"graphic_11F567C4_1","tags":[],"resourceType":"GMRSpriteGraphic",},
@@ -40,12 +37,10 @@
   "creationCodeFile": "",
   "inheritCode": false,
   "instanceCreationOrder": [
-    {"name":"inst_70A3DAD7_1_2_2","path":"rooms/rmStgFinalDestination/rmStgFinalDestination.yy",},
     {"name":"inst_5744058_1","path":"rooms/rmStgFinalDestination/rmStgFinalDestination.yy",},
     {"name":"inst_5A531960_1","path":"rooms/rmStgFinalDestination/rmStgFinalDestination.yy",},
     {"name":"inst_30F4A126_1","path":"rooms/rmStgFinalDestination/rmStgFinalDestination.yy",},
     {"name":"inst_332C8BDB_1","path":"rooms/rmStgFinalDestination/rmStgFinalDestination.yy",},
-    {"name":"inst_7F4D3D10_1","path":"rooms/rmStgFinalDestination/rmStgFinalDestination.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
