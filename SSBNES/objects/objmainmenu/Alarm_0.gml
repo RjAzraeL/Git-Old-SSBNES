@@ -2,7 +2,7 @@
 with (objMainMenuButton)
 {
 	image_index = 0;
-	Color = c_yellow;
+	Color = make_color_rgb(248 , 184 , 0);
 	if (objMainMenu.ActualButton == Id)
 	{
 		image_index = 1;

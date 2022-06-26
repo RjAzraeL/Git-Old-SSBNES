@@ -7,9 +7,15 @@ ButtonX[3] = X - 16;
 ButtonX[4] = X - 32;
 ButtonT[0] = "1-P Mode";
 ButtonT[1] = "VS. Mode";
-ButtonT[2] = "Cards";
+ButtonT[2] = "Extra";
 ButtonT[3] = "Options";
 ButtonT[4] = "Data";
+ButtonD[0] = "Solo Smash!";
+ButtonD[1] = "Multiplayer battles!";
+ButtonD[2] = "View extra content.";
+ButtonD[3] = "Game setup.";
+ButtonD[4] = "View game records.";
+
 ActualButton = 0;
 CooldownButton = 0;
 for (var i = 0 ; i < 5 ; i++)
@@ -19,6 +25,7 @@ for (var i = 0 ; i < 5 ; i++)
 	Button.image_index = 0;
 	Button.Id = i;
 	Button.Text = ButtonT[i];
+	Button.Desc = ButtonD[i];
 }
 alarm[0] = 1;
 #endregion
