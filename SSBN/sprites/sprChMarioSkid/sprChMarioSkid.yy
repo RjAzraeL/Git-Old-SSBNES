@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprChMarioSkid","path":"sprites/sprChMarioSkid/sprChMarioSkid.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprChMarioSkid",
     "tags": [],
     "resourceType": "GMSequence",

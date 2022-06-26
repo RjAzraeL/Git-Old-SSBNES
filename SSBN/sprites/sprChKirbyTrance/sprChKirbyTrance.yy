@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprChKirbyTrance","path":"sprites/sprChKirbyTrance/sprChKirbyTrance.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprChKirbyTrance",
     "tags": [],
     "resourceType": "GMSequence",

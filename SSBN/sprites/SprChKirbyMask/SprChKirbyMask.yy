@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprChKirbyMask","path":"sprites/sprChKirbyMask/sprChKirbyMask.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprChKirbyMask",
     "tags": [],
     "resourceType": "GMSequence",

@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprChSandbagMask","path":"sprites/sprChSandbagMask/sprChSandbagMask.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprChSandbagMask",
     "tags": [],
     "resourceType": "GMSequence",

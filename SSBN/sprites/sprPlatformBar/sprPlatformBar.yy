@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprPlatformBar","path":"sprites/sprPlatformBar/sprPlatformBar.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprPlatformBar",
     "tags": [],
     "resourceType": "GMSequence",

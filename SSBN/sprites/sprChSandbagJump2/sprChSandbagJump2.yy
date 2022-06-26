@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprChSandbagJump2","path":"sprites/sprChSandbagJump2/sprChSandbagJump2.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprChSandbagJump2",
     "tags": [],
     "resourceType": "GMSequence",

@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprChMarioGroundAttackSide","path":"sprites/sprChMarioGroundAttackSide/sprChMarioGroundAttackSide.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprChMarioGroundAttackSide",
     "tags": [],
     "resourceType": "GMSequence",

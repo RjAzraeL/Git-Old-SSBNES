@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprChMarioMaskDuck","path":"sprites/sprChMarioMaskDuck/sprChMarioMaskDuck.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprChMarioMaskDuck",
     "tags": [],
     "resourceType": "GMSequence",

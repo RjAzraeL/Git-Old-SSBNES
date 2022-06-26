@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprChMarioFireball","path":"sprites/sprChMarioFireball/sprChMarioFireball.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprChMarioFireball",
     "tags": [],
     "resourceType": "GMSequence",

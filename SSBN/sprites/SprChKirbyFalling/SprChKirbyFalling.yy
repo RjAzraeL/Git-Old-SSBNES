@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprChKirbyFalling","path":"sprites/sprChKirbyFalling/sprChKirbyFalling.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprChKirbyFalling",
     "tags": [],
     "resourceType": "GMSequence",

@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprChMarioIdle","path":"sprites/sprChMarioIdle/sprChMarioIdle.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprChMarioIdle",
     "tags": [],
     "resourceType": "GMSequence",

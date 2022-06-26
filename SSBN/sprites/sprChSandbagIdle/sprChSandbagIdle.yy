@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprChSandbagIdle","path":"sprites/sprChSandbagIdle/sprChSandbagIdle.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprChSandbagIdle",
     "tags": [],
     "resourceType": "GMSequence",

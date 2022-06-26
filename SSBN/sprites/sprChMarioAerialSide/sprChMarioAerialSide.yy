@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprChMarioAerialSide","path":"sprites/sprChMarioAerialSide/sprChMarioAerialSide.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprChMarioAerialSide",
     "tags": [],
     "resourceType": "GMSequence",

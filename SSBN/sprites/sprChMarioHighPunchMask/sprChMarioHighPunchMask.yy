@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprChMarioHighPunchMask","path":"sprites/sprChMarioHighPunchMask/sprChMarioHighPunchMask.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprChMarioHighPunchMask",
     "tags": [],
     "resourceType": "GMSequence",

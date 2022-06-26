@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprChMarioAerialNeutral","path":"sprites/sprChMarioAerialNeutral/sprChMarioAerialNeutral.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprChMarioAerialNeutral",
     "tags": [],
     "resourceType": "GMSequence",

@@ -95,7 +95,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprHudNumbers","path":"sprites/sprHudNumbers/sprHudNumbers.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprHudNumbers",
     "tags": [],
     "resourceType": "GMSequence",

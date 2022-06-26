@@ -107,7 +107,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprChMarioAerialDownMask","path":"sprites/sprChMarioAerialDownMask/sprChMarioAerialDownMask.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprChMarioAerialDownMask",
     "tags": [],
     "resourceType": "GMSequence",

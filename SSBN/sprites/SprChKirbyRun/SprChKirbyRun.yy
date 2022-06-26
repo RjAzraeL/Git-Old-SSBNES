@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprChKirbyRun","path":"sprites/sprChKirbyRun/sprChKirbyRun.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprChKirbyRun",
     "tags": [],
     "resourceType": "GMSequence",

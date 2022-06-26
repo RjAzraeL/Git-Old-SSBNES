@@ -87,7 +87,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprArrowOutside","path":"sprites/sprArrowOutside/sprArrowOutside.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprArrowOutside",
     "tags": [],
     "resourceType": "GMSequence",

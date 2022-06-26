@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprChMarioWalk","path":"sprites/sprChMarioWalk/sprChMarioWalk.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprChMarioWalk",
     "tags": [],
     "resourceType": "GMSequence",

@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprChMarioGroundAttackUp","path":"sprites/sprChMarioGroundAttackUp/sprChMarioGroundAttackUp.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprChMarioGroundAttackUp",
     "tags": [],
     "resourceType": "GMSequence",

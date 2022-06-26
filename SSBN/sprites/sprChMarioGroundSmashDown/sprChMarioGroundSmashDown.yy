@@ -95,7 +95,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprChMarioGroundSmashDown","path":"sprites/sprChMarioGroundSmashDown/sprChMarioGroundSmashDown.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprChMarioGroundSmashDown",
     "tags": [],
     "resourceType": "GMSequence",

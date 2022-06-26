@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprChMarioGroundAttackSideTrance","path":"sprites/sprChMarioGroundAttackSideTrance/sprChMarioGroundAttackSideTrance.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprChMarioGroundAttackSideTrance",
     "tags": [],
     "resourceType": "GMSequence",

@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprDashEffect","path":"sprites/sprDashEffect/sprDashEffect.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprDashEffect",
     "tags": [],
     "resourceType": "GMSequence",

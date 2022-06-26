@@ -87,7 +87,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprChKirbyGroundNeutral","path":"sprites/sprChKirbyGroundNeutral/sprChKirbyGroundNeutral.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprChKirbyGroundNeutral",
     "tags": [],
     "resourceType": "GMSequence",

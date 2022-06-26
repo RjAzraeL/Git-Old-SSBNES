@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprChMarioJump2","path":"sprites/sprChMarioJump2/sprChMarioJump2.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprChMarioJump2",
     "tags": [],
     "resourceType": "GMSequence",

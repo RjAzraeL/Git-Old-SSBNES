@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprChMarioFalling","path":"sprites/sprChMarioFalling/sprChMarioFalling.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprChMarioFalling",
     "tags": [],
     "resourceType": "GMSequence",

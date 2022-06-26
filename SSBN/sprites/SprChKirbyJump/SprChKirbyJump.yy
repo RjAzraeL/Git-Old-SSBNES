@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprChKirbyJump","path":"sprites/sprChKirbyJump/sprChKirbyJump.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprChKirbyJump",
     "tags": [],
     "resourceType": "GMSequence",

@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprChMarioAerialBack","path":"sprites/sprChMarioAerialBack/sprChMarioAerialBack.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprChMarioAerialBack",
     "tags": [],
     "resourceType": "GMSequence",

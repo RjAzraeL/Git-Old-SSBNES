@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprStgLy3BattlefieldM","path":"sprites/sprStgLy3BattlefieldM/sprStgLy3BattlefieldM.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprStgLy3BattlefieldM",
     "tags": [],
     "resourceType": "GMSequence",

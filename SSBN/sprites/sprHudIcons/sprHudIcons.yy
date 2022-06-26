@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprHudIcons","path":"sprites/sprHudIcons/sprHudIcons.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprHudIcons",
     "tags": [],
     "resourceType": "GMSequence",

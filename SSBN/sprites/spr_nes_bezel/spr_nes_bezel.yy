@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_nes_bezel","path":"sprites/spr_nes_bezel/spr_nes_bezel.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_nes_bezel",
     "tags": [],
     "resourceType": "GMSequence",

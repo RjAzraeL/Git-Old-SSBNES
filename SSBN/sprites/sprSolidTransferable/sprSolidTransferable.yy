@@ -138,7 +138,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprSolidTransferable","path":"sprites/sprSolidTransferable/sprSolidTransferable.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprSolidTransferable",
     "tags": [],
     "resourceType": "GMSequence",

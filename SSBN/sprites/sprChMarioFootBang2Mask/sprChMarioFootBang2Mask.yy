@@ -83,7 +83,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprChMarioFootBang2Mask","path":"sprites/sprChMarioFootBang2Mask/sprChMarioFootBang2Mask.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprChMarioFootBang2Mask",
     "tags": [],
     "resourceType": "GMSequence",

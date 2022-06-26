@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprPlatform","path":"sprites/sprPlatform/sprPlatform.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprPlatform",
     "tags": [],
     "resourceType": "GMSequence",

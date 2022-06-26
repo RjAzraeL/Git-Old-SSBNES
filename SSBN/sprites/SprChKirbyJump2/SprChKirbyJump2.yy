@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprChKirbyJump2","path":"sprites/sprChKirbyJump2/sprChKirbyJump2.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprChKirbyJump2",
     "tags": [],
     "resourceType": "GMSequence",

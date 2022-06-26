@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprStgLy1Underground","path":"sprites/sprStgLy1Underground/sprStgLy1Underground.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprStgLy1Underground",
     "tags": [],
     "resourceType": "GMSequence",

@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprChMarioGroundAttackNeutral","path":"sprites/sprChMarioGroundAttackNeutral/sprChMarioGroundAttackNeutral.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprChMarioGroundAttackNeutral",
     "tags": [],
     "resourceType": "GMSequence",

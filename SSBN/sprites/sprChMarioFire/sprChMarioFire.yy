@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprChMarioFire","path":"sprites/sprChMarioFire/sprChMarioFire.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprChMarioFire",
     "tags": [],
     "resourceType": "GMSequence",

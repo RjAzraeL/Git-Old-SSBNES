@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprChMarioCoin","path":"sprites/sprChMarioCoin/sprChMarioCoin.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprChMarioCoin",
     "tags": [],
     "resourceType": "GMSequence",

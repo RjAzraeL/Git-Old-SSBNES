@@ -103,7 +103,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprChMarioPallete","path":"sprites/sprChMarioPallete/sprChMarioPallete.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprChMarioPallete",
     "tags": [],
     "resourceType": "GMSequence",

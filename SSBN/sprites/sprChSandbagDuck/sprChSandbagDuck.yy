@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprChSandbagDuck","path":"sprites/sprChSandbagDuck/sprChSandbagDuck.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprChSandbagDuck",
     "tags": [],
     "resourceType": "GMSequence",

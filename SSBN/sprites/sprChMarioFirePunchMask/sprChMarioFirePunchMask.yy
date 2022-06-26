@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprChMarioFirePunchMask","path":"sprites/sprChMarioFirePunchMask/sprChMarioFirePunchMask.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprChMarioFirePunchMask",
     "tags": [],
     "resourceType": "GMSequence",

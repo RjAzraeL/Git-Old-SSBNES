@@ -95,7 +95,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprChMarioFlip2Mask","path":"sprites/sprChMarioFlip2Mask/sprChMarioFlip2Mask.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprChMarioFlip2Mask",
     "tags": [],
     "resourceType": "GMSequence",

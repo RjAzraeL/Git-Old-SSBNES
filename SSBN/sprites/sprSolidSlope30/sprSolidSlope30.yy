@@ -138,7 +138,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprSolidSlope30","path":"sprites/sprSolidSlope30/sprSolidSlope30.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprSolidSlope30",
     "tags": [],
     "resourceType": "GMSequence",

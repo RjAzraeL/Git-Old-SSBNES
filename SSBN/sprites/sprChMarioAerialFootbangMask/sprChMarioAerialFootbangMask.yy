@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprChMarioAerialFootbangMask","path":"sprites/sprChMarioAerialFootbangMask/sprChMarioAerialFootbangMask.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprChMarioAerialFootbangMask",
     "tags": [],
     "resourceType": "GMSequence",

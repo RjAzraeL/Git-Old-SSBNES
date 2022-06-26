@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"RamaFanDelChocoarroz","path":"sprites/RamaFanDelChocoarroz/RamaFanDelChocoarroz.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "RamaFanDelChocoarroz",
     "tags": [],
     "resourceType": "GMSequence",

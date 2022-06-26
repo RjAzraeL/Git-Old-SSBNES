@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprChMarioHeadBangMask","path":"sprites/sprChMarioHeadBangMask/sprChMarioHeadBangMask.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprChMarioHeadBangMask",
     "tags": [],
     "resourceType": "GMSequence",

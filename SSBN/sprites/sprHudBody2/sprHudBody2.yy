@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprHudBody2","path":"sprites/sprHudBody2/sprHudBody2.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprHudBody2",
     "tags": [],
     "resourceType": "GMSequence",

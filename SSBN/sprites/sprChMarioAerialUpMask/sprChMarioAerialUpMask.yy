@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprChMarioAerialUpMask","path":"sprites/sprChMarioAerialUpMask/sprChMarioAerialUpMask.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprChMarioAerialUpMask",
     "tags": [],
     "resourceType": "GMSequence",

@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprChMarioTranceRun","path":"sprites/sprChMarioTranceRun/sprChMarioTranceRun.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprChMarioTranceRun",
     "tags": [],
     "resourceType": "GMSequence",

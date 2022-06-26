@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprChMarioFootBangMask","path":"sprites/sprChMarioFootBangMask/sprChMarioFootBangMask.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprChMarioFootBangMask",
     "tags": [],
     "resourceType": "GMSequence",

@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprChMarioHurt","path":"sprites/sprChMarioHurt/sprChMarioHurt.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprChMarioHurt",
     "tags": [],
     "resourceType": "GMSequence",

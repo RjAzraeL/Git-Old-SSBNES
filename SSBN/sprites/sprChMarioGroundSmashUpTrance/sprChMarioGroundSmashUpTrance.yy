@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprChMarioGroundSmashUpTrance","path":"sprites/sprChMarioGroundSmashUpTrance/sprChMarioGroundSmashUpTrance.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprChMarioGroundSmashUpTrance",
     "tags": [],
     "resourceType": "GMSequence",

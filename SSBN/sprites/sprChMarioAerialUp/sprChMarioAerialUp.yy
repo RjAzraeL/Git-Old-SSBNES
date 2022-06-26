@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprChMarioAerialUp","path":"sprites/sprChMarioAerialUp/sprChMarioAerialUp.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprChMarioAerialUp",
     "tags": [],
     "resourceType": "GMSequence",

@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprChMarioGroundSmashSide","path":"sprites/sprChMarioGroundSmashSide/sprChMarioGroundSmashSide.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprChMarioGroundSmashSide",
     "tags": [],
     "resourceType": "GMSequence",

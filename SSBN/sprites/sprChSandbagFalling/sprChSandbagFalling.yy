@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprChSandbagFalling","path":"sprites/sprChSandbagFalling/sprChSandbagFalling.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprChSandbagFalling",
     "tags": [],
     "resourceType": "GMSequence",
