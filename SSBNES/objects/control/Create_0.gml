@@ -1,8 +1,8 @@
 #region Set variables
 depth = -10;
 Delta = delta_time / 1000000;
-VolumeMusic = 0;
-VolumeSound = .1;
+VolumeMusic = 0.1;
+VolumeSound = 0.35;
 IndexMusic = -1;
 CharacterId[0] = 1;
 CharacterId[1] = 1;
@@ -58,8 +58,8 @@ JumpButton = ord("X");
 AttackButton = ord("C");
 StartButton = vk_enter;
 SelectButton = vk_space;
-ShowColissionButton = vk_f8;
-ShowColissionMovsButton = vk_f9;
+ShowColissionButton = vk_f1;
+ShowColissionMovsButton = vk_f2;
 
 alarm[0] = 5;
 #endregion

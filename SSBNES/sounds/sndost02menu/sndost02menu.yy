@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndOst02Menu.ogg",
-  "duration": 49.951927,
+  "duration": 49.9519272,
   "parent": {
     "name": "OST",
     "path": "folders/Sounds/OST.yy",

@@ -11,8 +11,8 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "sfxKO.wav",
-  "duration": 2.184528,
+  "soundFile": "sfxKO.ogg",
+  "duration": 0.591111,
   "parent": {
     "name": "Generic",
     "path": "folders/Sounds/SFX/Generic.yy",

@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndOst09Underground.ogg",
-  "duration": 19.221155,
+  "duration": 19.2211552,
   "parent": {
     "name": "OST",
     "path": "folders/Sounds/OST.yy",

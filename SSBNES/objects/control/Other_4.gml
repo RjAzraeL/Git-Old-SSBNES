@@ -1,3 +1,4 @@
+/*
 #region Music
 
 scrSetMusic("Battlefield");

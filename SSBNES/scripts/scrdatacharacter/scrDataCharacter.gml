@@ -6,14 +6,14 @@ function scrDataCharacter()
 	scrMapCharacter( 
 	scrCrearLista(
 	/*Name*/"Sandbag" ,
-	/*Description*/"" ,
+	/*Description*/"Super Smash Brothers" ,
 	/*Lore*/"" ,
 	/*Class*/"" ,
 	/*Sprite*/"sprChSandbag" ,
 	/*Jumps*/2,
-	/*Aceleration*/.1,
-	/*SpeedWalk*/1.1,
-	/*SpeedRun*/3,
+	/*Aceleration*/.15,
+	/*SpeedWalk*/1.2,
+	/*SpeedRun*/3.1,
 	/*SpeedFall*/1.9,
 	/*JumpValue*/5.5,
 	/*Gravity*/.3,
@@ -35,14 +35,14 @@ function scrDataCharacter()
 	scrMapCharacter( 
 	scrCrearLista(
 	/*Name*/"Mario" ,
-	/*Description*/"Pega como loco" ,
+	/*Description*/"Super Mario Bros." ,
 	/*Lore*/"" ,
 	/*Class*/"" ,
 	/*Sprite*/"sprChMario" ,
 	/*Jumps*/2,
-	/*Aceleration*/.1,
-	/*SpeedWalk*/1.1,
-	/*SpeedRun*/2.2,
+	/*Aceleration*/.12,
+	/*SpeedWalk*/1.15,
+	/*SpeedRun*/2.85,
 	/*SpeedFall*/1.9,
 	/*JumpValue*/5.5,
 	/*Gravity*/.3,
@@ -64,7 +64,7 @@ function scrDataCharacter()
 	scrMapCharacter( 
 	scrCrearLista(
 	/*Name*/"Kirby" ,
-	/*Description*/"Pega como loco" ,
+	/*Description*/"Kirby's Adventure" ,
 	/*Lore*/"" ,
 	/*Class*/"" ,
 	/*Sprite*/"sprChKirby" ,
