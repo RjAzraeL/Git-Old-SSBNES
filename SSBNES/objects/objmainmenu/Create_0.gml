@@ -35,6 +35,10 @@ MainText = "Main menu";
 Layer = 0;
 Layer0Button = 0;
 Layer1Button = 0;
+Layer2Button = 0;
+Layer3Button = 0;
+Layer4Button = 0;
+Layer5Button = 0;
 //109 - 224
 instance_create_depth(0 , 0 , 5 , objMenuBall);
 ActualButton = 0;

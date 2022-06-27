@@ -5,13 +5,13 @@ if (CooldownButton == 0)
 	{
 		if (Layer == 0)
 		{
-			CooldownButton = 5;
-			Layer = 1;
-			alarm[0] = 1;
 			switch(ActualButton)
 			{
 				case(0):
 				{
+					CooldownButton = 5;
+					Layer = 1;
+					alarm[0] = 1;
 					instance_destroy(objMainMenuButton);
 					alarm[1] = 1;
 					Layer0Button = 0;
@@ -38,6 +38,76 @@ if (CooldownButton == 0)
 					MainText = "1-P Mode";
 					break;
 				}
+				case(1):
+				{
+					break;
+				}
+			}
+		}
+		else if(Layer == 1)
+		{
+			switch(ActualButton)
+			{
+				case(0):
+				{
+					CooldownButton = 5;
+					Layer = 2;
+					alarm[0] = 1;
+					instance_destroy(objMainMenuButton);
+					alarm[1] = 1;
+					Layer1Button = 0;
+					ActualButton = Layer2Button;
+					ButtonA[0] = "Classic";
+					ButtonA[1] = "Adventure";
+					ButtonA[2] = "All-Star";
+					ButtonA[3] = "";
+					ButtonA[4] = "";
+					ButtonA[5] = "";
+					ButtonA[6] = "";
+					ButtonA[7] = "";
+					
+					ButtonD[0] = "Defeat each foe to advance.";
+					ButtonD[1] = "Battle though various stages.";
+					ButtonD[2] = "Conquer all enemies using.";
+					
+					ButtonE[0] = "";
+					ButtonE[1] = "";
+					ButtonE[2] = "";
+					ButtonE[3] = "";
+					
+					MainText = "Regular match";
+					break;
+				}
+				case(2):
+				{
+					CooldownButton = 5;
+					Layer = 3;
+					alarm[0] = 1;
+					instance_destroy(objMainMenuButton);
+					alarm[1] = 1;
+					Layer1Button = 2;
+					ActualButton = Layer3Button;
+					ButtonA[0] = "Target Test";
+					ButtonA[1] = "Multi-Man";
+					ButtonA[2] = "";
+					ButtonA[3] = "";
+					ButtonA[4] = "";
+					ButtonA[5] = "";
+					ButtonA[6] = "";
+					ButtonA[7] = "";
+					
+					ButtonD[0] = "Smash ten targets!";
+					ButtonD[1] = "Fight for your life! Fight!";
+					ButtonD[2] = "";
+					
+					ButtonE[0] = "";
+					ButtonE[1] = "";
+					ButtonE[2] = "";
+					ButtonE[3] = "";
+					
+					MainText = "STADIUM";
+					break;
+				}
 			}
 		}
 	}
@@ -51,7 +121,7 @@ if (CooldownButton == 0)
 			instance_destroy(objMainMenuButton);
 			alarm[1] = 1;
 			Layer1Button = ActualButton;
-			ActualButton = 0;
+			ActualButton = Layer0Button;
 			
 			ButtonT[0] = "1-P Mode";
 			ButtonT[1] = "VS. Mode";
@@ -80,7 +150,44 @@ if (CooldownButton == 0)
 			ButtonA[6] = "";
 			ButtonA[7] = "";
 			MainText = "Main menu";
+		}
+		if (Layer == 2 or Layer == 3)
+		{
+			CooldownButton = 5;
+			Layer = 1;
+			alarm[0] = 2;
+			instance_destroy(objMainMenuButton);
+			alarm[1] = 1;
+			if (Layer == 2)
+			{
+				Layer2Button = ActualButton;
+			}
+			if (Layer == 3)
+			{
+				Layer3Button = ActualButton;
+			}
+			ActualButton = Layer1Button;
 			
+			ButtonA[0] = "Regular M.";
+			ButtonA[1] = "Event Match";
+			ButtonA[2] = "Stadium";
+			ButtonA[3] = "Training";
+			ButtonA[4] = "";
+			ButtonA[5] = "";
+			ButtonA[6] = "";
+			ButtonA[7] = "";
+					
+			ButtonD[0] = "Multiple levels of standard Smash.";
+			ButtonD[1] = "Special Smash situation matches.";
+			ButtonD[2] = "Mini-game testing ground.";
+			ButtonD[3] = "Free training for honing skills.";
+					
+			ButtonE[0] = "Classic#Adventure#All-Star";
+			ButtonE[1] = "";
+			ButtonE[2] = "Target Test#Multi-Man Melee";
+			ButtonE[3] = "";
+					
+			MainText = "1-P Mode";
 		}
 	}
 	if (Control.UpButtonActive)
