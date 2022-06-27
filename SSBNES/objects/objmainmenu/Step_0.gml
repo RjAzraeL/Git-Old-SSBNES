@@ -78,7 +78,7 @@ if (CooldownButton == 0)
 					alarm[0] = 1;
 					instance_destroy(objMainMenuButton);
 					alarm[1] = 1;
-					Layer0Button = 1;
+					Layer0Button = 2;
 					ActualButton = Layer5Button;
 					ButtonA[0] = "Gallery";
 					ButtonA[1] = "Lottery";
@@ -101,7 +101,7 @@ if (CooldownButton == 0)
 					ButtonE[3] = "";
 					ButtonE[4] = "";
 					
-					MainText = "VS. Mode";
+					MainText = "Extra";
 					break;
 				}
 			}
@@ -251,7 +251,7 @@ if (CooldownButton == 0)
 					
 			MainText = "1-P Mode";
 		}
-		if (Layer == 4)
+		if (Layer == 4 or Layer == 5)
 		{
 			CooldownButton = 5;
 			Layer = 0;
@@ -261,6 +261,10 @@ if (CooldownButton == 0)
 			if (Layer == 4)
 			{
 				Layer4Button = ActualButton;
+			}
+			if (Layer == 5)
+			{
+				Layer5Button = ActualButton;
 			}
 			ActualButton = Layer0Button;
 			
