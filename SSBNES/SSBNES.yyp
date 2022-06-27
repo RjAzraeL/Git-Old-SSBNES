@@ -134,6 +134,7 @@
     {"id":{"name":"sprChMarioHurt","path":"sprites/sprChMarioHurt/sprChMarioHurt.yy",},"order":0,},
     {"id":{"name":"sprScreenBack1","path":"sprites/sprScreenBack1/sprScreenBack1.yy",},"order":1,},
     {"id":{"name":"scrSetCharacter","path":"scripts/scrSetCharacter/scrSetCharacter.yy",},"order":2,},
+    {"id":{"name":"rm04Stage","path":"rooms/rm04Stage/rm04Stage.yy",},"order":9,},
     {"id":{"name":"sprChMarioWalk","path":"sprites/sprChMarioWalk/sprChMarioWalk.yy",},"order":12,},
     {"id":{"name":"sprPlatformBar","path":"sprites/sprPlatformBar/sprPlatformBar.yy",},"order":1,},
     {"id":{"name":"sprChMarioGroundAttackSideTrance","path":"sprites/sprChMarioGroundAttackSideTrance/sprChMarioGroundAttackSideTrance.yy",},"order":6,},
@@ -244,6 +245,7 @@
     {"roomId":{"name":"rmStgBattlefield0","path":"rooms/rmStgBattlefield0/rmStgBattlefield0.yy",},},
     {"roomId":{"name":"rmStgUnderworld","path":"rooms/rmStgUnderworld/rmStgUnderworld.yy",},},
     {"roomId":{"name":"rmStgTower","path":"rooms/rmStgTower/rmStgTower.yy",},},
+    {"roomId":{"name":"rm04Stage","path":"rooms/rm04Stage/rm04Stage.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":0,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
