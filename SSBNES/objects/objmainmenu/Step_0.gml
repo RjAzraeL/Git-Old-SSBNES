@@ -32,10 +32,12 @@ if (CooldownButton == 0)
 					
 					ButtonE[0] = "Classic#Adventure#All-Star";
 					ButtonE[1] = "";
-					ButtonE[2] = "Target Test#Multi-Man Melee";
+					ButtonE[2] = "Target Tes.#Platform T.#Race Test #Training";
 					ButtonE[3] = "";
 					
-					MainText = "1-P Mode";
+					
+					
+					MainText = "1-P MODE";
 					break;
 				}
 				case(1):
@@ -58,7 +60,7 @@ if (CooldownButton == 0)
 					
 					ButtonD[0] = "A standard Smash battle.";
 					ButtonD[1] = "A tournament for up to 64 players.";
-					ButtonD[2] = "A melee with special rules. No records will be saved.";
+					ButtonD[2] = "A melee with special rules.";
 					ButtonD[3] = "Change the melee rules here.";
 					ButtonD[4] = "Enter your name.";
 					
@@ -68,7 +70,7 @@ if (CooldownButton == 0)
 					ButtonE[3] = "";
 					ButtonE[4] = "";
 					
-					MainText = "VS. Mode";
+					MainText = "VS. MODE";
 					break;
 				}
 				case(2):
@@ -84,16 +86,16 @@ if (CooldownButton == 0)
 					ButtonA[1] = "Lottery";
 					ButtonA[2] = "Collection";
 					ButtonA[3] = "Cards";
-					ButtonA[4] = "";
+					ButtonA[4] = "Stage Build";
 					ButtonA[5] = "";
 					ButtonA[6] = "";
 					ButtonA[7] = "";
 					
-					ButtonD[0] = "View the individual trophies you've collected.";
-					ButtonD[1] = "Use the coins you'vs earned to get trophies!";
+					ButtonD[0] = "View trophies you've collected.";
+					ButtonD[1] = "Use the coins to get trophies!";
 					ButtonD[2] = "View your entire trophy collection.";
-					ButtonD[3] = "View the individual cards you've collected.";
-					ButtonD[4] = "";
+					ButtonD[3] = "View cards you've collected.";
+					ButtonD[4] = "Create your own battle stage!";
 					
 					ButtonE[0] = "";
 					ButtonE[1] = "";
@@ -101,7 +103,7 @@ if (CooldownButton == 0)
 					ButtonE[3] = "";
 					ButtonE[4] = "";
 					
-					MainText = "Extra";
+					MainText = "EXTRA";
 					break;
 				}
 			}
@@ -137,7 +139,7 @@ if (CooldownButton == 0)
 					ButtonE[2] = "";
 					ButtonE[3] = "";
 					
-					MainText = "Regular match";
+					MainText = "REGULAR MATCH";
 					break;
 				}
 				case(2):
@@ -150,9 +152,9 @@ if (CooldownButton == 0)
 					Layer1Button = 2;
 					ActualButton = Layer3Button;
 					ButtonA[0] = "Target Test";
-					ButtonA[1] = "Multi-Man";
-					ButtonA[2] = "";
-					ButtonA[3] = "";
+					ButtonA[1] = "Platform Test";
+					ButtonA[2] = "Race Test";
+					ButtonA[3] = "Multi-Man";
 					ButtonA[4] = "";
 					ButtonA[5] = "";
 					ButtonA[6] = "";
@@ -199,7 +201,7 @@ if (CooldownButton == 0)
 			ButtonD[4] = "View game records.";
 			ButtonE[0] = "Regular Ma.#Event Ma.#Stadium#Training";
 			ButtonE[1] = "Melee#Tournament#Special Me.#Custom Rul.#Name Entry";
-			ButtonE[2] = "Trophies#Gallery#Lottery#Collection#Cards";
+			ButtonE[2] = "Gallery#Lottery#Collection#Cards#Stage Build";
 			ButtonE[3] = "Sound#Music#Control#Language#Erase Data"
 			ButtonE[4] = "Archives#Sound Test#Melee Rec.#Special#Discord";
 
@@ -211,7 +213,7 @@ if (CooldownButton == 0)
 			ButtonA[5] = "";
 			ButtonA[6] = "";
 			ButtonA[7] = "";
-			MainText = "Main menu";
+			MainText = "MAIN MENU";
 		}
 		if (Layer == 2 or Layer == 3)
 		{
@@ -246,10 +248,10 @@ if (CooldownButton == 0)
 					
 			ButtonE[0] = "Classic#Adventure#All-Star";
 			ButtonE[1] = "";
-			ButtonE[2] = "Target Test#Multi-Man Melee";
+			ButtonE[2] = "Target Tes.#Platform T.#Race Test #Training";
 			ButtonE[3] = "";
 					
-			MainText = "1-P Mode";
+			MainText = "1-P MODE";
 		}
 		if (Layer == 4 or Layer == 5)
 		{
@@ -282,7 +284,7 @@ if (CooldownButton == 0)
 			
 			ButtonE[0] = "Regular Ma.#Event Ma.#Stadium#Training";
 			ButtonE[1] = "Melee#Tournament#Special Me.#Custom Rul.#Name Entry";
-			ButtonE[2] = "Trophies#Gallery#Lottery#Collection#Cards";
+			ButtonE[2] = "Trophies#Gallery#Lottery#Collection#Cards#Stage Build";
 			ButtonE[3] = "Sound#Music#Control#Language#Erase Data"
 			ButtonE[4] = "Archives#Sound Test#Melee Rec.#Special#Discord";
 
@@ -294,7 +296,7 @@ if (CooldownButton == 0)
 			ButtonA[5] = "";
 			ButtonA[6] = "";
 			ButtonA[7] = "";
-			MainText = "Main menu";
+			MainText = "MAIN MENU";
 		}
 	}
 	if (Control.UpButtonActive)

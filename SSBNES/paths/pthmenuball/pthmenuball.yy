@@ -1,19 +1,19 @@
 {
-  "name": "pthMenuBall",
   "kind": 1,
-  "precision": 4,
   "closed": true,
+  "precision": 4,
   "points": [
-    {"speed":100.0,"x":293.0,"y":27.0,},
-    {"speed":100.0,"x":259.0,"y":131.0,},
-    {"speed":100.0,"x":156.0,"y":188.0,},
-    {"speed":100.0,"x":190.0,"y":81.0,},
+    {"speed":100.0,"x":314.0,"y":0.0,},
+    {"speed":100.0,"x":281.0,"y":129.0,},
+    {"speed":100.0,"x":114.0,"y":214.0,},
+    {"speed":100.0,"x":176.0,"y":75.0,},
   ],
   "parent": {
-    "name": "Menu",
-    "path": "folders/Objects/Menu.yy",
+    "name": "Paths",
+    "path": "folders/Paths.yy",
   },
   "resourceVersion": "1.0",
+  "name": "pthMenuBall",
   "tags": [],
   "resourceType": "GMPath",
 }

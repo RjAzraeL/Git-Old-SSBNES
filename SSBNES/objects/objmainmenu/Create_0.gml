@@ -18,7 +18,7 @@ ButtonD[3] = "Game setup.";
 ButtonD[4] = "View game records.";
 ButtonE[0] = "Regular Ma.#Event Ma.#Stadium#Training";
 ButtonE[1] = "Melee#Tournament#Special Me.#Custom Rul.#Name Entry";
-ButtonE[2] = "Trophies#Gallery#Lottery#Collection#Cards";
+ButtonE[2] = "Gallery#Lottery#Collection#Cards#StageBuild.";
 ButtonE[3] = "Sound#Music#Control#Language#Erase Data"
 ButtonE[4] = "Archives#Sound Test#Melee Rec.#Special#Discord";
 
@@ -40,7 +40,7 @@ Layer3Button = 0;
 Layer4Button = 0;
 Layer5Button = 0;
 //109 - 224
-instance_create_depth(0 , 0 , 5 , objMenuBall);
+instance_create_depth(0 , 0 , 300 , objMenuBall);
 ActualButton = 0;
 CooldownButton = 0;
 Cap = 0;
