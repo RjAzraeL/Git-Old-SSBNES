@@ -5,10 +5,11 @@ obX = x;
 obY = y;
 lstX = x;
 lstY = y;
-depth = -4;
+depth = -3;
 Selected = false;
 image_index = 0;
 image_speed = 0;
 alarm[1] = 1;
 SquareOrigin = noone;
+ActualRoster = noone;
 #endregion
