@@ -85,6 +85,13 @@ function scrGetValueCharacter(Type)
 	return scrDameDato(Control.CharacterList , Control.CharacterId[Position] , Type);
 }
 
+///@arg id
+///@arg string
+function scrGetSpriteIndexGeneric(Idex , String)
+{
+	return asset_get_index("" + scrDameDato(Control.CharacterList , Idex , "Sprite") + string(String));
+}
+
 ///@arg string
 function scrGetSpriteIndex(String)
 {

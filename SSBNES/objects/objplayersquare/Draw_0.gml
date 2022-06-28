@@ -5,11 +5,11 @@ if (scrExiste(ButtonChildren))
 	if (ButtonChildren.ActualRoster != noone)
 	{
 		sprRosterImage += sprRosterSpeed;
-		if (sprRosterImage > sprite_get_number(sprChMarioIdle))
+		if (sprRosterImage > sprite_get_number(ButtonChildren.ActualRoster.sprIde))
 		{
 			sprRosterImage = 0;
 		}
-		draw_sprite(sprChMarioIdle , sprRosterImage , x+31 , y+37);
+		draw_sprite(ButtonChildren.ActualRoster.sprIde , sprRosterImage , x+31 , y+37);
 	}
 }
 #endregion

@@ -10,15 +10,6 @@ for (var i = 0 ; i < 4 ; i++)
 	Y[i] = 0;
 	C[i] = noone;
 }
-
-#region Search Character
-for (var i = 0 ; i < ds_list_size(Control.CharacterList) ; i++)
-{
-	if (scrDameDato(Control.CharacterList , i , "Roster id") == Ide)
-	{
-		
-	}
-}
-#endregion
+alarm[0] = 1;
 
 #endregion
