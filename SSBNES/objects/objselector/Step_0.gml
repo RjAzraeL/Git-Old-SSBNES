@@ -44,48 +44,56 @@ if (Control.JumpButtonReleaseActive)
 		else if (place_meeting(x , y , objSelectRoster))
 		{
 			var Roster = instance_place(x , y , objSelectRoster);
-			if (Circle.ActualRoster == noone or Circle.ActualRoster != Roster)
+			if (Roster.Ide >= 37 and Roster.Ide <= 39)
 			{
-				if (scrExiste(Circle.ActualRoster))
+				Circle.obX = Circle.lstX;
+				Circle.obY = Circle.lstY;
+			}
+			else
+			{
+				if (Circle.ActualRoster == noone or Circle.ActualRoster != Roster)
 				{
-					if (Circle.ActualRoster != Roster)
+					if (scrExiste(Circle.ActualRoster))
 					{
-						Circle.ActualRoster.C[Circle.Position] = noone;
-						Circle.ActualRoster.CirclesIn--;
-						Circle.ActualRoster = noone;
-						Circle.Position = 0;
-					}
-				}
-				Roster.CirclesIn++;
-				Circle.ActualRoster = Roster;
-				Circle.obX = Roster.x + 14;
-				Circle.obY = Roster.y + 12;
-				var Listo = false;
-				for (var i = 0 ; i < 4 ; i++)
-				{
-					if (!Listo)
-					{
-						if (Roster.C[i] == noone)
+						if (Circle.ActualRoster != Roster)
 						{
-							Listo = true;
-							Roster.C[i] = Circle;
-							Circle.Position = i;
+							Circle.ActualRoster.C[Circle.Position] = noone;
+							Circle.ActualRoster.CirclesIn--;
+							Circle.ActualRoster = noone;
+							Circle.Position = 0;
 						}
 					}
-				}
-				Circle.lstX = Circle.obX;
-				Circle.lstY = Circle.obY;
-			}
-			
-			LastRoster = Roster;
-			
-			with (objSelectorCircle)
-			{
-				if (scrExiste(ActualRoster) and scrExiste(objSelector.LastRoster))
-				{
-					if (ActualRoster.id == objSelector.LastRoster.id)
+					Roster.CirclesIn++;
+					Circle.ActualRoster = Roster;
+					Circle.obX = Roster.x;
+					Circle.obY = Roster.y;
+					var Listo = false;
+					for (var i = 0 ; i < 4 ; i++)
 					{
-						alarm[2] = 1;
+						if (!Listo)
+						{
+							if (Roster.C[i] == noone)
+							{
+								Listo = true;
+								Roster.C[i] = Circle;
+								Circle.Position = i;
+							}
+						}
+					}
+					Circle.lstX = Circle.obX;
+					Circle.lstY = Circle.obY;
+				}
+			
+				LastRoster = Roster;
+			
+				with (objSelectorCircle)
+				{
+					if (scrExiste(ActualRoster) and scrExiste(objSelector.LastRoster))
+					{
+						if (ActualRoster.id == objSelector.LastRoster.id)
+						{
+							alarm[2] = 1;
+						}
 					}
 				}
 			}

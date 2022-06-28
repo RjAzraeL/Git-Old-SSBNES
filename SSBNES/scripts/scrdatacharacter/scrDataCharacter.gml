@@ -27,7 +27,8 @@ function scrDataCharacter()
 	/*Sfx Jump*/sfxKirbyJump,
 	/*Vertical Limit Porcentage*/35,
 	/*Movs*/ scrCrearLista(0,1,2,3,4,5,6,7,8,9,10,11),
-	/*Hud index*/0
+	/*Hud index*/0,
+	/*Roster id*/0
 	)	
 	);
 	
@@ -56,7 +57,8 @@ function scrDataCharacter()
 	/*Sfx Jump*/sfxMarioJump,
 	/*Vertical Limit Porcentage*/20,
 	/*Movs*/ scrCrearLista(0,1,2,3,4,5,6,7,8,9,10,11),
-	/*Hud index*/1
+	/*Hud index*/1,
+	/*Roster id*/0
 	)	
 	);
 	
@@ -85,7 +87,8 @@ function scrDataCharacter()
 	/*Sfx Jump*/sfxKirbyJump,
 	/*Vertical Limit Porcentage*/25,
 	/*Movs*/ scrCrearLista(0,1,2,3,4,5,6,7,8,9,10,11),
-	/*Hud index*/2
+	/*Hud index*/2,
+	/*Roster id*/7
 	)	
 	);
 }
@@ -117,6 +120,7 @@ function scrMapCharacter(List)
 	Paquete[? "Vertical Limit Porcentage"] = ds_list_find_value(List , 20);
 	Paquete[? "Movs"] = ds_list_find_value(List , 21);
 	Paquete[? "Hud Index"] = ds_list_find_value(List , 22);
+	Paquete[? "Roster id"] = ds_list_find_value(List , 23);
 	
 	ds_list_add(Control.CharacterList , Paquete);
 }
