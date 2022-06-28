@@ -68,6 +68,10 @@ if (Control.JumpButtonPressedActive and place_meeting(x , y , objPlayerSquare))
 		}
 	}
 }
+if (Control.AttackButtonPressedActive)
+{
+	room_goto(rm02Menu);
+}
 if (Control.JumpButtonReleaseActive)
 {
 	if (scrExiste(Circle))
