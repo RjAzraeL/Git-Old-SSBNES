@@ -10,6 +10,8 @@ Selected = false;
 image_index = 0;
 image_speed = 0;
 alarm[1] = 1;
+alarm[3] = 2;
 SquareOrigin = noone;
 ActualRoster = noone;
+Position = 0;
 #endregion

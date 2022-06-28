@@ -2,5 +2,4 @@
 Ide = 0;
 image_speed = 0;
 image_index = Ide;
-CirclesIn = 0;
 #endregion
