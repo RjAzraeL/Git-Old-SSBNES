@@ -174,6 +174,17 @@ if (CooldownButton == 0)
 				}
 			}
 		}
+		else if(Layer == 2)
+		{
+			switch(ActualButton)
+			{
+				case(0):
+				{
+					room_goto(rm03Versus);
+					break;
+				}
+			}
+		}
 	}
 	if (Control.AttackButtonPressedActive)
 	{
