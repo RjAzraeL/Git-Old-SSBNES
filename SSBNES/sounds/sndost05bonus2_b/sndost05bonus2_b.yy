@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndOst05Bonus2_b.ogg",
-  "duration": 31.8124943,
+  "duration": 31.812494,
   "parent": {
     "name": "OST",
     "path": "folders/Sounds/OST.yy",

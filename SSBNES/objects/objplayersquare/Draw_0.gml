@@ -1,6 +1,6 @@
 #region Dibujar
 draw_self();
-if (scrExiste(ButtonChildren))
+if (scrExiste(ButtonChildren) and Ide != 3)
 {
 	if (ButtonChildren.ActualRoster != noone)
 	{

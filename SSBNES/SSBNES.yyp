@@ -151,6 +151,7 @@
     {"id":{"name":"sprChMarioFire","path":"sprites/sprChMarioFire/sprChMarioFire.yy",},"order":4,},
     {"id":{"name":"scrDataMusic","path":"scripts/scrDataMusic/scrDataMusic.yy",},"order":0,},
     {"id":{"name":"sprChMarioAerialSide","path":"sprites/sprChMarioAerialSide/sprChMarioAerialSide.yy",},"order":18,},
+    {"id":{"name":"sprRandom","path":"sprites/sprRandom/sprRandom.yy",},"order":20,},
     {"id":{"name":"sprMenuPanel2","path":"sprites/sprMenuPanel2/sprMenuPanel2.yy",},"order":1,},
     {"id":{"name":"sprChMarioRun","path":"sprites/sprChMarioRun/sprChMarioRun.yy",},"order":8,},
     {"id":{"name":"sprChSandbagDuck","path":"sprites/sprChSandbagDuck/sprChSandbagDuck.yy",},"order":1,},

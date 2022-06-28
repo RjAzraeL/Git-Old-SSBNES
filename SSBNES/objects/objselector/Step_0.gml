@@ -26,10 +26,44 @@ if (Control.JumpButtonPressedActive and place_meeting(x , y , objSelectorCircle)
 	Circle = instance_place(x , y , objSelectorCircle);
 	if (scrExiste(Circle))
 	{
-		Circle.Selected = true;
-		Circle.depth = -4;
+		if (Circle.image_index != 3)
+		{
+			Circle.Selected = true;
+			Circle.depth = -4;
+			Active = true;
+		}
 	}
-	Active = true;
+}
+if (Control.JumpButtonPressedActive and place_meeting(x , y , objPlayerSquare) and !place_meeting(x , y , objSelectorCircle))
+{
+	var Square = instance_place(x , y , objPlayerSquare);
+	if (scrExiste(Square))
+	{
+		Square.Ide++;
+		if (Square.Slot == 0 and Square.Ide == 1)
+		{
+			Square.Ide = 2;
+		}
+		if (Square.Slot == 1 and Square.Ide == 0)
+		{
+			Square.Ide = 1;
+		}
+		if (Square.Ide > 3)
+		{
+			if (Square.Slot == 0)
+			{
+				Square.Ide = 0;
+			}
+			if (Square.Slot == 1)
+			{
+				Square.Ide = 1;
+			}
+			if (Square.Slot >= 2)
+			{
+				Square.Ide = 2;
+			}
+		}
+	}
 }
 if (Control.JumpButtonReleaseActive)
 {
