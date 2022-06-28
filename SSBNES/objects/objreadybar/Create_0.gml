@@ -3,4 +3,5 @@ visible = false;
 Ready = false;
 alarm[0] = 1;
 PlayersReady = 4;
+Text = "Ready to fight!";
 #endregion
