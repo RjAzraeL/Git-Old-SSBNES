@@ -74,6 +74,14 @@ if (Control.AttackButtonPressedActive)
 }
 if (Control.JumpButtonReleaseActive)
 {
+	if (place_meeting(x , y , objReadyBar))
+	{
+		var Ready = instance_place(x , y , objReadyBar);
+		if (Ready.visible)
+		{
+			room_goto(rm04Stage);
+		}
+	}
 	if (scrExiste(Circle))
 	{
 		Circle.depth = -3;

@@ -14,5 +14,5 @@ if (PlayersReady >= 2)
 {
 	Ready = true;
 }
-visible = true;
+visible = Ready;
 #endregion
