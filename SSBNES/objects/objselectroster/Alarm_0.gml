@@ -1,9 +1,16 @@
 #region Search Character
-for (var i = 0 ; i < ds_list_size(Control.CharacterList) ; i++)
+if (Ide != 36)
 {
-	if (scrDameDato(Control.CharacterList , i , "Roster id") == Ide)
+	for (var i = 0 ; i < ds_list_size(Control.CharacterList) ; i++)
 	{
-		sprIde = scrGetSpriteIndexGeneric(i , "Idle");
+		if (scrDameDato(Control.CharacterList , i , "Roster id") == Ide)
+		{
+			sprIde = scrGetSpriteIndexGeneric(i , "Idle");
+		}
 	}
+}
+else
+{
+	sprIde = sprRandom;
 }
 #endregion

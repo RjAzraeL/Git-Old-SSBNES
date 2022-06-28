@@ -34,33 +34,36 @@ if (Control.JumpButtonPressedActive and place_meeting(x , y , objSelectorCircle)
 		}
 	}
 }
-if (Control.JumpButtonPressedActive and place_meeting(x , y , objPlayerSquare) and !place_meeting(x , y , objSelectorCircle))
+if (Control.JumpButtonPressedActive and place_meeting(x , y , objPlayerSquare))
 {
 	var Square = instance_place(x , y , objPlayerSquare);
-	if (scrExiste(Square))
+	if (!place_meeting(x , y , objSelectorCircle) or Square.Ide == 3)
 	{
-		Square.Ide++;
-		if (Square.Slot == 0 and Square.Ide == 1)
+		if (scrExiste(Square))
 		{
-			Square.Ide = 2;
-		}
-		if (Square.Slot == 1 and Square.Ide == 0)
-		{
-			Square.Ide = 1;
-		}
-		if (Square.Ide > 3)
-		{
-			if (Square.Slot == 0)
+			Square.Ide++;
+			if (Square.Slot == 0 and Square.Ide == 1)
 			{
-				Square.Ide = 0;
+				Square.Ide = 2;
 			}
-			if (Square.Slot == 1)
+			if (Square.Slot == 1 and Square.Ide == 0)
 			{
 				Square.Ide = 1;
 			}
-			if (Square.Slot >= 2)
+			if (Square.Ide > 3)
 			{
-				Square.Ide = 2;
+				if (Square.Slot == 0)
+				{
+					Square.Ide = 0;
+				}
+				if (Square.Slot == 1)
+				{
+					Square.Ide = 1;
+				}
+				if (Square.Slot >= 2)
+				{
+					Square.Ide = 2;
+				}
 			}
 		}
 	}
