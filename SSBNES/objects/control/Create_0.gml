@@ -1,4 +1,6 @@
 #region Set variables
+instance_create_depth(0 , 0 , 0 , Language);
+scrLanguageLoadTexto(1);
 depth = -10;
 Delta = delta_time / 1000000;
 VolumeMusic = 0.1;
@@ -28,6 +30,7 @@ CharacterLife[1] = 6;
 CharacterLife[2] = 6;
 CharacterLife[3] = 6;
 TotalCharacters = 1;
+StageId = 0;
 ShowMask = false;
 ShowMovsMask = false;
 FontPorcentage = font_add_sprite_ext(sprHudNumbers , "0123456789" , true , 0);

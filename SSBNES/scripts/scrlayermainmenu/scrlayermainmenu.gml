@@ -12,11 +12,11 @@ function scrLayerMainMenu(LocalLayer)
 			LayerButton[1] = ActualButton;
 			ActualButton = LayerButton[0];
 			
-			ButtonT[0] = "1-P Mode";
-			ButtonT[1] = "VS. Mode";
-			ButtonT[2] = "Extra";
-			ButtonT[3] = "Options";
-			ButtonT[4] = "Data";
+			ButtonT[0] = Language.Text_l0o0;
+			ButtonT[1] = Language.Text_l0o1;
+			ButtonT[2] = Language.Text_l0o2;
+			ButtonT[3] = Language.Text_l0o3;
+			ButtonT[4] = Language.Text_l0o4;
 			
 			ButtonD[0] = "Solo Smash!";
 			ButtonD[1] = "Multiplayer battles!";
@@ -30,15 +30,15 @@ function scrLayerMainMenu(LocalLayer)
 			ButtonE[3] = "Language#Controls#Audio#Graphics#Erase Data"
 			ButtonE[4] = "Archives#Sound Test#Melee Rec.#Special#Discord";
 
-			ButtonA[0] = "1-P Mode";
-			ButtonA[1] = "VS. Mode";
-			ButtonA[2] = "Extra";
-			ButtonA[3] = "Options";
-			ButtonA[4] = "Data";
+			ButtonA[0] = Language.Text_l0o0;
+			ButtonA[1] = Language.Text_l0o1;
+			ButtonA[2] = Language.Text_l0o2;
+			ButtonA[3] = Language.Text_l0o3;
+			ButtonA[4] = Language.Text_l0o4;
 			ButtonA[5] = "";
 			ButtonA[6] = "";
 			ButtonA[7] = "";
-			MainText = "MAIN MENU";
+			MainText = Language.Text_mtl0;
 			break;
 		}
 		case(1):

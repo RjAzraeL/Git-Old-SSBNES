@@ -11,22 +11,12 @@ else if (room == rm03Versus)
 {
 	scrSetMusic("Menu Theme");
 }
-else if (room == rmStgBattlefield0 or room == rmStgBattlefield1)
+
+if (BattleLevel)
 {
-	scrSetMusic("Battlefield");
+	scrSetMusic(scrDameDato(Control.StageList , StageId , "Music"));
 }
-else if (room == rmStgFinalDestination)
-{
-	scrSetMusic("Final Destination");
-}
-else if (room == rmStgUnderworld)
-{
-	scrSetMusic("Underground");
-}
-else if (room == rmStgTower or room == rmStgTest)
-{
-	scrSetMusic("Battlefield");
-}
+
 #endregion
 #region Battle
 if (BattleLevel)

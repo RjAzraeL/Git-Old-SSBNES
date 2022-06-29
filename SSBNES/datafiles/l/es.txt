@@ -1,15 +1,7 @@
-[g]
-g = "¡Bienvenido!"
-d = "!Has muerto!"
-
-[d]
-p0 = "Hola mundo"
-p1 = "Buen día"
-p2 = "Soy Pollier"
-p3 = "Estamos en la montaña nevada"
-eg0 = "¡Auch!"
-eg1 = "¡Eso dolió!"
-eg2 = "¡Ay ay!"
-ea0 = "El piso está frio"
-ea1 = "Tengo las alas frias"
-ea1 = "Hola frio"
+[gm]
+l0o0 = "Modo 1-J"
+l0o1 = "Modo VS."
+l0o2 = "Extra"
+l0o3 = "Opciones"
+l0o4 = "Datos"
+mtl0 = "MENU BASE"

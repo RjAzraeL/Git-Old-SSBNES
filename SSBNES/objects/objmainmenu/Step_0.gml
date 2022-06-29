@@ -71,6 +71,11 @@ if (CooldownButton == 0)
 	}
 	if (Control.AttackButtonPressedActive)
 	{
+		if (Layer == 0)
+		{
+			audio_stop_all();
+			room_goto(rm01ScreenTitle);
+		}
 		if (Layer == 1)
 		{
 			CooldownButton = 5;
