@@ -10,6 +10,7 @@ if (scrExiste(ButtonChildren) and Ide != 3)
 			sprRosterImage = 0;
 		}
 		draw_sprite(ButtonChildren.ActualRoster.sprIde , sprRosterImage , x+31 , y+37);
+		scrText(x + 31 , y + 83 , ButtonChildren.ActualRoster.namIde , fa_middle , fa_center , Control.Font , c_black , c_white , 32 , 256 , .75 , .75 , 0 , 1);
 	}
 }
 #endregion

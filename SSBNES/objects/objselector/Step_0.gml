@@ -21,158 +21,170 @@ if (Active)
 	}
 }
 
-if (Control.JumpButtonPressedActive and place_meeting(x , y , objSelectorCircle))
+if (Control.Wait == 0)
 {
-	Circle = instance_place(x , y , objSelectorCircle);
-	if (scrExiste(Circle))
+	if (Control.JumpButtonPressedActive and place_meeting(x , y , objSelectorCircle))
 	{
-		if (Circle.image_index != 3)
+		Circle = instance_place(x , y , objSelectorCircle);
+		if (scrExiste(Circle))
 		{
-			Circle.Selected = true;
-			Circle.depth = -4;
-			Active = true;
+			if (Circle.image_index != 3)
+			{
+				Circle.Selected = true;
+				Circle.depth = -4;
+				Active = true;
+			}
 		}
 	}
-}
-if (Control.JumpButtonPressedActive and place_meeting(x , y , objPlayerSquare))
-{
-	var Square = instance_place(x , y , objPlayerSquare);
-	if (!place_meeting(x , y , objSelectorCircle) or Square.Ide == 3)
+	if (Control.JumpButtonPressedActive and place_meeting(x , y , objPlayerSquare))
 	{
-		if (scrExiste(Square))
+		var Square = instance_place(x , y , objPlayerSquare);
+		if (!place_meeting(x , y , objSelectorCircle) or Square.Ide == 3)
 		{
-			Square.Ide++;
-			if (Square.Slot == 0 and Square.Ide == 1)
+			if (scrExiste(Square))
 			{
-				Square.Ide = 2;
-			}
-			if (Square.Slot == 1 and Square.Ide == 0)
-			{
-				Square.Ide = 1;
-			}
-			if (Square.Ide > 3)
-			{
-				if (Square.Slot == 0)
-				{
-					Square.Ide = 0;
-				}
-				if (Square.Slot == 1)
-				{
-					Square.Ide = 1;
-				}
-				if (Square.Slot >= 2)
+				Square.Ide++;
+				if (Square.Slot == 0 and Square.Ide == 1)
 				{
 					Square.Ide = 2;
 				}
+				if (Square.Slot == 1 and Square.Ide == 0)
+				{
+					Square.Ide = 1;
+				}
+				if (Square.Ide > 3)
+				{
+					if (Square.Slot == 0)
+					{
+						Square.Ide = 0;
+					}
+					if (Square.Slot == 1)
+					{
+						Square.Ide = 1;
+					}
+					if (Square.Slot >= 2)
+					{
+						Square.Ide = 2;
+					}
+				}
 			}
 		}
 	}
-}
-if (Control.AttackButtonPressedActive)
-{
-	room_goto(rm02Menu);
-}
-if (Control.JumpButtonReleaseActive)
-{
-	if (place_meeting(x , y , objReadyBar))
+	if (Control.AttackButtonPressedActive and Control.Wait == 0)
 	{
-		var Ready = instance_place(x , y , objReadyBar);
-		if (Ready.visible)
+		if (room == rm03Versus)
 		{
-			room_goto(rm04Stage);
+			Control.Wait = 5;
+			room_goto(rm02Menu);
+		}
+		else if (room == rm04Stage)
+		{
+			Control.Wait = 5;
+			room_goto(rm03Versus);
 		}
 	}
-	if (scrExiste(Circle))
+	if (Control.JumpButtonReleaseActive)
 	{
-		Circle.depth = -3;
-		if (!place_meeting(x , y , objSelectRoster) and !place_meeting(x , y , objPlayerSquare))
+		if (place_meeting(x , y , objReadyBar))
 		{
-			Circle.obX = Circle.lstX;
-			Circle.obY = Circle.lstY;
+			var Ready = instance_place(x , y , objReadyBar);
+			if (Ready.visible)
+			{
+				room_goto(rm04Stage);
+			}
 		}
-		else if (place_meeting(x , y , objSelectRoster))
+		if (scrExiste(Circle))
 		{
-			var Roster = instance_place(x , y , objSelectRoster);
-			if (Roster.Ide >= 37 and Roster.Ide <= 39)
+			Circle.depth = -3;
+			if (!place_meeting(x , y , objSelectRoster) and !place_meeting(x , y , objPlayerSquare))
 			{
 				Circle.obX = Circle.lstX;
 				Circle.obY = Circle.lstY;
 			}
-			else
+			else if (place_meeting(x , y , objSelectRoster))
 			{
-				if (Circle.ActualRoster == noone or Circle.ActualRoster != Roster)
+				var Roster = instance_place(x , y , objSelectRoster);
+				if (Roster.Ide >= 37 and Roster.Ide <= 39)
 				{
-					if (scrExiste(Circle.ActualRoster))
+					Circle.obX = Circle.lstX;
+					Circle.obY = Circle.lstY;
+				}
+				else
+				{
+					if (Circle.ActualRoster == noone or Circle.ActualRoster != Roster)
 					{
-						if (Circle.ActualRoster != Roster)
+						if (scrExiste(Circle.ActualRoster))
 						{
-							Circle.ActualRoster.C[Circle.Position] = noone;
-							Circle.ActualRoster.CirclesIn--;
-							Circle.ActualRoster = noone;
-							Circle.Position = 0;
-						}
-					}
-					Roster.CirclesIn++;
-					Circle.ActualRoster = Roster;
-					Circle.obX = Roster.x;
-					Circle.obY = Roster.y;
-					var Listo = false;
-					for (var i = 0 ; i < 4 ; i++)
-					{
-						if (!Listo)
-						{
-							if (Roster.C[i] == noone)
+							if (Circle.ActualRoster != Roster)
 							{
-								Listo = true;
-								Roster.C[i] = Circle;
-								Circle.Position = i;
+								Circle.ActualRoster.C[Circle.Position] = noone;
+								Circle.ActualRoster.CirclesIn--;
+								Circle.ActualRoster = noone;
+								Circle.Position = 0;
+							}
+						}
+						Roster.CirclesIn++;
+						Circle.ActualRoster = Roster;
+						Circle.obX = Roster.x;
+						Circle.obY = Roster.y;
+						var Listo = false;
+						for (var i = 0 ; i < 4 ; i++)
+						{
+							if (!Listo)
+							{
+								if (Roster.C[i] == noone)
+								{
+									Listo = true;
+									Roster.C[i] = Circle;
+									Circle.Position = i;
+								}
+							}
+						}
+						Circle.lstX = Circle.obX;
+						Circle.lstY = Circle.obY;
+					}
+			
+					LastRoster = Roster;
+			
+					with (objSelectorCircle)
+					{
+						if (scrExiste(ActualRoster) and scrExiste(objSelector.LastRoster))
+						{
+							if (ActualRoster.id == objSelector.LastRoster.id)
+							{
+								alarm[2] = 1;
 							}
 						}
 					}
+				}
+			}
+			else if (place_meeting(x , y , objPlayerSquare))
+			{
+				var Square = instance_place(x , y , objPlayerSquare);
+				if (Square.Slot == Circle.Ide)
+				{
+					Circle.obX = Square.x + 31;
+					Circle.obY = Square.y + 47;
 					Circle.lstX = Circle.obX;
 					Circle.lstY = Circle.obY;
-				}
-			
-				LastRoster = Roster;
-			
-				with (objSelectorCircle)
-				{
-					if (scrExiste(ActualRoster) and scrExiste(objSelector.LastRoster))
+					if (Circle.ActualRoster != noone)
 					{
-						if (ActualRoster.id == objSelector.LastRoster.id)
-						{
-							alarm[2] = 1;
-						}
+						Circle.ActualRoster.C[Circle.Position] = noone;
+						Circle.ActualRoster.CirclesIn--;
+						Circle.ActualRoster = noone;
+						Circle.Position = 0;
 					}
 				}
-			}
-		}
-		else if (place_meeting(x , y , objPlayerSquare))
-		{
-			var Square = instance_place(x , y , objPlayerSquare);
-			if (Square.Slot == Circle.Ide)
-			{
-				Circle.obX = Square.x + 31;
-				Circle.obY = Square.y + 47;
-				Circle.lstX = Circle.obX;
-				Circle.lstY = Circle.obY;
-				if (Circle.ActualRoster != noone)
+				else
 				{
-					Circle.ActualRoster.C[Circle.Position] = noone;
-					Circle.ActualRoster.CirclesIn--;
-					Circle.ActualRoster = noone;
-					Circle.Position = 0;
+					Circle.obX = Circle.lstX;
+					Circle.obY = Circle.lstY;
 				}
 			}
-			else
-			{
-				Circle.obX = Circle.lstX;
-				Circle.obY = Circle.lstY;
-			}
+			Circle.Selected = false;
+			Circle = noone;
 		}
-		Circle.Selected = false;
-		Circle = noone;
+		Active = false;
 	}
-	Active = false;
 }
 #endregion

@@ -1,4 +1,5 @@
 #region Music
+Wait = 5;
 x = room_width/2;
 y = room_height/2;
 camera_set_view_pos(view_camera[0], 50 , 0);

@@ -6,6 +6,7 @@ if (Ide != 36)
 		if (scrDameDato(Control.CharacterList , i , "Roster id") == Ide)
 		{
 			sprIde = scrGetSpriteIndexGeneric(i , "Idle");
+			namIde = scrDameDato(Control.CharacterList , i , "Name");
 		}
 	}
 }

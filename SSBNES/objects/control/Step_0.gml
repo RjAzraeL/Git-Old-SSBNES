@@ -21,6 +21,10 @@
 	StartButtonActive = keyboard_check_pressed(StartButton);
 	#endregion
 #region Generic
+if (Wait > 0)
+{
+	Wait--;
+}
 scrCambiarPantalla(vk_f4);
 scrReiniciarJuego(ord("R"));
 if (keyboard_check_pressed(ShowColissionButton))

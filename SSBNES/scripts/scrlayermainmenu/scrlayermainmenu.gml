@@ -195,6 +195,6 @@ function scrLayerMainMenu(LocalLayer)
 			MainText = "EXTRA";
 			break;
 		}
-		ActualButton = 0;
 	}
+	ActualButton = 0;
 }

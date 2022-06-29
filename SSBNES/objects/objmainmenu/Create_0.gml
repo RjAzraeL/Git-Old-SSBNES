@@ -45,6 +45,7 @@ ActualButton = Control.MenuActualOption;
 CooldownButton = 0;
 Cap = 0;
 alarm[1] = 1;
+alarm[2] = 1;
 #endregion
 
 

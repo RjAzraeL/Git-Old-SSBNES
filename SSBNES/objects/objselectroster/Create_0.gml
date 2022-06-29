@@ -4,6 +4,7 @@ CirclesIn = 0;
 image_speed = 0;
 image_index = 0;
 sprIde = sprChSandbagIdle;
+namIde = "Sandbag";
 for (var i = 0 ; i < 4 ; i++)
 {
 	X[i] = 0;
