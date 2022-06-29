@@ -7,4 +7,5 @@ ButtonChildren = noone;
 sprRosterImage = 0;
 sprRosterSpeed = 0.1;
 Ready = false;
+IdeCharacter = 0;
 #endregion
