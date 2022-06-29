@@ -15,7 +15,7 @@
   "duration": 0.367234,
   "parent": {
     "name": "Kirby",
-    "path": "folders/Sounds/SFX/Kirby.yy",
+    "path": "folders/Audio/SFX/Kirby.yy",
   },
   "resourceVersion": "1.0",
   "name": "sfxKirbySkid",

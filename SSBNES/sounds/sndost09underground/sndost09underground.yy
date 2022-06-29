@@ -15,7 +15,7 @@
   "duration": 19.221155,
   "parent": {
     "name": "OST",
-    "path": "folders/Sounds/OST.yy",
+    "path": "folders/Audio/OST.yy",
   },
   "resourceVersion": "1.0",
   "name": "sndOst09Underground",

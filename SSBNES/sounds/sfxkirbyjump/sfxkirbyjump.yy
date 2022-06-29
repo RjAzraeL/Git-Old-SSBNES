@@ -15,7 +15,7 @@
   "duration": 0.098027,
   "parent": {
     "name": "Kirby",
-    "path": "folders/Sounds/SFX/Kirby.yy",
+    "path": "folders/Audio/SFX/Kirby.yy",
   },
   "resourceVersion": "1.0",
   "name": "sfxKirbyJump",

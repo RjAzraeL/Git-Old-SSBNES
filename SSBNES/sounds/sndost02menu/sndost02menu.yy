@@ -15,7 +15,7 @@
   "duration": 49.951927,
   "parent": {
     "name": "OST",
-    "path": "folders/Sounds/OST.yy",
+    "path": "folders/Audio/OST.yy",
   },
   "resourceVersion": "1.0",
   "name": "sndOst02Menu",

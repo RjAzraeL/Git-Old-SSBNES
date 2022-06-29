@@ -25,9 +25,9 @@ function scrLayerMainMenu(LocalLayer)
 			
 			ButtonD[4] = "View game records.";
 			ButtonE[0] = "Regular Ma.#Event Ma.#Stadium#Training";
-			ButtonE[1] = "Melee#Tournament#Special Me.#Custom Rul.#Name Entry";
+			ButtonE[1] = "Melee#Tournament#Special Rul.#Custom Rul.#Name Entry";
 			ButtonE[2] = "Gallery#Lottery#Collection#Cards#Stage Build";
-			ButtonE[3] = "Sound#Music#Control#Language#Erase Data"
+			ButtonE[3] = "Language#Controls#Audio#Graphics#Erase Data"
 			ButtonE[4] = "Archives#Sound Test#Melee Rec.#Special#Discord";
 
 			ButtonA[0] = "1-P Mode";
@@ -120,8 +120,9 @@ function scrLayerMainMenu(LocalLayer)
 			ButtonA[7] = "";
 					
 			ButtonD[0] = "Smash ten targets!";
-			ButtonD[1] = "Fight for your life! Fight!";
-			ButtonD[2] = "";
+			ButtonD[1] = "Step on ten platforms!";
+			ButtonD[2] = "Get out of the room!";
+			ButtonD[3] = "Fight for your life! Fight!";
 					
 			ButtonE[0] = "";
 			ButtonE[1] = "";
@@ -141,7 +142,7 @@ function scrLayerMainMenu(LocalLayer)
 			ActualButton = Layer4Button;
 			ButtonA[0] = "Melee";
 			ButtonA[1] = "Tournament";
-			ButtonA[2] = "Special";
+			ButtonA[2] = "Special Rules";
 			ButtonA[3] = "Custom Rules";
 			ButtonA[4] = "Name Entry";
 			ButtonA[5] = "";
@@ -193,6 +194,70 @@ function scrLayerMainMenu(LocalLayer)
 			ButtonE[4] = "";
 					
 			MainText = "EXTRA";
+			break;
+		}
+		case(6):
+		{
+			Layer = 6;
+			alarm[0] = 1;
+			instance_destroy(objMainMenuButton);
+			alarm[1] = 1;
+			Layer0Button = 3;
+			ActualButton = Layer6Button;
+			ButtonA[0] = "Language";
+			ButtonA[1] = "Controls";
+			ButtonA[2] = "Audio";
+			ButtonA[3] = "Graphics";
+			ButtonA[4] = "Erase Data";
+			ButtonA[5] = "";
+			ButtonA[6] = "";
+			ButtonA[7] = "";
+					
+			ButtonD[0] = "..............................";
+			ButtonD[1] = "..............................";
+			ButtonD[2] = "..............................";
+			ButtonD[3] = "..............................";
+			ButtonD[4] = "..............................";
+					
+			ButtonE[0] = "";
+			ButtonE[1] = "";
+			ButtonE[2] = "";
+			ButtonE[3] = "";
+			ButtonE[4] = "";
+					
+			MainText = "OPTIONS";
+			break;
+		}
+		case(7):
+		{
+			Layer = 7;
+			alarm[0] = 1;
+			instance_destroy(objMainMenuButton);
+			alarm[1] = 1;
+			Layer0Button = 4;
+			ActualButton = Layer7Button;
+			ButtonA[0] = "Archives";
+			ButtonA[1] = "Sound Test";
+			ButtonA[2] = "Melee Records";
+			ButtonA[3] = "Special";
+			ButtonA[4] = "Discord";
+			ButtonA[5] = "";
+			ButtonA[6] = "";
+			ButtonA[7] = "";
+					
+			ButtonD[0] = "..............................";
+			ButtonD[1] = "..............................";
+			ButtonD[2] = "..............................";
+			ButtonD[3] = "..............................";
+			ButtonD[4] = "..............................";
+					
+			ButtonE[0] = "";
+			ButtonE[1] = "";
+			ButtonE[2] = "";
+			ButtonE[3] = "";
+			ButtonE[4] = "";
+			
+			MainText = "DATA";
 			break;
 		}
 	}

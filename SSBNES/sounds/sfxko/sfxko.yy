@@ -15,7 +15,7 @@
   "duration": 0.591111,
   "parent": {
     "name": "Generic",
-    "path": "folders/Sounds/SFX/Generic.yy",
+    "path": "folders/Audio/SFX/Generic.yy",
   },
   "resourceVersion": "1.0",
   "name": "sfxKO",

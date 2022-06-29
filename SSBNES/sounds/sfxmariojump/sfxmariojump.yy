@@ -15,7 +15,7 @@
   "duration": 1.683447,
   "parent": {
     "name": "Mario",
-    "path": "folders/Sounds/SFX/Mario.yy",
+    "path": "folders/Audio/SFX/Mario.yy",
   },
   "resourceVersion": "1.0",
   "name": "sfxMarioJump",
