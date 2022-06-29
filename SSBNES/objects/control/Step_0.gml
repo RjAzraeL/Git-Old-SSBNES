@@ -20,6 +20,18 @@
 	UpButtonPressedActive = keyboard_check_pressed(UpButton);
 	StartButtonActive = keyboard_check_pressed(StartButton);
 	#endregion
+#region Generic
+scrCambiarPantalla(vk_f4);
+scrReiniciarJuego(ord("R"));
+if (keyboard_check_pressed(ShowColissionButton))
+{
+	ShowMask = !ShowMask;
+}
+if (keyboard_check_pressed(ShowColissionMovsButton))
+{
+	ShowMovsMask = !ShowMovsMask;
+}
+#endregion
 if (BattleLevel)
 {
 	#region Index
@@ -31,19 +43,6 @@ if (BattleLevel)
 	#endregion
 
 	#region Change
-	#endregion
-
-	#region Generic
-	scrCambiarPantalla(vk_f4);
-	scrReiniciarJuego(ord("R"));
-	if (keyboard_check_pressed(ShowColissionButton))
-	{
-		ShowMask = !ShowMask;
-	}
-	if (keyboard_check_pressed(ShowColissionMovsButton))
-	{
-		ShowMovsMask = !ShowMovsMask;
-	}
 	#endregion
 
 	#region Camera

@@ -32,7 +32,7 @@ ButtonA[6] = "";
 ButtonA[7] = "";
 MainText = "Main menu";
 
-Layer = 0;
+Layer = Control.MenuActualLayer;
 Layer0Button = 0;
 Layer1Button = 0;
 Layer2Button = 0;
@@ -41,7 +41,7 @@ Layer4Button = 0;
 Layer5Button = 0;
 //109 - 224
 instance_create_depth(0 , 0 , 300 , objMenuBall);
-ActualButton = 0;
+ActualButton = Control.MenuActualOption;
 CooldownButton = 0;
 Cap = 0;
 alarm[1] = 1;
