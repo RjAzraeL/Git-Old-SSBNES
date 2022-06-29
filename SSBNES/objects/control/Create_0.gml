@@ -29,6 +29,7 @@ Font = font_add_sprite_ext(sprFont , " !ƒ#$%&'()*+,-./0123456789:;<=>?@ABCDEFGH
 scrDataMov();
 scrDataMusic();
 scrDataCharacter();
+scrDataStage();
 
 #endregion
 
