@@ -7,6 +7,10 @@ if (room == rm02Menu)
 {
 	scrSetMusic("Menu Theme");
 }
+else if (room == rm03Versus)
+{
+	scrSetMusic("Menu Theme");
+}
 else if (room == rmStgBattlefield0 or room == rmStgBattlefield1)
 {
 	scrSetMusic("Battlefield");
