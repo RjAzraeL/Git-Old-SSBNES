@@ -10,6 +10,7 @@ if (Control.Wait == 0)
 		Control.Wait = 5;
 		if (other.image_index < ds_list_size(Control.StageList))
 		{
+			Control.BattleLevel = true;
 			room_goto(scrDameDato(Control.StageList , other.image_index , "Room"));
 		}
 	}

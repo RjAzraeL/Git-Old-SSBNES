@@ -130,7 +130,7 @@
     {"id":{"name":"sndOst08FinalDestination_a","path":"sounds/sndOst08FinalDestination_a/sndOst08FinalDestination_a.yy",},"order":12,},
     {"id":{"name":"sprChKirbyFalling","path":"sprites/sprChKirbyFalling/sprChKirbyFalling.yy",},"order":5,},
     {"id":{"name":"scrCambiarPantalla","path":"scripts/scrCambiarPantalla/scrCambiarPantalla.yy",},"order":0,},
-    {"id":{"name":"scrAudio","path":"scripts/scrAudio/scrAudio.yy",},"order":4,},
+    {"id":{"name":"scrAudio","path":"scripts/scrAudio/scrAudio.yy",},"order":0,},
     {"id":{"name":"Control","path":"objects/Control/Control.yy",},"order":3,},
     {"id":{"name":"scr_CRT_turn_off_effect","path":"scripts/scr_CRT_turn_off_effect/scr_CRT_turn_off_effect.yy",},"order":2,},
     {"id":{"name":"sprChMarioAerialSideMask","path":"sprites/sprChMarioAerialSideMask/sprChMarioAerialSideMask.yy",},"order":8,},

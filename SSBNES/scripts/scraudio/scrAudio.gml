@@ -30,6 +30,7 @@ function scrMusic(Music)
 {
 	if (Control.IndexMusic != Music)
 	{
+		audio_stop_sound(Control.IndexMusic);
 		audio_sound_gain(Music , Control.VolumeMusic , 0);
 		audio_play_sound(Music , 10 , false);
 		Control.IndexMusic = Music;
