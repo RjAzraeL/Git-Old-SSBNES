@@ -34,6 +34,10 @@ if (Control.Wait == 0)
 				Circle.depth = -4;
 				Active = true;
 			}
+			else
+			{
+				Circle = noone;
+			}
 		}
 	}
 	if (Control.JumpButtonPressedActive and place_meeting(x , y , objPlayerSquare))

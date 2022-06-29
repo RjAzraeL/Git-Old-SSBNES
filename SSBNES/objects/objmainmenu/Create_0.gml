@@ -33,14 +33,10 @@ ButtonA[7] = "";
 MainText = "Main menu";
 
 Layer = Control.MenuActualLayer;
-Layer0Button = 0;
-Layer1Button = 0;
-Layer2Button = 0;
-Layer3Button = 0;
-Layer4Button = 0;
-Layer5Button = 0;
-Layer6Button = 0;
-Layer7Button = 0;
+for (var i = 0 ; i < 15 ; i++)
+{
+	LayerButton[i] = 0;
+}
 //109 - 224
 instance_create_depth(0 , 0 , 300 , objMenuBall);
 ActualButton = Control.MenuActualOption;

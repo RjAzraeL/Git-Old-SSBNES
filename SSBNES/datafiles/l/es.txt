@@ -1,0 +1,15 @@
+[g]
+g = "¡Bienvenido!"
+d = "!Has muerto!"
+
+[d]
+p0 = "Hola mundo"
+p1 = "Buen día"
+p2 = "Soy Pollier"
+p3 = "Estamos en la montaña nevada"
+eg0 = "¡Auch!"
+eg1 = "¡Eso dolió!"
+eg2 = "¡Ay ay!"
+ea0 = "El piso está frio"
+ea1 = "Tengo las alas frias"
+ea1 = "Hola frio"

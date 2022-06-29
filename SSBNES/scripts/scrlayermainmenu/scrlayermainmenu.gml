@@ -9,8 +9,8 @@ function scrLayerMainMenu(LocalLayer)
 			alarm[0] = 2;
 			instance_destroy(objMainMenuButton);
 			alarm[1] = 1;
-			Layer1Button = ActualButton;
-			ActualButton = Layer0Button;
+			LayerButton[1] = ActualButton;
+			ActualButton = LayerButton[0];
 			
 			ButtonT[0] = "1-P Mode";
 			ButtonT[1] = "VS. Mode";
@@ -47,8 +47,8 @@ function scrLayerMainMenu(LocalLayer)
 			alarm[0] = 1;
 			instance_destroy(objMainMenuButton);
 			alarm[1] = 1;
-			Layer0Button = 0;
-			ActualButton = Layer1Button;
+			LayerButton[0] = 0;
+			ActualButton = LayerButton[1];
 			ButtonA[0] = "Regular M.";
 			ButtonA[1] = "Event Match";
 			ButtonA[2] = "Stadium";
@@ -79,8 +79,8 @@ function scrLayerMainMenu(LocalLayer)
 			alarm[0] = 1;
 			instance_destroy(objMainMenuButton);
 			alarm[1] = 1;
-			Layer1Button = 0;
-			ActualButton = Layer2Button;
+			LayerButton[1] = 0;
+			ActualButton = LayerButton[2];
 			ButtonA[0] = "Classic";
 			ButtonA[1] = "Adventure";
 			ButtonA[2] = "All-Star";
@@ -108,8 +108,8 @@ function scrLayerMainMenu(LocalLayer)
 			alarm[0] = 1;
 			instance_destroy(objMainMenuButton);
 			alarm[1] = 1;
-			Layer1Button = 2;
-			ActualButton = Layer3Button;
+			LayerButton[1] = 2;
+			ActualButton = LayerButton[3];
 			ButtonA[0] = "Target Test";
 			ButtonA[1] = "Platform Test";
 			ButtonA[2] = "Race Test";
@@ -138,8 +138,8 @@ function scrLayerMainMenu(LocalLayer)
 			alarm[0] = 1;
 			instance_destroy(objMainMenuButton);
 			alarm[1] = 1;
-			Layer0Button = 1;
-			ActualButton = Layer4Button;
+			LayerButton[0] = 1;
+			ActualButton = LayerButton[4];
 			ButtonA[0] = "Melee";
 			ButtonA[1] = "Tournament";
 			ButtonA[2] = "Special Rules";
@@ -170,8 +170,8 @@ function scrLayerMainMenu(LocalLayer)
 			alarm[0] = 1;
 			instance_destroy(objMainMenuButton);
 			alarm[1] = 1;
-			Layer0Button = 2;
-			ActualButton = Layer5Button;
+			LayerButton[0] = 2;
+			ActualButton = LayerButton[5];
 			ButtonA[0] = "Gallery";
 			ButtonA[1] = "Lottery";
 			ButtonA[2] = "Collection";
@@ -202,8 +202,8 @@ function scrLayerMainMenu(LocalLayer)
 			alarm[0] = 1;
 			instance_destroy(objMainMenuButton);
 			alarm[1] = 1;
-			Layer0Button = 3;
-			ActualButton = Layer6Button;
+			LayerButton[0] = 3;
+			ActualButton = LayerButton[6];
 			ButtonA[0] = "Language";
 			ButtonA[1] = "Controls";
 			ButtonA[2] = "Audio";
@@ -234,8 +234,8 @@ function scrLayerMainMenu(LocalLayer)
 			alarm[0] = 1;
 			instance_destroy(objMainMenuButton);
 			alarm[1] = 1;
-			Layer0Button = 4;
-			ActualButton = Layer7Button;
+			LayerButton[0] = 4;
+			ActualButton = LayerButton[7];
 			ButtonA[0] = "Archives";
 			ButtonA[1] = "Sound Test";
 			ButtonA[2] = "Melee Records";

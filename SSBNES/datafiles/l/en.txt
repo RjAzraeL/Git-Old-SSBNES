@@ -1,0 +1,18 @@
+[gm]
+l0o0 = "1-P Mode"
+l0o1 = "VS. Mode"
+l0o2 = "Extra"
+l0o3 = "Options"
+l0o4 = "Data"
+
+[d]
+p0 = "Hello world"
+p1 = "Good morning"
+p2 = "I am Pollier"
+p3 = "We are in the snowy mountain"
+eg0 = "Ouch!"
+eg1 = "That hurt!"
+eg2 = "Ouch ouch!"
+ea0 = "The floor is cold"
+ea1 = "I have cold wings"
+ea2 = "Hello cool"
