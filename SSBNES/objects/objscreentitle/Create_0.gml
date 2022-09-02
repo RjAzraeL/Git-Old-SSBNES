@@ -1,4 +1,4 @@
 #region Set var
-Text = "PRESS START!";
+Text = Language.Text_ts0;
 alarm[0] = 60;
 #endregion

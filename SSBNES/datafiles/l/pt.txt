@@ -1,0 +1,123 @@
+[TITLE SCREEN]
+ts0 = "PRESSIONE START!"
+
+[MAIN MENU]
+mtl0 = "MENU INICIAL"
+
+ml0o0 = "Modo Único"
+ml0o1 = "Modo Versus"
+ml0o2 = "Extra"
+ml0o3 = "Opções"
+ml0o4 = "Dados"
+
+ml0d0 = "Esmaga Solo!"
+ml0d1 = "Batalhas Multijogador!"
+ml0d2 = "Ver conteúdo adicional".
+ml0d3 = "Configurações do jogo".
+ml0d4 = "Ver logs do jogo."
+
+ml0e0 = "Modo Regul.#Eventos#Estádio#Treinament."
+ml0e1 = "Melee#Torneio#Smash Espe.#Regras#Nomes"
+ml0e2 = "Galeria#Loteria#Coleção#Cartões#Construir"
+ml0e3 = "Idioma#Controles#Áudio#Gráficos#Limpar dados"
+ml0e4 = "Arquivo#Teste Som#Registros#Especial#Discord"
+
+[1-P MODE]
+mtl1 = "MODO ÚNICO"
+
+ml1o0 = "Modo Regular"
+ml1o1 = "Eventos"
+ml1o2 = "Estádio"
+ml1o3 = "Treinamento"
+
+ml1d0 = "Vários níveis padrão."
+ml1d1 = "Combate em situações especiais."
+ml1d2 = "Provas de Minijogo."
+ml1d3 = "Treine para se aperfeiçoar."
+
+ml1e0 = "Clássico#Aventura#Legenda"
+ml1e2 = "Alvos#Plataformas#Fuga#Assalto"
+
+[REGULAR MATCH]
+mtl2 = "MODO REGULAR"
+
+ml2o0 = "Clássico"
+ml2o1 = "Aventura"
+ml2o2 = "Legenda"
+
+ml2d0 = "Derrote inimigos para avançar."
+ml2d1 = "Combate em diferentes estágios."
+ml2d2 = "Lute com todos os personagens!"
+
+[STADIUM]
+mtl3 = "ESTÁDIO"
+
+ml3o0 = "Alvos"
+ml3o1 = "Plataformas"
+ml3o2 = "Fuga"
+ml3o3 = "Assalto"
+
+ml3d0 = "Destrua 10 alvos!"
+ml3d1 = "Passe em 10 plataformas!"
+ml3d2 = "Encontre a saída!"
+ml3d3 = "Lute por sua vida!"
+
+[VS. MODE]
+mtl4 = "MODO VERSUS"
+
+ml4o0 = "Melee"
+ml4o1 = "Torneio"
+ml4o2 = "Smash Especial"
+ml4o3 = "Regras"
+ml4o4 = "Nomes"
+
+ml4d0 = "Uma batalha normal."
+ml4d1 = "Torneio para até 64 caracteres."
+ml4d2 = "Um combate com regras especiais."
+ml4d3 = "Mude as regras aqui"
+ml4d4 = "Digite seu nome."
+
+[EXTRA]
+mtl5 = "EXTRA"
+
+ml5o0 = "Galeria"
+ml5o1 = "Loteria"
+ml5o2 = "Coleção"
+ml5o3 = "Cartões"
+ml5o4 = "Construir"
+
+ml5d0 = "Veja os troféus que você coletou."
+ml5d1 = "Use moedas para obter troféus!"
+ml5d2 = "Veja toda a sua coleção de troféus."
+ml5d3 = "Olhe as cartas que você coletou."
+ml5d4 = "Crie seu próprio cenário!"
+
+[OPTIONS]
+mtl6 = "OPÇÕES"
+
+ml6o0 = "Idioma"
+ml6o1 = "Controles"
+ml6o2 = "Áudio"
+ml6o3 = "Gráficos"
+ml6o4 = "Limpar dados"
+
+ml6d0 = "Opções de idioma."
+ml6d1 = "Definir controles."
+ml6d2 = "Opções de Áudio."
+ml6d3 = "Opções de Gráficos."
+ml6d4 = "Limpar registros"
+
+[DATA]
+mtl7 = "DADOS"
+
+ml7o0 = "Arquivo"
+ml7o1 = "Testar Som"
+ml7o2 = "Registros"
+ml7o3 = "Especial"
+ml7o4 = "Discord"
+
+ml7d0 = "Assista as cenas de Smash Bros."
+ml7d1 = "Ouvir música e efeitos sonoros."
+ml7d2 = "Ver vários registros de combate."
+ml7d3 = "Informações sobre itens ocultos."
+ml7d4 = "Entre no nosso servidor Discord!"

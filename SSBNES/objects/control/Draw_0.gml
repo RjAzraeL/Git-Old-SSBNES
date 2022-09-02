@@ -28,7 +28,7 @@ if (BattleLevel)
 		RealNumber += string_char_at( Number , string_length(Number)-2 );
 		RealNumber += string_char_at( Number , string_length(Number)-1 );
 		RealNumber += string_char_at( Number , string_length(Number) );
-		scrText(scrX() + 22 + Largo * i , scrY() + Y + 20 , RealNumber , fa_center , fa_left , FontPorcentage , c_white , c_white , 32 , 400 , 1 , 1 , 0 , 1);
+		scrText(scrX() + 28 + Largo * i , scrY() + Y + 24 , RealNumber , fa_center , fa_left , FontPorcentage , c_white , c_white , 32 , 400 , 1 , 1 , 0 , 1);
 	
 		draw_sprite(sprHudBody2 , scrDameDato(Control.CharacterList , CharacterId[i] , "Hud Index") , scrX() + 2 + Largo * (i) , scrY() + Y );
 		draw_sprite(sprHudBody , 1 , scrX() + 2 + Largo * (i) , scrY() + Y );

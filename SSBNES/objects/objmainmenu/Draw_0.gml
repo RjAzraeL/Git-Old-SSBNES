@@ -1,3 +1,3 @@
 #region Text
-scrSNESText(109 , 26 , MainText , fa_middle , fa_center , Control.Font , c_black , c_white , 32 , 256 , 1 , 1 , 0 , 1);
+scrSNESText(160 , 28 , MainText , fa_middle , fa_right , Control.Font , c_black , c_white , 32 , 256 , 1 , 1 , 0 , 1);
 #endregion

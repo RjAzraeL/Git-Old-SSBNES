@@ -12,29 +12,29 @@ function scrLayerMainMenu(LocalLayer)
 			LayerButton[1] = ActualButton;
 			ActualButton = LayerButton[0];
 			
-			ButtonT[0] = Language.Text_l0o0;
-			ButtonT[1] = Language.Text_l0o1;
-			ButtonT[2] = Language.Text_l0o2;
-			ButtonT[3] = Language.Text_l0o3;
-			ButtonT[4] = Language.Text_l0o4;
+			ButtonT[0] = Language.Text_ml0o0;
+			ButtonT[1] = Language.Text_ml0o1;
+			ButtonT[2] = Language.Text_ml0o2;
+			ButtonT[3] = Language.Text_ml0o3;
+			ButtonT[4] = Language.Text_ml0o4;
 			
-			ButtonD[0] = "Solo Smash!";
-			ButtonD[1] = "Multiplayer battles!";
-			ButtonD[2] = "View extra content.";
-			ButtonD[3] = "Game setup.";
+			ButtonD[0] = Language.Text_ml0d0;
+			ButtonD[1] = Language.Text_ml0d1;
+			ButtonD[2] = Language.Text_ml0d2;
+			ButtonD[3] = Language.Text_ml0d3;
+			ButtonD[4] = Language.Text_ml0d4;
 			
-			ButtonD[4] = "View game records.";
-			ButtonE[0] = "Regular Ma.#Event Ma.#Stadium#Training";
-			ButtonE[1] = "Melee#Tournament#Special Rul.#Custom Rul.#Name Entry";
-			ButtonE[2] = "Gallery#Lottery#Collection#Cards#Stage Build";
-			ButtonE[3] = "Language#Controls#Audio#Graphics#Erase Data"
-			ButtonE[4] = "Archives#Sound Test#Melee Rec.#Special#Discord";
+			ButtonE[0] = Language.Text_ml0e0;
+			ButtonE[1] = Language.Text_ml0e1;
+			ButtonE[2] = Language.Text_ml0e2;
+			ButtonE[3] = Language.Text_ml0e3;
+			ButtonE[4] = Language.Text_ml0e4;
 
-			ButtonA[0] = Language.Text_l0o0;
-			ButtonA[1] = Language.Text_l0o1;
-			ButtonA[2] = Language.Text_l0o2;
-			ButtonA[3] = Language.Text_l0o3;
-			ButtonA[4] = Language.Text_l0o4;
+			ButtonA[0] = Language.Text_ml0o0;
+			ButtonA[1] = Language.Text_ml0o1;
+			ButtonA[2] = Language.Text_ml0o2;
+			ButtonA[3] = Language.Text_ml0o3;
+			ButtonA[4] = Language.Text_ml0o4;
 			ButtonA[5] = "";
 			ButtonA[6] = "";
 			ButtonA[7] = "";
@@ -49,28 +49,28 @@ function scrLayerMainMenu(LocalLayer)
 			alarm[1] = 1;
 			LayerButton[0] = 0;
 			ActualButton = LayerButton[1];
-			ButtonA[0] = "Regular M.";
-			ButtonA[1] = "Event Match";
-			ButtonA[2] = "Stadium";
-			ButtonA[3] = "Training";
+			ButtonA[0] = Language.Text_ml1o0;
+			ButtonA[1] = Language.Text_ml1o1;
+			ButtonA[2] = Language.Text_ml1o2;
+			ButtonA[3] = Language.Text_ml1o3;
 			ButtonA[4] = "";
 			ButtonA[5] = "";
 			ButtonA[6] = "";
 			ButtonA[7] = "";
 					
-			ButtonD[0] = "Multiple levels of standard Smash.";
-			ButtonD[1] = "Special Smash situation matches.";
-			ButtonD[2] = "Mini-game testing ground.";
-			ButtonD[3] = "Free training for honing skills.";
+			ButtonD[0] = Language.Text_ml1d0;
+			ButtonD[1] = Language.Text_ml1d1;
+			ButtonD[2] = Language.Text_ml1d2;
+			ButtonD[3] = Language.Text_ml1d3;
 					
-			ButtonE[0] = "Classic#Adventure#All-Star";
+			ButtonE[0] = Language.Text_ml1e0;
 			ButtonE[1] = "";
-			ButtonE[2] = "Target Tes.#Platform T.#Race Test #Training";
+			ButtonE[2] = Language.Text_ml1e2;
 			ButtonE[3] = "";
 					
 					
 					
-			MainText = "1-P MODE";
+			MainText = Language.Text_mtl1;
 			break;
 		}
 		case(2):
@@ -81,25 +81,25 @@ function scrLayerMainMenu(LocalLayer)
 			alarm[1] = 1;
 			LayerButton[1] = 0;
 			ActualButton = LayerButton[2];
-			ButtonA[0] = "Classic";
-			ButtonA[1] = "Adventure";
-			ButtonA[2] = "All-Star";
+			ButtonA[0] = Language.Text_ml2o0;
+			ButtonA[1] = Language.Text_ml2o1;
+			ButtonA[2] = Language.Text_ml2o2;
 			ButtonA[3] = "";
 			ButtonA[4] = "";
 			ButtonA[5] = "";
 			ButtonA[6] = "";
 			ButtonA[7] = "";
 					
-			ButtonD[0] = "Defeat each foe to advance.";
-			ButtonD[1] = "Battle though various stages.";
-			ButtonD[2] = "Conquer all enemies using.";
+			ButtonD[0] = Language.Text_ml2d0;
+			ButtonD[1] = Language.Text_ml2d1;
+			ButtonD[2] = Language.Text_ml2d2;
 					
 			ButtonE[0] = "";
 			ButtonE[1] = "";
 			ButtonE[2] = "";
 			ButtonE[3] = "";
 					
-			MainText = "REGULAR MATCH";
+			MainText = Language.Text_mtl2;
 			break;
 		}
 		case(3):
@@ -110,26 +110,26 @@ function scrLayerMainMenu(LocalLayer)
 			alarm[1] = 1;
 			LayerButton[1] = 2;
 			ActualButton = LayerButton[3];
-			ButtonA[0] = "Target Test";
-			ButtonA[1] = "Platform Test";
-			ButtonA[2] = "Race Test";
-			ButtonA[3] = "Multi-Man";
+			ButtonA[0] = Language.Text_ml3o0;
+			ButtonA[1] = Language.Text_ml3o1;
+			ButtonA[2] = Language.Text_ml3o2;
+			ButtonA[3] = Language.Text_ml3o3;
 			ButtonA[4] = "";
 			ButtonA[5] = "";
 			ButtonA[6] = "";
 			ButtonA[7] = "";
 					
-			ButtonD[0] = "Smash ten targets!";
-			ButtonD[1] = "Step on ten platforms!";
-			ButtonD[2] = "Get out of the room!";
-			ButtonD[3] = "Fight for your life! Fight!";
+			ButtonD[0] = Language.Text_ml3d0;
+			ButtonD[1] = Language.Text_ml3d1;
+			ButtonD[2] = Language.Text_ml3d2;
+			ButtonD[3] = Language.Text_ml3d3;
 					
 			ButtonE[0] = "";
 			ButtonE[1] = "";
 			ButtonE[2] = "";
 			ButtonE[3] = "";
 					
-			MainText = "STADIUM";
+			MainText = Language.Text_mtl3;
 			break;
 		}
 		case(4):
@@ -140,20 +140,20 @@ function scrLayerMainMenu(LocalLayer)
 			alarm[1] = 1;
 			LayerButton[0] = 1;
 			ActualButton = LayerButton[4];
-			ButtonA[0] = "Melee";
-			ButtonA[1] = "Tournament";
-			ButtonA[2] = "Special Rules";
-			ButtonA[3] = "Custom Rules";
-			ButtonA[4] = "Name Entry";
+			ButtonA[0] = Language.Text_ml4o0;
+			ButtonA[1] = Language.Text_ml4o1;
+			ButtonA[2] = Language.Text_ml4o2;
+			ButtonA[3] = Language.Text_ml4o3;
+			ButtonA[4] = Language.Text_ml4o4;
 			ButtonA[5] = "";
 			ButtonA[6] = "";
 			ButtonA[7] = "";
 					
-			ButtonD[0] = "A standard Smash battle.";
-			ButtonD[1] = "A tournament for up to 64 players.";
-			ButtonD[2] = "A melee with special rules.";
-			ButtonD[3] = "Change the melee rules here.";
-			ButtonD[4] = "Enter your name.";
+			ButtonD[0] = Language.Text_ml4d0;
+			ButtonD[1] = Language.Text_ml4d1;
+			ButtonD[2] = Language.Text_ml4d2;
+			ButtonD[3] = Language.Text_ml4d3;
+			ButtonD[4] = Language.Text_ml4d4;
 					
 			ButtonE[0] = "";
 			ButtonE[1] = "";
@@ -161,7 +161,7 @@ function scrLayerMainMenu(LocalLayer)
 			ButtonE[3] = "";
 			ButtonE[4] = "";
 					
-			MainText = "VS. MODE";
+			MainText = Language.Text_mtl4;
 			break;
 		}
 		case(5):
@@ -172,20 +172,20 @@ function scrLayerMainMenu(LocalLayer)
 			alarm[1] = 1;
 			LayerButton[0] = 2;
 			ActualButton = LayerButton[5];
-			ButtonA[0] = "Gallery";
-			ButtonA[1] = "Lottery";
-			ButtonA[2] = "Collection";
-			ButtonA[3] = "Cards";
-			ButtonA[4] = "Stage Build";
+			ButtonA[0] = Language.Text_ml5o0;
+			ButtonA[1] = Language.Text_ml5o1;
+			ButtonA[2] = Language.Text_ml5o2;
+			ButtonA[3] = Language.Text_ml5o3;
+			ButtonA[4] = Language.Text_ml5o4;
 			ButtonA[5] = "";
 			ButtonA[6] = "";
 			ButtonA[7] = "";
 					
-			ButtonD[0] = "View trophies you've collected.";
-			ButtonD[1] = "Use the coins to get trophies!";
-			ButtonD[2] = "View your entire trophy collection.";
-			ButtonD[3] = "View cards you've collected.";
-			ButtonD[4] = "Create your own battle stage!";
+			ButtonD[0] = Language.Text_ml5d0;
+			ButtonD[1] = Language.Text_ml5d1;
+			ButtonD[2] = Language.Text_ml5d2;
+			ButtonD[3] = Language.Text_ml5d3;
+			ButtonD[4] = Language.Text_ml5d4;
 					
 			ButtonE[0] = "";
 			ButtonE[1] = "";
@@ -193,7 +193,7 @@ function scrLayerMainMenu(LocalLayer)
 			ButtonE[3] = "";
 			ButtonE[4] = "";
 					
-			MainText = "EXTRA";
+			MainText = Language.Text_mtl5;
 			break;
 		}
 		case(6):
@@ -204,20 +204,20 @@ function scrLayerMainMenu(LocalLayer)
 			alarm[1] = 1;
 			LayerButton[0] = 3;
 			ActualButton = LayerButton[6];
-			ButtonA[0] = "Language";
-			ButtonA[1] = "Controls";
-			ButtonA[2] = "Audio";
-			ButtonA[3] = "Graphics";
-			ButtonA[4] = "Erase Data";
+			ButtonA[0] = Language.Text_ml6o0;
+			ButtonA[1] = Language.Text_ml6o1;
+			ButtonA[2] = Language.Text_ml6o2;
+			ButtonA[3] = Language.Text_ml6o3;
+			ButtonA[4] = Language.Text_ml6o4;
 			ButtonA[5] = "";
 			ButtonA[6] = "";
 			ButtonA[7] = "";
 					
-			ButtonD[0] = "..............................";
-			ButtonD[1] = "..............................";
-			ButtonD[2] = "..............................";
-			ButtonD[3] = "..............................";
-			ButtonD[4] = "..............................";
+			ButtonD[0] = Language.Text_ml6d0;
+			ButtonD[1] = Language.Text_ml6d1;
+			ButtonD[2] = Language.Text_ml6d2;
+			ButtonD[3] = Language.Text_ml6d3;
+			ButtonD[4] = Language.Text_ml6d4;
 					
 			ButtonE[0] = "";
 			ButtonE[1] = "";
@@ -225,7 +225,7 @@ function scrLayerMainMenu(LocalLayer)
 			ButtonE[3] = "";
 			ButtonE[4] = "";
 					
-			MainText = "OPTIONS";
+			MainText = Language.Text_mtl6;
 			break;
 		}
 		case(7):
@@ -236,20 +236,20 @@ function scrLayerMainMenu(LocalLayer)
 			alarm[1] = 1;
 			LayerButton[0] = 4;
 			ActualButton = LayerButton[7];
-			ButtonA[0] = "Archives";
-			ButtonA[1] = "Sound Test";
-			ButtonA[2] = "Melee Records";
-			ButtonA[3] = "Special";
-			ButtonA[4] = "Discord";
+			ButtonA[0] = Language.Text_ml7o0;
+			ButtonA[1] = Language.Text_ml7o1;
+			ButtonA[2] = Language.Text_ml7o2;
+			ButtonA[3] = Language.Text_ml7o3;
+			ButtonA[4] = Language.Text_ml7o4;
 			ButtonA[5] = "";
 			ButtonA[6] = "";
 			ButtonA[7] = "";
 					
-			ButtonD[0] = "..............................";
-			ButtonD[1] = "..............................";
-			ButtonD[2] = "..............................";
-			ButtonD[3] = "..............................";
-			ButtonD[4] = "..............................";
+			ButtonD[0] = Language.Text_ml7d0;
+			ButtonD[1] = Language.Text_ml7d1;
+			ButtonD[2] = Language.Text_ml7d2;
+			ButtonD[3] = Language.Text_ml7d3;
+			ButtonD[4] = Language.Text_ml7d4;
 					
 			ButtonE[0] = "";
 			ButtonE[1] = "";
@@ -257,7 +257,7 @@ function scrLayerMainMenu(LocalLayer)
 			ButtonE[3] = "";
 			ButtonE[4] = "";
 			
-			MainText = "DATA";
+			MainText = Language.Text_mtl7;
 			break;
 		}
 	}

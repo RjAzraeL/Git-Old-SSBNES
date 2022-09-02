@@ -1,10 +1,10 @@
 #region Set variables
 instance_create_depth(0 , 0 , 0 , Language);
-scrLanguageLoadTexto(1);
+scrLanguageLoadTexto(0);
 depth = -10;
 Delta = delta_time / 1000000;
-VolumeMusic = 0.1;
-VolumeSound = 0.35;
+VolumeMusic = 0.5;
+VolumeSound = 0.65;
 IndexMusic = -1;
 Wait = 0;
 MenuActualLayer = 0;

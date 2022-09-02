@@ -19,9 +19,9 @@ function scrText(argument0, argument1, argument2, argument3, argument4, argument
 	draw_set_halign(argument4); //Alineacion Horizontal
 	draw_set_font(argument5); //Fuente
 	draw_set_color(argument6); //Color Trasero
-	draw_text_ext_transformed_color(argument0+1,argument1+1,argument2,argument8,argument9,argument10,argument11,argument12,argument6,argument6,argument6,argument6,argument13); //X, Y y Texto
+	draw_text_ext_transformed_color(argument0-3,argument1-3,argument2,argument8,argument9,argument10,argument11,argument12,argument6,argument6,argument6,argument6,argument13); //X, Y y Texto
 	draw_set_color(argument7); //Color Frontal
-	draw_text_ext_transformed_color(argument0,argument1,argument2,argument8,argument9,argument10,argument11,argument12,argument7,argument7,argument7,argument7,argument13); //X, Y y Texto
+	draw_text_ext_transformed_color(argument0-4,argument1-4,argument2,argument8,argument9,argument10,argument11,argument12,argument7,argument7,argument7,argument7,argument13); //X, Y y Texto
 }
 
 ///@desc Código para modificar un texto
@@ -47,5 +47,5 @@ function scrSNESText(argument0, argument1, argument2, argument3, argument4, argu
 	//draw_set_color(argument6); //Color Trasero
 	//draw_text_ext_transformed_color(argument0+1,argument1+1,argument2,argument8,argument9,argument10,argument11,argument12,argument6,argument6,argument6,argument6,argument13); //X, Y y Texto
 	draw_set_color(argument7); //Color Frontal
-	draw_text_ext_transformed_color(argument0,argument1,argument2,argument8,argument9,argument10,argument11,argument12,argument7,argument7,argument7,argument7,argument13); //X, Y y Texto
+	draw_text_ext_transformed_color(argument0-4,argument1-4,argument2,argument8,argument9,argument10,argument11,argument12,argument7,argument7,argument7,argument7,argument13); //X, Y y Texto
 }

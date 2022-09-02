@@ -1,9 +1,9 @@
 #region Collision
 if (scrExiste(objSelectorStage))
 {
-	objScreenStage.image_index = other.image_index;
 	if (other.image_index < ds_list_size(Control.StageList))
 	{
+		objScreenStage.image_index = other.image_index;
 		Control.StageId = other.image_index;
 		objScreenStage.Text = scrDameDato(Control.StageList , other.image_index , "Name");
 	}

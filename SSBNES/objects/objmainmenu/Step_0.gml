@@ -74,6 +74,7 @@ if (CooldownButton == 0)
 		if (Layer == 0)
 		{
 			audio_stop_all();
+			Control.IndexMusic = sndOst01Opening;
 			room_goto(rm01ScreenTitle);
 		}
 		if (Layer == 1)

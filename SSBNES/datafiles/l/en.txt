@@ -1,7 +1,123 @@
-[gm]
-l0o0 = "1-P Mode"
-l0o1 = "VS. Mode"
-l0o2 = "Extra"
-l0o3 = "Options"
-l0o4 = "Data"
-mtl0 = "Main menu"
+[TITLE SCREEN]
+ts0 = "PRESS START!"
+
+[MAIN MENU]
+mtl0 = "MAIN MENU"
+
+ml0o0 = "1-P Mode"
+ml0o1 = "VS. Mode"
+ml0o2 = "Extra"
+ml0o3 = "Options"
+ml0o4 = "Data"
+
+ml0d0 = "Solo Smash!"
+ml0d1 = "Multiplayer battles!"
+ml0d2 = "View extra content."
+ml0d3 = "Game setup."
+ml0d4 = "View game records."
+
+ml0e0 = "Regular Ma.#Event Ma.#Stadium#Training"
+ml0e1 = "Achievements#Tournament#Special Rul.#Custom Rul.#Name Entry"
+ml0e2 = "Gallery#Lottery#Collection#Achievemen.#Stage Build"
+ml0e3 = "Language#Controls#Audio#Graphics#Erase Data"
+ml0e4 = "Archives#Sound Test#Melee Rec.#Special#Discord"
+
+[1-P MODE]
+mtl1 = "1-P MODE"
+
+ml1o0 = "Regular Mat."
+ml1o1 = "Event Match"
+ml1o2 = "Stadium"
+ml1o3 = "Training"
+
+ml1d0 = "Multiple levels of standard Smash."
+ml1d1 = "Special Smash situation matches."
+ml1d2 = "Mini-game testing ground."
+ml1d3 = "Free training for honing skills."
+
+ml1e0 = "Classic#Adventure#All-Star"
+ml1e2 = "Target Tes.#Platform T.#Race Test#Multi-Man"
+
+[REGULAR MATCH]
+mtl2 = "REGULAR MATCH"
+
+ml2o0 = "Classic"
+ml2o1 = "Adventure"
+ml2o2 = "All-Star"
+
+ml2d0 = "Defeat each foe to advance."
+ml2d1 = "Battle though various stages."
+ml2d2 = "Conquer all enemies using."
+
+[STADIUM]
+mtl3 = "STADIUM"
+
+ml3o0 = "Target Test"
+ml3o1 = "Platform Test"
+ml3o2 = "Race Test"
+ml3o3 = "Multi-Man"
+
+ml3d0 = "Smash ten targets!"
+ml3d1 = "Step on ten platforms!"
+ml3d2 = "Get out of the room!"
+ml3d3 = "Fight for your life! Fight!"
+
+[VS. MODE]
+mtl4 = "VS. MODE"
+
+ml4o0 = "Melee"
+ml4o1 = "Tournament"
+ml4o2 = "Special Rules"
+ml4o3 = "Custom Rules"
+ml4o4 = "Name Entry"
+
+ml4d0 = "A standard Smash battle."
+ml4d1 = "A tournament for up to 64 players."
+ml4d2 = "A melee with special rules."
+ml4d3 = "Change the melee rules here."
+ml4d4 = "Enter your name."
+
+[EXTRA]
+mtl5 = "EXTRA"
+
+ml5o0 = "Gallery"
+ml5o1 = "Lottery"
+ml5o2 = "Collection"
+ml5o3 = "Achievements"
+ml5o4 = "Stage Build"
+
+ml5d0 = "View trophies you've collected."
+ml5d1 = "Use the coins to get trophies!"
+ml5d2 = "View your entire trophy collection."
+ml5d3 = "View cards you've collected."
+ml5d4 = "Create your own battle stage!"
+
+[OPTIONS]
+mtl6 = "OPTIONS"
+
+ml6o0 = "Language"
+ml6o1 = "Controls"
+ml6o2 = "Audio"
+ml6o3 = "Graphics"
+ml6o4 = "Erase Data"
+
+ml6d0 = "Select language options."
+ml6d1 = "Configure your controls."
+ml6d2 = "Select audio options."
+ml6d3 = "Select graphic options."
+ml6d4 = "Erase melee records, etc."
+
+[DATA]
+mtl7 = "DATA"
+
+ml7o0 = "Archives"
+ml7o1 = "Sound Test"
+ml7o2 = "Melee Records"
+ml7o3 = "Special"
+ml7o4 = "Discord"
+
+ml7d0 = "View Smash Bros. movies."
+ml7d1 = "Listen to music and sound effects."
+ml7d2 = "View various combat records."
+ml7d3 = "Information on hidden elements."
+ml7d4 = "Join our Discord server!"

@@ -6,6 +6,11 @@ function scrDataMusic()
 	/*1*/scrMapMusic( scrCrearLista("Final Destination" , "Coatlesscarl" , "Super Smash Bros." , scrCrearLista(sndOst08FinalDestination_a , sndOst08FinalDestination_b) ) );
 	/*2*/scrMapMusic( scrCrearLista("Menu Theme" , "Bulby" , "Super Smash Bros." , scrCrearLista(sndOst02Menu) ) );
 	/*3*/scrMapMusic( scrCrearLista("Underground" , "Famulator" , "Super Mario Bros." , scrCrearLista(sndOst09Underground) ) );
+	/*4*/scrMapMusic( scrCrearLista("Bonus 1" , "Tater-Tot Tunes" , "Super Smash Bros." , scrCrearLista(sndOst04Bonus1_a , sndOst04Bonus1_b) ) );
+	/*5*/scrMapMusic( scrCrearLista("Bonus 2" , "Tater-Tot Tunes" , "Super Smash Bros." , scrCrearLista(sndOst05Bonus2_a , sndOst05Bonus2_b) ) );
+	/*6*/scrMapMusic( scrCrearLista("Lotery" , "ZeroJanitor" , "Super Smash Bros." , scrCrearLista(sndOst06Lotery_a , sndOst06Lotery_b) ) );
+	/*7*/scrMapMusic( scrCrearLista("Menu 2 Theme" , "Bulby" , "Super Smash Bros." , scrCrearLista(sndOst03Menu2_a , sndOst03Menu2_b) ) );
+	/*8*/scrMapMusic( scrCrearLista("Opening" , "Coatlesscarl" , "Super Smash Bros." , scrCrearLista(sndOst01Opening) ) );
 	
 }
 	

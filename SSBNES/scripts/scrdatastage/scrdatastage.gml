@@ -2,12 +2,12 @@ function scrDataStage()
 {
 	Control.StageList = ds_list_create();
 	
-	/*0*/scrMapStage( scrCrearLista("Test sanctuary" , "SSB" , rmStgTest , "Battlefield"));
-	/*1*/scrMapStage( scrCrearLista("Battlefield 0" , "SSB" , rmStgBattlefield0 , "Battlefield"));
-	/*2*/scrMapStage( scrCrearLista("Battlefield 1" , "SSB" , rmStgBattlefield1 , "Battlefield"));
-	/*3*/scrMapStage( scrCrearLista("Final destination" , "SSB" , rmStgFinalDestination , "Final Destination"));
-	/*4*/scrMapStage( scrCrearLista("Underground" , "SMB" , rmStgUnderworld , "Underground"));
-	/*5*/scrMapStage( scrCrearLista("Tower" , "SSB" , rmStgTower ,  "Battlefield"));
+	/*0*/scrMapStage( scrCrearLista("TEST#SANCTUARY" , "Super Smash Bros." , rmStgTest , "Bonus 1"));
+	/*1*/scrMapStage( scrCrearLista("BATTLEFIELD" , "Super Smash Bros." , rmStgBattlefield0 , "Menu 2 Theme"));
+	/*2*/scrMapStage( scrCrearLista("BATTLEFIELD" , "Super Smash Bros." , rmStgBattlefield1 , "Battlefield"));
+	/*3*/scrMapStage( scrCrearLista("FINAL#DESTINATION" , "Super Smash Bros." , rmStgFinalDestination , "Final Destination"));
+	/*4*/scrMapStage( scrCrearLista("UNDERGROUND" , "Super Mario Bros." , rmStgUnderworld , "Underground"));
+	/*5*/scrMapStage( scrCrearLista("THE#TOWER" , "Super Smash Bros." , rmStgTower ,  "Lotery"));
 	
 }
 	

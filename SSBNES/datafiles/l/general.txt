@@ -1,0 +1,5 @@
+[general]
+l_0 = "en"
+l_1 = "es"
+l_2 = "pt"
+l_3 = "fr"

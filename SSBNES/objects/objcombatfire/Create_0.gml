@@ -7,3 +7,4 @@ image_speed = .5;
 Rebound = 0;
 scrSound(sfxMarioFireball);
 #endregion
+
