@@ -145,7 +145,17 @@ if (CooldownSwap == 0 and !Platform)
 			}
 		}
 	}
-
+	
+	if (HorizontalDirection != 0)
+	{
+		HorizontalMovement = (HorizontalDirection * (AcelerationValue)) * AcelerationPostDamage;
+	}
+	else
+	{
+		HorizontalMovement = ((AcelerationValue) * ScaleX) * AcelerationPostDamage;
+	}
+	
+	/*
 	if (Damaged == 0)
 	{
 		if (HorizontalDirection != 0)
@@ -161,6 +171,7 @@ if (CooldownSwap == 0 and !Platform)
 	{
 		HorizontalMovement = SavedHorizontalDirection * SavedHorizontalMovement;
 	}
+	*/
 
 	if (Damaged == 0)
 	{
@@ -190,7 +201,7 @@ else
 #endregion
 
 #region Border
-if ((TimeAttacking > 0 or AttackingHold or Attacking) and !place_meeting(x + sign(HorizontalMovement)*8 , y + 1 , parCollision) and place_meeting(x , y + 1 , parCollision) and !place_meeting(x , y , parCollision))
+if ((TimeAttacking > 0 or AttackingHold or Attacking) and !place_meeting(x + sign(HorizontalMovement)*8 , y + 4 , parCollision) and place_meeting(x , y + 1 , parCollision) and !place_meeting(x , y , parCollision))
 {
 	HorizontalMovement = 0;
 	AcelerationValue = 0;
@@ -406,8 +417,6 @@ if (place_meeting(x , y + VerticalMovement , objBlockSlope45))
 	}
 	scrStepOnFloor();
 }
-
-
 
 if (place_meeting(x + HorizontalMovement , y , parSolid))
 {
@@ -662,7 +671,7 @@ else
 if (y > room_height + 64)
 {
 	scrSound(sfxKO);
-	if (Control.CharacterLife[Position] > 1)
+	if (Control.CharacterLife[Position] > 0)
 	{
 		var Character = instance_create_depth(room_width/2 , y , depth , object_index);
 		Character.Position = Position;

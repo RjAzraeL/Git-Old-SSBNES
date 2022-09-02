@@ -31,6 +31,7 @@ LastDamage = 0;
 BlowsReceivedList = ds_list_create();
 SavedHorizontalDirection = 0;
 SavedHorizontalMovement = 0;
+AcelerationPostDamage = 1;
 PlusY = 0;
 _PlusY = 0;
 FallAceleration = .01;
