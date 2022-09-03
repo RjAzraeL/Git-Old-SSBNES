@@ -93,13 +93,9 @@ else
 var HorizontalDirection = 0;
 if (CooldownSwap == 0 and !Platform)
 {
-	if (!Duck and !RootAttack and Damaged == 0 and TimeAttacking == 0)
+	if (!Duck and !RootAttack and TimeAttacking == 0)
 	{
 		HorizontalDirection = RightButtonActive - LeftButtonActive;
-	}
-	if (Damaged > 0)
-	{
-		HorizontalDirection = SavedHorizontalDirection;
 	}
 	
 	if (Damaged == 0)
@@ -146,13 +142,20 @@ if (CooldownSwap == 0 and !Platform)
 		}
 	}
 	
-	if (HorizontalDirection != 0)
+	if (Damaged == 0)
 	{
-		HorizontalMovement = (HorizontalDirection * (AcelerationValue)) * AcelerationPostDamage;
+		if (HorizontalDirection != 0)
+		{
+			HorizontalMovement = (HorizontalDirection * (AcelerationValue)) * AcelerationPostDamage;
+		}
+		else
+		{
+			HorizontalMovement = ((AcelerationValue) * ScaleX) * AcelerationPostDamage;
+		}
 	}
 	else
 	{
-		HorizontalMovement = ((AcelerationValue) * ScaleX) * AcelerationPostDamage;
+		HorizontalMovement = SavedHorizontalMovement;
 	}
 	if (Damaged == 0)
 	{
