@@ -146,11 +146,11 @@ if (CooldownSwap == 0 and !Platform)
 	{
 		if (HorizontalDirection != 0)
 		{
-			HorizontalMovement = (HorizontalDirection * (AcelerationValue)) * AcelerationPostDamage;
+			HorizontalMovement = (HorizontalDirection * (AcelerationValue + MovementPostDamage)) * AcelerationPostDamage;
 		}
 		else
 		{
-			HorizontalMovement = ((AcelerationValue) * ScaleX) * AcelerationPostDamage;
+			HorizontalMovement = ((AcelerationValue + MovementPostDamage) * ScaleX) * AcelerationPostDamage;
 		}
 	}
 	else
@@ -162,6 +162,10 @@ if (CooldownSwap == 0 and !Platform)
 		if (AcelerationPostDamage < 1)
 		{
 			AcelerationPostDamage += .05;
+		}
+		if (MovementPostDamage > 0)
+		{
+			MovementPostDamage -= .05;
 		}
 	}
 	else
@@ -421,6 +425,15 @@ if (Attacking or TimeAttacking > 0)
 #endregion
 
 #region Collision
+
+if (place_meeting(x + HorizontalMovement , y + VerticalMovement , parCollision))
+{
+	if (Damaged != 0)
+	{
+		HorizontalMovement *= -1;
+		VerticalMovement *= -1;
+	}
+}
 
 if (place_meeting(x , y + VerticalMovement , objBlockSlope45))
 {

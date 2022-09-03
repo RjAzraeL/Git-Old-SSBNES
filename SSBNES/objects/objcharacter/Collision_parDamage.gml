@@ -6,6 +6,9 @@ if (other.Creator != self and ds_list_find_index(BlowsReceivedList , other.id) =
 	CooldownDamage = 5;
 	if (scrDameDato(Control.MovList , other.Ide , "Can Knockback"))
 	{
+		RootAttack = false;
+		Attacking = false;
+		
 		var PostDamage = LifePorcentage;
 		var NewKnockbackScaling = other.KnockbackScaling/100;
 		var RVar = 1;
@@ -35,25 +38,19 @@ if (other.Creator != self and ds_list_find_index(BlowsReceivedList , other.id) =
 		}*/
 		Dir = point_direction(other.x , other.y , x , y);
 		LastDirectionDamaged = Dir;
-		SavedHorizontalMovement = lengthdir_x( LastDamage/4 , Dir);
-		VerticalMovement = lengthdir_y( LastDamage/2  , Dir);
+		SavedHorizontalMovement = lengthdir_x( 3 + (LastDamage/4) , Dir);
+		VerticalMovement = lengthdir_y( 3 + (LastDamage/2)  , Dir);
+		MovementPostDamage = SavedHorizontalMovement;
 	}
 	else
 	{
 		Damaged = 5;
 		var Dir = 0;
-		if (x < other.x)
-		{
-			Dir = 100;
-			SavedHorizontalDirection = -1;
-		}
-		else
-		{
-			Dir = 80;
-			SavedHorizontalDirection = 1;
-		}
+		Dir = point_direction(other.x , other.y , x , y);
+		LastDirectionDamaged = Dir;
 		SavedHorizontalMovement = lengthdir_x( 3 , Dir);
 		VerticalMovement = lengthdir_y( 3  , Dir);
+		MovementPostDamage = SavedHorizontalMovement;
 	}
 	if (other.Destroyable)
 	{

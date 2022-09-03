@@ -75,6 +75,6 @@ if (scrIsOutside(self))
 		draw_sprite(sprArrowOutside , 6 , x , room_height-8 );
 	}
 }
-//draw_set_font(fntNormal);
-//draw_text(x , y - 64 , LastDirectionDamaged);
+draw_set_font(fntNormal);
+draw_text(x , y - 32 , MovementPostDamage);
 #endregion
