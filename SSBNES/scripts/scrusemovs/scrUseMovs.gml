@@ -242,7 +242,7 @@ function scrUseMovs()
 					}
 				}
 			}
-			else if (AerialAvailable and AttackButtonPressedActive and (UpButtonActive) and (TimeButtonUp != 0))
+			else if (scrInAir() and AttackButtonPressedActive and UpButtonActive and (TimeButtonUp != 0))
 			{
 				switch(MovAerialUp)
 				{

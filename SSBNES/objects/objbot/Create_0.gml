@@ -1,6 +1,7 @@
 #region Set variables
 event_inherited();
 Mentality = "Range";
+Recover = false;
 DownButtonPressedActive = false;
 LeftButtonPressedActive = false;
 RightButtonPressedActive = false;

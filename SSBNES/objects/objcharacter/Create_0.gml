@@ -2,6 +2,7 @@
 y = -sprite_height;
 TimeHolding = 0;
 CooldownDamage = 0;
+FallingVoid = false;
 Stun = false;
 Root = false;
 Platform = true;

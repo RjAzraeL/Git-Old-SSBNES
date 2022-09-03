@@ -430,12 +430,18 @@ if (Attacking or TimeAttacking > 0)
 
 #region Collision
 
-if (place_meeting(x + HorizontalMovement , y + VerticalMovement , parCollision))
+if (place_meeting(x + HorizontalMovement , y , parSolid))
 {
 	if (Damaged != 0)
 	{
-		HorizontalMovement *= -1;
-		VerticalMovement *= -1;
+		HorizontalMovement = -HorizontalMovement;
+	}
+}
+if (place_meeting(x , y + VerticalMovement , parSolid))
+{
+	if (Damaged != 0)
+	{
+		VerticalMovement = -VerticalMovement;
 	}
 }
 

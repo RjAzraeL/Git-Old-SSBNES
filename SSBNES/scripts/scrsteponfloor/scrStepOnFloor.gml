@@ -18,3 +18,11 @@ function scrStepOnFloor()
 	}
 	VerticalMovement = 0;
 }
+function scrInAir()
+{
+	if (VerticalMovement > 0)
+	{
+		return true;
+	}
+	return false;
+}
