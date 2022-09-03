@@ -7,6 +7,7 @@ Root = false;
 Platform = true;
 Inmune = true;
 ActualMov = -1;
+LastDirectionDamaged = 0;
 InmuneCooldown = 0;
 InmuneCooldownFull = 0;
 PlatformCooldown = Control.PlatformTimeAvailable;

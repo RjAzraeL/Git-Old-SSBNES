@@ -154,7 +154,17 @@ if (CooldownSwap == 0 and !Platform)
 	{
 		HorizontalMovement = ((AcelerationValue) * ScaleX) * AcelerationPostDamage;
 	}
-	
+	if (Damaged == 0)
+	{
+		if (AcelerationPostDamage < 1)
+		{
+			AcelerationPostDamage += .05;
+		}
+	}
+	else
+	{
+		AcelerationPostDamage = 0;
+	}
 	/*
 	if (Damaged == 0)
 	{
