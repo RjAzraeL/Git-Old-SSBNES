@@ -52,6 +52,7 @@ if (other.Creator != self and ds_list_find_index(BlowsReceivedList , other.id) =
 		VerticalMovement = lengthdir_y( 3  , Dir);
 		MovementPostDamage = SavedHorizontalMovement;
 	}
+	
 	if (other.Destroyable)
 	{
 		instance_destroy(other);

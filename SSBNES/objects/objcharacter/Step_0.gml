@@ -146,11 +146,11 @@ if (CooldownSwap == 0 and !Platform)
 	{
 		if (HorizontalDirection != 0)
 		{
-			HorizontalMovement = (HorizontalDirection * (AcelerationValue + MovementPostDamage)) * AcelerationPostDamage;
+			HorizontalMovement = ((HorizontalDirection * (AcelerationValue)) + MovementPostDamage ) * AcelerationPostDamage;
 		}
 		else
 		{
-			HorizontalMovement = ((AcelerationValue + MovementPostDamage) * ScaleX) * AcelerationPostDamage;
+			HorizontalMovement = (((AcelerationValue) * ScaleX) + MovementPostDamage ) * AcelerationPostDamage;
 		}
 	}
 	else
@@ -163,9 +163,13 @@ if (CooldownSwap == 0 and !Platform)
 		{
 			AcelerationPostDamage += .05;
 		}
-		if (MovementPostDamage > 0)
+		if (MovementPostDamage != 0)
 		{
-			MovementPostDamage -= .05;
+			MovementPostDamage = lerp(MovementPostDamage , 0 , .1);
+			if (MovementPostDamage < 0.1 and MovementPostDamage > -0.1)
+			{
+				MovementPostDamage = 0;
+			}
 		}
 	}
 	else
