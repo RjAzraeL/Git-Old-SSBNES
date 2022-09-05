@@ -79,8 +79,8 @@
     "PhysicsWorldPixToMetres": 0.1,
   },
   "parent": {
-    "name": "Rooms",
-    "path": "folders/Rooms.yy",
+    "name": "General",
+    "path": "folders/Rooms/General.yy",
   },
   "resourceVersion": "1.0",
   "name": "rm04Stage",

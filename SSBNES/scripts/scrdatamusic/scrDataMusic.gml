@@ -11,6 +11,10 @@ function scrDataMusic()
 	/*6*/scrMapMusic( scrCrearLista("Lotery" , "ZeroJanitor" , "Super Smash Bros." , scrCrearLista(sndOst06Lotery_a , sndOst06Lotery_b) ) );
 	/*7*/scrMapMusic( scrCrearLista("Menu 2 Theme" , "Bulby" , "Super Smash Bros." , scrCrearLista(sndOst03Menu2_a , sndOst03Menu2_b) ) );
 	/*8*/scrMapMusic( scrCrearLista("Opening" , "Coatlesscarl" , "Super Smash Bros." , scrCrearLista(sndOst01Opening) ) );
+	/*9*/scrMapMusic( scrCrearLista("TLOZ Overworld" , "Levi Davis" , "The Legend of Zelda" , scrCrearLista(sndOst10TLOZOverworld_a , sndOst10TLOZOverworld_b) ) );
+	/*10*/scrMapMusic( scrCrearLista("SMB Ending" , "Nintendo" , "Super Mario Bros." , scrCrearLista(sndOst11SMBEnding) ) );
+	/*11*/scrMapMusic( scrCrearLista("SMB Overworld" , "Nintendo" , "Super Mario Bros." , scrCrearLista(sndOst12SMBOverworld) ) );
+	/*12*/scrMapMusic( scrCrearLista("Palace" , "Nintendo" , "The Legend of Zelda" , scrCrearLista(sndOst13Palace_a , sndOst13Palace_b) ) );
 	
 }
 	
