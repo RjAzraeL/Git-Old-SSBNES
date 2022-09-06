@@ -223,6 +223,7 @@
     {"id":{"name":"shd_CRT_shader","path":"shaders/shd_CRT_shader/shd_CRT_shader.yy",},"order":0,},
     {"id":{"name":"rm03Versus","path":"rooms/rm03Versus/rm03Versus.yy",},"order":2,},
     {"id":{"name":"scrLayerMainMenu","path":"scripts/scrLayerMainMenu/scrLayerMainMenu.yy",},"order":13,},
+    {"id":{"name":"scrResetStats","path":"scripts/scrResetStats/scrResetStats.yy",},"order":11,},
     {"id":{"name":"sprStgLy2aHyruleForest131","path":"sprites/sprStgLy2aHyruleForest131/sprStgLy2aHyruleForest131.yy",},"order":3,},
     {"id":{"name":"sprChMarioFireball","path":"sprites/sprChMarioFireball/sprChMarioFireball.yy",},"order":2,},
     {"id":{"name":"sprMenuPanel3","path":"sprites/sprMenuPanel3/sprMenuPanel3.yy",},"order":19,},

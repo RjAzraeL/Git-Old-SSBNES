@@ -15,6 +15,7 @@ else if (room == rm03Versus)
 if (BattleLevel)
 {
 	scrSetMusic(scrDameDato(Control.StageList , StageId , "Music"));
+	scrResetStats();
 }
 
 #endregion

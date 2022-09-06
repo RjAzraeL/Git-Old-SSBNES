@@ -1,9 +1,4 @@
 {
-  "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
-  },
-  "name": "tlsStgLy1aMushroomKingdomI",
   "spriteId": {
     "name": "sprStgLy1aMushroomKingdomI",
     "path": "sprites/sprStgLy1aMushroomKingdomI/sprStgLy1aMushroomKingdomI.yy",
@@ -14,9 +9,13 @@
   "tileyoff": 0,
   "tilehsep": 0,
   "tilevsep": 0,
+  "spriteNoExport": true,
+  "textureGroupId": {
+    "name": "Default",
+    "path": "texturegroups/Default",
+  },
   "out_tilehborder": 2,
   "out_tilevborder": 2,
-  "spriteNoExport": true,
   "out_columns": 11,
   "tile_count": 120,
   "autoTileSets": [],
@@ -70,7 +69,7 @@
         35,
       ],"resourceVersion":"1.0","name":"animation_8","tags":[],"resourceType":"GMTileAnimation",},
   ],
-  "tileAnimationSpeed": 15.0,
+  "tileAnimationSpeed": 6.0,
   "tileAnimation": {
     "FrameData": [
       0,
@@ -566,6 +565,7 @@
     "path": "folders/Sprites/Stages/Mushroom Kingdom I.yy",
   },
   "resourceVersion": "1.0",
+  "name": "tlsStgLy1aMushroomKingdomI",
   "tags": [],
   "resourceType": "GMTileSet",
 }
