@@ -8,7 +8,7 @@ function scrDataStage()
 	//DEMO
 	/*2*/scrMapStage( scrCrearLista("BATTLEFIELD" , "Super Smash Bros." , rmStgBattlefield , "Battlefield"));
 	/*3*/scrMapStage( scrCrearLista("FINAL#DESTINATION" , "Super Smash Bros." , rmStgFinalDestination , "Final Destination"));
-	/*4*/scrMapStage( scrCrearLista("MUSHROOM#KINGDOM I" , "Super Mario Bros." , rmStgUnderworld , "SMB Overworld"));	
+	/*4*/scrMapStage( scrCrearLista("MUSHROOM#KINGDOM I" , "Super Mario Bros." , rmStgMushroomKingdomI , "SMB Overworld"));	
 	/*5*/scrMapStage( scrCrearLista("BOWSER#CASTLE" , "Super Mario Bros." , rmStgBowserCastle , "Lotery"));	
 	/*6*/scrMapStage( scrCrearLista("HYRULE#FOREST" , "The Legend of Zelda" , rmStgHyruleForest ,  "TLOZ Overworld"));	
 	/*7*/scrMapStage( scrCrearLista("PARAPA#PALACE" , "The Legend of Zelda" , rmStgParapaPalace ,  "Palace"));	
