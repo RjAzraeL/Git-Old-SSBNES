@@ -144,7 +144,7 @@ if (CooldownSwap == 0 and !Platform)
 	
 	if (Damaged == 0)
 	{
-		if (SavedHorizontalMovement != 0)
+		if (SavedHorizontalMovement == 0)
 		{
 			if (HorizontalDirection != 0)
 			{
@@ -436,79 +436,52 @@ if (Attacking or TimeAttacking > 0)
 #endregion
 
 #region Collision
-
-if (place_meeting(x , y + VerticalMovement+1 , objBlockSlope45))
+if (Damaged != 0)
 {
-	while (!place_meeting(x , y  + sign(VerticalMovement+1) , objBlockSlope45))
+	if (place_meeting(x + HorizontalMovement , y , parSolid))
 	{
-		y += sign(VerticalMovement+1);
+		HorizontalMovement *= -1;
 	}
-	scrStepOnFloor();
-}
-
-if (place_meeting(x + HorizontalMovement , y , parSolid))
-{
-	while (!place_meeting(x + sign(HorizontalMovement) , y , parSolid))
+	if (place_meeting(x , y + VerticalMovement , parSolid))
 	{
-		x += sign(HorizontalMovement);
+		VerticalMovement *= -1;
 	}
-	HorizontalMovement = 0;
-}
-if (!place_meeting(x , y , objBlockTransferable) and (VerticalMovement >= 0 and !DuckFall) and (GravityFallDownActive == 0) and Damaged == 0)
-{
-	if (place_meeting(x , y + VerticalMovement , objBlockTransferable))
+	if (!place_meeting(x , y , objBlockTransferable) and (VerticalMovement >= 0))
 	{
-		while (!place_meeting(x , y  + sign(VerticalMovement) , objBlockTransferable))
+		if (place_meeting(x , y + VerticalMovement , objBlockTransferable))
 		{
-			y += sign(VerticalMovement);
+			VerticalMovement *= -1;
+		}
+	}
+	if (place_meeting(x , y + VerticalMovement+1 , objBlockSlope45))
+	{
+		VerticalMovement *= -1;
+	}
+	if (place_meeting(x + HorizontalMovement + 1 , y , objBlockSlope45))
+	{
+		HorizontalMovement *= -1;
+	}
+}
+else
+{
+	if (place_meeting(x , y + VerticalMovement+1 , objBlockSlope45))
+	{
+		while (!place_meeting(x , y  + sign(VerticalMovement+1) , objBlockSlope45))
+		{
+			y += sign(VerticalMovement+1);
 		}
 		scrStepOnFloor();
 	}
-}
-if (!place_meeting(x , y + 1 , parCollision) and HorizontalMovement >= 0)
-{
-	FallReady = false;
-}
 
-if (place_meeting(x , y + VerticalMovement , parSolid))
-{
-	while (!place_meeting(x , y  + sign(VerticalMovement) , parSolid))
-	{
-		y += sign(VerticalMovement);
-	}
-	scrStepOnFloor();
-}
-
-if (place_meeting(x + HorizontalMovement , y  + VerticalMovement, parSolid))
-{
-	while (!place_meeting(x + sign(HorizontalMovement) , y + sign(VerticalMovement) , parSolid))
-	{
-		x += sign(HorizontalMovement);
-		y += sign(VerticalMovement);
-	}
-	HorizontalMovement = 0;
-	VerticalMovement = 0;
-}
-
-if (Damaged != 0)
-{
 	if (place_meeting(x + HorizontalMovement , y , parSolid))
 	{
 		while (!place_meeting(x + sign(HorizontalMovement) , y , parSolid))
 		{
 			x += sign(HorizontalMovement);
 		}
-		HorizontalMovement *= -1;
+		HorizontalMovement = 0;
 	}
-	if (place_meeting(x + VerticalMovement , y , parSolid))
-	{
-		while (!place_meeting(x , y + VerticalMovement , parSolid))
-		{
-			y += sign(VerticalMovement);
-		}
-		VerticalMovement *= -1;
-	}
-	if (!place_meeting(x , y , objBlockTransferable) and (VerticalMovement >= 0))
+	if (!place_meeting(x , y , objBlockTransferable) and (VerticalMovement >= 0 and !DuckFall) and (GravityFallDownActive == 0) and Damaged == 0)
 	{
 		if (place_meeting(x , y + VerticalMovement , objBlockTransferable))
 		{
@@ -516,8 +489,32 @@ if (Damaged != 0)
 			{
 				y += sign(VerticalMovement);
 			}
-			VerticalMovement *= -1;
+			scrStepOnFloor();
 		}
+	}
+	if (!place_meeting(x , y + 1 , parCollision) and HorizontalMovement >= 0)
+	{
+		FallReady = false;
+	}
+
+	if (place_meeting(x , y + VerticalMovement , parSolid))
+	{
+		while (!place_meeting(x , y  + sign(VerticalMovement) , parSolid))
+		{
+			y += sign(VerticalMovement);
+		}
+		scrStepOnFloor();
+	}
+
+	if (place_meeting(x + HorizontalMovement , y  + VerticalMovement, parSolid))
+	{
+		while (!place_meeting(x + sign(HorizontalMovement) , y + sign(VerticalMovement) , parSolid))
+		{
+			x += sign(HorizontalMovement);
+			y += sign(VerticalMovement);
+		}
+		HorizontalMovement = 0;
+		VerticalMovement = 0;
 	}
 }
 
