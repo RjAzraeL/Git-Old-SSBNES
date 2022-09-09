@@ -168,7 +168,7 @@ if (CooldownSwap == 0 and !Platform)
 	{
 		if (AcelerationPostDamage < 1)
 		{
-			AcelerationPostDamage += .01;
+			AcelerationPostDamage += .05;
 		}
 		if (SavedHorizontalMovement != 0)
 		{

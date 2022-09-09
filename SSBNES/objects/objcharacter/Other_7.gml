@@ -15,6 +15,7 @@ if (sprite_index = SpriteDuck)
 }
 if (Attacking or TimeAttacking > 0)
 {
+	ProxMovs = 0;
 	image_speed = 0;
 	image_index = image_number-1;
 	RootAttack = false;

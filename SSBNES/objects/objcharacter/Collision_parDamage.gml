@@ -4,22 +4,32 @@ if (other.Creator != self and ds_list_find_index(BlowsReceivedList , other.id) =
 	LifePorcentage += round(other.Power);
 	ds_list_add(BlowsReceivedList , other.id);
 	CooldownDamage = 5;
+	RootAttack = false;
+	Attacking = false;
+	TimeAttacking = 0;
+	if (ProxMovs > 0)
+	{
+		for (var i = 0 ; i < ProxMovs ; i++)
+		{
+			if (ds_list_size(MoveQueue) > 0)
+			{
+				ds_list_delete(MoveQueue , 0);
+			}
+		}
+	}
 	if (scrDameDato(Control.MovList , other.Ide , "Can Knockback"))
 	{
-		RootAttack = false;
-		Attacking = false;
-		
 		var PostDamage = LifePorcentage;
 		var NewKnockbackScaling = other.KnockbackScaling/100;
 		var RVar = 1;
 	
-		var ec0 = (PostDamage / 10);
+		var ec0 = (PostDamage / 8);
 		var ec1 = (PostDamage * other.Power) / 20;
 		var ec2 = (200 / (Weight + 100)) * 1.4;
 		var PowerFormula = ( ( ( ( ( ec0 + ec1 ) * ec2 ) + 18) * NewKnockbackScaling ) + other.Power ) * RVar;
 	
-		LastDamage = PowerFormula/10;
-		Damaged = round(PowerFormula/10);
+		LastDamage = PowerFormula/8;
+		Damaged = round(PowerFormula/8);
 		var Dir = 0;
 		var AngleDireference = LifePorcentage;
 		if (AngleDireference >= 60)

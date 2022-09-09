@@ -42,3 +42,12 @@ function scrSmallJump(HorizontalDirection)
 		ScaleXSprite = sign(HorizontalDirection);
 	}
 }
+
+///@arg jump_value
+function scrFreeJump(Value)
+{
+	if (!place_meeting(x , y - Value , parSolid) and !place_meeting(x , y - Value , objBlockSlope45))
+	{
+		VerticalMovement = -Value;
+	}
+}

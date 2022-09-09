@@ -1,6 +1,7 @@
 #region Set variables
 y = -sprite_height;
 TimeHolding = 0;
+ProxMovs = 0;
 CooldownDamage = 0;
 FallingVoid = false;
 Stun = false;
