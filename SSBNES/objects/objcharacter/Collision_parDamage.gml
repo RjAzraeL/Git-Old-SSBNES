@@ -7,6 +7,7 @@ if (other.Creator != self and ds_list_find_index(BlowsReceivedList , other.id) =
 	RootAttack = false;
 	Attacking = false;
 	TimeAttacking = 0;
+	TimeHolding = 0;
 	scrCleanMoveQueue(self);
 	if (scrDameDato(Control.MovList , other.Ide , "Can Knockback"))
 	{
