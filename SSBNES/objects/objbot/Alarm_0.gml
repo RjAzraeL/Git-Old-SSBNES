@@ -16,19 +16,11 @@ JumpButtonActive = false;
 AttackButtonPressedActive = false;
 AttackButtonReleasedActive = false;
 
-FallingVoid = true;
-for (var i = 0 ; i < room_height - y ; i++)
+if (FallingVoid and VerticalMovement > 0)
 {
-	if (place_meeting(x , y + i , parCollision))
-	{
-		FallingVoid = false;
-	}
-}
-if ((!JumpAvailable and Jumps <= 0 and FallingVoid and y > 100 and VerticalMovement > 0) or Recover)
-{
-	AttackButtonPressedActive = true;
 	UpButtonActive = true;
 	Recover = true;
+	alarm[8] = 5;
 }
 
 if (!FallingVoid)

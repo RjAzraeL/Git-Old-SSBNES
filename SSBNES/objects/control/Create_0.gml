@@ -9,6 +9,7 @@ VolumeMusic = 0.1;
 VolumeSound = 0.1;
 IndexMusic = -1;
 Wait = 0;
+VoidLimitStage = 0;
 MenuActualLayer = 0;
 MenuActualOption = 0;
 CharacterType[0] = -1;

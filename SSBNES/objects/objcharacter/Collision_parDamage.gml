@@ -7,16 +7,7 @@ if (other.Creator != self and ds_list_find_index(BlowsReceivedList , other.id) =
 	RootAttack = false;
 	Attacking = false;
 	TimeAttacking = 0;
-	if (ProxMovs > 0)
-	{
-		for (var i = 0 ; i < ProxMovs ; i++)
-		{
-			if (ds_list_size(MoveQueue) > 0)
-			{
-				ds_list_delete(MoveQueue , 0);
-			}
-		}
-	}
+	scrCleanMoveQueue(self);
 	if (scrDameDato(Control.MovList , other.Ide , "Can Knockback"))
 	{
 		var PostDamage = LifePorcentage;

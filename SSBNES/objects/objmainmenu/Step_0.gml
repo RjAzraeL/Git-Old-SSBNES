@@ -3,6 +3,7 @@ if (CooldownButton == 0)
 {
 	if (Control.JumpButtonPressedActive)
 	{
+		scrSound(sfxButtonOk);
 		if (Layer == 0)
 		{
 			switch(ActualButton)

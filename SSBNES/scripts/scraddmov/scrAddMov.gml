@@ -10,8 +10,6 @@ function scrAddMov(Id , Frame , Entity)
 	ds_list_add(Entity.MoveQueue , Package);
 }
 
-///@arg id
-///@arg frame
 ///@arg entity
 function scrCleanMoveQueue(Entity)
 {

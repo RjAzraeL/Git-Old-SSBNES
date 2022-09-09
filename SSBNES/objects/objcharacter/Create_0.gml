@@ -1,5 +1,6 @@
 #region Set variables
 y = -sprite_height;
+Recovery = true;
 TimeHolding = 0;
 ProxMovs = 0;
 CooldownDamage = 0;
@@ -21,6 +22,7 @@ image_speed = .25;
 SpriteAttackingSpeed = .25;
 Angle = 0;
 Jumps = 5;
+Recover = false;
 GravityFallDownActive = 0;
 VerticalMovementLimitExtra = 0;
 CooldownJump = 0;

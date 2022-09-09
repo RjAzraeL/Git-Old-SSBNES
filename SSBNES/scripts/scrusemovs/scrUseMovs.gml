@@ -242,12 +242,14 @@ function scrUseMovs()
 					}
 				}
 			}
-			else if (scrInAir() and AttackButtonPressedActive and UpButtonActive and (TimeButtonUp != 0))
+			else if (Recovery and scrInAir() and AttackButtonPressedActive and UpButtonActive and (TimeButtonUp != 0))
 			{
 				switch(MovAerialUp)
 				{
 					case(11):
 					{
+						JumpAvailable = 0;
+						Recovery = false;
 						var _IdeMov = 11;
 						scrAddMov(_IdeMov , 0 , self);
 						Attacking = true;

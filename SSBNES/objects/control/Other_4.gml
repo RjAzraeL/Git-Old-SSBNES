@@ -14,6 +14,7 @@ else if (room == rm03Versus)
 
 if (BattleLevel)
 {
+	VoidLimitStage = scrDameDato(Control.StageList , StageId , "Void limit");
 	scrSetMusic(scrDameDato(Control.StageList , StageId , "Music"));
 	scrResetStats();
 }

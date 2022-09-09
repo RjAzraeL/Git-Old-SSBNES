@@ -2,6 +2,7 @@ function scrStepOnFloor()
 {
 	if (VerticalMovement > 0)
 	{
+		Recovery = true;
 		JumpAvailable = Jumps;
 		ActualJumpSprite = 0;
 		VerticalMovementLimitExtra = 0;
