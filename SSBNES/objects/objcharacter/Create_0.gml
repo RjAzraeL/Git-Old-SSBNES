@@ -56,6 +56,7 @@ ScaleX = 1;
 ScaleXSprite = 1;
 LastHorizontalDirection = 1;
 TimeAttacking = 0;
+State = "Idle";
 
 TranceAceleration = 0;
 TranceAcelerationValue = 0;

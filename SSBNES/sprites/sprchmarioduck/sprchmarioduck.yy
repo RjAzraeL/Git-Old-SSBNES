@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "sprChMarioDuck",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,18 +27,14 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"449f6cae-5fcb-42f0-b1d2-91ce6779622d","path":"sprites/sprChMarioDuck/sprChMarioDuck.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"449f6cae-5fcb-42f0-b1d2-91ce6779622d","path":"sprites/sprChMarioDuck/sprChMarioDuck.yy",},"LayerId":{"name":"ef23a6ca-9211-459a-a2a6-33d1f6d27459","path":"sprites/sprChMarioDuck/sprChMarioDuck.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprChMarioDuck","path":"sprites/sprChMarioDuck/sprChMarioDuck.yy",},"resourceVersion":"1.0","name":"449f6cae-5fcb-42f0-b1d2-91ce6779622d","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"f9ff363f-e11e-4737-9ed8-39d88cd0ecd3","path":"sprites/sprChMarioDuck/sprChMarioDuck.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"f9ff363f-e11e-4737-9ed8-39d88cd0ecd3","path":"sprites/sprChMarioDuck/sprChMarioDuck.yy",},"LayerId":{"name":"ef23a6ca-9211-459a-a2a6-33d1f6d27459","path":"sprites/sprChMarioDuck/sprChMarioDuck.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprChMarioDuck","path":"sprites/sprChMarioDuck/sprChMarioDuck.yy",},"resourceVersion":"1.0","name":"f9ff363f-e11e-4737-9ed8-39d88cd0ecd3","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"ec70859a-b1ee-465a-b525-b0253c646f5f","path":"sprites/sprChMarioDuck/sprChMarioDuck.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"ec70859a-b1ee-465a-b525-b0253c646f5f","path":"sprites/sprChMarioDuck/sprChMarioDuck.yy",},"LayerId":{"name":"ef23a6ca-9211-459a-a2a6-33d1f6d27459","path":"sprites/sprChMarioDuck/sprChMarioDuck.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprChMarioDuck","path":"sprites/sprChMarioDuck/sprChMarioDuck.yy",},"resourceVersion":"1.0","name":"ec70859a-b1ee-465a-b525-b0253c646f5f","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"449f6cae-5fcb-42f0-b1d2-91ce6779622d",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f9ff363f-e11e-4737-9ed8-39d88cd0ecd3",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ec70859a-b1ee-465a-b525-b0253c646f5f",},
   ],
   "sequence": {
-    "spriteId": {"name":"sprChMarioDuck","path":"sprites/sprChMarioDuck/sprChMarioDuck.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "sprChMarioDuck",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -46,11 +45,11 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"d1334464-0f93-41af-9c35-cb676721914e","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"449f6cae-5fcb-42f0-b1d2-91ce6779622d","path":"sprites/sprChMarioDuck/sprChMarioDuck.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"b1d313cb-5e43-4975-9494-27bf838496e5","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f9ff363f-e11e-4737-9ed8-39d88cd0ecd3","path":"sprites/sprChMarioDuck/sprChMarioDuck.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"6ad6c0c9-d494-42ef-b92b-20387b72be94","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ec70859a-b1ee-465a-b525-b0253c646f5f","path":"sprites/sprChMarioDuck/sprChMarioDuck.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -66,22 +65,13 @@
     "yorigin": 17,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"sprChMarioDuck","path":"sprites/sprChMarioDuck/sprChMarioDuck.yy",},
-    "resourceVersion": "1.4",
-    "name": "sprChMarioDuck",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"ef23a6ca-9211-459a-a2a6-33d1f6d27459","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"ef23a6ca-9211-459a-a2a6-33d1f6d27459","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "General",
     "path": "folders/Sprites/Characters/Mario/General.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "sprChMarioDuck",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

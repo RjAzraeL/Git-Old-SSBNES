@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "sprChMarioStar",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,18 +27,14 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"1963cf7f-85c7-4671-bd32-09db791a8cf5","path":"sprites/sprChMarioStar/sprChMarioStar.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"1963cf7f-85c7-4671-bd32-09db791a8cf5","path":"sprites/sprChMarioStar/sprChMarioStar.yy",},"LayerId":{"name":"14dc7998-7fa5-418e-b3e6-0b085597d65e","path":"sprites/sprChMarioStar/sprChMarioStar.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprChMarioStar","path":"sprites/sprChMarioStar/sprChMarioStar.yy",},"resourceVersion":"1.0","name":"1963cf7f-85c7-4671-bd32-09db791a8cf5","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"7ec4390d-022b-46ee-9acd-ab7809769da8","path":"sprites/sprChMarioStar/sprChMarioStar.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"7ec4390d-022b-46ee-9acd-ab7809769da8","path":"sprites/sprChMarioStar/sprChMarioStar.yy",},"LayerId":{"name":"14dc7998-7fa5-418e-b3e6-0b085597d65e","path":"sprites/sprChMarioStar/sprChMarioStar.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprChMarioStar","path":"sprites/sprChMarioStar/sprChMarioStar.yy",},"resourceVersion":"1.0","name":"7ec4390d-022b-46ee-9acd-ab7809769da8","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"67b0730f-7365-4b63-94e3-f67483f8c50b","path":"sprites/sprChMarioStar/sprChMarioStar.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"67b0730f-7365-4b63-94e3-f67483f8c50b","path":"sprites/sprChMarioStar/sprChMarioStar.yy",},"LayerId":{"name":"14dc7998-7fa5-418e-b3e6-0b085597d65e","path":"sprites/sprChMarioStar/sprChMarioStar.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprChMarioStar","path":"sprites/sprChMarioStar/sprChMarioStar.yy",},"resourceVersion":"1.0","name":"67b0730f-7365-4b63-94e3-f67483f8c50b","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"1963cf7f-85c7-4671-bd32-09db791a8cf5",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"7ec4390d-022b-46ee-9acd-ab7809769da8",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"67b0730f-7365-4b63-94e3-f67483f8c50b",},
   ],
   "sequence": {
-    "spriteId": {"name":"sprChMarioStar","path":"sprites/sprChMarioStar/sprChMarioStar.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "sprChMarioStar",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -46,11 +45,11 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"92249ac9-35b3-4e14-95fd-34eb1c1d5cdf","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"1963cf7f-85c7-4671-bd32-09db791a8cf5","path":"sprites/sprChMarioStar/sprChMarioStar.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"6ac055fd-cbce-45a8-934e-68643ceccb5c","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7ec4390d-022b-46ee-9acd-ab7809769da8","path":"sprites/sprChMarioStar/sprChMarioStar.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"4a383210-46a1-4543-828c-4ed23b9e9a6b","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"67b0730f-7365-4b63-94e3-f67483f8c50b","path":"sprites/sprChMarioStar/sprChMarioStar.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -66,22 +65,13 @@
     "yorigin": 8,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"sprChMarioStar","path":"sprites/sprChMarioStar/sprChMarioStar.yy",},
-    "resourceVersion": "1.4",
-    "name": "sprChMarioStar",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"14dc7998-7fa5-418e-b3e6-0b085597d65e","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"14dc7998-7fa5-418e-b3e6-0b085597d65e","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Combat",
     "path": "folders/Sprites/Characters/Mario/Combat.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "sprChMarioStar",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

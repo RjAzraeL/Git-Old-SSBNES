@@ -26,16 +26,6 @@ if (other.Creator != self and ds_list_find_index(BlowsReceivedList , other.id) =
 		{
 			AngleDireference = 60;
 		}
-		/*if (other.Creator.ScaleXSprite > 0)
-		{
-			Dir = 135;
-			SavedHorizontalDirection = -1;
-		}
-		else
-		{
-			Dir = 45;
-			SavedHorizontalDirection = 1;
-		}*/
 		Dir = point_direction(other.x , other.y , x , y);
 		LastDirectionDamaged = Dir;
 		SavedHorizontalMovement = lengthdir_x( 3 + (LastDamage/4) , Dir);

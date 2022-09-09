@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "sprChMarioAerialUpMask",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,18 +27,14 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"5d884fa0-9ad4-4e40-86c0-c29d759c9c86","path":"sprites/sprChMarioAerialUpMask/sprChMarioAerialUpMask.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"5d884fa0-9ad4-4e40-86c0-c29d759c9c86","path":"sprites/sprChMarioAerialUpMask/sprChMarioAerialUpMask.yy",},"LayerId":{"name":"b29fda00-5b7d-4876-b5dc-9096227e67ef","path":"sprites/sprChMarioAerialUpMask/sprChMarioAerialUpMask.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprChMarioAerialUpMask","path":"sprites/sprChMarioAerialUpMask/sprChMarioAerialUpMask.yy",},"resourceVersion":"1.0","name":"5d884fa0-9ad4-4e40-86c0-c29d759c9c86","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"c126cec5-01ed-430f-bf8f-9566fb998a3a","path":"sprites/sprChMarioAerialUpMask/sprChMarioAerialUpMask.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"c126cec5-01ed-430f-bf8f-9566fb998a3a","path":"sprites/sprChMarioAerialUpMask/sprChMarioAerialUpMask.yy",},"LayerId":{"name":"b29fda00-5b7d-4876-b5dc-9096227e67ef","path":"sprites/sprChMarioAerialUpMask/sprChMarioAerialUpMask.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprChMarioAerialUpMask","path":"sprites/sprChMarioAerialUpMask/sprChMarioAerialUpMask.yy",},"resourceVersion":"1.0","name":"c126cec5-01ed-430f-bf8f-9566fb998a3a","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"672630b3-8267-437f-93a8-ffe9eea384c4","path":"sprites/sprChMarioAerialUpMask/sprChMarioAerialUpMask.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"672630b3-8267-437f-93a8-ffe9eea384c4","path":"sprites/sprChMarioAerialUpMask/sprChMarioAerialUpMask.yy",},"LayerId":{"name":"b29fda00-5b7d-4876-b5dc-9096227e67ef","path":"sprites/sprChMarioAerialUpMask/sprChMarioAerialUpMask.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprChMarioAerialUpMask","path":"sprites/sprChMarioAerialUpMask/sprChMarioAerialUpMask.yy",},"resourceVersion":"1.0","name":"672630b3-8267-437f-93a8-ffe9eea384c4","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"5d884fa0-9ad4-4e40-86c0-c29d759c9c86",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c126cec5-01ed-430f-bf8f-9566fb998a3a",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"672630b3-8267-437f-93a8-ffe9eea384c4",},
   ],
   "sequence": {
-    "spriteId": {"name":"sprChMarioAerialUpMask","path":"sprites/sprChMarioAerialUpMask/sprChMarioAerialUpMask.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "sprChMarioAerialUpMask",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -43,14 +42,14 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 3.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"fe8ecdd5-4bc0-424d-8e92-193397ce7d50","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"5d884fa0-9ad4-4e40-86c0-c29d759c9c86","path":"sprites/sprChMarioAerialUpMask/sprChMarioAerialUpMask.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"b3076fd2-5e88-4e5d-8d7d-ca6d2faf6b82","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c126cec5-01ed-430f-bf8f-9566fb998a3a","path":"sprites/sprChMarioAerialUpMask/sprChMarioAerialUpMask.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"a56c7d6f-1740-4c6e-b150-2059ee227fbd","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"672630b3-8267-437f-93a8-ffe9eea384c4","path":"sprites/sprChMarioAerialUpMask/sprChMarioAerialUpMask.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"fe8ecdd5-4bc0-424d-8e92-193397ce7d50","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"5d884fa0-9ad4-4e40-86c0-c29d759c9c86","path":"sprites/sprChMarioAerialUpMask/sprChMarioAerialUpMask.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"b3076fd2-5e88-4e5d-8d7d-ca6d2faf6b82","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c126cec5-01ed-430f-bf8f-9566fb998a3a","path":"sprites/sprChMarioAerialUpMask/sprChMarioAerialUpMask.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"a56c7d6f-1740-4c6e-b150-2059ee227fbd","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"672630b3-8267-437f-93a8-ffe9eea384c4","path":"sprites/sprChMarioAerialUpMask/sprChMarioAerialUpMask.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -66,22 +65,13 @@
     "yorigin": 20,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"sprChMarioAerialUpMask","path":"sprites/sprChMarioAerialUpMask/sprChMarioAerialUpMask.yy",},
-    "resourceVersion": "1.4",
-    "name": "sprChMarioAerialUpMask",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"b29fda00-5b7d-4876-b5dc-9096227e67ef","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"b29fda00-5b7d-4876-b5dc-9096227e67ef","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Hurtbox",
     "path": "folders/Sprites/Characters/Mario/Combat/Hurtbox.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "sprChMarioAerialUpMask",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

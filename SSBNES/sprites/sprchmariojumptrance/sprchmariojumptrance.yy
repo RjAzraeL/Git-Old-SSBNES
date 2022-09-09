@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "sprChMarioJumpTrance",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,12 +27,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"9627c565-db3a-40cf-b553-77bdaa02dbe9","path":"sprites/sprChMarioJumpTrance/sprChMarioJumpTrance.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"9627c565-db3a-40cf-b553-77bdaa02dbe9","path":"sprites/sprChMarioJumpTrance/sprChMarioJumpTrance.yy",},"LayerId":{"name":"67977c17-514b-41c8-aff6-41f54bbae716","path":"sprites/sprChMarioJumpTrance/sprChMarioJumpTrance.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprChMarioJumpTrance","path":"sprites/sprChMarioJumpTrance/sprChMarioJumpTrance.yy",},"resourceVersion":"1.0","name":"9627c565-db3a-40cf-b553-77bdaa02dbe9","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"9627c565-db3a-40cf-b553-77bdaa02dbe9",},
   ],
   "sequence": {
-    "spriteId": {"name":"sprChMarioJumpTrance","path":"sprites/sprChMarioJumpTrance/sprChMarioJumpTrance.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "sprChMarioJumpTrance",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -40,9 +43,9 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"4d881c10-e062-4199-945b-57d3e0dc5643","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"9627c565-db3a-40cf-b553-77bdaa02dbe9","path":"sprites/sprChMarioJumpTrance/sprChMarioJumpTrance.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,22 +61,13 @@
     "yorigin": 17,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"sprChMarioJumpTrance","path":"sprites/sprChMarioJumpTrance/sprChMarioJumpTrance.yy",},
-    "resourceVersion": "1.4",
-    "name": "sprChMarioJumpTrance",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"67977c17-514b-41c8-aff6-41f54bbae716","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"67977c17-514b-41c8-aff6-41f54bbae716","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "General",
     "path": "folders/Sprites/Characters/Mario/General.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "sprChMarioJumpTrance",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

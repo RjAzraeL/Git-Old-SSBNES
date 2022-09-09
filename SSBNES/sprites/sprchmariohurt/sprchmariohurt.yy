@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "sprChMarioHurt",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,12 +27,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"da1bd58a-71d8-47eb-aa3c-05fbf5c67585","path":"sprites/sprChMarioHurt/sprChMarioHurt.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"da1bd58a-71d8-47eb-aa3c-05fbf5c67585","path":"sprites/sprChMarioHurt/sprChMarioHurt.yy",},"LayerId":{"name":"a56a9f60-4634-4c0b-ba34-20d9c013880e","path":"sprites/sprChMarioHurt/sprChMarioHurt.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprChMarioHurt","path":"sprites/sprChMarioHurt/sprChMarioHurt.yy",},"resourceVersion":"1.0","name":"da1bd58a-71d8-47eb-aa3c-05fbf5c67585","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"da1bd58a-71d8-47eb-aa3c-05fbf5c67585",},
   ],
   "sequence": {
-    "spriteId": {"name":"sprChMarioHurt","path":"sprites/sprChMarioHurt/sprChMarioHurt.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "sprChMarioHurt",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -40,9 +43,9 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"4542d9ab-a358-44b5-ac72-39a8b7ec2cc4","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"da1bd58a-71d8-47eb-aa3c-05fbf5c67585","path":"sprites/sprChMarioHurt/sprChMarioHurt.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,22 +61,13 @@
     "yorigin": 17,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"sprChMarioHurt","path":"sprites/sprChMarioHurt/sprChMarioHurt.yy",},
-    "resourceVersion": "1.4",
-    "name": "sprChMarioHurt",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"a56a9f60-4634-4c0b-ba34-20d9c013880e","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"a56a9f60-4634-4c0b-ba34-20d9c013880e","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Combat",
     "path": "folders/Sprites/Characters/Mario/Combat.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "sprChMarioHurt",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

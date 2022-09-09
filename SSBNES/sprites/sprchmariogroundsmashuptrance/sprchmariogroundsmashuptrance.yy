@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "sprChMarioGroundSmashUpTrance",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,15 +27,13 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"1bcbe6b0-0463-442b-a0f9-662e11d7539c","path":"sprites/sprChMarioGroundSmashUpTrance/sprChMarioGroundSmashUpTrance.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"1bcbe6b0-0463-442b-a0f9-662e11d7539c","path":"sprites/sprChMarioGroundSmashUpTrance/sprChMarioGroundSmashUpTrance.yy",},"LayerId":{"name":"9525b32f-eecc-4ff5-ae09-49ea833e3d01","path":"sprites/sprChMarioGroundSmashUpTrance/sprChMarioGroundSmashUpTrance.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprChMarioGroundSmashUpTrance","path":"sprites/sprChMarioGroundSmashUpTrance/sprChMarioGroundSmashUpTrance.yy",},"resourceVersion":"1.0","name":"1bcbe6b0-0463-442b-a0f9-662e11d7539c","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"270ac538-c93b-4815-9dc8-997f796e0826","path":"sprites/sprChMarioGroundSmashUpTrance/sprChMarioGroundSmashUpTrance.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"270ac538-c93b-4815-9dc8-997f796e0826","path":"sprites/sprChMarioGroundSmashUpTrance/sprChMarioGroundSmashUpTrance.yy",},"LayerId":{"name":"9525b32f-eecc-4ff5-ae09-49ea833e3d01","path":"sprites/sprChMarioGroundSmashUpTrance/sprChMarioGroundSmashUpTrance.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprChMarioGroundSmashUpTrance","path":"sprites/sprChMarioGroundSmashUpTrance/sprChMarioGroundSmashUpTrance.yy",},"resourceVersion":"1.0","name":"270ac538-c93b-4815-9dc8-997f796e0826","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"1bcbe6b0-0463-442b-a0f9-662e11d7539c",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"270ac538-c93b-4815-9dc8-997f796e0826",},
   ],
   "sequence": {
-    "spriteId": {"name":"sprChMarioGroundSmashUpTrance","path":"sprites/sprChMarioGroundSmashUpTrance/sprChMarioGroundSmashUpTrance.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "sprChMarioGroundSmashUpTrance",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -43,10 +44,10 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"47c8f65e-4a1b-4d0d-9be6-8be6b26fd702","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"1bcbe6b0-0463-442b-a0f9-662e11d7539c","path":"sprites/sprChMarioGroundSmashUpTrance/sprChMarioGroundSmashUpTrance.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"1374c96f-0009-4749-bfbb-862d93b270f2","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"270ac538-c93b-4815-9dc8-997f796e0826","path":"sprites/sprChMarioGroundSmashUpTrance/sprChMarioGroundSmashUpTrance.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -62,22 +63,13 @@
     "yorigin": 17,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"sprChMarioGroundSmashUpTrance","path":"sprites/sprChMarioGroundSmashUpTrance/sprChMarioGroundSmashUpTrance.yy",},
-    "resourceVersion": "1.4",
-    "name": "sprChMarioGroundSmashUpTrance",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"9525b32f-eecc-4ff5-ae09-49ea833e3d01","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"9525b32f-eecc-4ff5-ae09-49ea833e3d01","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Combat",
     "path": "folders/Sprites/Characters/Mario/Combat.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "sprChMarioGroundSmashUpTrance",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

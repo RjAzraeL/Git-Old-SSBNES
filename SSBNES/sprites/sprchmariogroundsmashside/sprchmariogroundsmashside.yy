@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "sprChMarioGroundSmashSide",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,21 +27,15 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"0882814b-f95e-4b6f-b526-f2ffb18cf69b","path":"sprites/sprChMarioGroundSmashSide/sprChMarioGroundSmashSide.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"0882814b-f95e-4b6f-b526-f2ffb18cf69b","path":"sprites/sprChMarioGroundSmashSide/sprChMarioGroundSmashSide.yy",},"LayerId":{"name":"2fce931c-c777-45a8-9bae-e6c8fcd3f329","path":"sprites/sprChMarioGroundSmashSide/sprChMarioGroundSmashSide.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprChMarioGroundSmashSide","path":"sprites/sprChMarioGroundSmashSide/sprChMarioGroundSmashSide.yy",},"resourceVersion":"1.0","name":"0882814b-f95e-4b6f-b526-f2ffb18cf69b","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"0b736085-354d-4c5a-885d-828c34164e14","path":"sprites/sprChMarioGroundSmashSide/sprChMarioGroundSmashSide.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"0b736085-354d-4c5a-885d-828c34164e14","path":"sprites/sprChMarioGroundSmashSide/sprChMarioGroundSmashSide.yy",},"LayerId":{"name":"2fce931c-c777-45a8-9bae-e6c8fcd3f329","path":"sprites/sprChMarioGroundSmashSide/sprChMarioGroundSmashSide.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprChMarioGroundSmashSide","path":"sprites/sprChMarioGroundSmashSide/sprChMarioGroundSmashSide.yy",},"resourceVersion":"1.0","name":"0b736085-354d-4c5a-885d-828c34164e14","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"89c910de-10f9-47a4-9c09-895e7fdd09fa","path":"sprites/sprChMarioGroundSmashSide/sprChMarioGroundSmashSide.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"89c910de-10f9-47a4-9c09-895e7fdd09fa","path":"sprites/sprChMarioGroundSmashSide/sprChMarioGroundSmashSide.yy",},"LayerId":{"name":"2fce931c-c777-45a8-9bae-e6c8fcd3f329","path":"sprites/sprChMarioGroundSmashSide/sprChMarioGroundSmashSide.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprChMarioGroundSmashSide","path":"sprites/sprChMarioGroundSmashSide/sprChMarioGroundSmashSide.yy",},"resourceVersion":"1.0","name":"89c910de-10f9-47a4-9c09-895e7fdd09fa","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"a9515312-fc29-43a2-ba18-3b132a9ae1bf","path":"sprites/sprChMarioGroundSmashSide/sprChMarioGroundSmashSide.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"a9515312-fc29-43a2-ba18-3b132a9ae1bf","path":"sprites/sprChMarioGroundSmashSide/sprChMarioGroundSmashSide.yy",},"LayerId":{"name":"2fce931c-c777-45a8-9bae-e6c8fcd3f329","path":"sprites/sprChMarioGroundSmashSide/sprChMarioGroundSmashSide.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprChMarioGroundSmashSide","path":"sprites/sprChMarioGroundSmashSide/sprChMarioGroundSmashSide.yy",},"resourceVersion":"1.0","name":"a9515312-fc29-43a2-ba18-3b132a9ae1bf","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0882814b-f95e-4b6f-b526-f2ffb18cf69b",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0b736085-354d-4c5a-885d-828c34164e14",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"89c910de-10f9-47a4-9c09-895e7fdd09fa",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a9515312-fc29-43a2-ba18-3b132a9ae1bf",},
   ],
   "sequence": {
-    "spriteId": {"name":"sprChMarioGroundSmashSide","path":"sprites/sprChMarioGroundSmashSide/sprChMarioGroundSmashSide.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "sprChMarioGroundSmashSide",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -49,12 +46,12 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"c415eec4-9ca7-4495-ae49-c35b225b9b8e","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0882814b-f95e-4b6f-b526-f2ffb18cf69b","path":"sprites/sprChMarioGroundSmashSide/sprChMarioGroundSmashSide.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"927d129b-6163-4c2f-8860-9b542fe87207","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0b736085-354d-4c5a-885d-828c34164e14","path":"sprites/sprChMarioGroundSmashSide/sprChMarioGroundSmashSide.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"3d97d0b0-eea3-4931-bcfb-e35032d07f9b","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"89c910de-10f9-47a4-9c09-895e7fdd09fa","path":"sprites/sprChMarioGroundSmashSide/sprChMarioGroundSmashSide.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"60f6c8d5-acea-4730-a04f-532a7093122d","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a9515312-fc29-43a2-ba18-3b132a9ae1bf","path":"sprites/sprChMarioGroundSmashSide/sprChMarioGroundSmashSide.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -70,22 +67,13 @@
     "yorigin": 17,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"sprChMarioGroundSmashSide","path":"sprites/sprChMarioGroundSmashSide/sprChMarioGroundSmashSide.yy",},
-    "resourceVersion": "1.4",
-    "name": "sprChMarioGroundSmashSide",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"2fce931c-c777-45a8-9bae-e6c8fcd3f329","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"2fce931c-c777-45a8-9bae-e6c8fcd3f329","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Combat",
     "path": "folders/Sprites/Characters/Mario/Combat.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "sprChMarioGroundSmashSide",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

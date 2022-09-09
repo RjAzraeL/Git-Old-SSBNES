@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "sprChKirbyHurt",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,12 +27,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"42bd728f-4e43-4a3b-a61f-ae6f8e0d79e0","path":"sprites/sprChKirbyHurt/sprChKirbyHurt.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"42bd728f-4e43-4a3b-a61f-ae6f8e0d79e0","path":"sprites/sprChKirbyHurt/sprChKirbyHurt.yy",},"LayerId":{"name":"e9a789b6-a66d-4432-8df1-884b8d93fa4b","path":"sprites/sprChKirbyHurt/sprChKirbyHurt.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprChKirbyHurt","path":"sprites/sprChKirbyHurt/sprChKirbyHurt.yy",},"resourceVersion":"1.0","name":"42bd728f-4e43-4a3b-a61f-ae6f8e0d79e0","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"42bd728f-4e43-4a3b-a61f-ae6f8e0d79e0",},
   ],
   "sequence": {
-    "spriteId": {"name":"sprChKirbyHurt","path":"sprites/sprChKirbyHurt/sprChKirbyHurt.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "sprChKirbyHurt",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -40,9 +43,9 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"2da3c605-2460-4f26-8bc7-fe4f0c6e2504","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"42bd728f-4e43-4a3b-a61f-ae6f8e0d79e0","path":"sprites/sprChKirbyHurt/sprChKirbyHurt.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,22 +61,13 @@
     "yorigin": 9,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"sprChKirbyHurt","path":"sprites/sprChKirbyHurt/sprChKirbyHurt.yy",},
-    "resourceVersion": "1.4",
-    "name": "sprChKirbyHurt",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"e9a789b6-a66d-4432-8df1-884b8d93fa4b","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"e9a789b6-a66d-4432-8df1-884b8d93fa4b","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Kirby",
     "path": "folders/Sprites/Characters/Kirby.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "sprChKirbyHurt",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

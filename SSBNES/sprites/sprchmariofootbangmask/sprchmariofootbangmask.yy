@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "sprChMarioFootBangMask",
   "bboxMode": 0,
   "collisionKind": 4,
   "type": 0,
@@ -24,15 +27,13 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"4a2a3a30-9055-4c18-adcf-e2da02e935b7","path":"sprites/sprChMarioFootBangMask/sprChMarioFootBangMask.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"4a2a3a30-9055-4c18-adcf-e2da02e935b7","path":"sprites/sprChMarioFootBangMask/sprChMarioFootBangMask.yy",},"LayerId":{"name":"905fe2ae-3784-4012-ba39-5695e1f52e97","path":"sprites/sprChMarioFootBangMask/sprChMarioFootBangMask.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprChMarioFootBangMask","path":"sprites/sprChMarioFootBangMask/sprChMarioFootBangMask.yy",},"resourceVersion":"1.0","name":"4a2a3a30-9055-4c18-adcf-e2da02e935b7","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"55b74aa9-c669-475a-aee3-6fa4b2d6e3cd","path":"sprites/sprChMarioFootBangMask/sprChMarioFootBangMask.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"55b74aa9-c669-475a-aee3-6fa4b2d6e3cd","path":"sprites/sprChMarioFootBangMask/sprChMarioFootBangMask.yy",},"LayerId":{"name":"905fe2ae-3784-4012-ba39-5695e1f52e97","path":"sprites/sprChMarioFootBangMask/sprChMarioFootBangMask.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprChMarioFootBangMask","path":"sprites/sprChMarioFootBangMask/sprChMarioFootBangMask.yy",},"resourceVersion":"1.0","name":"55b74aa9-c669-475a-aee3-6fa4b2d6e3cd","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"4a2a3a30-9055-4c18-adcf-e2da02e935b7",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"55b74aa9-c669-475a-aee3-6fa4b2d6e3cd",},
   ],
   "sequence": {
-    "spriteId": {"name":"sprChMarioFootBangMask","path":"sprites/sprChMarioFootBangMask/sprChMarioFootBangMask.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "sprChMarioFootBangMask",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -40,13 +41,13 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 2.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"04627742-921b-4f8d-a9c7-3c45fc8873e2","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4a2a3a30-9055-4c18-adcf-e2da02e935b7","path":"sprites/sprChMarioFootBangMask/sprChMarioFootBangMask.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"5a8f6d9b-e487-4b0e-94df-47ea24d9af51","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"55b74aa9-c669-475a-aee3-6fa4b2d6e3cd","path":"sprites/sprChMarioFootBangMask/sprChMarioFootBangMask.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"04627742-921b-4f8d-a9c7-3c45fc8873e2","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4a2a3a30-9055-4c18-adcf-e2da02e935b7","path":"sprites/sprChMarioFootBangMask/sprChMarioFootBangMask.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"5a8f6d9b-e487-4b0e-94df-47ea24d9af51","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"55b74aa9-c669-475a-aee3-6fa4b2d6e3cd","path":"sprites/sprChMarioFootBangMask/sprChMarioFootBangMask.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -62,22 +63,13 @@
     "yorigin": 17,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"sprChMarioFootBangMask","path":"sprites/sprChMarioFootBangMask/sprChMarioFootBangMask.yy",},
-    "resourceVersion": "1.4",
-    "name": "sprChMarioFootBangMask",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"905fe2ae-3784-4012-ba39-5695e1f52e97","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"905fe2ae-3784-4012-ba39-5695e1f52e97","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Hurtbox",
     "path": "folders/Sprites/Characters/Mario/Combat/Hurtbox.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "sprChMarioFootBangMask",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

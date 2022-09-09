@@ -144,13 +144,20 @@ if (CooldownSwap == 0 and !Platform)
 	
 	if (Damaged == 0)
 	{
-		if (HorizontalDirection != 0)
+		if (SavedHorizontalMovement != 0)
 		{
-			HorizontalMovement = ((HorizontalDirection * (AcelerationValue)) + MovementPostDamage ) * AcelerationPostDamage;
+			if (HorizontalDirection != 0)
+			{
+				HorizontalMovement = ((HorizontalDirection * AcelerationValue) ) * AcelerationPostDamage;
+			}
+			else
+			{
+				HorizontalMovement = ((AcelerationValue * ScaleX) ) * AcelerationPostDamage;
+			}
 		}
 		else
 		{
-			HorizontalMovement = (((AcelerationValue) * ScaleX) + MovementPostDamage ) * AcelerationPostDamage;
+			HorizontalMovement = SavedHorizontalMovement;
 		}
 	}
 	else
@@ -161,14 +168,14 @@ if (CooldownSwap == 0 and !Platform)
 	{
 		if (AcelerationPostDamage < 1)
 		{
-			AcelerationPostDamage += .05;
+			AcelerationPostDamage += .01;
 		}
-		if (MovementPostDamage != 0)
+		if (SavedHorizontalMovement != 0)
 		{
-			MovementPostDamage = lerp(MovementPostDamage , 0 , .1);
-			if (MovementPostDamage < 0.1 and MovementPostDamage > -0.1)
+			SavedHorizontalMovement = lerp(SavedHorizontalMovement , 0 , .1);
+			if (SavedHorizontalMovement < 0.1 and SavedHorizontalMovement > -0.1)
 			{
-				MovementPostDamage = 0;
+				SavedHorizontalMovement = 0;
 			}
 		}
 	}
@@ -430,26 +437,11 @@ if (Attacking or TimeAttacking > 0)
 
 #region Collision
 
-if (place_meeting(x + HorizontalMovement , y , parSolid))
+if (place_meeting(x , y + VerticalMovement+1 , objBlockSlope45))
 {
-	if (Damaged != 0)
+	while (!place_meeting(x , y  + sign(VerticalMovement+1) , objBlockSlope45))
 	{
-		HorizontalMovement = -HorizontalMovement;
-	}
-}
-if (place_meeting(x , y + VerticalMovement , parSolid))
-{
-	if (Damaged != 0)
-	{
-		VerticalMovement = -VerticalMovement;
-	}
-}
-
-if (place_meeting(x , y + VerticalMovement , objBlockSlope45))
-{
-	while (!place_meeting(x , y  + sign(VerticalMovement) , objBlockSlope45))
-	{
-		y += sign(VerticalMovement);
+		y += sign(VerticalMovement+1);
 	}
 	scrStepOnFloor();
 }
@@ -496,6 +488,37 @@ if (place_meeting(x + HorizontalMovement , y  + VerticalMovement, parSolid))
 	}
 	HorizontalMovement = 0;
 	VerticalMovement = 0;
+}
+
+if (Damaged != 0)
+{
+	if (place_meeting(x + HorizontalMovement , y , parSolid))
+	{
+		while (!place_meeting(x + sign(HorizontalMovement) , y , parSolid))
+		{
+			x += sign(HorizontalMovement);
+		}
+		HorizontalMovement *= -1;
+	}
+	if (place_meeting(x + VerticalMovement , y , parSolid))
+	{
+		while (!place_meeting(x , y + VerticalMovement , parSolid))
+		{
+			y += sign(VerticalMovement);
+		}
+		VerticalMovement *= -1;
+	}
+	if (!place_meeting(x , y , objBlockTransferable) and (VerticalMovement >= 0))
+	{
+		if (place_meeting(x , y + VerticalMovement , objBlockTransferable))
+		{
+			while (!place_meeting(x , y  + sign(VerticalMovement) , objBlockTransferable))
+			{
+				y += sign(VerticalMovement);
+			}
+			VerticalMovement *= -1;
+		}
+	}
 }
 
 #endregion
@@ -714,5 +737,30 @@ if (y > room_height + 64)
 		Control.CharacterLife[Position]--;
 	}
 	instance_destroy();
+}
+#endregion
+
+#region State
+if (Damaged == 0)
+{
+	if (place_meeting(x , y + abs(VerticalMovement + 4) , parCollision ) and VerticalMovement == 0)
+	{
+		if (HorizontalMovement != 0)
+		{
+			State = "Walk";
+		}
+		else
+		{
+			State = "Idle";
+		}
+	}
+	else
+	{
+		State = "In air";
+	}
+}
+else
+{
+	State = "Damaged";
 }
 #endregion

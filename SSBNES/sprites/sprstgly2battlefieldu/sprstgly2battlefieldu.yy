@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "sprStgLy2BattlefieldU",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,12 +27,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"036a915d-02e5-439b-aee6-826b1f6d1a3b","path":"sprites/sprStgLy2BattlefieldU/sprStgLy2BattlefieldU.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"036a915d-02e5-439b-aee6-826b1f6d1a3b","path":"sprites/sprStgLy2BattlefieldU/sprStgLy2BattlefieldU.yy",},"LayerId":{"name":"d9905ab3-834d-457c-9d25-ed89e5f5afd8","path":"sprites/sprStgLy2BattlefieldU/sprStgLy2BattlefieldU.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprStgLy2BattlefieldU","path":"sprites/sprStgLy2BattlefieldU/sprStgLy2BattlefieldU.yy",},"resourceVersion":"1.0","name":"036a915d-02e5-439b-aee6-826b1f6d1a3b","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"036a915d-02e5-439b-aee6-826b1f6d1a3b",},
   ],
   "sequence": {
-    "spriteId": {"name":"sprStgLy2BattlefieldU","path":"sprites/sprStgLy2BattlefieldU/sprStgLy2BattlefieldU.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "sprStgLy2BattlefieldU",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -40,9 +43,9 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"304129dc-3326-4285-981b-0608439a7ee5","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"036a915d-02e5-439b-aee6-826b1f6d1a3b","path":"sprites/sprStgLy2BattlefieldU/sprStgLy2BattlefieldU.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,22 +61,13 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"sprStgLy2BattlefieldU","path":"sprites/sprStgLy2BattlefieldU/sprStgLy2BattlefieldU.yy",},
-    "resourceVersion": "1.4",
-    "name": "sprStgLy2BattlefieldU",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"d9905ab3-834d-457c-9d25-ed89e5f5afd8","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"d9905ab3-834d-457c-9d25-ed89e5f5afd8","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Battlefield (Ultimate)",
     "path": "folders/Sprites/Stages/Battlefield (Ultimate).yy",
   },
-  "resourceVersion": "1.0",
-  "name": "sprStgLy2BattlefieldU",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

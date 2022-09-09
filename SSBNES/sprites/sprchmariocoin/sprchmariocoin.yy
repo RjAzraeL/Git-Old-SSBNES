@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "sprChMarioCoin",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,21 +27,15 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"a11edc3c-4f48-419c-81f4-317557e8a26b","path":"sprites/sprChMarioCoin/sprChMarioCoin.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"a11edc3c-4f48-419c-81f4-317557e8a26b","path":"sprites/sprChMarioCoin/sprChMarioCoin.yy",},"LayerId":{"name":"f77b6618-0806-4685-a92a-43bab934ade9","path":"sprites/sprChMarioCoin/sprChMarioCoin.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprChMarioCoin","path":"sprites/sprChMarioCoin/sprChMarioCoin.yy",},"resourceVersion":"1.0","name":"a11edc3c-4f48-419c-81f4-317557e8a26b","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"3ffcf485-8638-404e-917e-7a844de59832","path":"sprites/sprChMarioCoin/sprChMarioCoin.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"3ffcf485-8638-404e-917e-7a844de59832","path":"sprites/sprChMarioCoin/sprChMarioCoin.yy",},"LayerId":{"name":"f77b6618-0806-4685-a92a-43bab934ade9","path":"sprites/sprChMarioCoin/sprChMarioCoin.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprChMarioCoin","path":"sprites/sprChMarioCoin/sprChMarioCoin.yy",},"resourceVersion":"1.0","name":"3ffcf485-8638-404e-917e-7a844de59832","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"40111396-ccba-47f3-8c4e-0e2593fb0423","path":"sprites/sprChMarioCoin/sprChMarioCoin.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"40111396-ccba-47f3-8c4e-0e2593fb0423","path":"sprites/sprChMarioCoin/sprChMarioCoin.yy",},"LayerId":{"name":"f77b6618-0806-4685-a92a-43bab934ade9","path":"sprites/sprChMarioCoin/sprChMarioCoin.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprChMarioCoin","path":"sprites/sprChMarioCoin/sprChMarioCoin.yy",},"resourceVersion":"1.0","name":"40111396-ccba-47f3-8c4e-0e2593fb0423","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"4a3f6e63-6792-496f-82e0-d0d23da9b683","path":"sprites/sprChMarioCoin/sprChMarioCoin.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"4a3f6e63-6792-496f-82e0-d0d23da9b683","path":"sprites/sprChMarioCoin/sprChMarioCoin.yy",},"LayerId":{"name":"f77b6618-0806-4685-a92a-43bab934ade9","path":"sprites/sprChMarioCoin/sprChMarioCoin.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprChMarioCoin","path":"sprites/sprChMarioCoin/sprChMarioCoin.yy",},"resourceVersion":"1.0","name":"4a3f6e63-6792-496f-82e0-d0d23da9b683","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a11edc3c-4f48-419c-81f4-317557e8a26b",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"3ffcf485-8638-404e-917e-7a844de59832",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"40111396-ccba-47f3-8c4e-0e2593fb0423",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"4a3f6e63-6792-496f-82e0-d0d23da9b683",},
   ],
   "sequence": {
-    "spriteId": {"name":"sprChMarioCoin","path":"sprites/sprChMarioCoin/sprChMarioCoin.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "sprChMarioCoin",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -49,12 +46,12 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"51527464-d900-47ae-b5e4-dcc8d68f421d","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a11edc3c-4f48-419c-81f4-317557e8a26b","path":"sprites/sprChMarioCoin/sprChMarioCoin.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"c80e44ba-cc10-4ccb-96a3-0fa73e970080","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3ffcf485-8638-404e-917e-7a844de59832","path":"sprites/sprChMarioCoin/sprChMarioCoin.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"e5df4d8a-cb03-4525-ab9d-2bd3c0a21c64","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"40111396-ccba-47f3-8c4e-0e2593fb0423","path":"sprites/sprChMarioCoin/sprChMarioCoin.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"5892798c-3b2c-4080-ad92-ba763b2b9d1a","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4a3f6e63-6792-496f-82e0-d0d23da9b683","path":"sprites/sprChMarioCoin/sprChMarioCoin.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -70,22 +67,13 @@
     "yorigin": 7,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"sprChMarioCoin","path":"sprites/sprChMarioCoin/sprChMarioCoin.yy",},
-    "resourceVersion": "1.4",
-    "name": "sprChMarioCoin",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"f77b6618-0806-4685-a92a-43bab934ade9","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"f77b6618-0806-4685-a92a-43bab934ade9","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Combat",
     "path": "folders/Sprites/Characters/Mario/Combat.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "sprChMarioCoin",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

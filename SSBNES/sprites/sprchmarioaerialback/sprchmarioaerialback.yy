@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "sprChMarioAerialBack",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,27 +27,17 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"c373f679-8b08-475d-a8ee-5856c94f63c6","path":"sprites/sprChMarioAerialBack/sprChMarioAerialBack.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"c373f679-8b08-475d-a8ee-5856c94f63c6","path":"sprites/sprChMarioAerialBack/sprChMarioAerialBack.yy",},"LayerId":{"name":"004531f2-c40b-4d10-8733-bae3715b60bf","path":"sprites/sprChMarioAerialBack/sprChMarioAerialBack.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprChMarioAerialBack","path":"sprites/sprChMarioAerialBack/sprChMarioAerialBack.yy",},"resourceVersion":"1.0","name":"c373f679-8b08-475d-a8ee-5856c94f63c6","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"3e067bd8-8408-44da-93b3-5ec133c80a5b","path":"sprites/sprChMarioAerialBack/sprChMarioAerialBack.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"3e067bd8-8408-44da-93b3-5ec133c80a5b","path":"sprites/sprChMarioAerialBack/sprChMarioAerialBack.yy",},"LayerId":{"name":"004531f2-c40b-4d10-8733-bae3715b60bf","path":"sprites/sprChMarioAerialBack/sprChMarioAerialBack.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprChMarioAerialBack","path":"sprites/sprChMarioAerialBack/sprChMarioAerialBack.yy",},"resourceVersion":"1.0","name":"3e067bd8-8408-44da-93b3-5ec133c80a5b","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"7ba315df-9d25-45bf-afa5-e65a6d25392a","path":"sprites/sprChMarioAerialBack/sprChMarioAerialBack.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"7ba315df-9d25-45bf-afa5-e65a6d25392a","path":"sprites/sprChMarioAerialBack/sprChMarioAerialBack.yy",},"LayerId":{"name":"004531f2-c40b-4d10-8733-bae3715b60bf","path":"sprites/sprChMarioAerialBack/sprChMarioAerialBack.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprChMarioAerialBack","path":"sprites/sprChMarioAerialBack/sprChMarioAerialBack.yy",},"resourceVersion":"1.0","name":"7ba315df-9d25-45bf-afa5-e65a6d25392a","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"a702517b-7afc-4ebf-894b-b351c1270396","path":"sprites/sprChMarioAerialBack/sprChMarioAerialBack.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"a702517b-7afc-4ebf-894b-b351c1270396","path":"sprites/sprChMarioAerialBack/sprChMarioAerialBack.yy",},"LayerId":{"name":"004531f2-c40b-4d10-8733-bae3715b60bf","path":"sprites/sprChMarioAerialBack/sprChMarioAerialBack.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprChMarioAerialBack","path":"sprites/sprChMarioAerialBack/sprChMarioAerialBack.yy",},"resourceVersion":"1.0","name":"a702517b-7afc-4ebf-894b-b351c1270396","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"535eb35f-b9a3-4036-ae9e-6ae463490bd2","path":"sprites/sprChMarioAerialBack/sprChMarioAerialBack.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"535eb35f-b9a3-4036-ae9e-6ae463490bd2","path":"sprites/sprChMarioAerialBack/sprChMarioAerialBack.yy",},"LayerId":{"name":"004531f2-c40b-4d10-8733-bae3715b60bf","path":"sprites/sprChMarioAerialBack/sprChMarioAerialBack.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprChMarioAerialBack","path":"sprites/sprChMarioAerialBack/sprChMarioAerialBack.yy",},"resourceVersion":"1.0","name":"535eb35f-b9a3-4036-ae9e-6ae463490bd2","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"4ccdd9cf-8ebf-4a01-a8b9-5f9c0fa7c64d","path":"sprites/sprChMarioAerialBack/sprChMarioAerialBack.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"4ccdd9cf-8ebf-4a01-a8b9-5f9c0fa7c64d","path":"sprites/sprChMarioAerialBack/sprChMarioAerialBack.yy",},"LayerId":{"name":"004531f2-c40b-4d10-8733-bae3715b60bf","path":"sprites/sprChMarioAerialBack/sprChMarioAerialBack.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprChMarioAerialBack","path":"sprites/sprChMarioAerialBack/sprChMarioAerialBack.yy",},"resourceVersion":"1.0","name":"4ccdd9cf-8ebf-4a01-a8b9-5f9c0fa7c64d","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c373f679-8b08-475d-a8ee-5856c94f63c6",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"3e067bd8-8408-44da-93b3-5ec133c80a5b",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"7ba315df-9d25-45bf-afa5-e65a6d25392a",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a702517b-7afc-4ebf-894b-b351c1270396",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"535eb35f-b9a3-4036-ae9e-6ae463490bd2",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"4ccdd9cf-8ebf-4a01-a8b9-5f9c0fa7c64d",},
   ],
   "sequence": {
-    "spriteId": {"name":"sprChMarioAerialBack","path":"sprites/sprChMarioAerialBack/sprChMarioAerialBack.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "sprChMarioAerialBack",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -55,14 +48,14 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"111c69f5-8213-4913-916f-ced1122d36de","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c373f679-8b08-475d-a8ee-5856c94f63c6","path":"sprites/sprChMarioAerialBack/sprChMarioAerialBack.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"707b4582-18e9-4f83-b891-43f53f5589cd","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3e067bd8-8408-44da-93b3-5ec133c80a5b","path":"sprites/sprChMarioAerialBack/sprChMarioAerialBack.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"c6da702f-87dc-479e-8a09-64b740ece91e","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7ba315df-9d25-45bf-afa5-e65a6d25392a","path":"sprites/sprChMarioAerialBack/sprChMarioAerialBack.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"27f4bcdf-1f75-4da1-a564-cb5cf24d3bd6","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a702517b-7afc-4ebf-894b-b351c1270396","path":"sprites/sprChMarioAerialBack/sprChMarioAerialBack.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"89af7935-ae10-4620-9fd0-8385b7ed635c","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"535eb35f-b9a3-4036-ae9e-6ae463490bd2","path":"sprites/sprChMarioAerialBack/sprChMarioAerialBack.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"2793eaf3-c385-49ad-96b7-45afd9a19463","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4ccdd9cf-8ebf-4a01-a8b9-5f9c0fa7c64d","path":"sprites/sprChMarioAerialBack/sprChMarioAerialBack.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -78,22 +71,13 @@
     "yorigin": 17,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"sprChMarioAerialBack","path":"sprites/sprChMarioAerialBack/sprChMarioAerialBack.yy",},
-    "resourceVersion": "1.4",
-    "name": "sprChMarioAerialBack",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"004531f2-c40b-4d10-8733-bae3715b60bf","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"004531f2-c40b-4d10-8733-bae3715b60bf","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Combat",
     "path": "folders/Sprites/Characters/Mario/Combat.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "sprChMarioAerialBack",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

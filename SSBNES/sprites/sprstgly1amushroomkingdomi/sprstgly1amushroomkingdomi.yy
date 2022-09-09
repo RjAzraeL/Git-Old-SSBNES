@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "sprStgLy1aMushroomKingdomI",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,12 +27,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"ec63caa8-6ec2-4348-9757-9faa5fd09369","path":"sprites/sprStgLy1aMushroomKingdomI/sprStgLy1aMushroomKingdomI.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"ec63caa8-6ec2-4348-9757-9faa5fd09369","path":"sprites/sprStgLy1aMushroomKingdomI/sprStgLy1aMushroomKingdomI.yy",},"LayerId":{"name":"ee1148bf-acef-4065-a3ff-3ecb9391499a","path":"sprites/sprStgLy1aMushroomKingdomI/sprStgLy1aMushroomKingdomI.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprStgLy1aMushroomKingdomI","path":"sprites/sprStgLy1aMushroomKingdomI/sprStgLy1aMushroomKingdomI.yy",},"resourceVersion":"1.0","name":"ec63caa8-6ec2-4348-9757-9faa5fd09369","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ec63caa8-6ec2-4348-9757-9faa5fd09369",},
   ],
   "sequence": {
-    "spriteId": {"name":"sprStgLy1aMushroomKingdomI","path":"sprites/sprStgLy1aMushroomKingdomI/sprStgLy1aMushroomKingdomI.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "sprStgLy1aMushroomKingdomI",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -37,12 +40,12 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 1.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"d336bbc2-be6e-4324-9f97-3be9de3fd148","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ec63caa8-6ec2-4348-9757-9faa5fd09369","path":"sprites/sprStgLy1aMushroomKingdomI/sprStgLy1aMushroomKingdomI.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"d336bbc2-be6e-4324-9f97-3be9de3fd148","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ec63caa8-6ec2-4348-9757-9faa5fd09369","path":"sprites/sprStgLy1aMushroomKingdomI/sprStgLy1aMushroomKingdomI.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,22 +61,13 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"sprStgLy1aMushroomKingdomI","path":"sprites/sprStgLy1aMushroomKingdomI/sprStgLy1aMushroomKingdomI.yy",},
-    "resourceVersion": "1.4",
-    "name": "sprStgLy1aMushroomKingdomI",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"ee1148bf-acef-4065-a3ff-3ecb9391499a","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"ee1148bf-acef-4065-a3ff-3ecb9391499a","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Mushroom Kingdom I",
     "path": "folders/Sprites/Stages/Mushroom Kingdom I.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "sprStgLy1aMushroomKingdomI",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

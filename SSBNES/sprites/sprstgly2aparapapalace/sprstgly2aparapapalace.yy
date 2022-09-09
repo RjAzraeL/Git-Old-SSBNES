@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "sprStgLy2aParapaPalace",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,12 +27,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"e023fd27-1839-465a-b8fc-1c1581dd8d3b","path":"sprites/sprStgLy2aParapaPalace/sprStgLy2aParapaPalace.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"e023fd27-1839-465a-b8fc-1c1581dd8d3b","path":"sprites/sprStgLy2aParapaPalace/sprStgLy2aParapaPalace.yy",},"LayerId":{"name":"990544e6-ae10-4cf4-a54c-c097e277cd33","path":"sprites/sprStgLy2aParapaPalace/sprStgLy2aParapaPalace.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprStgLy2aParapaPalace","path":"sprites/sprStgLy2aParapaPalace/sprStgLy2aParapaPalace.yy",},"resourceVersion":"1.0","name":"e023fd27-1839-465a-b8fc-1c1581dd8d3b","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e023fd27-1839-465a-b8fc-1c1581dd8d3b",},
   ],
   "sequence": {
-    "spriteId": {"name":"sprStgLy2aParapaPalace","path":"sprites/sprStgLy2aParapaPalace/sprStgLy2aParapaPalace.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "sprStgLy2aParapaPalace",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -37,12 +40,12 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 1.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"e5723000-76b0-4d67-9397-93076f71ac5d","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e023fd27-1839-465a-b8fc-1c1581dd8d3b","path":"sprites/sprStgLy2aParapaPalace/sprStgLy2aParapaPalace.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"e5723000-76b0-4d67-9397-93076f71ac5d","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e023fd27-1839-465a-b8fc-1c1581dd8d3b","path":"sprites/sprStgLy2aParapaPalace/sprStgLy2aParapaPalace.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,22 +61,13 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"sprStgLy2aParapaPalace","path":"sprites/sprStgLy2aParapaPalace/sprStgLy2aParapaPalace.yy",},
-    "resourceVersion": "1.4",
-    "name": "sprStgLy2aParapaPalace",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"990544e6-ae10-4cf4-a54c-c097e277cd33","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"990544e6-ae10-4cf4-a54c-c097e277cd33","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Parapa Palace",
     "path": "folders/Sprites/Stages/Parapa Palace.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "sprStgLy2aParapaPalace",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

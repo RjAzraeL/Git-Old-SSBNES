@@ -76,6 +76,5 @@ if (scrIsOutside(self))
 	}
 }
 draw_set_font(fntNormal);
-draw_text(x , y - 32 , FallingVoid);
-draw_text(x , y - 64 , JumpAvailable);
+draw_text(x , y - 32 , State);
 #endregion

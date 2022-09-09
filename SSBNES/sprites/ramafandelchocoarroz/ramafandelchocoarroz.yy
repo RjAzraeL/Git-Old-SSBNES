@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "RamaFanDelChocoarroz",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,12 +27,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"f8b67363-fdb2-4348-986b-65c9311cddc6","path":"sprites/RamaFanDelChocoarroz/RamaFanDelChocoarroz.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"f8b67363-fdb2-4348-986b-65c9311cddc6","path":"sprites/RamaFanDelChocoarroz/RamaFanDelChocoarroz.yy",},"LayerId":{"name":"86326f64-d8e6-42a7-a35b-040ac30edade","path":"sprites/RamaFanDelChocoarroz/RamaFanDelChocoarroz.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"RamaFanDelChocoarroz","path":"sprites/RamaFanDelChocoarroz/RamaFanDelChocoarroz.yy",},"resourceVersion":"1.0","name":"f8b67363-fdb2-4348-986b-65c9311cddc6","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f8b67363-fdb2-4348-986b-65c9311cddc6",},
   ],
   "sequence": {
-    "spriteId": {"name":"RamaFanDelChocoarroz","path":"sprites/RamaFanDelChocoarroz/RamaFanDelChocoarroz.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "RamaFanDelChocoarroz",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -40,9 +43,9 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"8704709f-7ae5-47dc-bc3c-941f47f5f61e","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f8b67363-fdb2-4348-986b-65c9311cddc6","path":"sprites/RamaFanDelChocoarroz/RamaFanDelChocoarroz.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,22 +61,13 @@
     "yorigin": 46,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"RamaFanDelChocoarroz","path":"sprites/RamaFanDelChocoarroz/RamaFanDelChocoarroz.yy",},
-    "resourceVersion": "1.4",
-    "name": "RamaFanDelChocoarroz",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"86326f64-d8e6-42a7-a35b-040ac30edade","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"86326f64-d8e6-42a7-a35b-040ac30edade","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Sprites",
     "path": "folders/Sprites.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "RamaFanDelChocoarroz",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

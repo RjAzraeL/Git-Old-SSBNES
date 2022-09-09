@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "sprStgLy2BattlefieldM",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,12 +27,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"29bcaf6f-5570-4815-a541-b185781399e0","path":"sprites/sprStgLy2BattlefieldM/sprStgLy2BattlefieldM.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"29bcaf6f-5570-4815-a541-b185781399e0","path":"sprites/sprStgLy2BattlefieldM/sprStgLy2BattlefieldM.yy",},"LayerId":{"name":"eaf18c37-2a0a-42b2-a093-3e15cc1f5cbb","path":"sprites/sprStgLy2BattlefieldM/sprStgLy2BattlefieldM.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprStgLy2BattlefieldM","path":"sprites/sprStgLy2BattlefieldM/sprStgLy2BattlefieldM.yy",},"resourceVersion":"1.0","name":"29bcaf6f-5570-4815-a541-b185781399e0","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"29bcaf6f-5570-4815-a541-b185781399e0",},
   ],
   "sequence": {
-    "spriteId": {"name":"sprStgLy2BattlefieldM","path":"sprites/sprStgLy2BattlefieldM/sprStgLy2BattlefieldM.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "sprStgLy2BattlefieldM",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -37,12 +40,12 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 1.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"4a3c07d8-2887-4a54-8ff7-494f80fcd3bc","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"29bcaf6f-5570-4815-a541-b185781399e0","path":"sprites/sprStgLy2BattlefieldM/sprStgLy2BattlefieldM.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"4a3c07d8-2887-4a54-8ff7-494f80fcd3bc","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"29bcaf6f-5570-4815-a541-b185781399e0","path":"sprites/sprStgLy2BattlefieldM/sprStgLy2BattlefieldM.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,22 +61,13 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"sprStgLy2BattlefieldM","path":"sprites/sprStgLy2BattlefieldM/sprStgLy2BattlefieldM.yy",},
-    "resourceVersion": "1.4",
-    "name": "sprStgLy2BattlefieldM",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"eaf18c37-2a0a-42b2-a093-3e15cc1f5cbb","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"eaf18c37-2a0a-42b2-a093-3e15cc1f5cbb","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Battlefield (Melee)",
     "path": "folders/Sprites/Stages/Battlefield (Melee).yy",
   },
-  "resourceVersion": "1.0",
-  "name": "sprStgLy2BattlefieldM",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "sprChMarioFireball",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,21 +27,15 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"c551e32d-ef89-4f6e-af78-f11ccf54d58b","path":"sprites/sprChMarioFireball/sprChMarioFireball.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"c551e32d-ef89-4f6e-af78-f11ccf54d58b","path":"sprites/sprChMarioFireball/sprChMarioFireball.yy",},"LayerId":{"name":"d86f525d-0d2a-4f45-aabb-45ee4ece7a1a","path":"sprites/sprChMarioFireball/sprChMarioFireball.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprChMarioFireball","path":"sprites/sprChMarioFireball/sprChMarioFireball.yy",},"resourceVersion":"1.0","name":"c551e32d-ef89-4f6e-af78-f11ccf54d58b","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"ca64976f-fb46-4ca3-bd59-87851aec8b81","path":"sprites/sprChMarioFireball/sprChMarioFireball.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"ca64976f-fb46-4ca3-bd59-87851aec8b81","path":"sprites/sprChMarioFireball/sprChMarioFireball.yy",},"LayerId":{"name":"d86f525d-0d2a-4f45-aabb-45ee4ece7a1a","path":"sprites/sprChMarioFireball/sprChMarioFireball.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprChMarioFireball","path":"sprites/sprChMarioFireball/sprChMarioFireball.yy",},"resourceVersion":"1.0","name":"ca64976f-fb46-4ca3-bd59-87851aec8b81","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"ab1d3d87-a464-4679-93ef-841570e77a87","path":"sprites/sprChMarioFireball/sprChMarioFireball.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"ab1d3d87-a464-4679-93ef-841570e77a87","path":"sprites/sprChMarioFireball/sprChMarioFireball.yy",},"LayerId":{"name":"d86f525d-0d2a-4f45-aabb-45ee4ece7a1a","path":"sprites/sprChMarioFireball/sprChMarioFireball.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprChMarioFireball","path":"sprites/sprChMarioFireball/sprChMarioFireball.yy",},"resourceVersion":"1.0","name":"ab1d3d87-a464-4679-93ef-841570e77a87","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"3ed07401-b5aa-4af5-b80a-35fea17b2074","path":"sprites/sprChMarioFireball/sprChMarioFireball.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"3ed07401-b5aa-4af5-b80a-35fea17b2074","path":"sprites/sprChMarioFireball/sprChMarioFireball.yy",},"LayerId":{"name":"d86f525d-0d2a-4f45-aabb-45ee4ece7a1a","path":"sprites/sprChMarioFireball/sprChMarioFireball.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprChMarioFireball","path":"sprites/sprChMarioFireball/sprChMarioFireball.yy",},"resourceVersion":"1.0","name":"3ed07401-b5aa-4af5-b80a-35fea17b2074","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c551e32d-ef89-4f6e-af78-f11ccf54d58b",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ca64976f-fb46-4ca3-bd59-87851aec8b81",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ab1d3d87-a464-4679-93ef-841570e77a87",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"3ed07401-b5aa-4af5-b80a-35fea17b2074",},
   ],
   "sequence": {
-    "spriteId": {"name":"sprChMarioFireball","path":"sprites/sprChMarioFireball/sprChMarioFireball.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "sprChMarioFireball",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -49,12 +46,12 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"734190f3-48a0-4476-913d-b6e53efba2cb","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c551e32d-ef89-4f6e-af78-f11ccf54d58b","path":"sprites/sprChMarioFireball/sprChMarioFireball.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"bd4ab846-f1eb-49e4-8d7a-484dbc7706fa","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ca64976f-fb46-4ca3-bd59-87851aec8b81","path":"sprites/sprChMarioFireball/sprChMarioFireball.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"5f19051d-0771-4d2c-b125-f48b8970aa1e","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ab1d3d87-a464-4679-93ef-841570e77a87","path":"sprites/sprChMarioFireball/sprChMarioFireball.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"71fc6f26-5082-4b7d-8997-73d2b0de72e4","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3ed07401-b5aa-4af5-b80a-35fea17b2074","path":"sprites/sprChMarioFireball/sprChMarioFireball.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -70,22 +67,13 @@
     "yorigin": 4,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"sprChMarioFireball","path":"sprites/sprChMarioFireball/sprChMarioFireball.yy",},
-    "resourceVersion": "1.4",
-    "name": "sprChMarioFireball",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"d86f525d-0d2a-4f45-aabb-45ee4ece7a1a","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"d86f525d-0d2a-4f45-aabb-45ee4ece7a1a","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Combat",
     "path": "folders/Sprites/Characters/Mario/Combat.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "sprChMarioFireball",
-  "tags": [],
-  "resourceType": "GMSprite",
 }
