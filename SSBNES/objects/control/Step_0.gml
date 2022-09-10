@@ -36,6 +36,7 @@ if (keyboard_check_pressed(ShowColissionMovsButton))
 	ShowMovsMask = !ShowMovsMask;
 }
 #endregion
+#region Camera
 if (BattleLevel)
 {
 	#region Index
@@ -57,10 +58,6 @@ if (BattleLevel)
 	if (scrExiste(objPlayer))
 	{
 		Target = objPlayer;
-	}
-	else
-	{
-		Target = objBot;
 	}
 
 	// Clamp camrea
@@ -99,4 +96,5 @@ if (BattleLevel)
 	#endregion
 	
 }
+#endregion
 #endregion

@@ -36,8 +36,8 @@ if (Platform)
 
 if (scrIsOutsideCamera(self))
 {
-	var ValueLeft = Control.xx - Control.HalfViewWidth;
-	var ValueRight = Control.xx + Control.HalfViewWidth;
+	var ValueLeft = scrGetCameraWidthLeft();
+	var ValueRight = scrGetCameraWidthRight();
 	if (x < ValueLeft)
 	{
 		if (y > 0 and y < room_width)

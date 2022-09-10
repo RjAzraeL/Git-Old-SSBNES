@@ -7,7 +7,7 @@ function scrIsOutside(Instance)
 ///@arg instance
 function scrIsOutsideCamera(Instance)
 {
-	var ValueLeft = Control.xx - Control.HalfViewWidth;
-	var ValueRight = Control.xx + Control.HalfViewWidth;
+	var ValueLeft = scrGetCameraWidthLeft();
+	var ValueRight = scrGetCameraWidthRight();
 	return Instance.x < ValueLeft - 32 or Instance.x > ValueRight+32 or Instance.y < -32 or Instance.y > room_height+32;
 }

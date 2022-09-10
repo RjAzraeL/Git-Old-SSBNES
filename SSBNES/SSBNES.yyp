@@ -218,6 +218,7 @@
     {"id":{"name":"rmStgFinalDestination","path":"rooms/rmStgFinalDestination/rmStgFinalDestination.yy",},"order":2,},
     {"id":{"name":"sprArrowOutside","path":"sprites/sprArrowOutside/sprArrowOutside.yy",},"order":0,},
     {"id":{"name":"rmStgBattlefieldZero","path":"rooms/rmStgBattlefieldZero/rmStgBattlefieldZero.yy",},"order":0,},
+    {"id":{"name":"scrGetCameraWidthHalf","path":"scripts/scrGetCameraWidthHalf/scrGetCameraWidthHalf.yy",},"order":13,},
     {"id":{"name":"scrAddMov","path":"scripts/scrAddMov/scrAddMov.yy",},"order":5,},
     {"id":{"name":"scrCheckObject","path":"scripts/scrCheckObject/scrCheckObject.yy",},"order":6,},
     {"id":{"name":"sprChKirbyGroundNeutral","path":"sprites/sprChKirbyGroundNeutral/sprChKirbyGroundNeutral.yy",},"order":13,},
