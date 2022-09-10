@@ -1,25 +1,25 @@
 #region Battle
 #region Buttons
-	LeftButtonActive = keyboard_check(LeftButton);
-	LeftButtonPressedActive = keyboard_check_pressed(LeftButton);
-	LeftButtonReleasedActive = keyboard_check_released(LeftButton);
-	RightButtonActive = keyboard_check(RightButton);
-	RightButtonPressedActive = keyboard_check_pressed(RightButton);
-	RightButtonReleasedActive = keyboard_check_released(RightButton);
-	JumpButtonActive = keyboard_check_pressed(JumpButton);
-	JumpButtonReleaseActive = keyboard_check_released(JumpButton);
-	JumpButtonPressedActive = keyboard_check_pressed(JumpButton);
-	DownButtonActive = keyboard_check(DownButton);
-	DownButtonPressedActive = keyboard_check_pressed(DownButton);
-	DownButtonReleasedActive = keyboard_check_released(DownButton);
-	AttackButtonActive = keyboard_check(AttackButton);
-	AttackButtonPressedActive = keyboard_check_pressed(AttackButton);
-	AttackButtonReleasedActive = keyboard_check_released(AttackButton);
-	UpButtonActive = keyboard_check(UpButton);
-	UpButtonReleasedActive = keyboard_check_released(UpButton);
-	UpButtonPressedActive = keyboard_check_pressed(UpButton);
-	StartButtonActive = keyboard_check_pressed(StartButton);
-	#endregion
+LeftButtonActive = keyboard_check(LeftButton);
+LeftButtonPressedActive = keyboard_check_pressed(LeftButton);
+LeftButtonReleasedActive = keyboard_check_released(LeftButton);
+RightButtonActive = keyboard_check(RightButton);
+RightButtonPressedActive = keyboard_check_pressed(RightButton);
+RightButtonReleasedActive = keyboard_check_released(RightButton);
+JumpButtonActive = keyboard_check_pressed(JumpButton);
+JumpButtonReleaseActive = keyboard_check_released(JumpButton);
+JumpButtonPressedActive = keyboard_check_pressed(JumpButton);
+DownButtonActive = keyboard_check(DownButton);
+DownButtonPressedActive = keyboard_check_pressed(DownButton);
+DownButtonReleasedActive = keyboard_check_released(DownButton);
+AttackButtonActive = keyboard_check(AttackButton);
+AttackButtonPressedActive = keyboard_check_pressed(AttackButton);
+AttackButtonReleasedActive = keyboard_check_released(AttackButton);
+UpButtonActive = keyboard_check(UpButton);
+UpButtonReleasedActive = keyboard_check_released(UpButton);
+UpButtonPressedActive = keyboard_check_pressed(UpButton);
+StartButtonActive = keyboard_check_pressed(StartButton);
+#endregion
 #region Generic
 if (Wait > 0)
 {
@@ -58,7 +58,7 @@ if (BattleLevel)
 	{
 		Target = objPlayer;
 	}
-	else if (scrExiste(objBot))
+	else
 	{
 		Target = objBot;
 	}

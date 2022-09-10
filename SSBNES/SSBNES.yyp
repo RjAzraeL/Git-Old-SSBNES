@@ -27,6 +27,7 @@
     {"id":{"name":"objCombatMarioFlip","path":"objects/objCombatMarioFlip/objCombatMarioFlip.yy",},"order":3,},
     {"id":{"name":"sprChMarioAerialDownMask","path":"sprites/sprChMarioAerialDownMask/sprChMarioAerialDownMask.yy",},"order":10,},
     {"id":{"name":"sprStgLy2bParapaPalace","path":"sprites/sprStgLy2bParapaPalace/sprStgLy2bParapaPalace.yy",},"order":2,},
+    {"id":{"name":"scrSearchRival","path":"scripts/scrSearchRival/scrSearchRival.yy",},"order":12,},
     {"id":{"name":"sprButtonStage","path":"sprites/sprButtonStage/sprButtonStage.yy",},"order":15,},
     {"id":{"name":"sprChKirbyIdle","path":"sprites/sprChKirbyIdle/sprChKirbyIdle.yy",},"order":14,},
     {"id":{"name":"sprChMarioAerialUp","path":"sprites/sprChMarioAerialUp/sprChMarioAerialUp.yy",},"order":23,},

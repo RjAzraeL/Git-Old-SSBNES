@@ -8,7 +8,7 @@ if (!FallingVoid)
 	}
 	else
 	{
-		Target = noone;
+		Target = scrSearchRival(self);
 	}
 	RightButtonActive = false;
 	LeftButtonActive = false;

@@ -1,11 +1,11 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "scrDataMovs",
+  "name": "scrSearchRival",
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Data",
-    "path": "folders/Scripts/Data.yy",
+    "name": "Combat",
+    "path": "folders/Scripts/Combat.yy",
   },
 }

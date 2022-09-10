@@ -34,47 +34,49 @@ if (Platform)
 	draw_sprite_part(sprPlatformBar , 0 , 0 , 0 , PlatformBar * 32 , 2 , x - 16 , y + sprite_get_height(SpriteIdle)/2 - 1);
 }
 
-if (scrIsOutside(self))
+if (scrIsOutsideCamera(self))
 {
-	if (x < 0)
+	var ValueLeft = Control.xx - Control.HalfViewWidth;
+	var ValueRight = Control.xx + Control.HalfViewWidth;
+	if (x < ValueLeft)
 	{
 		if (y > 0 and y < room_width)
 		{
-			draw_sprite(sprArrowOutside , 4 , 8 , y );
+			draw_sprite(sprArrowOutside , 4 , ValueLeft + 8 , y );
 		}
 		if (y < 0)
 		{
-			draw_sprite(sprArrowOutside , 3 , 8 , 8 );
+			draw_sprite(sprArrowOutside , 3 , ValueLeft + 8 , 8 );
 		}
 		if (y > room_height)
 		{
-			draw_sprite(sprArrowOutside , 5 , 8 , room_height-8);
+			draw_sprite(sprArrowOutside , 5 , ValueLeft + 8 , room_height-8);
 		}
 	}
-	if (x > room_width)
+	if (x > ValueRight)
 	{
 		if (y > 0 and y < room_width)
 		{
-			draw_sprite(sprArrowOutside , 0 , room_width - 8 , y );
+			draw_sprite(sprArrowOutside , 0 , ValueRight - 8 , y );
 		}
 		if (y < 0)
 		{
-			draw_sprite(sprArrowOutside , 1 , room_width - 8 , 8 );
+			draw_sprite(sprArrowOutside , 1 , ValueRight - 8 , 8 );
 		}
 		if (y > room_height)
 		{
-			draw_sprite(sprArrowOutside , 7 , room_width - 8 , room_height-8);
+			draw_sprite(sprArrowOutside , 7 , ValueRight - 8 , room_height-8);
 		}
 	}
-	if (y < -32)
+	if (y < -8)
 	{
 		draw_sprite(sprArrowOutside , 2 , x , 8 );
 	}
-	if (y > room_height + 32)
+	if (y > room_height + 8)
 	{
 		draw_sprite(sprArrowOutside , 6 , x , room_height-8 );
 	}
 }
 draw_set_font(fntNormal);
-draw_text(x , y - 32 , TimeAttacking);
+//draw_text(x , y - 32 , TimeAttacking);
 #endregion

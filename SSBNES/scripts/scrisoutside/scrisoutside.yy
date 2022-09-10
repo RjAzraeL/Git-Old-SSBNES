@@ -1,12 +1,11 @@
 {
+  "resourceType": "GMScript",
+  "resourceVersion": "1.0",
+  "name": "scrIsOutside",
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
     "name": "Combat",
     "path": "folders/Scripts/Combat.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "scrIsOutside",
-  "tags": [],
-  "resourceType": "GMScript",
 }

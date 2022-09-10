@@ -14,13 +14,11 @@ AttackButtonReleasedActive = false;
 UpButtonActive = false;
 UpButtonReleasedActive = false;
 UpButtonPressedActive = false;
-JumpButtonPressedActive = false;
-
-LeftButtonActive = true;
-RightButtonActive = false;
+JumpButtonPressedActive = choose(true,false);
+SetColor = true;
+LeftButtonActive = choose(true,false);
+RightButtonActive = choose(true,false);
 alarm[0] = 60;
 alarm[5] = 30;
 alarm[7] = 1;
-
-image_blend = c_yellow;
 #endregion
