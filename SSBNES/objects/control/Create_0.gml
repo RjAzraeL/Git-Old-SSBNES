@@ -47,6 +47,20 @@ ShowMask = false;
 ShowMovsMask = false;
 FontPorcentage = font_add_sprite_ext(sprHudNumbers , "0123456789" , true , 0);
 Font = font_add_sprite_ext(sprFont , " !ƒ#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ" , false , 0);
+CharacterSkinSet = ds_map_create();
+for (var i = 0 ; i < 4 ; i++)
+{
+	CharacterSkinSet[?"Base"+string(i)+"_0"] = scrStringToList("0,0,0");
+	CharacterSkinSet[?"Base"+string(i)+"_1"] = scrStringToList("0,0,0");
+	CharacterSkinSet[?"Base"+string(i)+"_2"] = scrStringToList("0,0,0");
+	CharacterSkinSet[?"Base"+string(i)+"_3"] = scrStringToList("0,0,0");
+	
+	CharacterSkinSet[?"Skin"+string(i)+"_0"] = scrStringToList("0,0,0");
+	CharacterSkinSet[?"Skin"+string(i)+"_1"] = scrStringToList("0,0,0");
+	CharacterSkinSet[?"Skin"+string(i)+"_2"] = scrStringToList("0,0,0");
+	CharacterSkinSet[?"Skin"+string(i)+"_3"] = scrStringToList("0,0,0");
+}
+
 #region Data
 
 scrDataMov();

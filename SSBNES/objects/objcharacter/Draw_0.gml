@@ -26,10 +26,10 @@ if (visible)
 	shader_set_uniform_f(shader_get_uniform(shdColorChange, "rep1"), ds_list_find_value(ColorBase[0] , 0) , ds_list_find_value(ColorBase[0] , 1) , ds_list_find_value(ColorBase[0] , 2));
 	shader_set_uniform_f(shader_get_uniform(shdColorChange, "new1"), ds_list_find_value(ColorSkin[0] , 0) , ds_list_find_value(ColorSkin[0] , 1) , ds_list_find_value(ColorSkin[0] , 2));
 	//1
-	shader_set_uniform_f(shader_get_uniform(shdColorChange, "rep2"), ds_list_find_value(ColorBase[2] , 0) , ds_list_find_value(ColorBase[1] , 1) , ds_list_find_value(ColorBase[1] , 2));
+	shader_set_uniform_f(shader_get_uniform(shdColorChange, "rep2"), ds_list_find_value(ColorBase[1] , 0) , ds_list_find_value(ColorBase[1] , 1) , ds_list_find_value(ColorBase[1] , 2));
 	shader_set_uniform_f(shader_get_uniform(shdColorChange, "new2"), ds_list_find_value(ColorSkin[1] , 0) , ds_list_find_value(ColorSkin[1] , 1) , ds_list_find_value(ColorSkin[1] , 2));
 	//2
-	shader_set_uniform_f(shader_get_uniform(shdColorChange, "rep3"), ds_list_find_value(ColorBase[3] , 0) , ds_list_find_value(ColorBase[2] , 1) , ds_list_find_value(ColorBase[2] , 2));
+	shader_set_uniform_f(shader_get_uniform(shdColorChange, "rep3"), ds_list_find_value(ColorBase[2] , 0) , ds_list_find_value(ColorBase[2] , 1) , ds_list_find_value(ColorBase[2] , 2));
 	shader_set_uniform_f(shader_get_uniform(shdColorChange, "new3"), ds_list_find_value(ColorSkin[2] , 0) , ds_list_find_value(ColorSkin[2] , 1) , ds_list_find_value(ColorSkin[2] , 2));
 
 	//4

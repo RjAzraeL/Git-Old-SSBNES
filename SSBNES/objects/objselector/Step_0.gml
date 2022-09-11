@@ -79,7 +79,7 @@ if (Control.Wait == 0)
 		else
 		{
 			var Square = instance_place(x , y , objPlayerSquare);
-			Square.IdeSkin = scrChangeSkin(Square.IdeSkin , Square.IdeSkinTope , Square.IdeCharacter , Square);
+			Square.IdeSkin = scrChangeSkin(Square.IdeSkin , Square.IdeSkinTope , Square.IdeCharacter , Square , Square.Slot);
 		}
 	}
 	if (Control.AttackButtonPressedActive and Control.Wait == 0)

@@ -29,8 +29,29 @@ if (BattleLevel)
 		RealNumber += string_char_at( Number , string_length(Number)-1 );
 		RealNumber += string_char_at( Number , string_length(Number) );
 		scrText(scrX() + 28 + Largo * i , scrY() + Y + 24 , RealNumber , fa_center , fa_left , FontPorcentage , c_white , c_white , 32 , 400 , 1 , 1 , 0 , 1);
-	
+		
+		#region Shader
+		shader_set(shdColorChange);
+		
+		
+		
+		//0
+		shader_set_uniform_f(shader_get_uniform(shdColorChange, "rep1"), ds_list_find_value(CharacterSkinSet[?"Base"+string(i)+"_0"] , 0) , ds_list_find_value(CharacterSkinSet[?"Base"+string(i)+"_0"] , 1) , ds_list_find_value(CharacterSkinSet[?"Base"+string(i)+"_0"] , 2));
+		shader_set_uniform_f(shader_get_uniform(shdColorChange, "new1"), ds_list_find_value(CharacterSkinSet[?"Skin"+string(i)+"_0"] , 0) , ds_list_find_value(CharacterSkinSet[?"Skin"+string(i)+"_0"] , 1) , ds_list_find_value(CharacterSkinSet[?"Skin"+string(i)+"_0"] , 2));
+		//1
+		shader_set_uniform_f(shader_get_uniform(shdColorChange, "rep2"), ds_list_find_value(CharacterSkinSet[?"Base"+string(i)+"_1"] , 0) , ds_list_find_value(CharacterSkinSet[?"Base"+string(i)+"_1"] , 1) , ds_list_find_value(CharacterSkinSet[?"Base"+string(i)+"_1"] , 2));
+		shader_set_uniform_f(shader_get_uniform(shdColorChange, "new2"), ds_list_find_value(CharacterSkinSet[?"Skin"+string(i)+"_1"] , 0) , ds_list_find_value(CharacterSkinSet[?"Skin"+string(i)+"_1"] , 1) , ds_list_find_value(CharacterSkinSet[?"Skin"+string(i)+"_1"] , 2));
+		//2
+		shader_set_uniform_f(shader_get_uniform(shdColorChange, "rep3"), ds_list_find_value(CharacterSkinSet[?"Base"+string(i)+"_2"] , 0) , ds_list_find_value(CharacterSkinSet[?"Base"+string(i)+"_2"] , 1) , ds_list_find_value(CharacterSkinSet[?"Base"+string(i)+"_2"] , 2));
+		shader_set_uniform_f(shader_get_uniform(shdColorChange, "new3"), ds_list_find_value(CharacterSkinSet[?"Skin"+string(i)+"_2"] , 0) , ds_list_find_value(CharacterSkinSet[?"Skin"+string(i)+"_2"] , 1) , ds_list_find_value(CharacterSkinSet[?"Skin"+string(i)+"_2"] , 2));
+		//3
+		shader_set_uniform_f(shader_get_uniform(shdColorChange, "rep4"), ds_list_find_value(CharacterSkinSet[?"Base"+string(i)+"_3"] , 0) , ds_list_find_value(CharacterSkinSet[?"Base"+string(i)+"_3"] , 1) , ds_list_find_value(CharacterSkinSet[?"Base"+string(i)+"_3"] , 2));
+		shader_set_uniform_f(shader_get_uniform(shdColorChange, "new4"), ds_list_find_value(CharacterSkinSet[?"Skin"+string(i)+"_3"] , 0) , ds_list_find_value(CharacterSkinSet[?"Skin"+string(i)+"_3"] , 1) , ds_list_find_value(CharacterSkinSet[?"Skin"+string(i)+"_3"] , 2));
+		
 		draw_sprite(sprHudBody2 , scrDameDato(Control.CharacterList , CharacterId[i] , "Hud Index") , scrX() + 2 + Largo * (i) , scrY() + Y );
+
+		shader_reset();
+		#endregion
 		draw_sprite(sprHudBody , 1 , scrX() + 2 + Largo * (i) , scrY() + Y );
 	
 		for (var j = 0 ; j < CharacterLife[i] ; j++)
