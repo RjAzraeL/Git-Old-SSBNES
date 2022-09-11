@@ -78,8 +78,11 @@ if (Control.Wait == 0)
 		}
 		else
 		{
-			var Square = instance_place(x , y , objPlayerSquare);
-			Square.IdeSkin = scrChangeSkin(Square.IdeSkin , Square.IdeSkinTope , Square.IdeCharacter , Square , Square.Slot);
+			if (!place_meeting(x, y , objSelectorCircle))
+			{
+				var Square = instance_place(x , y , objPlayerSquare);
+				Square.IdeSkin = scrChangeSkin(Square.IdeSkin , Square.IdeSkinTope , Square.IdeCharacter , Square , Square.Slot);
+			}
 		}
 	}
 	if (Control.AttackButtonPressedActive and Control.Wait == 0)
@@ -139,7 +142,7 @@ if (Control.Wait == 0)
 						Circle.ActualRoster = Roster;
 						Circle.obX = Roster.x;
 						Circle.obY = Roster.y;
-						scrResetSkin(Roster.ChrIde,Circle.SquareOrigin,Circle.Ide);
+						Circle.SquareOrigin.IdeSkin = scrResetSkin(Roster.ChrIde,Circle.SquareOrigin,Circle.Ide);
 						var Listo = false;
 						for (var i = 0 ; i < 4 ; i++)
 						{
@@ -176,7 +179,8 @@ if (Control.Wait == 0)
 				var Square = instance_place(x , y , objPlayerSquare);
 				if (Square.Slot == Circle.Ide)
 				{
-					scrResetSkin(0,Square,Square.Slot);
+					Square.IdeSkin = scrResetSkin(0,Square,Square.Slot);
+					Square.IdeCharacter = 0;
 					Circle.obX = Square.x + 31;
 					Circle.obY = Square.y + 47;
 					Circle.lstX = Circle.obX;
