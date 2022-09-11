@@ -1,11 +1,11 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "scrDataCharacter",
+  "name": "scrStringToList",
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Data",
-    "path": "folders/Scripts/Data.yy",
+    "name": "Other",
+    "path": "folders/Scripts/Data/Other.yy",
   },
 }

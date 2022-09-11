@@ -67,7 +67,21 @@ function scrSetCharacter()
 	MovAerialUp = ds_list_find_value( scrGetValueCharacter("Movs") , 11);
 	MovAerialDown = ds_list_find_value( scrGetValueCharacter("Movs") , 10);
 	
+	#endregion
 	
+	#region Skin
+	
+	ColorBase[0] = real(scrDameDato(Control.CharacterList , Control.CharacterId[Position] , "Palette Code")[?"c0_0"]);
+	ColorBase[1] = real(scrDameDato(Control.CharacterList , Control.CharacterId[Position] , "Palette Code")[?"c0_1"]);
+	ColorBase[2] = real(scrDameDato(Control.CharacterList , Control.CharacterId[Position] , "Palette Code")[?"c0_2"]);
+	ColorBase[3] = real(scrDameDato(Control.CharacterList , Control.CharacterId[Position] , "Palette Code")[?"c0_3"]);
+	
+	ColorSkin[0] = real(scrDameDato(Control.CharacterList , Control.CharacterId[Position] , "Palette Code")[?"c"+string(Control.CharacterSkin[Position])+"_0"]);
+	ColorSkin[1] = real(scrDameDato(Control.CharacterList , Control.CharacterId[Position] , "Palette Code")[?"c"+string(Control.CharacterSkin[Position])+"_1"]);
+	ColorSkin[2] = real(scrDameDato(Control.CharacterList , Control.CharacterId[Position] , "Palette Code")[?"c"+string(Control.CharacterSkin[Position])+"_2"]);
+	ColorSkin[3] = real(scrDameDato(Control.CharacterList , Control.CharacterId[Position] , "Palette Code")[?"c"+string(Control.CharacterSkin[Position])+"_3"]);
+	
+	visible = true;
 	
 	#endregion
 

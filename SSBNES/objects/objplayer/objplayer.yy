@@ -7,7 +7,7 @@
     "path": "sprites/sprChSandbagIdle/sprChSandbagIdle.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "managed": true,
   "spriteMaskId": {
     "name": "sprChMarioMask",

@@ -28,7 +28,9 @@ function scrDataCharacter()
 	/*Vertical Limit Porcentage*/35,
 	/*Movs*/ scrCrearLista(0,1,2,3,4,5,6,7,8,9,10,11),
 	/*Hud index*/0,
-	/*Roster id*/0
+	/*Roster id*/0,
+	/*Palette name*/"MAR",
+	/*Palette code*/0
 	)	
 	);
 	
@@ -58,7 +60,9 @@ function scrDataCharacter()
 	/*Vertical Limit Porcentage*/20,
 	/*Movs*/ scrCrearLista(0,1,2,3,4,5,6,7,8,9,10,11),
 	/*Hud index*/1,
-	/*Roster id*/0
+	/*Roster id*/0,
+	/*Palette name*/"MAR",
+	/*Palette code*/0
 	)	
 	);
 	
@@ -88,8 +92,10 @@ function scrDataCharacter()
 	/*Vertical Limit Porcentage*/25,
 	/*Movs*/ scrCrearLista(0,1,2,3,4,5,6,7,8,9,10,11),
 	/*Hud index*/2,
-	/*Roster id*/7
-	)	
+	/*Roster id*/7,
+	/*Palette name*/"MAR",
+	/*Palette code*/0
+	)
 	);
 }
 
@@ -121,6 +127,11 @@ function scrMapCharacter(List)
 	Paquete[? "Movs"] = ds_list_find_value(List , 21);
 	Paquete[? "Hud Index"] = ds_list_find_value(List , 22);
 	Paquete[? "Roster id"] = ds_list_find_value(List , 23);
+	Paquete[? "Palette Name"] = ds_list_find_value(List , 24);
+	Paquete[? "Palette Code"] = ds_list_find_value(List , 25);
 	
 	ds_list_add(Control.CharacterList , Paquete);
+	
+	var Size = ds_list_size(Control.CharacterList)-1;
+	scrGetPalette(Size);
 }
