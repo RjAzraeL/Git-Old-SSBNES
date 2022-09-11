@@ -97,6 +97,38 @@ function scrDataCharacter()
 	/*Palette code*/0
 	)
 	);
+	
+		/*2*/
+	scrMapCharacter( 
+	scrCrearLista(
+	/*Name*/"Pollier" ,
+	/*Description*/"Super Mario Bros." ,
+	/*Lore*/"" ,
+	/*Class*/"" ,
+	/*Sprite*/"sprChPollier" ,
+	/*Jumps*/3,
+	/*Aceleration*/.1,
+	/*SpeedWalk*/0.85,
+	/*SpeedRun*/2,
+	/*SpeedFall*/1.9,
+	/*JumpValue*/5.5,
+	/*Gravity*/.3,
+	/*GravityFall*/.08,
+	/*LimitFall*/6,
+	/*Weight*/2.9,
+	/*Friction*/0.09,
+	/*Mask Duck*/sprChPollierMaskDuck,
+	/*Mask Normal*/sprChPollierMask,
+	/*Sfx Skid*/sfxKirbySkid,
+	/*Sfx Jump*/sfxKirbyJump,
+	/*Vertical Limit Porcentage*/25,
+	/*Movs*/ scrCrearLista(0,1,2,3,4,5,6,7,8,9,10,11),
+	/*Hud index*/3,
+	/*Roster id*/40,
+	/*Palette name*/"POL",
+	/*Palette code*/0
+	)
+	);
 }
 
 ///@arg list
