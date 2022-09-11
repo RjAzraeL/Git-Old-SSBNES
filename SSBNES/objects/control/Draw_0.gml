@@ -49,15 +49,15 @@ if (BattleLevel)
 		shader_set_uniform_f(shader_get_uniform(shdColorChange, "new4"), ds_list_find_value(CharacterSkinSet[?"Skin"+string(i)+"_3"] , 0) , ds_list_find_value(CharacterSkinSet[?"Skin"+string(i)+"_3"] , 1) , ds_list_find_value(CharacterSkinSet[?"Skin"+string(i)+"_3"] , 2));
 		
 		draw_sprite(sprHudBody2 , scrDameDato(Control.CharacterList , CharacterId[i] , "Hud Index") , scrX() + 2 + Largo * (i) , scrY() + Y );
-
-		shader_reset();
-		#endregion
-		draw_sprite(sprHudBody , 1 , scrX() + 2 + Largo * (i) , scrY() + Y );
-	
+		
 		for (var j = 0 ; j < CharacterLife[i] ; j++)
 		{
 			draw_sprite_ext(sprHudIcons , CharacterId[i]+1 , scrX() + 2 + Largo * i + (j*10) , scrY() + Y + 34 , 1 , 1 , 0 , c_white , 1);
 		}
+		
+		shader_reset();
+		#endregion
+		draw_sprite(sprHudBody , 1 , scrX() + 2 + Largo * (i) , scrY() + Y );
 	}
 }
 #endregion
