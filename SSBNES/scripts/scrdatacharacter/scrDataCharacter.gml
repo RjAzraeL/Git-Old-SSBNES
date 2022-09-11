@@ -29,7 +29,7 @@ function scrDataCharacter()
 	/*Movs*/ scrCrearLista(0,1,2,3,4,5,6,7,8,9,10,11),
 	/*Hud index*/0,
 	/*Roster id*/0,
-	/*Palette name*/"MAR",
+	/*Palette name*/"SAN",
 	/*Palette code*/0
 	)	
 	);
@@ -93,7 +93,7 @@ function scrDataCharacter()
 	/*Movs*/ scrCrearLista(0,1,2,3,4,5,6,7,8,9,10,11),
 	/*Hud index*/2,
 	/*Roster id*/7,
-	/*Palette name*/"MAR",
+	/*Palette name*/"KIR",
 	/*Palette code*/0
 	)
 	);

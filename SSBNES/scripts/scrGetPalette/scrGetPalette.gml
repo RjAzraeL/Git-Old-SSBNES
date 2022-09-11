@@ -14,7 +14,13 @@ function scrGetPalette(CharacterId)
 		Paquete[?"c"+string(i) + "_2"] = scrStringToList( ini_read_string(CodeName , "c"+string(i) + "_2" , "") );
 		Paquete[?"c"+string(i) + "_3"] = scrStringToList( ini_read_string(CodeName , "c"+string(i) + "_3" , "") );
 	}
-	
+	if (Paquete[?"t"] == 0)
+	{
+		Paquete[?"c"+string(i) + "_0"] = scrStringToList( ini_read_string("ERR" , "c0_0" , "") );
+		Paquete[?"c"+string(i) + "_1"] = scrStringToList( ini_read_string("ERR" , "c0_1" , "") );
+		Paquete[?"c"+string(i) + "_2"] = scrStringToList( ini_read_string("ERR" , "c0_2" , "") );
+		Paquete[?"c"+string(i) + "_3"] = scrStringToList( ini_read_string("ERR" , "c0_3" , "") );
+	}
 	ds_list_find_value(Control.CharacterList , CharacterId)[? "Palette Code"] = Paquete;
 	
 	ini_close();
