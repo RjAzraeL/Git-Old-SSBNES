@@ -69,6 +69,38 @@ function scrDataCharacter()
 	/*2*/
 	scrMapCharacter( 
 	scrCrearLista(
+	/*Name*/"Link" ,
+	/*Description*/"The Legend of Zelda" ,
+	/*Lore*/"" ,
+	/*Class*/"" ,
+	/*Sprite*/"sprChLink" ,
+	/*Jumps*/2,
+	/*Aceleration*/.12,
+	/*SpeedWalk*/1.15,
+	/*SpeedRun*/2.85,
+	/*SpeedFall*/1.9,
+	/*JumpValue*/5.5,
+	/*Gravity*/.3,
+	/*GravityFall*/.095,
+	/*LimitFall*/6,
+	/*Weight*/4,
+	/*Friction*/0.06,
+	/*Mask Duck*/sprChMarioMaskDuck,
+	/*Mask Normal*/sprChMarioMask,
+	/*Sfx Skid*/sfxMarioSkid,
+	/*Sfx Jump*/sfxMarioJump,
+	/*Vertical Limit Porcentage*/20,
+	/*Movs*/ scrCrearLista(0,1,2,3,4,5,6,7,8,9,10,11),
+	/*Hud index*/4,
+	/*Roster id*/5,
+	/*Palette name*/"LIN",
+	/*Palette code*/0
+	)	
+	);
+	
+	/*3*/
+	scrMapCharacter( 
+	scrCrearLista(
 	/*Name*/"Kirby" ,
 	/*Description*/"Kirby's Adventure" ,
 	/*Lore*/"" ,
@@ -91,18 +123,114 @@ function scrDataCharacter()
 	/*Sfx Jump*/sfxKirbyJump,
 	/*Vertical Limit Porcentage*/25,
 	/*Movs*/ scrCrearLista(0,1,2,3,4,5,6,7,8,9,10,11),
-	/*Hud index*/2,
+	/*Hud index*/5,
 	/*Roster id*/7,
 	/*Palette name*/"KIR",
 	/*Palette code*/0
 	)
 	);
 	
-		/*2*/
+	/*4*/
+	scrMapCharacter( 
+	scrCrearLista(
+	/*Name*/"Mega Man" ,
+	/*Description*/"Mega Man" ,
+	/*Lore*/"" ,
+	/*Class*/"" ,
+	/*Sprite*/"sprChMegaman" ,
+	/*Jumps*/2,
+	/*Aceleration*/.12,
+	/*SpeedWalk*/1.15,
+	/*SpeedRun*/2.85,
+	/*SpeedFall*/1.9,
+	/*JumpValue*/5.5,
+	/*Gravity*/.3,
+	/*GravityFall*/.095,
+	/*LimitFall*/6,
+	/*Weight*/4,
+	/*Friction*/0.06,
+	/*Mask Duck*/sprChMarioMaskDuck,
+	/*Mask Normal*/sprChMarioMask,
+	/*Sfx Skid*/sfxMarioSkid,
+	/*Sfx Jump*/sfxMarioJump,
+	/*Vertical Limit Porcentage*/20,
+	/*Movs*/ scrCrearLista(0,1,2,3,4,5,6,7,8,9,10,11),
+	/*Hud index*/6,
+	/*Roster id*/31,
+	/*Palette name*/"MEG",
+	/*Palette code*/0
+	)	
+	);
+	
+	/*5*/
+	scrMapCharacter( 
+	scrCrearLista(
+	/*Name*/"Samus" ,
+	/*Description*/"Metroid" ,
+	/*Lore*/"" ,
+	/*Class*/"" ,
+	/*Sprite*/"sprChSamus" ,
+	/*Jumps*/2,
+	/*Aceleration*/.12,
+	/*SpeedWalk*/1.15,
+	/*SpeedRun*/2.85,
+	/*SpeedFall*/1.9,
+	/*JumpValue*/5.5,
+	/*Gravity*/.3,
+	/*GravityFall*/.095,
+	/*LimitFall*/6,
+	/*Weight*/4,
+	/*Friction*/0.06,
+	/*Mask Duck*/sprChMarioMaskDuck,
+	/*Mask Normal*/sprChMarioMask,
+	/*Sfx Skid*/sfxMarioSkid,
+	/*Sfx Jump*/sfxMarioJump,
+	/*Vertical Limit Porcentage*/20,
+	/*Movs*/ scrCrearLista(0,1,2,3,4,5,6,7,8,9,10,11),
+	/*Hud index*/7,
+	/*Roster id*/12,
+	/*Palette name*/"SAM",
+	/*Palette code*/0
+	)	
+	);
+	
+	/*6*/
+	scrMapCharacter( 
+	scrCrearLista(
+	/*Name*/"Pit" ,
+	/*Description*/"Kid Icarus" ,
+	/*Lore*/"" ,
+	/*Class*/"" ,
+	/*Sprite*/"sprChPit" ,
+	/*Jumps*/4,
+	/*Aceleration*/.12,
+	/*SpeedWalk*/1.15,
+	/*SpeedRun*/2.85,
+	/*SpeedFall*/1.9,
+	/*JumpValue*/5.5,
+	/*Gravity*/.3,
+	/*GravityFall*/.095,
+	/*LimitFall*/6,
+	/*Weight*/4,
+	/*Friction*/0.06,
+	/*Mask Duck*/sprChMarioMaskDuck,
+	/*Mask Normal*/sprChMarioMask,
+	/*Sfx Skid*/sfxMarioSkid,
+	/*Sfx Jump*/sfxMarioJump,
+	/*Vertical Limit Porcentage*/20,
+	/*Movs*/ scrCrearLista(0,1,2,3,4,5,6,7,8,9,10,11),
+	/*Hud index*/8,
+	/*Roster id*/14,
+	/*Palette name*/"PIT",
+	/*Palette code*/0
+	)	
+	);
+	
+		/*40*/
 	scrMapCharacter( 
 	scrCrearLista(
 	/*Name*/"Pollier" ,
-	/*Description*/"Super Mario Bros." ,
+	/*Description*/"Crazy Chickens" ,
 	/*Lore*/"" ,
 	/*Class*/"" ,
 	/*Sprite*/"sprChPollier" ,
