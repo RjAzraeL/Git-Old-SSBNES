@@ -458,25 +458,13 @@ if (Damaged != 0)
 			VerticalMovement *= -1;
 		}
 	}
-	if (place_meeting(x , y + VerticalMovement+1 , objBlockSlope45))
+	if (place_meeting(x , y + VerticalMovement*1.2 , objBlockSlope45))
 	{
-		var Slope = instance_place(x , y + VerticalMovement + 1 , objBlockSlope45);
-		var Angulo = 45;
-		if (Slope.image_xscale < 0)
-		{
-			Angulo = 135;
-		}
-		VerticalMovement = lengthdir_y(-VerticalMovement , Angulo);
+		VerticalMovement *= -1;
 	}
-	if (place_meeting(x + HorizontalMovement + 1 , y , objBlockSlope45))
+	if (place_meeting(x + HorizontalMovement*1.2 , y , objBlockSlope45))
 	{
-		var Slope = instance_place(x + HorizontalMovement + 1 , y , objBlockSlope45);
-		var Angulo = 45;
-		if (Slope.image_xscale < 0)
-		{
-			Angulo = 135;
-		}
-		HorizontalMovement = lengthdir_x(-HorizontalMovement , Angulo);
+		HorizontalMovement *= -1;
 	}
 }
 else
