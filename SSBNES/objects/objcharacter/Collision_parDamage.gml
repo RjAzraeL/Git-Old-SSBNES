@@ -30,8 +30,8 @@ if (other.Creator != self and ds_list_find_index(BlowsReceivedList , other.id) =
 		}
 		Dir = point_direction(other.x , other.y , x , y);
 		LastDirectionDamaged = Dir;
-		SavedHorizontalMovement = lengthdir_x( 3 + (LastDamage/4) , Dir);
-		VerticalMovement = lengthdir_y( 3 + (LastDamage/2)  , Dir);
+		SavedHorizontalMovement = lengthdir_x( 2 + (LastDamage/16) , Dir) + round(other.Creator.HorizontalMovement/2);
+		VerticalMovement = lengthdir_y( 2 + (LastDamage/8)  , Dir);
 		MovementPostDamage = SavedHorizontalMovement;
 	}
 	else
@@ -40,8 +40,8 @@ if (other.Creator != self and ds_list_find_index(BlowsReceivedList , other.id) =
 		var Dir = 0;
 		Dir = point_direction(other.x , other.y , x , y);
 		LastDirectionDamaged = Dir;
-		SavedHorizontalMovement = lengthdir_x( 3 , Dir);
-		VerticalMovement = lengthdir_y( 3  , Dir);
+		SavedHorizontalMovement = lengthdir_x( 2 , Dir);
+		VerticalMovement = lengthdir_y( 2  , Dir);
 		MovementPostDamage = SavedHorizontalMovement;
 	}
 	

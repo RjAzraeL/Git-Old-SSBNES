@@ -2,14 +2,7 @@
 if (!FallingVoid)
 {
 	alarm[0] = 25;
-	if (scrExiste(objPlayer))
-	{
-		Target = objPlayer;
-	}
-	else
-	{
-		Target = scrSearchRival(self);
-	}
+	Target = scrSearchRival(self);
 	RightButtonActive = false;
 	LeftButtonActive = false;
 	RightButtonPressedActive = false;
@@ -17,18 +10,6 @@ if (!FallingVoid)
 	JumpButtonActive = false;
 	AttackButtonPressedActive = false;
 	AttackButtonReleasedActive = false;
-
-	if (FallingVoid and VerticalMovement > 0)
-	{
-		UpButtonActive = true;
-		Recover = true;
-		alarm[8] = 5;
-	}
-
-	if (!FallingVoid)
-	{
-		Recover = false;
-	}
 
 	if (scrExiste(Target))
 	{

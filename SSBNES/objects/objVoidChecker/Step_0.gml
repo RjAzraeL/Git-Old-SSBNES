@@ -11,7 +11,7 @@ else
 	instance_destroy();
 }
 visible = true;
-if (place_meeting(x , y , parCollision) or y < Control.VoidLimitStage+8)
+if (place_meeting(x , y , parCollision) or y < Control.VoidLimitStage)
 {
 	visible = false;
 }
