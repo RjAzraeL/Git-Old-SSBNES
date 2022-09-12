@@ -280,7 +280,7 @@ function scrExecuteMovs(ID)
 		case(11):
 		{
 			///Up
-			scrFreeJump(6);
+			scrFreeJump(9);
 			var Up = instance_create_depth(x , y , depth-1 , objCombatHitboxImageFollower);
 			Up.sprite_index = sprChMarioAerialUpMask;
 			Up.PowerScale = false;
