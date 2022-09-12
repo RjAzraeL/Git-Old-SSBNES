@@ -27,7 +27,7 @@ function scrDataCharacter()
 	/*Sfx Jump*/sfxKirbyJump,
 	/*Vertical Limit Porcentage*/35,
 	/*Movs*/ scrCrearLista(0,1,2,3,4,5,6,7,8,9,10,11),
-	/*Hud index*/0,
+	/*Hud index*/1,
 	/*Roster id*/0,
 	/*Palette name*/"SAN",
 	/*Palette code*/0
@@ -59,7 +59,7 @@ function scrDataCharacter()
 	/*Sfx Jump*/sfxMarioJump,
 	/*Vertical Limit Porcentage*/20,
 	/*Movs*/ scrCrearLista(0,1,2,3,4,5,6,7,8,9,10,11),
-	/*Hud index*/1,
+	/*Hud index*/2,
 	/*Roster id*/0,
 	/*Palette name*/"MAR",
 	/*Palette code*/0
@@ -91,7 +91,7 @@ function scrDataCharacter()
 	/*Sfx Jump*/sfxMarioJump,
 	/*Vertical Limit Porcentage*/20,
 	/*Movs*/ scrCrearLista(0,1,2,3,4,5,6,7,8,9,10,11),
-	/*Hud index*/4,
+	/*Hud index*/3,
 	/*Roster id*/5,
 	/*Palette name*/"LIN",
 	/*Palette code*/0
@@ -123,7 +123,7 @@ function scrDataCharacter()
 	/*Sfx Jump*/sfxKirbyJump,
 	/*Vertical Limit Porcentage*/25,
 	/*Movs*/ scrCrearLista(0,1,2,3,4,5,6,7,8,9,10,11),
-	/*Hud index*/5,
+	/*Hud index*/4,
 	/*Roster id*/7,
 	/*Palette name*/"KIR",
 	/*Palette code*/0
@@ -155,7 +155,7 @@ function scrDataCharacter()
 	/*Sfx Jump*/sfxMarioJump,
 	/*Vertical Limit Porcentage*/20,
 	/*Movs*/ scrCrearLista(0,1,2,3,4,5,6,7,8,9,10,11),
-	/*Hud index*/6,
+	/*Hud index*/5,
 	/*Roster id*/31,
 	/*Palette name*/"MEG",
 	/*Palette code*/0
@@ -187,7 +187,7 @@ function scrDataCharacter()
 	/*Sfx Jump*/sfxMarioJump,
 	/*Vertical Limit Porcentage*/20,
 	/*Movs*/ scrCrearLista(0,1,2,3,4,5,6,7,8,9,10,11),
-	/*Hud index*/7,
+	/*Hud index*/6,
 	/*Roster id*/12,
 	/*Palette name*/"SAM",
 	/*Palette code*/0
@@ -219,7 +219,7 @@ function scrDataCharacter()
 	/*Sfx Jump*/sfxMarioJump,
 	/*Vertical Limit Porcentage*/20,
 	/*Movs*/ scrCrearLista(0,1,2,3,4,5,6,7,8,9,10,11),
-	/*Hud index*/8,
+	/*Hud index*/7,
 	/*Roster id*/14,
 	/*Palette name*/"PIT",
 	/*Palette code*/0
@@ -251,7 +251,7 @@ function scrDataCharacter()
 	/*Sfx Jump*/sfxKirbyJump,
 	/*Vertical Limit Porcentage*/25,
 	/*Movs*/ scrCrearLista(0,1,2,3,4,5,6,7,8,9,10,11),
-	/*Hud index*/3,
+	/*Hud index*/8,
 	/*Roster id*/40,
 	/*Palette name*/"POL",
 	/*Palette code*/0

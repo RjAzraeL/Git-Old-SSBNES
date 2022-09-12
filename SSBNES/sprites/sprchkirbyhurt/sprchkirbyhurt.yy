@@ -67,7 +67,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Kirby",
-    "path": "folders/Sprites/Characters/Kirby.yy",
+    "name": "Combat",
+    "path": "folders/Sprites/Characters/Kirby/Combat.yy",
   },
 }
