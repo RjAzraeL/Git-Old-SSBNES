@@ -261,9 +261,9 @@ function scrExecuteMovs(ID)
 			var DownFlipAerial = instance_create_depth(x , y , depth-1 , objCombatHitboxImageFollower);
 			DownFlipAerial.sprite_index = sprChMarioAerialDownMask;
 			DownFlipAerial.PowerScale = false;
+			var _IdeMov = 10;
 			DownFlipAerial.CanGrab = scrDameDato(Control.MovList , _IdeMov , "Can Grab");
 			DownFlipAerial.MultipleHits = scrDameDato(Control.MovList , _IdeMov , "Multiple Hits");
-			var _IdeMov = 10;
 			DownFlipAerial.Ide = _IdeMov;
 			DownFlipAerial.FollowX = LastScaleXSprite;
 			DownFlipAerial.FollowY = 0;

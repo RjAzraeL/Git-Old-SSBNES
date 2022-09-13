@@ -14,8 +14,8 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "sfxHurt",
-  "duration": 0.0,
+  "soundFile": "sfxHurt.wav",
+  "duration": 0.102925,
   "parent": {
     "name": "Generic",
     "path": "folders/Audio/SFX/Generic.yy",
