@@ -55,9 +55,13 @@ if (Platform)
 	{
 		PlatformReady = true;
 	}
-	if ((scrUseKeyboardAvailable() and PlatformReady) or Start)
+	if (scrUseKeyboardAvailable() and PlatformReady)
 	{
 		scrOutPlatform();
+	}
+	if (Start)
+	{
+		PlatformCooldown = 0;
 	}
 }
 #endregion
@@ -279,7 +283,7 @@ if (SoundSkid > 0)
 	SoundSkid--;
 	if (SoundSkid == 1 and Skid and scrSolidDetectorBelow())
 	{
-		scrSound(SfxSkid);
+		scrSound(sfxMarioSkid);
 	}
 }
 
@@ -315,7 +319,7 @@ if (!Platform and !RootAttack and Damaged == 0)
 	if (LastScaleX != ScaleX and (Skid or RunActive) and scrSolidDetectorBelow())
 	{
 		CooldownSwap = 8;
-		scrSound(SfxSkid);
+		scrSound(sfxMarioSkid);
 		HorizontalMovement = SpeedRun * LastScaleX;
 	}
 }

@@ -12,18 +12,16 @@ if (BattleLevel)
 		if (CharacterReady[i])
 		{
 			var X = room_width/2;
+			var Y = 0;
 			var Spawn = scrGiveMeSpawn(i , true);
 			if (scrExiste(Spawn))
 			{
 				X = Spawn.x;
+				Y = Spawn.y;
 			}
-			var Ch = instance_create_depth(X , -16 , 0 , ChObj);
+			var Ch = instance_create_depth(X , Y , 0 , ChObj);
 			Ch.Position = i;
 			Ch.Start = true;
-			if (scrExiste(Spawn))
-			{
-				Ch.YPlatform = Spawn.y;
-			}
 			TotalCharacters++;
 		}
 	}
