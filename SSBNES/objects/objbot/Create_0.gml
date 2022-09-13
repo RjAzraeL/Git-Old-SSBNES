@@ -2,6 +2,7 @@
 event_inherited();
 Mentality = "Range";
 Style = choose("Brute","Finisher");
+ChaseStyle = choose("Go max","Go min");
 RevengeEntity = noone;
 RevengeTime = 0;
 DownButtonPressedActive = false;

@@ -17,15 +17,38 @@ function scrSearchRival(Me)
 				{
 					if (scrExiste(RivalReturn))
 					{
-						if (Control.CharacterLife[Rival.Position] < Control.CharacterLife[RivalReturn.Position])
+						switch (Me.ChaseStyle)
 						{
-							RivalReturn = Rival;
-						}
-						else if (Control.CharacterLife[Rival.Position] == Control.CharacterLife[RivalReturn.Position])
-						{
-							if (Control.CharacterPorcentage[Rival.Position] > Control.CharacterPorcentage[RivalReturn.Position])
+							case("Go max"):
 							{
-								RivalReturn = Rival;
+								if (Control.CharacterLife[Rival.Position] > Control.CharacterLife[RivalReturn.Position])
+								{
+									RivalReturn = Rival;
+								}
+								else if (Control.CharacterLife[Rival.Position] == Control.CharacterLife[RivalReturn.Position])
+								{
+									if (Control.CharacterPorcentage[Rival.Position] < Control.CharacterPorcentage[RivalReturn.Position])
+									{
+										RivalReturn = Rival;
+									}
+								}
+								break;
+							}
+							case("Go min"):
+							default:
+							{
+								if (Control.CharacterLife[Rival.Position] < Control.CharacterLife[RivalReturn.Position])
+								{
+									RivalReturn = Rival;
+								}
+								else if (Control.CharacterLife[Rival.Position] == Control.CharacterLife[RivalReturn.Position])
+								{
+									if (Control.CharacterPorcentage[Rival.Position] > Control.CharacterPorcentage[RivalReturn.Position])
+									{
+										RivalReturn = Rival;
+									}
+								}
+								break;
 							}
 						}
 					}

@@ -6,6 +6,11 @@ if (place_meeting(x , y + 4 , parCollision))
 	{
 		case("Brute"):
 		{
+			ChaseStyle = "Go max";
+			if (scrProbable(.2))
+			{
+				ChaseStyle = "Go min";
+			}
 			if (scrExiste(Target))
 			{
 				if (Target.LifePorcentage < 80)
@@ -25,6 +30,11 @@ if (place_meeting(x , y + 4 , parCollision))
 		}
 		case("Finisher"):
 		{
+			ChaseStyle = "Go min";
+			if (scrProbable(.1))
+			{
+				ChaseStyle = "Go max";
+			}
 			if (scrExiste(Target))
 			{
 				if (Target.LifePorcentage < 80)
