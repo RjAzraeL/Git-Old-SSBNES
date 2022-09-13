@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "objBlockTransferable",
   "spriteId": {
     "name": "sprSolidTransferable",
     "path": "sprites/sprSolidTransferable/sprSolidTransferable.yy",
@@ -31,8 +34,4 @@
     "name": "Furnis",
     "path": "folders/Objects/Furnis.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "objBlockTransferable",
-  "tags": [],
-  "resourceType": "GMObject",
 }

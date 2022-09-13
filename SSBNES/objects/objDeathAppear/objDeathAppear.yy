@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "objDeathAppear",
   "spriteId": {
-    "name": "sprSelector2",
-    "path": "sprites/sprSelector2/sprSelector2.yy",
+    "name": "sprDeathAppear",
+    "path": "sprites/sprDeathAppear/sprDeathAppear.yy",
   },
   "solid": false,
   "visible": true,

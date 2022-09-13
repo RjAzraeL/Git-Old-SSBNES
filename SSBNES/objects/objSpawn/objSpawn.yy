@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "objSpawn",
   "spriteId": {
-    "name": "sprSelector2",
-    "path": "sprites/sprSelector2/sprSelector2.yy",
+    "name": "sprSpawner",
+    "path": "sprites/sprSpawner/sprSpawner.yy",
   },
   "solid": false,
   "visible": true,
