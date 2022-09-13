@@ -21,6 +21,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5D41F2D7","properties":[],"isDnd":false,"objectId":{"name":"objSpawn","path":"objects/objSpawn/objSpawn.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":272.0,"y":112.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3C052876","properties":[],"isDnd":false,"objectId":{"name":"objSpawn","path":"objects/objSpawn/objSpawn.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":80.0,"y":48.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_18810505","properties":[],"isDnd":false,"objectId":{"name":"objSpawn","path":"objects/objSpawn/objSpawn.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":80.0,"y":96.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_624525B1","properties":[],"isDnd":false,"objectId":{"name":"objDeathAppear","path":"objects/objDeathAppear/objDeathAppear.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":184.0,"y":48.0,},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":8,"gridY":8,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"objColision","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_57A24989_1","properties":[],"isDnd":false,"objectId":{"name":"objBlockSlope45","path":"objects/objBlockSlope45/objBlockSlope45.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":7.0000005,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":168.0,"y":120.0,},
@@ -52,6 +53,7 @@
     {"name":"inst_5D41F2D7","path":"rooms/rmStgUnderworld/rmStgUnderworld.yy",},
     {"name":"inst_3C052876","path":"rooms/rmStgUnderworld/rmStgUnderworld.yy",},
     {"name":"inst_18810505","path":"rooms/rmStgUnderworld/rmStgUnderworld.yy",},
+    {"name":"inst_624525B1","path":"rooms/rmStgUnderworld/rmStgUnderworld.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

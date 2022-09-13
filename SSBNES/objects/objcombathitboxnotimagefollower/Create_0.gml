@@ -8,4 +8,6 @@ image_index = 0;
 Rebound = 0;
 scrSound(sfxMarioFireball);
 Update = false;
+CanGrab = false;
+MultipleHits = false;
 #endregion

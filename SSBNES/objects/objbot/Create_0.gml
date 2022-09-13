@@ -5,6 +5,7 @@ Style = choose("Brute","Finisher");
 ChaseStyle = choose("Go max","Go min");
 RevengeEntity = noone;
 RevengeTime = 0;
+Target = noone;
 DownButtonPressedActive = false;
 LeftButtonPressedActive = false;
 RightButtonPressedActive = false;
