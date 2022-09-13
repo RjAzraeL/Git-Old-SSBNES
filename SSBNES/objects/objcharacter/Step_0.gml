@@ -50,12 +50,12 @@ if (Platform)
 	{
 		scrOutPlatform();
 	}
-	y = lerp(y , Control.PlatformYLimit+5 , .1);
-	if (y >= Control.PlatformYLimit)
+	y = lerp(y , YPlatform+5 , .1);
+	if (y >= YPlatform)
 	{
 		PlatformReady = true;
 	}
-	if (scrUseKeyboardAvailable() and PlatformReady)
+	if ((scrUseKeyboardAvailable() and PlatformReady) or Start)
 	{
 		scrOutPlatform();
 	}
@@ -740,8 +740,19 @@ if (y > room_height + 64)
 	scrSound(sfxKO);
 	if (Control.CharacterLife[Position] > 0)
 	{
-		var Character = instance_create_depth(room_width/2 , y , depth , object_index);
+		var X = room_width/2;
+		var Spawn = scrGiveMeSpawn(Position , false);
+		if (scrExiste(Spawn))
+		{
+			X = Spawn.x;
+		}
+		var Character = instance_create_depth(X , -sprite_height , depth , object_index);
 		Character.Position = Position;
+		Character.Start = false;
+		if (scrExiste(Spawn))
+		{
+			Character.YPlatform = Spawn.y;
+		}
 		Control.CharacterLife[Position]--;
 	}
 	instance_destroy();

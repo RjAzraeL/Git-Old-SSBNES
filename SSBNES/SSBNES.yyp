@@ -125,6 +125,7 @@
     {"id":{"name":"sfxMarioSkid","path":"sounds/sfxMarioSkid/sfxMarioSkid.yy",},"order":0,},
     {"id":{"name":"sprChKirbyTrance","path":"sprites/sprChKirbyTrance/sprChKirbyTrance.yy",},"order":10,},
     {"id":{"name":"objOptionBar","path":"objects/objOptionBar/objOptionBar.yy",},"order":3,},
+    {"id":{"name":"scrGiveMePosition","path":"scripts/scrGiveMePosition/scrGiveMePosition.yy",},"order":15,},
     {"id":{"name":"sndOst03Menu2_a","path":"sounds/sndOst03Menu2_a/sndOst03Menu2_a.yy",},"order":2,},
     {"id":{"name":"sprMenuBall","path":"sprites/sprMenuBall/sprMenuBall.yy",},"order":13,},
     {"id":{"name":"sprLogo","path":"sprites/sprLogo/sprLogo.yy",},"order":3,},

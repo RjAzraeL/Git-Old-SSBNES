@@ -1,5 +1,4 @@
 #region Set variables
-y = -sprite_height;
 Recovery = true;
 TimeHolding = 0;
 ProxMovs = 0;
@@ -76,7 +75,9 @@ Duck = false;
 DuckFall = false;
 DuckTime = 0;
 JumpStopSpeed = .5;
+YPlatform = 0;
 JumpStop = false;
+Start = false;
 OriginX = x;
 OriginY = y;
 LastDirection = 1;
