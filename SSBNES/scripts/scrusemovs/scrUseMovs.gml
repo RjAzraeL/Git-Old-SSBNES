@@ -1,13 +1,18 @@
 function scrUseMovs()
 {
 	#region Ground - Neutral
-	if ((Attacking or TimeAttacking != 0) and JumpButtonPressedActive)
+	if ((Attacking or TimeAttacking != 0) and AttackButtonPressedActive)
 	{
 		switch(ActualMov)
 		{
 			case(10):
 			{
-				scrSmallJump(ScaleXSprite);
+				var Value = 4;
+				if (!place_meeting(x , y - Value , parSolid) and !place_meeting(x , y - Value , objBlockSlope45))
+				{
+					y -= Value;
+				}
+				VerticalMovement = 0;
 				break;
 			}
 		}

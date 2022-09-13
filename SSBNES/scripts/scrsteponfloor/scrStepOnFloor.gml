@@ -8,7 +8,6 @@ function scrStepOnFloor()
 		VerticalMovementLimitExtra = 0;
 		GravityFallDownActive = 0;
 		JumpingInTerrain = false;
-		Damaged = 0;
 		AerialAvailable = true;
 		ds_list_clear(AerialAvaiableList);
 		if (!FallReady)

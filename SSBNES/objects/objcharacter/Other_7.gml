@@ -6,7 +6,8 @@ if (sprite_index = sprChMarioJump2 and !AnimacionSaltoTerminada)
 }
 if (sprite_index = sprChMarioAerialUp)
 {
-	sprite_index = sprChMarioFalling;
+	image_speed = 0;
+	image_index = image_number-1;
 }
 if (sprite_index = sprChKirbyFalling)
 {

@@ -98,5 +98,5 @@ if (visible)
 	}
 }
 draw_set_font(fntNormal);
-//draw_text(x , y - 32 , Attacking);
+draw_text(x , y + 32 , Platform);
 #endregion

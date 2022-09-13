@@ -95,6 +95,10 @@ else
 
 #region Horizontal Movement
 var HorizontalDirection = 0;
+if (Platform)
+{
+	VarSpeed = 0;
+}
 if (CooldownSwap == 0 and !Platform)
 {
 	if (!Duck and !RootAttack and TimeAttacking == 0)
@@ -266,7 +270,7 @@ if (!Platform)
 #endregion
 
 #region Down Fast
-if (DownButtonPressedActive and CooldowFall == 0 and CooldownJump == 0 and !place_meeting(x , y+1 , parCollision) and !Platform and !Attacking and TimeAttacking == 0 and !JumpStop)
+if (DownButtonPressedActive and CooldowFall == 0 and CooldownJump == 0 and !place_meeting(x , y+1 , parCollision) and !Platform and !Attacking and TimeAttacking == 0 and !JumpStop and !Platform)
 {
 	if (VerticalMovement != 0)
 	{
@@ -277,61 +281,57 @@ if (DownButtonPressedActive and CooldowFall == 0 and CooldownJump == 0 and !plac
 #endregion
 
 #region Run
-
-if (SoundSkid > 0)
-{
-	SoundSkid--;
-	if (SoundSkid == 1 and Skid and scrSolidDetectorBelow())
-	{
-		scrSound(sfxMarioSkid);
-	}
-}
-
-if (CooldownSwap > 0)
-{
-	CooldownSwap--;
-}
-if (RunTime > 0)
-{
-	RunTime--;
-}
-if (Running > 0)
-{
-	Running--;
-}
-
-if (CooldownSwap == 0)
-{
-	TranceAcelerationValue = lerp(TranceAcelerationValue , TranceAceleration , .5);
-}
-else
-{
-	TranceAcelerationValue = SpeedRun * (HorizontalDirection * -1);
-	if (CooldownSwap == 1)
-	{
-		HorizontalMovement = SpeedRun * (HorizontalDirection * -1);
-	}
-}
-
-#region Trance
-if (!Platform and !RootAttack and Damaged == 0)
-{
-	if (LastScaleX != ScaleX and (Skid or RunActive) and scrSolidDetectorBelow())
-	{
-		CooldownSwap = 8;
-		scrSound(sfxMarioSkid);
-		HorizontalMovement = SpeedRun * LastScaleX;
-	}
-}
-#endregion
-LastHorizontalDirection = HorizontalDirection;
-LastScaleXSprite = ScaleXSprite;
-LastScaleX = ScaleX;
-
-
-
 if (!Platform)
 {
+	if (SoundSkid > 0)
+	{
+		SoundSkid--;
+		if (SoundSkid == 1 and Skid and scrSolidDetectorBelow())
+		{
+			scrSound(sfxMarioSkid);
+		}
+	}
+
+	if (CooldownSwap > 0)
+	{
+		CooldownSwap--;
+	}
+	if (RunTime > 0)
+	{
+		RunTime--;
+	}
+	if (Running > 0)
+	{
+		Running--;
+	}
+
+	if (CooldownSwap == 0)
+	{
+		TranceAcelerationValue = lerp(TranceAcelerationValue , TranceAceleration , .5);
+	}
+	else
+	{
+		TranceAcelerationValue = SpeedRun * (HorizontalDirection * -1);
+		if (CooldownSwap == 1)
+		{
+			HorizontalMovement = SpeedRun * (HorizontalDirection * -1);
+		}
+	}
+
+	#region Trance
+	if (!Platform and !RootAttack and Damaged == 0)
+	{
+		if (LastScaleX != ScaleX and (Skid or RunActive) and scrSolidDetectorBelow())
+		{
+			CooldownSwap = 6;
+			scrSound(sfxMarioSkid);
+			HorizontalMovement = SpeedRun * LastScaleX;
+		}
+	}
+	#endregion
+	LastHorizontalDirection = HorizontalDirection;
+	LastScaleXSprite = ScaleXSprite;
+	LastScaleX = ScaleX;
 	if (LeftButtonPressedActive or RightButtonPressedActive)
 	{
 		RunValue++;
@@ -739,9 +739,11 @@ else
 #endregion
 
 #region Outside
-if (y > room_height + 64)
+if (y > room_height + 64 and !Dead)
 {
+	Dead = true;
 	scrSound(sfxKO);
+	
 	if (Control.CharacterLife[Position] > 0)
 	{
 		var X = room_width/2;
@@ -750,7 +752,7 @@ if (y > room_height + 64)
 		{
 			X = Spawn.x;
 		}
-		var Character = instance_create_depth(X , -sprite_height , depth , object_index);
+		var Character = instance_create_depth(X , -sprite_height , 0 , object_index);
 		Character.Position = Position;
 		Character.Start = false;
 		if (scrExiste(Spawn))

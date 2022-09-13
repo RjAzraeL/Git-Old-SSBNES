@@ -12,7 +12,7 @@ function scrDataMov()
 	/*7*/scrMapMov( scrCrearLista("Aerial Foot Bang" , 10 , true , 110 , 0 , false , true , false , 10 , 20 , .25 , false , true , false , false) );
 	/*8*/scrMapMov( scrCrearLista("Aerial Side" , 15 , false , 110 , 0 , false , true , false , 15 , 20 , .25 , false , true , false , false) );
 	/*9*/scrMapMov( scrCrearLista("Aerial Back" , 10 , false , 110 , 0 , false , true , false , 10 , 20 , .5 , false , true , false , false) );
-	/*10*/scrMapMov( scrCrearLista("Aerial Down" , 4 , false , 110 , 0 , false , true , false , 4 , 10 , .25 , false , true , true , true) );
+	/*10*/scrMapMov( scrCrearLista("Aerial Down" , 1 , false , 110 , 0 , false , true , false , 4 , 10 , .25 , false , true , true , true) );
 	/*11*/scrMapMov( scrCrearLista("Aerial Up" , 2 , false , 110 , 0 , false , true , false , 2 , 30 , .2 , true , true , false , false) );
 	
 }

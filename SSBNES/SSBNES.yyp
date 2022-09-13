@@ -111,7 +111,6 @@
     {"id":{"name":"sndOst07Battlefield_a","path":"sounds/sndOst07Battlefield_a/sndOst07Battlefield_a.yy",},"order":7,},
     {"id":{"name":"tlsStgLy1aMushroomKingdomI","path":"tilesets/tlsStgLy1aMushroomKingdomI/tlsStgLy1aMushroomKingdomI.yy",},"order":3,},
     {"id":{"name":"sprStgLy1aHyruleForest","path":"sprites/sprStgLy1aHyruleForest/sprStgLy1aHyruleForest.yy",},"order":0,},
-    {"id":{"name":"objCharacter2","path":"objects/objCharacter2/objCharacter2.yy",},"order":8,},
     {"id":{"name":"objBlockTransferable","path":"objects/objBlockTransferable/objBlockTransferable.yy",},"order":1,},
     {"id":{"name":"sprChKirbyMaskDuck","path":"sprites/sprChKirbyMaskDuck/sprChKirbyMaskDuck.yy",},"order":18,},
     {"id":{"name":"sprChSandbagIdle","path":"sprites/sprChSandbagIdle/sprChSandbagIdle.yy",},"order":0,},

@@ -1,4 +1,4 @@
 function scrUseKeyboardAvailable()
 {
-	return DownButtonActive or JumpButtonActive or LeftButtonActive or RightButtonActive or AttackButtonActive;
+	return DownButtonPressedActive or JumpButtonPressedActive or LeftButtonPressedActive or RightButtonPressedActive or AttackButtonPressedActive;
 }

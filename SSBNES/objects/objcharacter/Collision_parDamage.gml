@@ -1,5 +1,5 @@
 #region Damage
-if (other.Creator != self and (ds_list_find_index(BlowsReceivedList , other.id) == -1 or other.MultipleHits) and Inmune == 0 and CooldownDamage == 0)
+if (y < room_height and other.Creator != self and (ds_list_find_index(BlowsReceivedList , other.id) == -1 or other.MultipleHits) and Inmune == 0 and CooldownDamage == 0)
 {
 	#region Revenge
 	if (self.object_index == objBot and RevengeTime == 0)
@@ -25,9 +25,6 @@ if (other.Creator != self and (ds_list_find_index(BlowsReceivedList , other.id) 
 		}
 	}
 	#endregion
-	LifePorcentage += round(other.Power);
-	ds_list_add(BlowsReceivedList , other.id);
-	CooldownDamage = 5;
 	RootAttack = false;
 	Attacking = false;
 	TimeAttacking = 0;
@@ -35,6 +32,9 @@ if (other.Creator != self and (ds_list_find_index(BlowsReceivedList , other.id) 
 	scrCleanMoveQueue(self);
 	if (!other.CanGrab)
 	{
+		LifePorcentage += round(other.Power);
+		ds_list_add(BlowsReceivedList , other.id);
+		CooldownDamage = 5;
 		if (scrDameDato(Control.MovList , other.Ide , "Can Knockback"))
 		{
 			var PostDamage = LifePorcentage;
@@ -47,6 +47,7 @@ if (other.Creator != self and (ds_list_find_index(BlowsReceivedList , other.id) 
 			var PowerFormula = ( ( ( ( ( ec0 + ec1 ) * ec2 ) + 18) * NewKnockbackScaling ) + other.Power ) * RVar;
 			LastDamage = PowerFormula/8;
 			Damaged = round(PowerFormula/8);
+			CooldownDamage = Damaged;
 			var Dir = 0;
 			var AngleDireference = LifePorcentage;
 			if (AngleDireference >= 60)
@@ -81,12 +82,15 @@ if (other.Creator != self and (ds_list_find_index(BlowsReceivedList , other.id) 
 	}
 	else
 	{
-		scrSound(sfxHurt);
-		Damaged = 5;
-		x = other.x;
-		y = other.y;
-		VerticalMovement = 0;
-		HorizontalMovement = 0;
+		if (Damaged == 0)
+		{
+			scrSound(sfxHurt);
+			Damaged = 5;
+			CooldownDamage = 5;
+			LifePorcentage += round(other.Power);
+			SavedHorizontalMovement = lengthdir_x( 1 , 90);
+			VerticalMovement = lengthdir_y( 1  , 90);
+		}
 	}
 	
 	if (other.Destroyable)
