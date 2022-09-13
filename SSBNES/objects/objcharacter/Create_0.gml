@@ -38,7 +38,7 @@ LastDamage = 0;
 BlowsReceivedList = ds_list_create();
 SavedHorizontalDirection = 0;
 SavedHorizontalMovement = 0;
-AcelerationPostDamage = 1;
+AcelerationPostDamage = 0;
 MovementPostDamage = 0;
 PlusY = 0;
 _PlusY = 0;
@@ -100,21 +100,21 @@ AerialAvailable = true;
 AerialAvaiableList = ds_list_create();
 
 #region Controllers
-RightButtonActive = Control.RightButtonActive;
-LeftButtonActive = Control.LeftButtonActive;
-DownButtonPressedActive = Control.DownButtonPressedActive;
-LeftButtonPressedActive = Control.LeftButtonPressedActive;
-RightButtonPressedActive = Control.RightButtonPressedActive;
-JumpButtonActive = Control.JumpButtonActive;
-JumpButtonReleaseActive = Control.JumpButtonReleaseActive;
-AttackButtonPressedActive = Control.AttackButtonPressedActive;
-DownButtonReleasedActive = Control.DownButtonReleasedActive;
-DownButtonActive = Control.DownButtonActive;
-AttackButtonActive = Control.AttackButtonActive;
-UpButtonActive = Control.UpButtonActive;
-UpButtonReleasedActive = Control.UpButtonReleasedActive;
-UpButtonPressedActive = Control.UpButtonPressedActive;
-JumpButtonPressedActive = Control.JumpButtonPressedActive;
+RightButtonActive = false;
+LeftButtonActive = false;
+DownButtonPressedActive = false;
+LeftButtonPressedActive = false;
+RightButtonPressedActive = false;
+JumpButtonActive = false;
+JumpButtonReleaseActive = false;
+AttackButtonPressedActive = false;
+DownButtonReleasedActive = false;
+DownButtonActive = false;
+AttackButtonActive = false;
+UpButtonActive = false;
+UpButtonReleasedActive = false;
+UpButtonPressedActive = false;
+JumpButtonPressedActive = false;
 #endregion
 
 #region Sprites

@@ -191,23 +191,6 @@ if (CooldownSwap == 0 and !Platform)
 	{
 		AcelerationPostDamage = 0;
 	}
-	/*
-	if (Damaged == 0)
-	{
-		if (HorizontalDirection != 0)
-		{
-			HorizontalMovement = HorizontalDirection * (AcelerationValue);
-		}
-		else
-		{
-			HorizontalMovement = (AcelerationValue) * ScaleX;
-		}
-	}
-	else
-	{
-		HorizontalMovement = SavedHorizontalDirection * SavedHorizontalMovement;
-	}
-	*/
 
 	if (Damaged == 0)
 	{
