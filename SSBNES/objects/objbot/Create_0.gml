@@ -1,6 +1,7 @@
 #region Set variables
 event_inherited();
 Mentality = "Range";
+Style = choose("Brute","Finisher");
 DownButtonPressedActive = false;
 LeftButtonPressedActive = false;
 RightButtonPressedActive = false;

@@ -570,6 +570,12 @@ if (CooldownJump == 0 and CooldowFall == 0 and !RootAttack and Damaged == 0 and 
 		mask_index = MaskNormal;
 	}
 }
+else
+{
+	Duck = false;
+	DuckFall = false;
+	mask_index = MaskNormal;
+}
 #endregion
 
 #region Slope

@@ -19,19 +19,16 @@ if (scrExiste(VoidChecker))
 {
 	if (VoidChecker.visible)
 	{
-		if (x > -30 and x < room_width + 30)
-		{
-			FallingVoid = true;
-			Recover = true;
-			LeftButtonActive = false;
-			RightButtonActive = false;
-			LeftButtonPressedActive = false;
-			RightButtonPressedActive = false;
-			JumpButtonActive = true;
-			UpButtonPressedActive = true;
-			UpButtonActive = true;
-			alarm[8] = 5;
-		}
+		FallingVoid = true;
+		Recover = true;
+		LeftButtonActive = false;
+		RightButtonActive = false;
+		LeftButtonPressedActive = false;
+		RightButtonPressedActive = false;
+		JumpButtonActive = true;
+		UpButtonPressedActive = true;
+		UpButtonActive = true;
+		alarm[8] = 5;
 	}
 }
 #endregion
