@@ -12,7 +12,16 @@ DownButtonReleasedActive = Control.DownButtonReleasedActive;
 DownButtonActive = Control.DownButtonActive;
 AttackButtonActive = Control.AttackButtonActive;
 */
-
+#region Revenge
+if (RevengeTime > 0)
+{
+	RevengeTime--;
+}
+else
+{
+	RevengeEntity = noone;
+}
+#endregion
 #region Check void
 FallingVoid = false;
 if (scrExiste(VoidChecker))
@@ -25,6 +34,8 @@ if (scrExiste(VoidChecker))
 		RightButtonActive = false;
 		LeftButtonPressedActive = false;
 		RightButtonPressedActive = false;
+		DownButtonActive = false;
+		DownButtonPressedActive = false;
 		JumpButtonActive = true;
 		UpButtonPressedActive = true;
 		UpButtonActive = true;

@@ -2,6 +2,8 @@
 event_inherited();
 Mentality = "Range";
 Style = choose("Brute","Finisher");
+RevengeEntity = noone;
+RevengeTime = 0;
 DownButtonPressedActive = false;
 LeftButtonPressedActive = false;
 RightButtonPressedActive = false;

@@ -1,6 +1,30 @@
 #region Damage
 if (other.Creator != self and ds_list_find_index(BlowsReceivedList , other.id) == -1 and Inmune == 0 and CooldownDamage == 0)
 {
+	#region Revenge
+	if (self.object_index == objBot and RevengeTime == 0)
+	{
+		RevengeEntity = other.Creator;
+		switch (Style)
+		{
+			case("Brute"):
+			{
+				RevengeTime = 240;
+				break;
+			}
+			case("Finisher"):
+			{
+				RevengeTime = 140;
+				break;
+			}
+			default:
+			{
+				RevengeTime = 90;
+				break;
+			}
+		}
+	}
+	#endregion
 	LifePorcentage += round(other.Power);
 	ds_list_add(BlowsReceivedList , other.id);
 	CooldownDamage = 5;
@@ -40,8 +64,8 @@ if (other.Creator != self and ds_list_find_index(BlowsReceivedList , other.id) =
 		var Dir = 0;
 		Dir = point_direction(other.x , other.y , x , y);
 		LastDirectionDamaged = Dir;
-		SavedHorizontalMovement = lengthdir_x( 3 , Dir);
-		VerticalMovement = lengthdir_y( 3  , Dir);
+		SavedHorizontalMovement = lengthdir_x( 1 , Dir);
+		VerticalMovement = lengthdir_y( 1  , Dir);
 		MovementPostDamage = SavedHorizontalMovement;
 	}
 	
