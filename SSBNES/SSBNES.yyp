@@ -180,6 +180,7 @@
     {"id":{"name":"objScreenStage","path":"objects/objScreenStage/objScreenStage.yy",},"order":10,},
     {"id":{"name":"sprMenuPanel","path":"sprites/sprMenuPanel/sprMenuPanel.yy",},"order":0,},
     {"id":{"name":"sprStgLy1FinalDestinationM","path":"sprites/sprStgLy1FinalDestinationM/sprStgLy1FinalDestinationM.yy",},"order":0,},
+    {"id":{"name":"objCombatKeyPollier","path":"objects/objCombatKeyPollier/objCombatKeyPollier.yy",},"order":10,},
     {"id":{"name":"sprChMarioFlip2Mask","path":"sprites/sprChMarioFlip2Mask/sprChMarioFlip2Mask.yy",},"order":2,},
     {"id":{"name":"sprChPollierTNT","path":"sprites/sprChPollierTNT/sprChPollierTNT.yy",},"order":26,},
     {"id":{"name":"sprHudNumbers","path":"sprites/sprHudNumbers/sprHudNumbers.yy",},"order":2,},

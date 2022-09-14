@@ -349,16 +349,38 @@ function scrExecuteMovs(ID)
 		{
 			///Shuriken Egg
 			var idlocal = 14;
-			var SpikeEgg = instance_create_depth(x + LastScaleXSprite * 12 , y + 4 , depth , objCombatShuriken);
-			SpikeEgg.HorizontalMovement = ScaleXSprite*4.5;
-			SpikeEgg.VerticalMovement = -1;
-			SpikeEgg.Ide = idlocal;
-			SpikeEgg.Power = scrDameDato(Control.MovList , idlocal , "Power");
-			SpikeEgg.KnockbackScaling = scrDameDato(Control.MovList , idlocal , "Knockback Scaling");
-			SpikeEgg.image_xscale = ScaleXSprite;
-			SpikeEgg.Creator = self;
+			var Shuriken = instance_create_depth(x + LastScaleXSprite * 12 , y + 4 , depth , objCombatShuriken);
+			Shuriken.HorizontalMovement = ScaleXSprite*4.5;
+			Shuriken.VerticalMovement = -1;
+			Shuriken.Ide = idlocal;
+			Shuriken.Power = scrDameDato(Control.MovList , idlocal , "Power");
+			Shuriken.KnockbackScaling = scrDameDato(Control.MovList , idlocal , "Knockback Scaling");
+			Shuriken.image_xscale = ScaleXSprite;
+			Shuriken.Creator = self;
 			TimeAttacking = scrDameDato(Control.MovList , idlocal , "Time Attacking");
-			ds_list_add(self.MyMovs , SpikeEgg.id);
+			ds_list_add(self.MyMovs , Shuriken.id);
+			ActualMov = ID;
+			ProxMovs = 1;
+			if (scrDameDato(Control.MovList , idlocal , "Is Aerial"))
+			{
+				ds_list_add(AerialAvaiableList , self.id);
+			}
+			break;
+		}
+		case(15):
+		{
+			///Key
+			var idlocal = 14;
+			var PKey = instance_create_depth(x + LastScaleXSprite * 12 , y + 4 , depth , objCombatKeyPollier);
+			PKey.HorizontalMovement = 0;
+			PKey.VerticalMovement = 0;
+			PKey.Ide = idlocal;
+			PKey.Power = scrDameDato(Control.MovList , idlocal , "Power");
+			PKey.KnockbackScaling = scrDameDato(Control.MovList , idlocal , "Knockback Scaling");
+			PKey.image_xscale = ScaleXSprite;
+			PKey.Creator = self;
+			TimeAttacking = scrDameDato(Control.MovList , idlocal , "Time Attacking");
+			ds_list_add(self.MyMovs , PKey.id);
 			ActualMov = ID;
 			ProxMovs = 1;
 			if (scrDameDato(Control.MovList , idlocal , "Is Aerial"))
