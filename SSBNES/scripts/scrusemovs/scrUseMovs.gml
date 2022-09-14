@@ -59,7 +59,7 @@ function scrUseMovs()
 					}
 					case(15):
 					{
-						if (scrCheckObjectAmount(self , objCombatShuriken) < 1)
+						if (scrCheckObjectAmount(self , objCombatKeyPollier) < 1)
 						{
 							scrPrepareMov(15 , false , SpriteAttackGroundNeutral , 3);
 						}
@@ -85,6 +85,16 @@ function scrUseMovs()
 					case(2):
 					{
 						scrPrepareMov(2 , false , SpriteSmashGroundDown , 0);
+						break;
+					}
+					case(16):
+					{
+						scrPrepareMov(16 , false , SpriteSmashGroundDown , 0);
+						Control.CharacterPollierMov[Position]++;
+						if (Control.CharacterPollierMov[Position] > 3)
+						{
+							Control.CharacterPollierMov[Position] = 0;
+						}
 						break;
 					}
 				}

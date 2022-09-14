@@ -1,5 +1,5 @@
 #region Set variables
-PollierMovList = scrCrearLista(10,11);
+PollierMovList = scrCrearLista(12,13,14,15);
 PollierMovActual = 0;
 Recovery = true;
 TimeHolding = 0;

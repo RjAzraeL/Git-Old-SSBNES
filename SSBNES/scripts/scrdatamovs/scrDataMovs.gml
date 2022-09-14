@@ -18,6 +18,7 @@ function scrDataMov()
 	/*13*/scrMapMov( scrCrearLista("Spike Egg" , 14 , true , 110 , 0 , false , true , false , 5 , 20 , .2 , false , false , false , false) );
 	/*14*/scrMapMov( scrCrearLista("Shuriken" , 2 , true , 110 , 0 , false , false , false , 5 , 20 , .75 , false , false , false , false) );
 	/*15*/scrMapMov( scrCrearLista("Pollier Key" , 7 , true , 110 , 0 , false , false , false , 5 , 20 , .75 , false , false , false , false) );
+	/*16*/scrMapMov( scrCrearLista("Roulette" , 0 , false , 110 , 0 , false , false , false , 5 , 20 , .5 , false , false , false , false) );
 }
 	
 

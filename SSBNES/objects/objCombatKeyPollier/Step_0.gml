@@ -5,6 +5,10 @@ if (scrExiste(Creator))
 	if (Dir >= 360)
 	{
 		Dir = 0;
+		if (Power < 20)
+		{
+			Power++;
+		}
 	}
 	x = Creator.x + lengthdir_x(Lenght , Dir);
 	y = Creator.y + lengthdir_y(Lenght , Dir);

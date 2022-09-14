@@ -58,6 +58,10 @@ if (BattleLevel)
 		shader_reset();
 		#endregion
 		draw_sprite(sprHudBody , 1 , scrX() + 2 + Largo * (i) , scrY() + Y );
+		if (CharacterId[i] == 7)
+		{
+			draw_sprite(sprChPollierGroundAttackDownItems , CharacterPollierMov[i] , scrX() + 32 + Largo * (i) , scrY() + Y - 6 );
+		}
 	}
 }
 #endregion

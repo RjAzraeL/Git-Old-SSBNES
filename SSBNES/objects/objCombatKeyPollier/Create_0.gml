@@ -7,5 +7,6 @@ image_speed = .3;
 Rebound = 0;
 scrSound(sfxMarioFireball);
 Dir = 0;
-Lenght = 18;
+Lenght = 24;
+alarm[0] = 2;
 #endregion
