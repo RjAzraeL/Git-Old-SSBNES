@@ -87,16 +87,6 @@ function scrUseMovs()
 						scrPrepareMov(2 , false , SpriteSmashGroundDown , 0);
 						break;
 					}
-					case(16):
-					{
-						scrPrepareMov(16 , false , SpriteSmashGroundDown , 0);
-						Control.CharacterPollierMov[Position]++;
-						if (Control.CharacterPollierMov[Position] > 3)
-						{
-							Control.CharacterPollierMov[Position] = 0;
-						}
-						break;
-					}
 				}
 			}
 			else if (AttackButtonPressedActive and (UpButtonActive) and TimeButtonUp != 0)
@@ -163,6 +153,11 @@ function scrUseMovs()
 						image_index = 0;
 						RootAttack = scrDameDato(Control.MovList , Ide , "Root");
 						CooldownJump = 0;
+						break;
+					}
+					case(16):
+					{
+						scrPrepareMov(16 , false , SpriteAttackGroundDown , 0);
 						break;
 					}
 				}

@@ -389,5 +389,18 @@ function scrExecuteMovs(ID)
 			}
 			break;
 		}
+		case(16):
+		{
+			///Key
+			var idlocal = 16;
+			TimeAttacking = scrDameDato(Control.MovList , idlocal , "Time Attacking");
+			Control.CharacterPollierMov[Position]++;
+			if (Control.CharacterPollierMov[Position] > 3)
+			{
+				Control.CharacterPollierMov[Position] = 0;
+			}
+			MovGroundNeutral = ds_list_find_value(PollierMovList , Control.CharacterPollierMov[Position]);
+			break;
+		}
 	}
 }
