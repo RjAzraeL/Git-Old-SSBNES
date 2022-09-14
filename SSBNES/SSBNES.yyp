@@ -206,6 +206,7 @@
     {"id":{"name":"scrSetCharacter","path":"scripts/scrSetCharacter/scrSetCharacter.yy",},"order":2,},
     {"id":{"name":"sprChPollierEggSpike","path":"sprites/sprChPollierEggSpike/sprChPollierEggSpike.yy",},"order":8,},
     {"id":{"name":"sndOst11SMBEnding","path":"sounds/sndOst11SMBEnding/sndOst11SMBEnding.yy",},"order":17,},
+    {"id":{"name":"objCombatShuriken","path":"objects/objCombatShuriken/objCombatShuriken.yy",},"order":9,},
     {"id":{"name":"rm04Stage","path":"rooms/rm04Stage/rm04Stage.yy",},"order":3,},
     {"id":{"name":"sprChMarioWalk","path":"sprites/sprChMarioWalk/sprChMarioWalk.yy",},"order":12,},
     {"id":{"name":"sprPlatformBar","path":"sprites/sprPlatformBar/sprPlatformBar.yy",},"order":1,},

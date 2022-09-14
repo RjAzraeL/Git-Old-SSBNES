@@ -49,6 +49,14 @@ function scrUseMovs()
 						}
 						break;
 					}
+					case(14):
+					{
+						if (scrCheckObjectAmount(self , objCombatShuriken) < 3)
+						{
+							scrPrepareMov(14 , false , SpriteAttackGroundNeutral , 3);
+						}
+						break;
+					}
 				}
 			}
 			else if (AttackButtonPressedActive and (scrFowardButtonActive(self)))
