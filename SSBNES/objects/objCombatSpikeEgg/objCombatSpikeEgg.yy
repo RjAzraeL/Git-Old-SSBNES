@@ -1,16 +1,19 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "parMov",
-  "spriteId": null,
+  "name": "objCombatSpikeEgg",
+  "spriteId": {
+    "name": "sprChPollierEggSpike",
+    "path": "sprites/sprChPollierEggSpike/sprChPollierEggSpike.yy",
+  },
   "solid": false,
   "visible": true,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "parDamage",
-    "path": "objects/parDamage/parDamage.yy",
+    "name": "parMov",
+    "path": "objects/parMov/parMov.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -25,14 +28,13 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":1,"collisionObjectId":null,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":1,"eventType":3,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Parent",
-    "path": "folders/Objects/Parent.yy",
+    "name": "Movs",
+    "path": "folders/Objects/Combat/Movs.yy",
   },
 }

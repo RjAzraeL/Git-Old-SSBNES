@@ -14,7 +14,8 @@ function scrDataMov()
 	/*9*/scrMapMov( scrCrearLista("Aerial Back" , 10 , false , 110 , 0 , false , true , false , 10 , 20 , .5 , false , true , false , false) );
 	/*10*/scrMapMov( scrCrearLista("Aerial Down" , 1 , false , 110 , 0 , false , true , false , 4 , 10 , .25 , false , true , true , true) );
 	/*11*/scrMapMov( scrCrearLista("Aerial Up" , 2 , false , 110 , 0 , false , true , false , 2 , 30 , .2 , true , true , false , false) );
-	
+	/*12*/scrMapMov( scrCrearLista("Normal Egg" , 7 , true , 110 , 0 , false , false , false , 5 , 20 , .5 , false , false , false , false) );
+	/*13*/scrMapMov( scrCrearLista("Spike Egg" , 14 , true , 110 , 0 , false , true , false , 5 , 20 , .25 , false , false , false , false) );
 }
 	
 

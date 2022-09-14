@@ -33,6 +33,22 @@ function scrUseMovs()
 						}
 						break;
 					}
+					case(12):
+					{
+						if (scrCheckObjectAmount(self , objCombatNormalEgg) < 2)
+						{
+							scrPrepareMov(12 , false , SpriteAttackGroundNeutral , 3);
+						}
+						break;
+					}
+					case(13):
+					{
+						if (scrCheckObjectAmount(self , objCombatSpikeEgg) < 2)
+						{
+							scrPrepareMov(13 , false , SpriteAttackGroundNeutral , 3);
+						}
+						break;
+					}
 				}
 			}
 			else if (AttackButtonPressedActive and (scrFowardButtonActive(self)))

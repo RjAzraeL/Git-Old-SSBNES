@@ -302,5 +302,48 @@ function scrExecuteMovs(ID)
 			ProxMovs = 0;
 			break;
 		}
+		case(12):
+		{
+			///Normal Egg
+			var NormalEgg = instance_create_depth(x + LastScaleXSprite * 12 , y + 4 , depth , objCombatNormalEgg);
+			NormalEgg.HorizontalMovement = ScaleXSprite*3.5;
+			NormalEgg.VerticalMovement = -1.5;
+			NormalEgg.Ide = 12;
+			NormalEgg.Power = scrDameDato(Control.MovList , 12 , "Power");
+			NormalEgg.KnockbackScaling = scrDameDato(Control.MovList , 12 , "Knockback Scaling");
+			NormalEgg.image_xscale = ScaleXSprite;
+			NormalEgg.Creator = self;
+			TimeAttacking = scrDameDato(Control.MovList , 12 , "Time Attacking");
+			ds_list_add(self.MyMovs , NormalEgg.id);
+			ActualMov = ID;
+			ProxMovs = 1;
+			if (scrDameDato(Control.MovList , 12 , "Is Aerial"))
+			{
+				ds_list_add(AerialAvaiableList , self.id);
+			}
+			break;
+		}
+		case(13):
+		{
+			///Spike Egg
+			var idlocal = 13;
+			var SpikeEgg = instance_create_depth(x + LastScaleXSprite * 12 , y + 4 , depth , objCombatSpikeEgg);
+			SpikeEgg.HorizontalMovement = ScaleXSprite*3.5;
+			SpikeEgg.VerticalMovement = -1.5;
+			SpikeEgg.Ide = idlocal;
+			SpikeEgg.Power = scrDameDato(Control.MovList , idlocal , "Power");
+			SpikeEgg.KnockbackScaling = scrDameDato(Control.MovList , idlocal , "Knockback Scaling");
+			SpikeEgg.image_xscale = ScaleXSprite;
+			SpikeEgg.Creator = self;
+			TimeAttacking = scrDameDato(Control.MovList , idlocal , "Time Attacking");
+			ds_list_add(self.MyMovs , SpikeEgg.id);
+			ActualMov = ID;
+			ProxMovs = 1;
+			if (scrDameDato(Control.MovList , idlocal , "Is Aerial"))
+			{
+				ds_list_add(AerialAvaiableList , self.id);
+			}
+			break;
+		}
 	}
 }
