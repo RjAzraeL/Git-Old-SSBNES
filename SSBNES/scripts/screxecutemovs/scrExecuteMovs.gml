@@ -400,6 +400,56 @@ function scrExecuteMovs(ID)
 				Control.CharacterPollierMov[Position] = 0;
 			}
 			MovGroundNeutral = ds_list_find_value(PollierMovList , Control.CharacterPollierMov[Position]);
+			ProxMovs = 0;
+			break;
+		}
+		case(17):
+		{
+			///Chicken Foot
+			AcelerationValue = 4;
+			var ChickenFoot = instance_create_depth(x , y , depth-1 , objCombatHitboxNotImageFollower);
+			ChickenFoot.sprite_index = sprChMarioFootBangMask;
+			ChickenFoot.PowerScale = false;
+			ChickenFoot.Ide = ID;
+			ChickenFoot.FollowX = LastScaleXSprite;
+			ChickenFoot.FollowY = 0;
+			ChickenFoot.Power = scrDameDato(Control.MovList , ID , "Power");
+			ChickenFoot.KnockbackScaling = scrDameDato(Control.MovList , 17 , "Knockback Scaling");
+			ChickenFoot.image_xscale = ScaleXSprite;
+			ChickenFoot.Creator = self;
+			ChickenFoot.image_speed = 0;
+			ChickenFoot.image_index = 0;
+			TimeAttacking = scrDameDato(Control.MovList , ID , "Time Attacking");
+			ds_list_add(self.MyMovs , ChickenFoot.id);
+			ActualMov = ID;
+			ProxMovs = 0;
+			break;
+		}
+		case(18):
+		{
+			///Chicken Boomerang
+			var ChickenBoomerang = instance_create_depth(x + LastScaleXSprite * 18 , y + 4 , depth-1 , objCombatPollierBoomerang);
+			ChickenBoomerang.Ide = ID;
+			ChickenBoomerang.FollowX = LastScaleXSprite * 18;
+			ChickenBoomerang.FollowY = 4;
+			ChickenBoomerang.VerticalMovement = 0;
+			
+			var LowPower = scrDameDato(Control.MovList , 18 , "Power");
+			var LoadPorcentage = scrGetTotalPorcentageFromTwoValues(LowPower , SmashMaxPower , SmashActualPower);
+			ChickenBoomerang.Power = scrDameDato(Control.MovList , ID , "Power");
+			ChickenBoomerang.MinValuePower = 1;
+			ChickenBoomerang.MaxValuePower = 5;
+			ChickenBoomerang.HorizontalMovement = ScaleXSprite*scrGetTotalValueFromTwoPorcentages(1 , 5 , LoadPorcentage)*2;
+			ChickenBoomerang.Range = 48*scrGetTotalValueFromTwoPorcentages(1 , 5 , LoadPorcentage);
+			
+			ChickenBoomerang.PowerScale = true;
+			ChickenBoomerang.KnockbackScaling = scrDameDato(Control.MovList , ID , "Knockback Scaling");
+			ChickenBoomerang.image_xscale = ScaleXSprite;
+			ChickenBoomerang.Creator = self;
+			TimeAttacking = scrDameDato(Control.MovList , ID , "Time Attacking");
+			ds_list_add(self.MyMovs , ChickenBoomerang.id);
+			ProxMovs = 1;
+			ActualMov = ID;
 			break;
 		}
 	}

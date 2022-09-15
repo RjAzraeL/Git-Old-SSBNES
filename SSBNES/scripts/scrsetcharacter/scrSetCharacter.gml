@@ -89,7 +89,15 @@ function scrSetCharacter()
 	MaskDuck = scrGetValueCharacter("Mask Duck");
 	MaskNormal = scrGetValueCharacter("Mask Normal");
 	#endregion
-
+	#endregion
+	
+	#region Special
+	#region Pollier
+	if (Control.CharacterId[Position] == 7)
+	{
+		MovGroundNeutral = ds_list_find_value(PollierMovList , Control.CharacterPollierMov[Position]);
+	}
+	#endregion
 	#endregion
 }
 

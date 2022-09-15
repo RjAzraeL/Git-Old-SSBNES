@@ -14,6 +14,8 @@ else if (room == rm03Versus)
 
 if (BattleLevel)
 {
+	scrResetCombatBattleVar();
+	
 	VoidLimitStage = scrDameDato(Control.StageList , StageId , "Void limit");
 	X1Limit = scrDameDato(Control.StageList , StageId , "X1 limit");
 	X2Limit = scrDameDato(Control.StageList , StageId , "X2 limit");

@@ -1,10 +1,9 @@
 function scrDataMov()
 {
-	Control.MovList = ds_list_create();
-	
-	/*0*/scrMapMov( scrCrearLista("Fireball"     , 5   , true , 110 , 0 , false , false , false , 5 , 20 , .25 , false , false , false , false) );
-	/*1*/scrMapMov( scrCrearLista("Firepunch"  , 18 , true , 110 , 0 , false , true , true , 24 , 30 , .25 , false , false , false , false) );
-	/*2*/scrMapMov( scrCrearLista("Flip"          , 16 , true , 110 , 0 , false , true , true , 21 , 30 , .5 , false , false , false , false) );
+	Control.MovList = ds_list_create();	
+	/*0*/scrMapMov( scrCrearLista("Fireball" , 5 , true , 110 , 0 , false , false , false , 5 , 20 , .25 , false , false , false , false) );
+	/*1*/scrMapMov( scrCrearLista("Firepunch" , 18 , true , 110 , 0 , false , true , true , 24 , 30 , .25 , false , false , false , false) );
+	/*2*/scrMapMov( scrCrearLista("Flip" , 16 , true , 110 , 0 , false , true , true , 21 , 30 , .5 , false , false , false , false) );
 	/*3*/scrMapMov( scrCrearLista("Head Bang", 15 , true , 110 , 0 , false , true , true , 20 , 40 , .25 , false , false , false , false) );
 	/*4*/scrMapMov( scrCrearLista("Foot Bang" , 7 , true , 110 , 0 , false , true , false , 9 , 40 , .25 , false , false , false , false) );
 	/*5*/scrMapMov( scrCrearLista("Foot Bang 2" , 8 , true , 110 , 0 , false , true , false , 8 , 40 , .5 , false , false , false , false) );
@@ -19,9 +18,9 @@ function scrDataMov()
 	/*14*/scrMapMov( scrCrearLista("Shuriken" , 2 , true , 110 , 0 , false , false , false , 5 , 20 , .75 , false , false , false , false) );
 	/*15*/scrMapMov( scrCrearLista("Pollier Key" , 7 , true , 110 , 0 , false , false , false , 5 , 20 , .75 , false , false , false , false) );
 	/*16*/scrMapMov( scrCrearLista("Roulette" , 0 , false , 110 , 0 , false , false , false , 5 , 20 , .5 , false , false , false , false) );
+	/*17*/scrMapMov( scrCrearLista("Chicken Foot" , 5 , true , 110 , 0 , false , true , false , 9 , 40 , .25 , false , false , false , false) );
+	/*18*/scrMapMov( scrCrearLista("Pollier Boomerang" , 8 , true , 110 , 0 , false , true , true , 24 , 30 , .25 , false , false , false , false) );
 }
-	
-
 ///@arg list
 function scrMapMov(List)
 {

@@ -25,7 +25,7 @@ function scrUseMovs()
 			{
 				switch(MovGroundNeutral)
 				{
-					case(0):
+					case(0): /*Mario Fire ball*/
 					{
 						if (scrCheckObjectAmount(self , objCombatFireball) < 2)
 						{
@@ -33,7 +33,7 @@ function scrUseMovs()
 						}
 						break;
 					}
-					case(12):
+					case(12): /*Normal egg*/
 					{
 						if (scrCheckObjectAmount(self , objCombatNormalEgg) < 2)
 						{
@@ -41,7 +41,7 @@ function scrUseMovs()
 						}
 						break;
 					}
-					case(13):
+					case(13): /*Spike egg*/
 					{
 						if (scrCheckObjectAmount(self , objCombatSpikeEgg) < 2)
 						{
@@ -49,7 +49,7 @@ function scrUseMovs()
 						}
 						break;
 					}
-					case(14):
+					case(14): /*Shuriken*/
 					{
 						if (scrCheckObjectAmount(self , objCombatShuriken) < 3)
 						{
@@ -57,7 +57,7 @@ function scrUseMovs()
 						}
 						break;
 					}
-					case(15):
+					case(15): /*Pollier Key*/
 					{
 						if (scrCheckObjectAmount(self , objCombatKeyPollier) < 1)
 						{
@@ -71,9 +71,14 @@ function scrUseMovs()
 			{
 				switch(MovGroundSmashSide)
 				{
-					case(1):
+					case(1): /*Mario Firepunch*/
 					{
 						scrPrepareMov(1 , false , SpriteSmashGroundSide , 3);
+						break;
+					}
+					case(18): /*Chicken Boomerang*/
+					{
+						scrPrepareMov(18 , false , SpriteSmashGroundSide , 2);
 						break;
 					}
 				}
@@ -116,6 +121,23 @@ function scrUseMovs()
 				switch(MovGroundAttackSide)
 				{
 					case(4):
+					{
+						var Ide = 4;
+						scrAddMov(Ide , 0 , self);
+						Attacking = true;
+						AttackingHold = scrDameDato(Control.MovList , Ide , "Is Smash");
+						AttackingHoldIndex = 0;
+						SmashMaxPower = scrDameDato(Control.MovList , Ide , "Max Power");
+						SmashGrownPower = .1;
+						SpriteAttacking = SpriteAttackGroundSide;
+						SmashActualPower = scrDameDato(Control.MovList , Ide , "Power");
+						SpriteAttackingSpeed = scrDameDato(Control.MovList , Ide , "Animation Speed");
+						image_index = 0;
+						RootAttack = scrDameDato(Control.MovList , Ide , "Root");
+						CooldownJump = 0;
+						break;
+					}
+					case(17):
 					{
 						var Ide = 4;
 						scrAddMov(Ide , 0 , self);
