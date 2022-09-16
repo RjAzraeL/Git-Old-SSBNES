@@ -19,6 +19,27 @@ UpButtonActive = keyboard_check(UpButton);
 UpButtonReleasedActive = keyboard_check_released(UpButton);
 UpButtonPressedActive = keyboard_check_pressed(UpButton);
 StartButtonActive = keyboard_check_pressed(StartButton);
+
+
+_2LeftButtonActive = keyboard_check(_2LeftButton);
+_2LeftButtonPressedActive = keyboard_check_pressed(_2LeftButton);
+_2LeftButtonReleasedActive = keyboard_check_released(_2LeftButton);
+_2RightButtonActive = keyboard_check(_2RightButton);
+_2RightButtonPressedActive = keyboard_check_pressed(_2RightButton);
+_2RightButtonReleasedActive = keyboard_check_released(_2RightButton);
+_2JumpButtonActive = keyboard_check_pressed(_2JumpButton);
+_2JumpButtonReleaseActive = keyboard_check_released(_2JumpButton);
+_2JumpButtonPressedActive = keyboard_check_pressed(_2JumpButton);
+_2DownButtonActive = keyboard_check(_2DownButton);
+_2DownButtonPressedActive = keyboard_check_pressed(_2DownButton);
+_2DownButtonReleasedActive = keyboard_check_released(_2DownButton);
+_2AttackButtonActive = keyboard_check(_2AttackButton);
+_2AttackButtonPressedActive = keyboard_check_pressed(_2AttackButton);
+_2AttackButtonReleasedActive = keyboard_check_released(_2AttackButton);
+_2UpButtonActive = keyboard_check(_2UpButton);
+_2UpButtonReleasedActive = keyboard_check_released(_2UpButton);
+_2UpButtonPressedActive = keyboard_check_pressed(_2UpButton);
+_2StartButtonActive = keyboard_check_pressed(_2StartButton);
 #endregion
 #region Generic
 if (Wait > 0)

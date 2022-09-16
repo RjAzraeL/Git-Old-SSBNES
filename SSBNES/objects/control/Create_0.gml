@@ -105,6 +105,16 @@ JumpButton = ord("X");
 AttackButton = ord("C");
 StartButton = vk_enter;
 SelectButton = vk_space;
+
+_2LeftButton = vk_numpad4;
+_2RightButton = vk_numpad6;
+_2DownButton = vk_numpad5;
+_2UpButton = vk_numpad8;
+_2JumpButton = ord("I");
+_2AttackButton = ord("O");
+_2StartButton = vk_insert;
+_2SelectButton = vk_space;
+
 ShowColissionButton = vk_f1;
 ShowColissionMovsButton = vk_f2;
 BattleLevel = false;
