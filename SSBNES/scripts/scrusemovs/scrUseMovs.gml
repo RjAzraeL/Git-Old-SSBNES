@@ -306,7 +306,7 @@ function scrUseMovs()
 					}
 				}
 			}
-			else if (Recovery and scrInAir() and AttackButtonPressedActive and UpButtonActive and (TimeButtonUp != 0))
+			else if (Recovery and scrInAir() and AttackButtonPressedActive and UpButtonActive)
 			{
 				switch(MovAerialUp)
 				{
