@@ -69,6 +69,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Combat","folderPath":"folders/Sprites/HUD/Combat.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Menu","folderPath":"folders/Sprites/Menu.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Screen Title","folderPath":"folders/Sprites/Screen Title.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Set","folderPath":"folders/Sprites/Set.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Stages","folderPath":"folders/Sprites/Stages.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Battlefield (Melee)","folderPath":"folders/Sprites/Stages/Battlefield (Melee).yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Battlefield (Ultimate)","folderPath":"folders/Sprites/Stages/Battlefield (Ultimate).yy",},
@@ -79,7 +80,6 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Parapa Palace","folderPath":"folders/Sprites/Stages/Parapa Palace.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Test Stage","folderPath":"folders/Sprites/Stages/Test Stage.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Underground","folderPath":"folders/Sprites/Stages/Underground.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Set","folderPath":"folders/Sprites/Set.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"en.txt","CopyToMask":-1,"filePath":"datafiles/l",},
