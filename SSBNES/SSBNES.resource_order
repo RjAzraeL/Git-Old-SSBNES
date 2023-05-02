@@ -130,6 +130,7 @@
     {"name":"scrDataMovs","order":3,"path":"scripts/scrDataMovs/scrDataMovs.yy",},
     {"name":"sprSetPoint","order":5,"path":"sprites/sprSetPoint/sprSetPoint.yy",},
     {"name":"sprChKirbyTrance","order":10,"path":"sprites/sprChKirbyTrance/sprChKirbyTrance.yy",},
+    {"name":"sprSetREFERENCE","order":11,"path":"sprites/sprSetREFERENCE/sprSetREFERENCE.yy",},
     {"name":"sprChPollierGroundAttackDown","order":9,"path":"sprites/sprChPollierGroundAttackDown/sprChPollierGroundAttackDown.yy",},
     {"name":"sprSetTextBox1","order":9,"path":"sprites/sprSetTextBox1/sprSetTextBox1.yy",},
     {"name":"objOptionBar","order":3,"path":"objects/objOptionBar/objOptionBar.yy",},
