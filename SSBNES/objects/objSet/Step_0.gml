@@ -127,6 +127,21 @@ if (Active)
 								L[6] = Language.Text_setl0o6;
 								break;
 							}
+							case(1):
+							{
+								Control.LeftButton = Control.DEFAULT_LeftButton;
+								Control.RightButton = Control.DEFAULT_RightButton;
+								Control.UpButton = Control.DEFAULT_UpButton;
+								Control.DownButton = Control.DEFAULT_DownButton;
+								Control.JumpButton = Control.DEFAULT_JumpButton;
+								Control.AttackButton = Control.DEFAULT_AttackButton;
+								Control.StartButton = Control.DEFAULT_StartButton;
+								Control.SelectButton = Control.DEFAULT_SelectButton;
+								alarm[0] = 5;
+								Active = false;
+								KeyChange = -1;
+								break;
+							}
 							case(2):
 							{
 								ChangeTitles = true;
