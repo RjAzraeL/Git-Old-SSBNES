@@ -1,10 +1,10 @@
 {
   "FolderOrderSettings": [
     {"name":"Bonus","order":6,"path":"folders/Objects/Bonus.yy",},
+    {"name":"XD?","order":7,"path":"folders/Objects/XD?.yy",},
     {"name":"Bonus #1","order":1,"path":"folders/Rooms/Bonus #1.yy",},
     {"name":"Bonus","order":12,"path":"folders/Sprites/Bonus.yy",},
     {"name":"Set","order":11,"path":"folders/Sprites/Set.yy",},
-    {"name":"XD?","order":7,"path":"folders/Objects/XD?.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"sprSetTextBox2","order":10,"path":"sprites/sprSetTextBox2/sprSetTextBox2.yy",},
@@ -96,7 +96,6 @@
     {"name":"scrFowardButtonActive","order":8,"path":"scripts/scrFowardButtonActive/scrFowardButtonActive.yy",},
     {"name":"sprChPollierGroundAttackSideTrance","order":12,"path":"sprites/sprChPollierGroundAttackSideTrance/sprChPollierGroundAttackSideTrance.yy",},
     {"name":"scrDataCharacter","order":1,"path":"scripts/scrDataCharacter/scrDataCharacter.yy",},
-    {"name":"sprSetControllerBt","order":2,"path":"sprites/sprSetControllerBt/sprSetControllerBt.yy",},
     {"name":"objSelectorStage","order":9,"path":"objects/objSelectorStage/objSelectorStage.yy",},
     {"name":"sprRosterReference","order":8,"path":"sprites/sprRosterReference/sprRosterReference.yy",},
     {"name":"sprChPollierJump","order":3,"path":"sprites/sprChPollierJump/sprChPollierJump.yy",},

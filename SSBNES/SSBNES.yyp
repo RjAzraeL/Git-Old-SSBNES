@@ -29,6 +29,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Main","folderPath":"folders/Objects/Menu/Main.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Parent","folderPath":"folders/Objects/Parent.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Screen Title","folderPath":"folders/Objects/Screen Title.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"XD?","folderPath":"folders/Objects/XD?.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Paths","folderPath":"folders/Paths.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Rooms","folderPath":"folders/Rooms.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Bonus #1","folderPath":"folders/Rooms/Bonus #1.yy",},
@@ -83,7 +84,6 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Parapa Palace","folderPath":"folders/Sprites/Stages/Parapa Palace.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Test Stage","folderPath":"folders/Sprites/Stages/Test Stage.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Underground","folderPath":"folders/Sprites/Stages/Underground.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"XD?","folderPath":"folders/Objects/XD?.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"en.txt","CopyToMask":-1,"filePath":"datafiles/l",},
@@ -96,7 +96,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.2.1.75",
+    "IDEVersion": "2023.4.0.84",
   },
   "resources": [
     {"id":{"name":"sprSetTextBox2","path":"sprites/sprSetTextBox2/sprSetTextBox2.yy",},},
@@ -196,7 +196,6 @@
     {"id":{"name":"sprStgLy1aBattlefieldM","path":"sprites/sprStgLy1aBattlefieldM/sprStgLy1aBattlefieldM.yy",},},
     {"id":{"name":"sprChPollierGroundAttackSideTrance","path":"sprites/sprChPollierGroundAttackSideTrance/sprChPollierGroundAttackSideTrance.yy",},},
     {"id":{"name":"scrDataCharacter","path":"scripts/scrDataCharacter/scrDataCharacter.yy",},},
-    {"id":{"name":"sprSetControllerBt","path":"sprites/sprSetControllerBt/sprSetControllerBt.yy",},},
     {"id":{"name":"objSelectorStage","path":"objects/objSelectorStage/objSelectorStage.yy",},},
     {"id":{"name":"sprRosterReference","path":"sprites/sprRosterReference/sprRosterReference.yy",},},
     {"id":{"name":"sprChPollierJump","path":"sprites/sprChPollierJump/sprChPollierJump.yy",},},
