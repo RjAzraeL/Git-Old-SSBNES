@@ -5,7 +5,7 @@ function scrUseMovs()
 	{
 		switch(ActualMov)
 		{
-			case(10):
+			case(10): //MAR Aerial Down
 			{
 				var Value = 4;
 				if (!place_meeting(x , y - Value , parSolid) and !place_meeting(x , y - Value , objBlockSlope45))
@@ -25,7 +25,7 @@ function scrUseMovs()
 			{
 				switch(MovGroundNeutral)
 				{
-					case(0): /*Mario Fire ball*/
+					case(0): //MAR Ground Neutral
 					{
 						if (scrCheckObjectAmount(self , objCombatFireball) < 2)
 						{
@@ -33,7 +33,7 @@ function scrUseMovs()
 						}
 						break;
 					}
-					case(12): /*Normal egg*/
+					case(12): //POL Ground Neutral 1
 					{
 						if (scrCheckObjectAmount(self , objCombatNormalEgg) < 2)
 						{
@@ -41,7 +41,7 @@ function scrUseMovs()
 						}
 						break;
 					}
-					case(13): /*Spike egg*/
+					case(13): //POL Ground Neutral 2
 					{
 						if (scrCheckObjectAmount(self , objCombatSpikeEgg) < 2)
 						{
@@ -49,7 +49,7 @@ function scrUseMovs()
 						}
 						break;
 					}
-					case(14): /*Shuriken*/
+					case(14): //POL Ground Neutral 3
 					{
 						if (scrCheckObjectAmount(self , objCombatShuriken) < 3)
 						{
@@ -57,7 +57,7 @@ function scrUseMovs()
 						}
 						break;
 					}
-					case(15): /*Pollier Key*/
+					case(15): //POL Ground Neutral 4
 					{
 						if (scrCheckObjectAmount(self , objCombatKeyPollier) < 1)
 						{
@@ -71,12 +71,12 @@ function scrUseMovs()
 			{
 				switch(MovGroundSmashSide)
 				{
-					case(1): /*Mario Firepunch*/
+					case(1): //MAR Ground Smash Side
 					{
 						scrPrepareMov(1 , false , SpriteSmashGroundSide , 3);
 						break;
 					}
-					case(18): /*Chicken Boomerang*/
+					case(18): //POL Ground Smash Side
 					{
 						if (!scrExiste(PollierBoomerang))
 						{
@@ -90,12 +90,12 @@ function scrUseMovs()
 			{
 				switch(MovGroundSmashDown)
 				{
-					case(2):
+					case(2): //MAR Ground Smash Down
 					{
 						scrPrepareMov(2 , false , SpriteSmashGroundDown , 0);
 						break;
 					}
-					case(16):
+					case(16): //POL Ground Attack Down
 					{
 						scrPrepareMov(16 , false , SpriteAttackGroundDown , 0);
 						break;
@@ -106,7 +106,7 @@ function scrUseMovs()
 			{
 				switch(MovGroundSmashUp)
 				{
-					case(3):
+					case(3): //MAR Ground Smash Up
 					{
 						scrAddMov(3 , 0 , self);
 						Attacking = true;
@@ -128,7 +128,7 @@ function scrUseMovs()
 			{
 				switch(MovGroundAttackSide)
 				{
-					case(4):
+					case(4): //MAR Ground Attack Side
 					{
 						var Ide = 4;
 						scrAddMov(Ide , 0 , self);
@@ -145,7 +145,7 @@ function scrUseMovs()
 						CooldownJump = 0;
 						break;
 					}
-					case(17):
+					case(17): //POL Ground Attack Up
 					{
 						var Ide = 4;
 						scrAddMov(Ide , 0 , self);
@@ -168,7 +168,7 @@ function scrUseMovs()
 			{
 				switch(MovGroundAttackDown)
 				{
-					case(5):
+					case(5): //MAR Ground Attack Down
 					{
 						var Ide = 5;
 						scrAddMov(Ide , 0 , self);
@@ -185,7 +185,7 @@ function scrUseMovs()
 						CooldownJump = 0;
 						break;
 					}
-					case(19):
+					case(19): //POL Ground Smash Down
 					{
 						scrPrepareMov(19 , false , SpriteAttackGroundDown , 0);
 						break;
@@ -196,7 +196,7 @@ function scrUseMovs()
 			{
 				switch(MovGroundAttackUp)
 				{
-					case(6):
+					case(6): //MAR Ground Attack Up
 					{
 						var Ide = 6;
 						scrAddMov(Ide , 0 , self);
@@ -222,7 +222,7 @@ function scrUseMovs()
 			{
 				switch(MovAerialNeutral)
 				{
-					case(7):
+					case(7): //MAR Aerial Neutral
 					{
 						var Ide = 7;
 						scrAddMov(Ide , 0 , self);
@@ -246,7 +246,7 @@ function scrUseMovs()
 			{
 				switch(MovAerialSide)
 				{
-					case(8):
+					case(8): //MAR Aerial Side
 					{
 						scrAddMov(8 , 3 , self);
 						Ide = 8;
@@ -270,7 +270,7 @@ function scrUseMovs()
 			{
 				switch(MovAerialBack)
 				{
-					case(9):
+					case(9): //MAR Aerial Back
 					{
 						var _IdeMov = 9;
 						scrAddMov(9 , 0 , self);
@@ -294,7 +294,7 @@ function scrUseMovs()
 			{
 				switch(MovAerialDown)
 				{
-					case(10):
+					case(10): //MAR Aerial Down
 					{
 						var _IdeMov = 10;
 						scrAddMov(_IdeMov , 0 , self);
@@ -318,7 +318,7 @@ function scrUseMovs()
 			{
 				switch(MovAerialUp)
 				{
-					case(11):
+					case(11): //MAR Aerial Up
 					{
 						JumpAvailable = 0;
 						Recovery = false;

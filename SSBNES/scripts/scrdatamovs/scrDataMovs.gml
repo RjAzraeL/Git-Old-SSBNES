@@ -1,26 +1,27 @@
 function scrDataMov()
 {
 	Control.MovList = ds_list_create();	
-	/*0*/scrMapMov( scrCrearLista("Fireball" , 5 , true , 110 , 0 , false , false , false , 5 , 20 , .25 , false , false , false , false) );
-	/*1*/scrMapMov( scrCrearLista("Firepunch" , 18 , true , 110 , 0 , false , true , true , 24 , 30 , .25 , false , false , false , false) );
-	/*2*/scrMapMov( scrCrearLista("Flip" , 16 , true , 110 , 0 , false , true , true , 21 , 30 , .5 , false , false , false , false) );
-	/*3*/scrMapMov( scrCrearLista("Head Bang", 15 , true , 110 , 0 , false , true , true , 20 , 40 , .25 , false , false , false , false) );
-	/*4*/scrMapMov( scrCrearLista("Foot Bang" , 7 , true , 110 , 0 , false , true , false , 9 , 40 , .25 , false , false , false , false) );
-	/*5*/scrMapMov( scrCrearLista("Foot Bang 2" , 8 , true , 110 , 0 , false , true , false , 8 , 40 , .5 , false , false , false , false) );
-	/*6*/scrMapMov( scrCrearLista("High Punch" , 8 , true , 110 , 0 , false , true , false , 8 , 40 , .25 , false , false , false , false) );
-	/*7*/scrMapMov( scrCrearLista("Aerial Foot Bang" , 10 , true , 110 , 0 , false , true , false , 10 , 20 , .25 , false , true , false , false) );
-	/*8*/scrMapMov( scrCrearLista("Aerial Side" , 15 , false , 110 , 0 , false , true , false , 15 , 20 , .25 , false , true , false , false) );
-	/*9*/scrMapMov( scrCrearLista("Aerial Back" , 10 , false , 110 , 0 , false , true , false , 10 , 20 , .5 , false , true , false , false) );
-	/*10*/scrMapMov( scrCrearLista("Aerial Down" , 1 , false , 110 , 0 , false , true , false , 4 , 10 , .25 , false , true , true , true) );
-	/*11*/scrMapMov( scrCrearLista("Aerial Up" , 2 , false , 110 , 0 , false , true , false , 2 , 30 , .2 , true , true , false , false) );
-	/*12*/scrMapMov( scrCrearLista("Normal Egg" , 7 , true , 110 , 0 , false , false , false , 5 , 20 , .5 , false , false , false , false) );
-	/*13*/scrMapMov( scrCrearLista("Spike Egg" , 14 , true , 110 , 0 , false , true , false , 5 , 20 , .2 , false , false , false , false) );
-	/*14*/scrMapMov( scrCrearLista("Shuriken" , 2 , true , 110 , 0 , false , false , false , 5 , 20 , .75 , false , false , false , false) );
-	/*15*/scrMapMov( scrCrearLista("Pollier Key" , 7 , true , 110 , 0 , false , false , false , 5 , 20 , .75 , false , false , false , false) );
-	/*16*/scrMapMov( scrCrearLista("Roulette" , 0 , false , 110 , 0 , false , false , false , 5 , 20 , .5 , false , false , false , false) );
-	/*17*/scrMapMov( scrCrearLista("Chicken Foot" , 5 , true , 110 , 0 , false , true , false , 9 , 40 , .25 , false , false , false , false) );
-	/*18*/scrCreateMov("Pollier Boomerang" , 8 , true , 110 , 0 , false , true , true , 24 , 30 , .25 , false , false , false , false);
-	/*19*/scrCreateMov( "Wing Punch" , 18 , true , 110 , 0 , false , true , true , 24 , 30 , .25 , false , false , false , false);
+	/*00*/scrCreateMov("MAR Ground Neutral" , 5 , true , 110 , 0 , false , false , false , 5 , 20 , .25 , false , false , false , false);
+	/*01*/scrCreateMov("MAR Ground Smash Side" , 18 , true , 110 , 0 , false , true , true , 24 , 30 , .25 , false , false , false , false);
+	/*02*/scrCreateMov("MAR Ground Smash Down" , 8 , true , 110 , 0 , false , true , true , 21 , 30 , .5 , false , false , false , false);
+	/*03*/scrCreateMov("MAR Ground Smash Up", 15 , true , 110 , 0 , false , true , true , 20 , 40 , .25 , false , false , false , false);
+	/*04*/scrCreateMov("MAR Ground Attack Side" , 7 , true , 110 , 0 , false , true , false , 9 , 40 , .25 , false , false , false , false);
+	/*05*/scrCreateMov("MAR Ground Attack Down" , 8 , true , 110 , 0 , false , true , false , 8 , 40 , .5 , false , false , false , false);
+	/*06*/scrCreateMov("MAR Ground Attack Up" , 8 , true , 110 , 0 , false , true , false , 8 , 40 , .25 , false , false , false , false);
+	/*07*/scrCreateMov("MAR Aerial Neutral" , 10 , true , 110 , 0 , false , true , false , 10 , 20 , .25 , false , true , false , false);
+	/*08*/scrCreateMov("MAR Aerial Side" , 15 , false , 110 , 0 , false , true , false , 15 , 20 , .25 , false , true , false , false);
+	/*09*/scrCreateMov("MAR Aerial Back" , 10 , false , 110 , 0 , false , true , false , 10 , 20 , .5 , false , true , false , false);
+	/*10*/scrCreateMov("MAR Aerial Down" , 1 , false , 110 , 0 , false , true , false , 4 , 10 , .25 , false , true , true , true);
+	/*11*/scrCreateMov("MAR Aerial Up" , 2 , false , 110 , 0 , false , true , false , 2 , 30 , .2 , true , true , false , false);
+	
+	/*12*/scrCreateMov("POL Ground Neutral 1" , 7 , true , 110 , 0 , false , false , false , 5 , 20 , .5 , false , false , false , false);
+	/*13*/scrCreateMov("POL Ground Neutral 2" , 14 , true , 110 , 0 , false , true , false , 5 , 20 , .2 , false , false , false , false);
+	/*14*/scrCreateMov("POL Ground Neutral 3" , 2 , true , 110 , 0 , false , false , false , 5 , 20 , .75 , false , false , false , false);
+	/*15*/scrCreateMov("POL Ground Neutral 4" , 7 , true , 110 , 0 , false , false , false , 5 , 20 , .75 , false , false , false , false);
+	/*16*/scrCreateMov("POL Ground Attack Down" , 0 , false , 110 , 0 , false , false , false , 5 , 20 , .5 , false , false , false , false);
+	/*17*/scrCreateMov("POL Ground Attack Up" , 5 , true , 110 , 0 , false , true , true , 9 , 40 , .25 , false , false , false , false);
+	/*18*/scrCreateMov("POL Ground Smash Side" , 8 , true , 110 , 0 , false , true , true , 24 , 30 , .25 , false , false , false , false);
+	/*19*/scrCreateMov( "POL Ground Smash Down" , 18 , true , 110 , 0 , false , true , true , 24 , 30 , .25 , false , false , false , false);
 }
 ///@arg list
 function scrMapMov(List)

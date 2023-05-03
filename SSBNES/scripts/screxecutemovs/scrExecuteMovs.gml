@@ -5,7 +5,7 @@ function scrExecuteMovs(ID)
 	{
 		case(0):
 		{
-			///Fireball
+			//MAR Ground Neutral
 			var Fireball = instance_create_depth(x + LastScaleXSprite * 12 , y + 4 , depth , objCombatFireball);
 			Fireball.HorizontalMovement = ScaleXSprite*3;
 			Fireball.VerticalMovement = -1;
@@ -26,7 +26,7 @@ function scrExecuteMovs(ID)
 		}
 		case(1):
 		{
-			///Firepunch
+			///MAR Ground Side Smash
 			var Firepunch = instance_create_depth(x + LastScaleXSprite * 18 , y + 4 , depth-1 , objCombatFire);
 			Firepunch.Ide = 1;
 			Firepunch.FollowX = LastScaleXSprite * 18;
@@ -65,7 +65,7 @@ function scrExecuteMovs(ID)
 		}
 		case(2):
 		{
-			///Flip
+			///MAR Ground Smash Down
 			var Flip = instance_create_depth(x , y , depth-1 , objCombatMarioFlip);
 			Flip.Ide = 2;
 			Flip.FollowX = LastScaleXSprite;
@@ -78,7 +78,7 @@ function scrExecuteMovs(ID)
 			TimeAttacking = scrDameDato(Control.MovList , 2 , "Time Attacking");
 			ds_list_add(self.MyMovs , Flip.id);
 			
-			///Flip Back
+			///MAR Ground Smash Down
 			var FlipBack = instance_create_depth(x , y , depth-1 , objCombatMarioFlip);
 			FlipBack.sprite_index = sprChMarioFlip2Mask;
 			FlipBack.Ide = 2;
@@ -106,7 +106,7 @@ function scrExecuteMovs(ID)
 		}
 		case(3):
 		{
-			///HeadBang
+			///MAR Ground Smash Up
 			var HeadBang = instance_create_depth(x , y , depth-1 , objCombatHitboxImageFollower);
 			HeadBang.sprite_index = sprChMarioHeadBangMask;
 			HeadBang.PowerScale = true;
@@ -125,7 +125,7 @@ function scrExecuteMovs(ID)
 		}
 		case(4):
 		{
-			///FootBang
+			///MAR Ground Attack Side
 			AcelerationValue = 3;
 			var FootBang = instance_create_depth(x , y , depth-1 , objCombatHitboxNotImageFollower);
 			FootBang.sprite_index = sprChMarioFootBangMask;
@@ -147,7 +147,7 @@ function scrExecuteMovs(ID)
 		}
 		case(5):
 		{
-			///FootBang2
+			///MAR Ground Attack Down
 			var FootBang2 = instance_create_depth(x , y , depth-1 , objCombatHitboxImageFollower);
 			FootBang2.sprite_index = sprChMarioFootBang2Mask;
 			FootBang2.PowerScale = false;
@@ -168,7 +168,7 @@ function scrExecuteMovs(ID)
 		}
 		case(6):
 		{
-			///Highpunch
+			///MAR Ground Attack Up
 			var Highpunch = instance_create_depth(x , y , depth-1 , objCombatHitboxImageFollower);
 			Highpunch.sprite_index = sprChMarioHighPunchMask;
 			Highpunch.PowerScale = false;
@@ -189,7 +189,7 @@ function scrExecuteMovs(ID)
 		}
 		case(7):
 		{
-			///AerialFootbang
+			///MAR Aerial Neutral
 			var AerialFootbang = instance_create_depth(x , y , depth-1 , objCombatHitboxNotImageFollower);
 			AerialFootbang.sprite_index = sprChMarioAerialFootbangMask;
 			AerialFootbang.PowerScale = false;
@@ -211,7 +211,7 @@ function scrExecuteMovs(ID)
 		case(8):
 		{
 			HorizontalMovement = ScaleX * 4;
-			///Highpunch
+			///MAR Aerial Side
 			var Highpunch = instance_create_depth(x , y , depth-1 , objCombatHitboxImageFollower);
 			Highpunch.sprite_index = sprChMarioAerialSideMask;
 			Highpunch.PowerScale = false;
@@ -235,7 +235,7 @@ function scrExecuteMovs(ID)
 		{
 			VerticalMovement = -1;
 			AcelerationValue = 4;
-			///Back
+			///MAR Aerial Back
 			var BackfootBang = instance_create_depth(x , y , depth-1 , objCombatHitboxImageFollower);
 			BackfootBang.sprite_index = sprChMarioAerialBackMask;
 			BackfootBang.PowerScale = false;
@@ -257,7 +257,7 @@ function scrExecuteMovs(ID)
 		}
 		case(10):
 		{
-			///DownFlipAerial
+			///MAR Aerial Down
 			var DownFlipAerial = instance_create_depth(x , y , depth-1 , objCombatHitboxImageFollower);
 			DownFlipAerial.sprite_index = sprChMarioAerialDownMask;
 			DownFlipAerial.PowerScale = false;
@@ -281,7 +281,7 @@ function scrExecuteMovs(ID)
 		}
 		case(11):
 		{
-			///Up
+			///MAR Aerial Up
 			scrFreeJump(7);
 			var Up = instance_create_depth(x , y , depth-1 , objCombatHitboxImageFollower);
 			Up.sprite_index = sprChMarioAerialUpMask;
@@ -304,7 +304,7 @@ function scrExecuteMovs(ID)
 		}
 		case(12):
 		{
-			///Normal Egg
+			///POL Ground Neutral 1
 			var NormalEgg = instance_create_depth(x + LastScaleXSprite * 12 , y + 4 , depth , objCombatNormalEgg);
 			NormalEgg.HorizontalMovement = ScaleXSprite*3.5;
 			NormalEgg.VerticalMovement = -1.5;
@@ -325,7 +325,7 @@ function scrExecuteMovs(ID)
 		}
 		case(13):
 		{
-			///Spike Egg
+			///POL Ground Neutral 2
 			var idlocal = 13;
 			var SpikeEgg = instance_create_depth(x + LastScaleXSprite * 12 , y + 4 , depth , objCombatSpikeEgg);
 			SpikeEgg.HorizontalMovement = ScaleXSprite*3;
@@ -347,7 +347,7 @@ function scrExecuteMovs(ID)
 		}
 		case(14):
 		{
-			///Shuriken Egg
+			///POL Ground Neutral 3
 			var idlocal = 14;
 			var Shuriken = instance_create_depth(x + LastScaleXSprite * 12 , y + 4 , depth , objCombatShuriken);
 			Shuriken.HorizontalMovement = ScaleXSprite*4.5;
@@ -369,7 +369,7 @@ function scrExecuteMovs(ID)
 		}
 		case(15):
 		{
-			///Key
+			///POL Ground Neutral 4
 			var idlocal = 14;
 			var PKey = instance_create_depth(x + LastScaleXSprite * 12 , y + 4 , depth , objCombatKeyPollier);
 			PKey.HorizontalMovement = 0;
@@ -391,7 +391,7 @@ function scrExecuteMovs(ID)
 		}
 		case(16):
 		{
-			///Key
+			///POL Ground Attack Down
 			var idlocal = 16;
 			TimeAttacking = scrDameDato(Control.MovList , idlocal , "Time Attacking");
 			Control.CharacterPollierMov[Position]++;
@@ -405,7 +405,7 @@ function scrExecuteMovs(ID)
 		}
 		case(17):
 		{
-			///Chicken Foot
+			///POL Ground Attack Up
 			AcelerationValue = 4;
 			var ChickenFoot = instance_create_depth(x , y , depth-1 , objCombatHitboxNotImageFollower);
 			ChickenFoot.sprite_index = sprChMarioFootBangMask;
@@ -427,7 +427,7 @@ function scrExecuteMovs(ID)
 		}
 		case(18):
 		{
-			///Chicken Boomerang
+			///POL Ground Smash Side
 			var ChickenBoomerang = instance_create_depth(x + LastScaleXSprite * 18 , y + 4 , depth-1 , objCombatPollierBoomerang);
 			PollierBoomerang = ChickenBoomerang;
 			ChickenBoomerang.Ide = ID;
@@ -455,7 +455,7 @@ function scrExecuteMovs(ID)
 		}
 		case(19):
 		{
-			///Wing Punch
+			///POL Ground Smash Down
 			AcelerationValue = 0;
 			var ChickenFoot = instance_create_depth(x , y , depth-1 , objCombatHitboxNotImageFollower);
 			ChickenFoot.sprite_index = sprChPollierGroundSmashDownMask;
