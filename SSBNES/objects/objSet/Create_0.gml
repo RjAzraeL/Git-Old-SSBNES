@@ -1,20 +1,24 @@
 #region Variable
+LayerActual = 0;
+LayerTotal = 4;
 ColorActivo = make_color_rgb(252 , 184 , 0);
 CenterX = room_width/2;
 LanguageTotal = 7;
-MainText = "Select your language";
-TextLanguageExample = "If you can read and understand this language press enter to continue!";
 LanguageActual = 0;
 Active = false;
 alarm[0] = 5;
+alarm[1] = 3;
+SectionIzqDer = 0;
+SectionIzqDerObjetivo = 0;
 #region Language
-L[0] = "English";
-L[1] = "Spanish";
-L[2] = "Portuguese";
-L[3] = "French";
-L[4] = "German";
-L[5] = "Japanese";
-L[6] = "Italian";
+MainText = Language.Text_setn0o0;
+TextLanguageExample = Language.Text_setn0o1;
+L[0] = Language.Text_setl0o0;
+L[1] = Language.Text_setl0o1;
+L[2] = Language.Text_setl0o2;
+L[3] = Language.Text_setl0o3;
+L[4] = Language.Text_setl0o4;
+L[5] = Language.Text_setl0o5;
+L[6] = Language.Text_setl0o6;
 #endregion
-
 #endregion
