@@ -6,11 +6,19 @@ if (Active)
 {
 	if (LayerActual == 0) /*Language Layer*/
 	{
-		var Change = false;
-		if (Control.StartButtonActive)
+		if (ChangeTitles)
 		{
+			MainText = Language.Text_setn0o0;
+			ChangeTitles = false;
+		}
+		var Change = false;
+		if (Control.StartButtonPressedActive)
+		{
+			ChangeTitles = true;
 			scrSound(sfxButtonOk);
 			LayerActual++;
+			Active = false;
+			alarm[0] = 5;
 		}
 		if (Control.UpButtonPressedActive)
 		{
@@ -45,39 +53,76 @@ if (Active)
 			L[6] = Language.Text_setl0o6;
 		}
 	}
-	if (LayerActual == 1) /*Controls P-1 Layer*/
+	else if (LayerActual == 1) /*Controls P-1 Layer*/
 	{
-		var Change = false;
-		if (Control.StartButtonActive)
+		if (ChangeTitles)
 		{
+			MainText = Language.Text_setn1o0;
+			ChangeTitles = false;
+		}
+		var Change = false;
+		if (Control.StartButtonPressedActive)
+		{
+			ChangeTitles = true;
 			scrSound(sfxButtonOk);
 			LayerActual++;
+			Active = false;
+			alarm[0] = 5;
 		}
 		if (keyboard_check_pressed(vk_escape))
 		{
+			ChangeTitles = true;
+			scrSound(sfxButtonOk);
+			LayerActual--;
+			
+			scrLanguageLoadTexto( LanguageActual );
+		
+			MainText = Language.Text_setn0o0;
+			TextLanguageExample = Language.Text_setn0o1;
+			L[0] = Language.Text_setl0o0;
+			L[1] = Language.Text_setl0o1;
+			L[2] = Language.Text_setl0o2;
+			L[3] = Language.Text_setl0o3;
+			L[4] = Language.Text_setl0o4;
+			L[5] = Language.Text_setl0o5;
+			L[6] = Language.Text_setl0o6;
+			
+		}
+	}
+	else if (LayerActual == 2) /*Controls P-2 Layer*/
+	{
+		if (ChangeTitles)
+		{
+			MainText = Language.Text_setn2o0;
+			ChangeTitles = false;
+		}
+		var Change = false;
+		if (Control.StartButtonPressedActive)
+		{
+			ChangeTitles = true;
+			scrSound(sfxButtonOk);
+			LayerActual++;
+			Active = false;
+			alarm[0] = 5;
+		}
+		if (keyboard_check_pressed(vk_escape))
+		{
+			ChangeTitles = true;
 			scrSound(sfxButtonOk);
 			LayerActual--;
 		}
 	}
-	if (LayerActual == 2) /*Controls P-2 Layer*/
+	else if (LayerActual == 3) /*Graphics Layer*/
 	{
-		var Change = false;
-		if (Control.StartButtonActive)
+		if (ChangeTitles)
 		{
-			scrSound(sfxButtonOk);
-			LayerActual++;
+			MainText = Language.Text_setn3o0;
+			ChangeTitles = false;
 		}
-		if (keyboard_check_pressed(vk_escape))
-		{
-			scrSound(sfxButtonOk);
-			LayerActual--;
-		}
-	}
-	if (LayerActual == 3) /*Graphics Layer*/
-	{
 		var Change = false;
 		if (keyboard_check_pressed(vk_escape))
 		{
+			ChangeTitles = true;
 			scrSound(sfxButtonOk);
 			LayerActual--;
 		}

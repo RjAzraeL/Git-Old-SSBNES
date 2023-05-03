@@ -127,6 +127,10 @@ function scrLanguageLoadTexto(LocalLanguage)
 		Text_ml7d4 = ini_read_string("DATA" , "ml7d4" , "");
 		
 		Text_setn0o0 = ini_read_string("SET" , "setn0o0" , "ERROR_SELECT");
+		Text_setn1o0 = ini_read_string("SET" , "setn1o0" , "ERROR_SELECT");
+		Text_setn2o0 = ini_read_string("SET" , "setn2o0" , "ERROR_SELECT");
+		Text_setn3o0 = ini_read_string("SET" , "setn3o0" , "ERROR_SELECT");
+		Text_setn4o0 = ini_read_string("SET" , "setn4o0" , "ERROR_SELECT");
 		Text_setn0o1 = ini_read_string("SET" , "setn0o1" , "ERROR_TEXT");
 		Text_setl0o0 = ini_read_string("SET" , "setl0o0" , "ERROR_ENGLISH");
 		Text_setl0o1 = ini_read_string("SET" , "setl0o1" , "ERROR_SPANISH");
@@ -135,6 +139,15 @@ function scrLanguageLoadTexto(LocalLanguage)
 		Text_setl0o4 = ini_read_string("SET" , "setl0o4" , "ERROR_GERMAN");
 		Text_setl0o5 = ini_read_string("SET" , "setl0o5" , "ERROR_JAPANESE");
 		Text_setl0o6 = ini_read_string("SET" , "setl0o6" , "ERROR_ITALIAN");
+		
+		Text_setn1o1 = ini_read_string("SET" , "setn1o1" , "ERROR_C");
+		Text_setn1o2 = ini_read_string("SET" , "setn1o2" , "ERROR_C");
+		Text_setn1o3 = ini_read_string("SET" , "setn1o3" , "ERROR_C");
+		Text_setn1o4 = ini_read_string("SET" , "setn1o4" , "ERROR_C");
+		Text_setn1o5 = ini_read_string("SET" , "setn1o5" , "ERROR_C");
+		Text_setn1o6 = ini_read_string("SET" , "setn1o6" , "ERROR_C");
+		Text_setn1o7 = ini_read_string("SET" , "setn1o7" , "ERROR_C");
+		Text_setn1o8 = ini_read_string("SET" , "setn1o8" , "ERROR_C");
 		
 	}
 	#endregion

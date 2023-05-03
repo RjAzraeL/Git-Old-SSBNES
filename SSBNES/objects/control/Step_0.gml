@@ -18,7 +18,8 @@ AttackButtonReleasedActive = keyboard_check_released(AttackButton);
 UpButtonActive = keyboard_check(UpButton);
 UpButtonReleasedActive = keyboard_check_released(UpButton);
 UpButtonPressedActive = keyboard_check_pressed(UpButton);
-StartButtonActive = keyboard_check_pressed(StartButton);
+StartButtonActive = keyboard_check(StartButton);
+StartButtonPressedActive = keyboard_check_pressed(StartButton);
 
 
 _2LeftButtonActive = keyboard_check(_2LeftButton);
@@ -39,7 +40,8 @@ _2AttackButtonReleasedActive = keyboard_check_released(_2AttackButton);
 _2UpButtonActive = keyboard_check(_2UpButton);
 _2UpButtonReleasedActive = keyboard_check_released(_2UpButton);
 _2UpButtonPressedActive = keyboard_check_pressed(_2UpButton);
-_2StartButtonActive = keyboard_check_pressed(_2StartButton);
+_2StartButtonActive = keyboard_check(_2StartButton);
+_2StartButtonPressedActive = keyboard_check_pressed(_2StartButton);
 #endregion
 #region Generic
 if (Wait > 0)
