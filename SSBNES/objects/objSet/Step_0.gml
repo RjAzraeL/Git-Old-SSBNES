@@ -144,52 +144,60 @@ if (Active)
 		}
 		else
 		{
-			var Key = keyboard_lastkey;
-			switch (KeyChange)
+			if (keyboard_check_pressed(vk_anykey))
 			{
-				case(0):
+				var Key = keyboard_lastkey;
+				var CanChange = (Control.LeftButton != Key) and (Control.RightButton != Key) and (Control.UpButton != Key) and (Control.DownButton != Key) and (Control.JumpButton != Key) and (Control.AttackButton != Key) and (Control.StartButton != Key) and (Control.SelectButton != Key);
+				if (CanChange)
 				{
-					Control.LeftButton = Key;
-					break;
-				}
-				case(1):
-				{
-					Control.RightButton = Key;
-					break;
-				}
-				case(2):
-				{
-					Control.UpButton = Key;
-					break;
-				}
-				case(3):
-				{
-					Control.DownButton = Key;
-					break;
-				}
-				case(4):
-				{
-					Control.JumpButton = Key;
-					break;
-				}
-				case(5):
-				{
-					Control.AttackButton = Key;
-					break;
-				}
-				case(6):
-				{
-					Control.StartButton = Key;
-					break;
-				}
-				case(7):
-				{
-					Control.SelectButton = Key;
-					break;
+					switch (KeyChange)
+					{
+						case(0):
+						{
+							Control.LeftButton = Key;
+							break;
+						}
+						case(1):
+						{
+							Control.RightButton = Key;
+							break;
+						}
+						case(2):
+						{
+							Control.UpButton = Key;
+							break;
+						}
+						case(3):
+						{
+							Control.DownButton = Key;
+							break;
+						}
+						case(4):
+						{
+							Control.JumpButton = Key;
+							break;
+						}
+						case(5):
+						{
+							Control.AttackButton = Key;
+							break;
+						}
+						case(6):
+						{
+							Control.StartButton = Key;
+							break;
+						}
+						case(7):
+						{
+							Control.SelectButton = Key;
+							break;
+						}
+					}
+					alarm[0] = 5;
+					Active = false;
+					KeyChange = -1;
 				}
 			}
-			alarm[0] = 1;
-			KeyChange = -1;
 		}
 		if (ControlActual == 8)
 		{
