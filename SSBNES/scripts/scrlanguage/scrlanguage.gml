@@ -148,6 +148,7 @@ function scrLanguageLoadTexto(LocalLanguage)
 		Text_setn1o6 = ini_read_string("SET" , "setn1o6" , "ERROR_C");
 		Text_setn1o7 = ini_read_string("SET" , "setn1o7" , "ERROR_C");
 		Text_setn1o8 = ini_read_string("SET" , "setn1o8" , "ERROR_C");
+		Text_setn1o9 = ini_read_string("SET" , "setn1o9" , "DEFAULT");
 		
 	}
 	#endregion

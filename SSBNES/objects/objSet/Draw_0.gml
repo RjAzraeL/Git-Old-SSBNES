@@ -59,8 +59,8 @@ if (LayerActual == 1)
 		scrText( 66 , 55 + (16*i) , "╚" + string(string_upper(C[i])) , fa_middle , fa_left , Control.Font , c_black , Color , 8 , room_width , 1 , 1 , 0 , 1);
 	}
 	#endregion
-	#region Text language
-	
+	#region Text Controller
+	draw_sprite_ext(sprSetController , ControlActual+1 , CenterX , 198 , 1 , 1 , 0 , c_white , 1);
 	#endregion
 }
 #endregion

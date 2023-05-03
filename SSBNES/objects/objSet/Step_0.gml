@@ -71,6 +71,24 @@ if (Active)
 			
 		}
 		var Change = false;
+		if (Control.UpButtonPressedActive)
+		{
+			if (ControlActual > 0)
+			{
+				Change = true;
+				ControlActual--;
+				scrSound(sfxButtonOk);
+			}
+		}
+		if (Control.DownButtonPressedActive)
+		{
+			if (ControlActual < ControlTotal)
+			{
+				Change = true;
+				scrSound(sfxButtonOk);
+				ControlActual++;
+			}
+		}
 		if (Control.StartButtonPressedActive)
 		{
 			ChangeTitles = true;
@@ -116,6 +134,24 @@ if (Active)
 			C[7] = Language.Text_setn1o8;
 		}
 		var Change = false;
+		if (Control.UpButtonPressedActive)
+		{
+			if (ControlActual > 0)
+			{
+				Change = true;
+				ControlActual--;
+				scrSound(sfxButtonOk);
+			}
+		}
+		if (Control.DownButtonPressedActive)
+		{
+			if (ControlActual < ControlTotal)
+			{
+				Change = true;
+				scrSound(sfxButtonOk);
+				ControlActual++;
+			}
+		}
 		if (Control.StartButtonPressedActive)
 		{
 			ChangeTitles = true;
