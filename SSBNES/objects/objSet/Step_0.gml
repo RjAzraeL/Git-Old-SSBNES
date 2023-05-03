@@ -96,6 +96,11 @@ if (Active)
 		{
 			switch (ControlActual)
 			{
+				case(0):
+				{
+					KeyChange = ControlActual;
+					break;
+				}
 				case(8):
 				{
 					switch (LayerHorizontal)
