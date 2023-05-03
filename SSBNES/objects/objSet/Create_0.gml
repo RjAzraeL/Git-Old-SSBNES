@@ -12,6 +12,7 @@ Active = false;
 LayerHorizontal = 1;
 LayerHorizontalTotal = 2;
 TextDefault = Language.Text_setn1o9;
+ActiveChange = false;
 alarm[0] = 5;
 alarm[2] = 30;
 alarm[1] = 3;

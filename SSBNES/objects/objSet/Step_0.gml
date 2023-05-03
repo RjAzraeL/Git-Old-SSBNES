@@ -97,56 +97,15 @@ if (Active)
 			}
 			if (Control.StartButtonPressedActive)
 			{
+				if (ControlActual < 8)
+				{
+					ActiveChange = false;
+					alarm[3] = 10;
+					KeyChange = ControlActual;
+					scrSound(sfxButtonOk);
+				}
 				switch (ControlActual)
 				{
-					case(0):
-					{
-						KeyChange = ControlActual;
-						scrSound(sfxButtonOk);
-						break;
-					}
-					case(1):
-					{
-						KeyChange = ControlActual;
-						scrSound(sfxButtonOk);
-						break;
-					}
-					case(2):
-					{
-						KeyChange = ControlActual;
-						scrSound(sfxButtonOk);
-						break;
-					}
-					case(3):
-					{
-						KeyChange = ControlActual;
-						scrSound(sfxButtonOk);
-						break;
-					}
-					case(4):
-					{
-						KeyChange = ControlActual;
-						scrSound(sfxButtonOk);
-						break;
-					}
-					case(5):
-					{
-						KeyChange = ControlActual;
-						scrSound(sfxButtonOk);
-						break;
-					}
-					case(6):
-					{
-						KeyChange = ControlActual;
-						scrSound(sfxButtonOk);
-						break;
-					}
-					case(7):
-					{
-						KeyChange = ControlActual;
-						scrSound(sfxButtonOk);
-						break;
-					}
 					case(8):
 					{
 						switch (LayerHorizontal)
@@ -228,8 +187,9 @@ if (Active)
 					Control.SelectButton = Key;
 					break;
 				}
-				alarm[0] = 1;
 			}
+			alarm[0] = 1;
+			KeyChange = -1;
 		}
 		if (ControlActual == 8)
 		{
