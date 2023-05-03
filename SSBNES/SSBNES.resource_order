@@ -5,6 +5,7 @@
     {"name":"Bonus #1","order":1,"path":"folders/Rooms/Bonus #1.yy",},
     {"name":"Bonus","order":12,"path":"folders/Sprites/Bonus.yy",},
     {"name":"Set","order":11,"path":"folders/Sprites/Set.yy",},
+    {"name":"Save","order":17,"path":"folders/Scripts/Save.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"sprSetTextBox2","order":10,"path":"sprites/sprSetTextBox2/sprSetTextBox2.yy",},

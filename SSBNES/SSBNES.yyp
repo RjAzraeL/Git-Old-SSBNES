@@ -84,6 +84,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Parapa Palace","folderPath":"folders/Sprites/Stages/Parapa Palace.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Test Stage","folderPath":"folders/Sprites/Stages/Test Stage.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Underground","folderPath":"folders/Sprites/Stages/Underground.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Save","folderPath":"folders/Scripts/Save.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"en.txt","CopyToMask":-1,"filePath":"datafiles/l",},
@@ -398,6 +399,7 @@
     {"id":{"name":"sprChPollierGroundAttackSide","path":"sprites/sprChPollierGroundAttackSide/sprChPollierGroundAttackSide.yy",},},
     {"id":{"name":"sprChPollierEgg","path":"sprites/sprChPollierEgg/sprChPollierEgg.yy",},},
     {"id":{"name":"sprChMarioFootBangMask","path":"sprites/sprChMarioFootBangMask/sprChMarioFootBangMask.yy",},},
+    {"id":{"name":"scrFile","path":"scripts/scrFile/scrFile.yy",},},
     {"id":{"name":"sndOst10TLOZOverworld_a","path":"sounds/sndOst10TLOZOverworld_a/sndOst10TLOZOverworld_a.yy",},},
     {"id":{"name":"shd_CRT_shader","path":"shaders/shd_CRT_shader/shd_CRT_shader.yy",},},
     {"id":{"name":"rm03Versus","path":"rooms/rm03Versus/rm03Versus.yy",},},

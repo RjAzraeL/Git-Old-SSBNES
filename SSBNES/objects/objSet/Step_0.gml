@@ -129,6 +129,7 @@ if (Active)
 							}
 							case(1):
 							{
+								scrSound(sfxButtonOk);
 								Control.LeftButton = Control.DEFAULT_LeftButton;
 								Control.RightButton = Control.DEFAULT_RightButton;
 								Control.UpButton = Control.DEFAULT_UpButton;
