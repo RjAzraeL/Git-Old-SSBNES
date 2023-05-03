@@ -9,6 +9,7 @@ ControlTotal = 8;
 ControlActual = 0;
 ChangeTitles = false;
 Active = false;
+TextDefault = Language.Text_setn1o9;
 alarm[0] = 5;
 alarm[1] = 3;
 SectionIzqDer = 0;

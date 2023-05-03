@@ -68,6 +68,7 @@ if (Active)
 			C[5] = Language.Text_setn1o6;
 			C[6] = Language.Text_setn1o7;
 			C[7] = Language.Text_setn1o8;
+			TextDefault = Language.Text_setn1o9;
 			
 		}
 		var Change = false;
@@ -132,6 +133,7 @@ if (Active)
 			C[5] = Language.Text_setn1o6;
 			C[6] = Language.Text_setn1o7;
 			C[7] = Language.Text_setn1o8;
+			TextDefault = Language.Text_setn1o9;
 		}
 		var Change = false;
 		if (Control.UpButtonPressedActive)

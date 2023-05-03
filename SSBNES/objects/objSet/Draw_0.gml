@@ -61,6 +61,10 @@ if (LayerActual == 1)
 	#endregion
 	#region Text Controller
 	draw_sprite_ext(sprSetController , ControlActual+1 , CenterX , 198 , 1 , 1 , 0 , c_white , 1);
+	if (ControlActual == 8)
+	{
+		scrText( CenterX , 198 , "" + string(TextDefault) , fa_middle , fa_center , Control.Font , c_black , c_white , 8 , 104 , 1 , 1 , 0 , 1);
+	}
 	#endregion
 }
 #endregion
