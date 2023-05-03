@@ -59,6 +59,16 @@ if (Active)
 		{
 			MainText = Language.Text_setn1o0;
 			ChangeTitles = false;
+			
+			C[0] = Language.Text_setn1o1;
+			C[1] = Language.Text_setn1o2;
+			C[2] = Language.Text_setn1o3;
+			C[3] = Language.Text_setn1o4;
+			C[4] = Language.Text_setn1o5;
+			C[5] = Language.Text_setn1o6;
+			C[6] = Language.Text_setn1o7;
+			C[7] = Language.Text_setn1o8;
+			
 		}
 		var Change = false;
 		if (Control.StartButtonPressedActive)
@@ -95,6 +105,15 @@ if (Active)
 		{
 			MainText = Language.Text_setn2o0;
 			ChangeTitles = false;
+			
+			C[0] = Language.Text_setn1o1;
+			C[1] = Language.Text_setn1o2;
+			C[2] = Language.Text_setn1o3;
+			C[3] = Language.Text_setn1o4;
+			C[4] = Language.Text_setn1o5;
+			C[5] = Language.Text_setn1o6;
+			C[6] = Language.Text_setn1o7;
+			C[7] = Language.Text_setn1o8;
 		}
 		var Change = false;
 		if (Control.StartButtonPressedActive)
