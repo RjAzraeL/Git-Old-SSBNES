@@ -8,6 +8,7 @@ if (Active)
 	{
 		if (ChangeTitles)
 		{
+			LayerHorizontal = 1;
 			MainText = Language.Text_setn0o0;
 			ChangeTitles = false;
 		}
@@ -57,6 +58,7 @@ if (Active)
 	{
 		if (ChangeTitles)
 		{
+			LayerHorizontal = 1;
 			MainText = Language.Text_setn1o0;
 			ChangeTitles = false;
 			
@@ -98,6 +100,25 @@ if (Active)
 			Active = false;
 			alarm[0] = 5;
 		}
+		if (ControlActual == 8)
+		{
+			if (Control.LeftButtonPressedActive)
+			{
+				if (LayerHorizontal < LayerHorizontalTotal)
+				{
+					scrSound(sfxButtonOk);
+					LayerHorizontal++;
+				}
+			}
+			if (Control.RightButtonPressedActive)
+			{
+				if (LayerHorizontal > 0)
+				{
+					scrSound(sfxButtonOk);
+					LayerHorizontal--;
+				}
+			}
+		}
 		if (keyboard_check_pressed(vk_escape))
 		{
 			ChangeTitles = true;
@@ -122,6 +143,7 @@ if (Active)
 	{
 		if (ChangeTitles)
 		{
+			LayerHorizontal = 1;
 			MainText = Language.Text_setn2o0;
 			ChangeTitles = false;
 			
@@ -173,6 +195,7 @@ if (Active)
 	{
 		if (ChangeTitles)
 		{
+			LayerHorizontal = 1;
 			MainText = Language.Text_setn3o0;
 			ChangeTitles = false;
 		}

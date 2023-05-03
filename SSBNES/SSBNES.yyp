@@ -241,7 +241,7 @@
     {"id":{"name":"scrGetMusicByName","path":"scripts/scrGetMusicByName/scrGetMusicByName.yy",},},
     {"id":{"name":"scrPrepareMov","path":"scripts/scrPrepareMov/scrPrepareMov.yy",},},
     {"id":{"name":"scrDataMovs","path":"scripts/scrDataMovs/scrDataMovs.yy",},},
-    {"id":{"name":"sprSetPoint","path":"sprites/sprSetPoint/sprSetPoint.yy",},},
+    {"id":{"name":"sprSetArrow","path":"sprites/sprSetArrow/sprSetArrow.yy",},},
     {"id":{"name":"sfxMarioSkid","path":"sounds/sfxMarioSkid/sfxMarioSkid.yy",},},
     {"id":{"name":"sprChKirbyTrance","path":"sprites/sprChKirbyTrance/sprChKirbyTrance.yy",},},
     {"id":{"name":"sprSetREFERENCE","path":"sprites/sprSetREFERENCE/sprSetREFERENCE.yy",},},

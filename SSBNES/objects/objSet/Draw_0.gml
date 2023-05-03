@@ -60,11 +60,40 @@ if (LayerActual == 1)
 	}
 	#endregion
 	#region Text Controller
-	draw_sprite_ext(sprSetController , ControlActual+1 , CenterX , 198 , 1 , 1 , 0 , c_white , 1);
+	var ColorC = c_white;
+	var ColorL = c_white;
+	var ColorR = c_white;
+	var Color  = c_white;
 	if (ControlActual == 8)
 	{
-		scrText( CenterX , 198 , "" + string(TextDefault) , fa_middle , fa_center , Control.Font , c_black , c_white , 8 , 104 , 1 , 1 , 0 , 1);
+		ColorC = ColorActivo;
+		if (LayerHorizontal == 1)
+		{
+			Color = ColorActivo;
+			ColorL = c_white;
+			ColorR = c_white;
+		}
+		else if (LayerHorizontal == 0)
+		{
+			Color = c_white;
+			ColorL = ColorActivo;
+			ColorR = c_white;
+		}
+		else if (LayerHorizontal == 2)
+		{
+			Color = c_white;
+			ColorL = c_white;
+			ColorR = ColorActivo;
+		}
 	}
+	draw_sprite_ext(sprSetController , ControlActual+1 , CenterX , 198 , 1 , 1 , 0 , ColorC , 1);
+	if (ControlActual == 8)
+	{
+		scrText( CenterX , 198 , "" + string_upper(TextDefault) , fa_middle , fa_center , Control.Font , c_black , Color , 8 , 102 , 1 , 1 , 0 , 1);
+	}
+	
+	draw_sprite_ext(sprSetArrow , 0 , 074 , 203 , -1 , 1 , 0 , ColorL , 1);
+	draw_sprite_ext(sprSetArrow , 0 , 282 , 203 , +1 , 1 , 0 , ColorR , 1);
 	#endregion
 }
 #endregion
