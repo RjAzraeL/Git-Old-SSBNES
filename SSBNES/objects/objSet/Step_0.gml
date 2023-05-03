@@ -104,18 +104,18 @@ if (Active)
 		{
 			if (Control.LeftButtonPressedActive)
 			{
-				if (LayerHorizontal < LayerHorizontalTotal)
-				{
-					scrSound(sfxButtonOk);
-					LayerHorizontal++;
-				}
-			}
-			if (Control.RightButtonPressedActive)
-			{
 				if (LayerHorizontal > 0)
 				{
 					scrSound(sfxButtonOk);
 					LayerHorizontal--;
+				}
+			}
+			if (Control.RightButtonPressedActive)
+			{
+				if (LayerHorizontal < LayerHorizontalTotal)
+				{
+					scrSound(sfxButtonOk);
+					LayerHorizontal++;
 				}
 			}
 		}

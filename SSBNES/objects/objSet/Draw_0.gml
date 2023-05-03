@@ -66,21 +66,23 @@ if (LayerActual == 1)
 	var Color  = c_white;
 	if (ControlActual == 8)
 	{
-		ColorC = ColorActivo;
 		if (LayerHorizontal == 1)
 		{
+			ColorC = ColorActivo;
 			Color = ColorActivo;
 			ColorL = c_white;
 			ColorR = c_white;
 		}
 		else if (LayerHorizontal == 0)
 		{
+			ColorC  = c_white;
 			Color = c_white;
 			ColorL = ColorActivo;
 			ColorR = c_white;
 		}
 		else if (LayerHorizontal == 2)
 		{
+			ColorC  = c_white;
 			Color = c_white;
 			ColorL = c_white;
 			ColorR = ColorActivo;
