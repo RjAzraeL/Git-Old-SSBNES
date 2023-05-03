@@ -58,6 +58,7 @@ if (Active)
 	{
 		if (ChangeTitles)
 		{
+			KeyChange = -1;
 			LayerHorizontal = 1;
 			MainText = Language.Text_setn1o0;
 			ChangeTitles = false;
@@ -101,7 +102,49 @@ if (Active)
 					case(0):
 					{
 						KeyChange = ControlActual;
-					
+						scrSound(sfxButtonOk);
+						break;
+					}
+					case(1):
+					{
+						KeyChange = ControlActual;
+						scrSound(sfxButtonOk);
+						break;
+					}
+					case(2):
+					{
+						KeyChange = ControlActual;
+						scrSound(sfxButtonOk);
+						break;
+					}
+					case(3):
+					{
+						KeyChange = ControlActual;
+						scrSound(sfxButtonOk);
+						break;
+					}
+					case(4):
+					{
+						KeyChange = ControlActual;
+						scrSound(sfxButtonOk);
+						break;
+					}
+					case(5):
+					{
+						KeyChange = ControlActual;
+						scrSound(sfxButtonOk);
+						break;
+					}
+					case(6):
+					{
+						KeyChange = ControlActual;
+						scrSound(sfxButtonOk);
+						break;
+					}
+					case(7):
+					{
+						KeyChange = ControlActual;
+						scrSound(sfxButtonOk);
 						break;
 					}
 					case(8):
@@ -138,6 +181,54 @@ if (Active)
 						break;
 					}
 				}
+			}
+		}
+		else
+		{
+			var Key = keyboard_lastkey;
+			switch (KeyChange)
+			{
+				case(0):
+				{
+					Control.LeftButton = Key;
+					break;
+				}
+				case(1):
+				{
+					Control.RightButton = Key;
+					break;
+				}
+				case(2):
+				{
+					Control.UpButton = Key;
+					break;
+				}
+				case(3):
+				{
+					Control.DownButton = Key;
+					break;
+				}
+				case(4):
+				{
+					Control.JumpButton = Key;
+					break;
+				}
+				case(5):
+				{
+					Control.AttackButton = Key;
+					break;
+				}
+				case(6):
+				{
+					Control.StartButton = Key;
+					break;
+				}
+				case(7):
+				{
+					Control.SelectButton = Key;
+					break;
+				}
+				alarm[0] = 1;
 			}
 		}
 		if (ControlActual == 8)
