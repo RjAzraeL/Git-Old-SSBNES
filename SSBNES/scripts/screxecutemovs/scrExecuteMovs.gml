@@ -453,5 +453,27 @@ function scrExecuteMovs(ID)
 			ActualMov = ID;
 			break;
 		}
+		case(19):
+		{
+			///Wing Punch
+			AcelerationValue = 0;
+			var ChickenFoot = instance_create_depth(x , y , depth-1 , objCombatHitboxNotImageFollower);
+			ChickenFoot.sprite_index = sprChPollierGroundSmashDownMask;
+			ChickenFoot.PowerScale = false;
+			ChickenFoot.Ide = ID;
+			ChickenFoot.FollowX = LastScaleXSprite;
+			ChickenFoot.FollowY = 0;
+			ChickenFoot.Power = scrDameDato(Control.MovList , ID , "Power");
+			ChickenFoot.KnockbackScaling = scrDameDato(Control.MovList , 17 , "Knockback Scaling");
+			ChickenFoot.image_xscale = ScaleXSprite;
+			ChickenFoot.Creator = self;
+			ChickenFoot.image_speed = 0;
+			ChickenFoot.image_index = 0;
+			TimeAttacking = scrDameDato(Control.MovList , ID , "Time Attacking");
+			ds_list_add(self.MyMovs , ChickenFoot.id);
+			ActualMov = ID;
+			ProxMovs = 0;
+			break;
+		}
 	}
 }

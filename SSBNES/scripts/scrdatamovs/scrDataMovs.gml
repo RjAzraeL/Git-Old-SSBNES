@@ -19,7 +19,8 @@ function scrDataMov()
 	/*15*/scrMapMov( scrCrearLista("Pollier Key" , 7 , true , 110 , 0 , false , false , false , 5 , 20 , .75 , false , false , false , false) );
 	/*16*/scrMapMov( scrCrearLista("Roulette" , 0 , false , 110 , 0 , false , false , false , 5 , 20 , .5 , false , false , false , false) );
 	/*17*/scrMapMov( scrCrearLista("Chicken Foot" , 5 , true , 110 , 0 , false , true , false , 9 , 40 , .25 , false , false , false , false) );
-	/*18*/scrMapMov( scrCrearLista("Pollier Boomerang" , 8 , true , 110 , 0 , false , true , true , 24 , 30 , .25 , false , false , false , false) );
+	/*18*/scrCreateMov("Pollier Boomerang" , 8 , true , 110 , 0 , false , true , true , 24 , 30 , .25 , false , false , false , false);
+	/*19*/scrCreateMov( "Wing Punch" , 18 , true , 110 , 0 , false , true , true , 24 , 30 , .25 , false , false , false , false);
 }
 ///@arg list
 function scrMapMov(List)
@@ -44,4 +45,9 @@ function scrMapMov(List)
 
 	
 	ds_list_add(Control.MovList , Paquete);
+}
+
+function scrCreateMov(Name , Power , Root , KnockbackScaling , KnockbackFixed , LackOfPower , CanKnockback , IsSmash , MaxPower , TimeAttacking , AnimationSpeed , CanJump , IsAerial , CanGrab , MultipleHits)
+{
+	scrMapMov (scrCrearLista(Name , Power , Root , KnockbackScaling , KnockbackFixed , LackOfPower , CanKnockback , IsSmash , MaxPower , TimeAttacking , AnimationSpeed , CanJump , IsAerial , CanGrab , MultipleHits) );
 }
