@@ -56,8 +56,21 @@ if (LayerActual == 1)
 			Color = ColorActivo;
 			draw_sprite_ext(sprSetBarra , 0 , room_width/2 , 55 + (16*i) , 1 , 1 , 0 , c_white , 1);
 		}
-		scrText( 066 , 55 + (16*i) , "╚" + string(string_upper(C[i])) , fa_middle , fa_left , Control.Font , c_black , Color , 8 , room_width , 1 , 1 , 0 , 1);
-		scrText( 283 , 55 + (16*i) , "" + string(string_upper(CS[i])) , fa_middle , fa_right , Control.Font , c_black , Color , 8 , room_width , 1 , 1 , 0 , 1);
+		var Visible = true;
+		var VisibleText = string_upper(CS[i]);
+		if (KeyChange == i)
+		{
+			VisibleText = "---";
+		}
+		if (KeyChange == i and !VisibleKey)
+		{
+			Visible = false;
+		}
+		if (Visible)
+		{
+			scrText( 066 , 55 + (16*i) , "╚" + string(string_upper(C[i])) , fa_middle , fa_left , Control.Font , c_black , Color , 8 , room_width , 1 , 1 , 0 , 1);
+			scrText( 283 , 55 + (16*i) , "" + string(VisibleText) , fa_middle , fa_right , Control.Font , c_black , Color , 8 , room_width , 1 , 1 , 0 , 1);
+		}
 	}
 	#endregion
 	#region Text Controller

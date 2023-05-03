@@ -74,65 +74,69 @@ if (Active)
 			
 		}
 		var Change = false;
-		if (Control.UpButtonPressedActive)
+		if (KeyChange == -1)
 		{
-			if (ControlActual > 0)
+			if (Control.UpButtonPressedActive)
 			{
-				Change = true;
-				ControlActual--;
-				scrSound(sfxButtonOk);
-			}
-		}
-		if (Control.DownButtonPressedActive)
-		{
-			if (ControlActual < ControlTotal)
-			{
-				Change = true;
-				scrSound(sfxButtonOk);
-				ControlActual++;
-			}
-		}
-		if (Control.StartButtonPressedActive)
-		{
-			switch (ControlActual)
-			{
-				case(0):
+				if (ControlActual > 0)
 				{
-					KeyChange = ControlActual;
-					break;
+					Change = true;
+					ControlActual--;
+					scrSound(sfxButtonOk);
 				}
-				case(8):
+			}
+			if (Control.DownButtonPressedActive)
+			{
+				if (ControlActual < ControlTotal)
 				{
-					switch (LayerHorizontal)
+					Change = true;
+					scrSound(sfxButtonOk);
+					ControlActual++;
+				}
+			}
+			if (Control.StartButtonPressedActive)
+			{
+				switch (ControlActual)
+				{
+					case(0):
 					{
-						case(0):
-						{
-							ChangeTitles = true;
-							scrSound(sfxButtonOk);
-							LayerActual--;
-							scrLanguageLoadTexto( LanguageActual );
-							MainText = Language.Text_setn0o0;
-							TextLanguageExample = Language.Text_setn0o1;
-							L[0] = Language.Text_setl0o0;
-							L[1] = Language.Text_setl0o1;
-							L[2] = Language.Text_setl0o2;
-							L[3] = Language.Text_setl0o3;
-							L[4] = Language.Text_setl0o4;
-							L[5] = Language.Text_setl0o5;
-							L[6] = Language.Text_setl0o6;
-							break;
-						}
-						case(2):
-						{
-							ChangeTitles = true;
-							scrSound(sfxButtonOk);
-							LayerActual++;
-							Active = false;
-							alarm[0] = 5;
-							break;
-						}
+						KeyChange = ControlActual;
+					
+						break;
 					}
-					break;
+					case(8):
+					{
+						switch (LayerHorizontal)
+						{
+							case(0):
+							{
+								ChangeTitles = true;
+								scrSound(sfxButtonOk);
+								LayerActual--;
+								scrLanguageLoadTexto( LanguageActual );
+								MainText = Language.Text_setn0o0;
+								TextLanguageExample = Language.Text_setn0o1;
+								L[0] = Language.Text_setl0o0;
+								L[1] = Language.Text_setl0o1;
+								L[2] = Language.Text_setl0o2;
+								L[3] = Language.Text_setl0o3;
+								L[4] = Language.Text_setl0o4;
+								L[5] = Language.Text_setl0o5;
+								L[6] = Language.Text_setl0o6;
+								break;
+							}
+							case(2):
+							{
+								ChangeTitles = true;
+								scrSound(sfxButtonOk);
+								LayerActual++;
+								Active = false;
+								alarm[0] = 5;
+								break;
+							}
+						}
+						break;
+					}
 				}
 			}
 		}
