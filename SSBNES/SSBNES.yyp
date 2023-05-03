@@ -229,6 +229,7 @@
     {"id":{"name":"tlsStgLy1aMushroomKingdomI","path":"tilesets/tlsStgLy1aMushroomKingdomI/tlsStgLy1aMushroomKingdomI.yy",},},
     {"id":{"name":"sprStgLy1aHyruleForest","path":"sprites/sprStgLy1aHyruleForest/sprStgLy1aHyruleForest.yy",},},
     {"id":{"name":"objBlockTransferable","path":"objects/objBlockTransferable/objBlockTransferable.yy",},},
+    {"id":{"name":"scrKeyboard","path":"scripts/scrKeyboard/scrKeyboard.yy",},},
     {"id":{"name":"sprChKirbyMaskDuck","path":"sprites/sprChKirbyMaskDuck/sprChKirbyMaskDuck.yy",},},
     {"id":{"name":"sprChSandbagIdle","path":"sprites/sprChSandbagIdle/sprChSandbagIdle.yy",},},
     {"id":{"name":"scrExecuteMovs","path":"scripts/scrExecuteMovs/scrExecuteMovs.yy",},},

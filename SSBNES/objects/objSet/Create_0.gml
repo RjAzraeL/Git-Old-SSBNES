@@ -37,4 +37,14 @@ C[5] = Language.Text_setn1o6;
 C[6] = Language.Text_setn1o7;
 C[7] = Language.Text_setn1o8;
 #endregion
+#region Controls selected
+CS[0] = scrKeyboardKeyName( Control.LeftButton );
+CS[1] = scrKeyboardKeyName( Control.RightButton );
+CS[2] = scrKeyboardKeyName( Control.UpButton );
+CS[3] = scrKeyboardKeyName( Control.DownButton );
+CS[4] = scrKeyboardKeyName( Control.JumpButton );
+CS[5] = scrKeyboardKeyName( Control.AttackButton );
+CS[6] = scrKeyboardKeyName( Control.StartButton );
+CS[7] = scrKeyboardKeyName( Control.SelectButton );
+#endregion
 #endregion

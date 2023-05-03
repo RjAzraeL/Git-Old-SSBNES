@@ -97,6 +97,16 @@ IndexImage2 = 0;
 #endregion
 
 #region Controls
+
+DEFAULT_LeftButton = vk_left;
+DEFAULT_RightButton = vk_right;
+DEFAULT_DownButton = vk_down;
+DEFAULT_UpButton = vk_up;
+DEFAULT_JumpButton = ord("X");
+DEFAULT_AttackButton = ord("C");
+DEFAULT_StartButton = vk_enter;
+DEFAULT_SelectButton = vk_space;
+
 LeftButton = vk_left;
 RightButton = vk_right;
 DownButton = vk_down;
@@ -106,14 +116,14 @@ AttackButton = ord("C");
 StartButton = vk_enter;
 SelectButton = vk_space;
 
-_2LeftButton = vk_numpad4;
-_2RightButton = vk_numpad6;
-_2DownButton = vk_numpad5;
-_2UpButton = vk_numpad8;
-_2JumpButton = ord("I");
-_2AttackButton = ord("O");
-_2StartButton = vk_insert;
-_2SelectButton = vk_space;
+DEFAULT_2LeftButton = vk_numpad4;
+DEFAULT_2RightButton = vk_numpad6;
+DEFAULT_2DownButton = vk_numpad5;
+DEFAULT_2UpButton = vk_numpad8;
+DEFAULT_2JumpButton = ord("I");
+DEFAULT_2AttackButton = ord("O");
+DEFAULT_2StartButton = vk_insert;
+DEFAULT_2SelectButton = vk_space;
 
 ShowColissionButton = vk_f1;
 ShowColissionMovsButton = vk_f2;

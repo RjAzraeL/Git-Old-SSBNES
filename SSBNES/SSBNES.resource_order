@@ -125,6 +125,7 @@
     {"name":"sndOst07Battlefield_a","order":7,"path":"sounds/sndOst07Battlefield_a/sndOst07Battlefield_a.yy",},
     {"name":"tlsStgLy1aMushroomKingdomI","order":3,"path":"tilesets/tlsStgLy1aMushroomKingdomI/tlsStgLy1aMushroomKingdomI.yy",},
     {"name":"objBlockTransferable","order":1,"path":"objects/objBlockTransferable/objBlockTransferable.yy",},
+    {"name":"scrKeyboard","order":16,"path":"scripts/scrKeyboard/scrKeyboard.yy",},
     {"name":"sprChKirbyMaskDuck","order":18,"path":"sprites/sprChKirbyMaskDuck/sprChKirbyMaskDuck.yy",},
     {"name":"scrExecuteMovs","order":4,"path":"scripts/scrExecuteMovs/scrExecuteMovs.yy",},
     {"name":"sndOst10TLOZOverworld_b","order":16,"path":"sounds/sndOst10TLOZOverworld_b/sndOst10TLOZOverworld_b.yy",},
