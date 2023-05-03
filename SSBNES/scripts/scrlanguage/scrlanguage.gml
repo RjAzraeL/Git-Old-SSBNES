@@ -125,6 +125,17 @@ function scrLanguageLoadTexto(LocalLanguage)
 		Text_ml7d2 = ini_read_string("DATA" , "ml7d2" , "");
 		Text_ml7d3 = ini_read_string("DATA" , "ml7d3" , "");
 		Text_ml7d4 = ini_read_string("DATA" , "ml7d4" , "");
+		
+		Text_setn0o0 = ini_read_string("SET" , "setn0o0" , "ERROR_SELECT");
+		Text_setn0o1 = ini_read_string("SET" , "setn0o1" , "ERROR_TEXT");
+		Text_setl0o0 = ini_read_string("SET" , "setl0o0" , "ERROR_ENGLISH");
+		Text_setl0o1 = ini_read_string("SET" , "setl0o1" , "ERROR_SPANISH");
+		Text_setl0o2 = ini_read_string("SET" , "setl0o2" , "ERROR_PORT");
+		Text_setl0o3 = ini_read_string("SET" , "setl0o3" , "ERROR_FREN");
+		Text_setl0o4 = ini_read_string("SET" , "setl0o4" , "ERROR_GERMAN");
+		Text_setl0o5 = ini_read_string("SET" , "setl0o5" , "ERROR_JAPANESE");
+		Text_setl0o6 = ini_read_string("SET" , "setl0o6" , "ERROR_ITALIAN");
+		
 	}
 	#endregion
 	

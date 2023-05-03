@@ -52,7 +52,7 @@ StageId = 0;
 ShowMask = false;
 ShowMovsMask = false;
 FontPorcentage = font_add_sprite_ext(sprHudNumbers , "0123456789" , true , 0);
-Font = font_add_sprite_ext(sprFont , " !ƒ#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ" , false , 0);
+Font = font_add_sprite_ext(sprFont , " !ƒ#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ╚" , false , 0);
 CharacterSkinSet = ds_map_create();
 for (var i = 0 ; i < 4 ; i++)
 {
@@ -119,4 +119,8 @@ ShowColissionButton = vk_f1;
 ShowColissionMovsButton = vk_f2;
 BattleLevel = false;
 alarm[0] = 5;
+#endregion
+
+#region Create set
+instance_create_depth(0,0,0,objSet);
 #endregion
