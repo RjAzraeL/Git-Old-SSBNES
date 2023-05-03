@@ -78,7 +78,10 @@ function scrUseMovs()
 					}
 					case(18): /*Chicken Boomerang*/
 					{
-						scrPrepareMov(18 , false , SpriteSmashGroundSide , 2);
+						if (!scrExiste(PollierBoomerang))
+						{
+							scrPrepareMov(18 , false , SpriteSmashGroundSide , 2);
+						}
 						break;
 					}
 				}

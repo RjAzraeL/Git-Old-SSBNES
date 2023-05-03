@@ -1,6 +1,7 @@
 #region Set variables
 PollierMovList = scrCrearLista(12,13,14,15);
 PollierMovActual = 0;
+PollierBoomerang = noone;
 Recovery = true;
 TimeHolding = 0;
 ProxMovs = 0;

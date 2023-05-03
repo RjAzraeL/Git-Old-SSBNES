@@ -28,8 +28,8 @@ else
 {
 	if (scrExiste(Creator))
 	{
-		move_towards_point(Creator.x , Creator.y , 1);
-		if (place_meeting(Creator.x , Creator.y , Creator))
+		move_towards_point(Creator.x , Creator.y , 2);
+		if (distance_to_object(Creator) < 5)
 		{
 			instance_destroy();
 		}

@@ -429,6 +429,7 @@ function scrExecuteMovs(ID)
 		{
 			///Chicken Boomerang
 			var ChickenBoomerang = instance_create_depth(x + LastScaleXSprite * 18 , y + 4 , depth-1 , objCombatPollierBoomerang);
+			PollierBoomerang = ChickenBoomerang;
 			ChickenBoomerang.Ide = ID;
 			ChickenBoomerang.FollowX = LastScaleXSprite * 18;
 			ChickenBoomerang.FollowY = 4;
