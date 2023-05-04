@@ -127,8 +127,23 @@ if (BattleLevel)
 			MusicNext = sfxKirbyJump;
 		}
 	}
-	#endregion
-	
+	#endregion	
+}
+else
+{
+	if (scrIsBonusLevel())
+	{
+		#region Music
+		if (MusicOn and !MusicLoop)
+		{
+			if (!audio_is_playing(IndexMusic))
+			{
+				scrMusicLoop(MusicNext);
+				MusicNext = sfxKirbyJump;
+			}
+		}
+		#endregion
+	}
 }
 #endregion
 #endregion

@@ -1,17 +1,21 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "objTarget",
+  "name": "objMobilePlattformBn1Mario",
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"parMov","path":"objects/parMov/parMov.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":7,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Bonus",
-    "path": "folders/Objects/Bonus.yy",
+    "name": "Objects",
+    "path": "folders/Objects.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "objBlockTransferable",
+    "path": "objects/objBlockTransferable/objBlockTransferable.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -28,8 +32,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sprTarget",
-    "path": "sprites/sprTarget/sprTarget.yy",
+    "name": "sprBonusPlattform",
+    "path": "sprites/sprBonusPlattform/sprBonusPlattform.yy",
   },
   "spriteMaskId": null,
   "visible": true,

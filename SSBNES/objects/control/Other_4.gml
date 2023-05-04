@@ -1,5 +1,10 @@
 #region Camera
 NormalCamera = true;
+if (scrIsBonusLevel())
+{
+	NormalCamera = false;
+	camera_set_view_border(view_camera[0] , 128 , 112);
+}
 #endregion
 #region Music
 Wait = 5;
@@ -13,6 +18,14 @@ if (room == rm02Menu)
 else if (room == rm03Versus)
 {
 	scrSetMusic("Menu Theme");
+}
+else if (room == rm00Set)
+{
+	scrSetMusic("Menu Theme");
+}
+if (scrIsBonusLevel())
+{
+	scrSetMusic("Bonus 1");
 }
 
 if (BattleLevel)
