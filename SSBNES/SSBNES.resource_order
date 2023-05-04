@@ -1,6 +1,7 @@
 {
   "FolderOrderSettings": [
     {"name":"Bonus","order":6,"path":"folders/Objects/Bonus.yy",},
+    {"name":"Mobile Plattform Bn1Mario","order":1,"path":"folders/Objects/Bonus/Mobile Plattform Bn1Mario.yy",},
     {"name":"Furnis","order":1,"path":"folders/Objects/Furnis.yy",},
     {"name":"Menu","order":2,"path":"folders/Objects/Menu.yy",},
     {"name":"Parent","order":3,"path":"folders/Objects/Parent.yy",},
@@ -11,7 +12,6 @@
     {"name":"Save","order":17,"path":"folders/Scripts/Save.yy",},
     {"name":"Bonus","order":12,"path":"folders/Sprites/Bonus.yy",},
     {"name":"Set","order":11,"path":"folders/Sprites/Set.yy",},
-    {"name":"Mobile Plattform Bn1Mario","order":1,"path":"folders/Objects/Bonus/Mobile Plattform Bn1Mario.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"sprSetTextBox2","order":10,"path":"sprites/sprSetTextBox2/sprSetTextBox2.yy",},
@@ -292,6 +292,7 @@
     {"name":"sprChSandbagIdle129","order":14,"path":"sprites/sprChSandbagIdle129/sprChSandbagIdle129.yy",},
     {"name":"sprChMarioJump2","order":4,"path":"sprites/sprChMarioJump2/sprChMarioJump2.yy",},
     {"name":"sprChPollierAerialUp","order":5,"path":"sprites/sprChPollierAerialUp/sprChPollierAerialUp.yy",},
+    {"name":"sprBonusWater","order":7,"path":"sprites/sprBonusWater/sprBonusWater.yy",},
     {"name":"sndOst03Menu2_b","order":3,"path":"sounds/sndOst03Menu2_b/sndOst03Menu2_b.yy",},
     {"name":"sprSolidSlope30","order":3,"path":"sprites/sprSolidSlope30/sprSolidSlope30.yy",},
     {"name":"sprPlayer2","order":22,"path":"sprites/sprPlayer2/sprPlayer2.yy",},
