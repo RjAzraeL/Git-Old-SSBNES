@@ -21,7 +21,7 @@
   "option_windows_nsis_file": "installer/nsis_script.nsi",
   "option_windows_product_info": "Super Smash Bros NES. Reborn",
   "option_windows_resize_window": false,
-  "option_windows_save_location": 0,
+  "option_windows_save_location": 1,
   "option_windows_scale": 0,
   "option_windows_sleep_margin": 10,
   "option_windows_splash_screen": "${base_options_dir}/windows/splash/splash.png",

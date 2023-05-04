@@ -259,6 +259,7 @@ if (Active)
 	{
 		if (ChangeTitles)
 		{
+			KeyChange = -1;
 			LayerHorizontal = 1;
 			MainText = Language.Text_setn2o0;
 			ChangeTitles = false;
@@ -272,39 +273,187 @@ if (Active)
 			C[6] = Language.Text_setn1o7;
 			C[7] = Language.Text_setn1o8;
 			TextDefault = Language.Text_setn1o9;
+			
 		}
 		var Change = false;
-		if (Control.UpButtonPressedActive)
+		if (KeyChange == -1)
 		{
-			if (ControlActual > 0)
+			if (Control.UpButtonPressedActive)
 			{
-				Change = true;
-				ControlActual--;
-				scrSound(sfxButtonOk);
+				if (ControlActual > 0)
+				{
+					Change = true;
+					ControlActual--;
+					scrSound(sfxButtonOk);
+				}
+			}
+			if (Control.DownButtonPressedActive)
+			{
+				if (ControlActual < ControlTotal)
+				{
+					Change = true;
+					scrSound(sfxButtonOk);
+					ControlActual++;
+				}
+			}
+			if (Control.StartButtonPressedActive)
+			{
+				if (ControlActual < 8)
+				{
+					ActiveChange = false;
+					alarm[3] = 10;
+					KeyChange = ControlActual;
+					scrSound(sfxButtonOk);
+				}
+				switch (ControlActual)
+				{
+					case(8):
+					{
+						switch (LayerHorizontal)
+						{
+							case(0):
+							{
+								ChangeTitles = true;
+								scrSound(sfxButtonOk);
+								LayerActual--;
+								scrLanguageLoadTexto( LanguageActual );
+								MainText = Language.Text_setn0o0;
+								TextLanguageExample = Language.Text_setn0o1;
+								L[0] = Language.Text_setl0o0;
+								L[1] = Language.Text_setl0o1;
+								L[2] = Language.Text_setl0o2;
+								L[3] = Language.Text_setl0o3;
+								L[4] = Language.Text_setl0o4;
+								L[5] = Language.Text_setl0o5;
+								L[6] = Language.Text_setl0o6;
+								break;
+							}
+							case(1):
+							{
+								scrSound(sfxButtonOk);
+								Control.LeftButton = Control.DEFAULT_LeftButton;
+								Control.RightButton = Control.DEFAULT_RightButton;
+								Control.UpButton = Control.DEFAULT_UpButton;
+								Control.DownButton = Control.DEFAULT_DownButton;
+								Control.JumpButton = Control.DEFAULT_JumpButton;
+								Control.AttackButton = Control.DEFAULT_AttackButton;
+								Control.StartButton = Control.DEFAULT_StartButton;
+								Control.SelectButton = Control.DEFAULT_SelectButton;
+								alarm[0] = 5;
+								Active = false;
+								KeyChange = -1;
+								break;
+							}
+							case(2):
+							{
+								ChangeTitles = true;
+								scrSound(sfxButtonOk);
+								LayerActual++;
+								Active = false;
+								alarm[0] = 5;
+								break;
+							}
+						}
+						break;
+					}
+				}
 			}
 		}
-		if (Control.DownButtonPressedActive)
+		else
 		{
-			if (ControlActual < ControlTotal)
+			if (keyboard_check_pressed(vk_anykey))
 			{
-				Change = true;
-				scrSound(sfxButtonOk);
-				ControlActual++;
+				var Key = keyboard_lastkey;
+				var CanChange = (Control.LeftButton != Key) and (Control.RightButton != Key) and (Control.UpButton != Key) and (Control.DownButton != Key) and (Control.JumpButton != Key) and (Control.AttackButton != Key) and (Control.StartButton != Key) and (Control.SelectButton != Key);
+				if (CanChange)
+				{
+					switch (KeyChange)
+					{
+						case(0):
+						{
+							Control.LeftButton = Key;
+							break;
+						}
+						case(1):
+						{
+							Control.RightButton = Key;
+							break;
+						}
+						case(2):
+						{
+							Control.UpButton = Key;
+							break;
+						}
+						case(3):
+						{
+							Control.DownButton = Key;
+							break;
+						}
+						case(4):
+						{
+							Control.JumpButton = Key;
+							break;
+						}
+						case(5):
+						{
+							Control.AttackButton = Key;
+							break;
+						}
+						case(6):
+						{
+							Control.StartButton = Key;
+							break;
+						}
+						case(7):
+						{
+							Control.SelectButton = Key;
+							break;
+						}
+					}
+					scrFileKeySave(KeyChange , Key , LayerActual-1);
+					alarm[0] = 5;
+					Active = false;
+					KeyChange = -1;
+				}
 			}
 		}
-		if (Control.StartButtonPressedActive)
+		if (ControlActual == 8)
 		{
-			ChangeTitles = true;
-			scrSound(sfxButtonOk);
-			LayerActual++;
-			Active = false;
-			alarm[0] = 5;
+			if (Control.LeftButtonPressedActive)
+			{
+				if (LayerHorizontal > 0)
+				{
+					scrSound(sfxButtonOk);
+					LayerHorizontal--;
+				}
+			}
+			if (Control.RightButtonPressedActive)
+			{
+				if (LayerHorizontal < LayerHorizontalTotal)
+				{
+					scrSound(sfxButtonOk);
+					LayerHorizontal++;
+				}
+			}
 		}
 		if (keyboard_check_pressed(vk_escape))
 		{
 			ChangeTitles = true;
 			scrSound(sfxButtonOk);
 			LayerActual--;
+			
+			scrLanguageLoadTexto( LanguageActual );
+		
+			MainText = Language.Text_setn0o0;
+			TextLanguageExample = Language.Text_setn0o1;
+			L[0] = Language.Text_setl0o0;
+			L[1] = Language.Text_setl0o1;
+			L[2] = Language.Text_setl0o2;
+			L[3] = Language.Text_setl0o3;
+			L[4] = Language.Text_setl0o4;
+			L[5] = Language.Text_setl0o5;
+			L[6] = Language.Text_setl0o6;
+			
 		}
 	}
 	else if (LayerActual == 3) /*Graphics Layer*/
