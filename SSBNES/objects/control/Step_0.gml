@@ -112,28 +112,6 @@ if (BattleLevel)
 	}
 	else
 	{
-		if (scrExiste(objPlayer))
-		{
-			// Establecer una velocidad de seguimiento de la cámara
-			var camera_speed = 0.01;
-
-			// Calcular la posición objetivo de la cámara
-			var target_x = objPlayer.x;
-			var target_y = objPlayer.y;
-
-			// Calcular la posición actual de la cámara
-			var current_x = camera_get_view_x(view_camera[0]) + camera_get_view_width(view_camera[0]) / 2;
-			var current_y = camera_get_view_y(view_camera[0]) + camera_get_view_height(view_camera[0]) / 2;
-
-			// Interpolar la posición de la cámara hacia la posición objetivo
-			current_x += (target_x - current_x) * camera_speed;
-			current_y += (target_y - current_y) * camera_speed;
-
-			// Establecer la posición de la cámara
-			camera_set_view_target(view_camera[0] , noone);
-			camera_set_view_pos(view_camera[0], current_x, current_y);
-
-		}
 	}
 	#endregion
 	#region Music
@@ -151,6 +129,32 @@ else
 {
 	if (scrIsBonusLevel())
 	{
+		#region Camera
+		if (scrExiste(objPlayer))
+		{
+			// Establecer una velocidad de seguimiento de la cámara
+			var camera_speed = 0.1;
+
+			// Calcular la posición objetivo de la cámara
+			var target_x = objPlayer.x;
+			var target_y = objPlayer.y;
+
+			// Calcular la posición actual de la cámara
+			var current_x = camera_get_view_x(view_camera[0]) - 16;
+			var current_y = camera_get_view_y(view_camera[0]) - 12;
+			
+			// Interpolar la posición de la cámara hacia la posición objetivo
+			current_x += (target_x - current_x) * camera_speed;
+			current_y += (target_y - current_y) * camera_speed;
+			
+			current_x = clamp(current_x , 0 , room_width - 256);
+			current_y = clamp(current_y , 0 , room_height - 224);
+			
+			// Establecer la posición de la cámara
+			camera_set_view_pos(view_camera[0], current_x, current_y);
+
+		}
+		#endregion
 		#region Music
 		if (MusicOn and !MusicLoop)
 		{

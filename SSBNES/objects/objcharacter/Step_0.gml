@@ -253,6 +253,7 @@ if (!Platform)
 #endregion
 
 #region Down Fast
+/*
 if (Damaged == 0)
 {
 	if (DownButtonPressedActive and CooldowFall == 0 and CooldownJump == 0 and !place_meeting(x , y+1 , parCollision) and !Platform and !Attacking and TimeAttacking == 0 and !JumpStop and !Platform)
@@ -264,6 +265,7 @@ if (Damaged == 0)
 		}
 	}
 }
+*/
 #endregion
 
 #region Run
