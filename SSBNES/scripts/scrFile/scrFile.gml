@@ -29,3 +29,57 @@ function scrFileKeyLoad()
 	
 	ini_close();
 }
+
+///@arg index
+///@arg newkey
+///@arg player
+function scrFileKeySave(Index , Newkey , Player)
+{	
+	ini_open("kv.sav");
+	var String = "";
+	switch (Index)
+	{
+		case(0):
+		{
+			String = (Player == 0) ? "1L" : "2L";
+			break;
+		}
+		case(1):
+		{
+			String = (Player == 0) ? "1R" : "2R";
+			break;
+		}
+		case(2):
+		{
+			String = (Player == 0) ? "1U" : "2U";
+			break;
+		}
+		case(3):
+		{
+			String = (Player == 0) ? "1D" : "2D";
+			break;
+		}
+		case(4):
+		{
+			String = (Player == 0) ? "1J" : "2J";
+			break;
+		}
+		case(5):
+		{
+			String = (Player == 0) ? "1A" : "2A";
+			break;
+		}
+		case(6):
+		{
+			String = (Player == 0) ? "1ST" : "2ST";
+			break;
+		}
+		case(7):
+		{
+			String = (Player == 0) ? "1SL" : "2SL";
+			break;
+		}
+	}
+	ini_write_real("K" , String , Newkey);
+	ini_close();
+}

@@ -107,10 +107,10 @@ DEFAULT_AttackButton = ord("C");
 DEFAULT_StartButton = vk_enter;
 DEFAULT_SelectButton = vk_space;
 
-LeftButton = vk_left;
-RightButton = vk_right;
-DownButton = vk_down;
-UpButton = vk_up;
+LeftButton = ord("A");
+RightButton = ord("D");
+DownButton = ord("S");
+UpButton = ord("W");
 JumpButton = ord("X");
 AttackButton = ord("C");
 StartButton = vk_enter;
@@ -138,6 +138,7 @@ DEFAULT_2SelectButton = vk_space;
 ShowColissionButton = vk_f1;
 ShowColissionMovsButton = vk_f2;
 BattleLevel = false;
+scrFileKeyLoad();
 alarm[0] = 5;
 #endregion
 
