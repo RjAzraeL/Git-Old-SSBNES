@@ -1,4 +1,5 @@
 #region Set variables
+VerticalPlattform = false;
 PollierMovList = scrCrearLista(12,13,14,15);
 PollierMovActual = 0;
 PollierBoomerang = noone;

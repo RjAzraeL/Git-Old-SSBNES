@@ -473,6 +473,11 @@ else
 		}
 		HorizontalMovement = 0;
 	}
+	if (place_meeting(x , y + VerticalMovement , objMobilePlattformBn1Mario) and (VerticalMovement >= 0 and !DuckFall) and (GravityFallDownActive == 0) and Damaged == 0)
+	{
+		VerticalMovement =+ 1;
+		VerticalPlattform = true;
+	}
 	if (!place_meeting(x , y , objBlockTransferable) and (VerticalMovement >= 0 and !DuckFall) and (GravityFallDownActive == 0) and Damaged == 0)
 	{
 		if (place_meeting(x , y + VerticalMovement , objBlockTransferable))
@@ -542,8 +547,7 @@ if (CooldownJump == 0 and CooldowFall == 0 and !RootAttack and Damaged == 0 and 
 		}
 		else
 		{
-			if place_meeting(x,y + 1, objBlockTransferable)
-
+			if (place_meeting(x,y + 1, objBlockTransferable))
 	        {
 	            y+=2;
 	            DuckTime = 0;
