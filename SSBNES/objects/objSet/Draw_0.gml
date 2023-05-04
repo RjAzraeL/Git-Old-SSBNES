@@ -113,3 +113,72 @@ if (LayerActual == 1)
 	#endregion
 }
 #endregion
+#region Layer 2
+if (LayerActual == 2)
+{
+	#region Select language
+	for (var i = 0 ; i < ControlTotal ; i++)
+	{
+		var Color = c_white;
+		if (ControlActual == i)
+		{
+			Color = ColorActivo;
+			draw_sprite_ext(sprSetBarra , 0 , room_width/2 , 55 + (16*i) , 1 , 1 , 0 , c_white , 1);
+		}
+		var Visible = true;
+		var VisibleText = string_upper(CS2[i]);
+		if (KeyChange == i)
+		{
+			VisibleText = "---";
+		}
+		if (KeyChange == i and !VisibleKey)
+		{
+			Visible = false;
+		}
+		if (Visible)
+		{
+			scrText( 066 , 55 + (16*i) , "╚" + string(string_upper(C[i])) , fa_middle , fa_left , Control.Font , c_black , Color , 8 , room_width , 1 , 1 , 0 , 1);
+			scrText( 283 , 55 + (16*i) , "" + string(VisibleText) , fa_middle , fa_right , Control.Font , c_black , Color , 8 , room_width , 1 , 1 , 0 , 1);
+		}
+	}
+	#endregion
+	#region Text Controller
+	var ColorC = c_white;
+	var ColorL = c_white;
+	var ColorR = c_white;
+	var Color  = c_white;
+	if (ControlActual == 8)
+	{
+		if (LayerHorizontal == 1)
+		{
+			ColorC = ColorActivo;
+			Color = ColorActivo;
+			ColorL = c_white;
+			ColorR = c_white;
+		}
+		else if (LayerHorizontal == 0)
+		{
+			ColorC  = c_white;
+			Color = c_white;
+			ColorL = ColorActivo;
+			ColorR = c_white;
+		}
+		else if (LayerHorizontal == 2)
+		{
+			ColorC  = c_white;
+			Color = c_white;
+			ColorL = c_white;
+			ColorR = ColorActivo;
+		}
+	}
+	draw_sprite_ext(sprSetController , ControlActual+1 , CenterX , 198 , 1 , 1 , 0 , ColorC , 1);
+	if (ControlActual == 8)
+	{
+		scrText( CenterX , 198 , "" + string_upper(TextDefault) , fa_middle , fa_center , Control.Font , c_black , Color , 8 , 102 , 1 , 1 , 0 , 1);
+	}
+	
+	draw_sprite_ext(sprSetArrow , 0 , 074 , 203 , -1 , 1 , 0 , ColorL , 1);
+	draw_sprite_ext(sprSetArrow , 0 , 282 , 203 , +1 , 1 , 0 , ColorR , 1);
+	#endregion
+}
+#endregion

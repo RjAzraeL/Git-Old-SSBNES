@@ -19,6 +19,8 @@ if (Active)
 			scrSound(sfxButtonOk);
 			LayerActual++;
 			Active = false;
+			ControlActual = 8;
+			LayerHorizontal = 0;
 			alarm[0] = 5;
 		}
 		if (Control.UpButtonPressedActive)
@@ -59,7 +61,6 @@ if (Active)
 		if (ChangeTitles)
 		{
 			KeyChange = -1;
-			LayerHorizontal = 1;
 			MainText = Language.Text_setn1o0;
 			ChangeTitles = false;
 			
@@ -145,6 +146,7 @@ if (Active)
 							}
 							case(2):
 							{
+								LayerHorizontal = 0;
 								ChangeTitles = true;
 								scrSound(sfxButtonOk);
 								LayerActual++;
@@ -235,32 +237,12 @@ if (Active)
 				}
 			}
 		}
-		if (keyboard_check_pressed(vk_escape))
-		{
-			ChangeTitles = true;
-			scrSound(sfxButtonOk);
-			LayerActual--;
-			
-			scrLanguageLoadTexto( LanguageActual );
-		
-			MainText = Language.Text_setn0o0;
-			TextLanguageExample = Language.Text_setn0o1;
-			L[0] = Language.Text_setl0o0;
-			L[1] = Language.Text_setl0o1;
-			L[2] = Language.Text_setl0o2;
-			L[3] = Language.Text_setl0o3;
-			L[4] = Language.Text_setl0o4;
-			L[5] = Language.Text_setl0o5;
-			L[6] = Language.Text_setl0o6;
-			
-		}
 	}
 	else if (LayerActual == 2) /*Controls P-2 Layer*/
 	{
 		if (ChangeTitles)
 		{
 			KeyChange = -1;
-			LayerHorizontal = 1;
 			MainText = Language.Text_setn2o0;
 			ChangeTitles = false;
 			
@@ -319,6 +301,7 @@ if (Active)
 								scrLanguageLoadTexto( LanguageActual );
 								MainText = Language.Text_setn1o0;
 								TextLanguageExample = Language.Text_setn0o1;
+								LayerHorizontal = 2;
 								L[0] = Language.Text_setl0o0;
 								L[1] = Language.Text_setl0o1;
 								L[2] = Language.Text_setl0o2;
@@ -351,6 +334,7 @@ if (Active)
 								LayerActual++;
 								Active = false;
 								alarm[0] = 5;
+								LayerHorizontal = 0;
 								break;
 							}
 						}
@@ -436,31 +420,11 @@ if (Active)
 				}
 			}
 		}
-		if (keyboard_check_pressed(vk_escape))
-		{
-			ChangeTitles = true;
-			scrSound(sfxButtonOk);
-			LayerActual--;
-			
-			scrLanguageLoadTexto( LanguageActual );
-		
-			MainText = Language.Text_setn0o0;
-			TextLanguageExample = Language.Text_setn0o1;
-			L[0] = Language.Text_setl0o0;
-			L[1] = Language.Text_setl0o1;
-			L[2] = Language.Text_setl0o2;
-			L[3] = Language.Text_setl0o3;
-			L[4] = Language.Text_setl0o4;
-			L[5] = Language.Text_setl0o5;
-			L[6] = Language.Text_setl0o6;
-			
-		}
 	}
 	else if (LayerActual == 3) /*Graphics Layer*/
 	{
 		if (ChangeTitles)
 		{
-			LayerHorizontal = 1;
 			MainText = Language.Text_setn3o0;
 			ChangeTitles = false;
 		}
