@@ -21,6 +21,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Fonts","folderPath":"folders/Fonts.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Objects","folderPath":"folders/Objects.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Bonus","folderPath":"folders/Objects/Bonus.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Mobile Plattform Bn1Mario","folderPath":"folders/Objects/Bonus/Mobile Plattform Bn1Mario.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Combat","folderPath":"folders/Objects/Combat.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Movs","folderPath":"folders/Objects/Combat/Movs.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Furnis","folderPath":"folders/Objects/Furnis.yy",},
@@ -85,7 +86,6 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Parapa Palace","folderPath":"folders/Sprites/Stages/Parapa Palace.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Test Stage","folderPath":"folders/Sprites/Stages/Test Stage.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Underground","folderPath":"folders/Sprites/Stages/Underground.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Mobile Plattform Bn1Mario","folderPath":"folders/Objects/Bonus/Mobile Plattform Bn1Mario.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"en.txt","CopyToMask":-1,"filePath":"datafiles/l",},
@@ -432,6 +432,7 @@
     {"id":{"name":"sprChPollierAerialUp","path":"sprites/sprChPollierAerialUp/sprChPollierAerialUp.yy",},},
     {"id":{"name":"objMobilePlattformBn1Mario","path":"objects/objMobilePlattformBn1Mario/objMobilePlattformBn1Mario.yy",},},
     {"id":{"name":"sprChPollierAerialSideMask","path":"sprites/sprChPollierAerialSideMask/sprChPollierAerialSideMask.yy",},},
+    {"id":{"name":"sprBonusWater","path":"sprites/sprBonusWater/sprBonusWater.yy",},},
     {"id":{"name":"sndOst03Menu2_b","path":"sounds/sndOst03Menu2_b/sndOst03Menu2_b.yy",},},
     {"id":{"name":"sprSolidSlope30","path":"sprites/sprSolidSlope30/sprSolidSlope30.yy",},},
     {"id":{"name":"sprChLinkIdle","path":"sprites/sprChLinkIdle/sprChLinkIdle.yy",},},
