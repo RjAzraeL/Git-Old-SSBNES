@@ -253,12 +253,15 @@ if (!Platform)
 #endregion
 
 #region Down Fast
-if (DownButtonPressedActive and CooldowFall == 0 and CooldownJump == 0 and !place_meeting(x , y+1 , parCollision) and !Platform and !Attacking and TimeAttacking == 0 and !JumpStop and !Platform)
+if (Damaged == 0)
 {
-	if (VerticalMovement != 0)
+	if (DownButtonPressedActive and CooldowFall == 0 and CooldownJump == 0 and !place_meeting(x , y+1 , parCollision) and !Platform and !Attacking and TimeAttacking == 0 and !JumpStop and !Platform)
 	{
-		VerticalMovementLimitExtra = VerticalMovementLimitValue;
-		GravityFallDownActive = (GravityFall * 6);
+		if (VerticalMovement != 0)
+		{
+			VerticalMovementLimitExtra = VerticalMovementLimitValue;
+			GravityFallDownActive = (GravityFall * 6);
+		}
 	}
 }
 #endregion
@@ -477,6 +480,7 @@ else
 	{
 		VerticalMovement =+ 1;
 		VerticalPlattform = true;
+		scrStepOnFloorVertical();
 	}
 	if (!place_meeting(x , y , objBlockTransferable) and (VerticalMovement >= 0 and !DuckFall) and (GravityFallDownActive == 0) and Damaged == 0)
 	{
