@@ -317,7 +317,7 @@ if (Active)
 								scrSound(sfxButtonOk);
 								LayerActual--;
 								scrLanguageLoadTexto( LanguageActual );
-								MainText = Language.Text_setn0o0;
+								MainText = Language.Text_setn1o0;
 								TextLanguageExample = Language.Text_setn0o1;
 								L[0] = Language.Text_setl0o0;
 								L[1] = Language.Text_setl0o1;
@@ -331,14 +331,14 @@ if (Active)
 							case(1):
 							{
 								scrSound(sfxButtonOk);
-								Control.LeftButton = Control.DEFAULT_LeftButton;
-								Control.RightButton = Control.DEFAULT_RightButton;
-								Control.UpButton = Control.DEFAULT_UpButton;
-								Control.DownButton = Control.DEFAULT_DownButton;
-								Control.JumpButton = Control.DEFAULT_JumpButton;
-								Control.AttackButton = Control.DEFAULT_AttackButton;
-								Control.StartButton = Control.DEFAULT_StartButton;
-								Control.SelectButton = Control.DEFAULT_SelectButton;
+								Control._2LeftButton = Control.DEFAULT_2LeftButton;
+								Control._2RightButton = Control.DEFAULT_2RightButton;
+								Control._2UpButton = Control.DEFAULT_2UpButton;
+								Control._2DownButton = Control.DEFAULT_2DownButton;
+								Control._2JumpButton = Control.DEFAULT_2JumpButton;
+								Control._2AttackButton = Control.DEFAULT_2AttackButton;
+								Control._2StartButton = Control.DEFAULT_2StartButton;
+								Control._2SelectButton = Control.DEFAULT_2SelectButton;
 								alarm[0] = 5;
 								Active = false;
 								KeyChange = -1;
@@ -364,49 +364,49 @@ if (Active)
 			if (keyboard_check_pressed(vk_anykey))
 			{
 				var Key = keyboard_lastkey;
-				var CanChange = (Control.LeftButton != Key) and (Control.RightButton != Key) and (Control.UpButton != Key) and (Control.DownButton != Key) and (Control.JumpButton != Key) and (Control.AttackButton != Key) and (Control.StartButton != Key) and (Control.SelectButton != Key);
+				var CanChange = (Control._2LeftButton != Key) and (Control._2RightButton != Key) and (Control._2UpButton != Key) and (Control._2DownButton != Key) and (Control._2JumpButton != Key) and (Control._2AttackButton != Key) and (Control._2StartButton != Key) and (Control._2SelectButton != Key);
 				if (CanChange)
 				{
 					switch (KeyChange)
 					{
 						case(0):
 						{
-							Control.LeftButton = Key;
+							Control._2LeftButton = Key;
 							break;
 						}
 						case(1):
 						{
-							Control.RightButton = Key;
+							Control._2RightButton = Key;
 							break;
 						}
 						case(2):
 						{
-							Control.UpButton = Key;
+							Control._2UpButton = Key;
 							break;
 						}
 						case(3):
 						{
-							Control.DownButton = Key;
+							Control._2DownButton = Key;
 							break;
 						}
 						case(4):
 						{
-							Control.JumpButton = Key;
+							Control._2JumpButton = Key;
 							break;
 						}
 						case(5):
 						{
-							Control.AttackButton = Key;
+							Control._2AttackButton = Key;
 							break;
 						}
 						case(6):
 						{
-							Control.StartButton = Key;
+							Control._2StartButton = Key;
 							break;
 						}
 						case(7):
 						{
-							Control.SelectButton = Key;
+							Control._2SelectButton = Key;
 							break;
 						}
 					}
