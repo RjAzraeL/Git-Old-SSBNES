@@ -62,51 +62,62 @@ if (keyboard_check_pressed(ShowColissionMovsButton))
 #region Camera
 if (BattleLevel)
 {
-	#region Index
-	IndexImage2 += .1;
-	if (IndexImage2 > 1.9)
+	#region Normal camera
+	if (NormalCamera)
 	{
-		IndexImage2 = 0;
-	}
-	#endregion
-
-	#region Change
-	#endregion
-
-	#region Camera
-	HalfViewWidth = camera_get_view_width(view_camera[0]) / 2;
-	HalfViewHeight= camera_get_view_height(view_camera[0]) / 2;
-
-	var Target = noone;
-	if (scrExiste(objPlayer))
-	{
-		Target = objPlayer;
-	}
-
-	// Clamp camrea
-	if (scrExiste(Target))
-	{
-		if (Target.x < Limite)
+		#region Index
+		IndexImage2 += .1;
+		if (IndexImage2 > 1.9)
 		{
-			xx = lerp(xx , 0 , LimiteVelocidad);
+			IndexImage2 = 0;
 		}
-		else if (Target.x >= Limite + (Limite/3) and Target.x <= room_width - Limite - (Limite/3))
-		{
-			xx  = lerp(xx , room_width/2 , LimiteVelocidad*4);
-		}
-		else if (Target.x > room_width - Limite)
-		{
-			xx = lerp(xx , room_width , LimiteVelocidad);
-		}
-		xx = clamp(xx, HalfViewWidth, room_width - HalfViewWidth);
-		yy = clamp(yy, HalfViewHeight, room_height - HalfViewHeight);
-	}
+		#endregion
 
-	// Update camera position
-	camera_set_view_pos(view_camera[0], xx - HalfViewWidth, yy - HalfViewHeight);
+		#region Change
+		#endregion
+
+		#region Camera
+		HalfViewWidth = camera_get_view_width(view_camera[0]) / 2;
+		HalfViewHeight= camera_get_view_height(view_camera[0]) / 2;
+
+		var Target = noone;
+		if (scrExiste(objPlayer))
+		{
+			Target = objPlayer;
+		}
+
+		// Clamp camrea
+		if (scrExiste(Target))
+		{
+			if (Target.x < Limite)
+			{
+				xx = lerp(xx , 0 , LimiteVelocidad);
+			}
+			else if (Target.x >= Limite + (Limite/3) and Target.x <= room_width - Limite - (Limite/3))
+			{
+				xx  = lerp(xx , room_width/2 , LimiteVelocidad*4);
+			}
+			else if (Target.x > room_width - Limite)
+			{
+				xx = lerp(xx , room_width , LimiteVelocidad);
+			}
+			xx = clamp(xx, HalfViewWidth, room_width - HalfViewWidth);
+			yy = clamp(yy, HalfViewHeight, room_height - HalfViewHeight);
+		}
+
+		// Update camera position
+		camera_set_view_pos(view_camera[0], xx - HalfViewWidth, yy - HalfViewHeight);
 		
+		#endregion
+	}
+	else
+	{
+		if (scrExiste(objPlayer))
+		{
+			camera_set_view_pos(view_camera[0], objPlayer.x , objPlayer.y);
+		}
+	}
 	#endregion
-
 	#region Music
 	if (MusicOn and !MusicLoop)
 	{

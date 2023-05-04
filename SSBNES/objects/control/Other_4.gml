@@ -1,3 +1,6 @@
+#region Camera
+NormalCamera = true;
+#endregion
 #region Music
 Wait = 5;
 x = room_width/2;

@@ -71,7 +71,7 @@ TranceAcelerationValue = 0;
 LastScaleXSprite = 1;
 LastScaleX = 1;
 JumpingInTerrain = false;
-
+ReviveDefault = true;
 ScaleY = 1;
 JumpTime = 0;
 Running = 0;

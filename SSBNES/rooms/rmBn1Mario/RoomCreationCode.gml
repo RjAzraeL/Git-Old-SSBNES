@@ -1,0 +1,1 @@
+Control.NormalCamera = false;

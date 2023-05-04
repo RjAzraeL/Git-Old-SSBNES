@@ -2,7 +2,7 @@
   "resourceType": "GMRoom",
   "resourceVersion": "1.0",
   "name": "rmBn1Mario",
-  "creationCodeFile": "",
+  "creationCodeFile": "rooms/rmBn1Mario/RoomCreationCode.gml",
   "inheritCode": false,
   "inheritCreationOrder": false,
   "inheritLayers": false,

@@ -1,3 +1,3 @@
 #region
-room_goto(rm01ScreenTitle);
+room_goto(rmBn1Mario);
 #endregion

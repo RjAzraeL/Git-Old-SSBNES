@@ -3,9 +3,9 @@
     {"name":"Bonus","order":6,"path":"folders/Objects/Bonus.yy",},
     {"name":"XD?","order":7,"path":"folders/Objects/XD?.yy",},
     {"name":"Bonus #1","order":1,"path":"folders/Rooms/Bonus #1.yy",},
+    {"name":"Save","order":17,"path":"folders/Scripts/Save.yy",},
     {"name":"Bonus","order":12,"path":"folders/Sprites/Bonus.yy",},
     {"name":"Set","order":11,"path":"folders/Sprites/Set.yy",},
-    {"name":"Save","order":17,"path":"folders/Scripts/Save.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"sprSetTextBox2","order":10,"path":"sprites/sprSetTextBox2/sprSetTextBox2.yy",},
@@ -188,6 +188,7 @@
     {"name":"sprPlayer","order":2,"path":"sprites/sprPlayer/sprPlayer.yy",},
     {"name":"sprChPollierGroundAttackDownItems","order":24,"path":"sprites/sprChPollierGroundAttackDownItems/sprChPollierGroundAttackDownItems.yy",},
     {"name":"sprMenuButton","order":10,"path":"sprites/sprMenuButton/sprMenuButton.yy",},
+    {"name":"sfxTarget","order":3,"path":"sounds/sfxTarget/sfxTarget.yy",},
     {"name":"scrUseKeyboardAvailable","order":8,"path":"scripts/scrUseKeyboardAvailable/scrUseKeyboardAvailable.yy",},
     {"name":"sprSelector","order":4,"path":"sprites/sprSelector/sprSelector.yy",},
     {"name":"scrResetCombatBattleVar","order":15,"path":"scripts/scrResetCombatBattleVar/scrResetCombatBattleVar.yy",},

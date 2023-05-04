@@ -47,6 +47,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Other","folderPath":"folders/Scripts/Data/Other.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Generic","folderPath":"folders/Scripts/Generic.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Language","folderPath":"folders/Scripts/Language.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Save","folderPath":"folders/Scripts/Save.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Shaders","folderPath":"folders/Shaders.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Sprites","folderPath":"folders/Sprites.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Bonus","folderPath":"folders/Sprites/Bonus.yy",},
@@ -84,7 +85,6 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Parapa Palace","folderPath":"folders/Sprites/Stages/Parapa Palace.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Test Stage","folderPath":"folders/Sprites/Stages/Test Stage.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Underground","folderPath":"folders/Sprites/Stages/Underground.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Save","folderPath":"folders/Scripts/Save.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"en.txt","CopyToMask":-1,"filePath":"datafiles/l",},
@@ -310,6 +310,7 @@
     {"id":{"name":"sprPlayer","path":"sprites/sprPlayer/sprPlayer.yy",},},
     {"id":{"name":"sprChPollierGroundAttackDownItems","path":"sprites/sprChPollierGroundAttackDownItems/sprChPollierGroundAttackDownItems.yy",},},
     {"id":{"name":"sprMenuButton","path":"sprites/sprMenuButton/sprMenuButton.yy",},},
+    {"id":{"name":"sfxTarget","path":"sounds/sfxTarget/sfxTarget.yy",},},
     {"id":{"name":"scrUseKeyboardAvailable","path":"scripts/scrUseKeyboardAvailable/scrUseKeyboardAvailable.yy",},},
     {"id":{"name":"sprSelector","path":"sprites/sprSelector/sprSelector.yy",},},
     {"id":{"name":"scrResetCombatBattleVar","path":"scripts/scrResetCombatBattleVar/scrResetCombatBattleVar.yy",},},
