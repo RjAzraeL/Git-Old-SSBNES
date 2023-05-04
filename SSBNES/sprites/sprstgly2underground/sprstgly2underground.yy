@@ -2,9 +2,9 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "sprStgLy2Underground",
-  "bbox_bottom": 15,
+  "bbox_bottom": 319,
   "bbox_left": 0,
-  "bbox_right": 15,
+  "bbox_right": 559,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b31e3f63-d48f-443b-a67e-e37333668873",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"33826acd-1a49-43dc-a882-fb26b498a932",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 16,
+  "height": 320,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"e19a99da-c5eb-4167-a709-abd6429082b4","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"de7bec24-e465-48bd-92d8-742c0007292f","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"b31e3f63-d48f-443b-a67e-e37333668873","path":"sprites/sprStgLy2Underground/sprStgLy2Underground.yy",},},},"Disabled":false,"id":"a52e4800-9f0f-4de7-8ce3-6dac74a431c9","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"33826acd-1a49-43dc-a882-fb26b498a932","path":"sprites/sprStgLy2Underground/sprStgLy2Underground.yy",},},},"Disabled":false,"id":"77be5467-ff26-4a1c-be04-7d60a8006d90","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 16,
+  "width": 560,
 }

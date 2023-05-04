@@ -233,6 +233,7 @@
     {"id":{"name":"tlsStgLy1aMushroomKingdomI","path":"tilesets/tlsStgLy1aMushroomKingdomI/tlsStgLy1aMushroomKingdomI.yy",},},
     {"id":{"name":"sprStgLy1aHyruleForest","path":"sprites/sprStgLy1aHyruleForest/sprStgLy1aHyruleForest.yy",},},
     {"id":{"name":"objBlockTransferable","path":"objects/objBlockTransferable/objBlockTransferable.yy",},},
+    {"id":{"name":"rmBn0","path":"rooms/rmBn0/rmBn0.yy",},},
     {"id":{"name":"scrKeyboard","path":"scripts/scrKeyboard/scrKeyboard.yy",},},
     {"id":{"name":"sprChKirbyMaskDuck","path":"sprites/sprChKirbyMaskDuck/sprChKirbyMaskDuck.yy",},},
     {"id":{"name":"sprChSandbagIdle","path":"sprites/sprChSandbagIdle/sprChSandbagIdle.yy",},},
@@ -483,6 +484,7 @@
     {"roomId":{"name":"rmStgParapaPalace","path":"rooms/rmStgParapaPalace/rmStgParapaPalace.yy",},},
     {"roomId":{"name":"rmStgMushroomKingdomI","path":"rooms/rmStgMushroomKingdomI/rmStgMushroomKingdomI.yy",},},
     {"roomId":{"name":"rmBn1Mario","path":"rooms/rmBn1Mario/rmBn1Mario.yy",},},
+    {"roomId":{"name":"rmBn0","path":"rooms/rmBn0/rmBn0.yy",},},
   ],
   "TextureGroups": [
     {"resourceType":"GMTextureGroup","resourceVersion":"1.3","name":"Default","autocrop":true,"border":2,"compressFormat":"bz2","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"targets":-1,},
