@@ -12,8 +12,8 @@
   "out_tilehborder": 2,
   "out_tilevborder": 2,
   "parent": {
-    "name": "Bonus",
-    "path": "folders/Sprites/Bonus.yy",
+    "name": "Bonus#1",
+    "path": "folders/Sprites/Bonus/Bonus#1.yy",
   },
   "spriteId": {
     "name": "sprStgLyBonusMario",
