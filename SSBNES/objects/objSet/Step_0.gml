@@ -209,6 +209,7 @@ if (Active)
 							break;
 						}
 					}
+					scrFileKeySave(KeyChange , Key , LayerActual-1);
 					alarm[0] = 5;
 					Active = false;
 					KeyChange = -1;
