@@ -1,3 +1,18 @@
+function scrFileSetLoad()
+{
+	ini_open("kvs.sav");
+	Value = ini_read_real("S" , "G" , true);
+	ini_close();
+	return Value;
+}
+
+function scrFileSetSave()
+{
+	ini_open("kvs.sav");
+	ini_write_real("S" , "G" , false);
+	ini_close();
+}
+
 function scrFileKeyLoad()
 {	
 	ini_open("kv.sav");

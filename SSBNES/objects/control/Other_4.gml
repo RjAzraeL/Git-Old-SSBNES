@@ -1,3 +1,10 @@
+#region Set
+SetReady = scrFileSetLoad();
+if (!SetReady and room == rm00Set)
+{
+	room_goto(rm01ScreenTitle);
+}
+#endregion
 #region Camera
 NormalCamera = true;
 if (scrIsBonusLevel())
@@ -16,10 +23,6 @@ if (room == rm02Menu)
 	scrSetMusic("Menu Theme");
 }
 else if (room == rm03Versus)
-{
-	scrSetMusic("Menu Theme");
-}
-else if (room == rm00Set)
 {
 	scrSetMusic("Menu Theme");
 }

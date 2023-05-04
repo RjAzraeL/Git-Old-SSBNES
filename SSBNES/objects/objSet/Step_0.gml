@@ -329,6 +329,8 @@ if (Active)
 							}
 							case(2):
 							{
+								scrFileSetSave();
+								room_goto(rm01ScreenTitle);
 								ChangeTitles = true;
 								scrSound(sfxButtonOk);
 								LayerActual++;

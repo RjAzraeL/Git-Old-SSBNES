@@ -3,6 +3,7 @@ instance_create_depth(0 , 0 , 0 , Language);
 scrLanguageLoadTexto(0);
 depth = -10;
 Delta = delta_time / 1000000;
+SetReady = true;
 //VolumeMusic = 0.5;
 //VolumeSound = 0.65;
 NormalCamera = true;
