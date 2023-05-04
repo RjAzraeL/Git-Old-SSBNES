@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Mobile Plattform Bn1Mario",
+    "path": "folders/Objects/Bonus/Mobile Plattform Bn1Mario.yy",
   },
   "parentObjectId": null,
   "persistent": false,

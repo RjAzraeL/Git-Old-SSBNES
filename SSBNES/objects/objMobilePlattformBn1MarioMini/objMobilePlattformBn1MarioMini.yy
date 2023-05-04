@@ -4,13 +4,12 @@
   "name": "objMobilePlattformBn1MarioMini",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":7,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Mobile Plattform Bn1Mario",
+    "path": "folders/Objects/Bonus/Mobile Plattform Bn1Mario.yy",
   },
   "parentObjectId": {
     "name": "objBlockTransferable",
