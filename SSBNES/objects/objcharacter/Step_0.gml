@@ -220,7 +220,7 @@ else
 #endregion
 
 #region Border
-if ((TimeAttacking > 0 or AttackingHold or Attacking) and Damaged == 0 and !place_meeting(x + sign(HorizontalMovement)*8 , y + 4 , objBlock) and place_meeting(x , y + 1 , objBlock) and !place_meeting(x , y , objBlock))
+if ((TimeAttacking > 0 or AttackingHold or Attacking) and Damaged == 0 and (!place_meeting(x + sign(HorizontalMovement)*8 , y + 4 , objBlock) and !place_meeting(x + sign(HorizontalMovement)*8 , y + 4 , objBlockSlope45)) and place_meeting(x , y + 1 , objBlock) and !place_meeting(x , y , objBlock))
 {
 	HorizontalMovement = 0;
 	AcelerationValue = 0;
