@@ -86,6 +86,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Parapa Palace","folderPath":"folders/Sprites/Stages/Parapa Palace.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Test Stage","folderPath":"folders/Sprites/Stages/Test Stage.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Underground","folderPath":"folders/Sprites/Stages/Underground.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Bonus#1","folderPath":"folders/Sprites/Bonus/Bonus#1.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"en.txt","CopyToMask":-1,"filePath":"datafiles/l",},
@@ -149,6 +150,7 @@
     {"id":{"name":"sprChPollierAerialDown","path":"sprites/sprChPollierAerialDown/sprChPollierAerialDown.yy",},},
     {"id":{"name":"sprChMarioGroundSmashUpTrance","path":"sprites/sprChMarioGroundSmashUpTrance/sprChMarioGroundSmashUpTrance.yy",},},
     {"id":{"name":"sprChSandbagSkid","path":"sprites/sprChSandbagSkid/sprChSandbagSkid.yy",},},
+    {"id":{"name":"sprTargetMin","path":"sprites/sprTargetMin/sprTargetMin.yy",},},
     {"id":{"name":"sprDot","path":"sprites/sprDot/sprDot.yy",},},
     {"id":{"name":"sprChMarioStar","path":"sprites/sprChMarioStar/sprChMarioStar.yy",},},
     {"id":{"name":"sprChPollierSkid","path":"sprites/sprChPollierSkid/sprChPollierSkid.yy",},},
