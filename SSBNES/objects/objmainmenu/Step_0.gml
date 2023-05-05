@@ -58,6 +58,17 @@ if (CooldownButton == 0)
 				}
 			}
 		}
+		else if(Layer == 3)
+		{
+			switch(ActualButton)
+			{
+				case(0):
+				{
+					room_goto(rmBn1Mario);
+					break;
+				}
+			}
+		}
 		else if(Layer == 4)
 		{
 			switch(ActualButton)

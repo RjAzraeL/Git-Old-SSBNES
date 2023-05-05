@@ -478,11 +478,14 @@ else
 		}
 		HorizontalMovement = 0;
 	}
-	if (place_meeting(x , y + VerticalMovement , objMobilePlattformBn1Mario) and (VerticalMovement >= 0 and !DuckFall) and (GravityFallDownActive == 0) and Damaged == 0)
+	if (!place_meeting(x , y , objMobilePlattformBn1Mario))
 	{
-		VerticalMovement =+ 1;
-		VerticalPlattform = true;
-		scrStepOnFloorVertical();
+		if (place_meeting(x , y + VerticalMovement , objMobilePlattformBn1Mario) and (VerticalMovement >= 0 and !DuckFall) and (GravityFallDownActive == 0) and Damaged == 0)
+		{
+			VerticalMovement =+ 1;
+			VerticalPlattform = true;
+			scrStepOnFloorVertical();
+		}
 	}
 	if (!place_meeting(x , y , objBlockTransferable) and (VerticalMovement >= 0 and !DuckFall) and (GravityFallDownActive == 0) and Damaged == 0)
 	{
