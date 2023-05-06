@@ -52,6 +52,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Shaders","folderPath":"folders/Shaders.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Sprites","folderPath":"folders/Sprites.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Bonus","folderPath":"folders/Sprites/Bonus.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Bonus#1","folderPath":"folders/Sprites/Bonus/Bonus#1.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Characters","folderPath":"folders/Sprites/Characters.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Kirby","folderPath":"folders/Sprites/Characters/Kirby.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Combat","folderPath":"folders/Sprites/Characters/Kirby/Combat.yy",},
@@ -86,7 +87,6 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Parapa Palace","folderPath":"folders/Sprites/Stages/Parapa Palace.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Test Stage","folderPath":"folders/Sprites/Stages/Test Stage.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Underground","folderPath":"folders/Sprites/Stages/Underground.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Bonus#1","folderPath":"folders/Sprites/Bonus/Bonus#1.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"en.txt","CopyToMask":-1,"filePath":"datafiles/l",},
@@ -286,6 +286,7 @@
     {"id":{"name":"objCombatNormalEgg","path":"objects/objCombatNormalEgg/objCombatNormalEgg.yy",},},
     {"id":{"name":"sprChSandbagMask","path":"sprites/sprChSandbagMask/sprChSandbagMask.yy",},},
     {"id":{"name":"sprChKirbyWalk","path":"sprites/sprChKirbyWalk/sprChKirbyWalk.yy",},},
+    {"id":{"name":"objDashEffect","path":"objects/objDashEffect/objDashEffect.yy",},},
     {"id":{"name":"sndOst06Lotery_a","path":"sounds/sndOst06Lotery_a/sndOst06Lotery_a.yy",},},
     {"id":{"name":"sprChPollierAerialBack","path":"sprites/sprChPollierAerialBack/sprChPollierAerialBack.yy",},},
     {"id":{"name":"objCombatFire","path":"objects/objCombatFire/objCombatFire.yy",},},

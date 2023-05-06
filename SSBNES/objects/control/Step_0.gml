@@ -169,3 +169,13 @@ else
 }
 #endregion
 #endregion
+#region Bonus
+if (scrIsBonusLevel())
+{
+	if (instance_number(objTarget) == 0)
+	{
+		audio_stop_sound(Control.IndexMusic);
+		MatchEnd = true;
+	}
+}
+#endregion

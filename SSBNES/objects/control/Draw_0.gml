@@ -64,4 +64,41 @@ if (BattleLevel)
 		}
 	}
 }
+if (scrIsBonusLevel())
+{
+	#region Time
+	scrText(scrX() + 244 , scrY() + 32 , "" + string_replace_all(string_format(BonusTimeMinute,2,0) , " " , "0") + ":" + string_replace_all(string_format(BonusTimeSecond,2,0) , " " , "0") , fa_middle , fa_right , Control.Font , c_black , c_white , 32 , room_width , 1 , 1 , 0 , 1);
+	#endregion
+	#region Target
+	var Fila = 0;
+	var Columna = 0;
+	for (var i = 0 ; i < instance_number(objTarget) ; i++)
+	{
+		draw_sprite(sprTargetMin , 0 , scrX() + 12 + 10*Columna , scrY() + 12 + 10*Fila);
+		Columna++;
+		if (Columna >= 5)
+		{
+			Columna = 0;
+			Fila++;
+		}
+	}
+	#endregion
+}
+#region End screen
+if (MatchEnd)
+{
+	if (surface_exists( MatchEndSurface ))
+	{
+		draw_surface_ext(MatchEndSurface , scrX() , scrY() , .5 , .5 , 0 , c_white , 1);
+	}
+	else
+	{
+	    var _w = 256;
+	    var _h = 224;
+	    MatchEndSurface = surface_create(room_width , room_height);
+		surface_copy(MatchEndSurface , 0 , 0 , application_surface);
+		instance_destroy(objPlayer);
+	}
+}
+#endregion
 #endregion

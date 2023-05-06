@@ -314,6 +314,8 @@ if (!Platform)
 			CooldownSwap = 6;
 			scrSound(sfxMarioSkid);
 			HorizontalMovement = SpeedRun * LastScaleX;
+			var DashEffect = instance_create_depth(x + (sprite_width/2)*ScaleXSprite,y + (sprite_height/2),depth,objDashEffect);
+			DashEffect.image_xscale = -ScaleXSprite;
 		}
 	}
 	#endregion
@@ -329,7 +331,11 @@ if (!Platform)
 			{
 				RunActive = true;
 				RunValue = 0;
-			
+				if (scrSolidDetectorBelow())
+				{
+					var DashEffect = instance_create_depth(x - (sprite_width/1.5)*ScaleXSprite,y + (sprite_height/2),depth,objDashEffect);
+					DashEffect.image_xscale = ScaleXSprite;
+				}
 			}
 			else if (RunValue > 2)
 			{

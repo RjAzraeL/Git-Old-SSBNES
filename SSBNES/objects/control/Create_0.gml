@@ -6,9 +6,15 @@ Delta = delta_time / 1000000;
 SetReady = true;
 //VolumeMusic = 0.5;
 //VolumeSound = 0.65;
+MatchEnd = false;
+MatchEndSurface = -1;
+MatchEndSnapshot = false;
+BonusTimeSecond = 0;
+BonusTimeMinute = 0;
+BonusTimeFrame = 0;
 NormalCamera = true;
-VolumeMusic = .25;
-VolumeSound = .25;
+VolumeMusic = .05;
+VolumeSound = .05;
 IndexMusic = -1;
 Wait = 0;
 VoidLimitStage = 0;
@@ -77,7 +83,7 @@ scrDataCharacter();
 scrDataStage();
 
 #endregion
-
+depth = -1000;
 RoomVoidY = 145;
 RoomLimitX = 30;
 Gravity = .3;

@@ -1,3 +1,11 @@
+#region Reset time
+BonusTimeSecond = 0;
+BonusTimeMinute = 0;
+BonusTimeFrame = 0;
+MatchEnd = false;
+MatchEndSnapshot = false;
+surface_free(MatchEndSurface);
+#endregion
 #region Set
 SetReady = scrFileSetLoad();
 if (!SetReady and room == rm00Set)
@@ -9,6 +17,7 @@ if (!SetReady and room == rm00Set)
 NormalCamera = true;
 if (scrIsBonusLevel())
 {
+	alarm[3] = 60;
 	NormalCamera = false;
 	camera_set_view_border(view_camera[0] , 128 , 112);
 }

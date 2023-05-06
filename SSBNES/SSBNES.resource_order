@@ -11,8 +11,8 @@
     {"name":"Stages","order":1,"path":"folders/Rooms/Stages.yy",},
     {"name":"File","order":17,"path":"folders/Scripts/File.yy",},
     {"name":"Bonus","order":12,"path":"folders/Sprites/Bonus.yy",},
-    {"name":"Set","order":11,"path":"folders/Sprites/Set.yy",},
     {"name":"Bonus#1","order":8,"path":"folders/Sprites/Bonus/Bonus#1.yy",},
+    {"name":"Set","order":11,"path":"folders/Sprites/Set.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"sprSetTextBox2","order":10,"path":"sprites/sprSetTextBox2/sprSetTextBox2.yy",},
@@ -175,6 +175,7 @@
     {"name":"objCombatNormalEgg","order":7,"path":"objects/objCombatNormalEgg/objCombatNormalEgg.yy",},
     {"name":"sprChSandbagMask","order":12,"path":"sprites/sprChSandbagMask/sprChSandbagMask.yy",},
     {"name":"sprChKirbyWalk","order":11,"path":"sprites/sprChKirbyWalk/sprChKirbyWalk.yy",},
+    {"name":"objDashEffect","order":11,"path":"objects/objDashEffect/objDashEffect.yy",},
     {"name":"sndOst06Lotery_a","order":6,"path":"sounds/sndOst06Lotery_a/sndOst06Lotery_a.yy",},
     {"name":"sprChPollierAerialBack","order":1,"path":"sprites/sprChPollierAerialBack/sprChPollierAerialBack.yy",},
     {"name":"objCombatFire","order":1,"path":"objects/objCombatFire/objCombatFire.yy",},
