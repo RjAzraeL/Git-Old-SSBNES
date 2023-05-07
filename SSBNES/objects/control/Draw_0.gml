@@ -67,6 +67,7 @@ if (BattleLevel)
 if (scrIsBonusLevel())
 {
 	#region Time
+	scrText(scrX() + 244 , scrY() + 48 , "" + string_replace_all(string_format(RecordMinute,2,0) , " " , "0") + ":" + string_replace_all(string_format(RecordSecond,2,0) , " " , "0") , fa_middle , fa_right , Control.Font , c_black , c_yellow , 32 , room_width , 1 , 1 , 0 , 1);
 	scrText(scrX() + 244 , scrY() + 32 , "" + string_replace_all(string_format(BonusTimeMinute,2,0) , " " , "0") + ":" + string_replace_all(string_format(BonusTimeSecond,2,0) , " " , "0") , fa_middle , fa_right , Control.Font , c_black , c_white , 32 , room_width , 1 , 1 , 0 , 1);
 	#endregion
 	#region Target
@@ -97,7 +98,7 @@ if (MatchEnd)
 		surface_copy(MatchEndSurface , 0 , 0 , application_surface);
 		instance_destroy(objPlayer);
 	}
-	scrText(scrX() + 128 , scrY() + 112 , MatchEndText , fa_middle , fa_center , Control.Font , c_black , c_white , 64 , 256 , 4 , 4 , 0 , 1);
+	scrText(scrX() + 128 , scrY() + 112 , string_upper(MatchEndText) , fa_middle , fa_center , Control.Font , c_black , c_white , 16 , 56 , 3 , 3 , 0 , 1);
 }
 #endregion
 #endregion
