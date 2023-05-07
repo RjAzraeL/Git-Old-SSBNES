@@ -64,7 +64,7 @@ if (CooldownButton == 0)
 			{
 				case(0):
 				{
-					room_goto(rmBn1Mario);
+					room_goto(rmBn0);
 					break;
 				}
 			}

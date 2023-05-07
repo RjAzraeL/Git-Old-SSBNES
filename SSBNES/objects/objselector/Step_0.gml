@@ -81,7 +81,10 @@ if (Control.Wait == 0)
 			if (!place_meeting(x, y , objSelectorCircle))
 			{
 				var Square = instance_place(x , y , objPlayerSquare);
-				Square.IdeSkin = scrChangeSkin(Square.IdeSkin , Square.IdeSkinTope , Square.IdeCharacter , Square , Square.Slot);
+				if (scrExiste(Square))
+				{
+					Square.IdeSkin = scrChangeSkin(Square.IdeSkin , Square.IdeSkinTope , Square.IdeCharacter , Square , Square.Slot);
+				}
 			}
 		}
 	}
