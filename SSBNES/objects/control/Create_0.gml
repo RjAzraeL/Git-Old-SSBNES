@@ -1,4 +1,10 @@
 #region Set variables
+
+#region Record
+RecordSecond = 0;
+RecordMinute = 0;
+#endregion
+
 instance_create_depth(0 , 0 , 0 , Language);
 scrLanguageLoadTexto(0);
 depth = -10;

@@ -175,9 +175,26 @@ if (scrIsBonusLevel())
 	if (instance_number(objTarget) == 0)
 	{
 		audio_stop_sound(Control.IndexMusic);
-		scrSound(sndAnnouncerANewRecord)
+		scrSound(sndAnnouncerANewRecord);
 		MatchEnd = true;
-		room_goto(rm02Menu)
+		room_goto(rm02Menu);
+		#region Record
+		if (BonusTimeMinute <= RecordMinute)
+		{
+			if (BonusTimeSecond < RecordSecond)
+			{
+				scrSound(sndAnnouncerANewRecord);
+			}
+			else
+			{
+				scrSound(sndAnnouncerComplete);
+			}
+		}
+		else
+		{
+			scrSound(sndAnnouncerComplete);
+		}
+		#endregion
 	}
 }
 #endregion

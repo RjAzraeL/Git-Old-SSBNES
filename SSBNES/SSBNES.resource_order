@@ -1,5 +1,7 @@
 {
   "FolderOrderSettings": [
+    {"name":"Announcer","order":1,"path":"folders/Audio/Announcer.yy",},
+    {"name":"Azrael","order":1,"path":"folders/Audio/Announcer/Azrael.yy",},
     {"name":"Bonus","order":6,"path":"folders/Objects/Bonus.yy",},
     {"name":"Mobile Plattform Bn1Mario","order":1,"path":"folders/Objects/Bonus/Mobile Plattform Bn1Mario.yy",},
     {"name":"Furnis","order":1,"path":"folders/Objects/Furnis.yy",},
@@ -13,8 +15,6 @@
     {"name":"Bonus","order":12,"path":"folders/Sprites/Bonus.yy",},
     {"name":"Bonus#1","order":8,"path":"folders/Sprites/Bonus/Bonus#1.yy",},
     {"name":"Set","order":11,"path":"folders/Sprites/Set.yy",},
-    {"name":"Announcer","order":1,"path":"folders/Audio/Announcer.yy",},
-    {"name":"Azrael","order":1,"path":"folders/Audio/Announcer/Azrael.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"sprSetTextBox2","order":10,"path":"sprites/sprSetTextBox2/sprSetTextBox2.yy",},

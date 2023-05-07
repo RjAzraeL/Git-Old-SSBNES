@@ -93,8 +93,6 @@ if (MatchEnd)
 	}
 	else
 	{
-	    var _w = 256;
-	    var _h = 224;
 	    MatchEndSurface = surface_create(room_width , room_height);
 		surface_copy(MatchEndSurface , 0 , 0 , application_surface);
 		instance_destroy(objPlayer);

@@ -12,6 +12,8 @@
   "defaultScriptType": 1,
   "Folders": [
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Audio","folderPath":"folders/Audio.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Announcer","folderPath":"folders/Audio/Announcer.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Azrael","folderPath":"folders/Audio/Announcer/Azrael.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"OST","folderPath":"folders/Audio/OST.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"SFX","folderPath":"folders/Audio/SFX.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Generic","folderPath":"folders/Audio/SFX/Generic.yy",},
@@ -87,8 +89,6 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Parapa Palace","folderPath":"folders/Sprites/Stages/Parapa Palace.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Test Stage","folderPath":"folders/Sprites/Stages/Test Stage.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Underground","folderPath":"folders/Sprites/Stages/Underground.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Announcer","folderPath":"folders/Audio/Announcer.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Azrael","folderPath":"folders/Audio/Announcer/Azrael.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"en.txt","CopyToMask":-1,"filePath":"datafiles/l",},
