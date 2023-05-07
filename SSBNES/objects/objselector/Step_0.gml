@@ -100,11 +100,6 @@ if (Control.Wait == 0)
 			Control.Wait = 5;
 			room_goto(rm03Versus);
 		}
-		else if (room == rmBn0)
-		{
-			Control.Wait = 5;
-			room_goto(rmBn1Mario);
-		}
 	}
 	if (Control.JumpButtonReleaseActive)
 	{
@@ -113,7 +108,14 @@ if (Control.Wait == 0)
 			var Ready = instance_place(x , y , objReadyBar);
 			if (Ready.visible)
 			{
-				room_goto(rm04Stage);
+				if (room == rm03Versus)
+				{
+					room_goto(rm04Stage);
+				}
+				else if (room == rmBn0)
+				{
+					room_goto(rmBn1Mario);
+				}
 			}
 		}
 		if (scrExiste(Circle))

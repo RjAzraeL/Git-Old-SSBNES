@@ -1,8 +1,13 @@
 #region Set var
 Pos = -1;
-if (room == rmBn1Mario)
+if (scrIsBonusLevel())
 {
-	var Ply = instance_create_depth(x , y , 0 , objPlayer);
+	var ChObj = objPlayer;
+	if (Control.CharacterType[0] == 2)
+	{
+		ChObj = objBot;
+	}
+	var Ply = instance_create_depth(x , y , 0 , ChObj);
 	Ply.Position = 0;
 	Ply.ReviveDefault = false;
 	with (Ply)
