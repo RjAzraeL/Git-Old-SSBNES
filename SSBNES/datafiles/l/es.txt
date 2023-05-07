@@ -147,3 +147,8 @@ setn1o6 = "B | Ataque"
 setn1o7 = "Empezar"
 setn1o8 = "Selección"
 setn1o9 = "Controles por defecto"
+
+[BONUS]
+b0t0 = "¡Nuevo record!"
+b0t1 = "Completado"
+b0t2 = "¡Fallaste!"

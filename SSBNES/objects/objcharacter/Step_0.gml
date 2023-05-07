@@ -748,7 +748,8 @@ if (y > room_height + 64 and !Dead)
 	
 	if (scrIsBonusLevel())
 	{
-		
+		instance_destroy(objTarget);
+		Control.BonusDeath = true;
 	}
 	else
 	{

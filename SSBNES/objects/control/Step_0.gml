@@ -156,7 +156,7 @@ else
 		}
 		#endregion
 		#region Music
-		if (MusicOn and !MusicLoop)
+		if (MusicOn and !MusicLoop and !NoMusic)
 		{
 			if (!audio_is_playing(IndexMusic))
 			{
@@ -176,6 +176,7 @@ if (scrIsBonusLevel())
 	{
 		if (!MatchEnd)
 		{
+			NoMusic = true;
 			audio_stop_sound(Control.IndexMusic);
 			alarm[4] = 90;
 			if (!BonusDeath)

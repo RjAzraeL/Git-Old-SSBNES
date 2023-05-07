@@ -5,6 +5,7 @@ BonusTimeFrame = 0;
 MatchEnd = false;
 MatchEndSnapshot = false;
 BonusDeath = false;
+NoMusic = false;
 surface_free(MatchEndSurface);
 #endregion
 #region Set
