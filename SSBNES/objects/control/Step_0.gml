@@ -175,15 +175,21 @@ if (scrIsBonusLevel())
 	if (instance_number(objTarget) == 0)
 	{
 		audio_stop_sound(Control.IndexMusic);
-		scrSound(sndAnnouncerANewRecord);
 		MatchEnd = true;
-		room_goto(rm02Menu);
-		#region Record
-		if (BonusTimeMinute <= RecordMinute)
+		alarm[4] = 90;
+		if (!BonusDeath)
 		{
-			if (BonusTimeSecond < RecordSecond)
+			#region Record
+			if (BonusTimeMinute <= RecordMinute)
 			{
-				scrSound(sndAnnouncerANewRecord);
+				if (BonusTimeSecond < RecordSecond)
+				{
+					scrSound(sndAnnouncerANewRecord);
+				}
+				else
+				{
+					scrSound(sndAnnouncerComplete);
+				}
 			}
 			else
 			{
@@ -192,7 +198,7 @@ if (scrIsBonusLevel())
 		}
 		else
 		{
-			scrSound(sndAnnouncerComplete);
+			scrSound(sndAnnouncerFailure);
 		}
 		#endregion
 	}

@@ -8,6 +8,7 @@ RecordMinute = 0;
 instance_create_depth(0 , 0 , 0 , Language);
 scrLanguageLoadTexto(0);
 depth = -10;
+BonusDeath = false;
 Delta = delta_time / 1000000;
 SetReady = true;
 //VolumeMusic = 0.5;

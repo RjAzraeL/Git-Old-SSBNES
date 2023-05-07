@@ -746,40 +746,47 @@ if (y > room_height + 64 and !Dead)
 	Dead = true;
 	scrSound(sfxKO);
 	
-	if (Control.CharacterLife[Position] > 0)
+	if (scrIsBonusLevel())
 	{
-		var X = room_width/2;
-		var Spawn = scrGiveMeSpawn(Position , false);
-		var Y = -sprite_height;
-		if (scrExiste(Spawn))
+		
+	}
+	else
+	{
+		if (Control.CharacterLife[Position] > 0)
 		{
-			X = Spawn.x;
+			var X = room_width/2;
+			var Spawn = scrGiveMeSpawn(Position , false);
+			var Y = -sprite_height;
+			if (scrExiste(Spawn))
+			{
+				X = Spawn.x;
+				if (!ReviveDefault)
+				{
+					Y = Spawn.y;
+				}
+			}
+			var Character = instance_create_depth(X , Y , 0 , object_index);
+			Character.Position = Position;
+			Character.ReviveDefault = ReviveDefault;
+			Character.Start = false;
+			if (scrExiste(Spawn))
+			{
+				Character.YPlatform = Spawn.y;
+			}
 			if (!ReviveDefault)
 			{
-				Y = Spawn.y;
+				with (Character)
+				{
+					scrOutPlatform();
+				}
+				if (scrExiste(objSpawn))
+				{
+					Character.x = objSpawn.x;
+					Character.y = objSpawn.y;
+				}
 			}
+			Control.CharacterLife[Position]--;
 		}
-		var Character = instance_create_depth(X , Y , 0 , object_index);
-		Character.Position = Position;
-		Character.ReviveDefault = ReviveDefault;
-		Character.Start = false;
-		if (scrExiste(Spawn))
-		{
-			Character.YPlatform = Spawn.y;
-		}
-		if (!ReviveDefault)
-		{
-			with (Character)
-			{
-				scrOutPlatform();
-			}
-			if (scrExiste(objSpawn))
-			{
-				Character.x = objSpawn.x;
-				Character.y = objSpawn.y;
-			}
-		}
-		Control.CharacterLife[Position]--;
 	}
 	instance_destroy();
 }
