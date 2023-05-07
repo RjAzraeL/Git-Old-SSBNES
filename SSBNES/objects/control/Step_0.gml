@@ -175,7 +175,9 @@ if (scrIsBonusLevel())
 	if (instance_number(objTarget) == 0)
 	{
 		audio_stop_sound(Control.IndexMusic);
+		scrSound(sndAnnouncerANewRecord)
 		MatchEnd = true;
+		room_goto(rm02Menu)
 	}
 }
 #endregion
