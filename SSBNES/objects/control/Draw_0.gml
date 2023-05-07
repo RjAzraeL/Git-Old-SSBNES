@@ -97,6 +97,7 @@ if (MatchEnd)
 		surface_copy(MatchEndSurface , 0 , 0 , application_surface);
 		instance_destroy(objPlayer);
 	}
+	scrText(scrX() + 128 , scrY() + 112 , MatchEndText , fa_middle , fa_center , Control.Font , c_black , c_white , 64 , 256 , 4 , 4 , 0 , 1);
 }
 #endregion
 #endregion

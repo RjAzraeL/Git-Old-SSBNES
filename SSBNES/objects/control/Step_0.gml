@@ -188,21 +188,25 @@ if (scrIsBonusLevel())
 					{
 						scrSound(sndAnnouncerANewRecord);
 						RecordMinute = BonusTimeMinute;
+						MatchEndText = Language.Text_b0t0;
 						RecordSecond = BonusTimeSecond;
 					}
 					else
 					{
 						scrSound(sndAnnouncerComplete);
+						MatchEndText = Language.Text_b0t1;
 					}
 				}
 				else
 				{
 					scrSound(sndAnnouncerComplete);
+					MatchEndText = Language.Text_b0t1;
 				}
 			}
 			else
 			{
 				scrSound(sndAnnouncerFailure);
+				MatchEndText = Language.Text_b0t2;
 			}
 		}
 		MatchEnd = true;
