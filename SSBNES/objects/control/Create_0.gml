@@ -1,8 +1,8 @@
 #region Set variables
 
 #region Record
-RecordSecond = 0;
-RecordMinute = 0;
+RecordSecond = -1;
+RecordMinute = -1;
 #endregion
 
 instance_create_depth(0 , 0 , 0 , Language);

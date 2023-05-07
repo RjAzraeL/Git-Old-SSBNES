@@ -4,6 +4,7 @@ BonusTimeMinute = 0;
 BonusTimeFrame = 0;
 MatchEnd = false;
 MatchEndSnapshot = false;
+BonusDeath = false;
 surface_free(MatchEndSurface);
 #endregion
 #region Set

@@ -175,16 +175,24 @@ if (scrIsBonusLevel())
 	if (instance_number(objTarget) == 0)
 	{
 		audio_stop_sound(Control.IndexMusic);
-		MatchEnd = true;
 		alarm[4] = 90;
-		if (!BonusDeath)
+		if (!MatchEnd)
 		{
-			#region Record
-			if (BonusTimeMinute <= RecordMinute)
+			if (!BonusDeath)
 			{
-				if (BonusTimeSecond < RecordSecond)
+				#region Record
+				if (BonusTimeMinute <= RecordMinute or (RecordMinute == -1))
 				{
-					scrSound(sndAnnouncerANewRecord);
+					if (BonusTimeSecond < RecordSecond or (RecordSecond == -1))
+					{
+						scrSound(sndAnnouncerANewRecord);
+						RecordMinute = BonusTimeMinute;
+						RecordSecond = BonusTimeSecond;
+					}
+					else
+					{
+						scrSound(sndAnnouncerComplete);
+					}
 				}
 				else
 				{
@@ -193,13 +201,10 @@ if (scrIsBonusLevel())
 			}
 			else
 			{
-				scrSound(sndAnnouncerComplete);
+				scrSound(sndAnnouncerFailure);
 			}
 		}
-		else
-		{
-			scrSound(sndAnnouncerFailure);
-		}
+		MatchEnd = true;
 		#endregion
 	}
 }
