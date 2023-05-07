@@ -68,7 +68,10 @@ if (scrIsBonusLevel())
 {
 	#region Time
 	scrText(scrX() + 244 , scrY() + 48 , "" + string_replace_all(string_format(RecordMinute,2,0) , " " , "0") + ":" + string_replace_all(string_format(RecordSecond,2,0) , " " , "0") , fa_middle , fa_right , Control.Font , c_black , c_yellow , 32 , room_width , 1 , 1 , 0 , 1);
-	scrText(scrX() + 244 , scrY() + 32 , "" + string_replace_all(string_format(BonusTimeMinute,2,0) , " " , "0") + ":" + string_replace_all(string_format(BonusTimeSecond,2,0) , " " , "0") , fa_middle , fa_right , Control.Font , c_black , c_white , 32 , room_width , 1 , 1 , 0 , 1);
+	if (RecordMinute != -1) 
+	{
+		scrText(scrX() + 244 , scrY() + 32 , "" + string_replace_all(string_format(BonusTimeMinute,2,0) , " " , "0") + ":" + string_replace_all(string_format(BonusTimeSecond,2,0) , " " , "0") , fa_middle , fa_right , Control.Font , c_black , c_white , 32 , room_width , 1 , 1 , 0 , 1);
+	}
 	#endregion
 	#region Target
 	var Fila = 0;
