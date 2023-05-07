@@ -144,13 +144,15 @@ function scrLanguageLoadTexto(LocalLanguage)
 		Text_setn1o2 = ini_read_string("SET" , "setn1o2" , "ERROR_C");
 		Text_setn1o3 = ini_read_string("SET" , "setn1o3" , "ERROR_C");
 		Text_setn1o4 = ini_read_string("SET" , "setn1o4" , "ERROR_C");
-		Text_setn1o5 = ini_read_string("SET" , "setn1o5" , "ERROR_C");
+		Text_setn1o5 = ini_read_string("SET" , "setn1o5" , "SUPER PODERES LAND 7");
 		Text_setn1o6 = ini_read_string("SET" , "setn1o6" , "ERROR_C");
 		Text_setn1o7 = ini_read_string("SET" , "setn1o7" , "ERROR_C");
-		Text_setn1o8 = ini_read_string("SET" , "setn1o8" , "ERROR_C");
+		Text_setn1o8 = ini_read_string("SET" , "setn1o8" , "SUPER PODERES MAKER");
 		Text_setn1o9 = ini_read_string("SET" , "setn1o9" , "DEFAULT");
 		
-		Text_setn1o1 = ini_read_string("SET" , "setn1o1" , "ERROR_C");
+		Text_b0t0 = ini_read_string("BONUS" , "b0t0" , "SCC2");
+		Text_b0t1 = ini_read_string("BONUS" , "b0t1" , "SCC3D");
+		Text_b0t2 = ini_read_string("BONUS" , "b0t2" , "SCCREMAKE");
 	}
 	#endregion
 	
