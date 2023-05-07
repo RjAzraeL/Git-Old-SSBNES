@@ -174,10 +174,10 @@ if (scrIsBonusLevel())
 {
 	if (instance_number(objTarget) == 0)
 	{
-		audio_stop_sound(Control.IndexMusic);
-		alarm[4] = 90;
 		if (!MatchEnd)
 		{
+			audio_stop_sound(Control.IndexMusic);
+			alarm[4] = 90;
 			if (!BonusDeath)
 			{
 				#region Record
