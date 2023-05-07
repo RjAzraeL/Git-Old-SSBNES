@@ -73,16 +73,19 @@ function scrCheckSkin(Value , Position , Slot)
 		if (i != Slot)
 		{
 			var Square = instance_find(objPlayerSquare , i);
-			if (Square.IdeCharacter == Position and Position != 0)
+			if (scrExiste(Square))
 			{
-				if (Square.IdeSkin == Value)
+				if (Square.IdeCharacter == Position and Position != 0)
 				{
-					Value++;
-					i = 0;
-					var RealTope = scrDameDato(Control.CharacterList , Position , "Palette Code")[?"t"];
-					if (Value > RealTope)
+					if (Square.IdeSkin == Value)
 					{
-						Value = 0;
+						Value++;
+						i = 0;
+						var RealTope = scrDameDato(Control.CharacterList , Position , "Palette Code")[?"t"];
+						if (Value > RealTope)
+						{
+							Value = 0;
+						}
 					}
 				}
 			}

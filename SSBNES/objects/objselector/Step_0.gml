@@ -100,6 +100,11 @@ if (Control.Wait == 0)
 			Control.Wait = 5;
 			room_goto(rm03Versus);
 		}
+		else if (room == rmBn0)
+		{
+			Control.Wait = 5;
+			room_goto(rmBn1Mario);
+		}
 	}
 	if (Control.JumpButtonReleaseActive)
 	{

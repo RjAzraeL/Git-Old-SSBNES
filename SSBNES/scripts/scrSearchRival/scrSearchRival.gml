@@ -60,5 +60,12 @@ function scrSearchRival(Me)
 			}
 		}
 	}
+	if (scrIsBonusLevel())
+	{
+		if (scrExiste(objTarget))
+		{
+			RivalReturn = instance_nearest(Me.x,Me.y,objTarget);
+		}
+	}
 	return RivalReturn;
 }
