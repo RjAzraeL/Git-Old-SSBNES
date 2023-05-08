@@ -443,26 +443,31 @@ if (Damaged != 0)
 {
 	if (place_meeting(x + HorizontalMovement , y , parSolid))
 	{
-		HorizontalMovement *= -1;
+		HorizontalMovement *= -.75;
+		VerticalMovement *= .75;
 	}
 	if (place_meeting(x , y + VerticalMovement , parSolid))
 	{
-		VerticalMovement *= -1;
+		VerticalMovement *= -.75;
+		HorizontalMovement *= -.75;
 	}
 	if (!place_meeting(x , y , objBlockTransferable) and (VerticalMovement >= 0))
 	{
 		if (place_meeting(x , y + VerticalMovement , objBlockTransferable))
 		{
-			VerticalMovement *= -1;
+			VerticalMovement *= -.75;
+			HorizontalMovement *= -.75;
 		}
 	}
 	if (place_meeting(x , y + VerticalMovement*1.2 , objBlockSlope45))
 	{
-		VerticalMovement *= -1;
+		VerticalMovement *= -.75;
+		HorizontalMovement *= -.75;
 	}
 	if (place_meeting(x + HorizontalMovement*1.2 , y , objBlockSlope45))
 	{
-		HorizontalMovement *= -1;
+		HorizontalMovement *= -.75;
+		VerticalMovement *= -.75;
 	}
 }
 else
