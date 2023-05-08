@@ -95,6 +95,11 @@ function scrUseMovs()
 						scrPrepareMov(2 , false , SpriteSmashGroundDown , 0);
 						break;
 					}
+					case(19): //POL Ground Smash Down
+					{
+						scrPrepareMov(19 , false , SpriteSmashGroundDown , 0);
+						break;
+					}
 				}
 			}
 			else if (AttackButtonPressedActive and (UpButtonActive) and TimeButtonUp != 0)
@@ -201,7 +206,7 @@ function scrUseMovs()
 						AttackingHoldIndex = 0;
 						SmashMaxPower = scrDameDato(Control.MovList , Ide , "Max Power");
 						SmashGrownPower = .1;
-						SpriteAttacking = SpriteAttackGroundSide;
+						SpriteAttacking = SpriteAttackGroundUp;
 						SmashActualPower = scrDameDato(Control.MovList , Ide , "Power");
 						SpriteAttackingSpeed = scrDameDato(Control.MovList , Ide , "Animation Speed");
 						image_index = 0;

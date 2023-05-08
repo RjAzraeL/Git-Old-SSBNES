@@ -361,7 +361,7 @@ if (!Platform and Damaged == 0 and !Attacking and TimeAttacking == 0)
 	{
 		if (VerticalMovement >= 0)
 		{
-			if (!JumpingInTerrain)
+			if (!JumpingInTerrain and JumpAvailable == Jumps)
 			{
 				JumpAvailable--;
 				ActualJumpSprite++;

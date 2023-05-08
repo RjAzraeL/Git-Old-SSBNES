@@ -3,7 +3,7 @@ function scrJump(HorizontalDirection)
 {
 	if (JumpAvailable > 0)
 	{
-		scrSound(sfxMarioJump)
+		scrSound(sfxMarioJump);
 		JumpAvailable--;
 		JumpStop = false;
 		if (ActualJumpSprite == 0)

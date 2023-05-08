@@ -97,15 +97,6 @@ if (visible)
 		}
 	}
 }
-draw_set_font(fntNormal);
-//draw_text(x , y + 32 , Attacking);
+//draw_set_font(fntNormal);
+//draw_text(x , y + 32 , JumpAvailable);
 #endregion
-
-
-if (object_index == objBot)
-{
-	if (scrExiste(Target))
-	{
-		draw_line(x,y,Target.x,Target.y);
-	}
-}

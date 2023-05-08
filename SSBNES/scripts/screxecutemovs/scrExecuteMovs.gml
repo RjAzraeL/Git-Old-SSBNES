@@ -282,7 +282,7 @@ function scrExecuteMovs(ID)
 		case(11):
 		{
 			///MAR Aerial Up
-			scrFreeJump(7);
+			scrFreeJump(9);
 			var Up = instance_create_depth(x , y , depth-1 , objCombatHitboxImageFollower);
 			Up.sprite_index = sprChMarioAerialUpMask;
 			Up.PowerScale = false;
@@ -456,22 +456,30 @@ function scrExecuteMovs(ID)
 		}
 		case(19):
 		{
-			///POL Ground Smash Down
-			AcelerationValue = 0;
-			var ChickenFoot = instance_create_depth(x , y , depth-1 , objCombatHitboxNotImageFollower);
-			ChickenFoot.sprite_index = sprChPollierGroundSmashDownMask;
-			ChickenFoot.PowerScale = false;
-			ChickenFoot.Ide = ID;
-			ChickenFoot.FollowX = LastScaleXSprite;
-			ChickenFoot.FollowY = 0;
-			ChickenFoot.Power = scrDameDato(Control.MovList , ID , "Power");
-			ChickenFoot.KnockbackScaling = scrDameDato(Control.MovList , 17 , "Knockback Scaling");
-			ChickenFoot.image_xscale = ScaleXSprite;
-			ChickenFoot.Creator = self;
-			ChickenFoot.image_speed = 0;
-			ChickenFoot.image_index = 0;
-			TimeAttacking = scrDameDato(Control.MovList , ID , "Time Attacking");
-			ds_list_add(self.MyMovs , ChickenFoot.id);
+			var IdeLocal = 19;
+			
+			///MAR Ground Smash Down
+			var GroundSmashDown = instance_create_depth(x , y , depth-1 , objCombatHitboxImageFollower);
+			GroundSmashDown.sprite_index = sprChPollierGroundSmashDownMask;
+			GroundSmashDown.Ide = IdeLocal;
+			GroundSmashDown.FollowX = LastScaleXSprite;
+			GroundSmashDown.FollowY = 0;
+			
+			var LowPower = scrDameDato(Control.MovList , IdeLocal , "Power");
+			var LoadPorcentage = scrGetTotalPorcentageFromTwoValues(LowPower , SmashMaxPower , SmashActualPower);
+			
+			GroundSmashDown.Power = scrGetTotalValueFromTwoPorcentages(8 , 16 , LoadPorcentage);
+			GroundSmashDown.PowerScale = true;
+			
+			
+			GroundSmashDown.MinValuePower = 8;
+			GroundSmashDown.MaxValuePower = 16;	
+			
+			GroundSmashDown.KnockbackScaling = scrDameDato(Control.MovList , IdeLocal , "Knockback Scaling");
+			GroundSmashDown.image_xscale = ScaleXSprite;
+			GroundSmashDown.Creator = self;
+			TimeAttacking = scrDameDato(Control.MovList , IdeLocal , "Time Attacking");
+			ds_list_add(self.MyMovs , GroundSmashDown.id);
 			ActualMov = ID;
 			ProxMovs = 0;
 			break;
