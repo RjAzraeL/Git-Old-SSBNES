@@ -456,7 +456,7 @@ function scrExecuteMovs(ID)
 		}
 		case(19):
 		{
-			var IdeLocal = 19;
+			var IdeLocal = ID;
 			
 			///MAR Ground Smash Down
 			var GroundSmashDown = instance_create_depth(x , y , depth-1 , objCombatHitboxImageFollower);
@@ -482,6 +482,36 @@ function scrExecuteMovs(ID)
 			ds_list_add(self.MyMovs , GroundSmashDown.id);
 			ActualMov = ID;
 			ProxMovs = 0;
+			break;
+		}
+		case (20):
+		{
+			///POL Ground Smash Up
+			var LoadPorcentage = scrGetTotalPorcentageFromTwoValues(LowPower , SmashMaxPower , SmashActualPower);
+			if (LoadPorcentage == 1)
+			{
+				var ChickenRocket = instance_create_depth(x + LastScaleXSprite * 18 , y + 4 , depth-1 , objCombatPollierRocket);
+				ChickenRocket.Ide = ID;
+				ChickenRocket.FollowX = LastScaleXSprite * 18;
+				ChickenRocket.FollowY = 4;
+				ChickenRocket.VerticalMovement = 0;
+			
+				var LowPower = scrDameDato(Control.MovList , ID , "Power");
+				ChickenRocket.Power = scrDameDato(Control.MovList , ID , "Power");
+				ChickenRocket.MinValuePower = 1;
+				ChickenRocket.MaxValuePower = 5;
+				ChickenRocket.HorizontalMovement = ScaleXSprite*scrGetTotalValueFromTwoPorcentages(1 , 5 , LoadPorcentage)*2;
+				ChickenRocket.Range = 48*scrGetTotalValueFromTwoPorcentages(1 , 5 , LoadPorcentage);
+			
+				ChickenRocket.PowerScale = true;
+				ChickenRocket.KnockbackScaling = scrDameDato(Control.MovList , ID , "Knockback Scaling");
+				ChickenRocket.image_xscale = ScaleXSprite;
+				ChickenRocket.Creator = self;
+				TimeAttacking = scrDameDato(Control.MovList , ID , "Time Attacking");
+				ds_list_add(self.MyMovs , ChickenRocket.id);
+				ProxMovs = 1;
+				ActualMov = ID;
+			}
 			break;
 		}
 	}
