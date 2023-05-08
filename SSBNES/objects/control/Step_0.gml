@@ -130,14 +130,14 @@ else
 	if (scrIsBonusLevel())
 	{
 		#region Camera
-		if (scrExiste(objPlayer))
+		if (scrExiste(objCharacter))
 		{
 			// Establecer una velocidad de seguimiento de la cámara
 			var camera_speed = 0.1;
 
 			// Calcular la posición objetivo de la cámara
-			var target_x = objPlayer.x;
-			var target_y = objPlayer.y;
+			var target_x = objCharacter.x;
+			var target_y = objCharacter.y;
 
 			// Calcular la posición actual de la cámara
 			var current_x = camera_get_view_x(view_camera[0]) - 16;

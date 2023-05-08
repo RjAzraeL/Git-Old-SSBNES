@@ -64,7 +64,7 @@ function scrSearchRival(Me)
 	{
 		if (scrExiste(objTarget))
 		{
-			RivalReturn = instance_nearest(Me.x,Me.y,objTarget);
+			RivalReturn = instance_find(objTarget , 1);
 		}
 	}
 	return RivalReturn;

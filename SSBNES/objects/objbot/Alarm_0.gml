@@ -53,6 +53,10 @@ if (!FallingVoid)
 			}
 			else if (distance_to_object(Target) > 40)
 			{
+				if (Target.object_index == objTarget)
+				{
+					Mentality = "Close";
+				}
 				if (Mentality == "Close")
 				{
 					if (HorizontalMovement > 0)
