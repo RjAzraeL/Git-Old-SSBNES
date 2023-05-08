@@ -489,18 +489,18 @@ function scrExecuteMovs(ID)
 			///POL Ground Smash Up
 			var LowPower = scrDameDato(Control.MovList , ID , "Power");
 			var LoadPorcentage = scrGetTotalPorcentageFromTwoValues(LowPower , SmashMaxPower , SmashActualPower);
-			if (LoadPorcentage >= 0)
+			if (LoadPorcentage >= 1)
 			{
-				var ChickenRocket = instance_create_depth(x + LastScaleXSprite * 8 , y - 8 , depth-1 , objCombatPollierRocket);
+				var ChickenRocket = instance_create_depth(x + LastScaleXSprite * 4 , y - 5 , depth-1 , objCombatPollierRocket);
 				ChickenRocket.Ide = ID;
-				ChickenRocket.FollowX = LastScaleXSprite * 8;
-				ChickenRocket.FollowY = -8;
+				ChickenRocket.FollowX = LastScaleXSprite * 4;
+				ChickenRocket.FollowY = -5;
 			
 
 				ChickenRocket.Power = scrDameDato(Control.MovList , ID , "Power");
-				ChickenRocket.MinValuePower = 1;
-				ChickenRocket.MaxValuePower = 5;
-				ChickenRocket.VerticalMovement = -8;
+				ChickenRocket.MinValuePower = 8;
+				ChickenRocket.MaxValuePower = 16;
+				ChickenRocket.VerticalMovement = -6;
 				ChickenRocket.Range = 48*scrGetTotalValueFromTwoPorcentages(1 , 5 , LoadPorcentage);
 			
 				ChickenRocket.PowerScale = true;
