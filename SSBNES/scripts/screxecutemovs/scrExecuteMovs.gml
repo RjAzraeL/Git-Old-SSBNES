@@ -489,7 +489,7 @@ function scrExecuteMovs(ID)
 			///POL Ground Smash Up
 			var LowPower = scrDameDato(Control.MovList , ID , "Power");
 			var LoadPorcentage = scrGetTotalPorcentageFromTwoValues(LowPower , SmashMaxPower , SmashActualPower);
-			if (LoadPorcentage >= 1)
+			if (LoadPorcentage >= 100)
 			{
 				var ChickenRocket = instance_create_depth(x + LastScaleXSprite * 4 , y - 5 , depth-1 , objCombatPollierRocket);
 				ChickenRocket.Ide = ID;
@@ -510,8 +510,8 @@ function scrExecuteMovs(ID)
 				TimeAttacking = scrDameDato(Control.MovList , ID , "Time Attacking");
 				ds_list_add(self.MyMovs , ChickenRocket.id);
 				ProxMovs = 1; 
-				ActualMov = ID;
 			}
+			ActualMov = ID;
 			break;
 		}
 	}
