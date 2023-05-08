@@ -408,21 +408,20 @@ function scrExecuteMovs(ID)
 		case(17):
 		{
 			///POL Ground Attack Up
-			AcelerationValue = 4;
-			var ChickenFoot = instance_create_depth(x , y , depth-1 , objCombatHitboxNotImageFollower);
-			ChickenFoot.sprite_index = sprChMarioFootBangMask;
-			ChickenFoot.PowerScale = false;
-			ChickenFoot.Ide = ID;
-			ChickenFoot.FollowX = LastScaleXSprite;
-			ChickenFoot.FollowY = 0;
-			ChickenFoot.Power = scrDameDato(Control.MovList , ID , "Power");
-			ChickenFoot.KnockbackScaling = scrDameDato(Control.MovList , 17 , "Knockback Scaling");
-			ChickenFoot.image_xscale = ScaleXSprite;
-			ChickenFoot.Creator = self;
-			ChickenFoot.image_speed = 0;
-			ChickenFoot.image_index = 0;
-			TimeAttacking = scrDameDato(Control.MovList , ID , "Time Attacking");
-			ds_list_add(self.MyMovs , ChickenFoot.id);
+			var GroundAttackUp = instance_create_depth(x , y , depth-1 , objCombatHitboxImageFollower);
+			GroundAttackUp.sprite_index = sprChPollierGroundAttackUpMask;
+			GroundAttackUp.PowerScale = false;
+			GroundAttackUp.Ide = 17;
+			GroundAttackUp.FollowX = LastScaleXSprite;
+			GroundAttackUp.FollowY = 0;
+			GroundAttackUp.Power = scrDameDato(Control.MovList , 17 , "Power");
+			GroundAttackUp.KnockbackScaling = scrDameDato(Control.MovList , 17 , "Knockback Scaling");
+			GroundAttackUp.image_xscale = ScaleXSprite;
+			GroundAttackUp.Creator = self;
+			GroundAttackUp.image_speed = 0;
+			GroundAttackUp.image_index = 0;
+			TimeAttacking = scrDameDato(Control.MovList , 17 , "Time Attacking");
+			ds_list_add(self.MyMovs , GroundAttackUp.id);
 			ActualMov = ID;
 			ProxMovs = 0;
 			break;
