@@ -13,6 +13,23 @@ function scrFileSetSave()
 	ini_close();
 }
 
+function scrFileAchievementLoad()
+{
+	ini_open("kvs.sav");
+	Control.RecordMinute = real( base64_decode( ini_read_string("A" , "TT" , "LTE=") ) );
+	Control.RecordSecond = real( base64_decode( ini_read_string("A" , "TD" , "LTE=") ) );
+	ini_close();
+	return Value;
+}
+
+function scrFileAchievementSave()
+{
+	ini_open("kvs.sav");
+	ini_write_string("A" , "TT" , base64_encode(string(Control.RecordMinute)))
+	ini_write_string("A" , "TD" , base64_encode(string(Control.RecordSecond)))
+	ini_close();
+}
+
 function scrFileKeyLoad()
 {	
 	ini_open("kv.sav");
