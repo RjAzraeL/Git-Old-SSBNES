@@ -514,5 +514,27 @@ function scrExecuteMovs(ID)
 			ActualMov = ID;
 			break;
 		}
+		case(21):
+		{
+			///POL Ground Attack Side
+			AcelerationValue = 4;
+			var FootBang = instance_create_depth(x , y , depth-1 , objCombatHitboxNotImageFollower);
+			FootBang.sprite_index = sprChPollierGroundAttackSideMask;
+			FootBang.PowerScale = false;
+			FootBang.Ide = ID;
+			FootBang.FollowX = LastScaleXSprite;
+			FootBang.FollowY = 0;
+			FootBang.Power = scrDameDato(Control.MovList , ID , "Power");
+			FootBang.KnockbackScaling = scrDameDato(Control.MovList , ID , "Knockback Scaling");
+			FootBang.image_xscale = ScaleXSprite;
+			FootBang.Creator = self;
+			FootBang.image_speed = 0;
+			FootBang.image_index = 0;
+			TimeAttacking = scrDameDato(Control.MovList , ID , "Time Attacking");
+			ds_list_add(self.MyMovs , FootBang.id);
+			ActualMov = ID;
+			ProxMovs = 0;
+			break;
+		}
 	}
 }

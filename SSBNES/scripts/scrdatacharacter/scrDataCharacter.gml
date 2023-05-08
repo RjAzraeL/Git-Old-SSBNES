@@ -250,7 +250,7 @@ function scrDataCharacter()
 	/*Sfx Skid*/sfxKirbySkid,
 	/*Sfx Jump*/sfxKirbyJump,
 	/*Vertical Limit Porcentage*/25,
-	/*Movs*/ scrCrearLista(12,18,19,20,4,16,17,7,8,9,10,11),
+	/*Movs*/ scrCrearLista(12,18,19,20,21,16,17,7,8,9,10,11),
 	/*Hud index*/8,
 	/*Roster id*/40,
 	/*Palette name*/"POL",
