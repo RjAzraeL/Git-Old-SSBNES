@@ -68,11 +68,11 @@ if (room == rmBn0)
 {
 	if (RecordMinute != -1) 
 	{
-		scrText(scrX() + 96 , scrY() + 150 ,  "" + string_replace_all(string_format(RecordMinute,2,0) , " " , "0") + ":" + string_replace_all(string_format(RecordSecond,2,0) , " " , "0") , fa_middle , fa_left , Control.Font , c_black , c_yellow , 32 , room_width , 1 , 1 , 0 , 1);
+		scrText(scrX() + 64 , scrY() + 216 ,  "" + string_replace_all(string_format(RecordMinute,2,0) , " " , "0") + ":" + string_replace_all(string_format(RecordSecond,2,0) , " " , "0") , fa_middle , fa_left , Control.Font , c_black , c_yellow , 32 , room_width , 1 , 1 , 0 , 1);
 	}
 	else
 	{
-		scrText(scrX() + 96 , scrY() + 150 , Language.Text_b0t3 , fa_middle , fa_left , Control.Font , c_black , c_yellow , 32 , room_width , 1 , 1 , 0 , 1);
+		scrText(scrX() + 64 , scrY() + 216 , Language.Text_b0t3 , fa_middle , fa_left , Control.Font , c_black , c_yellow , 32 , room_width , 1 , 1 , 0 , 1);
 	}
 }
 if (scrIsBonusLevel())
