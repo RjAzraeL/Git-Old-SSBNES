@@ -25,7 +25,7 @@
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"a6c21522-ed34-423d-bf21-e559bf614174","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
-  "origin": 4,
+  "origin": 7,
   "parent": {
     "name": "Combat",
     "path": "folders/Sprites/Characters/Pollier/Combat.yy",
@@ -64,7 +64,7 @@
     "visibleRange": null,
     "volume": 1.0,
     "xorigin": 10,
-    "yorigin": 5,
+    "yorigin": 11,
   },
   "swatchColours": null,
   "swfPrecision": 2.525,

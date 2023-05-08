@@ -170,6 +170,7 @@
     {"id":{"name":"sprCredits","path":"sprites/sprCredits/sprCredits.yy",},},
     {"id":{"name":"scrUseMovs","path":"scripts/scrUseMovs/scrUseMovs.yy",},},
     {"id":{"name":"sprChPollierAerialSide","path":"sprites/sprChPollierAerialSide/sprChPollierAerialSide.yy",},},
+    {"id":{"name":"objPollierBox","path":"objects/objPollierBox/objPollierBox.yy",},},
     {"id":{"name":"objMobilePlattformBn1MarioMini","path":"objects/objMobilePlattformBn1MarioMini/objMobilePlattformBn1MarioMini.yy",},},
     {"id":{"name":"sprHudIcons","path":"sprites/sprHudIcons/sprHudIcons.yy",},},
     {"id":{"name":"sprSolidTransferable","path":"sprites/sprSolidTransferable/sprSolidTransferable.yy",},},

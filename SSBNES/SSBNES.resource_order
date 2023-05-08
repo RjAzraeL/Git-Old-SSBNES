@@ -78,6 +78,7 @@
     {"name":"sprInmuneBar","order":2,"path":"sprites/sprInmuneBar/sprInmuneBar.yy",},
     {"name":"scrUseMovs","order":3,"path":"scripts/scrUseMovs/scrUseMovs.yy",},
     {"name":"sprChPollierAerialSide","order":4,"path":"sprites/sprChPollierAerialSide/sprChPollierAerialSide.yy",},
+    {"name":"objPollierBox","order":12,"path":"objects/objPollierBox/objPollierBox.yy",},
     {"name":"objMobilePlattformBn1MarioMini","order":2,"path":"objects/objMobilePlattformBn1MarioMini/objMobilePlattformBn1MarioMini.yy",},
     {"name":"sprHudIcons","order":1,"path":"sprites/sprHudIcons/sprHudIcons.yy",},
     {"name":"sprSolidTransferable","order":1,"path":"sprites/sprSolidTransferable/sprSolidTransferable.yy",},

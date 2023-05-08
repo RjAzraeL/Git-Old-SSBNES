@@ -95,11 +95,6 @@ function scrUseMovs()
 						scrPrepareMov(2 , false , SpriteSmashGroundDown , 0);
 						break;
 					}
-					case(16): //POL Ground Attack Down
-					{
-						scrPrepareMov(16 , false , SpriteAttackGroundDown , 0);
-						break;
-					}
 				}
 			}
 			else if (AttackButtonPressedActive and (UpButtonActive) and TimeButtonUp != 0)
@@ -185,9 +180,10 @@ function scrUseMovs()
 						CooldownJump = 0;
 						break;
 					}
-					case(19): //POL Ground Smash Down
+					case(16): //POL Ground Attack Down
 					{
-						scrPrepareMov(19 , false , SpriteAttackGroundDown , 0);
+						scrPrepareMov(16 , false , SpriteAttackGroundDown , 0);
+						scrSound(sfxKirbyJump);
 						break;
 					}
 				}

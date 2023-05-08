@@ -54,25 +54,15 @@ if (BattleLevel)
 		{
 			draw_sprite_ext(sprHudIcons , CharacterId[i]+1 , scrX() + 2 + Largo * i + (j*10) , scrY() + Y + 34 , 1 , 1 , 0 , c_white , 1);
 		}
-		
 		shader_reset();
 		#endregion
 		draw_sprite(sprHudBody , 1 , scrX() + 2 + Largo * (i) , scrY() + Y );
+		scrText(scrX() + 14 + Largo * i , scrY() + Y + 38 , scrDameDato(Control.CharacterList , CharacterId[i] , "Name"), fa_center , fa_left , Control.Font , c_black , c_white , 32 , 400 , .75 , .75 , 0 , 1);
 		if (CharacterId[i] == 7)
 		{
 			draw_sprite(sprChPollierGroundAttackDownItems , CharacterPollierMov[i] , scrX() + 32 + Largo * (i) , scrY() + Y - 6 );
 		}
-	}
-}
-if (room == rmBn0)
-{
-	if (RecordMinute != -1) 
-	{
-		scrText(scrX() + 74 , scrY() + 206 ,  string_upper("Record\n" + string_replace_all(string_format(RecordMinute,2,0) , " " , "0") + ":" + string_replace_all(string_format(RecordSecond,2,0) , " " , "0")) , fa_middle , fa_left , Control.Font , c_black , c_yellow , 16 , 48 , 1 , 1 , 0 , 1);
-	}
-	else
-	{
-		scrText(scrX() + 74 , scrY() + 224 , Language.Text_b0t3 , fa_middle , fa_left , Control.Font , c_black , c_yellow , 32 , room_width , 1 , 1 , 0 , 1);
+		//scrText(x + 31 , y + 83 , ButtonChildren.ActualRoster.namIde , fa_middle , fa_center , Control.Font , c_black , c_white , 32 , 256 , .75 , .75 , 0 , 1);
 	}
 }
 if (scrIsBonusLevel())
