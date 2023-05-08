@@ -3,6 +3,8 @@
 #region Record
 RecordSecond = -1;
 RecordMinute = -1;
+
+scrFileAchievementLoad();
 #endregion
 
 instance_create_depth(0 , 0 , 0 , Language);

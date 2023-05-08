@@ -190,6 +190,7 @@ if (scrIsBonusLevel())
 						RecordMinute = BonusTimeMinute;
 						MatchEndText = Language.Text_b0t0;
 						RecordSecond = BonusTimeSecond;
+						scrFileAchievementSave();
 					}
 					else
 					{

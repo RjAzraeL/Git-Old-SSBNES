@@ -19,7 +19,6 @@ function scrFileAchievementLoad()
 	Control.RecordMinute = real( base64_decode( ini_read_string("A" , "TT" , "LTE=") ) );
 	Control.RecordSecond = real( base64_decode( ini_read_string("A" , "TD" , "LTE=") ) );
 	ini_close();
-	return Value;
 }
 
 function scrFileAchievementSave()
