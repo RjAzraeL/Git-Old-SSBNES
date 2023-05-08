@@ -125,18 +125,7 @@ function scrUseMovs()
 					case(20): //POL Ground Smash Up
 					{
 						var ID = MovGroundSmashUp;
-						scrAddMov(ID , 0 , self);
-						Attacking = true;
-						AttackingHold = scrDameDato(Control.MovList , ID , "Is Smash");
-						AttackingHoldIndex = 0;
-						SmashMaxPower = scrDameDato(Control.MovList , ID , "Max Power");
-						SmashGrownPower = .1;
-						SpriteAttacking = SpriteSmashGroundUp;
-						SmashActualPower = scrDameDato(Control.MovList , ID , "Power");
-						SpriteAttackingSpeed = scrDameDato(Control.MovList , ID , "Animation Speed");
-						image_index = 0;
-						RootAttack = scrDameDato(Control.MovList , ID , "Root");
-						CooldownJump = 0;
+						scrPrepareMov(ID , false , SpriteSmashGroundUp , 3);
 						break;
 					}
 				}

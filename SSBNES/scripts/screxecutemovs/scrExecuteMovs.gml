@@ -487,20 +487,20 @@ function scrExecuteMovs(ID)
 		case (20):
 		{
 			///POL Ground Smash Up
+			var LowPower = scrDameDato(Control.MovList , ID , "Power");
 			var LoadPorcentage = scrGetTotalPorcentageFromTwoValues(LowPower , SmashMaxPower , SmashActualPower);
-			if (LoadPorcentage == 1)
+			if (LoadPorcentage >= 0)
 			{
-				var ChickenRocket = instance_create_depth(x + LastScaleXSprite * 18 , y + 4 , depth-1 , objCombatPollierRocket);
+				var ChickenRocket = instance_create_depth(x + LastScaleXSprite * 8 , y - 8 , depth-1 , objCombatPollierRocket);
 				ChickenRocket.Ide = ID;
-				ChickenRocket.FollowX = LastScaleXSprite * 18;
-				ChickenRocket.FollowY = 4;
-				ChickenRocket.VerticalMovement = 0;
+				ChickenRocket.FollowX = LastScaleXSprite * 8;
+				ChickenRocket.FollowY = -8;
 			
-				var LowPower = scrDameDato(Control.MovList , ID , "Power");
+
 				ChickenRocket.Power = scrDameDato(Control.MovList , ID , "Power");
 				ChickenRocket.MinValuePower = 1;
 				ChickenRocket.MaxValuePower = 5;
-				ChickenRocket.HorizontalMovement = ScaleXSprite*scrGetTotalValueFromTwoPorcentages(1 , 5 , LoadPorcentage)*2;
+				ChickenRocket.VerticalMovement = -8;
 				ChickenRocket.Range = 48*scrGetTotalValueFromTwoPorcentages(1 , 5 , LoadPorcentage);
 			
 				ChickenRocket.PowerScale = true;
@@ -509,7 +509,7 @@ function scrExecuteMovs(ID)
 				ChickenRocket.Creator = self;
 				TimeAttacking = scrDameDato(Control.MovList , ID , "Time Attacking");
 				ds_list_add(self.MyMovs , ChickenRocket.id);
-				ProxMovs = 1;
+				ProxMovs = 1; 
 				ActualMov = ID;
 			}
 			break;
