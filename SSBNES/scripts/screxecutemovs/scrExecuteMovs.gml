@@ -394,7 +394,8 @@ function scrExecuteMovs(ID)
 			///POL Ground Attack Down
 			var idlocal = 16;
 			TimeAttacking = scrDameDato(Control.MovList , idlocal , "Time Attacking");
-			instance_create_depth(x , y - sprite_height/2 , depth , objPollierBox);
+			var Box = instance_create_depth(x , y , depth , objPollierBox);
+			Box.alarm[0] = 20;
 			Control.CharacterPollierMov[Position]++;
 			if (Control.CharacterPollierMov[Position] > 3)
 			{
