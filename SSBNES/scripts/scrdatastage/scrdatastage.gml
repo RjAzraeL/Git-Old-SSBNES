@@ -17,6 +17,7 @@ function scrDataStage()
 	/*9*/scrMapStage( scrCrearLista("UNDERGROUND" , "Super Mario Bros." , rmStgUnderworld , "Underground" , 128 , 50 , 305));
 	/*10*/scrMapStage( scrCrearLista("BATTLEFIELD#ZERO" , "Super Smash Bros." , rmStgBattlefieldZero , "Menu 2 Theme" , 136 , 61 , 306));
 	/*11*/scrMapStage( scrCrearLista("THE#TOWER" , "Super Smash Bros." , rmStgTower ,  "Lotery" , 136 , 55 , 300));
+	/*12*/scrMapStage( scrCrearLista("HEAVEN#SANCTUARY" , "Crazy Chickens" , rmStgHeavenSanctuary , "Heaven Sanctuary" , 64 , 50 , 295));
 	
 }
 	

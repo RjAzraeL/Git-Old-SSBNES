@@ -26,7 +26,7 @@
   "origin": 0,
   "parent": {
     "name": "Battlefield (Melee)",
-    "path": "folders/Sprites/Stages/Battlefield (Melee).yy",
+    "path": "folders/Sprites/Stages/Super Smash Bros/Battlefield (Melee).yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

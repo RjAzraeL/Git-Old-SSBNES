@@ -26,7 +26,7 @@
   "origin": 0,
   "parent": {
     "name": "Test Stage",
-    "path": "folders/Sprites/Stages/Test Stage.yy",
+    "path": "folders/Sprites/Stages/Super Smash Bros/Test Stage.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

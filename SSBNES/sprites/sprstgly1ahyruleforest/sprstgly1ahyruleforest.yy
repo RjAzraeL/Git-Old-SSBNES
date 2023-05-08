@@ -26,7 +26,7 @@
   "origin": 0,
   "parent": {
     "name": "Hyrule Forest",
-    "path": "folders/Sprites/Stages/Hyrule Forest.yy",
+    "path": "folders/Sprites/Stages/The Legend of Zelda/Hyrule Forest.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

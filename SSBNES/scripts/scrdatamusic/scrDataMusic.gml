@@ -15,6 +15,7 @@ function scrDataMusic()
 	/*10*/scrMapMusic( scrCrearLista("SMB Ending" , "Nintendo" , "Super Mario Bros." , scrCrearLista(sndOst11SMBEnding) ) );
 	/*11*/scrMapMusic( scrCrearLista("SMB Overworld" , "Nintendo" , "Super Mario Bros." , scrCrearLista(sndOst12SMBOverworld) ) );
 	/*12*/scrMapMusic( scrCrearLista("Palace" , "Nintendo" , "The Legend of Zelda" , scrCrearLista(sndOst13Palace_a , sndOst13Palace_b) ) );
+	/*13*/scrMapMusic( scrCrearLista("Heaven Sanctuary" , "Alouette EXE" , "Crazy Chickens" , scrCrearLista(sndOst14HeavenSanctuary) ) );
 	
 }
 	

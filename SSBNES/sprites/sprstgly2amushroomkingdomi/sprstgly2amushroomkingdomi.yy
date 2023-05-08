@@ -26,7 +26,7 @@
   "origin": 0,
   "parent": {
     "name": "Mushroom Kingdom I",
-    "path": "folders/Sprites/Stages/Mushroom Kingdom I.yy",
+    "path": "folders/Sprites/Stages/Super Mario Bros/Mushroom Kingdom I.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

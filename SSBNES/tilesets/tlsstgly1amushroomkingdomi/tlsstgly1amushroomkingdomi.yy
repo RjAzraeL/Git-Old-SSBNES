@@ -13,7 +13,7 @@
   "out_tilevborder": 2,
   "parent": {
     "name": "Mushroom Kingdom I",
-    "path": "folders/Sprites/Stages/Mushroom Kingdom I.yy",
+    "path": "folders/Sprites/Stages/Super Mario Bros/Mushroom Kingdom I.yy",
   },
   "spriteId": {
     "name": "sprStgLy1aMushroomKingdomI",
