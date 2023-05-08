@@ -153,6 +153,7 @@ function scrLanguageLoadTexto(LocalLanguage)
 		Text_b0t0 = ini_read_string("BONUS" , "b0t0" , "SCC2");
 		Text_b0t1 = ini_read_string("BONUS" , "b0t1" , "SCC3D");
 		Text_b0t2 = ini_read_string("BONUS" , "b0t2" , "SCCREMAKE");
+		Text_b0t3 = ini_read_string("BONUS" , "b0t3" , "ERROR");
 	}
 	#endregion
 	

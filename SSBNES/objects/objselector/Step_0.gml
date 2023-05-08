@@ -42,7 +42,7 @@ if (Control.Wait == 0)
 	}
 	if (Control.JumpButtonPressedActive and place_meeting(x , y , objPlayerSquare))
 	{
-		if (place_meeting(x , y , objPlayerSquare2))
+		if (place_meeting(x , y , objPlayerSquare2) and room != rmBn0)
 		{
 			var Square = instance_place(x , y , objPlayerSquare);
 			if (!place_meeting(x , y , objSelectorCircle) or Square.Ide == 3)
