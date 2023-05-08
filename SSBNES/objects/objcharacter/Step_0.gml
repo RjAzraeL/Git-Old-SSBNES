@@ -631,6 +631,10 @@ Control.CharacterPorcentage[Position] = LifePorcentage;
 if (Damaged > 0)
 {
 	Damaged--;
+	if (VerticalMovement < 0 and Damaged <= 0)
+	{
+		Damaged = 1;
+	}
 }
 #endregion
 

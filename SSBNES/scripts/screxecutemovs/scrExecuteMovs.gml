@@ -536,5 +536,26 @@ function scrExecuteMovs(ID)
 			ProxMovs = 0;
 			break;
 		}
+		case(22):
+		{
+			///POL Aerial Neutral
+			var Parry = instance_create_depth(x , y , depth-1 , objCombatHitboxNotImageFollower);
+			Parry.sprite_index = SpriteAttackAerialNeutral;
+			Parry.PowerScale = false;
+			Parry.Ide = ID;
+			Parry.FollowX = LastScaleXSprite;
+			Parry.FollowY = 0;
+			Parry.Power = scrDameDato(Control.MovList , ID , "Power");
+			Parry.KnockbackScaling = scrDameDato(Control.MovList , ID , "Knockback Scaling");
+			Parry.image_xscale = ScaleXSprite;
+			Parry.Creator = self;
+			Parry.image_speed = 0;
+			Parry.image_index = 0;
+			TimeAttacking = scrDameDato(Control.MovList , ID , "Time Attacking");
+			ds_list_add(self.MyMovs , Parry.id);
+			ActualMov = ID;
+			ProxMovs = 0;
+			break;
+		}
 	}
 }

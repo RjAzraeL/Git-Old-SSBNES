@@ -79,6 +79,13 @@ if (y < room_height and other.Creator != self and (ds_list_find_index(BlowsRecei
 			MovementPostDamage = SavedHorizontalMovement;
 			scrSound(sfxHurt);
 		}
+		if (other.Ide == 11)
+		{
+			Damaged = 9;
+			HorizontalMovement = 0;
+			SavedHorizontalMovement = 0;
+			VerticalMovement = -9;
+		}
 	}
 	else
 	{

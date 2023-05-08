@@ -12,7 +12,7 @@ function scrDataMov()
 	/*08*/scrCreateMov("MAR Aerial Side" , 15 , false , 110 , 0 , false , true , false , 15 , 20 , .25 , false , true , false , false);
 	/*09*/scrCreateMov("MAR Aerial Back" , 10 , false , 110 , 0 , false , true , false , 10 , 20 , .5 , false , true , false , false);
 	/*10*/scrCreateMov("MAR Aerial Down" , 1 , false , 110 , 0 , false , true , false , 4 , 10 , .25 , false , true , true , true);
-	/*11*/scrCreateMov("MAR Aerial Up" , 2 , false , 110 , 0 , false , true , false , 2 , 30 , .2 , true , true , false , false);
+	/*11*/scrCreateMov("MAR Aerial Up" , 2 , false , 110 , 0 , false , true , false , 2 , 30 , .2 , true , true , true , false);
 	
 	/*12*/scrCreateMov("POL Ground Neutral 1" , 7 , true , 110 , 0 , false , false , false , 5 , 20 , .5 , false , false , false , false);
 	/*13*/scrCreateMov("POL Ground Neutral 2" , 14 , true , 110 , 0 , false , true , false , 5 , 20 , .2 , false , false , false , false);
@@ -24,6 +24,7 @@ function scrDataMov()
 	/*19*/scrCreateMov("POL Ground Smash Down" , 8 , true , 110 , 0 , false , true , true , 21 , 30 , .5 , false , false , false , false);
 	/*20*/scrCreateMov("POL Ground Smash Up", 15 , true , 110 , 0 , false , true , true , 20 , 20 , .25 , false , false , false , false);
 	/*21*/scrCreateMov("POL Ground Attack Side" , 5 , true , 110 , 0 , false , true , false , 9 , 40 , .25 , false , false , false , false);
+	/*22*/scrCreateMov("POL Aerial Neutral" , 1 , true , 110 , 0 , false , false , false , 1 , 20 , .25 , false , true , false , false);
 }
 ///@arg list
 function scrMapMov(List)
