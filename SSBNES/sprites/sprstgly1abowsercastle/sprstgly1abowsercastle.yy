@@ -29,7 +29,7 @@
   "origin": 0,
   "parent": {
     "name": "Bowser Castle",
-    "path": "folders/Sprites/Stages/Bowser Castle.yy",
+    "path": "folders/Sprites/Stages/Super Mario Bros/Bowser Castle.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

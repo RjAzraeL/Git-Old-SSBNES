@@ -26,7 +26,7 @@
   "origin": 0,
   "parent": {
     "name": "Battlefield (Ultimate)",
-    "path": "folders/Sprites/Stages/Battlefield (Ultimate).yy",
+    "path": "folders/Sprites/Stages/Super Smash Bros/Battlefield (Ultimate).yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

@@ -26,7 +26,7 @@
   "origin": 0,
   "parent": {
     "name": "Underground",
-    "path": "folders/Sprites/Stages/Underground.yy",
+    "path": "folders/Sprites/Stages/Super Mario Bros/Underground.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

@@ -29,7 +29,7 @@
   "origin": 0,
   "parent": {
     "name": "Final Destination (Melee)",
-    "path": "folders/Sprites/Stages/Final Destination (Melee).yy",
+    "path": "folders/Sprites/Stages/Super Smash Bros/Final Destination (Melee).yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

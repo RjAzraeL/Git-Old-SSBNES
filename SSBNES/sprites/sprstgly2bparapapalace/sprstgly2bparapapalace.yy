@@ -26,7 +26,7 @@
   "origin": 0,
   "parent": {
     "name": "Parapa Palace",
-    "path": "folders/Sprites/Stages/Parapa Palace.yy",
+    "path": "folders/Sprites/Stages/The Legend of Zelda/Parapa Palace.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
