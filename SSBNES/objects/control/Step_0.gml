@@ -227,6 +227,8 @@ if (BattleLevel and MatchWait <= 0 and !scrIsBonusLevel())
 			NoMusic = true;
 			audio_stop_sound(Control.IndexMusic);
 			alarm[4] = 90;
+			objCharacter.Inmune = false;
+			objCharacter.image_alpha = 1;
 			if (!BonusDeath)
 			{
 				scrSound(sndAnnouncerComplete);

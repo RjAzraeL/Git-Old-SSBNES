@@ -17,6 +17,7 @@ BonusDeath = false;
 NoMusic = false;
 MatchWait = 40;
 surface_free(MatchEndSurface);
+MatchEndSurface = -1;
 #endregion
 #region Set
 SetReady = scrFileSetLoad();

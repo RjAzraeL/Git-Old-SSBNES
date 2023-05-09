@@ -98,7 +98,7 @@ if (MatchEnd)
 	}
 	else
 	{
-	    MatchEndSurface = surface_create(room_width , room_height);
+	    MatchEndSurface = surface_create(512 , 448);
 		surface_copy(MatchEndSurface , 0 , 0 , application_surface);
 		instance_destroy(objCharacter);
 	}

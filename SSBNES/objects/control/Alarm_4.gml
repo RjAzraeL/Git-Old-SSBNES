@@ -1,3 +1,10 @@
 #region Go back
-room_goto(rm02Menu);
+if (!BattleLevel)
+{
+	room_goto(rm02Menu);
+}
+else
+{
+	room_goto(rm03Versus);
+}
 #endregion
