@@ -755,7 +755,35 @@ if ((y > room_height + Control.VoidLimitStage) or (x < room_width/2 - Control.Vo
 {
 	Dead = true;
 	scrSound(sfxKO);
-	
+	var X = room_width/2;
+	var Y = room_height;
+	var Angle = 0;
+	if (x < 0)
+	{
+		X = 0;
+		Y = y;
+		Angle = 0;
+	}
+	if (x > room_width)
+	{
+		X = room_width;
+		Y = y;
+		Angle = 180;
+	}
+	if (y < 0)
+	{
+		X = x;
+		Y = 0;
+		Angle = 270;
+	}
+	if (y > room_height)
+	{
+		X = x;
+		Y = room_height;
+		Angle = 90;
+	}
+	var Outside = instance_create_depth( X , Y , depth , objOutside );
+	Outside.image_angle = Angle;
 	if (scrIsBonusLevel())
 	{
 		instance_destroy(objTarget);
