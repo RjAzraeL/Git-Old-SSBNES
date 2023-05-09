@@ -751,7 +751,10 @@ else
 #endregion
 
 #region Outside
-if (y > room_height + 64 and !Dead)
+if (
+(y > room_height + Control.VoidLimitStage) or (x < Control.X1Limit) or (x > Control.X2Limit) or (y < -Control.VoidLimitStage*4)
+and !Dead
+)
 {
 	Dead = true;
 	scrSound(sfxKO);

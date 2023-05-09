@@ -10,6 +10,7 @@ scrFileAchievementLoad();
 instance_create_depth(0 , 0 , 0 , Language);
 scrLanguageLoadTexto(0);
 depth = -10;
+VoidValue = 64;
 BonusDeath = false;
 Delta = delta_time / 1000000;
 SetReady = true;
