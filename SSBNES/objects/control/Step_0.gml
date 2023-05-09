@@ -214,4 +214,19 @@ if (scrIsBonusLevel())
 		#endregion
 	}
 }
+if (BattleLevel)
+{
+	if (instance_number(objCharacter) <= 1)
+	{
+		if (!MatchEnd)
+		{
+			NoMusic = true;
+			audio_stop_sound(Control.IndexMusic);
+			alarm[4] = 90;
+			scrSound(sndAnnouncerComplete);
+			MatchEndText = Language.Text_b0t1;
+		}
+		MatchEnd = true;
+	}
+}
 #endregion
