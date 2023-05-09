@@ -50,7 +50,7 @@ if (BattleLevel)
 		
 		draw_sprite(sprHudBody2 , scrDameDato(Control.CharacterList , CharacterId[i] , "Hud Index") , scrX() + 2 + Largo * (i) , scrY() + Y );
 		
-		for (var j = 0 ; j < CharacterLife[i] ; j++)
+		for (var j = 0 ; j <= CharacterLife[i] ; j++)
 		{
 			draw_sprite_ext(sprHudIcons , CharacterId[i]+1 , scrX() + 2 + Largo * i + (j*10) , scrY() + Y + 34 , 1 , 1 , 0 , c_white , 1);
 		}

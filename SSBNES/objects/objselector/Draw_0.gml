@@ -1,5 +1,11 @@
 #region Draw
-
+if (room == rm03Versus)
+{
+	for (var j = 0 ; j <= Control.DefaultLifeValue ; j++)
+	{
+		draw_sprite_ext(sprHudIcons , 0 , 123 + (j * 10) , 18 , 1 , 1 , 0 , c_white , 1);
+	}
+}
 if (room == rmBn0)
 {
 	if (Control.RecordMinute != -1) 
