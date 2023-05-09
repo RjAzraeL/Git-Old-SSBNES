@@ -16,19 +16,36 @@ if (scrExiste(Target))
 }
 else
 {
-	if (!RightButtonActive)
+	if (x < room_width/2 - 64)
 	{
 		RightButtonPressedActive = true;
 		LeftButtonPressedActive = false;
 		RightButtonActive = true;
 		LeftButtonActive = false;
 	}
-	else
+	if (x > room_width/2 + 64)
 	{
 		LeftButtonActive = true;
 		RightButtonActive = false;
 		RightButtonPressedActive = false;
-		LeftButtonPressedActive = true;
+		LeftButtonPressedActive = false;
+	}
+	else
+	{
+		if (!LeftButtonActive)
+		{
+			RightButtonPressedActive = false;
+			LeftButtonPressedActive = false;
+			RightButtonActive = true;
+			LeftButtonActive = false;
+		}
+		else
+		{
+			RightButtonPressedActive = false;
+			LeftButtonPressedActive = false;
+			RightButtonActive = false;
+			LeftButtonActive = true;
+		}
 	}
 }
 #endregion
