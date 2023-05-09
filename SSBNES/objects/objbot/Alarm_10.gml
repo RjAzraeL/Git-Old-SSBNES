@@ -1,14 +1,34 @@
 #region Recover
 alarm[10] = 5;
-if (FallingVoid and VerticalMovement > 0)
+if (scrExiste(Target))
 {
-	UpButtonActive = true;
-	Recover = true;
-	alarm[8] = 5;
-}
+	if (FallingVoid and VerticalMovement > 0)
+	{
+		UpButtonActive = true;
+		Recover = true;
+		alarm[8] = 5;
+	}
 
-if (!FallingVoid)
+	if (!FallingVoid)
+	{
+		Recover = false;
+	}
+}
+else
 {
-	Recover = false;
+	if (!RightButtonActive)
+	{
+		RightButtonPressedActive = true;
+		LeftButtonPressedActive = false;
+		RightButtonActive = true;
+		LeftButtonActive = false;
+	}
+	else
+	{
+		LeftButtonActive = true;
+		RightButtonActive = false;
+		RightButtonPressedActive = false;
+		LeftButtonPressedActive = true;
+	}
 }
 #endregion
