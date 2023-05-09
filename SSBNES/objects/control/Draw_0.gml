@@ -100,7 +100,7 @@ if (MatchEnd)
 	{
 	    MatchEndSurface = surface_create(room_width , room_height);
 		surface_copy(MatchEndSurface , 0 , 0 , application_surface);
-		instance_destroy(objPlayer);
+		instance_destroy(objCharacter);
 	}
 	scrText(scrX() + 128 , scrY() + 112 , string_upper(MatchEndText) , fa_middle , fa_center , Control.Font , c_black , c_white , 16 , 56 , 3 , 3 , 0 , 1);
 }

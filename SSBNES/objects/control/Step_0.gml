@@ -232,7 +232,6 @@ if (BattleLevel and MatchWait <= 0 and !scrIsBonusLevel())
 				scrSound(sndAnnouncerComplete);
 				MatchEndText = Language.Text_b0t1;
 			}
-			instance_destroy(objCharacter);
 		}
 		MatchEnd = true;
 	}
