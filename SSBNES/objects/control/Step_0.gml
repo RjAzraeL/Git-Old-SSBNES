@@ -20,7 +20,8 @@ UpButtonReleasedActive = keyboard_check_released(UpButton);
 UpButtonPressedActive = keyboard_check_pressed(UpButton);
 StartButtonActive = keyboard_check(StartButton);
 StartButtonPressedActive = keyboard_check_pressed(StartButton);
-
+SelectButtonActive = keyboard_check(SelectButton);
+SelectButtonPressedActive = keyboard_check_pressed(SelectButton);
 
 _2LeftButtonActive = keyboard_check(_2LeftButton);
 _2LeftButtonPressedActive = keyboard_check_pressed(_2LeftButton);
@@ -42,6 +43,8 @@ _2UpButtonReleasedActive = keyboard_check_released(_2UpButton);
 _2UpButtonPressedActive = keyboard_check_pressed(_2UpButton);
 _2StartButtonActive = keyboard_check(_2StartButton);
 _2StartButtonPressedActive = keyboard_check_pressed(_2StartButton);
+_2SelectButtonActive = keyboard_check(_2SelectButton);
+_2SelectButtonPressedActive = keyboard_check_pressed(_2SelectButton);
 #endregion
 #region Generic
 if (Wait > 0)
@@ -60,6 +63,10 @@ if (keyboard_check_pressed(ShowColissionMovsButton))
 }
 #endregion
 #region Camera
+if ((BattleLevel or scrIsBonusLevel()) and SelectButtonPressedActive)
+{
+	ShowHUD = !ShowHUD;
+}
 if (BattleLevel)
 {
 	#region Normal camera

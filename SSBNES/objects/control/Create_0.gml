@@ -69,6 +69,7 @@ CharacterColor1[1] = 0;
 CharacterColor2[2] = 0;
 CharacterColor3[3] = 0;
 DefaultLifeValue = 5;
+ShowHUD = true;
 CharacterLife[0] = DefaultLifeValue;
 CharacterLife[1] = DefaultLifeValue;
 CharacterLife[2] = DefaultLifeValue;

@@ -153,3 +153,6 @@ b0t0 = "¡Nuevo record!"
 b0t1 = "Completado"
 b0t2 = "¡Fallaste!"
 b0t3 = "Sin record"
+
+[VERSUS]
+v0r0 = "¡Listo para pelear!"

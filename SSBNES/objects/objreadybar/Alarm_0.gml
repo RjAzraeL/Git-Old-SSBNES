@@ -20,7 +20,7 @@ if (room == rm03Versus)
 		Ready = true;
 	}
 }
-if (rmBn0)
+if (room == rmBn0)
 {
 	Ready = true;
 	var Instance = instance_find(objPlayerSquare , 0);

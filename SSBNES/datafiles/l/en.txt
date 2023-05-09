@@ -153,3 +153,6 @@ b0t0 = "A new record!"
 b0t1 = "Complete"
 b0t2 = "Failure"
 b0t3 = "No record"
+
+[VERSUS]
+v0r0 = "Ready to fight!"

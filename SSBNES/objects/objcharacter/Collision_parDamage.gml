@@ -88,7 +88,7 @@ if (y < room_height and other.Creator != self and (ds_list_find_index(BlowsRecei
 			Damaged = 9;
 			HorizontalMovement = 0;
 			SavedHorizontalMovement = 0;
-			VerticalMovement = -9;
+			VerticalMovement = -7.8;
 		}
 	}
 	else
