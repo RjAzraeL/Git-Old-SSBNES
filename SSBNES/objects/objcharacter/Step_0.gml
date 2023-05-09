@@ -443,31 +443,32 @@ if (Damaged != 0)
 {
 	if (place_meeting(x + HorizontalMovement , y , parSolid))
 	{
-		HorizontalMovement *= -.75;
-		VerticalMovement *= .75;
+		HorizontalMovement *= -1;
 	}
 	if (place_meeting(x , y + VerticalMovement , parSolid))
 	{
-		VerticalMovement *= -.75;
-		HorizontalMovement *= -.75;
+		VerticalMovement *= -1;
 	}
 	if (!place_meeting(x , y , objBlockTransferable) and (VerticalMovement >= 0))
 	{
 		if (place_meeting(x , y + VerticalMovement , objBlockTransferable))
 		{
-			VerticalMovement *= -.75;
-			HorizontalMovement *= -.75;
+			VerticalMovement *= -1;
 		}
 	}
 	if (place_meeting(x , y + VerticalMovement*1.2 , objBlockSlope45))
 	{
-		VerticalMovement *= -.75;
-		HorizontalMovement *= -.75;
+		var Slope = instance_place(x , y + VerticalMovement*1.2 , objBlockSlope45);
+		VerticalMovement *= -1;
+		if (Slope.image_xscale > 0 and HorizontalMovement < 0)
+		or (Slope.image_xscale < 0 and HorizontalMovement > 0)
+		{
+			HorizontalMovement *= -1;
+		}
 	}
 	if (place_meeting(x + HorizontalMovement*1.2 , y , objBlockSlope45))
 	{
-		HorizontalMovement *= -.75;
-		VerticalMovement *= -.75;
+		HorizontalMovement *= -1;
 	}
 }
 else
@@ -636,7 +637,7 @@ Control.CharacterPorcentage[Position] = LifePorcentage;
 if (Damaged > 0)
 {
 	Damaged--;
-	if (VerticalMovement < 0 and Damaged <= 0)
+	if (VerticalMovement < 0 and Damaged > 0)
 	{
 		Damaged = 1;
 	}

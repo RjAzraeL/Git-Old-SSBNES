@@ -97,6 +97,9 @@ if (visible)
 		}
 	}
 }
-//draw_set_font(fntNormal);
-//draw_text(x , y + 32 , JumpAvailable);
+if (object_index == objBot)
+{
+	//draw_set_font(fntNormal);
+	//draw_text(x , y + 32 , FallingVoid);
+}
 #endregion

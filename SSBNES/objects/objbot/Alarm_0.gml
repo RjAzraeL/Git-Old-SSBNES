@@ -144,14 +144,17 @@ if (!FallingVoid)
 }
 else
 {
-	DownButtonActive = false;
-	DownButtonPressedActive = false;
-	RightButtonActive = false;
-	LeftButtonActive = false;
-	RightButtonPressedActive = false;
-	LeftButtonPressedActive = false;
-	AttackButtonPressedActive = false;
-	AttackButtonReleasedActive = false;
+	if (!Recover)
+	{
+		DownButtonActive = false;
+		DownButtonPressedActive = false;
+		RightButtonActive = false;
+		LeftButtonActive = false;
+		RightButtonPressedActive = false;
+		LeftButtonPressedActive = false;
+		AttackButtonPressedActive = false;
+		AttackButtonReleasedActive = false;
+	}
 	alarm[0] = 5;
 }
 #endregion

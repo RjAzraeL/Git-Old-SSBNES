@@ -59,6 +59,8 @@ if (y < room_height and other.Creator != self and (ds_list_find_index(BlowsRecei
 			SavedHorizontalMovement = lengthdir_x( 3 + (LastDamage/16) , Dir) + round(other.Creator.HorizontalMovement/2);
 			VerticalMovement = lengthdir_y( 3 + (LastDamage/4)  , Dir);
 			MovementPostDamage = SavedHorizontalMovement;
+			_direction = Dir;
+			_speed = LastDamage;
 			if (LifePorcentage >= 80)
 			{
 				scrSound(sfxStrongHurt);
