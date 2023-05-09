@@ -170,7 +170,7 @@ else
 #endregion
 #endregion
 #region Bonus
-if (scrIsBonusLevel())
+if (scrIsBonusLevel() and MatchWait <= 0)
 {
 	if (instance_number(objTarget) == 0)
 	{
@@ -218,7 +218,7 @@ if (MatchWait > 0)
 {
 	MatchWait--;
 }
-if (BattleLevel and MatchWait <= 0)
+if (BattleLevel and MatchWait <= 0 and !scrIsBonusLevel())
 {
 	if (instance_number(objCharacter) <= 1)
 	{

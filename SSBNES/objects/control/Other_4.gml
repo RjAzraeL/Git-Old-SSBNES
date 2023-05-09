@@ -15,7 +15,7 @@ MatchEnd = false;
 MatchEndSnapshot = false;
 BonusDeath = false;
 NoMusic = false;
-MatchWait = 15;
+MatchWait = 40;
 surface_free(MatchEndSurface);
 #endregion
 #region Set
@@ -29,6 +29,7 @@ if (!SetReady and room == rm00Set)
 NormalCamera = true;
 if (scrIsBonusLevel())
 {
+	VoidXLimit = 1000;
 	alarm[3] = 60;
 	NormalCamera = false;
 	camera_set_view_border(view_camera[0] , 128 , 112);
@@ -59,6 +60,7 @@ if (BattleLevel)
 	VoidLimitStage = scrDameDato(Control.StageList , StageId , "Void limit");
 	X1Limit = scrDameDato(Control.StageList , StageId , "X1 limit");
 	X2Limit = scrDameDato(Control.StageList , StageId , "X2 limit");
+	VoidXLimit = 300;
 	scrSetMusic(scrDameDato(Control.StageList , StageId , "Music"));
 	scrResetStats();
 }
