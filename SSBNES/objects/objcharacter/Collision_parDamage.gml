@@ -103,7 +103,7 @@ if (y < room_height and other.Creator != self and (ds_list_find_index(BlowsRecei
 			VerticalMovement = lengthdir_y( 1  , 90);
 		}
 	}
-	
+	TimeInShock = round(Damaged * 1.25);
 	if (other.Destroyable)
 	{
 		instance_destroy(other);

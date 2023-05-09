@@ -8,6 +8,7 @@ TimeHolding = 0;
 ProxMovs = 0;
 CooldownDamage = 0;
 FallingVoid = false;
+TimeInShock = 0;
 _direction = 90;
 _speed = 0;
 Stun = false;

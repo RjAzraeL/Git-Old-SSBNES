@@ -4,7 +4,7 @@ if (scrExiste(Master))
 	var Y = Master.y + sprite_get_height(Master.sprite_index)/2;
 	x = Master.x;
 	y = Y;
-	image_yscale = room_height - 8 - Y;
+	image_yscale = room_height + 64 - Y;
 }
 else
 {

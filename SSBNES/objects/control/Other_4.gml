@@ -48,6 +48,12 @@ if (room == rm02Menu)
 else if (room == rm03Versus)
 {
 	scrSetMusic("Menu Theme");
+	#region Reset stats
+	CharacterLife[0] = DefaultLifeValue;
+	CharacterLife[1] = DefaultLifeValue;
+	CharacterLife[2] = DefaultLifeValue;
+	CharacterLife[3] = DefaultLifeValue;
+	#endregion
 }
 if (scrIsBonusLevel())
 {

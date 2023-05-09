@@ -1,65 +1,72 @@
 #region Change mentality
-if (place_meeting(x , y + 4 , parCollision))
+if (!Recover)
 {
-	alarm[7] = 180;
-	switch(Style)
+	if (place_meeting(x , y + 4 , parCollision))
 	{
-		case("Brute"):
+		alarm[7] = 180;
+		switch(Style)
 		{
-			ChaseStyle = "Go max";
-			if (scrProbable(.2))
-			{
-				ChaseStyle = "Go min";
-			}
-			if (scrExiste(Target))
-			{
-				if (Target.LifePorcentage < 80)
-				{
-					Mentality = "Close";
-				}
-				else
-				{
-					Mentality = "Range";
-				}
-			}
-			else
-			{
-				alarm[7] = 30;
-			}
-			break;
-		}
-		case("Finisher"):
-		{
-			ChaseStyle = "Go min";
-			if (scrProbable(.1))
+			case("Brute"):
 			{
 				ChaseStyle = "Go max";
-			}
-			if (scrExiste(Target))
-			{
-				if (Target.LifePorcentage < 80)
+				if (scrProbable(.2))
 				{
-					Mentality = "Range";
+					ChaseStyle = "Go min";
+				}
+				if (scrExiste(Target))
+				{
+					if (Target.LifePorcentage < 80)
+					{
+						Mentality = "Close";
+					}
+					else
+					{
+						Mentality = "Range";
+					}
 				}
 				else
 				{
-					Mentality = "Close";
+					alarm[7] = 30;
 				}
+				break;
 			}
-			else
+			case("Finisher"):
 			{
-				alarm[7] = 30;
+				ChaseStyle = "Go min";
+				if (scrProbable(.1))
+				{
+					ChaseStyle = "Go max";
+				}
+				if (scrExiste(Target))
+				{
+					if (Target.LifePorcentage < 80)
+					{
+						Mentality = "Range";
+					}
+					else
+					{
+						Mentality = "Close";
+					}
+				}
+				else
+				{
+					alarm[7] = 30;
+				}
+				break;
 			}
-			break;
+			default:
+			{
+				Mentality = choose("Close" , "Range");
+			}
 		}
-		default:
-		{
-			Mentality = choose("Close" , "Range");
-		}
+	}
+	else
+	{
+		alarm[7] = 60;
 	}
 }
 else
 {
-	alarm[7] = 60;
+	alarm[7] = 30;
 }
 #endregion

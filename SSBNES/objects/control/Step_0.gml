@@ -218,7 +218,7 @@ if (MatchWait > 0)
 {
 	MatchWait--;
 }
-if (BattleLevel and MatchWait <= 0 and !scrIsBonusLevel())
+if (BattleLevel and MatchWait <= 0 and !scrIsBonusLevel() and !BattleLevelIsFreeze)
 {
 	if (instance_number(objCharacter) <= 1)
 	{
@@ -238,4 +238,55 @@ if (BattleLevel and MatchWait <= 0 and !scrIsBonusLevel())
 		MatchEnd = true;
 	}
 }
+#endregion
+#region Queue
+#region Create character
+if (ds_list_size(QueueRevive) > 0)
+{
+	BattleLevelIsFreeze = true;
+	var Pack = ds_list_find_value(QueueRevive , 0);
+	CharacterRevivePosition = Pack[?"Position"];
+	CharacterReviveDefault = Pack[?"Default"];
+	CharacterReviveIndex = Pack[?"Index"];
+	if (Control.CharacterLife[CharacterRevivePosition] > 0)
+	{
+		var X = room_width/2;
+		var Spawn = scrGiveMeSpawn(CharacterRevivePosition , false);
+		var Y = -sprite_height;
+		if (scrExiste(Spawn))
+		{
+			X = Spawn.x;
+			if (!CharacterReviveDefault)
+			{
+				Y = Spawn.y;
+			}
+		}
+		var Character = instance_create_depth(X , Y , 0 , CharacterReviveIndex);
+		Character.Position = CharacterRevivePosition;
+		Character.ReviveDefault = CharacterReviveDefault;
+		Character.Start = false;
+		Character.VerticalMovement = 0;
+		Character.HorizontalMovement = 0;
+		if (scrExiste(Spawn))
+		{
+			Character.YPlatform = Spawn.y;
+		}
+		if (!CharacterReviveDefault)
+		{
+			with (Character)
+			{
+				scrOutPlatform();
+			}
+			if (scrExiste(objSpawn))
+			{
+				Character.x = objSpawn.x;
+				Character.y = objSpawn.y;
+			}
+		}
+		Control.CharacterLife[CharacterRevivePosition]--;
+	}
+	ds_list_delete(QueueRevive , 0);
+	alarm[5] = 10;
+}
+#endregion
 #endregion

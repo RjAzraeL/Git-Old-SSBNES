@@ -50,6 +50,11 @@ if (!FallingVoid)
 					JumpButtonActive = true;
 					alarm[3] = 5;
 				}
+				if (y < Target.y)
+				{
+					JumpButtonActive = true;
+					alarm[3] = 5;
+				}
 			}
 			else if (distance_to_object(Target) > 40)
 			{
@@ -88,7 +93,7 @@ if (!FallingVoid)
 			{
 				if (abs(y - Target.y) < 8 and !FallingVoid)
 				{
-					if (scrProbable(.5))
+					if (scrProbable(.5) or VerticalMovement > 0)
 					{
 						DownButtonActive = true;
 						DownButtonPressedActive = true;
@@ -109,12 +114,12 @@ if (!FallingVoid)
 				DownButtonReleasedActive = false;
 			}
 			
-			if (Target.x > x - 15)
+			if (Target.x > x - 4)
 			{
 				RightButtonActive = true;
 				LeftButtonActive = false;
 			}
-			else if (Target.x < x + 15)
+			else if (Target.x < x + 4)
 			{
 				RightButtonActive = false;
 				LeftButtonActive = true;

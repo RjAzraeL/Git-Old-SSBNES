@@ -89,7 +89,7 @@ if (Damaged == 0)
 }
 else
 {
-	VarSpeed = SpeedRun / 2;
+	VarSpeed = SpeedRun*.20;
 }
 #endregion
 
@@ -220,12 +220,12 @@ else
 #endregion
 
 #region Border
-if ((TimeAttacking > 0 or AttackingHold or Attacking) and Damaged == 0 and (!place_meeting(x + sign(HorizontalMovement)*8 , y + 4 , objBlock) and !place_meeting(x + sign(HorizontalMovement)*8 , y + 4 , objBlockSlope45)) and place_meeting(x , y + 1 , objBlock) and !place_meeting(x , y , objBlock))
+if ((TimeAttacking > 0 or AttackingHold or Attacking) and TimeInShock == 0 and (!place_meeting(x + sign(HorizontalMovement)*8 , y + 4 , objBlock) and !place_meeting(x + sign(HorizontalMovement)*8 , y + 4 , objBlockSlope45)) and place_meeting(x , y + 1 , objBlock) and !place_meeting(x , y , objBlock))
 {
 	HorizontalMovement = 0;
 	AcelerationValue = 0;
 }
-if ((TimeAttacking > 0 or AttackingHold or Attacking) and Damaged == 0 and !place_meeting(x + sign(HorizontalMovement)*8 , y + 4 , objBlockTransferable) and place_meeting(x , y + 1 , objBlockTransferable) and !place_meeting(x , y , objBlockTransferable))
+if ((TimeAttacking > 0 or AttackingHold or Attacking) and TimeInShock == 0 and !place_meeting(x + sign(HorizontalMovement)*8 , y + 4 , objBlockTransferable) and place_meeting(x , y + 1 , objBlockTransferable) and !place_meeting(x , y , objBlockTransferable))
 {
 	HorizontalMovement = 0;
 	AcelerationValue = 0;
@@ -634,6 +634,10 @@ y += VerticalMovement;
 
 #region Damage
 Control.CharacterPorcentage[Position] = LifePorcentage;
+if (TimeInShock > 0)
+{
+	TimeInShock--;
+}
 if (Damaged > 0)
 {
 	Damaged--;
@@ -751,7 +755,7 @@ else
 #endregion
 
 #region Outside
-if ((y > room_height + Control.VoidLimitStage) or (x < room_width/2 - Control.VoidXLimit) or (x > room_width/2 + Control.VoidXLimit) or (y < -Control.VoidLimitStage*2.5) and !Dead)
+if ((y > room_height + 64) or (x < room_width/2 - Control.VoidXLimit) or (x > room_width/2 + Control.VoidXLimit) or (y < -Control.VoidLimitStage*2.5) and !Dead)
 {
 	Dead = true;
 	scrSound(sfxKO);
@@ -782,9 +786,11 @@ if ((y > room_height + Control.VoidLimitStage) or (x < room_width/2 - Control.Vo
 		Y = scrY() + 224;
 		Angle = 90;
 	}
+	Control.BattleLevelIsFreeze = true;
+	instance_destroy();
 	var Outside = instance_create_depth( X , Y , depth , objOutside );
 	Outside.image_angle = Angle;
-	Outside.image_speed = .25;
+	Outside.image_speed = .5;
 	if (scrIsBonusLevel())
 	{
 		instance_destroy(objTarget);
@@ -792,43 +798,12 @@ if ((y > room_height + Control.VoidLimitStage) or (x < room_width/2 - Control.Vo
 	}
 	else
 	{
-		if (Control.CharacterLife[Position] > 0)
-		{
-			var X = room_width/2;
-			var Spawn = scrGiveMeSpawn(Position , false);
-			var Y = -sprite_height;
-			if (scrExiste(Spawn))
-			{
-				X = Spawn.x;
-				if (!ReviveDefault)
-				{
-					Y = Spawn.y;
-				}
-			}
-			var Character = instance_create_depth(X , Y , 0 , object_index);
-			Character.Position = Position;
-			Character.ReviveDefault = ReviveDefault;
-			Character.Start = false;
-			if (scrExiste(Spawn))
-			{
-				Character.YPlatform = Spawn.y;
-			}
-			if (!ReviveDefault)
-			{
-				with (Character)
-				{
-					scrOutPlatform();
-				}
-				if (scrExiste(objSpawn))
-				{
-					Character.x = objSpawn.x;
-					Character.y = objSpawn.y;
-				}
-			}
-			Control.CharacterLife[Position]--;
-		}
+		var Pack = ds_map_create();
+		Pack[?"Position"] = Position;
+		Pack[?"Default"] = ReviveDefault;
+		Pack[?"Index"] = object_index;
+		ds_list_add(Control.QueueRevive , Pack);
 	}
-	instance_destroy();
 }
 #endregion
 

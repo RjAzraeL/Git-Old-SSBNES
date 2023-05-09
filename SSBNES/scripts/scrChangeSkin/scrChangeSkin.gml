@@ -80,12 +80,12 @@ function scrCheckSkin(Value , Position , Slot)
 					if (Square.IdeSkin == Value)
 					{
 						Value++;
-						i = 0;
 						var RealTope = scrDameDato(Control.CharacterList , Position , "Palette Code")[?"t"];
 						if (Value > RealTope)
 						{
 							Value = 0;
 						}
+						i = -1;
 					}
 				}
 			}

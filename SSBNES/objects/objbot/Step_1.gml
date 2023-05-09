@@ -46,15 +46,26 @@ if (scrExiste(VoidChecker))
 
 if (place_meeting(x , y + 4 , parCollision) and !place_meeting(x+HorizontalMovement , y+4 , parCollision))
 {
-	if (LeftButtonActive)
+	var Go = true;
+	if (scrExiste(Target))
 	{
-		LeftButtonActive = false;
-		RightButtonActive = true;
+		if (distance_to_object(Target) < 20)
+		{
+			Go = false;
+		}
 	}
-	else
+	if (Go)
 	{
-		LeftButtonActive = true;
-		RightButtonActive = false;
+		if (LeftButtonActive)
+		{
+			LeftButtonActive = false;
+			RightButtonActive = true;
+		}
+		else
+		{
+			LeftButtonActive = true;
+			RightButtonActive = false;
+		}
 	}
 }
 #endregion

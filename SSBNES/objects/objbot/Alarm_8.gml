@@ -1,6 +1,11 @@
 #region Do recover
-AttackButtonActive = true;
-AttackButtonPressedActive = true;
+if (!Recovery)
+{
+	UpButtonPressedActive = false;
+	DownButtonPressedActive = true;
+}
+AttackButtonActive = false;
+AttackButtonPressedActive = false;
 Recover = false;
 alarm[9] = 5;
 if (x > room_width/2)

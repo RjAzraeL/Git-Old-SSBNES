@@ -97,9 +97,12 @@ if (visible)
 		}
 	}
 }
-if (object_index == objBot)
+if (object_index == objBot and Control.ShowColissionButton)
 {
-	//draw_set_font(fntNormal);
-	//draw_text(x , y + 32 , FallingVoid);
+	if (FallingVoid)
+	{
+		draw_set_font(Control.Font);
+		draw_text(x , y - sprite_height/2 - 8 , "¡");
+	}
 }
 #endregion

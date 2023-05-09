@@ -1,18 +1,21 @@
 #region Detectar vacio
 alarm[5] = 3;
-if (!place_meeting(x , y + 16 , parCollision) and  y > Control.RoomVoidY)
+if (!Recover)
 {
-	if (x > room_width/2)
+	if (!place_meeting(x , y + 16 , parCollision) and  y > Control.RoomVoidY)
 	{
-		LeftButtonActive = true;
-		RightButtonActive = false;
+		if (x > room_width/2)
+		{
+			LeftButtonActive = true;
+			RightButtonActive = false;
+		}
+		else
+		{
+			LeftButtonActive = false;
+			RightButtonActive = true;
+		}
+		JumpButtonActive = true;
+		alarm[3] = 5;
 	}
-	else
-	{
-		LeftButtonActive = false;
-		RightButtonActive = true;
-	}
-	JumpButtonActive = true;
-	alarm[3] = 5;
 }
 #endregion
