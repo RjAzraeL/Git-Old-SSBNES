@@ -16,14 +16,14 @@ if (scrExiste(Target))
 }
 else
 {
-	if (x < room_width/2 - 64)
+	if (x < room_width/2 - 16)
 	{
 		RightButtonPressedActive = true;
 		LeftButtonPressedActive = false;
 		RightButtonActive = true;
 		LeftButtonActive = false;
 	}
-	if (x > room_width/2 + 64)
+	if (x > room_width/2 + 16)
 	{
 		LeftButtonActive = true;
 		RightButtonActive = false;
@@ -34,7 +34,7 @@ else
 	{
 		if (!LeftButtonActive)
 		{
-			RightButtonPressedActive = false;
+			RightButtonPressedActive = true;
 			LeftButtonPressedActive = false;
 			RightButtonActive = true;
 			LeftButtonActive = false;
@@ -42,7 +42,7 @@ else
 		else
 		{
 			RightButtonPressedActive = false;
-			LeftButtonPressedActive = false;
+			LeftButtonPressedActive = true;
 			RightButtonActive = false;
 			LeftButtonActive = true;
 		}
