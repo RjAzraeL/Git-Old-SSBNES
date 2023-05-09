@@ -751,7 +751,7 @@ else
 #endregion
 
 #region Outside
-if ((y > room_height + Control.VoidLimitStage) or (x < room_width/2 - Control.VoidXLimit) or (x > room_width/2 + Control.VoidXLimit) or (y < -Control.VoidLimitStage*4) and !Dead)
+if ((y > room_height + Control.VoidLimitStage) or (x < room_width/2 - Control.VoidXLimit) or (x > room_width/2 + Control.VoidXLimit) or (y < -Control.VoidLimitStage*2.5) and !Dead)
 {
 	Dead = true;
 	scrSound(sfxKO);
@@ -760,30 +760,31 @@ if ((y > room_height + Control.VoidLimitStage) or (x < room_width/2 - Control.Vo
 	var Angle = 0;
 	if (x < 0)
 	{
-		X = 0;
+		X = scrX();
 		Y = y;
 		Angle = 0;
 	}
 	if (x > room_width)
 	{
-		X = room_width;
+		X = scrX() + 256;
 		Y = y;
 		Angle = 180;
 	}
 	if (y < 0)
 	{
 		X = x;
-		Y = 0;
+		Y = scrY() + 0;
 		Angle = 270;
 	}
 	if (y > room_height)
 	{
 		X = x;
-		Y = room_height;
+		Y = scrY() + 224;
 		Angle = 90;
 	}
 	var Outside = instance_create_depth( X , Y , depth , objOutside );
 	Outside.image_angle = Angle;
+	Outside.image_speed = .25;
 	if (scrIsBonusLevel())
 	{
 		instance_destroy(objTarget);
