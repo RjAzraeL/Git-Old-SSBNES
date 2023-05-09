@@ -2,7 +2,7 @@
   "resourceType": "GMRoom",
   "resourceVersion": "1.0",
   "name": "rmStgBowserCastle",
-  "creationCodeFile": "",
+  "creationCodeFile": "rooms/rmStgBowserCastle/RoomCreationCode.gml",
   "inheritCode": false,
   "inheritCreationOrder": false,
   "inheritLayers": false,

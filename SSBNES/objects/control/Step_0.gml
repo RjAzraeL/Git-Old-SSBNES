@@ -115,7 +115,7 @@ if (BattleLevel)
 	}
 	#endregion
 	#region Music
-	if (MusicOn and !MusicLoop)
+	if (MusicOn and !MusicLoop and !NoMusic)
 	{
 		if (!audio_is_playing(IndexMusic))
 		{
@@ -214,7 +214,11 @@ if (scrIsBonusLevel())
 		#endregion
 	}
 }
-if (BattleLevel)
+if (MatchWait > 0)
+{
+	MatchWait--;
+}
+if (BattleLevel and MatchWait <= 0)
 {
 	if (instance_number(objCharacter) <= 1)
 	{
@@ -223,8 +227,12 @@ if (BattleLevel)
 			NoMusic = true;
 			audio_stop_sound(Control.IndexMusic);
 			alarm[4] = 90;
-			scrSound(sndAnnouncerComplete);
-			MatchEndText = Language.Text_b0t1;
+			if (!BonusDeath)
+			{
+				scrSound(sndAnnouncerComplete);
+				MatchEndText = Language.Text_b0t1;
+			}
+			instance_destroy(objCharacter);
 		}
 		MatchEnd = true;
 	}

@@ -17,6 +17,7 @@ SetReady = true;
 //VolumeMusic = 0.5;
 //VolumeSound = 0.65;
 MatchEndText = "";
+MatchWait = 5;
 MatchEnd = false;
 MatchEndSurface = -1;
 MatchEndSnapshot = false;

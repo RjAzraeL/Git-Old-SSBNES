@@ -1,3 +1,12 @@
+#region Check battle stage
+for (var i = 0 ; i < ds_list_size(Control.StageList) ; i++ )
+{
+	if (room == scrDameDato(Control.StageList , i , "Room"))
+	{
+		BattleLevel = true;
+	}
+}
+#endregion
 #region Reset time
 BonusTimeSecond = 0;
 BonusTimeMinute = 0;
@@ -6,6 +15,7 @@ MatchEnd = false;
 MatchEndSnapshot = false;
 BonusDeath = false;
 NoMusic = false;
+MatchWait = 15;
 surface_free(MatchEndSurface);
 #endregion
 #region Set
