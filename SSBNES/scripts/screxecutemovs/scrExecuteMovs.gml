@@ -595,8 +595,8 @@ function scrExecuteMovs(ID)
 			ThunderEgg.sprite_index = sprite_index;
 			ThunderEgg.DoDamage = false;
 			ThunderEgg.PowerScale = false;
-			var _IdeMov = 23;
-			ThunderEgg.Ide = 23;
+			var _IdeMov = 24;
+			ThunderEgg.Ide = 24;
 			ThunderEgg.FollowX = LastScaleXSprite;
 			ThunderEgg.FollowY = 0;
 			ThunderEgg.Power = scrDameDato(Control.MovList , _IdeMov , "Power");
@@ -611,11 +611,16 @@ function scrExecuteMovs(ID)
 			ProxMovs = 0;
 			
 			var ThunderEgg2 = instance_create_depth(x , y , depth-1 , objCombatThunderlEgg);
-			ThunderEgg2.HorizontalMovement = -ScaleXSprite*4;
+			ThunderEgg2.HorizontalMovement = -ScaleXSprite*3;
 			ThunderEgg2.VerticalMovement = -1;
+			ThunderEgg2.Ide = 24;
+			ThunderEgg2.DoDamage = false;
+			ThunderEgg2.Power = scrDameDato(Control.MovList , 24 , "Power");
+			ThunderEgg2.KnockbackScaling = scrDameDato(Control.MovList , 24 , "Knockback Scaling");
+			ThunderEgg2.image_xscale = ScaleXSprite;
 			ThunderEgg2.Creator = self;
-			ThunderEgg2.Power = scrDameDato(Control.MovList , _IdeMov , "Power");
-			ThunderEgg2.KnockbackScaling = scrDameDato(Control.MovList , _IdeMov , "Knockback Scaling");
+			TimeAttacking = scrDameDato(Control.MovList , 24 , "Time Attacking");
+			ds_list_add(self.MyMovs , ThunderEgg2.id);
 			break;
 		}
 	}
