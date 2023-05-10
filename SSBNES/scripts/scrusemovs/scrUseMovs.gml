@@ -234,6 +234,7 @@ function scrUseMovs()
 						SpriteAttackingSpeed = scrDameDato(Control.MovList , Ide , "Animation Speed");
 						image_index = 0;
 						RootAttack = scrDameDato(Control.MovList , Ide , "Root");
+						TimeAttacking = scrDameDato(Control.MovList , Ide , "Time Attacking");
 						CooldownJump = 0;
 						break;
 					}

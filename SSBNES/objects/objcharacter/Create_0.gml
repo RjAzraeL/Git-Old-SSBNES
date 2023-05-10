@@ -10,6 +10,7 @@ CooldownDamage = 0;
 FallingVoid = false;
 TimeInShock = 0;
 _direction = 90;
+ParryPollier = 0;
 _speed = 0;
 Stun = false;
 Root = false;

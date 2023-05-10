@@ -9,4 +9,5 @@ RefreshPower = false;
 Ide = -1;
 CanGrab = false;
 MultipleHits = false;
+DoDamage = true;
 #endregion

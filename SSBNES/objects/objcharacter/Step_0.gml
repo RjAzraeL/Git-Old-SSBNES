@@ -633,6 +633,12 @@ y += VerticalMovement;
 #endregion
 
 #region Damage
+#region Pollier parry
+if (ParryPollier > 0)
+{
+	ParryPollier--;
+}
+#endregion
 Control.CharacterPorcentage[Position] = LifePorcentage;
 if (TimeInShock > 0)
 {

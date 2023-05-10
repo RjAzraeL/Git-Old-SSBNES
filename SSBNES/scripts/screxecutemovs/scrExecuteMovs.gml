@@ -540,6 +540,7 @@ function scrExecuteMovs(ID)
 		{
 			///POL Aerial Neutral
 			var Parry = instance_create_depth(x , y , depth-1 , objCombatHitboxNotImageFollower);
+			Parry.DoDamage = false;
 			Parry.sprite_index = SpriteAttackAerialNeutral;
 			Parry.PowerScale = false;
 			Parry.Ide = ID;
@@ -552,6 +553,7 @@ function scrExecuteMovs(ID)
 			Parry.image_speed = 0;
 			Parry.image_index = 0;
 			TimeAttacking = scrDameDato(Control.MovList , ID , "Time Attacking");
+			ParryPollier = round(TimeAttacking*1.25);
 			ds_list_add(self.MyMovs , Parry.id);
 			ActualMov = ID;
 			ProxMovs = 0;
