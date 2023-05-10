@@ -11,6 +11,7 @@ IdeCharacter = 0;
 instance_create_depth(x,y,depth+1,objPlayerSquare2);
 IdeSkin = 0;
 IdeSkinTope = 0;
+Random = false;
 
 /*
 ColorBase[0] = real(scrDameDato(Control.CharacterList , Control.CharacterId[Position] , "Palette Code")[?"c0_0"]);

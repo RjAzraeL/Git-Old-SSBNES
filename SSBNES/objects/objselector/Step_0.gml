@@ -129,7 +129,21 @@ if (Control.Wait == 0)
 					{
 						if (Square.IdeCharacter == 0)
 						{
-							Control.CharacterId[Square.Slot] = irandom_range(1 , ds_list_size(Control.CharacterList)-1);
+							Control.CharacterId[Square.Slot] = choose(1,7);//irandom_range(1 , ds_list_size(Control.CharacterList)-1);
+							Square.IdeCharacter = Control.CharacterId[Square.Slot];
+							Square.Random = true;
+						}
+					}
+				}
+				for (var i = 0 ; i < 4 ; i++)
+				{
+					var Square = instance_find(objPlayerSquare , i);
+					if (scrExiste(Square))
+					{
+						if (Square.Random)
+						{
+							Square.Random = false;
+							Square.IdeSkin = scrChangeSkin(-1 , Square.IdeSkinTope , Square.IdeCharacter , Square , Square.Slot);
 						}
 					}
 				}
