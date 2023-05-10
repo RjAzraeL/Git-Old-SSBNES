@@ -562,12 +562,10 @@ function scrExecuteMovs(ID)
 		case(23):
 		{
 			///POL Aerial Side
-			AcelerationValue = 2;
-			scrFreeJump(1);
+			AcelerationValue = 5;
 			///MAR Aerial Side
 			var Highpunch = instance_create_depth(x , y , depth-1 , objCombatHitboxImageFollower);
-			Highpunch.sprite_index = sprite_index;
-			Highpunch.DoDamage = false;
+			Highpunch.sprite_index = sprChPollierAerialSideMask;
 			Highpunch.PowerScale = false;
 			var _IdeMov = 23;
 			Highpunch.Ide = 23;
@@ -621,6 +619,65 @@ function scrExecuteMovs(ID)
 			ThunderEgg2.Creator = self;
 			TimeAttacking = scrDameDato(Control.MovList , 24 , "Time Attacking");
 			ds_list_add(self.MyMovs , ThunderEgg2.id);
+			break;
+		}
+		case(25):
+		{
+			///POL Aerial Back
+			scrFreeJump(2);
+			///MAR Aerial Side
+			var Throw = instance_create_depth(x , y , depth-1 , objCombatHitboxImageFollower);
+			Throw.sprite_index = sprite_index;
+			Throw.DoDamage = false;
+			Throw.PowerScale = false;
+			var _IdeMov = 25;
+			Throw.Ide = 25;
+			Throw.FollowX = LastScaleXSprite;
+			Throw.FollowY = 0;
+			Throw.Power = scrDameDato(Control.MovList , _IdeMov , "Power");
+			Throw.KnockbackScaling = scrDameDato(Control.MovList , _IdeMov , "Knockback Scaling");
+			Throw.image_xscale = ScaleXSprite;
+			Throw.Creator = self;
+			Throw.image_speed = 0;
+			Throw.image_index = 0;
+			TimeAttacking = scrDameDato(Control.MovList , _IdeMov , "Time Attacking");
+			ds_list_add(self.MyMovs , Throw.id);
+			ActualMov = ID;
+			ProxMovs = 0;
+			
+			var TNT = instance_create_depth(x , y , depth-1 , objCombatTNTBox);
+			TNT.HorizontalMovement = HorizontalMovement;
+			TNT.VerticalMovement = 1;
+			TNT.Ide = 25;
+			TNT.DoDamage = false;
+			TNT.Power = scrDameDato(Control.MovList , 25, "Power");
+			TNT.KnockbackScaling = scrDameDato(Control.MovList , 25 , "Knockback Scaling");
+			TNT.image_xscale = ScaleXSprite;
+			TNT.Creator = self;
+			ds_list_add(self.MyMovs , TNT.id);
+			break;
+		}
+		case(26):
+		{
+			///MAR Aerial Up
+			scrFreeJump(7.8);
+			var Up = instance_create_depth(x , y , depth-1 , objCombatHitboxImageFollower);
+			Up.sprite_index = sprChPollierAerialUp;
+			Up.PowerScale = false;
+			var _IdeMov = 11;
+			Up.Ide = _IdeMov;
+			Up.FollowX = LastScaleXSprite;
+			Up.FollowY = 0;
+			Up.Power = scrDameDato(Control.MovList , _IdeMov , "Power");
+			Up.KnockbackScaling = scrDameDato(Control.MovList , _IdeMov , "Knockback Scaling");
+			Up.image_xscale = ScaleXSprite;
+			Up.Creator = self;
+			Up.image_speed = 0;
+			Up.image_index = 0;
+			TimeAttacking = scrDameDato(Control.MovList , _IdeMov , "Time Attacking");
+			ds_list_add(self.MyMovs , Up.id);
+			ActualMov = ID;
+			ProxMovs = 0;
 			break;
 		}
 	}

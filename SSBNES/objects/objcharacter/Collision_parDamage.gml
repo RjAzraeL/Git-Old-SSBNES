@@ -4,6 +4,7 @@ if (y < room_height and other.Creator != self and (ds_list_find_index(BlowsRecei
 	if (ParryPollier > 0)
 	{
 		///POL Ground Attack Up
+		scrCleanMoveQueue(self);
 		var Ide = 17;
 		scrAddMov(Ide , 1 , self);
 		Attacking = true;

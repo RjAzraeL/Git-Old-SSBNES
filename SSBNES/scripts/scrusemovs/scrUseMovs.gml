@@ -391,6 +391,24 @@ function scrUseMovs()
 						AerialAvailable = false;
 						break;
 					}
+					case(25): //POL Aerial Down
+					{
+						var _IdeMov = 25;
+						scrAddMov(_IdeMov , 0 , self);
+						Attacking = true;
+						AttackingHold = scrDameDato(Control.MovList , _IdeMov , "Is Smash");
+						AttackingHoldIndex = 1;
+						SmashMaxPower = scrDameDato(Control.MovList , _IdeMov , "Max Power");
+						SmashGrownPower = .1;
+						SpriteAttacking = SpriteAttackAerialBack;
+						SmashActualPower = scrDameDato(Control.MovList , _IdeMov , "Power");
+						SpriteAttackingSpeed = scrDameDato(Control.MovList , _IdeMov , "Animation Speed");
+						image_index = 0;
+						RootAttack = scrDameDato(Control.MovList , _IdeMov , "Root");
+						CooldownJump = 0;
+						AerialAvailable = false;
+						break;
+					}
 				}
 			}
 			else if (Recovery and scrInAir() and AttackButtonPressedActive and UpButtonActive)
@@ -402,6 +420,26 @@ function scrUseMovs()
 						JumpAvailable = 0;
 						Recovery = false;
 						var _IdeMov = 11;
+						scrAddMov(_IdeMov , 0 , self);
+						Attacking = true;
+						AttackingHold = scrDameDato(Control.MovList , _IdeMov , "Is Smash");
+						AttackingHoldIndex = 1;
+						SmashMaxPower = scrDameDato(Control.MovList , _IdeMov , "Max Power");
+						SmashGrownPower = .1;
+						SpriteAttacking = SpriteAttackAerialUp;
+						SmashActualPower = scrDameDato(Control.MovList , _IdeMov , "Power");
+						SpriteAttackingSpeed = scrDameDato(Control.MovList , _IdeMov , "Animation Speed");
+						image_index = 0;
+						RootAttack = scrDameDato(Control.MovList , _IdeMov , "Root");
+						CooldownJump = 0;
+						AerialAvailable = false;
+						break;
+					}
+					case(26): //POL Aerial Up
+					{
+						JumpAvailable = 0;
+						Recovery = false;
+						var _IdeMov = 26;
 						scrAddMov(_IdeMov , 0 , self);
 						Attacking = true;
 						AttackingHold = scrDameDato(Control.MovList , _IdeMov , "Is Smash");
