@@ -561,10 +561,13 @@ function scrExecuteMovs(ID)
 		}
 		case(23):
 		{
-			AcelerationValue = 4;
+			///POL Aerial Side
+			AcelerationValue = 2;
+			scrFreeJump(1);
 			///MAR Aerial Side
 			var Highpunch = instance_create_depth(x , y , depth-1 , objCombatHitboxImageFollower);
-			Highpunch.sprite_index = sprChPollierAerialSideMask;
+			Highpunch.sprite_index = sprite_index;
+			Highpunch.DoDamage = false;
 			Highpunch.PowerScale = false;
 			var _IdeMov = 23;
 			Highpunch.Ide = 23;
@@ -580,6 +583,39 @@ function scrExecuteMovs(ID)
 			ds_list_add(self.MyMovs , Highpunch.id);
 			ActualMov = ID;
 			ProxMovs = 0;
+			break;
+		}
+		case(24):
+		{
+			///POL Aerial Back
+			AcelerationValue = 2;
+			scrFreeJump(1);
+			///MAR Aerial Side
+			var ThunderEgg = instance_create_depth(x , y , depth-1 , objCombatHitboxImageFollower);
+			ThunderEgg.sprite_index = sprite_index;
+			ThunderEgg.DoDamage = false;
+			ThunderEgg.PowerScale = false;
+			var _IdeMov = 23;
+			ThunderEgg.Ide = 23;
+			ThunderEgg.FollowX = LastScaleXSprite;
+			ThunderEgg.FollowY = 0;
+			ThunderEgg.Power = scrDameDato(Control.MovList , _IdeMov , "Power");
+			ThunderEgg.KnockbackScaling = scrDameDato(Control.MovList , _IdeMov , "Knockback Scaling");
+			ThunderEgg.image_xscale = ScaleXSprite;
+			ThunderEgg.Creator = self;
+			ThunderEgg.image_speed = 0;
+			ThunderEgg.image_index = 0;
+			TimeAttacking = scrDameDato(Control.MovList , _IdeMov , "Time Attacking");
+			ds_list_add(self.MyMovs , ThunderEgg.id);
+			ActualMov = ID;
+			ProxMovs = 0;
+			
+			var ThunderEgg2 = instance_create_depth(x , y , depth-1 , objCombatThunderlEgg);
+			ThunderEgg2.HorizontalMovement = -ScaleXSprite*4;
+			ThunderEgg2.VerticalMovement = -1;
+			ThunderEgg2.Creator = self;
+			ThunderEgg2.Power = scrDameDato(Control.MovList , _IdeMov , "Power");
+			ThunderEgg2.KnockbackScaling = scrDameDato(Control.MovList , _IdeMov , "Knockback Scaling");
 			break;
 		}
 	}

@@ -166,6 +166,7 @@
     {"name":"sndOst10TLOZOverworld_b","order":16,"path":"sounds/sndOst10TLOZOverworld_b/sndOst10TLOZOverworld_b.yy",},
     {"name":"sprSetSection","order":6,"path":"sprites/sprSetSection/sprSetSection.yy",},
     {"name":"sprChPollierGroundAttackUpMask","order":2,"path":"sprites/sprChPollierGroundAttackUpMask/sprChPollierGroundAttackUpMask.yy",},
+    {"name":"objCombatThunderlEgg","order":14,"path":"objects/objCombatThunderlEgg/objCombatThunderlEgg.yy",},
     {"name":"sprChMarioJumpTrance","order":5,"path":"sprites/sprChMarioJumpTrance/sprChMarioJumpTrance.yy",},
     {"name":"sprStgLy2bMushroomKingdomI","order":5,"path":"sprites/sprStgLy2bMushroomKingdomI/sprStgLy2bMushroomKingdomI.yy",},
     {"name":"scrPrepareMov","order":10,"path":"scripts/scrPrepareMov/scrPrepareMov.yy",},

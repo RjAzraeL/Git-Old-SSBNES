@@ -259,6 +259,7 @@
     {"id":{"name":"sndOst10TLOZOverworld_b","path":"sounds/sndOst10TLOZOverworld_b/sndOst10TLOZOverworld_b.yy",},},
     {"id":{"name":"sprSetSection","path":"sprites/sprSetSection/sprSetSection.yy",},},
     {"id":{"name":"sprChPollierGroundAttackUpMask","path":"sprites/sprChPollierGroundAttackUpMask/sprChPollierGroundAttackUpMask.yy",},},
+    {"id":{"name":"objCombatThunderlEgg","path":"objects/objCombatThunderlEgg/objCombatThunderlEgg.yy",},},
     {"id":{"name":"sprChMarioJumpTrance","path":"sprites/sprChMarioJumpTrance/sprChMarioJumpTrance.yy",},},
     {"id":{"name":"sprStgLy2bMushroomKingdomI","path":"sprites/sprStgLy2bMushroomKingdomI/sprStgLy2bMushroomKingdomI.yy",},},
     {"id":{"name":"scrGetMusicByName","path":"scripts/scrGetMusicByName/scrGetMusicByName.yy",},},
