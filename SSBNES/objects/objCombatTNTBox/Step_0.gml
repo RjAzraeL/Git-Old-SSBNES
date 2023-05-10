@@ -47,6 +47,12 @@ if (place_meeting(x , y , objCharacter))
 	}
 }
 #endregion
+#region Destroy
+if (scrIsOutside(self))
+{
+	instance_destroy();
+}
+#endregion
 #region Position
 x += HorizontalMovement;
 y += VerticalMovement;

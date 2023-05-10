@@ -50,7 +50,12 @@ if (place_meeting(x , y , objCharacter))
 x += HorizontalMovement;
 y += VerticalMovement;
 #endregion
-
+#region Destroy
+if (scrIsOutside(self))
+{
+	instance_destroy();
+}
+#endregion
 #region Sprite
 if (VerticalMovement != 0)
 {
