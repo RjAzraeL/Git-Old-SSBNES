@@ -307,6 +307,24 @@ function scrUseMovs()
 						AerialAvailable = false;
 						break;
 					}
+					case(23): //POL Aerial Side
+					{
+						scrAddMov(23 , 0 , self);
+						Ide = 23;
+						Attacking = true;
+						AttackingHold = scrDameDato(Control.MovList , Ide , "Is Smash");
+						AttackingHoldIndex = 1;
+						SmashMaxPower = scrDameDato(Control.MovList , Ide , "Max Power");
+						SmashGrownPower = .1;
+						SpriteAttacking = SpriteAttackAerialSide;
+						SmashActualPower = scrDameDato(Control.MovList , Ide , "Power");
+						SpriteAttackingSpeed = scrDameDato(Control.MovList , Ide , "Animation Speed");
+						image_index = 0;
+						RootAttack = scrDameDato(Control.MovList , Ide , "Root");
+						CooldownJump = 0;
+						AerialAvailable = false;
+						break;
+					}
 				}
 			}
 			else if (AerialAvailable and AttackButtonPressedActive and (scrBackButtonActive(self)))

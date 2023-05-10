@@ -559,5 +559,28 @@ function scrExecuteMovs(ID)
 			ProxMovs = 0;
 			break;
 		}
+		case(23):
+		{
+			AcelerationValue = 4;
+			///MAR Aerial Side
+			var Highpunch = instance_create_depth(x , y , depth-1 , objCombatHitboxImageFollower);
+			Highpunch.sprite_index = sprChPollierAerialSideMask;
+			Highpunch.PowerScale = false;
+			var _IdeMov = 23;
+			Highpunch.Ide = 23;
+			Highpunch.FollowX = LastScaleXSprite;
+			Highpunch.FollowY = 0;
+			Highpunch.Power = scrDameDato(Control.MovList , _IdeMov , "Power");
+			Highpunch.KnockbackScaling = scrDameDato(Control.MovList , _IdeMov , "Knockback Scaling");
+			Highpunch.image_xscale = ScaleXSprite;
+			Highpunch.Creator = self;
+			Highpunch.image_speed = 0;
+			Highpunch.image_index = 0;
+			TimeAttacking = scrDameDato(Control.MovList , _IdeMov , "Time Attacking");
+			ds_list_add(self.MyMovs , Highpunch.id);
+			ActualMov = ID;
+			ProxMovs = 0;
+			break;
+		}
 	}
 }

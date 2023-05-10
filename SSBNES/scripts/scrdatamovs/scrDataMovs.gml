@@ -25,6 +25,7 @@ function scrDataMov()
 	/*20*/scrCreateMov("POL Ground Smash Up", 15 , true , 110 , 0 , false , true , true , 20 , 20 , .25 , false , false , false , false);
 	/*21*/scrCreateMov("POL Ground Attack Side" , 5 , true , 110 , 0 , false , true , false , 9 , 40 , .25 , false , false , false , false);
 	/*22*/scrCreateMov("POL Aerial Neutral" , 1 , true , 110 , 0 , false , false , false , 1 , 30 , .25 , false , true , false , false);
+	/*23*/scrCreateMov("POL Aerial Side" , 5 , false , 110 , 0 , false , true , false , 5 , 20 , .25 , false , true , false , false);
 }
 ///@arg list
 function scrMapMov(List)
