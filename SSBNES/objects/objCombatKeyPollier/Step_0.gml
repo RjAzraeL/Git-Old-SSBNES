@@ -11,7 +11,7 @@ if (scrExiste(Creator))
 		}
 	}
 	x = Creator.x + lengthdir_x(Lenght , Dir);
-	y = Creator.y + lengthdir_y(Lenght , Dir);
+	y = Creator.y + 4 + lengthdir_y(Lenght , Dir);
 }
 #endregion
 #region Destroy

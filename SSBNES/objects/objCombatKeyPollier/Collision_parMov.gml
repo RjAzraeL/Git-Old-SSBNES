@@ -1,6 +1,9 @@
 #region Choque
 if (other.Destroyable)
 {
-	instance_destroy(other);
+	if (other.Creator.id != Creator.id)
+	{
+		instance_destroy(other);
+	}
 }
 #endregion

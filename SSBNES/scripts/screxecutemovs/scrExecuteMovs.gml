@@ -517,7 +517,7 @@ function scrExecuteMovs(ID)
 		case(21):
 		{
 			///POL Ground Attack Side
-			AcelerationValue = 4;
+			AcelerationValue = 3;
 			var FootBang = instance_create_depth(x , y , depth-1 , objCombatHitboxNotImageFollower);
 			FootBang.sprite_index = sprChPollierGroundAttackSideMask;
 			FootBang.PowerScale = false;
@@ -660,8 +660,10 @@ function scrExecuteMovs(ID)
 		case(26):
 		{
 			///MAR Aerial Up
-			scrFreeJump(7.8);
+			scrFreeJump(6.5);
 			var Up = instance_create_depth(x , y , depth-1 , objCombatHitboxImageFollower);
+			var SpringBoard = instance_create_depth(x , y , depth-1 , objCombatPollierSpringboard);
+			SpringBoard.Creator = self;
 			Up.sprite_index = sprChPollierAerialUp;
 			Up.PowerScale = false;
 			var _IdeMov = 11;

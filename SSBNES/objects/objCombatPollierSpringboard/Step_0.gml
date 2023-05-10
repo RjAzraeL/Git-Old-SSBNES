@@ -1,5 +1,5 @@
 #region Gravity
-VerticalMovement += Control.Gravity/8;
+VerticalMovement += Control.Gravity/4;
 #endregion
 
 if (HorizontalMovement > Friction)
@@ -43,11 +43,26 @@ if (place_meeting(x , y , objCharacter))
 	var Ch = instance_place(x,y,objCharacter)
 	if (Creator.id != Ch.id)
 	{
-		instance_destroy();
 	}
 }
 #endregion
 #region Position
 x += HorizontalMovement;
 y += VerticalMovement;
+#endregion
+
+#region Sprite
+if (VerticalMovement != 0)
+{
+	image_speed = .25;
+	if (image_index >= 3.9)
+	{
+		image_index = 0;
+	}
+}
+else
+{
+	image_index = 0;
+	image_speed = 0;
+}
 #endregion

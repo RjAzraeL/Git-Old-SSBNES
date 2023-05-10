@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Combat",
-    "path": "folders/Scripts/Combat.yy",
+    "name": "Mov",
+    "path": "folders/Scripts/Combat/Mov.yy",
   },
 }

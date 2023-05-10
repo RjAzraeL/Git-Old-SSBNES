@@ -2,13 +2,18 @@
 VerticalMovement += Control.Gravity/2;
 #endregion
 #region Collision
-if (place_meeting(x + HorizontalMovement , y , parCollision) and place_meeting(x + HorizontalMovement , y - 1 , parCollision) and place_meeting(x + HorizontalMovement , y + 1 , parCollision))
+if (place_meeting(x + HorizontalMovement , y , parSolid))
 {
 	instance_destroy();
 }
-if (place_meeting(x , y + VerticalMovement , parCollision))
+if (place_meeting(x , y + VerticalMovement , parSolid))
 {
-	instance_destroy();
+	instance_destroy()
+}
+if (place_meeting(x , y + VerticalMovement , objBlockTransferable))
+if (!place_meeting(x , y , objBlockTransferable))
+{
+	instance_destroy()
 }
 #endregion
 #region Destroy
