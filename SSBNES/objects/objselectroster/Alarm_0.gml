@@ -14,5 +14,7 @@ if (Ide != 36)
 else
 {
 	sprIde = sprRandom;
+	namIde = Language.Text_v0r1;
+	ChrIde = 0;
 }
 #endregion

@@ -23,6 +23,15 @@ if (Active)
 
 if (Control.Wait == 0)
 {
+	if (Control.JumpButtonPressedActive and place_meeting(x , y , objOptionBar))
+	{
+		scrSound(sfxButtonOk);
+		Control.DefaultLifeValue++;
+		if (Control.DefaultLifeValue > 5)
+		{
+			Control.DefaultLifeValue = 0;
+		}
+	}
 	if (Control.JumpButtonPressedActive and place_meeting(x , y , objSelectorCircle))
 	{
 		Circle = instance_place(x , y , objSelectorCircle);
@@ -113,6 +122,17 @@ if (Control.Wait == 0)
 			var Ready = instance_place(x , y , objReadyBar);
 			if (Ready.visible)
 			{
+				for (var i = 0 ; i < 4 ; i++)
+				{
+					var Square = instance_find(objPlayerSquare , i);
+					if (scrExiste(Square))
+					{
+						if (Square.IdeCharacter == 0)
+						{
+							Control.CharacterId[Square.Slot] = irandom_range(1 , ds_list_size(Control.CharacterList)-1);
+						}
+					}
+				}
 				if (room == rm03Versus)
 				{
 					room_goto(rm04Stage);

@@ -257,6 +257,38 @@ function scrDataCharacter()
 	/*Palette code*/0
 	)
 	);
+	
+	/*36*/
+	scrMapCharacter( 
+	scrCrearLista(
+	/*Name*/"Random" ,
+	/*Description*/"Super Smash Brothers" ,
+	/*Lore*/"" ,
+	/*Class*/"" ,
+	/*Sprite*/"sprChSandbag" ,
+	/*Jumps*/4,
+	/*Aceleration*/.4,
+	/*SpeedWalk*/.4,
+	/*SpeedRun*/4,
+	/*SpeedFall*/.4,
+	/*JumpValue*/4.4,
+	/*Gravity*/.4,
+	/*GravityFall*/.4,
+	/*LimitFall*/4,
+	/*Weight*/.4,
+	/*Friction*/.040,
+	/*Mask Duck*/sprChSandbagMaskDuck,
+	/*Mask Normal*/sprChSandbagMask,
+	/*Sfx Skid*/sfxKirbySkid,
+	/*Sfx Jump*/sfxKirbyJump,
+	/*Vertical Limit Porcentage*/44,
+	/*Movs*/ scrCrearLista(4,4,4,4,4,4,4,4,4,4,4,4),
+	/*Hud index*/0,
+	/*Roster id*/36,
+	/*Palette name*/"???",
+	/*Palette code*/0
+	)	
+	);
 }
 
 ///@arg list
