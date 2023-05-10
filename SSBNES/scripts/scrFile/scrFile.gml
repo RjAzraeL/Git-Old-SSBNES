@@ -1,3 +1,17 @@
+function scrFileLanguageLoad()
+{
+	ini_open("kvs.sav");
+	Control.LanguageActual = ini_read_real("S" , "L" , 0);
+	ini_close();
+}
+
+function scrFileLanguageSave()
+{
+	ini_open("kvs.sav");
+	ini_write_real("S" , "L" , Control.LanguageActual);
+	ini_close();
+}
+
 function scrFileSetLoad()
 {
 	ini_open("kvs.sav");

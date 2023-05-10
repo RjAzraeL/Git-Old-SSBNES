@@ -21,6 +21,7 @@ if (Active)
 			Active = false;
 			ControlActual = 8;
 			LayerHorizontal = 0;
+			scrFileLanguageSave();
 			alarm[0] = 5;
 		}
 		if (Control.UpButtonPressedActive)
@@ -44,7 +45,7 @@ if (Active)
 		if (Change)
 		{
 			scrLanguageLoadTexto( LanguageActual );
-		
+			Control.LanguageActual = LanguageActual;
 			MainText = Language.Text_setn0o0;
 			TextLanguageExample = Language.Text_setn0o1;
 			L[0] = Language.Text_setl0o0;

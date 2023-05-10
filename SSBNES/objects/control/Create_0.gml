@@ -8,7 +8,9 @@ scrFileAchievementLoad();
 #endregion
 
 instance_create_depth(0 , 0 , 0 , Language);
-scrLanguageLoadTexto(0);
+LanguageActual = 0;
+scrFileLanguageLoad();
+scrLanguageLoadTexto(LanguageActual);
 depth = -10;
 VoidValue = 64;
 BattleLevelIsFreeze = false;
