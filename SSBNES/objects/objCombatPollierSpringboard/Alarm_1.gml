@@ -1,5 +1,5 @@
 #region Bips
-alarm[0] = 15 - Bips;
+alarm[0] = 20 - (Bips*2);
 visible = !visible;
 Bips--;
 if (Bips <= 0)

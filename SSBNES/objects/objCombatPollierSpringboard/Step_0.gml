@@ -1,3 +1,26 @@
+#region Jump
+if (Jumps > 0)
+{
+	if  (place_meeting(x,y-4,objCharacter))
+	and (!place_meeting(x,y,objCharacter))
+	and (VerticalMovement == 0)
+	{
+		var Ch = instance_place(x , y-4 , objCharacter);
+		with (Ch)
+		{
+			scrFreeJump(10);
+		}
+		scrSound(sfxPollierJump);
+		IndexJump = 4;
+		alarm[2] = 5;
+		Jumps--;
+	}
+}
+else
+{
+	instance_destroy();
+}
+#endregion
 #region Gravity
 VerticalMovement += Control.Gravity/4;
 #endregion
@@ -67,7 +90,7 @@ if (VerticalMovement != 0)
 }
 else
 {
-	image_index = 0;
+	image_index = IndexJump;
 	image_speed = 0;
 }
 #endregion
