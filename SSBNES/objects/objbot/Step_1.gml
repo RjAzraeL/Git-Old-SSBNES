@@ -21,22 +21,55 @@ switch (Mode)
 		if (scrExiste(objPlayer))
 		{
 			Target = objPlayer;
-			if (abs(x - Target.x) < 64)
+			if (abs(x - Target.x) < 128)
 			{
 				if (x < Target.x)
 				{
 					scrKeyActive("Left" , true);
+					scrKeyHold("Left" , 2);
 					scrKeyActive("Right" , false);
 				}
 				else
 				{
 					scrKeyActive("Left" , false);
 					scrKeyActive("Right" , true);
+					scrKeyHold("Right" , 2);
 				}
-				if (abs(x - Target.x) < 32 and (abs(y - Target.y) < 16))
+				if (abs(x - Target.x) < 32 and y == Target.y)
 				{
 					scrKeyActive("Jump" , true);
 				}
+				if (abs(x - Target.x) < 64 and y > Target.y)
+				{
+					if (Target.x < room_width/2)
+					{
+						scrKeyActive("Left" , false);
+						scrKeyActive("Right" , true);
+					}
+					else if (Target.x > room_width/2)
+					{
+						scrKeyActive("Left" , true);
+						scrKeyActive("Right" , false);
+					}
+				}
+				else if (abs(x - Target.x) < 64 and y < Target.y)
+				{
+					if (Target.x < room_width/2)
+					{
+						scrKeyActive("Left" , false);
+						scrKeyActive("Right" , true);
+					}
+					else if (Target.x > room_width/2)
+					{
+						scrKeyActive("Left" , true);
+						scrKeyActive("Right" , false);
+					}
+				}
+			}
+			else
+			{
+				scrKeyActive("Left" , false);
+				scrKeyActive("Right" , false);
 			}
 			if (x < Control.X1Limit or x > Control.X2Limit)
 			{
