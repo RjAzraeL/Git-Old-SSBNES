@@ -1,27 +1,4 @@
-#region Controllers
-/*
-RightButtonActive = Control.RightButtonActive;
-LeftButtonActive = Control.LeftButtonActive;
-DownButtonPressedActive = Control.DownButtonPressedActive;
-LeftButtonPressedActive = Control.LeftButtonPressedActive;
-RightButtonPressedActive = Control.RightButtonPressedActive;
-JumpButtonActive = Control.JumpButtonActive;
-JumpButtonReleaseActive = Control.JumpButtonReleaseActive;
-AttackButtonPressedActive = Control.AttackButtonPressedActive;
-DownButtonReleasedActive = Control.DownButtonReleasedActive;
-DownButtonActive = Control.DownButtonActive;
-AttackButtonActive = Control.AttackButtonActive;
-*/
-#region Revenge
-if (RevengeTime > 0)
-{
-	RevengeTime--;
-}
-else
-{
-	RevengeEntity = noone;
-}
-#endregion
+#region Falling void
 #region Check void
 FallingVoid = false;
 if (scrExiste(VoidChecker))
@@ -30,42 +7,48 @@ if (scrExiste(VoidChecker))
 	{
 		FallingVoid = true;
 		Recover = true;
-		LeftButtonActive = false;
-		RightButtonActive = false;
-		LeftButtonPressedActive = false;
-		RightButtonPressedActive = false;
-		DownButtonActive = false;
-		DownButtonPressedActive = false;
-		JumpButtonActive = true;
-		UpButtonPressedActive = true;
-		UpButtonActive = true;
-		alarm[8] = 5;
 	}
 }
 #endregion
+#endregion
 
-if (place_meeting(x , y + 4 , parCollision) and !place_meeting(x+HorizontalMovement , y+4 , parCollision))
+#region CPU
+
+switch (Mode)
 {
-	var Go = true;
-	if (scrExiste(Target))
+	case ("Survive"):
 	{
-		if (distance_to_object(Target) < 20)
+		var IsInDanger = false;
+		if (x < Control.X1Limit)
 		{
-			Go = false;
+			scrKeyActive("Right" , true);
+			scrKeyActive("Left" , false);
+			IsInDanger = true;
 		}
-	}
-	if (Go)
-	{
-		if (LeftButtonActive)
+		if (x > Control.X2Limit)
 		{
-			LeftButtonActive = false;
-			RightButtonActive = true;
+			scrKeyActive("Right" , false);
+			scrKeyActive("Left" , true);
+			IsInDanger = true;
 		}
-		else
+		if (VerticalMovement > 0 and IsInDanger)
 		{
-			LeftButtonActive = true;
-			RightButtonActive = false;
+			scrKeyActive("Jump" , true);
 		}
+		if (!IsInDanger)
+		{
+			scrKeyActive("Jump" , false);
+			scrKeyActive("Left" , false);
+			scrKeyActive("Right" , false);
+		}
+		if (FallingVoid)
+		{
+			scrKeyUseMovs("Aerial Up" , true);
+		}
+		break;
 	}
 }
+
+scrKeyPressedUnable();
+
 #endregion

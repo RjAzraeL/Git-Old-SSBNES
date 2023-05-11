@@ -97,6 +97,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"The Legend of Zelda","folderPath":"folders/Sprites/Stages/The Legend of Zelda.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Hyrule Forest","folderPath":"folders/Sprites/Stages/The Legend of Zelda/Hyrule Forest.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Parapa Palace","folderPath":"folders/Sprites/Stages/The Legend of Zelda/Parapa Palace.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Controles","folderPath":"folders/Scripts/Controles.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"en.txt","CopyToMask":-1,"filePath":"datafiles/l",},
@@ -386,6 +387,7 @@
     {"id":{"name":"objCombatFireball","path":"objects/objCombatFireball/objCombatFireball.yy",},},
     {"id":{"name":"sprStgLy1Underground","path":"sprites/sprStgLy1Underground/sprStgLy1Underground.yy",},},
     {"id":{"name":"sndOst05Bonus2_b","path":"sounds/sndOst05Bonus2_b/sndOst05Bonus2_b.yy",},},
+    {"id":{"name":"scrControles","path":"scripts/scrControles/scrControles.yy",},},
     {"id":{"name":"sprHudBody2","path":"sprites/sprHudBody2/sprHudBody2.yy",},},
     {"id":{"name":"sprStgLy1Tower","path":"sprites/sprStgLy1Tower/sprStgLy1Tower.yy",},},
     {"id":{"name":"sndAnnouncerFailure","path":"sounds/sndAnnouncerFailure/sndAnnouncerFailure.yy",},},
@@ -484,6 +486,7 @@
     {"id":{"name":"sndOst02Menu","path":"sounds/sndOst02Menu/sndOst02Menu.yy",},},
     {"id":{"name":"sprChPollierFalling","path":"sprites/sprChPollierFalling/sprChPollierFalling.yy",},},
     {"id":{"name":"sprChPollierAerialUpMask","path":"sprites/sprChPollierAerialUpMask/sprChPollierAerialUpMask.yy",},},
+    {"id":{"name":"objBot2","path":"objects/objBot2/objBot2.yy",},},
     {"id":{"name":"sprStgLy1bBowserCastle","path":"sprites/sprStgLy1bBowserCastle/sprStgLy1bBowserCastle.yy",},},
     {"id":{"name":"sprChMarioAerialDown","path":"sprites/sprChMarioAerialDown/sprChMarioAerialDown.yy",},},
     {"id":{"name":"objOutside","path":"objects/objOutside/objOutside.yy",},},

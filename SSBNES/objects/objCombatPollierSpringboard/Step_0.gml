@@ -60,15 +60,6 @@ if (!place_meeting(x , y , objBlockTransferable))
 	VerticalMovement = 0;
 }
 #endregion
-#region Destroy
-if (place_meeting(x , y , objCharacter))
-{
-	var Ch = instance_place(x,y,objCharacter)
-	if (Creator.id != Ch.id)
-	{
-	}
-}
-#endregion
 #region Position
 x += HorizontalMovement;
 y += VerticalMovement;
