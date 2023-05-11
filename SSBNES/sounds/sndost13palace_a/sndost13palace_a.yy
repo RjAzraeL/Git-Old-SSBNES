@@ -8,9 +8,9 @@
   },
   "bitDepth": 0,
   "bitRate": 8,
-  "compression": 3,
+  "compression": 0,
   "conversionMode": 0,
-  "duration": 87.99039,
+  "duration": 27.817303,
   "parent": {
     "name": "OST",
     "path": "folders/Audio/OST.yy",
