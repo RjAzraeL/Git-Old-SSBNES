@@ -16,6 +16,40 @@ if (scrExiste(VoidChecker))
 
 switch (Mode)
 {
+	case ("Avoid"):
+	{
+		if (scrExiste(objPlayer))
+		{
+			Target = objPlayer;
+			if (abs(x - Target.x) < 64)
+			{
+				if (x < Target.x)
+				{
+					scrKeyActive("Left" , true);
+					scrKeyActive("Right" , false);
+				}
+				else
+				{
+					scrKeyActive("Left" , false);
+					scrKeyActive("Right" , true);
+				}
+				if (abs(x - Target.x) < 32 and (abs(y - Target.y) < 16))
+				{
+					scrKeyActive("Jump" , true);
+				}
+			}
+			if (x < Control.X1Limit or x > Control.X2Limit)
+			{
+				Mode = "Survive";
+			}
+		}
+		else
+		{
+			scrKeyActive("Left" , false);
+			scrKeyActive("Right" , false);
+		}
+		break;
+	}
 	case ("Survive"):
 	{
 		var IsInDanger = false;
@@ -31,20 +65,48 @@ switch (Mode)
 			scrKeyActive("Left" , true);
 			IsInDanger = true;
 		}
+		if (x < Control.X2Limit and x > Control.X1Limit and scrSolidDetectorBelow())
+		{
+			Mode = "Avoid";
+		}
 		if (VerticalMovement > 0 and IsInDanger)
 		{
 			scrKeyActive("Jump" , true);
 		}
-		if (FallingVoid)
+		if (FallingVoid and Attacking == 0 and !scrSolidDetectorBelow() and JumpAvailable <= 0)
 		{
-			scrKeyUseMovs("Aerial Up" , true);
+			if (ds_list_size(ListRecoverActual) > 0)
+			{
+				scrKeyUseMovs(ds_list_find_value( ListRecoverActual , 0) , true);
+				ds_list_delete(ListRecoverActual , 0);
+			}
+		}
+		if (scrSolidDetectorBelow() and Attacking == 0)
+		{
+			LastMov = "";
+			ds_list_clear(ListRecoverActual);
+			ds_list_copy(ListRecoverActual , ListRecover);
 		}
 		if (!IsInDanger)
 		{
 			scrKeyActive("Jump" , false);
 			scrKeyActive("Left" , false);
 			scrKeyActive("Right" , false);
+			scrKeyActive("Up" , false);
+			scrKeyActive("Down" , false);
 		}
+		#region Mario things / The down aerial spam
+		if (LastMov == "Aerial Down" and VerticalMovement > 0 and MarioCooldownRecover == 0)
+		{
+			scrKeyActive("Attack" , true);
+			scrKeyHold("Attack" , 2);
+			MarioCooldownRecover = choose(8,10,12);
+		}
+		if (MarioCooldownRecover > 0)
+		{
+			MarioCooldownRecover--;
+		}
+		#endregion
 		break;
 	}
 }

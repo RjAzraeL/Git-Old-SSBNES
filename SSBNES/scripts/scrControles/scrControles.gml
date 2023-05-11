@@ -301,6 +301,8 @@ function scrKeyUseMovs(Mov , Key)
 		{
 			if (VerticalMovement != 0 and !place_meeting(x , y + 4 ,parCollision))
 			{
+				scrKeyActive("Left" , false);
+				scrKeyActive("Right" , false);
 				scrKeyActive("Down" , true);
 				scrKeyHold("Down" , 2);
 			}
@@ -308,5 +310,6 @@ function scrKeyUseMovs(Mov , Key)
 		}
 		break;
 	}
+	LastMov = Mov;
 }
 #endregion

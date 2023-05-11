@@ -25,7 +25,8 @@ RightButtonActive = false;
 StartButtonReleasedActive = false;
 SelectButtonReleasedActive = false;
 SetColor = true;
-Mode = "Survive";
+Target = noone;
+Mode = "Avoid";
 HoldLeftButton = 0;
 HoldRightButton = 0;
 HoldDownButton = 0;
@@ -33,5 +34,8 @@ HoldUpButton = 0;
 HoldAttackButton = 0;
 HoldJumpButton = 0;
 ListRecover = ds_list_create();
+ds_list_add(ListRecover , "Aerial Down" , "Aerial Up");
 ListRecoverActual = ds_list_create();
+LastMov = "";
+MarioCooldownRecover = 0;
 #endregion
