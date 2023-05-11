@@ -97,8 +97,11 @@ if (visible)
 		}
 	}
 }
-if (object_index == objBot and Control.ShowColissionButton)
+if (object_index == objBot)
 {
+	draw_set_font(Control.Font);
+	draw_text(x , y - sprite_height/2 - 8 , "up"+string(HoldUpButton));
+	draw_text(x , y - sprite_height/2 - 24 , "at"+string(HoldAttackButton));
 	if (FallingVoid)
 	{
 		draw_set_font(Control.Font);

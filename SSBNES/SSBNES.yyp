@@ -47,6 +47,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Audio","folderPath":"folders/Scripts/Audio.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Combat","folderPath":"folders/Scripts/Combat.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Mov","folderPath":"folders/Scripts/Combat/Mov.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Controles","folderPath":"folders/Scripts/Controles.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"CRT Shader","folderPath":"folders/Scripts/CRT Shader.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Data","folderPath":"folders/Scripts/Data.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Get Data","folderPath":"folders/Scripts/Data/Get Data.yy",},
@@ -97,7 +98,6 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"The Legend of Zelda","folderPath":"folders/Sprites/Stages/The Legend of Zelda.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Hyrule Forest","folderPath":"folders/Sprites/Stages/The Legend of Zelda/Hyrule Forest.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Parapa Palace","folderPath":"folders/Sprites/Stages/The Legend of Zelda/Parapa Palace.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Controles","folderPath":"folders/Scripts/Controles.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"en.txt","CopyToMask":-1,"filePath":"datafiles/l",},

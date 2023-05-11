@@ -35,15 +35,15 @@ switch (Mode)
 		{
 			scrKeyActive("Jump" , true);
 		}
+		if (FallingVoid)
+		{
+			scrKeyUseMovs("Aerial Up" , true);
+		}
 		if (!IsInDanger)
 		{
 			scrKeyActive("Jump" , false);
 			scrKeyActive("Left" , false);
 			scrKeyActive("Right" , false);
-		}
-		if (FallingVoid)
-		{
-			scrKeyUseMovs("Aerial Up" , true);
 		}
 		break;
 	}

@@ -1,7 +1,7 @@
 #region Teclas
 function scrKeyPressedUnable()
 {
-	if (HoldLeftButton > 0)
+	if (HoldLeftButton <= 0)
 	{
 		LeftButtonPressedActive = false;
 	}
@@ -9,7 +9,7 @@ function scrKeyPressedUnable()
 	{
 		HoldLeftButton--;
 	}
-	if (HoldRightButton > 0)
+	if (HoldRightButton <= 0)
 	{
 		RightButtonPressedActive = false;
 	}
@@ -17,7 +17,7 @@ function scrKeyPressedUnable()
 	{
 		HoldRightButton--;
 	}
-	if (HoldDownButton > 0)
+	if (HoldDownButton <= 0)
 	{
 		DownButtonPressedActive = false;
 	}
@@ -25,7 +25,7 @@ function scrKeyPressedUnable()
 	{
 		HoldDownButton--;
 	}
-	if (HoldUpButton > 0)
+	if (HoldUpButton <= 0)
 	{
 		UpButtonPressedActive = false;
 	}
@@ -33,7 +33,7 @@ function scrKeyPressedUnable()
 	{
 		HoldUpButton--;
 	}
-	if (HoldJumpButton > 0)
+	if (HoldJumpButton <= 0)
 	{
 		JumpButtonPressedActive = false;
 	}
@@ -41,7 +41,7 @@ function scrKeyPressedUnable()
 	{
 		HoldJumpButton--;
 	}
-	if (HoldAttackButton > 0)
+	if (HoldAttackButton <= 0)
 	{
 		AttackButtonPressedActive = false;
 	}
@@ -183,51 +183,61 @@ function scrKeyReleased(Key)
 			if (LastScaleX < 0)
 			{
 				LeftButtonReleasedActive = true;
+				LeftButtonActive = false;
 			}
 			else
 			{
 				RightButtonReleasedActive = true;
+				RightButtonActive = false;
 			}
 			break;
 		}
 		case("Left"):
 		{
 			LeftButtonReleasedActive = true;
+			LeftButtonActive = false;
 			break;
 		}
 		case("Right"):
 		{
 			RightButtonReleasedActive = true;
+			RightButtonActive = false;
 			break;
 		}
 		case("Up"):
 		{
 			UpButtonReleasedActive = true;
+			UpButtonActive = false;
 			break;
 		}
 		case("Down"):
 		{
 			DownButtonReleasedActive = true;
+			DownButtonActive = false;
 			break;
 		}
 		case("Jump"):
 		{
 			JumpButtonReleaseActive = true;
+			JumpButtonActive = false;
 			break;
 		}
 		case("Attack"):
 		{
 			AttackButtonReleasedActive = true;
+			AttackButtonActive = false;
 			break;
 		}
 		case("Start"):
 		{
 			StartButtonReleasedActive = true;
+			StartButtonActive = false;
 			break;
 		}
 		case("Select"):
 		{
 			SelectButtonReleasedActive = true;
+			SelectButtonActive = false;
 			break;
 		}
 	}
@@ -235,6 +245,7 @@ function scrKeyReleased(Key)
 function scrKeyUseMovs(Mov , Key)
 {
 	scrKeyActive("Attack" , true);
+	scrKeyHold("Attack" , 2);
 	switch(Mov)
 	{
 		case("Ground Neutral"):
@@ -277,7 +288,22 @@ function scrKeyUseMovs(Mov , Key)
 		}
 		case("Aerial Up"):
 		{
-			scrKeyActive("Up" , true);
+			if (VerticalMovement > 0 and !place_meeting(x , y + 4 ,parCollision))
+			{
+				scrKeyActive("Left" , false);
+				scrKeyActive("Right" , false);
+				scrKeyActive("Up" , true);
+				scrKeyHold("Up" , 2);
+			}
+			break;
+		}
+		case("Aerial Down"):
+		{
+			if (VerticalMovement != 0 and !place_meeting(x , y + 4 ,parCollision))
+			{
+				scrKeyActive("Down" , true);
+				scrKeyHold("Down" , 2);
+			}
 			break;
 		}
 		break;

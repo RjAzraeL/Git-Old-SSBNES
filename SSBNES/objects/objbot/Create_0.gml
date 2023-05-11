@@ -32,4 +32,6 @@ HoldDownButton = 0;
 HoldUpButton = 0;
 HoldAttackButton = 0;
 HoldJumpButton = 0;
+ListRecover = ds_list_create();
+ListRecoverActual = ds_list_create();
 #endregion
