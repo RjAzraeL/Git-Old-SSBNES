@@ -8,5 +8,5 @@ MultipleHits = false;
 image_speed = .25;
 image_index = 0;
 Rebound = 0;
-scrSound(sfxMarioFireball);
+//scrSound(sfxMarioFireball);
 #endregion

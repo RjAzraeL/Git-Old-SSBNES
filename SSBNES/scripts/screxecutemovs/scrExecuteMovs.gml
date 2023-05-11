@@ -393,6 +393,7 @@ function scrExecuteMovs(ID)
 		{
 			///POL Ground Attack Down
 			var idlocal = 16;
+			scrSound(sfxPollierAbility);
 			TimeAttacking = scrDameDato(Control.MovList , idlocal , "Time Attacking");
 			var Box = instance_create_depth(x , y , depth , objPollierBox);
 			Box.alarm[0] = 20;
@@ -408,6 +409,7 @@ function scrExecuteMovs(ID)
 		case(17):
 		{
 			///POL Ground Attack Up
+			scrSound(sfxPollierAbility);
 			var GroundAttackUp = instance_create_depth(x , y , depth-1 , objCombatHitboxImageFollower);
 			GroundAttackUp.sprite_index = sprChPollierGroundAttackUpMask;
 			GroundAttackUp.PowerScale = false;
@@ -459,6 +461,7 @@ function scrExecuteMovs(ID)
 			var IdeLocal = ID;
 			
 			///MAR Ground Smash Down
+			scrSound(sfxPollierAbility);
 			var GroundSmashDown = instance_create_depth(x , y , depth-1 , objCombatHitboxImageFollower);
 			GroundSmashDown.sprite_index = sprChPollierGroundSmashDownMask;
 			GroundSmashDown.Ide = IdeLocal;
@@ -518,6 +521,7 @@ function scrExecuteMovs(ID)
 		{
 			///POL Ground Attack Side
 			AcelerationValue = 3;
+			scrSound(sfxPollierAbility);
 			var FootBang = instance_create_depth(x , y , depth-1 , objCombatHitboxNotImageFollower);
 			FootBang.sprite_index = sprChPollierGroundAttackSideMask;
 			FootBang.PowerScale = false;
@@ -565,6 +569,7 @@ function scrExecuteMovs(ID)
 			///POL Aerial Side
 			AcelerationValue = 5;
 			///MAR Aerial Side
+			scrSound(sfxPollierAbility);
 			var Highpunch = instance_create_depth(x , y , depth-1 , objCombatHitboxImageFollower);
 			Highpunch.sprite_index = sprChPollierAerialSideMask;
 			Highpunch.PowerScale = false;

@@ -2,6 +2,7 @@
   "FolderOrderSettings": [
     {"name":"Announcer","order":1,"path":"folders/Audio/Announcer.yy",},
     {"name":"Azrael","order":1,"path":"folders/Audio/Announcer/Azrael.yy",},
+    {"name":"Pollier","order":1,"path":"folders/Audio/SFX/Pollier.yy",},
     {"name":"Bonus","order":6,"path":"folders/Objects/Bonus.yy",},
     {"name":"Mobile Plattform Bn1Mario","order":1,"path":"folders/Objects/Bonus/Mobile Plattform Bn1Mario.yy",},
     {"name":"Furnis","order":1,"path":"folders/Objects/Furnis.yy",},
@@ -33,7 +34,6 @@
     {"name":"Test Stage","order":3,"path":"folders/Sprites/Stages/Super Smash Bros/Test Stage.yy",},
     {"name":"The Legend of Zelda","order":3,"path":"folders/Sprites/Stages/The Legend of Zelda.yy",},
     {"name":"Parapa Palace","order":1,"path":"folders/Sprites/Stages/The Legend of Zelda/Parapa Palace.yy",},
-    {"name":"Pollier","order":1,"path":"folders/Audio/SFX/Pollier.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"sprSetTextBox2","order":10,"path":"sprites/sprSetTextBox2/sprSetTextBox2.yy",},

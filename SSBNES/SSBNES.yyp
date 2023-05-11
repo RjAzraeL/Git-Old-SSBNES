@@ -20,6 +20,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Kirby","folderPath":"folders/Audio/SFX/Kirby.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Mario","folderPath":"folders/Audio/SFX/Mario.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Menu","folderPath":"folders/Audio/SFX/Menu.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Pollier","folderPath":"folders/Audio/SFX/Pollier.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Fonts","folderPath":"folders/Fonts.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Objects","folderPath":"folders/Objects.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Bonus","folderPath":"folders/Objects/Bonus.yy",},
@@ -96,7 +97,6 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"The Legend of Zelda","folderPath":"folders/Sprites/Stages/The Legend of Zelda.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Hyrule Forest","folderPath":"folders/Sprites/Stages/The Legend of Zelda/Hyrule Forest.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Parapa Palace","folderPath":"folders/Sprites/Stages/The Legend of Zelda/Parapa Palace.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Pollier","folderPath":"folders/Audio/SFX/Pollier.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"en.txt","CopyToMask":-1,"filePath":"datafiles/l",},
