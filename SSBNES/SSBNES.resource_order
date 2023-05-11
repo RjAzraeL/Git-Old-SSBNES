@@ -34,6 +34,8 @@
     {"name":"Test Stage","order":3,"path":"folders/Sprites/Stages/Super Smash Bros/Test Stage.yy",},
     {"name":"The Legend of Zelda","order":3,"path":"folders/Sprites/Stages/The Legend of Zelda.yy",},
     {"name":"Parapa Palace","order":1,"path":"folders/Sprites/Stages/The Legend of Zelda/Parapa Palace.yy",},
+    {"name":"Mindy Ralston","order":2,"path":"folders/Audio/Announcer/Mindy Ralston.yy",},
+    {"name":"Bran Rainey","order":3,"path":"folders/Audio/Announcer/Bran Rainey.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"sprSetTextBox2","order":10,"path":"sprites/sprSetTextBox2/sprSetTextBox2.yy",},
@@ -85,6 +87,7 @@
     {"name":"sprChMarioGroundSmashUpTrance","order":9,"path":"sprites/sprChMarioGroundSmashUpTrance/sprChMarioGroundSmashUpTrance.yy",},
     {"name":"sfxPollierParry","order":3,"path":"sounds/sfxPollierParry/sfxPollierParry.yy",},
     {"name":"sprChSandbagSkid","order":8,"path":"sprites/sprChSandbagSkid/sprChSandbagSkid.yy",},
+    {"name":"rmTestingRoom","order":5,"path":"rooms/rmTestingRoom/rmTestingRoom.yy",},
     {"name":"sprTargetMin","order":7,"path":"sprites/sprTargetMin/sprTargetMin.yy",},
     {"name":"sprDot","order":6,"path":"sprites/sprDot/sprDot.yy",},
     {"name":"sprChMarioStar","order":21,"path":"sprites/sprChMarioStar/sprChMarioStar.yy",},
