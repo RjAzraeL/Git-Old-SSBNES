@@ -248,7 +248,7 @@ function scrDataCharacter()
 	/*Mask Duck*/sprChPollierMaskDuck,
 	/*Mask Normal*/sprChPollierMask,
 	/*Sfx Skid*/sfxKirbySkid,
-	/*Sfx Jump*/sfxKirbyJump,
+	/*Sfx Jump*/sfxPollierJump,
 	/*Vertical Limit Porcentage*/25,
 	/*Movs*/ scrCrearLista(12,18,19,20,21,16,17,22,23,24,25,26),
 	/*Hud index*/8,

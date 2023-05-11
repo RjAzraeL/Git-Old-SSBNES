@@ -276,7 +276,7 @@ if (!Platform)
 		SoundSkid--;
 		if (SoundSkid == 1 and Skid and scrSolidDetectorBelow())
 		{
-			scrSound(sfxMarioSkid);
+			scrSound(SfxSkid);
 		}
 	}
 
@@ -312,7 +312,7 @@ if (!Platform)
 		if (LastScaleX != ScaleX and (Skid or RunActive) and scrSolidDetectorBelow())
 		{
 			CooldownSwap = 6;
-			scrSound(sfxMarioSkid);
+			scrSound(SfxSkid);
 			HorizontalMovement = SpeedRun * LastScaleX;
 			var DashEffect = instance_create_depth(x + (sprite_width/2)*ScaleXSprite,y + (sprite_height/2),depth,objDashEffect);
 			DashEffect.image_xscale = -ScaleXSprite;

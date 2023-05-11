@@ -3,7 +3,7 @@ function scrJump(HorizontalDirection)
 {
 	if (JumpAvailable > 0)
 	{
-		scrSound(sfxMarioJump);
+		scrSound(SfxJump);
 		JumpAvailable--;
 		JumpStop = false;
 		if (ActualJumpSprite == 0)
@@ -36,7 +36,7 @@ function scrSmallJump(HorizontalDirection)
 {
 	if (JumpAvailable > 0)
 	{
-		scrSound(sfxMarioJump);
+		scrSound(SfxJump);
 		var Value = (JumpValue - (JumpValue/1.5) );
 		if (!place_meeting(x , y - Value , parSolid))
 		{

@@ -10,7 +10,7 @@ if (Jumps > 0)
 		{
 			scrFreeJump(10);
 		}
-		scrSound(sfxPollierJump);
+		scrSound(sfxPollierSpringboard);
 		IndexJump = 4;
 		alarm[2] = 5;
 		Jumps--;

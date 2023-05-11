@@ -6,4 +6,5 @@ alarm[0] = 80;
 Bips = 8;
 Jumps = 3;
 IndexJump = 0;
+scrSound(sfxPollierAbility);
 #endregion

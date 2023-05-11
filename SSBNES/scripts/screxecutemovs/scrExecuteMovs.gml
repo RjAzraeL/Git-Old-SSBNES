@@ -540,6 +540,7 @@ function scrExecuteMovs(ID)
 		{
 			///POL Aerial Neutral
 			var Parry = instance_create_depth(x , y , depth-1 , objCombatHitboxNotImageFollower);
+			scrSound(sfxPollierParry);
 			Parry.DoDamage = false;
 			Parry.sprite_index = SpriteAttackAerialNeutral;
 			Parry.PowerScale = false;

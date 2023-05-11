@@ -5,7 +5,7 @@ VerticalMovement = 0;
 HorizontalMovement = -6;
 image_speed = .5;
 Rebound = 0;
-scrSound(sfxMarioFireball);
+scrSound(sfxPollierAbility);
 ComeBack = false;
 Range = 24;
 #endregion
