@@ -44,4 +44,5 @@ LastMov = "";
 MarioCooldownRecover = 0;
 RageTime = 0;
 RangeTime = 0;
+AvoidTime = 0;
 #endregion
