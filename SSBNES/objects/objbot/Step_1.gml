@@ -16,26 +16,214 @@ if (scrExiste(VoidChecker))
 
 switch (Mode)
 {
+	case ("Rage"):
+	{
+		if (scrExiste(Target))
+		{
+			if (RageTime <= 0)
+			{
+				scrKeyActive("Attack" , false);
+				scrKeyActive("Right" , false);
+				scrKeyActive("Left" , false);
+				scrKeyReleased("Jump");
+				Mode = "Avoid";
+			}
+			else
+			{
+				RageTime--;
+				if (x < Target.x - 8)
+				{
+					scrKeyActive("Right" , true);
+					scrKeyHold("Right" , 2);
+					scrKeyActive("Left" , false);
+				}
+				else if (x > Target.x + 8)
+				{
+					scrKeyActive("Right" , false);
+					scrKeyActive("Left" , true);
+					scrKeyHold("Left" , 2);
+				}
+				else
+				{
+					scrKeyActive("Right" , false);
+					scrKeyActive("Left" , false);
+					scrKeyReleased("Jump");
+				}
+				if (y < Target.y)
+				{
+					scrKeyActive("Down" , true);
+					scrKeyHold("Down" , 2);
+				}
+				else if (y > Target.y - 4)
+				{
+					if (!scrSolidDetectorBelow())
+					{
+						scrKeyUseMovs("Aerial Up" , true);
+					}
+					else
+					{
+						scrKeyActive("Jump" , true);
+					}
+				}
+				if (Attacking == 0 and distance_to_object(Target) < 16)
+				{
+					scrKeyUseMovs( ds_list_find_value(ListMelee , irandom_range(0,ds_list_size(ListMelee)-1)) , true );
+				}
+			}
+		}
+		if (scrSolidDetectorBelow() and Attacking == 0)
+		{
+			LastMov = "";
+		}
+		if (x < Control.X1Limit or x > Control.X2Limit)
+		{
+			scrKeyReleased("Attack" , false);
+			Mode = "Survive";
+		}
+		break;
+	}
+	case ("Melee"):
+	{
+		if (scrExiste(Target))
+		{
+			if (distance_to_object(Target) > 24)
+			{
+				scrKeyActive("Attack" , false);
+				scrKeyActive("Right" , false);
+				scrKeyActive("Left" , false);
+				scrKeyReleased("Jump");
+				Mode = "Avoid";
+			}
+			else
+			{
+				if (x < Target.x - 8)
+				{
+					scrKeyActive("Right" , true);
+					scrKeyHold("Right" , 2);
+					scrKeyActive("Left" , false);
+				}
+				else if (x > Target.x + 8)
+				{
+					scrKeyActive("Right" , false);
+					scrKeyActive("Left" , true);
+					scrKeyHold("Left" , 2);
+				}
+				if (Attacking == 0)
+				{
+					scrKeyUseMovs( ds_list_find_value(ListMelee , irandom_range(0,ds_list_size(ListMelee)-1)) , true );
+				}
+			}
+		}
+		if (scrSolidDetectorBelow() and Attacking == 0)
+		{
+			LastMov = "";
+		}
+		if (x < Control.X1Limit or x > Control.X2Limit)
+		{
+			Mode = "Survive";
+		}
+		break;
+	}
+	case ("Range"):
+	{
+		if (scrExiste(Target))
+		{
+			RangeTime++;
+			scrKeyReleased("Down");
+			scrKeyReleased("Up");
+			if (x < Target.x and LastScaleX < 0)
+			{
+				scrKeyActive("Right" , true);
+				scrKeyHold("Right" , 2);
+				scrKeyActive("Left" , false);
+			}
+			else if (x > Target.x and LastScaleX > 0)
+			{
+				scrKeyActive("Right" , false);
+				scrKeyActive("Left" , true);
+				scrKeyHold("Left" , 2);
+			}
+			if (Attacking == 0 and y <= Target.y)
+			{
+				scrKeyUseMovs(ds_list_find_value( ListRange , irandom(ds_list_size(ListRange))) , true);
+			}
+			else if (Attacking == 0 and y > Target.y)
+			{
+				if (!scrSolidDetectorBelow())
+				{
+					scrKeyUseMovs("Aerial Up" , true);
+				}
+				else
+				{
+					scrKeyActive("Jump" , true);
+				}
+			}
+			if (distance_to_object(Target) < 32)
+			{
+				scrKeyReleased("Attack");
+				if (scrProbable(.5))
+				{
+					Mode = "Avoid";
+				}
+				else
+				{
+					if (scrProbable(.75))
+					{
+						Mode = "Melee";
+					}
+					else
+					{
+						RageTime = 180;
+						Mode = "Rage";
+					}
+				}
+			}
+		}
+		if (RangeTime > 220)
+		{
+			RangeTime = 0;
+			RageTime = 120;
+			Mode = "Rage";
+		}
+		if (scrSolidDetectorBelow() and Attacking == 0)
+		{
+			LastMov = "";
+		}
+		if (x < Control.X1Limit or x > Control.X2Limit)
+		{
+			Mode = "Survive";
+		}
+		break;
+	}
 	case ("Avoid"):
 	{
 		if (scrExiste(objPlayer))
 		{
 			Target = objPlayer;
-			if (abs(x - Target.x) < 128)
+			if (abs(x - Target.x) < 96)
 			{
-				if (x < Target.x)
+				if (abs(y - Target.y) < 32)
 				{
-					scrKeyActive("Left" , true);
-					scrKeyHold("Left" , 2);
-					scrKeyActive("Right" , false);
+					if (x < Target.x)
+					{
+						if (x > Control.X1Limit + 32)
+						{
+							scrKeyActive("Left" , true);
+							scrKeyHold("Left" , 2);
+							scrKeyActive("Right" , false);
+						}
+					}
+					else
+					{
+						if (x < Control.X2Limit - 32)
+						{
+							scrKeyActive("Left" , false);
+							scrKeyActive("Right" , true);
+							scrKeyHold("Right" , 2);
+						}
+					}
 				}
-				else
-				{
-					scrKeyActive("Left" , false);
-					scrKeyActive("Right" , true);
-					scrKeyHold("Right" , 2);
-				}
-				if (abs(x - Target.x) < 32 and y == Target.y)
+				if (distance_to_object(Target) < 32 and abs(Target.y - y) < 4)
 				{
 					scrKeyActive("Jump" , true);
 				}
@@ -43,11 +231,14 @@ switch (Mode)
 				{
 					if (Target.x < room_width/2)
 					{
+						scrKeyHold("Right" , 2);
 						scrKeyActive("Left" , false);
 						scrKeyActive("Right" , true);
+						
 					}
 					else if (Target.x > room_width/2)
 					{
+						scrKeyHold("Left" , 2);
 						scrKeyActive("Left" , true);
 						scrKeyActive("Right" , false);
 					}
@@ -56,11 +247,13 @@ switch (Mode)
 				{
 					if (Target.x < room_width/2)
 					{
+						scrKeyHold("Right" , 2);
 						scrKeyActive("Left" , false);
 						scrKeyActive("Right" , true);
 					}
 					else if (Target.x > room_width/2)
 					{
+						scrKeyHold("Left" , 2);
 						scrKeyActive("Left" , true);
 						scrKeyActive("Right" , false);
 					}
@@ -70,6 +263,9 @@ switch (Mode)
 			{
 				scrKeyActive("Left" , false);
 				scrKeyActive("Right" , false);
+				scrKeyActive("Jump" , false);
+				scrKeyActive("Attack" , false);
+				Mode = "Range";
 			}
 			if (x < Control.X1Limit or x > Control.X2Limit)
 			{
@@ -79,6 +275,7 @@ switch (Mode)
 		else
 		{
 			scrKeyActive("Left" , false);
+			scrKeyReleased("Jump");
 			scrKeyActive("Right" , false);
 		}
 		break;
@@ -119,6 +316,7 @@ switch (Mode)
 			LastMov = "";
 			ds_list_clear(ListRecoverActual);
 			ds_list_copy(ListRecoverActual , ListRecover);
+			Mode = "Avoid";
 		}
 		if (!IsInDanger)
 		{

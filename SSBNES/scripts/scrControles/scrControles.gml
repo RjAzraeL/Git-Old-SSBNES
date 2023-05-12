@@ -250,6 +250,8 @@ function scrKeyUseMovs(Mov , Key)
 	{
 		case("Ground Neutral"):
 		{
+			scrKeyActive("Left" , false);
+			scrKeyActive("Right" , false);
 			break;
 		}
 		case("Ground Smash Side"):
