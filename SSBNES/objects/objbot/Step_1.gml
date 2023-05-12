@@ -77,7 +77,7 @@ switch (Mode)
 		}
 		if (x < Control.X1Limit or x > Control.X2Limit)
 		{
-			scrKeyReleased("Attack" , false);
+			scrKeyReleased("Attack");
 			Mode = "Survive";
 		}
 		break;
