@@ -41,6 +41,7 @@ ds_list_add(ListRange , "Ground Neutral");
 ListMelee = ds_list_create();
 ds_list_add(ListMelee , "Ground Attack Side" , "Ground Attack Up" , "Ground Attack Down" , "Ground Smash Side" , "Ground Smash Down" , "Ground Smash Up");
 LastMov = "";
+alarm[0] = 30;
 MarioCooldownRecover = 0;
 RageTime = 0;
 RangeTime = 0;
