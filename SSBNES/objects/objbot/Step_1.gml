@@ -25,6 +25,8 @@ switch (Mode)
 				scrKeyActive("Attack" , false);
 				scrKeyActive("Right" , false);
 				scrKeyActive("Left" , false);
+				scrKeyActive("Up" , false);
+				scrKeyActive("Down" , false);
 				scrKeyReleased("Jump");
 				Mode = "Avoid";
 				RageTime = 120;
@@ -95,6 +97,8 @@ switch (Mode)
 				scrKeyActive("Attack" , false);
 				scrKeyActive("Right" , false);
 				scrKeyActive("Left" , false);
+				scrKeyActive("Up" , false);
+				scrKeyActive("Down" , false);
 				scrKeyReleased("Jump");
 				Mode = "Avoid";
 			}
@@ -102,13 +106,13 @@ switch (Mode)
 			{
 				if (abs(y - Target.y) <= 8)
 				{
-					if (x < Target.x - 8)
+					if (x < Target.x - 4)
 					{
 						scrKeyActive("Right" , true);
 						scrKeyHold("Right" , 2);
 						scrKeyActive("Left" , false);
 					}
-					else if (x > Target.x + 8)
+					else if (x > Target.x + 4)
 					{
 						scrKeyActive("Right" , false);
 						scrKeyActive("Left" , true);
@@ -158,9 +162,8 @@ switch (Mode)
 			RangeTime++;
 			if (RangeTime == 1)
 			{
-				scrKeyReleased("Down");
-				scrKeyReleased("Up");
 				scrKeyActive("Up" , false);
+				scrKeyActive("Down" , false);
 			}
 			if (x < Target.x and ScaleX < 0)
 			{
@@ -207,6 +210,8 @@ switch (Mode)
 			}
 			if (distance_to_object(Target) < 32 and Target.Attacking != 0)
 			{
+				scrKeyActive("Up" , false);
+				scrKeyActive("Down" , false);
 				scrKeyReleased("Attack");
 				Mode = "Avoid";
 			}
@@ -230,11 +235,26 @@ switch (Mode)
 	case ("Avoid"):
 	{
 		AvoidTime++;
-		if (scrExiste(objPlayer))
+		if (scrExiste(Target))
 		{
-			scrKeyReleased("Down");
-			scrKeyReleased("Up");
-			Target = objPlayer;
+			#region CHARACTER SPECIAL MOVS
+			switch (Control.CharacterId[Position])
+			{
+				case(7): //POLLIER
+				{
+					if (AvoidTime == 5 and scrProbable(.25))
+					{
+						scrKeyUseMovs("Ground Smash Down" , true);
+					}
+					break;
+				}
+			}
+			#endregion
+			if (AvoidTime == 2)
+			{
+				scrKeyActive("Up" , false);
+				scrKeyActive("Down" , false);
+			}
 			if (abs(x - Target.x) < 96)
 			{
 				if (abs(y - Target.y) < 32)

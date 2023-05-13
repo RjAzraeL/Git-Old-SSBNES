@@ -100,7 +100,7 @@ if (visible)
 if (object_index == objBot)
 {
 	draw_set_font(Control.Font);
-	//draw_text(x - 32 , y - sprite_height/2 - 8 , "mode: "+string(Mode));
+	draw_text(x - 32 , y - sprite_height/2 - 8 , "mode: "+string(Mode));
 	//draw_text(x , y - sprite_height/2 - 24 , "at"+string(HoldAttackButton));
 	if (FallingVoid)
 	{
