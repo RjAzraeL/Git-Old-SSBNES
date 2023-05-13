@@ -7,7 +7,7 @@ if (crt_shader_enabled) { scr_CRT_appy_to_surface(application_surface, view_came
 
 ///Set the cameras position if it has been moved with the arrow keys.
 ///Just for demonstration purposes, can be removed.
-//camera_set_view_pos(view_camera[0], objCharacter.x - 128 ,objCharacter.y - 112 );
+camera_set_view_pos(view_camera[0], _xx, _yy);
 
 ///Alter CRT variables and enable/disable settings.
 ///Just for demonstration purposes, can be removed.
@@ -35,8 +35,8 @@ if (keyboard_check(ord("T")))		   { var_noise_strength += 0.01;}
 if (keyboard_check(ord("W")))          { var_radial_distortion_ammount -= 0.005;} 
 if (keyboard_check(ord("Y")))		   { var_brightness += 0.01;}
 */
-if (keyboard_check_released(vk_shift)) { crt_shader_enabled = !crt_shader_enabled; }
 if (keyboard_check_released(vk_space)) { crt_gui_bezel_enabled = !crt_gui_bezel_enabled; }
+if (keyboard_check_released(vk_shift)) { crt_shader_enabled = !crt_shader_enabled; }
 { var_use_noise = 1; }
 { var_use_border = 1; }
 { var_use_radial_distortion = 1; }
@@ -45,7 +45,6 @@ if (keyboard_check_released(vk_space)) { crt_gui_bezel_enabled = !crt_gui_bezel_
 { var_use_RGB_separation = 1 }
 { var_radial_distortion_ammount = 0.40;}
 { var_noise_strength = 0.050;}
-{ crt_gui_bezel_enabled = 0; }
 
 ///Reset GUI layer back to the window size so we can draw text, etc.
 display_set_gui_size(window_get_width(), window_get_height());
@@ -59,6 +58,7 @@ if (crt_gui_bezel_enabled) { draw_sprite_stretched(spr_nes_bezel, -1, 0, 0, wind
 ///Just for demonstration purposes, can be removed.
 /*
 draw_rectangle_color(0,0, 450, 148, c_black,c_black,c_black,c_black, false);
+draw_text(2,12, "CRT shader enabled = " +	  string(crt_shader_enabled) +            " press D to change");
 draw_text(2,24, "Distortion enabled = " +     string(var_use_radial_distortion) +	  " press F to change");
 draw_text(2,36, "Distortion amount = " +      string(var_radial_distortion_ammount) + " press W/S to change");
 draw_text(2,48, "Border enabled = " +         string(var_use_border) +                " press B to change");

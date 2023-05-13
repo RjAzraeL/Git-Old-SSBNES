@@ -8,14 +8,14 @@
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":1,"eventType":2,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,},
   ],
-  "managed": true,
+  "managed": false,
   "overriddenProperties": [],
   "parent": {
     "name": "Furnis",
     "path": "folders/Objects/Furnis.yy",
   },
   "parentObjectId": null,
-  "persistent": false,
+  "persistent": true,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
   "physicsFriction": 0.2,
@@ -32,5 +32,5 @@
   "solid": false,
   "spriteId": null,
   "spriteMaskId": null,
-  "visible": false,
+  "visible": true,
 }

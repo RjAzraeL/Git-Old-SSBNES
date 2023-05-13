@@ -45,14 +45,14 @@ camera_set_view_size(view_camera[0], 256, 224); //See common resolution sizes ab
 */
 view_visible[0] = true;
 view_enabled = true;
-view_wport[0] = 1024;
-view_hport[0] = 768;
+view_wport[0] = 1280;
+view_hport[0] = 720;
 window_set_size(view_wport[0], view_hport[0]);
 window_set_position(10,40)
 
 ///_xx and _yy variables are used to move the views position around.
 ///Just for demonstration purposes, can be removed.
-_xx = 0;
+_xx = 50;
 _yy = 0;
 
 ///Variable for enabling/disabling the CRT effect.
