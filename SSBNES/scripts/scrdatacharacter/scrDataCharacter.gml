@@ -262,7 +262,7 @@ function scrDataCharacter()
 	/*Palette name*/"POL",
 	/*Palette code*/0,
 	/*MovList Recover*/scrCrearLista("Aerial Up"),
-	/*MovList Range*/scrCrearLista("Ground Neutral" , "Ground Smash Side" , "Aerial Back" , "Aerial Down" , "Ground Smash Up"),
+	/*MovList Range*/scrCrearLista("Ground Neutral" , "Ground Smash Side" , "Aerial Back" , "Aerial Down"),
 	/*MovList Melee*/scrCrearLista("Ground Attack Side" , "Ground Attack Down" , "Ground Attack Up" , "Aerial Side"),
 	/*MovList Special*/scrCrearLista("Aerial Neutral" , "Ground Smash Down")
 	)
@@ -300,8 +300,8 @@ function scrMapCharacter(List)
 	Paquete[? "Palette Name"] = ds_list_find_value(List , 24);
 	Paquete[? "Palette Code"] = ds_list_find_value(List , 25);
 	Paquete[? "ListMov Recover"] = ds_list_find_value(List , 26);
-	Paquete[? "ListMov Melee"] = ds_list_find_value(List , 27);
-	Paquete[? "ListMov Range"] = ds_list_find_value(List , 28);
+	Paquete[? "ListMov Range"] = ds_list_find_value(List , 27);
+	Paquete[? "ListMov Melee"] = ds_list_find_value(List , 28);
 	Paquete[? "ListMov Special"] = ds_list_find_value(List , 29);
 	
 	ds_list_add(Control.CharacterList , Paquete);

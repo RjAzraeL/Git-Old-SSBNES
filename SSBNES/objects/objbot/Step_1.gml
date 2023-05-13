@@ -62,10 +62,17 @@ switch (Mode)
 						scrKeyReleased("Jump");
 					}
 				}
-				if (y < Target.y)
+				if (y < Target.y + 16)
 				{
-					scrKeyActive("Down" , true);
-					scrKeyHold("Down" , 2);
+					if (!Duck)
+					{
+						scrKeyActive("Down" , true);
+						scrKeyHold("Down" , 4);
+					}
+					else
+					{
+						scrKeyReleased("Down");
+					}
 				}
 				else if (y > Target.y - 4)
 				{
@@ -186,9 +193,14 @@ switch (Mode)
 				scrKeyActive("Left" , true);
 				scrKeyHold("Left" , 4);
 			}
+			else
+			{
+				scrKeyActive("Left" , false);
+				scrKeyActive("Right" , false);
+			}
 			if (Attacking == 0 and y <= Target.y and HorizontalMovement == 0)
 			{
-				scrKeyUseMovs(ds_list_find_value( ListRange , irandom(ds_list_size(ListRange))) , true);
+				scrKeyUseMovs(ds_list_find_value( ListRange , irandom_range(0,ds_list_size(ListRange)-1)) , true);
 			}
 			else if (Attacking == 0 and y > Target.y)
 			{
@@ -252,6 +264,10 @@ switch (Mode)
 					if (AvoidTime == 5 and scrProbable(.25))
 					{
 						scrKeyUseMovs("Ground Smash Down" , true);
+					}
+					if (AvoidTime == 5 and scrProbable(.75) and (abs(x-Target.x) < 8) and y > Target.y + 16)
+					{
+						scrKeyUseMovs("Ground Smash Up" , true);
 					}
 					break;
 				}
@@ -373,7 +389,7 @@ switch (Mode)
 			scrKeyActive("Left" , false);
 			IsInDanger = true;
 		}
-		if (x < Control.X2Limit and x > Control.X1Limit and scrSolidDetectorBelow())
+		if (x < Control.X2Limit and x > Control.X1Limit and scrSolidDetectorBelow() or !FallingVoid)
 		{
 			Mode = "Avoid";
 		}
