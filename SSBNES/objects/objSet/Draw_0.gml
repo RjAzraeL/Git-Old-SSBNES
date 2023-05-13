@@ -40,7 +40,7 @@ if (LayerActual == 0)
 	#endregion
 	#region Text language
 	draw_sprite_ext(sprSetTextBox1 , 0 , room_width/2 , 196 , 1 , 1 , 0 , c_white , 1);
-	scrText( room_width/2 , 197 , string_upper(TextLanguageExample) , fa_middle , fa_center , Control.Font , c_black , c_white , 9 , 238 , 1 , 1 , 0 , 1);
+	scrText( room_width/2 , 197 , "" + string(string_upper(TextLanguageExample)) , fa_middle , fa_center , Control.Font , c_black , c_white , 8 , 238 , 1 , 1 , 0 , 1);
 	#endregion
 }
 #endregion

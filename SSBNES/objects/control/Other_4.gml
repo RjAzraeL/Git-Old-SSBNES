@@ -30,6 +30,9 @@ if (!SetReady and room == rm00Set)
 NormalCamera = true;
 if (scrIsBonusLevel())
 {
+	ReadyTime = 4;
+	CanMoveGlobal = false;
+	alarm[6] = ReadyTimeAlarm;
 	VoidXLimit = 1000;
 	alarm[3] = 60;
 	NormalCamera = false;
@@ -64,6 +67,9 @@ if (BattleLevel)
 {
 	scrResetCombatBattleVar();
 	
+	ReadyTime = 4;
+	CanMoveGlobal = false;
+	alarm[6] = ReadyTimeAlarm;
 	VoidLimitStage = scrDameDato(Control.StageList , StageId , "Void limit");
 	X1Limit = scrDameDato(Control.StageList , StageId , "X1 limit");
 	X2Limit = scrDameDato(Control.StageList , StageId , "X2 limit");

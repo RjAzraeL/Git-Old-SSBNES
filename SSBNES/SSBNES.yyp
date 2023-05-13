@@ -118,6 +118,7 @@
     {"id":{"name":"sndOst09Underground","path":"sounds/sndOst09Underground/sndOst09Underground.yy",},},
     {"id":{"name":"objMainMenuButton","path":"objects/objMainMenuButton/objMainMenuButton.yy",},},
     {"id":{"name":"sprChMarioFlipMask","path":"sprites/sprChMarioFlipMask/sprChMarioFlipMask.yy",},},
+    {"id":{"name":"sprFontSmall","path":"sprites/sprFontSmall/sprFontSmall.yy",},},
     {"id":{"name":"sprStgLyBonusMario","path":"sprites/sprStgLyBonusMario/sprStgLyBonusMario.yy",},},
     {"id":{"name":"sprChSandbagFalling","path":"sprites/sprChSandbagFalling/sprChSandbagFalling.yy",},},
     {"id":{"name":"sprChMarioGroundAttackDown","path":"sprites/sprChMarioGroundAttackDown/sprChMarioGroundAttackDown.yy",},},

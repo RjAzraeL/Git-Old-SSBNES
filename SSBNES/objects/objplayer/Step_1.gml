@@ -1,5 +1,7 @@
 #region Controllers
-if (Position == 0)
+if (Control.CanMoveGlobal) 
+{
+	if (Position == 0)
 {
 	RightButtonActive = Control.RightButtonActive;
 	LeftButtonActive = Control.LeftButtonActive;
@@ -18,7 +20,7 @@ if (Position == 0)
 	UpButtonPressedActive = Control.UpButtonPressedActive;
 	JumpButtonPressedActive = Control.JumpButtonPressedActive;
 }
-else
+	else
 {
 	RightButtonActive = Control._2RightButtonActive;
 	LeftButtonActive = Control._2LeftButtonActive;
@@ -36,5 +38,6 @@ else
 	UpButtonReleasedActive = Control._2UpButtonReleasedActive;
 	UpButtonPressedActive = Control._2UpButtonPressedActive;
 	JumpButtonPressedActive = Control._2JumpButtonPressedActive;
+}
 }
 #endregion

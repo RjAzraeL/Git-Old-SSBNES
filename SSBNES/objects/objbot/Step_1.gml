@@ -1,27 +1,31 @@
-#region Falling void
-#region Check void
-FallingVoid = false;
-if (scrExiste(VoidChecker))
+#region Ready
+if (Control.CanMoveGlobal) 
 {
-	if (VoidChecker.visible)
-	{
-		FallingVoid = true;
-		Recover = true;
-	}
-}
-if (scrSolidDetectorBelow() and Attacking == 0)
-{
-	if (ds_list_size(ListRecoverActual) == 0)
-	{
-		ds_list_copy(ListRecoverActual , ListRecover);
-	}
-}
-#endregion
-#endregion
 
-#region CPU
+	#region Falling void
+	#region Check void
+	FallingVoid = false;
+	if (scrExiste(VoidChecker))
+	{
+		if (VoidChecker.visible)
+		{
+			FallingVoid = true;
+			Recover = true;
+		}
+	}
+	if (scrSolidDetectorBelow() and Attacking == 0)
+	{
+		if (ds_list_size(ListRecoverActual) == 0)
+		{
+			ds_list_copy(ListRecoverActual , ListRecover);
+		}
+	}
+	#endregion
+	#endregion
 
-switch (Mode)
+	#region CPU
+
+	switch (Mode)
 {
 	case ("Rage"):
 	{
@@ -430,6 +434,8 @@ switch (Mode)
 	}
 }
 
-scrKeyPressedUnable();
+	scrKeyPressedUnable();
 
+#endregion
+}
 #endregion

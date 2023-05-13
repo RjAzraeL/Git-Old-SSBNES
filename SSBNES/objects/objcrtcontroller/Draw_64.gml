@@ -7,7 +7,7 @@ if (crt_shader_enabled) { scr_CRT_appy_to_surface(application_surface, view_came
 
 ///Set the cameras position if it has been moved with the arrow keys.
 ///Just for demonstration purposes, can be removed.
-camera_set_view_pos(view_camera[0], _xx, _yy);
+//camera_set_view_pos(view_camera[0], _xx, _yy);
 
 ///Alter CRT variables and enable/disable settings.
 ///Just for demonstration purposes, can be removed.
@@ -35,7 +35,7 @@ if (keyboard_check(ord("T")))		   { var_noise_strength += 0.01;}
 if (keyboard_check(ord("W")))          { var_radial_distortion_ammount -= 0.005;} 
 if (keyboard_check(ord("Y")))		   { var_brightness += 0.01;}
 */
-if (keyboard_check_released(vk_space)) { crt_gui_bezel_enabled = !crt_gui_bezel_enabled; }
+if (keyboard_check_released(vk_alt)) { crt_gui_bezel_enabled = !crt_gui_bezel_enabled; }
 if (keyboard_check_released(vk_shift)) { crt_shader_enabled = !crt_shader_enabled; }
 { var_use_noise = 1; }
 { var_use_border = 1; }

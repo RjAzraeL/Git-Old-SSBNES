@@ -66,7 +66,7 @@ if (BattleLevel)
 				shader_reset();
 				#endregion
 				draw_sprite(sprHudBody , 1 , scrX() + 2 + (Largo-LargoMenos) * (Offset) , scrY() + Y );
-				scrText(scrX() + 14 + (Largo-LargoMenos) * (Offset) , scrY() + Y + 38 , scrDameDato(Control.CharacterList , CharacterId[i] , "Name"), fa_center , fa_left , Control.Font , c_black , c_white , 32 , 400 , .75 , .75 , 0 , 1);
+				scrText(scrX() + 30 + (Largo-LargoMenos) * (Offset) , scrY() + Y + 41 , string_upper(scrDameDato(Control.CharacterList , CharacterId[i] , "Name")), fa_middle , fa_center , Control.FontSmall , c_black , c_white , 32 , 400 , 1 , 1 , 0 , 1);
 				if (CharacterId[i] == 7)
 				{
 					draw_sprite(sprChPollierGroundAttackDownItems , CharacterPollierMov[i] , scrX() + 32 + (Largo-LargoMenos) * (Offset) , scrY() + Y - 6 );
@@ -109,15 +109,26 @@ if (MatchEnd)
 {
 	if (surface_exists( MatchEndSurface ))
 	{
-		draw_surface_ext(MatchEndSurface , scrX() , scrY() , .5 , .5 , 0 , c_white , 1);
+		draw_surface_ext(MatchEndSurface , scrX() , scrY() , 1 , 1 , 0 , c_white , 1);
 	}
 	else
 	{
-	    MatchEndSurface = surface_create(512 , 448);
+	    MatchEndSurface = surface_create(view_wport[0] , view_hport[0]);
 		surface_copy(MatchEndSurface , 0 , 0 , application_surface);
 		instance_destroy(objCharacter);
 	}
 	scrText(scrX() + 128 , scrY() + 112 , string_upper(MatchEndText) , fa_middle , fa_center , Control.Font , c_black , c_white , 16 , 56 , 3 , 3 , 0 , 1);
+}
+#endregion
+#region Ready
+if (ReadyTime > 0)
+{
+	var TextLocal = ReadyTime-1;
+	if (TextLocal == 0)
+	{
+		TextLocal = "GO!";
+	}
+	scrText(scrX() + 128 , scrY() + 112 , string_upper(TextLocal) , fa_middle , fa_center , Control.Font , c_black , c_white , 16 , 56 , 4 , 4 , 0 , 1);
 }
 #endregion
 #endregion

@@ -41,6 +41,7 @@
     {"name":"sndOst09Underground","order":14,"path":"sounds/sndOst09Underground/sndOst09Underground.yy",},
     {"name":"objMainMenuButton","order":1,"path":"objects/objMainMenuButton/objMainMenuButton.yy",},
     {"name":"sprChMarioFlipMask","order":3,"path":"sprites/sprChMarioFlipMask/sprChMarioFlipMask.yy",},
+    {"name":"sprFontSmall","order":23,"path":"sprites/sprFontSmall/sprFontSmall.yy",},
     {"name":"sprStgLyBonusMario","order":4,"path":"sprites/sprStgLyBonusMario/sprStgLyBonusMario.yy",},
     {"name":"sprChSandbagFalling","order":3,"path":"sprites/sprChSandbagFalling/sprChSandbagFalling.yy",},
     {"name":"sprChMarioGroundAttackDown","order":11,"path":"sprites/sprChMarioGroundAttackDown/sprChMarioGroundAttackDown.yy",},

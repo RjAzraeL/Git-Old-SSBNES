@@ -52,7 +52,7 @@ window_set_position(10,40)
 
 ///_xx and _yy variables are used to move the views position around.
 ///Just for demonstration purposes, can be removed.
-_xx = 50;
+_xx = 0;
 _yy = 0;
 
 ///Variable for enabling/disabling the CRT effect.
