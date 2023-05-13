@@ -39,6 +39,7 @@ ListRange = ds_list_create();
 ListMelee = ds_list_create();
 LastMov = "";
 alarm[0] = 30;
+alarm[1] = 5;
 MarioCooldownRecover = 0;
 RageTime = 0;
 RangeTime = 0;

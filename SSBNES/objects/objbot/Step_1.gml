@@ -9,6 +9,14 @@ if (scrExiste(VoidChecker))
 		Recover = true;
 	}
 }
+if (scrSolidDetectorBelow() and Attacking == 0)
+{
+	if (ds_list_size(ListRecoverActual) == 0)
+	{
+		ds_list_clear(ListRecoverActual);
+		ds_list_copy(ListRecoverActual , ListRecover);
+	}
+}
 #endregion
 #endregion
 
@@ -360,6 +368,12 @@ switch (Mode)
 			scrKeyActive("Left" , true);
 			IsInDanger = true;
 		}
+		if (FallingVoid)
+		{
+			scrKeyActive("Right" , true);
+			scrKeyActive("Left" , false);
+			IsInDanger = true;
+		}
 		if (x < Control.X2Limit and x > Control.X1Limit and scrSolidDetectorBelow())
 		{
 			Mode = "Avoid";
@@ -367,6 +381,7 @@ switch (Mode)
 		if (VerticalMovement > 0 and IsInDanger)
 		{
 			scrKeyActive("Jump" , true);
+			scrKeyHold("Jump" , 30);
 		}
 		if (FallingVoid and Attacking == 0 and !scrSolidDetectorBelow() and JumpAvailable <= 0)
 		{
@@ -375,13 +390,6 @@ switch (Mode)
 				scrKeyUseMovs(ds_list_find_value( ListRecoverActual , 0) , true);
 				ds_list_delete(ListRecoverActual , 0);
 			}
-		}
-		if (scrSolidDetectorBelow() and Attacking == 0)
-		{
-			LastMov = "";
-			ds_list_clear(ListRecoverActual);
-			ds_list_copy(ListRecoverActual , ListRecover);
-			Mode = "Avoid";
 		}
 		if (!IsInDanger)
 		{

@@ -8,8 +8,8 @@ else
 {
 	if (scrExiste(objSelector))
 	{
-		x = objSelector.x;
-		y = objSelector.y;
+		x = objSelector.x-4;
+		y = objSelector.y-4;
 	}
 }
 #endregion
