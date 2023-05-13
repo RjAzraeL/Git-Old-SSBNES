@@ -311,8 +311,8 @@ if (ds_list_size(QueueRevive) > 0)
 				Character.y = objSpawn.y;
 			}
 		}
-		Control.CharacterLife[CharacterRevivePosition]--;
 	}
+	Control.CharacterLife[CharacterRevivePosition]--;
 	ds_list_delete(QueueRevive , 0);
 	alarm[5] = 10;
 }
