@@ -261,6 +261,8 @@ function scrKeyUseMovs(Mov , Key)
 		}
 		case("Ground Smash Down"):
 		{
+			scrKeyActive("Left" , false);
+			scrKeyActive("Right" , false);
 			scrKeyHold("Attack" , 30);
 			scrKeyHold("Down" , 30);
 			scrKeyActive("Down" , true);
@@ -268,6 +270,8 @@ function scrKeyUseMovs(Mov , Key)
 		}
 		case("Ground Smash Up"):
 		{
+			scrKeyActive("Left" , false);
+			scrKeyActive("Right" , false);
 			scrKeyHold("Attack" , 30);
 			scrKeyHold("Up" , 30);
 			scrKeyActive("Up" , true);
@@ -275,16 +279,22 @@ function scrKeyUseMovs(Mov , Key)
 		}
 		case("Ground Attack Side"):
 		{
+			scrKeyActive("Left" , false);
+			scrKeyActive("Right" , false);
 			scrKeyActive("Up" , true);
 			break;
 		}
 		case("Ground Attack Down"):
 		{
+			scrKeyActive("Left" , false);
+			scrKeyActive("Right" , false);
 			scrKeyActive("Down" , true);
 			break;
 		}
 		case("Ground Attack Up"):
 		{
+			scrKeyActive("Left" , false);
+			scrKeyActive("Right" , false);
 			scrKeyActive("Up" , true);
 			break;
 		}

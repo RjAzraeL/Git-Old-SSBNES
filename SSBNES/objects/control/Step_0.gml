@@ -92,6 +92,27 @@ if (BattleLevel)
 		{
 			Target = objPlayer;
 		}
+		else
+		{
+			var Target = noone;
+			var CantidadDeRivales = instance_number(objCharacter);
+			var TargetLocal = noone;
+			for (var i = 0 ; i < CantidadDeRivales ; i++)
+			{
+				TargetLocal = instance_find(objCharacter , i);
+				if (TargetLocal == noone)
+				{
+					Target = TargetLocal;
+				}
+				else
+				{
+					if (CharacterPorcentage[TargetLocal.Position] > CharacterPorcentage[Target.Position])
+					{
+						Target = TargetLocal;
+					}
+				}
+			}
+		}
 
 		// Clamp camrea
 		if (scrExiste(Target))
