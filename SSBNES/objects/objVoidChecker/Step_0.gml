@@ -13,7 +13,7 @@ else
 if (scrExiste(Master))
 {
 	visible = true;
-	if (place_meeting(x , y , parCollision) or y < Control.VoidLimitStage or (place_meeting(Master.x,Master.y+4,parCollision)) or Master.VerticalMovement == 0)
+	if (place_meeting(x , y , parCollision) or y < Control.VoidLimitStage+6 or (place_meeting(Master.x,Master.y+4,parCollision)) or Master.VerticalMovement == 0)
 	{
 		visible = false;
 	}

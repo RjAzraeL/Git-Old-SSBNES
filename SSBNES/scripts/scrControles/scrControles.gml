@@ -252,17 +252,23 @@ function scrKeyUseMovs(Mov , Key)
 		{
 			scrKeyActive("Left" , false);
 			scrKeyActive("Right" , false);
+			scrKeyActive("Down" , false);
+			scrKeyActive("Down" , false);
 			break;
 		}
 		case("Ground Smash Side"):
 		{
+			scrKeyActive("Left" , false);
+			scrKeyActive("Right" , false);
 			scrKeyActive("Side" , true);
+			scrKeyHold("Side" , 30);
 			break;
 		}
 		case("Ground Smash Down"):
 		{
 			scrKeyActive("Left" , false);
 			scrKeyActive("Right" , false);
+			scrKeyActive("Up" , false);
 			scrKeyHold("Attack" , 30);
 			scrKeyHold("Down" , 30);
 			scrKeyActive("Down" , true);
@@ -272,6 +278,7 @@ function scrKeyUseMovs(Mov , Key)
 		{
 			scrKeyActive("Left" , false);
 			scrKeyActive("Right" , false);
+			scrKeyActive("Down" , false);
 			scrKeyHold("Attack" , 30);
 			scrKeyHold("Up" , 30);
 			scrKeyActive("Up" , true);
@@ -281,12 +288,15 @@ function scrKeyUseMovs(Mov , Key)
 		{
 			scrKeyActive("Left" , false);
 			scrKeyActive("Right" , false);
-			scrKeyActive("Up" , true);
+			scrKeyActive("Side" , true);
+			scrKeyActive("Up" , false);
+			scrKeyActive("Down" , false);
 			break;
 		}
 		case("Ground Attack Down"):
 		{
 			scrKeyActive("Left" , false);
+			scrKeyActive("Up" , false);
 			scrKeyActive("Right" , false);
 			scrKeyActive("Down" , true);
 			break;
@@ -296,6 +306,7 @@ function scrKeyUseMovs(Mov , Key)
 			scrKeyActive("Left" , false);
 			scrKeyActive("Right" , false);
 			scrKeyActive("Up" , true);
+			scrKeyActive("Down" , false);
 			break;
 		}
 		case("Aerial Up"):
@@ -306,6 +317,7 @@ function scrKeyUseMovs(Mov , Key)
 				scrKeyActive("Right" , false);
 				scrKeyActive("Up" , true);
 				scrKeyHold("Up" , 2);
+				scrKeyActive("Down" , false);
 			}
 			break;
 		}
@@ -316,7 +328,21 @@ function scrKeyUseMovs(Mov , Key)
 				scrKeyActive("Left" , false);
 				scrKeyActive("Right" , false);
 				scrKeyActive("Down" , true);
+				scrKeyActive("Up" , false);
 				scrKeyHold("Down" , 2);
+			}
+			break;
+		}
+		case("Aerial Side"):
+		{
+			if (VerticalMovement != 0 and !place_meeting(x , y + 4 ,parCollision))
+			{
+				scrKeyActive("Right" , false);
+				scrKeyActive("Left" , false);
+				scrKeyActive("Side" , true);
+				scrKeyActive("Down" ,false);
+				scrKeyActive("Up" , false);
+				scrKeyHold("Side" , 2);
 			}
 			break;
 		}
