@@ -8,8 +8,8 @@ else
 {
 	if (scrExiste(objSelector))
 	{
-		x = lerp(x , objSelector.x , 1);
-		y = lerp(y , objSelector.y , 1);
+		x = objSelector.x;
+		y = objSelector.y;
 	}
 }
 #endregion
