@@ -13,7 +13,6 @@ if (scrSolidDetectorBelow() and Attacking == 0)
 {
 	if (ds_list_size(ListRecoverActual) == 0)
 	{
-		ds_list_clear(ListRecoverActual);
 		ds_list_copy(ListRecoverActual , ListRecover);
 	}
 }
