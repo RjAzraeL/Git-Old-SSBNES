@@ -6,4 +6,5 @@ depth = -5;
 Active = false;
 LastRoster = noone;
 Circle = noone;
+Hold = false;
 #endregion

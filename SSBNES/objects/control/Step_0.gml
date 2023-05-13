@@ -100,7 +100,7 @@ if (BattleLevel)
 			for (var i = 0 ; i < CantidadDeRivales ; i++)
 			{
 				TargetLocal = instance_find(objCharacter , i);
-				if (TargetLocal == noone)
+				if (Target == noone)
 				{
 					Target = TargetLocal;
 				}
