@@ -2,11 +2,11 @@
 VerticalMovement += Control.Gravity/2;
 #endregion
 #region Collision
-if (place_meeting(x + HorizontalMovement , y , parSolid))
+if (place_meeting(x + HorizontalMovement , y , parCollision))
 {
 	instance_destroy();
 }
-if (place_meeting(x , y + VerticalMovement , parSolid))
+if (place_meeting(x , y + VerticalMovement , parCollision))
 {
 	instance_destroy()
 }

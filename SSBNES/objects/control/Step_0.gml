@@ -114,27 +114,58 @@ if (BattleLevel)
 			}
 		}
 
-		// Clamp camrea
-		if (scrExiste(Target))
-		{
-			if (Target.x < Limite)
-			{
-				xx = lerp(xx , 0 , LimiteVelocidad);
-			}
-			else if (Target.x >= Limite + (Limite/3) and Target.x <= room_width - Limite - (Limite/3))
-			{
-				xx  = lerp(xx , room_width/2 , LimiteVelocidad*4);
-			}
-			else if (Target.x > room_width - Limite)
-			{
-				xx = lerp(xx , room_width , LimiteVelocidad);
-			}
-			xx = clamp(xx, HalfViewWidth, room_width - HalfViewWidth);
-			yy = clamp(yy, HalfViewHeight, room_height - HalfViewHeight);
-		}
+		// Clamp camera
+		var CantidadEnXIzq = 0;
+        var CantidadEnXMed = 0;
+        var CantidadEnXDer = 0;
+		var CantidadDeRivales = instance_number(objCharacter);
+		var TargetLocal = noone;
+		var xx_local = room_width/2;
+        for (var i = 0 ; i < CantidadDeRivales ; i++)
+        {
+            TargetLocal = instance_find(objCharacter , i);
+            if (TargetLocal.x < Limite)
+            {
+                CantidadEnXIzq++;
+            }
+            else if (TargetLocal.x >= Limite + (Limite/6) and TargetLocal.x <= room_width - Limite - (Limite/6))
+            {
+                CantidadEnXMed++;
+            }
+            else if (TargetLocal.x > room_width - Limite)
+            {
+                CantidadEnXDer++;
+            }
+        }
+
+        // Clamp camrea
+        if (scrExiste(Target))
+        {
+            if (CantidadEnXIzq > CantidadEnXDer + CantidadEnXMed)
+            {
+                xx = lerp(xx , 0 , LimiteVelocidad);
+            }
+            else if (CantidadEnXDer == CantidadEnXIzq)
+            {
+                xx  = lerp(xx , room_width/2 , LimiteVelocidad*4);
+            }
+            else if (CantidadEnXDer > CantidadEnXIzq + CantidadEnXMed)
+            {
+                xx = lerp(xx , room_width , LimiteVelocidad);
+            }
+            xx = clamp(xx, HalfViewWidth, room_width - HalfViewWidth);
+            yy = clamp(yy, HalfViewHeight, room_height - HalfViewHeight);
+        }
 
 		// Update camera position
-		camera_set_view_pos(view_camera[0], xx - HalfViewWidth, yy - HalfViewHeight);
+		if (ReadyTime == 0)
+		{
+			camera_set_view_pos(view_camera[0], xx - HalfViewWidth, yy - HalfViewHeight);
+		}
+		else
+		{
+			camera_set_view_pos(view_camera[0], xx_local - HalfViewWidth, yy - HalfViewHeight);
+		}
 		
 		#endregion
 	}
@@ -179,8 +210,15 @@ else
 			current_y = clamp(current_y , 0 , room_height - 224);
 			
 			// Establecer la posición de la cámara
-			camera_set_view_pos(view_camera[0], current_x, current_y);
-
+			if (ReadyTime == 0)
+			{
+				camera_set_view_pos(view_camera[0], current_x, current_y);
+			}
+			else 
+			{
+				camera_set_view_pos(view_camera[0], target_x - 128, target_y - 112);
+			}
+			
 		}
 		#endregion
 		#region Music

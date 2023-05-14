@@ -36,6 +36,7 @@ if (scrIsBonusLevel())
 	VoidXLimit = 1000;
 	alarm[3] = 60;
 	NormalCamera = false;
+	camera_set_view_pos(view_camera[0], room_width/2, room_height/2);
 	camera_set_view_border(view_camera[0] , 128 , 112);
 }
 #endregion

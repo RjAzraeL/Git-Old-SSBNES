@@ -34,17 +34,17 @@ if (HorizontalMovement < -Friction)
 	HorizontalMovement += Friction;
 }
 #region Collision
-if (place_meeting(x + HorizontalMovement , y , parSolid))
+if (place_meeting(x + HorizontalMovement , y , parCollision))
 {
-	while (!place_meeting(x + sign(HorizontalMovement) , y , parSolid))
+	while (!place_meeting(x + sign(HorizontalMovement) , y , parCollision))
 	{
 		x += sign(HorizontalMovement);
 	}
 	HorizontalMovement = 0;
 }
-if (place_meeting(x , y + VerticalMovement , parSolid))
+if (place_meeting(x , y + VerticalMovement , parCollision))
 {
-	while (!place_meeting(x, y + sign(VerticalMovement) , parSolid))
+	while (!place_meeting(x, y + sign(VerticalMovement) , parCollision))
 	{
 		y += sign(VerticalMovement);
 	}

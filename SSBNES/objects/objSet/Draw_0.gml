@@ -1,5 +1,5 @@
 #region Draw title
-scrText( CenterX , 27 , string_upper(MainText) , fa_middle , fa_center , Control.Font , c_black , c_white , 8 , room_width , 1 , 1 , 0 , 1 );
+scrText( CenterX , 27 , string_upper(MainText) , fa_middle , fa_center , Control.ActualFont , c_black , c_white , 8 , room_width , 1 , 1 , 0 , 1 );
 #endregion
 #region Layer general
 for (var i = 0 ; i < LayerTotal ; i++)
@@ -35,12 +35,12 @@ if (LayerActual == 0)
 			Color = ColorActivo;
 			draw_sprite_ext(sprSetBarra , 0 , room_width/2 , 55 + (16*i) , 1 , 1 , 0 , c_white , 1);
 		}
-		scrText( 133 , 55 + (16*i) , "╚" + string(string_upper(L[i])) , fa_middle , fa_left , Control.Font , c_black , Color , 8 , room_width , 1 , 1 , 0 , 1);
+		scrText( 133 , 55 + (16*i) , "╚" + string(string_upper(L[i])) , fa_middle , fa_left , Control.ActualFont , c_black , Color , 8 , room_width , 1 , 1 , 0 , 1);
 	}
 	#endregion
 	#region Text language
 	draw_sprite_ext(sprSetTextBox1 , 0 , room_width/2 , 196 , 1 , 1 , 0 , c_white , 1);
-	scrText( room_width/2 , 197 , "" + string(string_upper(TextLanguageExample)) , fa_middle , fa_center , Control.Font , c_black , c_white , 8 , 238 , 1 , 1 , 0 , 1);
+	scrText( room_width/2 , 197 , "" + string(string_upper(TextLanguageExample)) , fa_middle , fa_center , Control.ActualFont , c_black , c_white , 8 , 238 , 1 , 1 , 0 , 1);
 	#endregion
 }
 #endregion
@@ -68,8 +68,8 @@ if (LayerActual == 1)
 		}
 		if (Visible)
 		{
-			scrText( 066 , 55 + (16*i) , "╚" + string(string_upper(C[i])) , fa_middle , fa_left , Control.Font , c_black , Color , 8 , room_width , 1 , 1 , 0 , 1);
-			scrText( 283 , 55 + (16*i) , "" + string(VisibleText) , fa_middle , fa_right , Control.Font , c_black , Color , 8 , room_width , 1 , 1 , 0 , 1);
+			scrText( 066 , 55 + (16*i) , "╚" + string(string_upper(C[i])) , fa_middle , fa_left , Control.ActualFont , c_black , Color , 8 , room_width , 1 , 1 , 0 , 1);
+			scrText( 283 , 55 + (16*i) , "" + string(VisibleText) , fa_middle , fa_right , Control.ActualFont , c_black , Color , 8 , room_width , 1 , 1 , 0 , 1);
 		}
 	}
 	#endregion
@@ -105,7 +105,7 @@ if (LayerActual == 1)
 	draw_sprite_ext(sprSetController , ControlActual+1 , CenterX , 198 , 1 , 1 , 0 , ColorC , 1);
 	if (ControlActual == 8)
 	{
-		scrText( CenterX , 198 , "" + string_upper(TextDefault) , fa_middle , fa_center , Control.Font , c_black , Color , 8 , 102 , 1 , 1 , 0 , 1);
+		scrText( CenterX , 198 , "" + string_upper(TextDefault) , fa_middle , fa_center , Control.ActualFont , c_black , Color , 8 , 102 , 1 , 1 , 0 , 1);
 	}
 	
 	draw_sprite_ext(sprSetArrow , 0 , 074 , 203 , -1 , 1 , 0 , ColorL , 1);
@@ -137,8 +137,8 @@ if (LayerActual == 2)
 		}
 		if (Visible)
 		{
-			scrText( 066 , 55 + (16*i) , "╚" + string(string_upper(C[i])) , fa_middle , fa_left , Control.Font , c_black , Color , 8 , room_width , 1 , 1 , 0 , 1);
-			scrText( 283 , 55 + (16*i) , "" + string(VisibleText) , fa_middle , fa_right , Control.Font , c_black , Color , 8 , room_width , 1 , 1 , 0 , 1);
+			scrText( 066 , 55 + (16*i) , "╚" + string(string_upper(C[i])) , fa_middle , fa_left , Control.ActualFont , c_black , Color , 8 , room_width , 1 , 1 , 0 , 1);
+			scrText( 283 , 55 + (16*i) , "" + string(VisibleText) , fa_middle , fa_right , Control.ActualFont , c_black , Color , 8 , room_width , 1 , 1 , 0 , 1);
 		}
 	}
 	#endregion
@@ -174,7 +174,7 @@ if (LayerActual == 2)
 	draw_sprite_ext(sprSetController , ControlActual+1 , CenterX , 198 , 1 , 1 , 0 , ColorC , 1);
 	if (ControlActual == 8)
 	{
-		scrText( CenterX , 198 , "" + string_upper(TextDefault) , fa_middle , fa_center , Control.Font , c_black , Color , 8 , 102 , 1 , 1 , 0 , 1);
+		scrText( CenterX , 198 , "" + string_upper(TextDefault) , fa_middle , fa_center , Control.ActualFont , c_black , Color , 8 , 102 , 1 , 1 , 0 , 1);
 	}
 	
 	draw_sprite_ext(sprSetArrow , 0 , 074 , 203 , -1 , 1 , 0 , ColorL , 1);

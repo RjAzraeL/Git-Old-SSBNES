@@ -159,7 +159,14 @@ function scrLanguageLoadTexto(LocalLanguage)
 		Text_v0r1 = ini_read_string("VERSUS" , "v0r1" , "ERROR");
 	}
 	#endregion
-	
+	if (LocalLanguage == 5)
+	{
+		Control.ActualFont = fntJapanese;
+	}
+	else
+	{
+		Control.ActualFont = Control.Font;
+	}
 	ini_close();
 }
 

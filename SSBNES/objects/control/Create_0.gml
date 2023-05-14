@@ -9,6 +9,10 @@ scrFileAchievementLoad();
 
 instance_create_depth(0 , 0 , 0 , Language);
 LanguageActual = 0;
+FontPorcentage = font_add_sprite_ext(sprHudNumbers , "0123456789" , true , 0);
+Font = font_add_sprite_ext(sprFont , " !ƒ#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ╚" , false , 0);
+FontSmall = font_add_sprite_ext(sprFontSmall , "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890ÄÉÓ" , false , 0);
+ActualFont = Font;
 scrFileLanguageLoad();
 scrLanguageLoadTexto(LanguageActual);
 depth = -10;
@@ -87,9 +91,7 @@ TotalCharacters = 1;
 StageId = 0;
 ShowMask = false;
 ShowMovsMask = false;
-FontPorcentage = font_add_sprite_ext(sprHudNumbers , "0123456789" , true , 0);
-Font = font_add_sprite_ext(sprFont , " !ƒ#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ╚" , false , 0);
-FontSmall = font_add_sprite_ext(sprFontSmall , "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890ÄÉÓ" , false , 0);
+
 CharacterSkinSet = ds_map_create();
 for (var i = 0 ; i < 4 ; i++)
 {
@@ -123,7 +125,7 @@ MusicLoop = false;
 CharacterLimit = ds_list_size(Control.CharacterList)-1;
 xx = 0;
 yy = 0;
-Limite = 90;
+Limite = 120;
 LimiteVelocidad = 0.025;
 PlatformYLimit = 32;
 CreateBot = false;
