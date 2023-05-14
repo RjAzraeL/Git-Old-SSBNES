@@ -18,6 +18,7 @@
     {"name":"inst_6F329A2D","path":"rooms/rmStgHyruleForest/rmStgHyruleForest.yy",},
     {"name":"inst_7E100BED","path":"rooms/rmStgHyruleForest/rmStgHyruleForest.yy",},
     {"name":"inst_4137ACD8","path":"rooms/rmStgHyruleForest/rmStgHyruleForest.yy",},
+    {"name":"inst_33B8E3F0","path":"rooms/rmStgHyruleForest/rmStgHyruleForest.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -26,6 +27,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_467806C1","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"objSpawn","path":"objects/objSpawn/objSpawn.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":208.0,"y":136.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5FEF79FD","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"objSpawn","path":"objects/objSpawn/objSpawn.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":152.0,"y":24.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_51E26488","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"objSpawn","path":"objects/objSpawn/objSpawn.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":272.0,"y":104.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_33B8E3F0","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"objDeathAppear","path":"objects/objDeathAppear/objDeathAppear.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":168.0,"y":88.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"objColision","depth":100,"effectEnabled":true,"effectType":null,"gridX":4,"gridY":4,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_43E16983_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"objBlockTransferable","path":"objects/objBlockTransferable/objBlockTransferable.yy",},"properties":[],"rotation":0.0,"scaleX":2.0,"scaleY":1.0,"x":208.0,"y":98.0,},

@@ -2,10 +2,10 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "sprStgLy1HeavenSanctuary",
-  "bbox_bottom": 223,
+  "bbox_bottom": 39,
   "bbox_left": 0,
-  "bbox_right": 327,
-  "bbox_top": 40,
+  "bbox_right": 71,
+  "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
   "collisionTolerance": 0,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"806ed7bb-af9a-4b6d-9648-42bead794fc0",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"5819594a-154f-4a1d-a551-cc4616b39f32",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 224,
+  "height": 40,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"7e98d628-f955-4389-b39f-4e947cf745a0","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"fb1d9841-923b-469e-ac41-1ee6fbc10ecd","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"806ed7bb-af9a-4b6d-9648-42bead794fc0","path":"sprites/sprStgLy1HeavenSanctuary/sprStgLy1HeavenSanctuary.yy",},},},"Disabled":false,"id":"68bafd50-78c6-47cb-966e-e1d936b981db","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"5819594a-154f-4a1d-a551-cc4616b39f32","path":"sprites/sprStgLy1HeavenSanctuary/sprStgLy1HeavenSanctuary.yy",},},},"Disabled":false,"id":"755ab4e1-c8b5-4844-943d-dc1ffa5c919f","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 356,
+  "width": 72,
 }
