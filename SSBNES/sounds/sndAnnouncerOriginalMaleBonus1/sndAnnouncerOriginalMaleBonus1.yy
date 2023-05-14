@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSound",
   "resourceVersion": "1.0",
-  "name": "sndAnnouncerComplete",
+  "name": "sndAnnouncerOriginalMaleBonus1",
   "audioGroupId": {
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
@@ -10,14 +10,14 @@
   "bitRate": 8,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 0.533651,
+  "duration": 1.067302,
   "parent": {
-    "name": "Azrael",
-    "path": "folders/Audio/Announcer/Azrael.yy",
+    "name": "Bran Rainey",
+    "path": "folders/Audio/Announcer/Bran Rainey.yy",
   },
   "preload": false,
   "sampleRate": 5512,
-  "soundFile": "sndAnnouncerComplete.ogg",
+  "soundFile": "sndAnnouncerOriginalMaleBonus1.ogg",
   "type": 0,
   "volume": 1.0,
 }

@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSound",
   "resourceVersion": "1.0",
-  "name": "sndAnnouncerComplete",
+  "name": "sndAnnouncerFreeForAll",
   "audioGroupId": {
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
@@ -10,14 +10,14 @@
   "bitRate": 8,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 0.533651,
+  "duration": 1.341338,
   "parent": {
     "name": "Azrael",
     "path": "folders/Audio/Announcer/Azrael.yy",
   },
   "preload": false,
   "sampleRate": 5512,
-  "soundFile": "sndAnnouncerComplete.ogg",
+  "soundFile": "sndAnnouncerFreeForAll.ogg",
   "type": 0,
   "volume": 1.0,
 }
