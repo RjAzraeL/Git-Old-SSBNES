@@ -13,6 +13,7 @@ if (Active)
 			ChangeTitles = false;
 		}
 		var Change = false;
+		var ChangeBox = false;
 		if (Control.StartButtonPressedActive)
 		{
 			ChangeTitles = true;
@@ -28,6 +29,7 @@ if (Active)
 		{
 			if (LanguageActual > 0)
 			{
+				ChangeBox = true;
 				Change = true;
 				LanguageActual--;
 				scrSound(sfxButtonOk);
@@ -37,6 +39,7 @@ if (Active)
 		{
 			if (LanguageActual < 6)
 			{
+				ChangeBox = true;
 				Change = true;
 				scrSound(sfxButtonOk);
 				LanguageActual++;
@@ -47,7 +50,7 @@ if (Active)
 			scrLanguageLoadTexto( LanguageActual );
 			Control.LanguageActual = LanguageActual;
 			MainText = Language.Text_setn0o0;
-			TextLanguageExample = Language.Text_setn0o1;
+			/*TextLanguageExample = Language.Text_setn0o1;
 			L[0] = Language.Text_setl0o0;
 			L[1] = Language.Text_setl0o1;
 			L[2] = Language.Text_setl0o2;
@@ -55,6 +58,13 @@ if (Active)
 			L[4] = Language.Text_setl0o4;
 			L[5] = Language.Text_setl0o5;
 			L[6] = Language.Text_setl0o6;
+			*/
+		}
+		if (ChangeBox)
+		{
+			ini_open("l/"+string(scrLanguageLoadFile(LanguageActual)+".txt"));
+			TextLanguageExample = ini_read_string("SET" , "setn0o1" , "ERROR_TEXT");
+			ini_close();
 		}
 	}
 	else if (LayerActual == 1) /*Controls P-1 Layer*/

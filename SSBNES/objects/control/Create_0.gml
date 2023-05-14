@@ -85,7 +85,7 @@ ShowMask = false;
 ShowMovsMask = false;
 FontPorcentage = font_add_sprite_ext(sprHudNumbers , "0123456789" , true , 0);
 Font = font_add_sprite_ext(sprFont , " !ƒ#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ╚" , false , 0);
-FontSmall = font_add_sprite_ext(sprFontSmall , "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890" , false , 0);
+FontSmall = font_add_sprite_ext(sprFontSmall , "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890ÄÉÓ" , false , 0);
 CharacterSkinSet = ds_map_create();
 for (var i = 0 ; i < 4 ; i++)
 {

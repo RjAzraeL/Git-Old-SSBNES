@@ -83,13 +83,13 @@ mtl5 = "EXTRA"
 ml5o0 = "Galerie"
 ml5o1 = "Loterie"
 ml5o2 = "Collection"
-ml5o3 = "Cartes"
+ml5o3 = "Réalisations"
 ml5o4 = "Construire"
 
 ml5d0 = "Regardez les trophées que vous avez récupérés."
 ml5d1 = "Utilisez des pièces pour obtenir des trophées!"
-ml5d2 = "Regardez toute votre collection de trophées."
-ml5d3 = "Regardez les cartes que vous avez récupérées."
+ml5d2 = "Regardez toute votre collection."
+ml5d3 = "Voir les réalisations que vous avez."
 ml5d4 = "Créez votre propre scénario!"
 
 [OPTIONS]
@@ -123,6 +123,10 @@ ml7d3 = "Informations sur les éléments cachés."
 ml7d4 = "Rejoignez notre serveur Discord!"
 
 [SET]
+setn2o0 = "Configurer le contrôle J2"
+setn3o0 = "Graphiques"
+setn4o0 = "Gamejolt"
+
 setn0o0 = "Sélectionnez votre langue"
 setn0o1 = "Si vous pouvez lire et comprendre cette langue, appuyez sur Entrée pour continuer !"
 setl0o0 = "Anglais"
@@ -132,3 +136,24 @@ setl0o3 = "Français"
 setl0o4 = "Allemand"
 setl0o5 = "Japonais"
 setl0o6 = "Italien"
+
+setn1o0 = "Configurer le contrôle J1"
+setn1o1 = "Gauche"
+setn1o2 = "Droite"
+setn1o3 = "Haut"
+setn1o4 = "Bas"
+setn1o5 = "A | Sauter"
+setn1o6 = "B | Attaque"
+setn1o7 = "Start"
+setn1o8 = "Select"
+setn1o9 = "Contrôles par défaut"
+
+[BONUS]
+b0t0 = "Un nouveau record!"
+b0t1 = "Complet"
+b0t2 = "Échec"
+b0t3 = "Aucun enregistrement"
+
+[VERSUS]
+v0r0 = "Prêt à combattre!"
+v0r1 = "Aléatoire"

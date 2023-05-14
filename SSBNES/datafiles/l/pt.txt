@@ -18,7 +18,7 @@ ml0d4 = "Ver logs do jogo."
 
 ml0e0 = "Modo Regul.#Eventos#Estádio#Treinament."
 ml0e1 = "Melee#Torneio#Smash Espe.#Regras#Nomes"
-ml0e2 = "Galeria#Loteria#Coleção#Cartões#Construir"
+ml0e2 = "Galeria#Loteria#Coleção#Conquistas#Construir"
 ml0e3 = "Idioma#Controles#Áudio#Gráficos#Limpar dados"
 ml0e4 = "Arquivo#Teste Som#Registros#Especial#Discord"
 
@@ -83,13 +83,13 @@ mtl5 = "EXTRA"
 ml5o0 = "Galeria"
 ml5o1 = "Loteria"
 ml5o2 = "Coleção"
-ml5o3 = "Cartões"
+ml5o3 = "Conquistas"
 ml5o4 = "Construir"
 
 ml5d0 = "Veja os troféus que você coletou."
 ml5d1 = "Use moedas para obter troféus!"
 ml5d2 = "Veja toda a sua coleção de troféus."
-ml5d3 = "Olhe as cartas que você coletou."
+ml5d3 = "Veja as conquistas que você tem."
 ml5d4 = "Crie seu próprio cenário!"
 
 [OPTIONS]
@@ -123,6 +123,10 @@ ml7d3 = "Informações sobre itens ocultos."
 ml7d4 = "Entre no nosso servidor Discord!"
 
 [SET]
+setn2o0 = "Configura controles J2"
+setn3o0 = "Gráficos"
+setn4o0 = "Gamejolt"
+
 setn0o0 = "Selecione seu idioma"
 setn0o1 = "Se você pode ler e entender este idioma, pressione enter para continuar!"
 setl0o0 = "Inglês"
@@ -131,4 +135,25 @@ setl0o2 = "Português"
 setl0o3 = "Francês"
 setl0o4 = "Alemão"
 setl0o5 = "Japonês"
-setl0o6 = "Italiano"
+setl0o6 = "italiano"
+
+setn1o0 = "Definir controles J1"
+setn1o1 = "Esquerda"
+setn1o2 = "Direita"
+setn1o3 = "Acima"
+setn1o4 = "Abaixo"
+setn1o5 = "A | Saltar"
+setn1o6 = "B | Ataque"
+setn1o7 = "Start"
+setn1o8 = "Select"
+setn1o9 = "Controles padrão"
+
+[BONUS]
+b0t0 = "Novo registro!"
+b0t1 = "Concluído"
+b0t2 = "Você falhou!"
+b0t3 = "Sem registro"
+
+[VERSUS]
+v0r0 = "Pronto para lutar!"
+v0r1 = "Aleatório"

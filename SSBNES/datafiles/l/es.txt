@@ -88,8 +88,8 @@ ml5o4 = "Construcción"
 
 ml5d0 = "Mira los trofeos que has recogido."
 ml5d1 = "¡Usa monedas para obtener trofeos!"
-ml5d2 = "Mira toda tu colección de trofeos."
-ml5d3 = "Mira las cartas que has recogido."
+ml5d2 = "Mira toda tu colección."
+ml5d3 = "Mira los logros que has recogido."
 ml5d4 = "¡Crea tu propio escenario!"
 
 [OPTIONS]
@@ -144,8 +144,8 @@ setn1o3 = "Arriba"
 setn1o4 = "Abajo"
 setn1o5 = "A | Salto"
 setn1o6 = "B | Ataque"
-setn1o7 = "Empezar"
-setn1o8 = "Selección"
+setn1o7 = "Start"
+setn1o8 = "Select"
 setn1o9 = "Controles por defecto"
 
 [BONUS]

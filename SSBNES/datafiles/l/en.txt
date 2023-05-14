@@ -88,8 +88,8 @@ ml5o4 = "Stage Build"
 
 ml5d0 = "View trophies you've collected."
 ml5d1 = "Use the coins to get trophies!"
-ml5d2 = "View your entire trophy collection."
-ml5d3 = "View cards you've collected."
+ml5d2 = "View your entire collection."
+ml5d3 = "View the achievements you have."
 ml5d4 = "Create your own battle stage!"
 
 [OPTIONS]

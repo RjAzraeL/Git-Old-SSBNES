@@ -1,0 +1,159 @@
+[TITLE SCREEN]
+ts0 = "PREMI START!"
+
+[MAIN MENU]
+mtl0 = "MENU' PRINCIPALE"
+
+ml0o0 = "1-Giocatore"
+ml0o1 = "Modalità VS."
+ml0o2 = "Extra"
+ml0o3 = "Opzioni"
+ml0o4 = "Dati"
+
+ml0d0 = "Smash in singolo!"
+ml0d1 = "Battaglie multiplayer!"
+ml0d2 = "Visualizza contenuti extra."
+ml0d3 = "Impostazioni di gioco."
+ml0d4 = "Visualizza record di gioco."
+
+ml0e0 = "Classica#Evento#Stadio#Allenamento"
+ml0e1 = "Obiettivi#Torneo#Regole Speciali#Regole Personalizzate#Inserimento Nome"
+ml0e2 = "Galleria#Lotteria#Collezione#Obiettivi#Creazione Stadi"
+ml0e3 = "Lingua#Controlli#Audio#Grafica#Cancella Dati"
+ml0e4 = "Archivi#Test Audio#Registrazioni Melee#Speciale#Discord"
+
+[1-P MODE]
+mtl1 = "1-GIOCATORE"
+
+ml1o0 = "Classica"
+ml1o1 = "Evento"
+ml1o2 = "Stadio"
+ml1o3 = "Allenamento"
+
+ml1d0 = "Vari livelli di Smash standard."
+ml1d1 = "Incontri speciali di Smash."
+ml1d2 = "Prove di mini-giochi."
+ml1d3 = "Allenamento libero per affinare le abilità."
+
+ml1e0 = "Classica#Avventura#All-Star"
+ml1e2 = "Bersaglio#Piattaforma#Corsa#Multi-Uomo"
+
+[REGULAR MATCH]
+mtl2 = "SMASH CLASSICO"
+
+ml2o0 = "Classica"
+ml2o1 = "Avventura"
+ml2o2 = "All-Star"
+
+ml2d0 = "Sconfiggi ogni avversario per avanzare."
+ml2d1 = "Combatti attraverso vari livelli."
+ml2d2 = "Conquista tutti gli avversari."
+
+[STADIUM]
+mtl3 = "STADIO"
+
+ml3o0 = "Bersaglio"
+ml3o1 = "Piattaforma"
+ml3o2 = "Corsa"
+ml3o3 = "Multi-Uomo"
+
+ml3d0 = "Colpisci dieci bersagli!"
+ml3d1 = "Salta su dieci piattaforme!"
+ml3d2 = "Esci dalla stanza!"
+ml3d3 = "Combatti per la tua vita! Combatti!"
+
+[VS. MODE]
+mtl4 = "MODALITÀ VS."
+
+ml4o0 = "Mischia"
+ml4o1 = "Torneo"
+ml4o2 = "Speciali"
+ml4o3 = "Regole"
+ml4o4 = "Nomi"
+
+ml4d0 = "Una battaglia standard di Smash."
+ml4d1 = "Un torneo per un massimo di 64 giocatori."
+ml4d2 = "Una mischia con regole speciali."
+ml4d3 = "Cambia le regole della mischia qui."
+ml4d4 = "Inserisci il tuo nome."
+
+[EXTRA]
+mtl5 = "EXTRA"
+
+ml5o0 = "Galleria"
+ml5o1 = "Lotteria"
+ml5o2 = "Collezione"
+ml5o3 = "Obiettivi"
+ml5o4 = "Costruzione"
+
+ml5d0 = "Visualizza i trofei che hai raccolto."
+ml5d1 = "Usa le monete per ottenere trofei!"
+ml5d2 = "Visualizza l'intera collezione."
+ml5d3 = "Visualizza gli obiettivi che hai raggiunto."
+ml5d4 = "Crea il tuo palcoscenico di battaglia!"
+
+[OPTIONS]
+mtl6 = "OPZIONI"
+
+ml6o0 = "Lingua"
+ml6o1 = "Controlli"
+ml6o2 = "Audio"
+ml6o3 = "Grafica"
+ml6o4 = "Cancella dati"
+
+ml6d0 = "Seleziona le opzioni della lingua."
+ml6d1 = "Configura i tuoi controlli."
+ml6d2 = "Seleziona le opzioni audio."
+ml6d3 = "Seleziona le opzioni grafiche."
+ml6d4 = "Cancella i record delle mischie, ecc."
+
+[DATA]
+mtl7 = "DATI"
+
+ml7o0 = "Archivi"
+ml7o1 = "Prova audio"
+ml7o2 = "Record"
+ml7o3 = "Speciale"
+ml7o4 = "Discord"
+
+ml7d0 = "Guarda i filmati di Smash Bros."
+ml7d1 = "Ascolta la musica e gli effetti sonori."
+ml7d2 = "Visualizza vari record di combattimento."
+ml7d3 = "Informazioni sugli elementi nascosti."
+ml7d4 = "Unisciti al nostro server Discord!"
+
+[SET]
+setn2o0 = "Imposta il controllo di G2"
+setn3o0 = "Grafica"
+setn4o0 = "Gamejolt"
+
+setn0o0 = "Seleziona la tua lingua"
+setn0o1 = "Se riesci a leggere e comprendere questa lingua, premi Invio per continuare!"
+setl0o0 = "Inglese"
+setl0o1 = "Spagnolo"
+setl0o2 = "Portoghese"
+setl0o3 = "Francese"
+setl0o4 = "Tedesco"
+setl0o5 = "Giapponese"
+setl0o6 = "Italiano"
+
+setn1o0 = "Imposta il controllo di G1"
+setn1o1 = "Sinistra"
+setn1o2 = "Destra"
+setn1o3 = "Su"
+setn1o4 = "Giù"
+setn1o5 = "A | Salto"
+setn1o6 = "B | Attacco"
+setn1o7 = "Start"
+setn1o8 = "Select"
+setn1o9 = "Controlli predefiniti"
+
+[BONUS]
+b0t0 = "Un nuovo record!"
+b0t1 = "Completato"
+b0t2 = "Fallito"
+b0t3 = "Nessun record"
+
+[VERSUS]
+v0r0 = "Pronto a combattere!"
+v0r1 = "Casuale"
