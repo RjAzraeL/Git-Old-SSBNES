@@ -4,7 +4,7 @@
   "name": "sprChMarioAerialUpMask",
   "bbox_bottom": 29,
   "bbox_left": 0,
-  "bbox_right": 35,
+  "bbox_right": 36,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 4,
