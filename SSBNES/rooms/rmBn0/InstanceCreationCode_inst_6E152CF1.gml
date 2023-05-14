@@ -1,2 +1,0 @@
-//Pollier
-Ide = 40;

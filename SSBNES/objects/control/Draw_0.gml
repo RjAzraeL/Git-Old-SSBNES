@@ -31,7 +31,12 @@ if (BattleLevel)
 			}
 			else
 			{
-				draw_sprite(sprHudBody , 0 , scrX() + 2 + (Largo-LargoMenos) * (Offset) , scrY() + Y );
+				var ColorHud = CharacterColorHud[i];
+				if (CharacterType[i] == 2)
+				{
+					ColorHud = CharacterColorHud[2];
+				}
+				draw_sprite_ext(sprHudBody , 0 , scrX() + 2 + (Largo-LargoMenos) * (Offset) , scrY() + Y, 1, 1, 0, ColorHud ,1);
 				var Number = "00" + string(CharacterPorcentage[i]);
 				var RealNumber = "";
 				RealNumber += string_char_at( Number , string_length(Number)-2 );
