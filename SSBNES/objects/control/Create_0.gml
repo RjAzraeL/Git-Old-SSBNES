@@ -1,4 +1,7 @@
 #region Set variables
+Server = false;
+Client = false;
+Online = false;
 
 #region Record
 RecordSecond = -1;
