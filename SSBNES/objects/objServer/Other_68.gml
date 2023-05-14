@@ -38,10 +38,6 @@ switch (Motivo)
 				Control._2RightButtonReleasedActive = buffer_read(BufferRecibido , buffer_s16);
 				break;
 			}
-			case (3):
-			{
-				break;
-			}
 		}
 		break;
 	}

@@ -246,7 +246,7 @@ if (MatchWait > 0)
 {
 	MatchWait--;
 }
-if (BattleLevel and MatchWait <= 0 and !scrIsBonusLevel() and !BattleLevelIsFreeze)
+if (BattleLevel and MatchWait <= 0 and !scrIsBonusLevel() and !BattleLevelIsFreeze and !Client)
 {
 	if (instance_number(objCharacter) <= 1)
 	{

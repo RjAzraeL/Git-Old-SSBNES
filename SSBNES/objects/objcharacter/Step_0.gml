@@ -1,5 +1,27 @@
 #region Movement
 
+#region Servidor
+if (Control.Server)
+{
+	#region Send data to server
+	BufferBasic[Position] = buffer_create(128 , buffer_grow , 1);
+	buffer_seek(BufferBasic[Position], buffer_seek_start , 0);
+	buffer_write(BufferBasic[Position], buffer_u8 , Position+2);
+	buffer_write(BufferBasic[Position], buffer_s16 , x);
+	buffer_write(BufferBasic[Position], buffer_s16 , y);
+	buffer_write(BufferBasic[Position], buffer_s16 , sprite_index);
+	buffer_write(BufferBasic[Position], buffer_s16 , image_index);
+	buffer_write(BufferBasic[Position], buffer_s16 , LastScaleXSprite);
+	buffer_write(BufferBasic[Position], buffer_s16 , InmuneVisible);
+	for (var i = 0; i < ds_list_size(objServer.ListaJugador); ++i)
+	{
+		network_send_packet(ds_list_find_value(objServer.ListaJugador, i), BufferBasic[Position], buffer_tell(BufferBasic[Position]));
+	}
+	buffer_delete(BufferBasic[Position]);
+	#endregion
+}
+#endregion
+
 #region Buttons variables
 
 if (DownButtonPressedActive)

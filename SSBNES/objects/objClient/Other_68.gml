@@ -23,28 +23,46 @@ switch (Motivo)
 				Visible[0] = buffer_read(BufferRecibido , buffer_s16);
 				break;
 			}
+			case (3):
+			{
+				X[1] = buffer_read(BufferRecibido , buffer_s16);
+				Y[1] = buffer_read(BufferRecibido , buffer_s16);
+				SpriteIndex[1] = buffer_read(BufferRecibido , buffer_s16);
+				ImageIndex[1] = buffer_read(BufferRecibido , buffer_s16);
+				ScaleX[1] = buffer_read(BufferRecibido , buffer_s16);
+				ScaleY[1] = 1;
+				Angle[1] = 0;
+				Color[1] = c_white;
+				Alpha[1] = 1;
+				Visible[1] = buffer_read(BufferRecibido , buffer_s16);
+				break;
+			}
 			case (4):
 			{
-				if (scrExiste(objNaveRival))
-				{
-					/*
-					BalaX = buffer_read(BufferRecibido , buffer_s16);
-					BalaY = buffer_read(BufferRecibido , buffer_s16);
-					BalaAngulo = buffer_read(BufferRecibido , buffer_s16);
-					BalaTipo = buffer_read(BufferRecibido , buffer_s16);
-					BalaPoder = buffer_read(BufferRecibido , buffer_s16);
-					BalaIndice = 1;
-					BalaVelocidad = buffer_read(BufferRecibido , buffer_s16);
-					var BalaLocal = instance_create_depth(BalaX , BalaY , depth-1 , objBalaRival);
-					BalaLocal.Tipo = BalaTipo;
-					BalaLocal.Poder = BalaPoder;
-					BalaLocal.image_angle = BalaAngulo;
-					BalaLocal.direction = BalaAngulo;
-					BalaLocal.speed = BalaVelocidad;
-					BalaLocal.image_index = BalaIndice;
-					BalaLocal.image_speed = 0;
-					*/
-				}
+				X[2] = buffer_read(BufferRecibido , buffer_s16);
+				Y[2] = buffer_read(BufferRecibido , buffer_s16);
+				SpriteIndex[2] = buffer_read(BufferRecibido , buffer_s16);
+				ImageIndex[2] = buffer_read(BufferRecibido , buffer_s16);
+				ScaleX[2] = buffer_read(BufferRecibido , buffer_s16);
+				ScaleY[2] = 1;
+				Angle[2] = 0;
+				Color[2] = c_white;
+				Alpha[2] = 1;
+				Visible[2] = buffer_read(BufferRecibido , buffer_s16);
+				break;
+			}
+			case (5):
+			{
+				X[3] = buffer_read(BufferRecibido , buffer_s16);
+				Y[3] = buffer_read(BufferRecibido , buffer_s16);
+				SpriteIndex[3] = buffer_read(BufferRecibido , buffer_s16);
+				ImageIndex[3] = buffer_read(BufferRecibido , buffer_s16);
+				ScaleX[3] = buffer_read(BufferRecibido , buffer_s16);
+				ScaleY[3] = 1;
+				Angle[3] = 0;
+				Color[3] = c_white;
+				Alpha[3] = 1;
+				Visible[3] = buffer_read(BufferRecibido , buffer_s16);
 				break;
 			}
 		}
