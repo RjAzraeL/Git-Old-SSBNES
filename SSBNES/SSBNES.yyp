@@ -376,7 +376,7 @@
     {"id":{"name":"objCombatPollierBoomerang","path":"objects/objCombatPollierBoomerang/objCombatPollierBoomerang.yy",},},
     {"id":{"name":"Language","path":"objects/Language/Language.yy",},},
     {"id":{"name":"sprScreenBack1","path":"sprites/sprScreenBack1/sprScreenBack1.yy",},},
-    {"id":{"name":"fntJapan","path":"fonts/fntJapan/fntJapan.yy",},},
+    {"id":{"name":"fntJapanese","path":"fonts/fntJapanese/fntJapanese.yy",},},
     {"id":{"name":"scrSetCharacter","path":"scripts/scrSetCharacter/scrSetCharacter.yy",},},
     {"id":{"name":"sndAnnouncerTitle","path":"sounds/sndAnnouncerTitle/sndAnnouncerTitle.yy",},},
     {"id":{"name":"sprChPollierEggSpike","path":"sprites/sprChPollierEggSpike/sprChPollierEggSpike.yy",},},

@@ -1,7 +1,7 @@
 {
   "resourceType": "GMFont",
   "resourceVersion": "1.0",
-  "name": "fntJapan",
+  "name": "fntJapanese",
   "AntiAlias": 0,
   "applyKerning": 0,
   "ascender": 14,

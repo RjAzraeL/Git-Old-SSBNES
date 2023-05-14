@@ -262,7 +262,7 @@
     {"name":"objCombatPollierBoomerang","order":11,"path":"objects/objCombatPollierBoomerang/objCombatPollierBoomerang.yy",},
     {"name":"Language","order":5,"path":"objects/Language/Language.yy",},
     {"name":"sprScreenBack1","order":1,"path":"sprites/sprScreenBack1/sprScreenBack1.yy",},
-    {"name":"fntJapan","order":1,"path":"fonts/fntJapan/fntJapan.yy",},
+    {"name":"fntJapanese","order":1,"path":"fonts/fntJapanese/fntJapanese.yy",},
     {"name":"scrSetCharacter","order":5,"path":"scripts/scrSetCharacter/scrSetCharacter.yy",},
     {"name":"sndAnnouncerTitle","order":13,"path":"sounds/sndAnnouncerTitle/sndAnnouncerTitle.yy",},
     {"name":"sprChPollierEggSpike","order":8,"path":"sprites/sprChPollierEggSpike/sprChPollierEggSpike.yy",},
