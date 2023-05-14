@@ -61,6 +61,14 @@ else if (room == rm03Versus)
 }
 if (scrIsBonusLevel())
 {
+	if (Server)
+	{
+		instance_create_depth(0,0,0,objServer);
+	}
+	else if (Client)
+	{
+		instance_create_depth(0,0,0,objClient);
+	}
 	scrSetMusic("Bonus 1");
 }
 
