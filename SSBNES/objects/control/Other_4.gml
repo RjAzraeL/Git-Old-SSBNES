@@ -57,6 +57,12 @@ else if (room == rm03Versus)
 }
 if (scrIsBonusLevel())
 {
+	scrSetMusic("Bonus 1");
+}
+
+if (BattleLevel)
+{
+	
 	if (Server)
 	{
 		instance_create_depth(0,0,0,objServer);
@@ -65,11 +71,7 @@ if (scrIsBonusLevel())
 	{
 		instance_create_depth(0,0,0,objClient);
 	}
-	scrSetMusic("Bonus 1");
-}
-
-if (BattleLevel)
-{
+	
 	scrResetCombatBattleVar();
 	
 	VoidLimitStage = scrDameDato(Control.StageList , StageId , "Void limit");

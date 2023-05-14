@@ -1,5 +1,5 @@
 #region Set variables
-Server = false;
+Server = true;
 Client = false;
 Online = false;
 
