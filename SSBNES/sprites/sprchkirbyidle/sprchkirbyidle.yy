@@ -30,7 +30,7 @@
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"e9a789b6-a66d-4432-8df1-884b8d93fa4b","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
-  "origin": 4,
+  "origin": 1,
   "parent": {
     "name": "General",
     "path": "folders/Sprites/Characters/Kirby/General.yy",
@@ -74,7 +74,7 @@
     "visibleRange": null,
     "volume": 1.0,
     "xorigin": 9,
-    "yorigin": 9,
+    "yorigin": 0,
   },
   "swatchColours": null,
   "swfPrecision": 2.525,

@@ -2,9 +2,9 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "sprStgLy1aHyruleForest",
-  "bbox_bottom": 15,
+  "bbox_bottom": 31,
   "bbox_left": 0,
-  "bbox_right": 127,
+  "bbox_right": 79,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"06128821-99d0-4b2e-8cfa-db25900785da",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b20b6b86-a28e-4ee9-996f-4d420b19bdd0",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 16,
-  "HTile": false,
+  "height": 32,
+  "HTile": true,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"a3964b9c-c58f-4771-b8c7-4e263ff683a0","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"ffc64d2c-3016-488b-819a-e3cfc6c3bab0","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"06128821-99d0-4b2e-8cfa-db25900785da","path":"sprites/sprStgLy1aHyruleForest/sprStgLy1aHyruleForest.yy",},},},"Disabled":false,"id":"a8a0297a-0e98-4506-bc91-225196436075","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"b20b6b86-a28e-4ee9-996f-4d420b19bdd0","path":"sprites/sprStgLy1aHyruleForest/sprStgLy1aHyruleForest.yy",},},},"Disabled":false,"id":"18cd7774-c6bf-4885-86e1-2ad631924318","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -69,6 +69,6 @@
     "path": "texturegroups/Default",
   },
   "type": 0,
-  "VTile": false,
-  "width": 128,
+  "VTile": true,
+  "width": 80,
 }

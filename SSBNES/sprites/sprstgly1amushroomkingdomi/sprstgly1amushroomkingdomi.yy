@@ -2,9 +2,9 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "sprStgLy1aMushroomKingdomI",
-  "bbox_bottom": 95,
+  "bbox_bottom": 63,
   "bbox_left": 0,
-  "bbox_right": 79,
+  "bbox_right": 127,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ec63caa8-6ec2-4348-9757-9faa5fd09369",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b9a8568c-f4a2-486f-88b6-0c002d272fcb",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 96,
+  "height": 64,
   "HTile": true,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"ee1148bf-acef-4065-a3ff-3ecb9391499a","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"9690d54a-f68b-4a60-99f3-17e8817692b4","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"ec63caa8-6ec2-4348-9757-9faa5fd09369","path":"sprites/sprStgLy1aMushroomKingdomI/sprStgLy1aMushroomKingdomI.yy",},},},"Disabled":false,"id":"d336bbc2-be6e-4324-9f97-3be9de3fd148","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"b9a8568c-f4a2-486f-88b6-0c002d272fcb","path":"sprites/sprStgLy1aMushroomKingdomI/sprStgLy1aMushroomKingdomI.yy",},},},"Disabled":false,"id":"8c433433-0d7b-4d3d-a51f-81b9f37aeb35","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": true,
-  "width": 80,
+  "width": 128,
 }

@@ -10,7 +10,7 @@ function scrDataStage()
 	/*3*/scrMapStage( scrCrearLista("FINAL#DESTINATION" , "Super Smash Bros." , rmStgFinalDestination , "Final Destination" , 136 , 54 , 300));
 	/*4*/scrMapStage( scrCrearLista("MUSHROOM#KINGDOM I" , "Super Mario Bros." , rmStgMushroomKingdomI , "SMB Overworld" , 138 , -86 , 438));
 	/*5*/scrMapStage( scrCrearLista("BOWSER#CASTLE" , "Super Mario Bros." , rmStgBowserCastle , "Lotery" , 144 , 34 , 321));
-	/*6*/scrMapStage( scrCrearLista("HYRULE#FOREST" , "The Legend of Zelda" , rmStgHyruleForest ,  "TLOZ Overworld" , 128 , 34 , 321));	
+	/*6*/scrMapStage( scrCrearLista("HYRULE#WOODS" , "The Legend of Zelda" , rmStgHyruleForest ,  "TLOZ Overworld" , 128 , 34 , 321));	
 	/*7*/scrMapStage( scrCrearLista("PARAPA#PALACE" , "The Legend of Zelda" , rmStgParapaPalace ,  "Palace" , 160 , 50 , 305));	
 	//BETA
 	/*8*/scrMapStage( scrCrearLista("TEST#SANCTUARY" , "Super Smash Bros." , rmStgTest , "Bonus 1" , 124 , 74 , 282));
