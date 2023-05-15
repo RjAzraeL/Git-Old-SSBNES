@@ -35,8 +35,8 @@ if (keyboard_check(ord("T")))		   { var_noise_strength += 0.01;}
 if (keyboard_check(ord("W")))          { var_radial_distortion_ammount -= 0.005;} 
 if (keyboard_check(ord("Y")))		   { var_brightness += 0.01;}
 */
-if (keyboard_check_released(vk_alt)) { crt_gui_bezel_enabled = !crt_gui_bezel_enabled; }
-if (keyboard_check_released(vk_shift)) { crt_shader_enabled = !crt_shader_enabled; }
+if (keyboard_check_released(vk_f2)) { crt_gui_bezel_enabled = !crt_gui_bezel_enabled; }
+if (keyboard_check_released(vk_f3)) { crt_shader_enabled = !crt_shader_enabled; }
 { var_use_noise = 1; }
 { var_use_border = 1; }
 { var_use_radial_distortion = 1; }

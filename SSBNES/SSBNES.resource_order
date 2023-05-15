@@ -361,7 +361,6 @@
     {"name":"objCombatTNTBox","order":16,"path":"objects/objCombatTNTBox/objCombatTNTBox.yy",},
     {"name":"scrCheckObject","order":6,"path":"scripts/scrCheckObject/scrCheckObject.yy",},
     {"name":"sprChKirbyGroundNeutral","order":3,"path":"sprites/sprChKirbyGroundNeutral/sprChKirbyGroundNeutral.yy",},
-    {"name":"sndAnnouncerANewRecord","order":1,"path":"sounds/sndAnnouncerANewRecord/sndAnnouncerANewRecord.yy",},
     {"name":"sprVersus","order":3,"path":"sprites/sprVersus/sprVersus.yy",},
     {"name":"sndOst01Opening","order":21,"path":"sounds/sndOst01Opening/sndOst01Opening.yy",},
     {"name":"sprChMarioCoin","order":22,"path":"sprites/sprChMarioCoin/sprChMarioCoin.yy",},

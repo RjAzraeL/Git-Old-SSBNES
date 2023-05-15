@@ -10,7 +10,7 @@
   "bitRate": 8,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 0.94712,
+  "duration": 1.509615,
   "parent": {
     "name": "Azrael",
     "path": "folders/Audio/Announcer/Azrael.yy",

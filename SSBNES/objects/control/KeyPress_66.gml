@@ -6,7 +6,7 @@
 	Bot.Position = 1;
 	TotalCharacters = 2;
 }
-*/
 instance_destroy(objBot);
 instance_destroy(objTarget);
+*/
 #endregion
