@@ -5,17 +5,17 @@ if (ReadyTime > 1)
 	{
 		case(4):
 		{
-			scrSound(sndAnnouncer2);
+			scrVoice(sndAnnouncer2);
 			break;
 		}
 		case(3):
 		{
-			scrSound(sndAnnouncer1);
+			scrVoice(sndAnnouncer1);
 			break;
 		}
 		case(2):
 		{
-			scrSound(sndAnnouncerGo);
+			scrVoice(sndAnnouncerGo);
 			break;
 		}
 	}

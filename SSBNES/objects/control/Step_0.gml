@@ -252,7 +252,7 @@ if (scrIsBonusLevel() and MatchWait <= 0)
 				{
 					if (BonusTimeSecond < RecordSecond or (RecordSecond == -1))
 					{
-						scrSound(sndAnnouncerANewRecord);
+						scrVoice(sndAnnouncerANewRecord);
 						RecordMinute = BonusTimeMinute;
 						MatchEndText = Language.Text_b0t0;
 						RecordSecond = BonusTimeSecond;
@@ -260,19 +260,19 @@ if (scrIsBonusLevel() and MatchWait <= 0)
 					}
 					else
 					{
-						scrSound(sndAnnouncerComplete);
+						scrVoice(sndAnnouncerComplete);
 						MatchEndText = Language.Text_b0t1;
 					}
 				}
 				else
 				{
-					scrSound(sndAnnouncerComplete);
+					scrVoice(sndAnnouncerComplete);
 					MatchEndText = Language.Text_b0t1;
 				}
 			}
 			else
 			{
-				scrSound(sndAnnouncerFailure);
+				scrVoice(sndAnnouncerFailure);
 				MatchEndText = Language.Text_b0t2;
 			}
 		}
@@ -297,7 +297,7 @@ if (BattleLevel and MatchWait <= 0 and !scrIsBonusLevel() and !BattleLevelIsFree
 			objCharacter.image_alpha = 1;
 			if (!BonusDeath)
 			{
-				scrSound(sndAnnouncerComplete);
+				scrVoice(sndAnnouncerComplete);
 				MatchEndText = Language.Text_b0t1;
 			}
 		}

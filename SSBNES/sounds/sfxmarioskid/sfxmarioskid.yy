@@ -19,5 +19,5 @@
   "sampleRate": 5512,
   "soundFile": "sfxMarioSkid.wav",
   "type": 0,
-  "volume": 1.0,
+  "volume": 0.49,
 }

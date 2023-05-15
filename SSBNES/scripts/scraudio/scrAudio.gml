@@ -45,3 +45,10 @@ function scrMusicLoop(Music)
 		Control.IndexMusic = Music;
 	}
 }
+
+///@arg voice
+function scrVoice(Voice)
+{
+	audio_sound_gain(Voice , Control.VolumeVoice , 0);
+	audio_play_sound(Voice , 5 , false);
+}
