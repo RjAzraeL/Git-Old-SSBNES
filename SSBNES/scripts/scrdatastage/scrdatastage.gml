@@ -5,19 +5,20 @@ function scrDataStage()
 	//NO SELECTABLE
 	/*0*/scrMapStage( scrCrearLista("---" , "Super Smash Bros." , rmStgTest , "Bonus 1" , 124 , 74 , 282));
 	/*1*/scrMapStage( scrCrearLista("---" , "Super Smash Bros." , rmStgTest , "Bonus 1" , 124 , 74 , 282));
-	//DEMO
-	/*2*/scrMapStage( scrCrearLista("BATTLEFIELD" , "Super Smash Bros." , rmStgBattlefield , "Battlefield" , 136 , 54 , 300));
-	/*3*/scrMapStage( scrCrearLista("FINAL#DESTINATION" , "Super Smash Bros." , rmStgFinalDestination , "Final Destination" , 136 , 54 , 300));
-	/*4*/scrMapStage( scrCrearLista("MUSHROOM#KINGDOM I" , "Super Mario Bros." , rmStgMushroomKingdomI , "SMB Overworld" , 138 , -86 , 438));
-	/*5*/scrMapStage( scrCrearLista("BOWSER#CASTLE" , "Super Mario Bros." , rmStgBowserCastle , "Lotery" , 144 , 34 , 321));
-	/*6*/scrMapStage( scrCrearLista("HYRULE#WOODS" , "The Legend of Zelda" , rmStgHyruleForest ,  "TLOZ Overworld" , 128 , 34 , 321));	
-	/*7*/scrMapStage( scrCrearLista("PARAPA#PALACE" , "The Legend of Zelda" , rmStgParapaPalace ,  "Palace" , 160 , 50 , 305));	
+	//ALPHA
+	/*2*/scrMapStage( scrCrearLista("BATTLEFIELD" ,				"Super Smash Bros." ,		rmStgBattlefield ,			"Battlefield" , 136 , 54 , 300));
+	/*3*/scrMapStage( scrCrearLista("FINAL#DESTINATION" ,		"Super Smash Bros." ,		rmStgFinalDestination ,		"Final Destination" , 136 , 54 , 300));
+	/*4*/scrMapStage( scrCrearLista("MUSHROOM#KINGDOM I" ,		"Super Mario Bros." ,		rmStgMushroomKingdomI ,		"SMB Overworld" , 138 , -86 , 438));
+	/*5*/scrMapStage( scrCrearLista("MUSHROOM#KINGDOM II" ,		"Super Mario Bros. 2" ,		rmStgMushroomKingdomII ,	"SMB Overworld" , 144 , 127 , 223));
+	/*6*/scrMapStage( scrCrearLista("UNDERGROUND" ,				"Super Mario Bros." ,		rmStgUnderground ,			"Underground" , 128 , 50 , 305));
+	/*7*/scrMapStage( scrCrearLista("ANOTHER#CASTLE" ,			"Super Mario Bros." ,		rmStgAnotherCastle ,		"Lotery" , 144 , 63 , 288));
+	/*8*/scrMapStage( scrCrearLista("HYRULE#FOREST" ,			"The Legend of Zelda" ,		rmStgHyruleForest ,			"TLOZ Overworld" , 128 , 34 , 321));	
+	/*9*/scrMapStage( scrCrearLista("PARAPA#PALACE" ,			"The Legend of Zelda" ,		rmStgParapaPalace ,			"Palace" , 160 , 50 , 305));	
 	//BETA
-	/*8*/scrMapStage( scrCrearLista("TEST#SANCTUARY" , "Super Smash Bros." , rmStgTest , "Bonus 1" , 124 , 74 , 282));
-	/*9*/scrMapStage( scrCrearLista("UNDERGROUND" , "Super Mario Bros." , rmStgUnderworld , "Underground" , 128 , 50 , 305));
-	/*10*/scrMapStage( scrCrearLista("BATTLEFIELD#ZERO" , "Super Smash Bros." , rmStgBattlefieldZero , "Menu 2 Theme" , 136 , 61 , 306));
-	/*11*/scrMapStage( scrCrearLista("THE#TOWER" , "Super Smash Bros." , rmStgTower ,  "Lotery" , 136 , 55 , 300));
-	/*12*/scrMapStage( scrCrearLista("HEAVEN#SANCTUARY" , "Crazy Chickens" , rmStgHeavenSanctuary , "Heaven Sanctuary" , 64 , 50 , 295));
+	/*10*/scrMapStage( scrCrearLista("TEST#SANCTUARY" , "Super Smash Bros." , rmStgTest , "Bonus 1" , 124 , 74 , 282));
+	/*11*/scrMapStage( scrCrearLista("BATTLEFIELD#ZERO" , "Super Smash Bros." , rmStgBattlefieldZero , "Menu 2 Theme" , 136 , 61 , 306));
+	/*12*/scrMapStage( scrCrearLista("THE#TOWER" , "Super Smash Bros." , rmStgTower ,  "Lotery" , 136 , 55 , 300));
+	/*13*/scrMapStage( scrCrearLista("HEAVEN#SANCTUARY" , "Crazy Chickens" , rmStgHeavenSanctuary , "Heaven Sanctuary" , 64 , 50 , 295));
 	
 }
 	
