@@ -9,7 +9,7 @@ function scrDataMov()
 	/*05*/scrCreateMov("MAR Ground Attack Down" , 8 , true , 110 , 0 , false , true , false , 8 , 40 , .5 , false , false , false , false, 270);
 	/*06*/scrCreateMov("MAR Ground Attack Up" , 8 , true , 110 , 0 , false , true , false , 8 , 40 , .25 , false , false , false , false, 90);
 	/*07*/scrCreateMov("MAR Aerial Neutral" , 10 , true , 110 , 0 , false , true , false , 10 , 20 , .25 , false , true , false , false, -1);
-	/*08*/scrCreateMov("MAR Aerial Side" , 15 , false , 110 , 0 , false , true , false , 15 , 20 , .25 , false , true , false , false, 315);
+	/*08*/scrCreateMov("MAR Aerial Side" , 15 , false , 110 , 0 , false , true , false , 15 , 20 , .5 , false , true , false , false, 315);
 	/*09*/scrCreateMov("MAR Aerial Back" , 10 , false , 110 , 0 , false , true , false , 10 , 20 , .5 , false , true , false , false, 0);
 	/*10*/scrCreateMov("MAR Aerial Down" , 1 , false , 110 , 0 , false , true , false , 4 , 10 , .35 , false , true , true , true, 90);
 	/*11*/scrCreateMov("MAR Aerial Up" , 2 , false , 110 , 0 , false , true , false , 2 , 30 , .2 , true , true , true , false, 45);

@@ -282,7 +282,7 @@ function scrExecuteMovs(ID)
 		case(11):
 		{
 			///MAR Aerial Up
-			scrFreeJump(7.8);
+			scrFreeJump(8);
 			var Up = instance_create_depth(x , y , depth-1 , objCombatHitboxImageFollower);
 			Up.sprite_index = sprChMarioAerialUpMask;
 			Up.PowerScale = false;
@@ -665,14 +665,14 @@ function scrExecuteMovs(ID)
 		}
 		case(26):
 		{
-			///MAR Aerial Up
-			scrFreeJump(6.5);
+			///POL Aerial Up
+			scrFreeJump(7);
 			var Up = instance_create_depth(x , y , depth-1 , objCombatHitboxImageFollower);
 			var SpringBoard = instance_create_depth(x , y , depth-1 , objCombatPollierSpringboard);
 			SpringBoard.Creator = self;
 			Up.sprite_index = sprChPollierAerialUp;
 			Up.PowerScale = false;
-			var _IdeMov = 11;
+			var _IdeMov = 26;
 			Up.Ide = _IdeMov;
 			Up.FollowX = LastScaleXSprite;
 			Up.FollowY = 0;

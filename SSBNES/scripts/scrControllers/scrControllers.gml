@@ -318,7 +318,7 @@ function scrKeyUseMovs(Mov , Key)
 					scrKeyActive("Left" , false);
 					scrKeyActive("Right" , false);
 					scrKeyActive("Up" , true);
-					scrKeyHold("Up" , 2);
+					scrKeyHold("Up" , 60);
 					scrKeyActive("Down" , false);
 				}
 				break;
