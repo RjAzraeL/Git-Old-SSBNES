@@ -1,4 +1,5 @@
 #region Set variables
+randomize();
 Server = false;
 Client = false;
 Online = false;

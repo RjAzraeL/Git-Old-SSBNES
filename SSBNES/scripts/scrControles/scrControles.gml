@@ -281,8 +281,8 @@ function scrKeyUseMovs(Mov , Key)
 				scrKeyActive("Left" , false);
 				scrKeyActive("Right" , false);
 				scrKeyActive("Down" , false);
-				scrKeyHold("Attack" , 60);
-				scrKeyHold("Up" , 60);
+				scrKeyHold("Attack" , 80);
+				scrKeyHold("Up" , 80);
 				scrKeyActive("Up" , true);
 				break;
 			}

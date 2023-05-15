@@ -1,2 +1,2 @@
-#region Draw
+#region
 #endregion
