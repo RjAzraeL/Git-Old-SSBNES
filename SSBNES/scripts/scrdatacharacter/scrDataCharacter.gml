@@ -30,7 +30,12 @@ function scrDataCharacter()
 	/*Hud index*/1,
 	/*Roster id*/0,
 	/*Palette name*/"SAN",
-	/*Palette code*/0
+	/*Palette code*/0,
+	/*MovList Recover*/scrCrearLista("Aerial Down" , "Aerial Up"),
+	/*MovList Range*/scrCrearLista("Ground Neutral"),
+	/*MovList Melee*/scrCrearLista("Ground Attack Side" , "Ground Attack Up" , "Ground Attack Down" , "Ground Smash Side" , "Ground Smash Down" , "Ground Smash Up" , "Aerial Back" , "Aerial Side"),
+	/*MovList Special*/scrCrearLista(),
+	/*Announcer Name*/ sndAnnouncerChMAR
 	)	
 	);
 	
@@ -66,7 +71,8 @@ function scrDataCharacter()
 	/*MovList Recover*/scrCrearLista("Aerial Down" , "Aerial Up"),
 	/*MovList Range*/scrCrearLista("Ground Neutral"),
 	/*MovList Melee*/scrCrearLista("Ground Attack Side" , "Ground Attack Up" , "Ground Attack Down" , "Ground Smash Side" , "Ground Smash Down" , "Ground Smash Up" , "Aerial Back" , "Aerial Side"),
-	/*MovList Special*/scrCrearLista()
+	/*MovList Special*/scrCrearLista(),
+	/*Announcer Name*/ sndAnnouncerChMAR
 	)	
 	);
 	
@@ -100,7 +106,12 @@ function scrDataCharacter()
 	/*Hud index*/3,
 	/*Roster id*/5,
 	/*Palette name*/"LIN",
-	/*Palette code*/0
+	/*Palette code*/0,
+	/*MovList Recover*/scrCrearLista("Aerial Down" , "Aerial Up"),
+	/*MovList Range*/scrCrearLista("Ground Neutral"),
+	/*MovList Melee*/scrCrearLista("Ground Attack Side" , "Ground Attack Up" , "Ground Attack Down" , "Ground Smash Side" , "Ground Smash Down" , "Ground Smash Up" , "Aerial Back" , "Aerial Side"),
+	/*MovList Special*/scrCrearLista(),
+	/*Announcer Name*/ sndAnnouncerChMAR
 	)	
 	);
 	
@@ -132,7 +143,12 @@ function scrDataCharacter()
 	/*Hud index*/4,
 	/*Roster id*/7,
 	/*Palette name*/"KIR",
-	/*Palette code*/0
+	/*Palette code*/0,
+	/*MovList Recover*/scrCrearLista("Aerial Down" , "Aerial Up"),
+	/*MovList Range*/scrCrearLista("Ground Neutral"),
+	/*MovList Melee*/scrCrearLista("Ground Attack Side" , "Ground Attack Up" , "Ground Attack Down" , "Ground Smash Side" , "Ground Smash Down" , "Ground Smash Up" , "Aerial Back" , "Aerial Side"),
+	/*MovList Special*/scrCrearLista(),
+	/*Announcer Name*/ sndAnnouncerChMAR
 	)
 	);
 	
@@ -164,7 +180,12 @@ function scrDataCharacter()
 	/*Hud index*/5,
 	/*Roster id*/31,
 	/*Palette name*/"MEG",
-	/*Palette code*/0
+	/*Palette code*/0,
+	/*MovList Recover*/scrCrearLista("Aerial Down" , "Aerial Up"),
+	/*MovList Range*/scrCrearLista("Ground Neutral"),
+	/*MovList Melee*/scrCrearLista("Ground Attack Side" , "Ground Attack Up" , "Ground Attack Down" , "Ground Smash Side" , "Ground Smash Down" , "Ground Smash Up" , "Aerial Back" , "Aerial Side"),
+	/*MovList Special*/scrCrearLista(),
+	/*Announcer Name*/ sndAnnouncerChMAR
 	)	
 	);
 	
@@ -196,7 +217,12 @@ function scrDataCharacter()
 	/*Hud index*/6,
 	/*Roster id*/12,
 	/*Palette name*/"SAM",
-	/*Palette code*/0
+	/*Palette code*/0,
+	/*MovList Recover*/scrCrearLista("Aerial Down" , "Aerial Up"),
+	/*MovList Range*/scrCrearLista("Ground Neutral"),
+	/*MovList Melee*/scrCrearLista("Ground Attack Side" , "Ground Attack Up" , "Ground Attack Down" , "Ground Smash Side" , "Ground Smash Down" , "Ground Smash Up" , "Aerial Back" , "Aerial Side"),
+	/*MovList Special*/scrCrearLista(),
+	/*Announcer Name*/ sndAnnouncerChMAR
 	)	
 	);
 	
@@ -228,7 +254,12 @@ function scrDataCharacter()
 	/*Hud index*/7,
 	/*Roster id*/14,
 	/*Palette name*/"PIT",
-	/*Palette code*/0
+	/*Palette code*/0,
+	/*MovList Recover*/scrCrearLista("Aerial Down" , "Aerial Up"),
+	/*MovList Range*/scrCrearLista("Ground Neutral"),
+	/*MovList Melee*/scrCrearLista("Ground Attack Side" , "Ground Attack Up" , "Ground Attack Down" , "Ground Smash Side" , "Ground Smash Down" , "Ground Smash Up" , "Aerial Back" , "Aerial Side"),
+	/*MovList Special*/scrCrearLista(),
+	/*Announcer Name*/ sndAnnouncerChMAR
 	)	
 	);
 	
@@ -264,7 +295,8 @@ function scrDataCharacter()
 	/*MovList Recover*/scrCrearLista("Aerial Up"),
 	/*MovList Range*/scrCrearLista("Ground Neutral" , "Ground Smash Side" , "Aerial Back" , "Aerial Down"),
 	/*MovList Melee*/scrCrearLista("Ground Attack Side" , "Ground Attack Down" , "Ground Attack Up" , "Aerial Side"),
-	/*MovList Special*/scrCrearLista("Aerial Neutral" , "Ground Smash Down")
+	/*MovList Special*/scrCrearLista("Aerial Neutral" , "Ground Smash Down"),
+	/*Announcer Name*/ sndAnnouncerChPOL
 	)
 	);
 }
@@ -303,6 +335,7 @@ function scrMapCharacter(List)
 	Paquete[? "ListMov Range"] = ds_list_find_value(List , 27);
 	Paquete[? "ListMov Melee"] = ds_list_find_value(List , 28);
 	Paquete[? "ListMov Special"] = ds_list_find_value(List , 29);
+	Paquete[? "Announcer Name"] = ds_list_find_value(List , 30);
 	
 	ds_list_add(Control.CharacterList , Paquete);
 	

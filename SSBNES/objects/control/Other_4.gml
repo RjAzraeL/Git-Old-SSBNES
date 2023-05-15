@@ -30,6 +30,7 @@ if (!SetReady and room == rm00Set)
 NormalCamera = true;
 if (scrIsBonusLevel())
 {
+	scrSound(sndAnnouncer3);
 	ReadyTime = 4;
 	CanMoveGlobal = false;
 	alarm[6] = ReadyTimeAlarm;
@@ -75,7 +76,7 @@ if (scrIsBonusLevel())
 if (BattleLevel)
 {
 	scrResetCombatBattleVar();
-	
+	scrSound(sndAnnouncer3);
 	ReadyTime = 4;
 	CanMoveGlobal = false;
 	alarm[6] = ReadyTimeAlarm;

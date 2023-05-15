@@ -135,6 +135,7 @@ if (Control.Wait == 0)
 					Circle.obX = Roster.x;
 					Circle.obY = Roster.y;
 					Circle.SquareOrigin.IdeSkin = scrResetSkin(Roster.ChrIde,Circle.SquareOrigin,Circle.Ide);
+					scrSound(scrDameDato(Control.CharacterList, Roster.ChrIde, "Announcer Name"));
 					var Listo = false;
 					for (var i = 0 ; i < 4 ; i++)
 					{
