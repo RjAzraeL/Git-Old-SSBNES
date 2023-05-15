@@ -21,12 +21,71 @@ if (Control.CanMoveGlobal)
 		}
 	}
 	#endregion
+	#region Rage
+	if (Inmune)
+	{
+		Mode = "Rage";
+	}
+	if (place_meeting(x,y,objVoid) and VerticalMovement > 0)
+	{
+		Mode = "Void";
+	}
+	#endregion
 	#endregion
 
 	#region CPU
 
 	switch (Mode)
 {
+	case ("Void"):
+	{
+		if (place_meeting(x,y,objVoid))
+		{
+			var IsInDanger = true;
+			if (x <= room_width/2)
+			{
+				scrKeyActive("Right" , true);
+				scrKeyHold("Right" , 2);
+				scrKeyActive("Left" , false);
+			}
+			else if (x >= room_width/2)
+			{
+				scrKeyActive("Right" , false);
+				scrKeyActive("Left" , true);
+				scrKeyHold("Left" , 2);
+			}
+			if (VerticalMovement >= 0 and IsInDanger)
+			{
+				scrKeyActive("Jump" , true);
+				scrKeyHold("Jump" , 60);
+			}
+			if (FallingVoid and Attacking == 0 and !scrSolidDetectorBelow() and JumpAvailable <= 0)
+			{
+				if (ds_list_size(ListRecoverActual) > 0)
+				{
+					scrKeyUseMovs(ds_list_find_value( ListRecoverActual , 0) , true);
+					ds_list_delete(ListRecoverActual , 0);
+				}
+			}
+			#region Mario things / The down aerial spam
+			if (LastMov == "Aerial Down" and VerticalMovement > 0 and MarioCooldownRecover == 0)
+			{
+				scrKeyActive("Attack" , true);
+				scrKeyHold("Attack" , 2);
+				MarioCooldownRecover = choose(8,10,12);
+			}
+			if (MarioCooldownRecover > 0)
+			{
+				MarioCooldownRecover--;
+			}
+			#endregion
+		}
+		if (scrSolidDetectorBelow())
+		{
+			Mode = "Rage";
+		}
+		break;
+	}
 	case ("Rage"):
 	{
 		if (scrExiste(Target))
@@ -34,10 +93,16 @@ if (Control.CanMoveGlobal)
 			if (RageTime <= 0)
 			{
 				scrKeyActive("Attack" , false);
-				scrKeyActive("Right" , false);
-				scrKeyActive("Left" , false);
+				scrKeyReleased("Attack");
+				scrKeyReleased("Up");
+				scrKeyReleased("Down");
+				scrKeyReleased("Right");
+				scrKeyReleased("Left");
 				scrKeyActive("Up" , false);
 				scrKeyActive("Down" , false);
+				scrKeyActive("Right" , false);
+				scrKeyActive("Left" , false);
+				
 				scrKeyReleased("Jump");
 				Mode = "Avoid";
 				RageTime = 120;
@@ -178,10 +243,16 @@ if (Control.CanMoveGlobal)
 		if (scrExiste(Target))
 		{
 			RangeTime++;
-			if (RangeTime == 1)
+			if (RangeTime <= 4)
 			{
+				scrKeyReleased("Up");
+				scrKeyReleased("Down");
+				scrKeyReleased("Right");
+				scrKeyReleased("Left");
 				scrKeyActive("Up" , false);
 				scrKeyActive("Down" , false);
+				scrKeyActive("Right" , false);
+				scrKeyActive("Left" , false);
 			}
 			if (x < Target.x and ScaleX < 0)
 			{
@@ -227,7 +298,7 @@ if (Control.CanMoveGlobal)
 				}
 				else
 				{
-					RageTime = 180;
+					RageTime = choose(180,200,240,280);
 					Mode = "Rage";
 				}
 			}
@@ -242,7 +313,7 @@ if (Control.CanMoveGlobal)
 		if (RangeTime > 220)
 		{
 			RangeTime = 0;
-			RageTime = 120;
+			RageTime = choose(180,200,240,280);
 			Mode = "Rage";
 		}
 		if (scrSolidDetectorBelow() and Attacking == 0)
@@ -257,6 +328,11 @@ if (Control.CanMoveGlobal)
 	}
 	case ("Avoid"):
 	{
+		if (Attacking != 0)
+		{
+			scrKeyActive("Attack" , false);
+			scrKeyReleased("Attack");
+		}
 		AvoidTime++;
 		if (scrExiste(Target))
 		{
@@ -375,6 +451,22 @@ if (Control.CanMoveGlobal)
 	case ("Survive"):
 	{
 		var IsInDanger = false;
+		if (place_meeting(x,y,objVoid))
+		{
+			IsInDanger = true;
+			if (x < room_width/2)
+			{
+				scrKeyActive("Right" , true);
+				scrKeyActive("Left" , false);
+				IsInDanger = true;
+			}
+			if (x > room_width/2)
+			{
+				scrKeyActive("Right" , false);
+				scrKeyActive("Left" , true);
+				IsInDanger = true;
+			}
+		}
 		if (x < Control.X1Limit)
 		{
 			scrKeyActive("Right" , true);
@@ -397,10 +489,10 @@ if (Control.CanMoveGlobal)
 		{
 			Mode = "Avoid";
 		}
-		if (VerticalMovement > 0 and IsInDanger)
+		if (VerticalMovement >= 0 and IsInDanger)
 		{
 			scrKeyActive("Jump" , true);
-			scrKeyHold("Jump" , 30);
+			scrKeyHold("Jump" , 60);
 		}
 		if (FallingVoid and Attacking == 0 and !scrSolidDetectorBelow() and JumpAvailable <= 0)
 		{

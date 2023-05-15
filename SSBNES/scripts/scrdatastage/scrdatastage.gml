@@ -9,7 +9,7 @@ function scrDataStage()
 	/*2*/scrMapStage( scrCrearLista("BATTLEFIELD" ,				"Super Smash Bros." ,		rmStgBattlefield ,			"Battlefield" , 136 , 54 , 300));
 	/*3*/scrMapStage( scrCrearLista("FINAL#DESTINATION" ,		"Super Smash Bros." ,		rmStgFinalDestination ,		"Final Destination" , 136 , 54 , 300));
 	/*4*/scrMapStage( scrCrearLista("MUSHROOM#KINGDOM I" ,		"Super Mario Bros." ,		rmStgMushroomKingdomI ,		"SMB Overworld" , 138 , -86 , 438));
-	/*5*/scrMapStage( scrCrearLista("MUSHROOM#KINGDOM II" ,		"Super Mario Bros. 2" ,		rmStgMushroomKingdomII ,	"SMB Overworld" , 144 , 127 , 223));
+	/*5*/scrMapStage( scrCrearLista("MUSHROOM#KINGDOM II" ,		"Super Mario Bros. 2" ,		rmStgMushroomKingdomII ,	"SMB Overworld" , 144 , 0 , 356));
 	/*6*/scrMapStage( scrCrearLista("UNDERGROUND" ,				"Super Mario Bros." ,		rmStgUnderground ,			"Underground" , 128 , 50 , 305));
 	/*7*/scrMapStage( scrCrearLista("ANOTHER#CASTLE" ,			"Super Mario Bros." ,		rmStgAnotherCastle ,		"Lotery" , 144 , 63 , 288));
 	/*8*/scrMapStage( scrCrearLista("HYRULE#FOREST" ,			"The Legend of Zelda" ,		rmStgHyruleForest ,			"TLOZ Overworld" , 128 , 34 , 321));	

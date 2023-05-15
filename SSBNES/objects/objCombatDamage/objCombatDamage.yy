@@ -1,18 +1,20 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "objVoidChecker",
+  "name": "objCombatDamage",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Furnis",
-    "path": "folders/Objects/Furnis.yy",
+    "name": "Movs",
+    "path": "folders/Objects/Combat/Movs.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "parDamage",
+    "path": "objects/parDamage/parDamage.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -29,9 +31,9 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sprDot",
-    "path": "sprites/sprDot/sprDot.yy",
+    "name": "sprDamage",
+    "path": "sprites/sprDamage/sprDamage.yy",
   },
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }
