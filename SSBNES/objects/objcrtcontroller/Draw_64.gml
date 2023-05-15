@@ -35,16 +35,17 @@ if (keyboard_check(ord("T")))		   { var_noise_strength += 0.01;}
 if (keyboard_check(ord("W")))          { var_radial_distortion_ammount -= 0.005;} 
 if (keyboard_check(ord("Y")))		   { var_brightness += 0.01;}
 */
-if (keyboard_check_released(vk_f2)) { crt_gui_bezel_enabled = !crt_gui_bezel_enabled; }
-if (keyboard_check_released(vk_f3)) { crt_shader_enabled = !crt_shader_enabled; }
-{ var_use_noise = 1; }
+
+
+if (keyboard_check_released(vk_f1)) { crt_shader_enabled = !crt_shader_enabled; }
+if (keyboard_check_released(vk_f2)) { var_use_noise = !var_use_noise; } { var_noise_strength = 0.050;}
+if (keyboard_check_released(vk_f3)) { var_use_scanlines = !var_use_scanlines; }
+if (keyboard_check_released(vk_f5)) { var_use_RGB_separation = !var_use_RGB_separation; }
+if (keyboard_check_released(vk_f6)) { crt_gui_bezel_enabled = !crt_gui_bezel_enabled; }
 { var_use_border = 1; }
 { var_use_radial_distortion = 1; }
-{ var_brightness = 1.1;}
-{ var_use_scanlines = 1; }
-{ var_use_RGB_separation = 1 }
-{ var_radial_distortion_ammount = 0.40;}
-{ var_noise_strength = 0.050;}
+{ var_radial_distortion_ammount = 0.50;}
+{ var_brightness = 1.10;}
 
 ///Reset GUI layer back to the window size so we can draw text, etc.
 display_set_gui_size(window_get_width(), window_get_height());
