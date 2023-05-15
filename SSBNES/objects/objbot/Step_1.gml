@@ -525,7 +525,6 @@ if (Control.CanMoveGlobal)
 		break;
 	}
 }
-
 	scrKeyPressedUnable();
 
 #endregion
