@@ -3,8 +3,8 @@ function scrDataStage()
 	Control.StageList = ds_list_create();
 	
 	//NO SELECTABLE
-	/*0*/scrMapStage( scrCrearLista("---" , "Super Smash Bros." , rmStgTest , "Bonus 1" , 124 , 74 , 282));
-	/*1*/scrMapStage( scrCrearLista("---" , "Super Smash Bros." , rmStgTest , "Bonus 1" , 124 , 74 , 282));
+	/*0*/scrMapStage( scrCrearLista("---" , "Super Smash Bros." , rmStgBattlefield , "Bonus 1" , 124 , 74 , 282));
+	/*1*/scrMapStage( scrCrearLista("---" , "Super Smash Bros." , rmStgBattlefield , "Bonus 1" , 124 , 74 , 282));
 	//ALPHA
 	/*2*/scrMapStage( scrCrearLista("BATTLEFIELD" ,				"Super Smash Bros." ,		rmStgBattlefield ,			"Battlefield" , 136 , 54 , 300));
 	/*3*/scrMapStage( scrCrearLista("FINAL#DESTINATION" ,		"Super Smash Bros." ,		rmStgFinalDestination ,		"Final Destination" , 136 , 54 , 300));
@@ -18,11 +18,7 @@ function scrDataStage()
 	/*11*/scrMapStage( scrCrearLista("BRINSTAR" ,				"Metroid" ,					rmStgBrinstar ,				"Lotery" , 160 , 55 , 294));
 	/*12*/scrMapStage( scrCrearLista("HEAVEN#SANCTUARY" ,		"Crazy Chickens" ,			rmStgHeavenSanctuary ,		"Heaven Sanctuary" , 64 , 50 , 295));
 	/*13*/scrMapStage( scrCrearLista("SYKUR#TOWERS" ,			"Mayel X" ,					rmStgSkyurTowers ,			"Lotery" , 144 , 40 , 326));
-	//BETA
-	/*14*/scrMapStage( scrCrearLista("TEST#SANCTUARY" , "Super Smash Bros." , rmStgTest , "Bonus 1" , 124 , 74 , 282));
-	/*15*/scrMapStage( scrCrearLista("BATTLEFIELD#ZERO" , "Super Smash Bros." , rmStgBattlefieldZero , "Menu 2 Theme" , 136 , 61 , 306));
-	/*16*/scrMapStage( scrCrearLista("THE#TOWER" , "Super Smash Bros." , rmStgTower ,  "Lotery" , 136 , 55 , 300));
-	/*17*/scrMapStage( scrCrearLista("HEAVEN#SANCTUARY" , "Crazy Chickens" , rmStgHeavenSanctuary , "Heaven Sanctuary" , 64 , 50 , 295));
+	//
 	
 }
 	
