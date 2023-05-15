@@ -215,7 +215,6 @@
     {"name":"sprChMarioAerialBackMask","order":9,"path":"sprites/sprChMarioAerialBackMask/sprChMarioAerialBackMask.yy",},
     {"name":"sprChPollierMaskDuck","order":3,"path":"sprites/sprChPollierMaskDuck/sprChPollierMaskDuck.yy",},
     {"name":"rmStgMushroomKingdomI","order":2,"path":"rooms/rmStgMushroomKingdomI/rmStgMushroomKingdomI.yy",},
-    {"name":"sprBonusReferendum","order":2,"path":"sprites/sprBonusReferendum/sprBonusReferendum.yy",},
     {"name":"sndAnnouncerOriginalMaleFailure","order":2,"path":"sounds/sndAnnouncerOriginalMaleFailure/sndAnnouncerOriginalMaleFailure.yy",},
     {"name":"tlsStgLy1aHyruleForest","order":5,"path":"tilesets/tlsStgLy1aHyruleForest/tlsStgLy1aHyruleForest.yy",},
     {"name":"rmStgParapaPalace","order":1,"path":"rooms/rmStgParapaPalace/rmStgParapaPalace.yy",},
