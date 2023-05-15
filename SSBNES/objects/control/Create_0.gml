@@ -177,8 +177,8 @@ DEFAULT_2AttackButton = ord("O");
 DEFAULT_2StartButton = vk_backspace;
 DEFAULT_2SelectButton = vk_alt;
 
-ShowColissionButton = vk_f5;
-ShowColissionMovsButton = vk_f6;
+ShowColissionButton = vk_numpad1;
+ShowColissionMovsButton = vk_numpad2;
 BattleLevel = false;
 scrFileKeyLoad();
 alarm[0] = 5;
