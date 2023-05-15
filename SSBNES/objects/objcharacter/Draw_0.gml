@@ -115,7 +115,7 @@ if (visible)
 		}
 	}
 }
-if (object_index == objBot)
+if (object_index == objBot and Control.ShowMovsMask)
 {
 	draw_set_font(Control.ActualFont);
 	draw_text(x - 32 , y - sprite_height/2 - 8 , "mode: "+string(Mode));
@@ -124,7 +124,7 @@ if (object_index == objBot)
 	if (FallingVoid)
 	{
 		draw_set_font(Control.ActualFont);
-		//draw_text(x , y - sprite_height/2 - 8 , "¡");
+		draw_text(x , y - sprite_height/2 - 8 , "¡");
 	}
 }
 #endregion
