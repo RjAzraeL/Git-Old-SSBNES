@@ -51,7 +51,7 @@
   ],
   "parent": {
     "name": "General",
-    "path": "folders/Rooms/Stages/General.yy",
+    "path": "folders/Rooms/General.yy",
   },
   "parentRoom": null,
   "physicsSettings": {

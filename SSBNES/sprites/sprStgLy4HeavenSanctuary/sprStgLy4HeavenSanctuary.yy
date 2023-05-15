@@ -26,7 +26,7 @@
   "origin": 0,
   "parent": {
     "name": "Crazy Chickens",
-    "path": "folders/Sprites/Stages/Crazy Chickens.yy",
+    "path": "folders/Sprites/Stages/The Freak World/Crazy Chickens.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

@@ -13,7 +13,7 @@
   "out_tilevborder": 2,
   "parent": {
     "name": "Crazy Chickens",
-    "path": "folders/Sprites/Stages/Crazy Chickens.yy",
+    "path": "folders/Sprites/Stages/The Freak World/Crazy Chickens.yy",
   },
   "spriteId": {
     "name": "sprStgLy1HeavenSanctuary",

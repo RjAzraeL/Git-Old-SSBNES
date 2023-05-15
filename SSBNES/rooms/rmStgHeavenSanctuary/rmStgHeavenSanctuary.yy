@@ -68,7 +68,7 @@
   ],
   "parent": {
     "name": "Crazy Chickens",
-    "path": "folders/Rooms/Crazy Chickens.yy",
+    "path": "folders/Rooms/Stages/The Freak World/Crazy Chickens.yy",
   },
   "parentRoom": null,
   "physicsSettings": {

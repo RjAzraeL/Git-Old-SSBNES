@@ -17,7 +17,7 @@ function scrDataStage()
 	/*10*/scrMapStage( scrCrearLista("VEGETABLE#VALLEY" ,		"Kirby's Adventure" ,		rmStgVegetableValley ,		"Lotery" , 136 , 48 , 304));
 	/*11*/scrMapStage( scrCrearLista("BRINSTAR" ,				"Metroid" ,					rmStgBrinstar ,				"Lotery" , 160 , 55 , 294));
 	/*12*/scrMapStage( scrCrearLista("HEAVEN#SANCTUARY" ,		"Crazy Chickens" ,			rmStgHeavenSanctuary ,		"Heaven Sanctuary" , 64 , 50 , 295));
-	/*12*/scrMapStage( scrCrearLista("SYKUR#TOWERS" ,			"Mayel X" ,					rmStgHeavenSanctuary ,		"Lotery" , 64 , 50 , 295));
+	/*12*/scrMapStage( scrCrearLista("SYKUR#TOWERS" ,			"Mayel X" ,					rmStgHeavenSanctuary ,		"Lotery" , 144 , 40 , 326));
 	//BETA
 	/*12*/scrMapStage( scrCrearLista("TEST#SANCTUARY" , "Super Smash Bros." , rmStgTest , "Bonus 1" , 124 , 74 , 282));
 	/*13*/scrMapStage( scrCrearLista("BATTLEFIELD#ZERO" , "Super Smash Bros." , rmStgBattlefieldZero , "Menu 2 Theme" , 136 , 61 , 306));
