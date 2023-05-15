@@ -157,6 +157,7 @@ function scrLanguageLoadTexto(LocalLanguage)
 		
 		Text_v0r0 = ini_read_string("VERSUS" , "v0r0" , "ERROR");
 		Text_v0r1 = ini_read_string("VERSUS" , "v0r1" , "ERROR");
+		Text_v0r2 = ini_read_string("VERSUS" , "v0r2" , "ERROR");
 	}
 	#endregion
 	if (LocalLanguage == 5)

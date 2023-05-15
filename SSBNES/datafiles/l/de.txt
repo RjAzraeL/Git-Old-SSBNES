@@ -158,3 +158,4 @@ b0t3 = "Kein Rekord"
 [VERSUS]
 v0r0 = "Bereit zum Kämpfen!"
 v0r1 = "Zufällig"
+v0r2 = "Es ist aus"

@@ -157,3 +157,4 @@ b0t3 = "Sem registro"
 [VERSUS]
 v0r0 = "Pronto para lutar!"
 v0r1 = "Aleatório"
+v0r2 = "Acabou-se"

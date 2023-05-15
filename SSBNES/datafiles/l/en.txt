@@ -157,3 +157,4 @@ b0t3 = "No record"
 [VERSUS]
 v0r0 = "Ready to fight!"
 v0r1 = "Random"
+v0r2 = "Game!"

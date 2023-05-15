@@ -297,8 +297,8 @@ if (BattleLevel and MatchWait <= 0 and !scrIsBonusLevel() and !BattleLevelIsFree
 			objCharacter.image_alpha = 1;
 			if (!BonusDeath)
 			{
-				scrVoice(sndAnnouncerComplete);
-				MatchEndText = Language.Text_b0t1;
+				scrVoice(sndAnnouncerGame);
+				MatchEndText = Language.Text_v0r2;
 			}
 		}
 		MatchEnd = true;

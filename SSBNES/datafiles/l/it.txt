@@ -157,3 +157,4 @@ b0t3 = "Nessun record"
 [VERSUS]
 v0r0 = "Pronto a combattere!"
 v0r1 = "Casuale"
+v0r1 = "È finita"
