@@ -55,7 +55,10 @@ if (y < room_height and other.Creator != self and (ds_list_find_index(BlowsRecei
 		if (!other.CanGrab)
 		{
 			LifePorcentage += round(other.Power);
-			ds_list_add(BlowsReceivedList , other.id);
+			if (other.object_index != objCombatDamage)
+			{
+				ds_list_add(BlowsReceivedList , other.id);
+			}
 			CooldownDamage = 5;
 			if (scrDameDato(Control.MovList , other.Ide , "Can Knockback"))
 			{
@@ -78,8 +81,17 @@ if (y < room_height and other.Creator != self and (ds_list_find_index(BlowsRecei
 				}
 				Dir = point_direction(other.x , other.y , x , y);
 				LastDirectionDamaged = Dir;
-				SavedHorizontalMovement = lengthdir_x( 3 + (LastDamage/12) , Dir) + round(other.Creator.HorizontalMovement);
 				VerticalMovement = lengthdir_y( 3 + (LastDamage/2)  , Dir);
+				if scrExiste(other.Creator)
+				{
+					SavedHorizontalMovement = lengthdir_x( 3 + (LastDamage/12) , Dir) + round(other.Creator.HorizontalMovement);
+				}
+				else
+				{
+					SavedHorizontalMovement = lengthdir_x( 2 + (LastDamage/12) , 90);
+					VerticalMovement = lengthdir_y( 4 + (LastDamage/2)  , 90);
+				}
+				
 				//SavedHorizontalMovement = lengthdir_x( 3 + (LastDamage/16) , Dir) + round(other.Creator.HorizontalMovement/2);
 				//VerticalMovement = lengthdir_y( 3 + (LastDamage/4)  , Dir);
 				MovementPostDamage = SavedHorizontalMovement;

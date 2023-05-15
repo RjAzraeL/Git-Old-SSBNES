@@ -28,7 +28,9 @@ function scrDataMov()
 	/*23*/scrCreateMov("POL Aerial Side" , 14 , false , 150 , 0 , false , false , false , 14 , 19 , .25 , false , true , false , false, -1);
 	/*24*/scrCreateMov("POL Aerial Back" , 0 , false , 110 , 0 , false , true , false , 10 , 20 , .5 , false , true , false , false, 270);
 	/*25*/scrCreateMov("POL Aerial Down" , 1 , false , 110 , 0 , false , true , false , 4 , 10 , .5 , false , true , true , true, 45);
-	/*26*/scrCreateMov("POL Aerial Up" , 2 , false , 130 , 0 , false , true , false , 2 , 30 , .2 , true , true , true , false, 45);
+	/*26*/scrCreateMov("POL Aerial Up" , 2 , false , 110 , 0 , false , true , false , 2 , 30 , .2 , true , true , true , false, 45);
+	
+	/*27*/scrCreateMov("OBJ Damage" , 6 , false , 200 , 0 , false , true , false , 8 , 30 , 0 , false , false , false , false, 90);
 	
 }
 ///@arg list

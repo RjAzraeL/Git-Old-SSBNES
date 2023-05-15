@@ -17,6 +17,8 @@
     {"name":"inst_55A20599","path":"rooms/rmStgVegetableValley/rmStgVegetableValley.yy",},
     {"name":"inst_505CC49E","path":"rooms/rmStgVegetableValley/rmStgVegetableValley.yy",},
     {"name":"inst_1EFF3DAE","path":"rooms/rmStgVegetableValley/rmStgVegetableValley.yy",},
+    {"name":"inst_35E5B50A","path":"rooms/rmStgVegetableValley/rmStgVegetableValley.yy",},
+    {"name":"inst_3E928B92","path":"rooms/rmStgVegetableValley/rmStgVegetableValley.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -33,6 +35,8 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_55A20599","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"objBlock","path":"objects/objBlock/objBlock.yy",},"properties":[],"rotation":0.0,"scaleX":4.000003,"scaleY":10.5,"x":272.0,"y":204.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_505CC49E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"objBlock","path":"objects/objBlock/objBlock.yy",},"properties":[],"rotation":0.0,"scaleX":2.0000029,"scaleY":2.0,"x":96.0,"y":104.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1EFF3DAE","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"objBlock","path":"objects/objBlock/objBlock.yy",},"properties":[],"rotation":0.0,"scaleX":2.0000029,"scaleY":2.0,"x":256.0,"y":104.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_35E5B50A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"objVoid","path":"objects/objVoid/objVoid.yy",},"properties":[],"rotation":0.0,"scaleX":1.5,"scaleY":7.4999995,"x":124.0,"y":180.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3E928B92","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"objVoid","path":"objects/objVoid/objVoid.yy",},"properties":[],"rotation":0.0,"scaleX":1.5,"scaleY":7.4999995,"x":228.0,"y":180.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":false,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"bkgStgLy1","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":28,"SerialiseWidth":45,"TileCompressedData":[
 -951,0,2,47,48,-22,0,2,47,48,-19,0,4,60,61,47,48,-20,0,4,60,61,47,48,-17,0,-2,47,6,60,61,47,48,47,48,-16,0,8,47,61,60,61,47,48,47,
