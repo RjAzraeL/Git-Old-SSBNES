@@ -319,7 +319,6 @@
     {"id":{"name":"sprChPollierMaskDuck","path":"sprites/sprChPollierMaskDuck/sprChPollierMaskDuck.yy",},},
     {"id":{"name":"objBlock","path":"objects/objBlock/objBlock.yy",},},
     {"id":{"name":"rmStgMushroomKingdomI","path":"rooms/rmStgMushroomKingdomI/rmStgMushroomKingdomI.yy",},},
-    {"id":{"name":"sprBonusReferendum","path":"sprites/sprBonusReferendum/sprBonusReferendum.yy",},},
     {"id":{"name":"sndAnnouncerOriginalMaleFailure","path":"sounds/sndAnnouncerOriginalMaleFailure/sndAnnouncerOriginalMaleFailure.yy",},},
     {"id":{"name":"tlsStgLy1aHyruleForest","path":"tilesets/tlsStgLy1aHyruleForest/tlsStgLy1aHyruleForest.yy",},},
     {"id":{"name":"rmStgParapaPalace","path":"rooms/rmStgParapaPalace/rmStgParapaPalace.yy",},},
