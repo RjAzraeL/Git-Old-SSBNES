@@ -1,10 +1,10 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "sprBonusReferendum",
-  "bbox_bottom": 710,
-  "bbox_left": 0,
-  "bbox_right": 657,
+  "name": "sprStgLy2VegetableValley",
+  "bbox_bottom": 106,
+  "bbox_left": 13,
+  "bbox_right": 423,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -13,26 +13,26 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"7e0c1578-73d0-4b0f-8287-56c3fd49f60f",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0337e652-99f4-488a-bf46-6feb9ef8679d",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 711,
+  "height": 107,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"c38d64ec-3fd9-4457-8d57-17b6d7278bfe","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"947dce31-ef91-4f7b-8686-8ea9cae3f997","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "Bonus#1",
-    "path": "folders/Sprites/Bonus/Bonus#1.yy",
+    "name": "Vegetable Valley",
+    "path": "folders/Sprites/Stages/Kirby's Adventure/Vegetable Valley.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "sprBonusReferendum",
+    "name": "sprStgLy2VegetableValley",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"7e0c1578-73d0-4b0f-8287-56c3fd49f60f","path":"sprites/sprBonusReferendum/sprBonusReferendum.yy",},},},"Disabled":false,"id":"ec5b4ee1-be83-4fd8-8c05-cd29ca1ce597","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"0337e652-99f4-488a-bf46-6feb9ef8679d","path":"sprites/sprStgLy2VegetableValley/sprStgLy2VegetableValley.yy",},},},"Disabled":false,"id":"0e6e699f-0111-49a9-8d54-95047a38c109","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 711,
+  "width": 444,
 }
