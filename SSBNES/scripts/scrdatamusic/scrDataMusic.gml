@@ -16,6 +16,11 @@ function scrDataMusic()
 	/*11*/scrMapMusic( scrCrearLista("SMB Overworld" , "Nintendo" , "Super Mario Bros." , scrCrearLista(sndOst12SMBOverworld) ) );
 	/*12*/scrMapMusic( scrCrearLista("Palace" , "Nintendo" , "The Legend of Zelda" , scrCrearLista(sndOst13Palace_a , sndOst13Palace_b) ) );
 	/*13*/scrMapMusic( scrCrearLista("Heaven Sanctuary" , "Alouette EXE" , "Crazy Chickens" , scrCrearLista(sndOst14HeavenSanctuary) ) );
+	/*14*/scrMapMusic( scrCrearLista("Vegetable Valley" , "Nintendo" , "Kirby's Adventure" , scrCrearLista(sndOst15VegetableValley_a, sndOst15VegetableValley_b) ) );
+	/*15*/scrMapMusic( scrCrearLista("Brinstar" , "VinylCheese" , "Metroid" , scrCrearLista(sndOst16Brinstar) ) );
+	/*16*/scrMapMusic( scrCrearLista("Bowser Castle" , "TrojanHorse711" , "Super Mario Bros." , scrCrearLista(sndOst17BowserCastle_a, sndOst17BowserCastle_b) ) );
+	/*17*/scrMapMusic( scrCrearLista("SMB2 Overworld" , "Nintendo" , "Super Mario Bros." , scrCrearLista(sndOst18MushroomKingdomII_a, sndOst18MushroomKingdomII_b) ) );
+	/*18*/scrMapMusic( scrCrearLista("Avast Your Ass" , "Anarchy" , "Mayel X" , scrCrearLista(sndOst19SykurTowers_a, sndOst19SykurTowers_b) ) );
 	
 }
 	

@@ -35,7 +35,7 @@ function scrDataCharacter()
 	/*MovList Range*/scrCrearLista("Ground Neutral"),
 	/*MovList Melee*/scrCrearLista("Ground Attack Side" , "Ground Attack Up" , "Ground Attack Down" , "Ground Smash Side" , "Ground Smash Down" , "Ground Smash Up" , "Aerial Back" , "Aerial Side"),
 	/*MovList Special*/scrCrearLista(),
-	/*Announcer Name*/ sndAnnouncerChMAR
+	/*Announcer Name*/ sfxButtonOk
 	)	
 	);
 	

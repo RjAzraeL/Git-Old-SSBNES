@@ -9,15 +9,15 @@ function scrDataStage()
 	/*2*/scrMapStage( scrCrearLista("BATTLEFIELD" ,				"Super Smash Bros." ,		rmStgBattlefield ,			"Battlefield" , 136 , 54 , 300));
 	/*3*/scrMapStage( scrCrearLista("FINAL#DESTINATION" ,		"Super Smash Bros." ,		rmStgFinalDestination ,		"Final Destination" , 136 , 54 , 300));
 	/*4*/scrMapStage( scrCrearLista("MUSHROOM#KINGDOM I" ,		"Super Mario Bros." ,		rmStgMushroomKingdomI ,		"SMB Overworld" , 138 , -86 , 438));
-	/*5*/scrMapStage( scrCrearLista("MUSHROOM#KINGDOM II" ,		"Super Mario Bros. 2" ,		rmStgMushroomKingdomII ,	"Lotery" , 144 , 0 , 356));
+	/*5*/scrMapStage( scrCrearLista("MUSHROOM#KINGDOM II" ,		"Super Mario Bros. 2" ,		rmStgMushroomKingdomII ,	"SMB2 Overworld" , 144 , 0 , 356));
 	/*6*/scrMapStage( scrCrearLista("UNDERGROUND" ,				"Super Mario Bros." ,		rmStgUnderground ,			"Underground" , 128 , 50 , 305));
-	/*7*/scrMapStage( scrCrearLista("ANOTHER#CASTLE" ,			"Super Mario Bros." ,		rmStgAnotherCastle ,		"Lotery" , 144 , 63 , 288));
+	/*7*/scrMapStage( scrCrearLista("ANOTHER#CASTLE" ,			"Super Mario Bros." ,		rmStgAnotherCastle ,		"Bowser Castle" , 144 , 63 , 288));
 	/*8*/scrMapStage( scrCrearLista("HYRULE#FOREST" ,			"The Legend of Zelda" ,		rmStgHyruleForest ,			"TLOZ Overworld" , 128 , 34 , 321));
 	/*9*/scrMapStage( scrCrearLista("PARAPA#PALACE" ,			"The Legend of Zelda" ,		rmStgParapaPalace ,			"Palace" , 160 , 50 , 305));
-	/*10*/scrMapStage( scrCrearLista("VEGETABLE#VALLEY" ,		"Kirby's Adventure" ,		rmStgVegetableValley ,		"Lotery" , 136 , 48 , 304));
-	/*11*/scrMapStage( scrCrearLista("BRINSTAR" ,				"Metroid" ,					rmStgBrinstar ,				"Lotery" , 160 , 55 , 294));
+	/*10*/scrMapStage( scrCrearLista("VEGETABLE#VALLEY" ,		"Kirby's Adventure" ,		rmStgVegetableValley ,		"Vegetable Valley" , 136 , 48 , 304));
+	/*11*/scrMapStage( scrCrearLista("BRINSTAR" ,				"Metroid" ,					rmStgBrinstar ,				"Brinstar" , 160 , 55 , 294));
 	/*12*/scrMapStage( scrCrearLista("HEAVEN#SANCTUARY" ,		"Crazy Chickens" ,			rmStgHeavenSanctuary ,		"Heaven Sanctuary" , 64 , 50 , 295));
-	/*13*/scrMapStage( scrCrearLista("SYKUR#TOWERS" ,			"Mayel X" ,					rmStgSkyurTowers ,			"Lotery" , 144 , 40 , 326));
+	/*13*/scrMapStage( scrCrearLista("SYKUR#TOWERS" ,			"Mayel X" ,					rmStgSkyurTowers ,			"Avast Your Ass" , 144 , 40 , 326));
 	//
 	
 }

@@ -45,7 +45,7 @@
 -2147483648,-7,0,6,22,23,0,0,9,10,-21,0,-11,-2147483648,-7,0,6,31,32,0,0,9,10,-22,0,-10,-2147483648,-7,0,18,40,41,0,0,9,10,0,0,18,19,0,0,9,10,0,
 0,18,19,-10,0,-11,-2147483648,-6,0,18,49,50,0,0,9,10,0,0,27,28,0,0,9,10,-2147483648,-2147483648,27,28,-11,0,-2,-2147483648,-5,0,1,-2147483648,-8,0,18,20,21,20,21,9,10,
 0,0,9,10,0,0,9,10,0,0,9,10,-11,0,-2,-2147483648,-5,0,1,-2147483648,-8,0,18,29,30,29,30,9,10,0,0,9,10,0,0,9,10,0,0,9,10,-11,0,-2,-2147483648,
--219,0,2,58,59,-43,0,2,67,68,-184,0,],"TileDataFormat":1,},"tilesetId":{"name":"tlsStgLy1aParapaPalace","path":"tilesets/tlsStgLy1aParapaPalace/tlsStgLy1aParapaPalace.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
+-184,0,2,268435515,268435514,-33,0,2,58,59,-8,0,2,268435524,268435523,-33,0,2,67,68,-184,0,],"TileDataFormat":1,},"tilesetId":{"name":"tlsStgLy1aParapaPalace","path":"tilesets/tlsStgLy1aParapaPalace/tlsStgLy1aParapaPalace.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"bkgStgLy3","depth":500,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":28,"SerialiseWidth":45,"TileCompressedData":[
 -59,-2147483648,-7,0,-35,-2147483648,-14,0,-29,-2147483648,-11,0,6,63,64,63,64,63,64,-26,-2147483648,-12,0,8,63,64,63,64,63,64,63,64,-5,0,-20,-2147483648,-11,0,10,63,64,63,64,63,64,
 63,64,63,64,-10,0,-14,-2147483648,-12,0,8,63,64,63,64,63,64,63,64,-12,0,-13,-2147483648,-11,0,10,63,64,63,64,63,64,63,64,63,64,-15,0,-9,-2147483648,-10,0,12,63,64,
