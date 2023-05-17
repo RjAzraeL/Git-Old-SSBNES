@@ -17,7 +17,7 @@ ml0d3 = "Spiel-Einstellungen anpassen."
 ml0d4 = "Spielstände ansehen."
 
 ml0e0 = "Regulärer#Events#Stadion#Training"
-ml0e1 = "Melee#Turnier#Spezialsmash#Regeln#Namen"
+ml0e1 = "Melee#Turnier#Spezial#Regeln#Namen"
 ml0e2 = "Galerie#Lotto#Sammlung#Erfolge#Stage-Editor"
 ml0e3 = "Sprache#Steuerung#Audio#Grafik#Daten löschen"
 ml0e4 = "Archiv#Soundtest#Spielstände#Geheimnisse#Discord"
@@ -65,9 +65,9 @@ ml3d3 = "Kämpfe um dein Leben!"
 [VS. MODE]
 mtl4 = "VERSUS-MODUS"
 
-ml4o0 = "Nahkampf"
+ml4o0 = "Melee"
 ml4o1 = "Turnier"
-ml4o2 = "Spezial-Smash"
+ml4o2 = "Spezial"
 ml4o3 = "Regeln"
 ml4o4 = "Namen"
 

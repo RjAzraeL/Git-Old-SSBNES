@@ -17,8 +17,8 @@ ml0d3 = "Impostazioni di gioco."
 ml0d4 = "Visualizza record di gioco."
 
 ml0e0 = "Classica#Evento#Stadio#Allenamento"
-ml0e1 = "Obiettivi#Torneo#Regole Speciali#Regole Personalizzate#Inserimento Nome"
-ml0e2 = "Galleria#Lotteria#Collezione#Obiettivi#Creazione Stadi"
+ml0e1 = "Melee#Torneo#Speciali#Regole#Nomi"
+ml0e2 = "Galleria#Lotteria#Collezione#Obiettivi#Creazione"
 ml0e3 = "Lingua#Controlli#Audio#Grafica#Cancella Dati"
 ml0e4 = "Archivi#Test Audio#Registrazioni Melee#Speciale#Discord"
 
@@ -65,7 +65,7 @@ ml3d3 = "Combatti per la tua vita! Combatti!"
 [VS. MODE]
 mtl4 = "MODALITÀ VS."
 
-ml4o0 = "Mischia"
+ml4o0 = "Melee"
 ml4o1 = "Torneo"
 ml4o2 = "Speciali"
 ml4o3 = "Regole"

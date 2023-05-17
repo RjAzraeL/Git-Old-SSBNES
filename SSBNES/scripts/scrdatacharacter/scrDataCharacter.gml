@@ -5,7 +5,7 @@ function scrDataCharacter()
 	/*0*/
 	scrMapCharacter( 
 	scrCrearLista(
-	/*Name*/"Sandbag" ,
+	/*Name*/"Random" ,
 	/*Description*/"Super Smash Brothers" ,
 	/*Lore*/"" ,
 	/*Class*/"" ,
@@ -298,6 +298,43 @@ function scrDataCharacter()
 	/*MovList Special*/scrCrearLista("Aerial Neutral" , "Ground Smash Down"),
 	/*Announcer Name*/ sndAnnouncerChPOL
 	)
+	);
+	
+	/*41*/
+	scrMapCharacter( 
+	scrCrearLista(
+	/*Name*/"SandBag" ,
+	/*Description*/"Super Smash Brothers" ,
+	/*Lore*/"" ,
+	/*Class*/"" ,
+	/*Sprite*/"sprChSandbag" ,
+	/*Jumps*/2,
+	/*Aceleration*/.15,
+	/*SpeedWalk*/1.2,
+	/*SpeedRun*/3.1,
+	/*SpeedFall*/1.9,
+	/*JumpValue*/5.5,
+	/*Gravity*/.3,
+	/*GravityFall*/.1,
+	/*LimitFall*/6,
+	/*Weight*/2.9,
+	/*Friction*/.020,
+	/*Mask Duck*/sprChSandbagMaskDuck,
+	/*Mask Normal*/sprChSandbagMask,
+	/*Sfx Skid*/sfxKirbySkid,
+	/*Sfx Jump*/sfxKirbyJump,
+	/*Vertical Limit Porcentage*/35,
+	/*Movs*/ scrCrearLista(0,1,2,3,4,5,6,7,8,9,10,11),
+	/*Hud index*/1,
+	/*Roster id*/41,
+	/*Palette name*/"SAN",
+	/*Palette code*/0,
+	/*MovList Recover*/scrCrearLista("Aerial Down" , "Aerial Up"),
+	/*MovList Range*/scrCrearLista("Ground Neutral"),
+	/*MovList Melee*/scrCrearLista("Ground Attack Side" , "Ground Attack Up" , "Ground Attack Down" , "Ground Smash Side" , "Ground Smash Down" , "Ground Smash Up" , "Aerial Back" , "Aerial Side"),
+	/*MovList Special*/scrCrearLista(),
+	/*Announcer Name*/ sfxButtonOk
+	)	
 	);
 }
 

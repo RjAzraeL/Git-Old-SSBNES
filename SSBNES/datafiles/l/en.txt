@@ -17,7 +17,7 @@ ml0d3 = "Game setup."
 ml0d4 = "View game records."
 
 ml0e0 = "Regular Ma.#Event Ma.#Stadium#Training"
-ml0e1 = "Achievements#Tournament#Special Rul.#Custom Rul.#Name Entry"
+ml0e1 = "Melee#Tournament#Special Rul.#Custom Rul.#Name Entry"
 ml0e2 = "Gallery#Lottery#Collection#Achievemen.#Stage Build"
 ml0e3 = "Language#Controls#Audio#Graphics#Erase Data"
 ml0e4 = "Archives#Sound Test#Melee Rec.#Special#Discord"
