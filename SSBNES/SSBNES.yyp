@@ -113,6 +113,8 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"The Legend of Zelda","folderPath":"folders/Sprites/Stages/The Legend of Zelda.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Hyrule Forest","folderPath":"folders/Sprites/Stages/The Legend of Zelda/Hyrule Forest.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Parapa Palace","folderPath":"folders/Sprites/Stages/The Legend of Zelda/Parapa Palace.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Enemies","folderPath":"folders/Sprites/Enemies.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Virtual Joystick","folderPath":"folders/Sprites/HUD/Virtual Joystick.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"de.txt","CopyToMask":-1,"filePath":"datafiles/l",},
@@ -128,7 +130,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.4.0.84",
+    "IDEVersion": "2023.8.2.108",
   },
   "resources": [
     {"id":{"name":"sndOst15VegetableValley_a","path":"sounds/sndOst15VegetableValley_a/sndOst15VegetableValley_a.yy",},},
@@ -248,6 +250,7 @@
     {"id":{"name":"sndOst17BowserCastle_a","path":"sounds/sndOst17BowserCastle_a/sndOst17BowserCastle_a.yy",},},
     {"id":{"name":"scrFowardButtonActive","path":"scripts/scrFowardButtonActive/scrFowardButtonActive.yy",},},
     {"id":{"name":"sprExplosionOutside","path":"sprites/sprExplosionOutside/sprExplosionOutside.yy",},},
+    {"id":{"name":"sprEnGoomba","path":"sprites/sprEnGoomba/sprEnGoomba.yy",},},
     {"id":{"name":"sprStgLy1aBattlefieldM","path":"sprites/sprStgLy1aBattlefieldM/sprStgLy1aBattlefieldM.yy",},},
     {"id":{"name":"sprChPollierGroundAttackSideTrance","path":"sprites/sprChPollierGroundAttackSideTrance/sprChPollierGroundAttackSideTrance.yy",},},
     {"id":{"name":"scrDataCharacter","path":"scripts/scrDataCharacter/scrDataCharacter.yy",},},
@@ -311,6 +314,7 @@
     {"id":{"name":"sfxMarioSkid","path":"sounds/sfxMarioSkid/sfxMarioSkid.yy",},},
     {"id":{"name":"sprChKirbyTrance","path":"sprites/sprChKirbyTrance/sprChKirbyTrance.yy",},},
     {"id":{"name":"sprSetREFERENCE","path":"sprites/sprSetREFERENCE/sprSetREFERENCE.yy",},},
+    {"id":{"name":"sprJoystickPad","path":"sprites/sprJoystickPad/sprJoystickPad.yy",},},
     {"id":{"name":"sprChPollierGroundAttackDown","path":"sprites/sprChPollierGroundAttackDown/sprChPollierGroundAttackDown.yy",},},
     {"id":{"name":"sprSetTextBox1","path":"sprites/sprSetTextBox1/sprSetTextBox1.yy",},},
     {"id":{"name":"objOptionBar","path":"objects/objOptionBar/objOptionBar.yy",},},
@@ -384,6 +388,7 @@
     {"id":{"name":"sndAnnouncer1","path":"sounds/sndAnnouncer1/sndAnnouncer1.yy",},},
     {"id":{"name":"sprChKirbyFalling","path":"sprites/sprChKirbyFalling/sprChKirbyFalling.yy",},},
     {"id":{"name":"scrCambiarPantalla","path":"scripts/scrCambiarPantalla/scrCambiarPantalla.yy",},},
+    {"id":{"name":"sprJoystickExtra","path":"sprites/sprJoystickExtra/sprJoystickExtra.yy",},},
     {"id":{"name":"sprChPollierIdle","path":"sprites/sprChPollierIdle/sprChPollierIdle.yy",},},
     {"id":{"name":"sprStgLy2SkyurTowers","path":"sprites/sprStgLy2SkyurTowers/sprStgLy2SkyurTowers.yy",},},
     {"id":{"name":"scrAudio","path":"scripts/scrAudio/scrAudio.yy",},},
@@ -486,6 +491,7 @@
     {"id":{"name":"sprStgLy1aHyruleForest","path":"sprites/sprStgLy1aHyruleForest/sprStgLy1aHyruleForest.yy",},},
     {"id":{"name":"tlsStgLy1aMushroomKingdomI12","path":"tilesets/tlsStgLy1aMushroomKingdomI12/tlsStgLy1aMushroomKingdomI12.yy",},},
     {"id":{"name":"sprHudBody","path":"sprites/sprHudBody/sprHudBody.yy",},},
+    {"id":{"name":"sprJoystickButtons","path":"sprites/sprJoystickButtons/sprJoystickButtons.yy",},},
     {"id":{"name":"sprNameBoxStage","path":"sprites/sprNameBoxStage/sprNameBoxStage.yy",},},
     {"id":{"name":"sndAnnouncerOriginalFemaleBonus1","path":"sounds/sndAnnouncerOriginalFemaleBonus1/sndAnnouncerOriginalFemaleBonus1.yy",},},
     {"id":{"name":"sprChMarioAerialUpMask","path":"sprites/sprChMarioAerialUpMask/sprChMarioAerialUpMask.yy",},},
@@ -604,6 +610,7 @@
     {"roomId":{"name":"rmStgSkyurTowers","path":"rooms/rmStgSkyurTowers/rmStgSkyurTowers.yy",},},
     {"roomId":{"name":"rmAdvLevel1_1","path":"rooms/rmAdvLevel1_1/rmAdvLevel1_1.yy",},},
   ],
+  "templateType": null,
   "TextureGroups": [
     {"resourceType":"GMTextureGroup","resourceVersion":"1.3","name":"Default","autocrop":true,"border":2,"compressFormat":"bz2","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"targets":-1,},
   ],
