@@ -11,6 +11,7 @@ RecordMinute = -1;
 scrFileAchievementLoad();
 #endregion
 
+instance_create_depth(0 , 0 , -5 , VirtualKey);
 instance_create_depth(0 , 0 , 0 , Language);
 LanguageActual = 0;
 FontPorcentage = font_add_sprite_ext(sprHudNumbers , "0123456789" , true , 0);

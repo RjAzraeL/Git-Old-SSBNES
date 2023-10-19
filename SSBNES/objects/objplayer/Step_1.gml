@@ -4,21 +4,21 @@ if (Control.CanMoveGlobal)
 	if (Position == 0)
 {
 	RightButtonActive = Control.RightButtonActive;
-	LeftButtonActive = Control.LeftButtonActive;
-	DownButtonPressedActive = Control.DownButtonPressedActive;
-	LeftButtonPressedActive = Control.LeftButtonPressedActive;
 	RightButtonPressedActive = Control.RightButtonPressedActive;
-	JumpButtonActive = Control.JumpButtonActive;
-	JumpButtonReleaseActive = Control.JumpButtonReleaseActive;
-	AttackButtonPressedActive = Control.AttackButtonPressedActive;
-	DownButtonReleasedActive = Control.DownButtonReleasedActive;
+	LeftButtonActive = Control.LeftButtonActive;
+	LeftButtonPressedActive = Control.LeftButtonPressedActive;
 	DownButtonActive = Control.DownButtonActive;
-	AttackButtonActive = Control.AttackButtonActive;
-	AttackButtonReleasedActive = Control.AttackButtonReleasedActive;
+	DownButtonPressedActive = Control.DownButtonPressedActive;
+	DownButtonReleasedActive = Control.DownButtonReleasedActive;
 	UpButtonActive = Control.UpButtonActive;
-	UpButtonReleasedActive = Control.UpButtonReleasedActive;
 	UpButtonPressedActive = Control.UpButtonPressedActive;
+	UpButtonReleasedActive = Control.UpButtonReleasedActive;
+	JumpButtonActive = Control.JumpButtonActive;
 	JumpButtonPressedActive = Control.JumpButtonPressedActive;
+	JumpButtonReleaseActive = Control.JumpButtonReleaseActive;
+	AttackButtonActive = Control.AttackButtonActive;
+	AttackButtonPressedActive = Control.AttackButtonPressedActive;
+	AttackButtonReleasedActive = Control.AttackButtonReleasedActive;
 }
 	else
 {

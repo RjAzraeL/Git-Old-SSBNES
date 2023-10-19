@@ -26,7 +26,7 @@ Nintendo 64 = 320×240 to 720×288 (progressive), 320×480 to 720×576 (interlac
 */
 view_camera[0] = camera_create();
 camera_set_view_size(view_camera[0], 256, 224); //See common resolution sizes above.
-
+var scale = 2;
 
 
 /*
@@ -45,8 +45,8 @@ camera_set_view_size(view_camera[0], 256, 224); //See common resolution sizes ab
 */
 view_visible[0] = true;
 view_enabled = true;
-view_wport[0] = 1280;
-view_hport[0] = 720;
+view_wport[0] = 256*scale;
+view_hport[0] = 144*scale;
 window_set_size(view_wport[0], view_hport[0]);
 window_set_position(10,40)
 
