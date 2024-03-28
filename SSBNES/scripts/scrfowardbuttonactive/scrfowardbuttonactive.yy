@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scrFowardButtonActive",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Combat",
-    "path": "folders/Scripts/Combat.yy",
+  "$GMScript":"",
+  "%Name":"scrFowardButtonActive",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scrFowardButtonActive",
+  "parent":{
+    "name":"Combat",
+    "path":"folders/Scripts/Combat.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

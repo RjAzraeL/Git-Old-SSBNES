@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scrGetTotalPorcentageFromTwoValues",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Combat",
-    "path": "folders/Scripts/Combat.yy",
+  "$GMScript":"",
+  "%Name":"scrGetTotalPorcentageFromTwoValues",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scrGetTotalPorcentageFromTwoValues",
+  "parent":{
+    "name":"Combat",
+    "path":"folders/Scripts/Combat.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

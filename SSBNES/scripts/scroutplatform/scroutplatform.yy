@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scrOutPlatform",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Combat",
-    "path": "folders/Scripts/Combat.yy",
+  "$GMScript":"",
+  "%Name":"scrOutPlatform",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scrOutPlatform",
+  "parent":{
+    "name":"Combat",
+    "path":"folders/Scripts/Combat.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

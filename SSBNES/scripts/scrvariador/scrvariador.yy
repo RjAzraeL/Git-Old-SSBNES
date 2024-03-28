@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scrVariador",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Generic",
-    "path": "folders/Scripts/Generic.yy",
+  "$GMScript":"",
+  "%Name":"scrVariador",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scrVariador",
+  "parent":{
+    "name":"Generic",
+    "path":"folders/Scripts/Generic.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

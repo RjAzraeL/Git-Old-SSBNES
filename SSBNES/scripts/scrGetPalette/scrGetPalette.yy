@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scrGetPalette",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Other",
-    "path": "folders/Scripts/Data/Other.yy",
+  "$GMScript":"",
+  "%Name":"scrGetPalette",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scrGetPalette",
+  "parent":{
+    "name":"Other",
+    "path":"folders/Scripts/Data/Other.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

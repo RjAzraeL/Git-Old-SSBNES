@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scrExiste",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Generic",
-    "path": "folders/Scripts/Generic.yy",
+  "$GMScript":"",
+  "%Name":"scrExiste",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scrExiste",
+  "parent":{
+    "name":"Generic",
+    "path":"folders/Scripts/Generic.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

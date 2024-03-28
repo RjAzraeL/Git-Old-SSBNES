@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scrDataMusic",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Data",
-    "path": "folders/Scripts/Data.yy",
+  "$GMScript":"",
+  "%Name":"scrDataMusic",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scrDataMusic",
+  "parent":{
+    "name":"Data",
+    "path":"folders/Scripts/Data.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

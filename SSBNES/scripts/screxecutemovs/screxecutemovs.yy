@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scrExecuteMovs",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Mov",
-    "path": "folders/Scripts/Combat/Mov.yy",
+  "$GMScript":"",
+  "%Name":"scrExecuteMovs",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scrExecuteMovs",
+  "parent":{
+    "name":"Mov",
+    "path":"folders/Scripts/Combat/Mov.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

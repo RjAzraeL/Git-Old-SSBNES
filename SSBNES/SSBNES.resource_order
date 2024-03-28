@@ -1,5 +1,5 @@
 {
-  "FolderOrderSettings": [
+  "FolderOrderSettings":[
     {"name":"Announcer","order":1,"path":"folders/Audio/Announcer.yy",},
     {"name":"Azrael","order":1,"path":"folders/Audio/Announcer/Azrael.yy",},
     {"name":"Bran Rainey","order":2,"path":"folders/Audio/Announcer/Bran Rainey.yy",},
@@ -52,7 +52,7 @@
     {"name":"The Legend of Zelda","order":3,"path":"folders/Sprites/Stages/The Legend of Zelda.yy",},
     {"name":"Parapa Palace","order":1,"path":"folders/Sprites/Stages/The Legend of Zelda/Parapa Palace.yy",},
   ],
-  "ResourceOrderSettings": [
+  "ResourceOrderSettings":[
     {"name":"sndOst15VegetableValley_a","order":23,"path":"sounds/sndOst15VegetableValley_a/sndOst15VegetableValley_a.yy",},
     {"name":"sprSetTextBox2","order":10,"path":"sprites/sprSetTextBox2/sprSetTextBox2.yy",},
     {"name":"sprChMarioSkid","order":9,"path":"sprites/sprChMarioSkid/sprChMarioSkid.yy",},
